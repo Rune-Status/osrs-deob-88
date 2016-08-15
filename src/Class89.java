@@ -45,12 +45,14 @@ public class Class89 {
 	}
 
 	public static boolean method346(final int var0) {
+		System.out.printf("load %d %n", var0);
 		if (Class124_Sub17.aBoolArray1267[var0])
 			return true;
 		else if (!Class124_Sub17.aClass94_1145.method375(var0))
 			return false;
 		else {
 			final int var1 = Class124_Sub17.aClass94_1145.method382(var0);
+			System.out.printf("%d len %d %n", var0, var1);
 			if (var1 == 0) {
 				Class124_Sub17.aBoolArray1267[var0] = true;
 				return true;

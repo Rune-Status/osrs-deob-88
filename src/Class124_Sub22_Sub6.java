@@ -548,6 +548,7 @@ public class Class124_Sub22_Sub6 extends Class124_Sub22 {
 
 	static final void method692(final int var0, final int var1, final int var2, final int var3, final int var4,
 			final int var5, final int var6, final int var7) {
+		System.out.printf("%d, %d %n", var0 >> 16, var0 & 0xff);
 		if (Class89.method346(var0)) {
 			Class2.aClass124_Sub17Array12 = null;
 			Class27.method165(Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0], -1, var1, var2, var3, var4,

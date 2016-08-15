@@ -9,12 +9,13 @@ public final class Class67 {
 	int[] anIntArray565 = new int[256];
 
 	final int method295() {
-		if ((--anInt567 + 1) == 0) {
+		return 0;
+		/*if ((--anInt567 + 1) == 0) {
 			method296();
 			anInt567 = 255;
 		}
 
-		return anIntArray565[anInt567];
+		return anIntArray565[anInt567];*/
 	}
 
 	final void method296() {

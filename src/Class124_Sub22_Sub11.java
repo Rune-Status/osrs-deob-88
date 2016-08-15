@@ -81,6 +81,10 @@ public class Class124_Sub22_Sub11 extends Class124_Sub22 {
 				return var2;
 			} else {
 				final int var5 = var1.method562(33253765);
+				if (var5 < 0 || var5 > 1000000) {
+					System.err.printf("bad xtea decrypt %n");
+					return new byte[100];
+				}
 				if ((var5 >= 0) && ((Class94.anInt755 == 0) || (var5 <= Class94.anInt755))) {
 					final byte[] var6 = new byte[var5];
 					if (var4 == 1)
@@ -89,8 +93,11 @@ public class Class124_Sub22_Sub11 extends Class124_Sub22 {
 						Class94.aClass64_743.method288(var1, var6);
 
 					return var6;
-				} else
-					throw new RuntimeException();
+				} else {
+					System.err.printf("bad xtea decrypt %n");
+					return new byte[100];
+					//throw new RuntimeException();
+				}
 			}
 		} else
 			throw new RuntimeException();

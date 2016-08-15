@@ -8,6 +8,7 @@ public class Class37 {
 	static boolean method197(final File var0, final boolean var1) {
 		try {
 			final RandomAccessFile var2 = new RandomAccessFile(var0, "rw");
+			System.out.printf("RAF @ %s %n", var0.getAbsolutePath());
 			final int var3 = var2.read();
 			var2.seek(0L);
 			var2.write(var3);

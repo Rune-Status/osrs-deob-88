@@ -41,7 +41,7 @@ public class RS07Applet implements AppletStub {
 	/**
 	 * The host address
 	 */
-	private final String host = "oldschool30.runescape.com";
+	private final String host = "127.0.0.1";
 
 	/**
 	 * The parameters of the client.

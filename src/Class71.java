@@ -2,7 +2,7 @@ public class Class71 {
 	static Class124_Sub22_Sub16_Sub1 aClass124_Sub22_Sub16_Sub1_591;
 	public String aString588;
 	public int anInt589;
-	public static Class71 aClass71_590 = new Class71("LIVE", 0);
+	public static Class71 aClass71_590 = new Class71("LIVE_88", 0);
 	public static Class71 aClass71_586 = new Class71("BUILDLIVE", 3);
 	public static Class71 aClass71_587 = new Class71("RC", 1);
 	public static Class71 aClass71_592 = new Class71("WIP", 2);

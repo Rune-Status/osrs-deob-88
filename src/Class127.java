@@ -53,6 +53,7 @@ public final class Class127 {
 			var1.delete();
 
 		aRandomAccessFile885 = new RandomAccessFile(var1, var2);
+		System.out.printf("RAF @ %s %n", var1.getAbsolutePath());
 		aLong884 = var3;
 		aLong886 = 0L;
 		final int var5 = aRandomAccessFile885.read();

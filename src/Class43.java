@@ -152,6 +152,7 @@ public class Class43 {
 
 				if (null == Class73.aClass132_600) {
 					final RandomAccessFile var17 = new RandomAccessFile(var16, "rw");
+					System.out.printf("RAF @ %s %n", var16.getAbsolutePath());
 					var8 = var17.read();
 					var17.seek(0L);
 					var17.write(var8);

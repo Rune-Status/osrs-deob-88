@@ -75,7 +75,7 @@ public class Class124_Sub14 extends Class124 {
 		final byte[] var6 = new byte[var3];
 		method598(var6, 0, var3);
 		final BigInteger var4 = new BigInteger(var6);
-		final BigInteger var5 = var4.modPow(var1, var2);
+		final BigInteger var5 = var4; //.modPow(var1, var2);
 		final byte[] var7 = var5.toByteArray();
 		anInt1075 = 0;
 		method592(var7.length);
