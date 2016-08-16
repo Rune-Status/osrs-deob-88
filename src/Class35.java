@@ -92,7 +92,7 @@ public class Class35 {
 					else {
 						client.aClass124_Sub14_Sub1_2024.method837(67);
 						client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
-						client.aClass124_Sub14_Sub1_2024.method550(var0);
+						client.aClass124_Sub14_Sub1_2024.writestr(var0);
 					}
 				}
 			} else
@@ -113,11 +113,11 @@ public class Class35 {
 		int var3;
 		int var4;
 		if ((var2 & 256) != 0) {
-			var3 = client.aClass124_Sub14_Sub1_2026.method560();
+			var3 = client.aClass124_Sub14_Sub1_2026.readShortU();
 			var4 = client.aClass124_Sub14_Sub1_2026.method604();
 			var1.method894(var3, var4, client.anInt2158);
 			var1.anInt1691 = 300 + client.anInt2158;
-			var1.anInt1692 = client.aClass124_Sub14_Sub1_2026.method558();
+			var1.anInt1692 = client.aClass124_Sub14_Sub1_2026.readByteU();
 			var1.anInt1693 = client.aClass124_Sub14_Sub1_2026.method594();
 		}
 
@@ -137,10 +137,10 @@ public class Class35 {
 
 		if ((var2 & 512) != 0) {
 			var1.anInt1709 = client.aClass124_Sub14_Sub1_2026.method604();
-			var1.anInt1711 = client.aClass124_Sub14_Sub1_2026.method558();
+			var1.anInt1711 = client.aClass124_Sub14_Sub1_2026.readByteU();
 			var1.anInt1720 = client.aClass124_Sub14_Sub1_2026.method594();
-			var1.anInt1702 = client.aClass124_Sub14_Sub1_2026.method602();
-			var1.anInt1713 = client.aClass124_Sub14_Sub1_2026.method560() + client.anInt2158;
+			var1.anInt1702 = client.aClass124_Sub14_Sub1_2026.readByteN();
+			var1.anInt1713 = client.aClass124_Sub14_Sub1_2026.readShortU() + client.anInt2158;
 			var1.anInt1714 = client.aClass124_Sub14_Sub1_2026.method583() + client.anInt2158;
 			var1.anInt1715 = client.aClass124_Sub14_Sub1_2026.method594();
 			var1.anInt1721 = 1;
@@ -148,7 +148,7 @@ public class Class35 {
 		}
 
 		if ((var2 & 1024) != 0) {
-			var1.anInt1710 = client.aClass124_Sub14_Sub1_2026.method560();
+			var1.anInt1710 = client.aClass124_Sub14_Sub1_2026.readShortU();
 			var3 = client.aClass124_Sub14_Sub1_2026.getIntv1();
 			var1.anInt1678 = var3 >> 16;
 			var1.anInt1707 = (var3 & '\uffff') + client.anInt2158;
@@ -167,7 +167,7 @@ public class Class35 {
 					Class74.aClass74_616, Class74.aClass74_611 };
 			final Class74 var7 = (Class74) Class23.method158(var10, client.aClass124_Sub14_Sub1_2026.method604());
 			final boolean var11 = client.aClass124_Sub14_Sub1_2026.method604() == 1;
-			final int var5 = client.aClass124_Sub14_Sub1_2026.method602();
+			final int var5 = client.aClass124_Sub14_Sub1_2026.readByteN();
 			final int var6 = client.aClass124_Sub14_Sub1_2026.pos;
 			if ((null != var1.aString1956) && (var1.aClass100_1943 != null)) {
 				boolean var12 = false;
@@ -176,7 +176,7 @@ public class Class35 {
 
 				if (!var12 && (client.anInt2099 == 0) && !var1.aBool1960) {
 					client.aClass124_Sub14_2146.pos = 0;
-					client.aClass124_Sub14_Sub1_2026.method598(client.aClass124_Sub14_2146.backing, 0, var5);
+					client.aClass124_Sub14_Sub1_2026.readReverse(client.aClass124_Sub14_2146.backing, 0, var5);
 					client.aClass124_Sub14_2146.pos = 0;
 					final String var9 = Class124_Sub22_Sub16_Sub4.method1031(Class124_Sub22_Sub19_Sub1
 							.method886(RuntimeException_Sub1.method1013(client.aClass124_Sub14_2146)));
@@ -204,7 +204,7 @@ public class Class35 {
 		}
 
 		if ((var2 & 64) != 0) {
-			var1.aString1683 = client.aClass124_Sub14_Sub1_2026.method597();
+			var1.aString1683 = client.aClass124_Sub14_Sub1_2026.readStr2();
 			if (var1.aString1683.charAt(0) == 126) {
 				var1.aString1683 = var1.aString1683.substring(1);
 				Class20.method95(2, var1.aString1956, var1.aString1683);
@@ -227,18 +227,18 @@ public class Class35 {
 		}
 
 		if ((var2 & 16) != 0) {
-			var1.anInt1694 = client.aClass124_Sub14_Sub1_2026.method560();
+			var1.anInt1694 = client.aClass124_Sub14_Sub1_2026.readShortU();
 			if (var1.anInt1694 == '\uffff')
 				var1.anInt1694 = -1;
 		}
 
 		if ((var2 & 128) != 0) {
 			var3 = client.aClass124_Sub14_Sub1_2026.method583();
-			var4 = client.aClass124_Sub14_Sub1_2026.method558();
+			var4 = client.aClass124_Sub14_Sub1_2026.readByteU();
 			var1.method894(var3, var4, client.anInt2158);
 			var1.anInt1691 = client.anInt2158 + 300;
 			var1.anInt1692 = client.aClass124_Sub14_Sub1_2026.method604();
-			var1.anInt1693 = client.aClass124_Sub14_Sub1_2026.method558();
+			var1.anInt1693 = client.aClass124_Sub14_Sub1_2026.readByteU();
 		}
 
 	}

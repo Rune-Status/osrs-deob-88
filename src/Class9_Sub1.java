@@ -363,7 +363,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 													final int var20 = var10 & 63;
 													final int var0 = (var10 >> 6) & 63;
 													final int var37 = var10 >> 12;
-													final int var26 = var16.method558();
+													final int var26 = var16.readByteU();
 													final int var27 = var26 >> 2;
 													final int var35 = var26 & 3;
 													if ((var21 == var37) && (var0 >= var1) && (var0 < (var1 + 8))
@@ -432,7 +432,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 				Def6.aClass113_1389.method436();
 				if (null != Class69.aFrame578) {
 					client.aClass124_Sub14_Sub1_2024.method837(103);
-					client.aClass124_Sub14_Sub1_2024.method548(1057001181);
+					client.aClass124_Sub14_Sub1_2024.writeInt(1057001181);
 				}
 
 				if (!client.aBool2043) {

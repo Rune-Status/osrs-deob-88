@@ -65,27 +65,27 @@ public class Class15 {
 	}
 
 	final void method76(final RSBuf var1, final Class17 var2) {
-		final int var3 = var1.method558();
+		final int var3 = var1.readByteU();
 		anIntArray139[0] = var3 >> 4;
 		anIntArray139[1] = var3 & 15;
 		if (var3 != 0) {
-			anIntArray143[0] = var1.method560();
-			anIntArray143[1] = var1.method560();
-			final int var5 = var1.method558();
+			anIntArray143[0] = var1.readShortU();
+			anIntArray143[1] = var1.readShortU();
+			final int var5 = var1.readByteU();
 
 			int var4;
 			int var6;
 			for (var4 = 0; var4 < 2; ++var4)
 				for (var6 = 0; var6 < anIntArray139[var4]; ++var6) {
-					anIntArrayArrayArray137[var4][0][var6] = var1.method560();
-					anIntArrayArrayArray138[var4][0][var6] = var1.method560();
+					anIntArrayArrayArray137[var4][0][var6] = var1.readShortU();
+					anIntArrayArrayArray138[var4][0][var6] = var1.readShortU();
 				}
 
 			for (var4 = 0; var4 < 2; ++var4)
 				for (var6 = 0; var6 < anIntArray139[var4]; ++var6)
 					if ((var5 & (1 << (var4 * 4) << var6)) != 0) {
-						anIntArrayArrayArray137[var4][1][var6] = var1.method560();
-						anIntArrayArrayArray138[var4][1][var6] = var1.method560();
+						anIntArrayArrayArray137[var4][1][var6] = var1.readShortU();
+						anIntArrayArrayArray138[var4][1][var6] = var1.readShortU();
 					} else {
 						anIntArrayArrayArray137[var4][1][var6] = anIntArrayArrayArray137[var4][0][var6];
 						anIntArrayArrayArray138[var4][1][var6] = anIntArrayArrayArray138[var4][0][var6];

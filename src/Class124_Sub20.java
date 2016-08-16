@@ -9,8 +9,8 @@ public class Class124_Sub20 extends Node {
 
 	Class124_Sub20(final RSBuf var1) {
 		var1.pos = var1.backing.length - 3;
-		final int var3 = var1.method558();
-		final int var4 = var1.method560();
+		final int var3 = var1.readByteU();
+		final int var4 = var1.readShortU();
 		int var5 = 14 + (var3 * 10);
 		var1.pos = 0;
 		int var6 = 0;
@@ -29,7 +29,7 @@ public class Class124_Sub20 extends Node {
 			var14 = -1;
 
 			while (true) {
-				var2 = var1.method558();
+				var2 = var1.readByteU();
 				if (var2 != var14)
 					++var5;
 
@@ -67,7 +67,7 @@ public class Class124_Sub20 extends Node {
 		var14 = var3 + var6 + var7 + var8 + var24 + var9 + var19 + var11 + var26;
 
 		for (var2 = 0; var2 < var14; ++var2)
-			var1.method570();
+			var1.packed();
 
 		var5 += var1.pos - var13;
 		var2 = var1.pos;
@@ -87,7 +87,7 @@ public class Class124_Sub20 extends Node {
 
 		int var36;
 		for (var36 = 0; var36 < var7; ++var36) {
-			var10 = (var10 + var1.method558()) & 127;
+			var10 = (var10 + var1.readByteU()) & 127;
 			if ((var10 != 0) && (var10 != 32)) {
 				if (var10 == 1)
 					++var28;
@@ -162,8 +162,8 @@ public class Class124_Sub20 extends Node {
 		var1.pos += var6 * 3;
 		aByteArray1300 = new byte[var5];
 		final RSBuf var20 = new RSBuf(aByteArray1300);
-		var20.method548(1297377380);
-		var20.method548(6);
+		var20.writeInt(1297377380);
+		var20.writeInt(6);
 		var20.writeShort(var3 > 1 ? 1 : 0);
 		var20.writeShort(var3);
 		var20.writeShort(var4);
@@ -179,15 +179,15 @@ public class Class124_Sub20 extends Node {
 		var10 = 0;
 
 		label352: for (int var38 = 0; var38 < var3; ++var38) {
-			var20.method548(1297379947);
+			var20.writeInt(1297379947);
 			var20.pos += 4;
 			final int var64 = var20.pos;
 			int var15 = -1;
 
 			while (true)
 				while (true) {
-					final int var40 = var1.method570();
-					var20.method599(var40);
+					final int var40 = var1.packed();
+					var20.writesmart(var40);
 					final int var65 = var1.backing[var36++] & 255;
 					final boolean var27 = var65 != var15;
 					var15 = var65 & 15;
@@ -197,7 +197,7 @@ public class Class124_Sub20 extends Node {
 
 						var20.writeByte(47);
 						var20.writeByte(0);
-						var20.method553(var20.pos - var64);
+						var20.endSizeInt(var20.pos - var64);
 						continue label352;
 					}
 

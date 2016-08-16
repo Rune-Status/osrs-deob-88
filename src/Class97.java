@@ -24,8 +24,8 @@ public final class Class97 {
 
 	public static void method390(final RSBuf var0) {
 		final Class124_Sub24 var1 = new Class124_Sub24();
-		var1.anInt1307 = var0.method558();
-		var1.anInt1309 = var0.method562(-1089092006);
+		var1.anInt1307 = var0.readByteU();
+		var1.anInt1309 = var0.readInt2(-1089092006);
 		var1.anIntArray1308 = new int[var1.anInt1307];
 		var1.anIntArray1314 = new int[var1.anInt1307];
 		var1.aFieldArray1310 = new Field[var1.anInt1307];
@@ -35,28 +35,28 @@ public final class Class97 {
 
 		for (int var2 = 0; var2 < var1.anInt1307; ++var2)
 			try {
-				final int var3 = var0.method558();
+				final int var3 = var0.readByteU();
 				String var4;
 				String var5;
 				int var6;
 				if ((var3 != 0) && (var3 != 1) && (var3 != 2)) {
 					if ((var3 == 3) || (var3 == 4)) {
-						var4 = var0.method597();
-						var5 = var0.method597();
-						var6 = var0.method558();
+						var4 = var0.readStr2();
+						var5 = var0.readStr2();
+						var6 = var0.readByteU();
 						final String[] var7 = new String[var6];
 
 						for (int var8 = 0; var8 < var6; ++var8)
-							var7[var8] = var0.method597();
+							var7[var8] = var0.readStr2();
 
-						final String var9 = var0.method597();
+						final String var9 = var0.readStr2();
 						final byte[][] var10 = new byte[var6][];
 						int var12;
 						if (var3 == 3)
 							for (int var11 = 0; var11 < var6; ++var11) {
-								var12 = var0.method562(-213709922);
+								var12 = var0.readInt2(-213709922);
 								var10[var11] = new byte[var12];
-								var0.method598(var10[var11], 0, var12);
+								var0.readReverse(var10[var11], 0, var12);
 							}
 
 						var1.anIntArray1308[var2] = var3;
@@ -93,11 +93,11 @@ public final class Class97 {
 						var1.aByteArrayArrayArray1313[var2] = var10;
 					}
 				} else {
-					var4 = var0.method597();
-					var5 = var0.method597();
+					var4 = var0.readStr2();
+					var5 = var0.readStr2();
 					var6 = 0;
 					if (var3 == 1)
-						var6 = var0.method562(-340697723);
+						var6 = var0.readInt2(-340697723);
 
 					var1.anIntArray1308[var2] = var3;
 					var1.anIntArray1306[var2] = var6;

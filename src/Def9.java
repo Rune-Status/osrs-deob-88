@@ -1,4 +1,4 @@
-public class Def9 extends Class124_Sub22 {
+public class Def9 extends Node2 {
 	public int anInt1318;
 	static Class94 aClass94_1328;
 	static int[] anIntArray1335;
@@ -79,87 +79,87 @@ public class Def9 extends Class124_Sub22 {
 		int var3;
 		int var4;
 		if (var2 == 1) {
-			var3 = var1.method558();
+			var3 = var1.readByteU();
 			anIntArray1321 = new int[var3];
 
 			for (var4 = 0; var4 < var3; ++var4)
-				anIntArray1321[var4] = var1.method560();
+				anIntArray1321[var4] = var1.readShortU();
 		} else if (var2 == 2)
-			aString1319 = var1.method597();
+			aString1319 = var1.readStr2();
 		else if (var2 == 12)
-			anInt1320 = var1.method558();
+			anInt1320 = var1.readByteU();
 		else if (var2 == 13)
-			anInt1323 = var1.method560();
+			anInt1323 = var1.readShortU();
 		else if (var2 == 14)
-			anInt1326 = var1.method560();
+			anInt1326 = var1.readShortU();
 		else if (var2 == 15)
-			anInt1324 = var1.method560();
+			anInt1324 = var1.readShortU();
 		else if (var2 == 16)
-			anInt1325 = var1.method560();
+			anInt1325 = var1.readShortU();
 		else if (var2 == 17) {
-			anInt1326 = var1.method560();
-			anInt1327 = var1.method560();
-			anInt1334 = var1.method560();
-			anInt1329 = var1.method560();
+			anInt1326 = var1.readShortU();
+			anInt1327 = var1.readShortU();
+			anInt1334 = var1.readShortU();
+			anInt1329 = var1.readShortU();
 		} else if ((var2 >= 30) && (var2 < 35)) {
-			aStringArray1344[var2 - 30] = var1.method597();
+			aStringArray1344[var2 - 30] = var1.readStr2();
 			if (aStringArray1344[var2 - 30].equalsIgnoreCase("Hidden"))
 				aStringArray1344[var2 - 30] = null;
 		} else if (var2 == 40) {
-			var3 = var1.method558();
+			var3 = var1.readByteU();
 			aShortArray1330 = new short[var3];
 			aShortArray1331 = new short[var3];
 
 			for (var4 = 0; var4 < var3; ++var4) {
-				aShortArray1330[var4] = (short) var1.method560();
-				aShortArray1331[var4] = (short) var1.method560();
+				aShortArray1330[var4] = (short) var1.readShortU();
+				aShortArray1331[var4] = (short) var1.readShortU();
 			}
 		} else if (var2 == 41) {
-			var3 = var1.method558();
+			var3 = var1.readByteU();
 			aShortArray1345 = new short[var3];
 			aShortArray1333 = new short[var3];
 
 			for (var4 = 0; var4 < var3; ++var4) {
-				aShortArray1345[var4] = (short) var1.method560();
-				aShortArray1333[var4] = (short) var1.method560();
+				aShortArray1345[var4] = (short) var1.readShortU();
+				aShortArray1333[var4] = (short) var1.readShortU();
 			}
 		} else if (var2 == 60) {
-			var3 = var1.method558();
+			var3 = var1.readByteU();
 			anIntArray1341 = new int[var3];
 
 			for (var4 = 0; var4 < var3; ++var4)
-				anIntArray1341[var4] = var1.method560();
+				anIntArray1341[var4] = var1.readShortU();
 		} else if (var2 == 93)
 			aBool1332 = false;
 		else if (var2 == 95)
-			anInt1350 = var1.method560();
+			anInt1350 = var1.readShortU();
 		else if (var2 == 97)
-			anInt1336 = var1.method560();
+			anInt1336 = var1.readShortU();
 		else if (var2 == 98)
-			anInt1337 = var1.method560();
+			anInt1337 = var1.readShortU();
 		else if (var2 == 99)
 			aBool1338 = true;
 		else if (var2 == 100)
-			anInt1315 = var1.method559();
+			anInt1315 = var1.readByte();
 		else if (var2 == 101)
-			anInt1340 = var1.method559() * 5;
+			anInt1340 = var1.readByte() * 5;
 		else if (var2 != 102) {
 			if (var2 == 103)
-				anInt1343 = var1.method560();
+				anInt1343 = var1.readShortU();
 			else if (var2 == 106) {
-				anInt1339 = var1.method560();
+				anInt1339 = var1.readShortU();
 				if (anInt1339 == '\uffff')
 					anInt1339 = -1;
 
-				anInt1351 = var1.method560();
+				anInt1351 = var1.readShortU();
 				if (anInt1351 == '\uffff')
 					anInt1351 = -1;
 
-				var3 = var1.method558();
+				var3 = var1.readByteU();
 				anIntArray1342 = new int[var3 + 1];
 
 				for (var4 = 0; var4 <= var3; ++var4) {
-					anIntArray1342[var4] = var1.method560();
+					anIntArray1342[var4] = var1.readShortU();
 					if (anIntArray1342[var4] == '\uffff')
 						anIntArray1342[var4] = -1;
 				}
@@ -170,9 +170,9 @@ public class Def9 extends Class124_Sub22 {
 			else if (var2 == 111)
 				aBool1348 = true;
 			else if (var2 == 112)
-				anInt1349 = var1.method558();
+				anInt1349 = var1.readByteU();
 		} else
-			anInt1322 = var1.method560();
+			anInt1322 = var1.readShortU();
 
 	}
 
@@ -219,7 +219,7 @@ public class Def9 extends Class124_Sub22 {
 
 	void method642(final RSBuf var1) {
 		while (true) {
-			final int var2 = var1.method558();
+			final int var2 = var1.readByteU();
 			if (var2 == 0)
 				return;
 

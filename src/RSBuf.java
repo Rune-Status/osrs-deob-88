@@ -1,5 +1,3 @@
-import java.awt.Canvas;
-import java.awt.Color;
 import java.math.BigInteger;
 
 public class RSBuf extends Node {
@@ -21,7 +19,7 @@ public class RSBuf extends Node {
 		backing[++pos - 1] = (byte) var1;
 	}
 
-	public int method546() {
+	public int readShort() {
 		pos += 2;
 		int var1 = ((backing[pos - 2] & 255) << 8) + (backing[pos - 1] & 255);
 		if (var1 > 32767)
@@ -30,20 +28,20 @@ public class RSBuf extends Node {
 		return var1;
 	}
 
-	public void method547(final int var1) {
+	public void writeTrib(final int var1) {
 		backing[++pos - 1] = (byte) (var1 >> 16);
 		backing[++pos - 1] = (byte) (var1 >> 8);
 		backing[++pos - 1] = (byte) var1;
 	}
 
-	public void method548(final int var1) {
+	public void writeInt(final int var1) {
 		backing[++pos - 1] = (byte) (var1 >> 24);
 		backing[++pos - 1] = (byte) (var1 >> 16);
 		backing[++pos - 1] = (byte) (var1 >> 8);
 		backing[++pos - 1] = (byte) var1;
 	}
 
-	public void method549(final long var1) {
+	public void writeMidint(final long var1) {
 		backing[++pos - 1] = (byte) ((int) (var1 >> 40));
 		backing[++pos - 1] = (byte) ((int) (var1 >> 32));
 		backing[++pos - 1] = (byte) ((int) (var1 >> 24));
@@ -52,12 +50,12 @@ public class RSBuf extends Node {
 		backing[++pos - 1] = (byte) ((int) var1);
 	}
 
-	public void method550(final String var1) {
+	public void writestr(final String var1) {
 		final int var2 = var1.indexOf(0);
 		if (var2 >= 0)
 			throw new IllegalArgumentException("");
 		else {
-			pos += Class32.method184(var1, 0, var1.length(), backing, pos);
+			pos += Class32.strConvert(var1, 0, var1.length(), backing, pos);
 			backing[++pos - 1] = 0;
 		}
 	}
@@ -65,7 +63,7 @@ public class RSBuf extends Node {
 	public void method551(final CharSequence var1) {
 		final int var2 = Def8.method703(var1);
 		backing[++pos - 1] = 0;
-		method599(var2);
+		writesmart(var2);
 		pos += Class95.method386(backing, pos, var1);
 	}
 
@@ -73,32 +71,32 @@ public class RSBuf extends Node {
 		final int var3 = pos;
 		pos = 0;
 		final byte[] var6 = new byte[var3];
-		method598(var6, 0, var3);
+		readReverse(var6, 0, var3);
 		final BigInteger var4 = new BigInteger(var6);
 		final BigInteger var5 = var4; //.modPow(var1, var2);
 		final byte[] var7 = var5.toByteArray();
 		pos = 0;
 		writeShort(var7.length);
-		method568(var7, 0, var7.length);
+		writeReverse(var7, 0, var7.length);
 	}
 
-	public void method553(final int var1) {
+	public void endSizeInt(final int var1) {
 		backing[pos - var1 - 4] = (byte) (var1 >> 24);
 		backing[pos - var1 - 3] = (byte) (var1 >> 16);
 		backing[pos - var1 - 2] = (byte) (var1 >> 8);
 		backing[pos - var1 - 1] = (byte) var1;
 	}
 
-	public void method554(final int var1) {
+	public void endShortSize(final int var1) {
 		backing[pos - var1 - 2] = (byte) (var1 >> 8);
 		backing[pos - var1 - 1] = (byte) var1;
 	}
 
-	public void method555(final int var1) {
+	public void endByteSize(final int var1) {
 		backing[pos - var1 - 1] = (byte) var1;
 	}
 
-	public void method556(final int var1) {
+	public void writeSmart(final int var1) {
 		if ((var1 >= 0) && (var1 < 128))
 			writeByte(var1);
 		else if ((var1 >= 0) && (var1 < '\u8000'))
@@ -107,26 +105,26 @@ public class RSBuf extends Node {
 			throw new IllegalArgumentException();
 	}
 
-	public int method557() {
+	public int readTri() {
 		pos += 3;
 		return ((backing[pos - 3] & 255) << 16) + ((backing[pos - 2] & 255) << 8)
 				+ (backing[pos - 1] & 255);
 	}
 
-	public int method558() {
+	public int readByteU() {
 		return backing[++pos - 1] & 255;
 	}
 
-	public byte method559() {
+	public byte readByte() {
 		return backing[++pos - 1];
 	}
 
-	public int method560() {
+	public int readShortU() {
 		pos += 2;
 		return (backing[pos - 1] & 255) + ((backing[pos - 2] & 255) << 8);
 	}
 
-	public void method561(final long var1) {
+	public void writeULong(final long var1) {
 		backing[++pos - 1] = (byte) ((int) (var1 >> 56));
 		backing[++pos - 1] = (byte) ((int) (var1 >> 48));
 		backing[++pos - 1] = (byte) ((int) (var1 >> 40));
@@ -137,27 +135,27 @@ public class RSBuf extends Node {
 		backing[++pos - 1] = (byte) ((int) var1);
 	}
 
-	public int method562(final int var1) {
+	public int readInt2(final int var1) {
 		pos += 4;
 		return (backing[pos - 1] & 255) + ((backing[pos - 3] & 255) << 16)
 				+ ((backing[pos - 4] & 255) << 24) + ((backing[pos - 2] & 255) << 8);
 	}
 
-	public long method563() {
-		final long var1 = method562(2076325408) & 4294967295L;
-		final long var3 = method562(-1284272039) & 4294967295L;
+	public long readLong2() {
+		final long var1 = readInt2(2076325408) & 4294967295L;
+		final long var3 = readInt2(-1284272039) & 4294967295L;
 		return (var1 << 32) + var3;
 	}
 
-	public String method564() {
+	public String readStr() {
 		if (backing[pos] == 0) {
 			++pos;
 			return null;
 		} else
-			return method597();
+			return readStr2();
 	}
 
-	public String method565() {
+	public String readStr3() {
 		final byte var1 = backing[++pos - 1];
 		if (var1 != 0)
 			throw new IllegalStateException("");
@@ -168,16 +166,16 @@ public class RSBuf extends Node {
 				;
 
 			final int var3 = pos - var2 - 1;
-			return var3 == 0 ? "" : Class1.method16(backing, var2, var3);
+			return var3 == 0 ? "" : Class1.toString(backing, var2, var3);
 		}
 	}
 
-	public String method566() {
+	public String decodeStr() {
 		final byte var1 = backing[++pos - 1];
 		if (var1 != 0)
 			throw new IllegalStateException("");
 		else {
-			final int var3 = method570();
+			final int var3 = packed();
 			if ((pos + var3) > backing.length)
 				throw new IllegalStateException("");
 			else {
@@ -233,29 +231,29 @@ public class RSBuf extends Node {
 		}
 	}
 
-	public boolean method567() {
+	public boolean matches() {
 		pos -= 4;
-		final int var1 = Class41.method213(backing, 0, pos);
-		final int var2 = method562(-923603984);
+		final int var1 = Class41.clever(backing, 0, pos);
+		final int var2 = readInt2(-923603984);
 		return var1 == var2;
 	}
 
 	public RSBuf(final int var1) {
-		backing = Class62.method277(var1, (byte) -64);
+		backing = Class62.forSize(var1, (byte) -64);
 		pos = 0;
 	}
 
-	public void method568(final byte[] var1, final int var2, final int var3) {
+	public void writeReverse(final byte[] var1, final int var2, final int var3) {
 		for (int var4 = var2; var4 < (var2 + var3); ++var4)
 			backing[++pos - 1] = var1[var4];
 
 	}
 
-	public int method569() {
-		return backing[pos] < 0 ? method562(-266900692) & Integer.MAX_VALUE : method560();
+	public int readUSmart() {
+		return backing[pos] < 0 ? readInt2(-266900692) & Integer.MAX_VALUE : readShortU();
 	}
 
-	public int method570() {
+	public int packed() {
 		byte var1 = backing[++pos - 1];
 
 		int var2;
@@ -265,13 +263,13 @@ public class RSBuf extends Node {
 		return var2 | var1;
 	}
 
-	public void method571(final int[] var1) {
+	public void xtea(final int[] var1) {
 		final int var2 = pos / 8;
 		pos = 0;
 
 		for (int var3 = 0; var3 < var2; ++var3) {
-			int var8 = method562(136116459);
-			int var4 = method562(634114711);
+			int var8 = readInt2(136116459);
+			int var4 = readInt2(634114711);
 			int var5 = 0;
 			final int var6 = -1640531527;
 
@@ -282,19 +280,19 @@ public class RSBuf extends Node {
 			}
 
 			pos -= 8;
-			method548(var8);
-			method548(var4);
+			writeInt(var8);
+			writeInt(var4);
 		}
 
 	}
 
-	public void method572(final int[] var1) {
+	public void xtea2(final int[] var1) {
 		final int var2 = pos / 8;
 		pos = 0;
 
 		for (int var3 = 0; var3 < var2; ++var3) {
-			int var4 = method562(-736189881);
-			int var7 = method562(-1144348664);
+			int var4 = readInt2(-736189881);
+			int var7 = readInt2(-1144348664);
 			int var5 = -957401312;
 			final int var6 = -1640531527;
 
@@ -304,20 +302,20 @@ public class RSBuf extends Node {
 			}
 
 			pos -= 8;
-			method548(var4);
-			method548(var7);
+			writeInt(var4);
+			writeInt(var7);
 		}
 
 	}
 
-	public void method573(final int[] var1, final int var2, final int var3) {
+	public void xtea3(final int[] var1, final int var2, final int var3) {
 		final int var4 = pos;
 		pos = var2;
 		final int var9 = (var3 - var2) / 8;
 
 		for (int var6 = 0; var6 < var9; ++var6) {
-			int var8 = method562(1784886672);
-			int var11 = method562(1812761007);
+			int var8 = readInt2(1784886672);
+			int var11 = readInt2(1812761007);
 			int var7 = 0;
 			final int var5 = -1640531527;
 
@@ -328,57 +326,16 @@ public class RSBuf extends Node {
 			}
 
 			pos -= 8;
-			method548(var8);
-			method548(var11);
+			writeInt(var8);
+			writeInt(var11);
 		}
 
 		pos = var4;
 	}
 
-	static Somet2 method574(final int var0) {
-		Somet2 var1 = (Somet2) Somet2.aClass113_1600.method434(var0);
-		if (var1 != null)
-			return var1;
-		else {
-			final byte[] var3 = Class88.aClass94_Sub1_695.decode(var0, 0);
-			if (var3 == null)
-				return null;
-			else {
-				var1 = new Somet2();
-				final RSBuf var2 = new RSBuf(var3);
-				var2.pos = var2.backing.length - 12;
-				final int var5 = var2.method562(1291183748);
-				var1.anInt1599 = var2.method560();
-				var1.anInt1602 = var2.method560();
-				var1.anInt1597 = var2.method560();
-				var1.anInt1601 = var2.method560();
-				var2.pos = 0;
-				var2.method564();
-				var1.anIntArray1596 = new int[var5];
-				var1.anIntArray1603 = new int[var5];
-				var1.aStringArray1598 = new String[var5];
-
-				int var4;
-				for (int var6 = 0; var2.pos < (var2.backing.length
-						- 12); var1.anIntArray1596[var6++] = var4) {
-					var4 = var2.method560();
-					if (var4 == 3)
-						var1.aStringArray1598[var6] = var2.method597();
-					else if ((var4 < 100) && (var4 != 21) && (var4 != 38) && (var4 != 39))
-						var1.anIntArray1603[var6] = var2.method562(-1869568387);
-					else
-						var1.anIntArray1603[var6] = var2.method558();
-				}
-
-				Somet2.aClass113_1600.method435(var1, var0);
-				return var1;
-			}
-		}
-	}
-
-	public int method575(final int var1) {
-		final int var2 = Class41.method213(backing, var1, pos);
-		method548(var2);
+	public int writeclever(final int var1) {
+		final int var2 = Class41.clever(backing, var1, pos);
+		writeInt(var2);
 		return var2;
 	}
 
@@ -427,14 +384,14 @@ public class RSBuf extends Node {
 		return var1;
 	}
 
-	public void method585(final int[] var1, final int var2, final int var3) {
+	public void xtea5(final int[] var1, final int var2, final int var3) {
 		final int var4 = pos;
 		pos = var2;
 		final int var6 = (var3 - var2) / 8;
 
 		for (int var7 = 0; var7 < var6; ++var7) {
-			int var8 = method562(-698783297);
-			int var5 = method562(-1155644384);
+			int var8 = readInt2(-698783297);
+			int var5 = readInt2(-1155644384);
 			int var9 = -957401312;
 			final int var10 = -1640531527;
 
@@ -444,14 +401,14 @@ public class RSBuf extends Node {
 			}
 
 			pos -= 8;
-			method548(var8);
-			method548(var5);
+			writeInt(var8);
+			writeInt(var5);
 		}
 
 		pos = var4;
 	}
 
-	public void method586(final int var1) {
+	public void readInt(final int var1) {
 		backing[++pos - 1] = (byte) var1;
 		backing[++pos - 1] = (byte) (var1 >> 8);
 		backing[++pos - 1] = (byte) (var1 >> 16);
@@ -514,7 +471,7 @@ public class RSBuf extends Node {
 
 	public int getsmart(final byte var1) {
 		final int var2 = backing[pos] & 255;
-		return var2 < 128 ? method558() : method560() - '\u8000';
+		return var2 < 128 ? readByteU() : readShortU() - '\u8000';
 	}
 
 	static {
@@ -532,23 +489,23 @@ public class RSBuf extends Node {
 
 	}
 
-	public String method597() {
+	public String readStr2() {
 		final int var1 = pos;
 
 		while (backing[++pos - 1] != 0)
 			;
 
 		final int var2 = pos - var1 - 1;
-		return var2 == 0 ? "" : Class1.method16(backing, var1, var2);
+		return var2 == 0 ? "" : Class1.toString(backing, var1, var2);
 	}
 
-	public void method598(final byte[] var1, final int var2, final int var3) {
+	public void readReverse(final byte[] var1, final int var2, final int var3) {
 		for (int var4 = var2; var4 < (var2 + var3); ++var4)
 			var1[var4] = backing[++pos - 1];
 
 	}
 
-	public void method599(final int var1) {
+	public void writesmart(final int var1) {
 		if ((var1 & -128) != 0) {
 			if ((var1 & -16384) != 0) {
 				if ((var1 & -2097152) != 0) {
@@ -567,27 +524,27 @@ public class RSBuf extends Node {
 		writeByte(var1 & 127);
 	}
 
-	public void method600(final String var1) {
+	public void writeStr4(final String var1) {
 		final int var2 = var1.indexOf(0);
 		if (var2 >= 0)
 			throw new IllegalArgumentException("");
 		else {
 			backing[++pos - 1] = 0;
-			pos += Class32.method184(var1, 0, var1.length(), backing, pos);
+			pos += Class32.strConvert(var1, 0, var1.length(), backing, pos);
 			backing[++pos - 1] = 0;
 		}
 	}
 
 	public int method601() {
 		final int var1 = backing[pos] & 255;
-		return var1 >= 128 ? method560() - '\uc000' : method558() - 64;
+		return var1 >= 128 ? readShortU() - '\uc000' : readByteU() - 64;
 	}
 
-	public int method602() {
+	public int readByteN() {
 		return (0 - backing[++pos - 1]) & 255;
 	}
 
-	public void method603(final int var1) {
+	public void writeInt2(final int var1) {
 		backing[++pos - 1] = (byte) (var1 >> 8);
 		backing[++pos - 1] = (byte) var1;
 		backing[++pos - 1] = (byte) (var1 >> 24);
@@ -596,42 +553,5 @@ public class RSBuf extends Node {
 
 	public int method604() {
 		return (128 - backing[++pos - 1]) & 255;
-	}
-
-	static void method605(final int var0) {
-		Class31.method182(Class124_Sub5.aCanvas990);
-		final Canvas var2 = Class124_Sub5.aCanvas990;
-		var2.removeMouseListener(Class81.aClass81_649);
-		var2.removeMouseMotionListener(Class81.aClass81_649);
-		var2.removeFocusListener(Class81.aClass81_649);
-		Class81.anInt663 = 0;
-		if (null != Class47.aClass66_473)
-			Class47.aClass66_473.method290(Class124_Sub5.aCanvas990, (byte) -67);
-
-		Class80.aclient645.method1050();
-		Class124_Sub5.aCanvas990.setBackground(Color.black);
-		final Canvas var1 = Class124_Sub5.aCanvas990;
-		var1.setFocusTraversalKeysEnabled(false);
-		var1.addKeyListener(Class84.aClass84_683);
-		var1.addFocusListener(Class84.aClass84_683);
-		Class82.method329(Class124_Sub5.aCanvas990);
-		if (null != Class47.aClass66_473)
-			Class47.aClass66_473.method293(Class124_Sub5.aCanvas990, (byte) 123);
-
-		if (client.anInt2142 != -1)
-			Class122.method449(client.anInt2142, Class56_Sub2.anInt1083, Class81.anInt662, false);
-
-		Applet_Sub1.aBool1976 = true;
-	}
-
-	static final void method606(final byte var0) {
-		for (int var1 = 0; var1 < client.anInt2022; ++var1) {
-			final int var2 = client.anIntArray2023[var1];
-			final Class124_Sub22_Sub19_Sub3_Sub1 var3 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var2];
-			if (var3 != null) {
-				Class53.method257(var3);
-			}
-		}
-
 	}
 }

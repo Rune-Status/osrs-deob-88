@@ -12,15 +12,15 @@ public class Class134 {
 	public static Comparator aComparator911;
 
 	public Class134(final RSBuf var1, final boolean var2) {
-		final int var4 = var1.method560();
-		final boolean var5 = var1.method558() == 1;
+		final int var4 = var1.readShortU();
+		final boolean var5 = var1.readByteU() == 1;
 		byte var6;
 		if (var5)
 			var6 = 1;
 		else
 			var6 = 0;
 
-		final int var7 = var1.method560();
+		final int var7 = var1.readShortU();
 		aList909 = new ArrayList(var7);
 
 		for (int var3 = 0; var3 < var7; ++var3)

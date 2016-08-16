@@ -1,4 +1,4 @@
-public class Def16 extends Class124_Sub22 {
+public class Def16 extends Node2 {
 	public static int anInt1372;
 	public static Class94 aClass94_1375;
 	public int anInt1374 = 0;
@@ -6,7 +6,7 @@ public class Def16 extends Class124_Sub22 {
 
 	void method669(final RSBuf var1) {
 		while (true) {
-			final int var2 = var1.method558();
+			final int var2 = var1.readByteU();
 			if (var2 == 0)
 				return;
 
@@ -16,7 +16,7 @@ public class Def16 extends Class124_Sub22 {
 
 	void method670(final RSBuf var1, final int var2) {
 		if (var2 == 5)
-			anInt1374 = var1.method560();
+			anInt1374 = var1.readShortU();
 
 	}
 

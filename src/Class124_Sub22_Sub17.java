@@ -1,4 +1,4 @@
-public class Class124_Sub22_Sub17 extends Class124_Sub22 {
+public class Class124_Sub22_Sub17 extends Node2 {
 	Class24[] aClass24Array1595;
 
 	Class124_Sub22_Sub17(final Class94 var1, final Class94 var2, final int var3, final boolean var4) {

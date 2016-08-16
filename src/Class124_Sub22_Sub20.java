@@ -1,4 +1,4 @@
-public class Class124_Sub22_Sub20 extends Class124_Sub22 {
+public class Class124_Sub22_Sub20 extends Node2 {
 	static Class69 aClass69_1642;
 	static Class94_Sub1 aClass94_Sub1_1647;
 	public int anInt1646;

@@ -231,23 +231,23 @@ public class Class124_Sub15 extends Node {
 		var1.writeByte(aBool1097 ? 1 : 0);
 		var1.writeShort(anInt1095);
 		var1.writeByte(anInt1099);
-		var1.method547(anInt1100);
+		var1.writeTrib(anInt1100);
 		var1.writeShort(anInt1112);
-		var1.method600(aString1102);
-		var1.method600(aString1103);
-		var1.method600(aString1108);
-		var1.method600(aString1105);
+		var1.writeStr4(aString1102);
+		var1.writeStr4(aString1103);
+		var1.writeStr4(aString1108);
+		var1.writeStr4(aString1105);
 		var1.writeByte(anInt1094);
 		var1.writeShort(anInt1101);
-		var1.method600(aString1088);
-		var1.method600(aString1109);
+		var1.writeStr4(aString1088);
+		var1.writeStr4(aString1109);
 		var1.writeByte(anInt1091);
 		var1.writeByte(anInt1107);
 
 		for (final int element : anIntArray1110)
-			var1.method548(element);
+			var1.writeInt(element);
 
-		var1.method548(anInt1090);
+		var1.writeInt(anInt1090);
 	}
 
 	public static void method611(final int var0, int var1) {

@@ -272,7 +272,7 @@ public class Class41 {
 						return;
 					}
 
-					final int var7 = var5.method558();
+					final int var7 = var5.readByteU();
 					if ((var7 < 0) || (var7 > 1)) {
 						try {
 							var1.method461();
@@ -283,23 +283,23 @@ public class Class41 {
 						return;
 					}
 
-					final int var9 = var5.method560();
+					final int var9 = var5.readShortU();
 
 					int var10;
 					int var11;
 					int var12;
 					for (var10 = 0; var10 < var9; ++var10) {
-						var11 = var5.method560();
-						var12 = var5.method562(-1149281285);
+						var11 = var5.readShortU();
+						var12 = var5.readInt2(-1149281285);
 						if (aBoolArray402[var11])
 							anIntArray400[var11] = var12;
 					}
 
-					var10 = var5.method560();
+					var10 = var5.readShortU();
 
 					for (var11 = 0; var11 < var10; ++var11) {
-						var12 = var5.method560();
-						final String var13 = var5.method597();
+						var12 = var5.readShortU();
+						final String var13 = var5.readStr2();
 						if (aBoolArray405[var12])
 							aStringArray403[var12] = var13;
 					}
@@ -377,7 +377,7 @@ public class Class41 {
 					for (var7 = 0; var7 < anIntArray400.length; ++var7)
 						if (aBoolArray402[var7] && (anIntArray400[var7] != -1)) {
 							var6.writeShort(var7);
-							var6.method548(anIntArray400[var7]);
+							var6.writeInt(anIntArray400[var7]);
 						}
 
 					var6.writeShort(var4);
@@ -391,7 +391,7 @@ public class Class41 {
 
 						if (aBoolArray405[var7] && (aStringArray403[var7] != null)) {
 							var6.writeShort(var7);
-							var6.method550(aStringArray403[var7]);
+							var6.writestr(aStringArray403[var7]);
 						}
 
 						++var7;
@@ -477,7 +477,7 @@ public class Class41 {
 		return var4;
 	}
 
-	public static int method213(final byte[] var0, final int var1, final int var2) {
+	public static int clever(final byte[] var0, final int var1, final int var2) {
 		int var3 = -1;
 
 		for (int var4 = var1; var4 < var2; ++var4)

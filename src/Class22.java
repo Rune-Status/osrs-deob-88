@@ -18,23 +18,23 @@ public class Class22 {
 
 	Class22(final RSBuf var1) {
 		if ((var1 != null) && (null != var1.backing)) {
-			final int var3 = var1.method558();
+			final int var3 = var1.readByteU();
 			if ((var3 >= 0) && (var3 <= anInt247)) {
-				if (var1.method558() == 1)
+				if (var1.readByteU() == 1)
 					aBool248 = true;
 
 				if (var3 > 1)
-					aBool249 = var1.method558() == 1;
+					aBool249 = var1.readByteU() == 1;
 
 				if (var3 > 3)
-					anInt250 = var1.method558();
+					anInt250 = var1.readByteU();
 
 				if (var3 > 2) {
-					final int var5 = var1.method558();
+					final int var5 = var1.readByteU();
 
 					for (int var2 = 0; var2 < var5; ++var2) {
-						final int var4 = var1.method562(124818784);
-						final int var6 = var1.method562(727724141);
+						final int var4 = var1.readInt2(124818784);
+						final int var6 = var1.readInt2(727724141);
 						aLinkedHashMap252.put(Integer.valueOf(var4), Integer.valueOf(var6));
 					}
 				}
@@ -56,8 +56,8 @@ public class Class22 {
 
 		while (var2.hasNext()) {
 			final Entry var3 = (Entry) var2.next();
-			var1.method548(((Integer) var3.getKey()).intValue());
-			var1.method548(((Integer) var3.getValue()).intValue());
+			var1.writeInt(((Integer) var3.getKey()).intValue());
+			var1.writeInt(((Integer) var3.getValue()).intValue());
 		}
 
 		return var1;

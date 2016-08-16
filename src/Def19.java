@@ -1,4 +1,4 @@
-public class Def19 extends Class124_Sub22 {
+public class Def19 extends Node2 {
 	static int anInt1439;
 	static int anInt1440;
 	static Class94 aClass94_1441;
@@ -7,7 +7,7 @@ public class Def19 extends Class124_Sub22 {
 
 	void method694(final RSBuf var1) {
 		while (true) {
-			final int var2 = var1.method558();
+			final int var2 = var1.readByteU();
 			if (var2 == 0)
 				return;
 

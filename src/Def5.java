@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.RandomAccessFile;
 
-public class Def5 extends Class124_Sub22 {
+public class Def5 extends Node2 {
 	static int[] anIntArray1453;
 	static Class45 aClass45_1455;
 	public static Class94 aClass94_1456;
@@ -10,7 +10,7 @@ public class Def5 extends Class124_Sub22 {
 
 	void method704(final RSBuf var1) {
 		while (true) {
-			final int var2 = var1.method558();
+			final int var2 = var1.readByteU();
 			if (var2 == 0)
 				return;
 
@@ -42,7 +42,7 @@ public class Def5 extends Class124_Sub22 {
 					var12 += var11 - 1;
 					final int var13 = var12 & 63;
 					final int var14 = (var12 >> 6) & 63;
-					final int var15 = var6.method558() >> 2;
+					final int var15 = var6.readByteU() >> 2;
 					final int var8 = var14 + var1;
 					final int var10 = var13 + var2;
 					if ((var8 > 0) && (var10 > 0) && (var8 < 103) && (var10 < 103)) {
@@ -63,7 +63,7 @@ public class Def5 extends Class124_Sub22 {
 				if (var11 == 0)
 					break;
 
-				var6.method558();
+				var6.readByteU();
 			}
 		}
 	}
@@ -133,7 +133,7 @@ public class Def5 extends Class124_Sub22 {
 
 	void method709(final RSBuf var1, final int var2) {
 		if (var2 == 2)
-			anInt1457 = var1.method560();
+			anInt1457 = var1.readShortU();
 
 	}
 }

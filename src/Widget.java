@@ -144,37 +144,37 @@ public class Widget extends Node {
 
 	void method620(final RSBuf var1) {
 		aBool1152 = false;
-		anInt1191 = var1.method558();
-		anInt1156 = var1.method558();
-		anInt1157 = var1.method560();
-		anInt1216 = var1.method546();
-		anInt1163 = var1.method546();
-		anInt1257 = var1.method560();
-		anInt1165 = var1.method560();
-		anInt1183 = var1.method558();
-		anInt1259 = var1.method560();
+		anInt1191 = var1.readByteU();
+		anInt1156 = var1.readByteU();
+		anInt1157 = var1.readShortU();
+		anInt1216 = var1.readShort();
+		anInt1163 = var1.readShort();
+		anInt1257 = var1.readShortU();
+		anInt1165 = var1.readShortU();
+		anInt1183 = var1.readByteU();
+		anInt1259 = var1.readShortU();
 		if (anInt1259 == '\uffff')
 			anInt1259 = -1;
 		else
 			anInt1259 += anInt1284 & -65536;
 
-		anInt1266 = var1.method560();
+		anInt1266 = var1.readShortU();
 		if (anInt1266 == '\uffff')
 			anInt1266 = -1;
 
-		final int var4 = var1.method558();
+		final int var4 = var1.readByteU();
 		int var5;
 		if (var4 > 0) {
 			anIntArray1264 = new int[var4];
 			anIntArray1241 = new int[var4];
 
 			for (var5 = 0; var5 < var4; ++var5) {
-				anIntArray1264[var5] = var1.method558();
-				anIntArray1241[var5] = var1.method560();
+				anIntArray1264[var5] = var1.readByteU();
+				anIntArray1241[var5] = var1.readShortU();
 			}
 		}
 
-		var5 = var1.method558();
+		var5 = var1.readByteU();
 		int var2;
 		int var6;
 		int var7;
@@ -182,11 +182,11 @@ public class Widget extends Node {
 			anIntArrayArray1278 = new int[var5][];
 
 			for (var6 = 0; var6 < var5; ++var6) {
-				var7 = var1.method560();
+				var7 = var1.readShortU();
 				anIntArrayArray1278[var6] = new int[var7];
 
 				for (var2 = 0; var2 < var7; ++var2) {
-					anIntArrayArray1278[var6][var2] = var1.method560();
+					anIntArrayArray1278[var6][var2] = var1.readShortU();
 					if (anIntArrayArray1278[var6][var2] == '\uffff')
 						anIntArrayArray1278[var6][var2] = -1;
 				}
@@ -194,47 +194,47 @@ public class Widget extends Node {
 		}
 
 		if (anInt1191 == 0) {
-			anInt1177 = var1.method560();
-			aBool1173 = var1.method558() == 1;
+			anInt1177 = var1.readShortU();
+			aBool1173 = var1.readByteU() == 1;
 		}
 
 		if (anInt1191 == 1) {
-			var1.method560();
-			var1.method558();
+			var1.readShortU();
+			var1.readByteU();
 		}
 
 		if (anInt1191 == 2) {
 			anIntArray1269 = new int[anInt1257 * anInt1165];
 			anIntArray1270 = new int[anInt1257 * anInt1165];
-			var6 = var1.method558();
+			var6 = var1.readByteU();
 			if (var6 == 1)
 				anInt1190 |= 268435456;
 
-			var7 = var1.method558();
+			var7 = var1.readByteU();
 			if (var7 == 1)
 				anInt1190 |= 1073741824;
 
-			var2 = var1.method558();
+			var2 = var1.readByteU();
 			if (var2 == 1)
 				anInt1190 |= Integer.MIN_VALUE;
 
-			final int var8 = var1.method558();
+			final int var8 = var1.readByteU();
 			if (var8 == 1)
 				anInt1190 |= 536870912;
 
-			anInt1217 = var1.method558();
-			anInt1180 = var1.method558();
+			anInt1217 = var1.readByteU();
+			anInt1180 = var1.readByteU();
 			anIntArray1219 = new int[20];
 			anIntArray1220 = new int[20];
 			anIntArray1221 = new int[20];
 
 			int var3;
 			for (var3 = 0; var3 < 20; ++var3) {
-				final int var9 = var1.method558();
+				final int var9 = var1.readByteU();
 				if (var9 == 1) {
-					anIntArray1219[var3] = var1.method546();
-					anIntArray1220[var3] = var1.method546();
-					anIntArray1221[var3] = var1.method562(-373401819);
+					anIntArray1219[var3] = var1.readShort();
+					anIntArray1220[var3] = var1.readShort();
+					anIntArray1221[var3] = var1.readInt2(-373401819);
 				} else
 					anIntArray1221[var3] = -1;
 			}
@@ -242,7 +242,7 @@ public class Widget extends Node {
 			aStringArray1172 = new String[5];
 
 			for (var3 = 0; var3 < 5; ++var3) {
-				final String var10 = var1.method597();
+				final String var10 = var1.readStr2();
 				if (var10.length() > 0) {
 					aStringArray1172[var3] = var10;
 					anInt1190 |= 1 << (23 + var3);
@@ -251,82 +251,82 @@ public class Widget extends Node {
 		}
 
 		if (anInt1191 == 3)
-			aBool1218 = var1.method558() == 1;
+			aBool1218 = var1.readByteU() == 1;
 
 		if ((anInt1191 == 4) || (anInt1191 == 1)) {
-			anInt1214 = var1.method558();
-			anInt1215 = var1.method558();
-			anInt1213 = var1.method558();
-			anInt1155 = var1.method560();
+			anInt1214 = var1.readByteU();
+			anInt1215 = var1.readByteU();
+			anInt1213 = var1.readByteU();
+			anInt1155 = var1.readShortU();
 			if (anInt1155 == '\uffff')
 				anInt1155 = -1;
 
-			aBool1211 = var1.method558() == 1;
+			aBool1211 = var1.readByteU() == 1;
 		}
 
 		if (anInt1191 == 4) {
-			aString1185 = var1.method597();
-			aString1212 = var1.method597();
+			aString1185 = var1.readStr2();
+			aString1212 = var1.readStr2();
 		}
 
 		if ((anInt1191 == 1) || (anInt1191 == 3) || (anInt1191 == 4))
-			anInt1178 = var1.method562(1998904538);
+			anInt1178 = var1.readInt2(1998904538);
 
 		if ((anInt1191 == 3) || (anInt1191 == 4)) {
-			anInt1179 = var1.method562(-445169034);
-			anInt1242 = var1.method562(494585686);
-			anInt1181 = var1.method562(-1316045891);
+			anInt1179 = var1.readInt2(-445169034);
+			anInt1242 = var1.readInt2(494585686);
+			anInt1181 = var1.readInt2(-1316045891);
 		}
 
 		if (anInt1191 == 5) {
-			anInt1186 = var1.method562(-1008048148);
-			anInt1187 = var1.method562(-1002976715);
+			anInt1186 = var1.readInt2(-1008048148);
+			anInt1187 = var1.readInt2(-1002976715);
 		}
 
 		if (anInt1191 == 6) {
 			anInt1229 = 1;
-			anInt1197 = var1.method560();
+			anInt1197 = var1.readShortU();
 			if (anInt1197 == '\uffff')
 				anInt1197 = -1;
 
 			anInt1196 = 1;
-			anInt1265 = var1.method560();
+			anInt1265 = var1.readShortU();
 			if (anInt1265 == '\uffff')
 				anInt1265 = -1;
 
-			anInt1222 = var1.method560();
+			anInt1222 = var1.readShortU();
 			if (anInt1222 == '\uffff')
 				anInt1222 = -1;
 
-			anInt1199 = var1.method560();
+			anInt1199 = var1.readShortU();
 			if (anInt1199 == '\uffff')
 				anInt1199 = -1;
 
-			anInt1205 = var1.method560();
-			anInt1202 = var1.method560();
-			anInt1203 = var1.method560();
+			anInt1205 = var1.readShortU();
+			anInt1202 = var1.readShortU();
+			anInt1203 = var1.readShortU();
 		}
 
 		if (anInt1191 == 7) {
 			anIntArray1269 = new int[anInt1165 * anInt1257];
 			anIntArray1270 = new int[anInt1165 * anInt1257];
-			anInt1214 = var1.method558();
-			anInt1155 = var1.method560();
+			anInt1214 = var1.readByteU();
+			anInt1155 = var1.readShortU();
 			if (anInt1155 == '\uffff')
 				anInt1155 = -1;
 
-			aBool1211 = var1.method558() == 1;
-			anInt1178 = var1.method562(1311246097);
-			anInt1217 = var1.method546();
-			anInt1180 = var1.method546();
-			var6 = var1.method558();
+			aBool1211 = var1.readByteU() == 1;
+			anInt1178 = var1.readInt2(1311246097);
+			anInt1217 = var1.readShort();
+			anInt1180 = var1.readShort();
+			var6 = var1.readByteU();
 			if (var6 == 1)
 				anInt1190 |= 1073741824;
 
 			aStringArray1172 = new String[5];
 
 			for (var7 = 0; var7 < 5; ++var7) {
-				final String var11 = var1.method597();
+				final String var11 = var1.readStr2();
 				if (var11.length() > 0) {
 					aStringArray1172[var7] = var11;
 					anInt1190 |= 1 << (var7 + 23);
@@ -335,17 +335,17 @@ public class Widget extends Node {
 		}
 
 		if (anInt1191 == 8)
-			aString1185 = var1.method597();
+			aString1185 = var1.readStr2();
 
 		if ((anInt1156 == 2) || (anInt1191 == 2)) {
-			aString1230 = var1.method597();
-			aString1240 = var1.method597();
-			var6 = var1.method560() & 63;
+			aString1230 = var1.readStr2();
+			aString1240 = var1.readStr2();
+			var6 = var1.readShortU() & 63;
 			anInt1190 |= var6 << 11;
 		}
 
 		if ((anInt1156 == 1) || (anInt1156 == 4) || (anInt1156 == 5) || (anInt1156 == 6)) {
-			aString1268 = var1.method597();
+			aString1268 = var1.readStr2();
 			if (aString1268.length() == 0) {
 				if (anInt1156 == 1)
 					aString1268 = "Ok";
@@ -370,110 +370,110 @@ public class Widget extends Node {
 	}
 
 	void method621(final RSBuf var1) {
-		var1.method558();
+		var1.readByteU();
 		aBool1152 = true;
-		anInt1191 = var1.method558();
-		anInt1157 = var1.method560();
-		anInt1216 = var1.method546();
-		anInt1163 = var1.method546();
-		anInt1257 = var1.method560();
+		anInt1191 = var1.readByteU();
+		anInt1157 = var1.readShortU();
+		anInt1216 = var1.readShort();
+		anInt1163 = var1.readShort();
+		anInt1257 = var1.readShortU();
 		if (anInt1191 == 9)
-			anInt1165 = var1.method546();
+			anInt1165 = var1.readShort();
 		else
-			anInt1165 = var1.method560();
+			anInt1165 = var1.readShortU();
 
-		anInt1210 = var1.method559();
-		anInt1161 = var1.method559();
-		anInt1158 = var1.method559();
-		anInt1148 = var1.method559();
-		anInt1259 = var1.method560();
+		anInt1210 = var1.readByte();
+		anInt1161 = var1.readByte();
+		anInt1158 = var1.readByte();
+		anInt1148 = var1.readByte();
+		anInt1259 = var1.readShortU();
 		if (anInt1259 == '\uffff')
 			anInt1259 = -1;
 		else
 			anInt1259 += anInt1284 & -65536;
 
-		aBool1173 = var1.method558() == 1;
+		aBool1173 = var1.readByteU() == 1;
 		if (anInt1191 == 0) {
-			anInt1176 = var1.method560();
-			anInt1177 = var1.method560();
-			aBool1260 = var1.method558() == 1;
+			anInt1176 = var1.readShortU();
+			anInt1177 = var1.readShortU();
+			aBool1260 = var1.readByteU() == 1;
 		}
 
 		if (anInt1191 == 5) {
-			anInt1186 = var1.method562(652651391);
-			anInt1188 = var1.method560();
-			aBool1189 = var1.method558() == 1;
-			anInt1183 = var1.method558();
-			anInt1167 = var1.method558();
-			anInt1280 = var1.method562(-72929628);
-			aBool1192 = var1.method558() == 1;
-			aBool1193 = var1.method558() == 1;
+			anInt1186 = var1.readInt2(652651391);
+			anInt1188 = var1.readShortU();
+			aBool1189 = var1.readByteU() == 1;
+			anInt1183 = var1.readByteU();
+			anInt1167 = var1.readByteU();
+			anInt1280 = var1.readInt2(-72929628);
+			aBool1192 = var1.readByteU() == 1;
+			aBool1193 = var1.readByteU() == 1;
 		}
 
 		if (anInt1191 == 6) {
 			anInt1229 = 1;
-			anInt1197 = var1.method560();
+			anInt1197 = var1.readShortU();
 			if (anInt1197 == '\uffff')
 				anInt1197 = -1;
 
-			anInt1200 = var1.method546();
-			anInt1201 = var1.method546();
-			anInt1202 = var1.method560();
-			anInt1203 = var1.method560();
-			anInt1204 = var1.method560();
-			anInt1205 = var1.method560();
-			anInt1222 = var1.method560();
+			anInt1200 = var1.readShort();
+			anInt1201 = var1.readShort();
+			anInt1202 = var1.readShortU();
+			anInt1203 = var1.readShortU();
+			anInt1204 = var1.readShortU();
+			anInt1205 = var1.readShortU();
+			anInt1222 = var1.readShortU();
 			if (anInt1222 == '\uffff')
 				anInt1222 = -1;
 
-			aBool1208 = var1.method558() == 1;
-			var1.method560();
+			aBool1208 = var1.readByteU() == 1;
+			var1.readShortU();
 			if (anInt1210 != 0)
-				anInt1206 = var1.method560();
+				anInt1206 = var1.readShortU();
 
 			if (anInt1161 != 0)
-				var1.method560();
+				var1.readShortU();
 		}
 
 		if (anInt1191 == 4) {
-			anInt1155 = var1.method560();
+			anInt1155 = var1.readShortU();
 			if (anInt1155 == '\uffff')
 				anInt1155 = -1;
 
-			aString1185 = var1.method597();
-			anInt1213 = var1.method558();
-			anInt1214 = var1.method558();
-			anInt1215 = var1.method558();
-			aBool1211 = var1.method558() == 1;
-			anInt1178 = var1.method562(703575280);
+			aString1185 = var1.readStr2();
+			anInt1213 = var1.readByteU();
+			anInt1214 = var1.readByteU();
+			anInt1215 = var1.readByteU();
+			aBool1211 = var1.readByteU() == 1;
+			anInt1178 = var1.readInt2(703575280);
 		}
 
 		if (anInt1191 == 3) {
-			anInt1178 = var1.method562(110244804);
-			aBool1218 = var1.method558() == 1;
-			anInt1183 = var1.method558();
+			anInt1178 = var1.readInt2(110244804);
+			aBool1218 = var1.readByteU() == 1;
+			anInt1183 = var1.readByteU();
 		}
 
 		if (anInt1191 == 9) {
-			anInt1237 = var1.method558();
-			anInt1178 = var1.method562(829487585);
-			aBool1182 = var1.method558() == 1;
+			anInt1237 = var1.readByteU();
+			anInt1178 = var1.readInt2(829487585);
+			aBool1182 = var1.readByteU() == 1;
 		}
 
-		anInt1190 = var1.method557();
-		aString1224 = var1.method597();
-		final int var2 = var1.method558();
+		anInt1190 = var1.readTri();
+		aString1224 = var1.readStr2();
+		final int var2 = var1.readByteU();
 		if (var2 > 0) {
 			aStringArray1225 = new String[var2];
 
 			for (int var3 = 0; var3 < var2; ++var3)
-				aStringArray1225[var3] = var1.method597();
+				aStringArray1225[var3] = var1.readStr2();
 		}
 
-		anInt1227 = var1.method558();
-		anInt1228 = var1.method558();
-		aBool1153 = var1.method558() == 1;
-		aString1230 = var1.method597();
+		anInt1227 = var1.readByteU();
+		anInt1228 = var1.readByteU();
+		aBool1153 = var1.readByteU() == 1;
+		aString1230 = var1.readStr2();
 		anObjectArray1232 = method622(var1);
 		anObjectArray1226 = method622(var1);
 		anObjectArray1160 = method622(var1);
@@ -498,18 +498,18 @@ public class Widget extends Node {
 	}
 
 	Object[] method622(final RSBuf var1) {
-		final int var2 = var1.method558();
+		final int var2 = var1.readByteU();
 		if (var2 == 0)
 			return null;
 		else {
 			final Object[] var4 = new Object[var2];
 
 			for (int var5 = 0; var5 < var2; ++var5) {
-				final int var3 = var1.method558();
+				final int var3 = var1.readByteU();
 				if (var3 == 0)
-					var4[var5] = new Integer(var1.method562(1847496091));
+					var4[var5] = new Integer(var1.readInt2(1847496091));
 				else if (var3 == 1)
-					var4[var5] = var1.method597();
+					var4[var5] = var1.readStr2();
 			}
 
 			aBool1195 = true;
@@ -518,14 +518,14 @@ public class Widget extends Node {
 	}
 
 	int[] method623(final RSBuf var1) {
-		final int var2 = var1.method558();
+		final int var2 = var1.readByteU();
 		if (var2 == 0)
 			return null;
 		else {
 			final int[] var3 = new int[var2];
 
 			for (int var4 = 0; var4 < var2; ++var4)
-				var3[var4] = var1.method562(-884078844);
+				var3[var4] = var1.readInt2(-884078844);
 
 			return var3;
 		}

@@ -24,7 +24,7 @@ public class Class45 {
 			Class27.aByteArrayArrayArray285[var1][var2][var3] = 0;
 
 			while (true) {
-				var7 = var0.method558();
+				var7 = var0.readByteU();
 				if (var7 == 0) {
 					if (var1 == 0)
 						Class27.anIntArrayArrayArray284[0][var2][var3] = -Class30.method172(var4 + 932731 + var2,
@@ -36,7 +36,7 @@ public class Class45 {
 				}
 
 				if (var7 == 1) {
-					int var8 = var0.method558();
+					int var8 = var0.readByteU();
 					if (var8 == 1)
 						var8 = 0;
 
@@ -49,7 +49,7 @@ public class Class45 {
 				}
 
 				if (var7 <= 49) {
-					Class57.aByteArrayArrayArray537[var1][var2][var3] = var0.method559();
+					Class57.aByteArrayArrayArray537[var1][var2][var3] = var0.readByte();
 					Class27.aByteArrayArrayArray288[var1][var2][var3] = (byte) ((var7 - 2) / 4);
 					Class3.aByteArrayArrayArray17[var1][var2][var3] = (byte) (((var7 - 2) + var6) & 3);
 				} else if (var7 <= 81)
@@ -59,17 +59,17 @@ public class Class45 {
 			}
 		} else
 			while (true) {
-				var7 = var0.method558();
+				var7 = var0.readByteU();
 				if (var7 == 0)
 					break;
 
 				if (var7 == 1) {
-					var0.method558();
+					var0.readByteU();
 					break;
 				}
 
 				if (var7 <= 49)
-					var0.method558();
+					var0.readByteU();
 			}
 
 	}
@@ -97,7 +97,7 @@ public class Class45 {
 
 					anInt443 += aDataInputStream441.read(aByteArray442, anInt443, var3);
 					if (anInt443 == 4) {
-						final int var2 = (new RSBuf(aByteArray442)).method562(-502146649);
+						final int var2 = (new RSBuf(aByteArray442)).readInt2(-502146649);
 						aByteArray444 = new byte[var2];
 						anInt449 = 2;
 					}
@@ -175,7 +175,7 @@ public class Class45 {
 					else {
 						client.aClass124_Sub14_Sub1_2024.method837(70);
 						client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
-						client.aClass124_Sub14_Sub1_2024.method550(var0);
+						client.aClass124_Sub14_Sub1_2024.writestr(var0);
 					}
 				}
 			} else

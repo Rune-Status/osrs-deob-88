@@ -163,37 +163,37 @@ public class Class124_Sub8 extends Node {
 	}
 
 	Class124_Sub8(final RSBuf var1) {
-		anInt1017 = var1.method560();
-		aBool1019 = var1.method558() == 1;
-		final int var3 = var1.method558();
+		anInt1017 = var1.readShortU();
+		aBool1019 = var1.readByteU() == 1;
+		final int var3 = var1.readByteU();
 		if ((var3 >= 1) && (var3 <= 4)) {
 			anIntArray1016 = new int[var3];
 
 			int var2;
 			for (var2 = 0; var2 < var3; ++var2)
-				anIntArray1016[var2] = var1.method560();
+				anIntArray1016[var2] = var1.readShortU();
 
 			if (var3 > 1) {
 				anIntArray1018 = new int[var3 - 1];
 
 				for (var2 = 0; var2 < (var3 - 1); ++var2)
-					anIntArray1018[var2] = var1.method558();
+					anIntArray1018[var2] = var1.readByteU();
 			}
 
 			if (var3 > 1) {
 				anIntArray1021 = new int[var3 - 1];
 
 				for (var2 = 0; var2 < (var3 - 1); ++var2)
-					anIntArray1021[var2] = var1.method558();
+					anIntArray1021[var2] = var1.readByteU();
 			}
 
 			anIntArray1020 = new int[var3];
 
 			for (var2 = 0; var2 < var3; ++var2)
-				anIntArray1020[var2] = var1.method562(-369636873);
+				anIntArray1020[var2] = var1.readInt2(-369636873);
 
-			anInt1022 = var1.method558();
-			anInt1023 = var1.method558();
+			anInt1022 = var1.readByteU();
+			anInt1023 = var1.readByteU();
 			anIntArray1015 = null;
 		} else
 			throw new RuntimeException();

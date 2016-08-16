@@ -1,6 +1,6 @@
-public class Class124_Sub22 extends Node {
-	public Class124_Sub22 aClass124_Sub22_1303;
-	public Class124_Sub22 aClass124_Sub22_1304;
+public class Node2 extends Node {
+	public Node2 aClass124_Sub22_1303;
+	public Node2 aClass124_Sub22_1304;
 
 	public void method637() {
 		if (aClass124_Sub22_1304 != null) {

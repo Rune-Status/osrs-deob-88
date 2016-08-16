@@ -64,20 +64,20 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		final RSBuf var3 = new RSBuf(var1);
 		final RSBuf var54 = new RSBuf(var1);
 		var2.pos = var1.length - 23;
-		final int var10 = var2.method560();
-		final int var28 = var2.method560();
-		final int var18 = var2.method558();
-		final int var13 = var2.method558();
-		final int var14 = var2.method558();
-		final int var11 = var2.method558();
-		final int var16 = var2.method558();
-		final int var17 = var2.method558();
-		final int var47 = var2.method558();
-		final int var20 = var2.method560();
-		final int var19 = var2.method560();
-		final int var42 = var2.method560();
-		final int var37 = var2.method560();
-		final int var23 = var2.method560();
+		final int var10 = var2.readShortU();
+		final int var28 = var2.readShortU();
+		final int var18 = var2.readByteU();
+		final int var13 = var2.readByteU();
+		final int var14 = var2.readByteU();
+		final int var11 = var2.readByteU();
+		final int var16 = var2.readByteU();
+		final int var17 = var2.readByteU();
+		final int var47 = var2.readByteU();
+		final int var20 = var2.readShortU();
+		final int var19 = var2.readShortU();
+		final int var42 = var2.readShortU();
+		final int var37 = var2.readShortU();
+		final int var23 = var2.readShortU();
 		int var24 = 0;
 		int var25 = 0;
 		int var26 = 0;
@@ -87,7 +87,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 			var2.pos = 0;
 
 			for (var21 = 0; var21 < var18; ++var21) {
-				final byte var29 = aByteArray1768[var21] = var2.method559();
+				final byte var29 = aByteArray1768[var21] = var2.readByte();
 				if (var29 == 0)
 					++var24;
 
@@ -215,7 +215,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		int var30;
 		int var46;
 		for (var8 = 0; var8 < var10; ++var8) {
-			var30 = var2.method558();
+			var30 = var2.readByteU();
 			var15 = 0;
 			if ((var30 & 1) != 0)
 				var15 = var12.method601();
@@ -235,7 +235,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 			var52 = anIntArray1746[var8];
 			var53 = anIntArray1747[var8];
 			if (var47 == 1)
-				anIntArray1771[var8] = var7.method558();
+				anIntArray1771[var8] = var7.readByteU();
 		}
 
 		var2.pos = var39;
@@ -247,24 +247,24 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		var54.pos = var38;
 
 		for (var8 = 0; var8 < var28; ++var8) {
-			aShortArray1750[var8] = (short) var2.method560();
+			aShortArray1750[var8] = (short) var2.readShortU();
 			if (var13 == 1)
-				aByteArray1752[var8] = var12.method559();
+				aByteArray1752[var8] = var12.readByte();
 
 			if (var14 == 255)
-				aByteArray1755[var8] = var5.method559();
+				aByteArray1755[var8] = var5.readByte();
 
 			if (var11 == 1)
-				aByteArray1754[var8] = var6.method559();
+				aByteArray1754[var8] = var6.readByte();
 
 			if (var16 == 1)
-				anIntArray1772[var8] = var7.method558();
+				anIntArray1772[var8] = var7.readByteU();
 
 			if (var17 == 1)
-				aShortArray1757[var8] = (short) (var3.method560() - 1);
+				aShortArray1757[var8] = (short) (var3.readShortU() - 1);
 
 			if ((aByteArray1790 != null) && (aShortArray1757[var8] != -1))
-				aByteArray1790[var8] = (byte) (var54.method558() - 1);
+				aByteArray1790[var8] = (byte) (var54.readByteU() - 1);
 		}
 
 		var2.pos = var36;
@@ -276,7 +276,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 
 		int var44;
 		for (var9 = 0; var9 < var28; ++var9) {
-			var44 = var12.method558();
+			var44 = var12.readByteU();
 			if (var44 == 1) {
 				var8 = var2.method601() + var46;
 				var30 = var2.method601() + var8;
@@ -327,57 +327,57 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		for (var9 = 0; var9 < var18; ++var9) {
 			var44 = aByteArray1768[var9] & 255;
 			if (var44 == 0) {
-				aShortArray1761[var9] = (short) var2.method560();
-				aShortArray1762[var9] = (short) var2.method560();
-				aShortArray1763[var9] = (short) var2.method560();
+				aShortArray1761[var9] = (short) var2.readShortU();
+				aShortArray1762[var9] = (short) var2.readShortU();
+				aShortArray1763[var9] = (short) var2.readShortU();
 			}
 
 			if (var44 == 1) {
-				aShortArray1761[var9] = (short) var12.method560();
-				aShortArray1762[var9] = (short) var12.method560();
-				aShortArray1763[var9] = (short) var12.method560();
-				aShortArray1753[var9] = (short) var5.method560();
-				aShortArray1765[var9] = (short) var5.method560();
-				aShortArray1766[var9] = (short) var5.method560();
-				aShortArray1745[var9] = (short) var6.method560();
-				aByteArray1770[var9] = var7.method559();
-				aShortArray1789[var9] = (short) var3.method560();
+				aShortArray1761[var9] = (short) var12.readShortU();
+				aShortArray1762[var9] = (short) var12.readShortU();
+				aShortArray1763[var9] = (short) var12.readShortU();
+				aShortArray1753[var9] = (short) var5.readShortU();
+				aShortArray1765[var9] = (short) var5.readShortU();
+				aShortArray1766[var9] = (short) var5.readShortU();
+				aShortArray1745[var9] = (short) var6.readShortU();
+				aByteArray1770[var9] = var7.readByte();
+				aShortArray1789[var9] = (short) var3.readShortU();
 			}
 
 			if (var44 == 2) {
-				aShortArray1761[var9] = (short) var12.method560();
-				aShortArray1762[var9] = (short) var12.method560();
-				aShortArray1763[var9] = (short) var12.method560();
-				aShortArray1753[var9] = (short) var5.method560();
-				aShortArray1765[var9] = (short) var5.method560();
-				aShortArray1766[var9] = (short) var5.method560();
-				aShortArray1745[var9] = (short) var6.method560();
-				aByteArray1770[var9] = var7.method559();
-				aShortArray1789[var9] = (short) var3.method560();
-				aShortArray1769[var9] = (short) var3.method560();
+				aShortArray1761[var9] = (short) var12.readShortU();
+				aShortArray1762[var9] = (short) var12.readShortU();
+				aShortArray1763[var9] = (short) var12.readShortU();
+				aShortArray1753[var9] = (short) var5.readShortU();
+				aShortArray1765[var9] = (short) var5.readShortU();
+				aShortArray1766[var9] = (short) var5.readShortU();
+				aShortArray1745[var9] = (short) var6.readShortU();
+				aByteArray1770[var9] = var7.readByte();
+				aShortArray1789[var9] = (short) var3.readShortU();
+				aShortArray1769[var9] = (short) var3.readShortU();
 			}
 
 			if (var44 == 3) {
-				aShortArray1761[var9] = (short) var12.method560();
-				aShortArray1762[var9] = (short) var12.method560();
-				aShortArray1763[var9] = (short) var12.method560();
-				aShortArray1753[var9] = (short) var5.method560();
-				aShortArray1765[var9] = (short) var5.method560();
-				aShortArray1766[var9] = (short) var5.method560();
-				aShortArray1745[var9] = (short) var6.method560();
-				aByteArray1770[var9] = var7.method559();
-				aShortArray1789[var9] = (short) var3.method560();
+				aShortArray1761[var9] = (short) var12.readShortU();
+				aShortArray1762[var9] = (short) var12.readShortU();
+				aShortArray1763[var9] = (short) var12.readShortU();
+				aShortArray1753[var9] = (short) var5.readShortU();
+				aShortArray1765[var9] = (short) var5.readShortU();
+				aShortArray1766[var9] = (short) var5.readShortU();
+				aShortArray1745[var9] = (short) var6.readShortU();
+				aByteArray1770[var9] = var7.readByte();
+				aShortArray1789[var9] = (short) var3.readShortU();
 			}
 		}
 
 		var2.pos = var21;
-		var9 = var2.method558();
+		var9 = var2.readByteU();
 		if (var9 != 0) {
 			new Class40();
-			var2.method560();
-			var2.method560();
-			var2.method560();
-			var2.method562(-1329302449);
+			var2.readShortU();
+			var2.readShortU();
+			var2.readShortU();
+			var2.readInt2(-1329302449);
 		}
 
 	}
@@ -1049,18 +1049,18 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		final RSBuf var7 = new RSBuf(var1);
 		final RSBuf var8 = new RSBuf(var1);
 		var3.pos = var1.length - 18;
-		final int var5 = var3.method560();
-		final int var13 = var3.method560();
-		final int var25 = var3.method558();
-		final int var21 = var3.method558();
-		final int var14 = var3.method558();
-		final int var15 = var3.method558();
-		final int var24 = var3.method558();
-		final int var17 = var3.method558();
-		final int var18 = var3.method560();
-		final int var35 = var3.method560();
-		final int var19 = var3.method560();
-		final int var20 = var3.method560();
+		final int var5 = var3.readShortU();
+		final int var13 = var3.readShortU();
+		final int var25 = var3.readByteU();
+		final int var21 = var3.readByteU();
+		final int var14 = var3.readByteU();
+		final int var15 = var3.readByteU();
+		final int var24 = var3.readByteU();
+		final int var17 = var3.readByteU();
+		final int var18 = var3.readShortU();
+		final int var35 = var3.readShortU();
+		final int var19 = var3.readShortU();
+		final int var20 = var3.readShortU();
 		final byte var9 = 0;
 		int var45 = var9 + var5;
 		final int var23 = var45;
@@ -1147,7 +1147,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		int var29;
 		int var33;
 		for (var4 = 0; var4 < var5; ++var4) {
-			var11 = var3.method558();
+			var11 = var3.readByteU();
 			var33 = 0;
 			if ((var11 & 1) != 0)
 				var33 = var31.method601();
@@ -1167,7 +1167,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 			var42 = anIntArray1746[var4];
 			var43 = anIntArray1747[var4];
 			if (var17 == 1)
-				anIntArray1771[var4] = var8.method558();
+				anIntArray1771[var4] = var8.readByteU();
 		}
 
 		var3.pos = var28;
@@ -1177,9 +1177,9 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		var8.pos = var26;
 
 		for (var4 = 0; var4 < var13; ++var4) {
-			aShortArray1750[var4] = (short) var3.method560();
+			aShortArray1750[var4] = (short) var3.readShortU();
 			if (var21 == 1) {
-				var11 = var31.method558();
+				var11 = var31.readByteU();
 				if ((var11 & 1) == 1) {
 					aByteArray1752[var4] = 1;
 					var2 = true;
@@ -1199,13 +1199,13 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 			}
 
 			if (var14 == 255)
-				aByteArray1755[var4] = var6.method559();
+				aByteArray1755[var4] = var6.readByte();
 
 			if (var15 == 1)
-				aByteArray1754[var4] = var7.method559();
+				aByteArray1754[var4] = var7.readByte();
 
 			if (var24 == 1)
-				anIntArray1772[var4] = var8.method558();
+				anIntArray1772[var4] = var8.readByteU();
 		}
 
 		var3.pos = var22;
@@ -1218,7 +1218,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		int var12;
 		int var41;
 		for (var29 = 0; var29 < var13; ++var29) {
-			var12 = var31.method558();
+			var12 = var31.readByteU();
 			if (var12 == 1) {
 				var4 = var3.method601() + var16;
 				var11 = var3.method601() + var4;
@@ -1263,9 +1263,9 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 
 		for (var29 = 0; var29 < var25; ++var29) {
 			aByteArray1768[var29] = 0;
-			aShortArray1761[var29] = (short) var3.method560();
-			aShortArray1762[var29] = (short) var3.method560();
-			aShortArray1763[var29] = (short) var3.method560();
+			aShortArray1761[var29] = (short) var3.readShortU();
+			aShortArray1762[var29] = (short) var3.readShortU();
+			aShortArray1763[var29] = (short) var3.readShortU();
 		}
 
 		if (aByteArray1790 != null) {

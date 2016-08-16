@@ -386,7 +386,7 @@ public final class client extends Applet_Sub1 {
 			if ((aLong2195 != 0L) && (Class74.method316(-563847615) > aLong2195))
 				Def13.method735(Class34.method187());
 			else if (aBool1963)
-				RSBuf.method605(-611232372);
+				client.method605(-611232372);
 
 		final Dimension var3 = method1060();
 		if ((var3.width != Class124_Sub5.anInt989) || (var3.height != Class124_Sub22_Sub19_Sub1.anInt1664)
@@ -670,7 +670,7 @@ public final class client extends Applet_Sub1 {
 							var5 = (Class124_Sub22_Sub21) Class92.aClass107_718.method411();
 							var6 = new RSBuf(4);
 							var6.writeByte(1);
-							var6.method547((int) var5.aLong874);
+							var6.writeTrib((int) var5.aLong874);
 							Class92.aClass78_732.method323(var6.backing, 0, 4);
 							Class92.aClass107_730.method412(var5, var5.aLong874);
 							--Class92.anInt719;
@@ -681,7 +681,7 @@ public final class client extends Applet_Sub1 {
 							var5 = (Class124_Sub22_Sub21) Class92.aClass108_722.method417();
 							var6 = new RSBuf(4);
 							var6.writeByte(0);
-							var6.method547((int) var5.aLong874);
+							var6.writeTrib((int) var5.aLong874);
 							Class92.aClass78_732.method323(var6.backing, 0, 4);
 							var5.method637();
 							Class92.aClass107_724.method412(var5, var5.aLong874);
@@ -726,10 +726,10 @@ public final class client extends Applet_Sub1 {
 
 								if (Class28.aClass124_Sub22_Sub21_311 == null) {
 									Class92.aClass124_Sub14_726.pos = 0;
-									var11 = Class92.aClass124_Sub14_726.method558();
-									var12 = Class92.aClass124_Sub14_726.method560();
-									final int var13 = Class92.aClass124_Sub14_726.method558();
-									var14 = Class92.aClass124_Sub14_726.method562(1462322338);
+									var11 = Class92.aClass124_Sub14_726.readByteU();
+									var12 = Class92.aClass124_Sub14_726.readShortU();
+									final int var13 = Class92.aClass124_Sub14_726.readByteU();
+									var14 = Class92.aClass124_Sub14_726.readInt2(1462322338);
 									final long var15 = var12 + (var11 << 16);
 									Class124_Sub22_Sub21 var17 = (Class124_Sub22_Sub21) Class92.aClass107_730
 											.method409(var15);
@@ -747,7 +747,7 @@ public final class client extends Applet_Sub1 {
 									Class67.aClass124_Sub14_569 = new RSBuf(
 											Class28.aClass124_Sub22_Sub21_311.aByte1650 + var14 + var18);
 									Class67.aClass124_Sub14_569.writeByte(var13);
-									Class67.aClass124_Sub14_569.method548(var14);
+									Class67.aClass124_Sub14_569.writeInt(var14);
 									Class92.anInt727 = 8;
 									Class92.aClass124_Sub14_726.pos = 0;
 								} else if (Class92.anInt727 == 0)
@@ -783,9 +783,9 @@ public final class client extends Applet_Sub1 {
 											final Class94_Sub1 var19 = Class92.aClass94_Sub1Array729[var12];
 											if (var19 != null) {
 												Class124_Sub6.aClass124_Sub14_1007.pos = 5 + (var12 * 8);
-												var14 = Class124_Sub6.aClass124_Sub14_1007.method562(2103441446);
+												var14 = Class124_Sub6.aClass124_Sub14_1007.readInt2(2103441446);
 												final int var20 = Class124_Sub6.aClass124_Sub14_1007
-														.method562(1026071084);
+														.readInt2(1026071084);
 												var19.method617(var14, var20);
 											}
 										}
@@ -893,7 +893,7 @@ public final class client extends Applet_Sub1 {
 								Class27.aClass82_303);
 						final RSBuf var1 = new RSBuf(5);
 						var1.writeByte(15);
-						var1.method548(88);
+						var1.writeInt(88);
 						Class90.aClass78_708.method323(var1.backing, 0, 5);
 						++anInt2013;
 						Class124_Sub22_Sub19_Sub1.aLong1658 = Class74.method316(277218670);
@@ -1365,6 +1365,84 @@ public final class client extends Applet_Sub1 {
 
 	@Override
 	protected final void method1061(final int var1) {
+	}
+
+	static void method605(final int var0) {
+		Class31.method182(Class124_Sub5.aCanvas990);
+		final Canvas var2 = Class124_Sub5.aCanvas990;
+		var2.removeMouseListener(Class81.aClass81_649);
+		var2.removeMouseMotionListener(Class81.aClass81_649);
+		var2.removeFocusListener(Class81.aClass81_649);
+		Class81.anInt663 = 0;
+		if (null != Class47.aClass66_473)
+			Class47.aClass66_473.method290(Class124_Sub5.aCanvas990, (byte) -67);
+	
+		Class80.aclient645.method1050();
+		Class124_Sub5.aCanvas990.setBackground(Color.black);
+		final Canvas var1 = Class124_Sub5.aCanvas990;
+		var1.setFocusTraversalKeysEnabled(false);
+		var1.addKeyListener(Class84.aClass84_683);
+		var1.addFocusListener(Class84.aClass84_683);
+		Class82.method329(Class124_Sub5.aCanvas990);
+		if (null != Class47.aClass66_473)
+			Class47.aClass66_473.method293(Class124_Sub5.aCanvas990, (byte) 123);
+	
+		if (anInt2142 != -1)
+			Class122.method449(anInt2142, Class56_Sub2.anInt1083, Class81.anInt662, false);
+	
+		Applet_Sub1.aBool1976 = true;
+	}
+
+	static final void method606(final byte var0) {
+		for (int var1 = 0; var1 < anInt2022; ++var1) {
+			final int var2 = anIntArray2023[var1];
+			final Class124_Sub22_Sub19_Sub3_Sub1 var3 = aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var2];
+			if (var3 != null) {
+				Class53.method257(var3);
+			}
+		}
+	
+	}
+
+	static Somet2 method574(final int var0) {
+		Somet2 var1 = (Somet2) Somet2.aClass113_1600.method434(var0);
+		if (var1 != null)
+			return var1;
+		else {
+			final byte[] var3 = Class88.aClass94_Sub1_695.decode(var0, 0);
+			if (var3 == null)
+				return null;
+			else {
+				var1 = new Somet2();
+				final RSBuf var2 = new RSBuf(var3);
+				var2.pos = var2.backing.length - 12;
+				final int var5 = var2.readInt2(1291183748);
+				var1.anInt1599 = var2.readShortU();
+				var1.anInt1602 = var2.readShortU();
+				var1.anInt1597 = var2.readShortU();
+				var1.anInt1601 = var2.readShortU();
+				var2.pos = 0;
+				var2.readStr();
+				var1.anIntArray1596 = new int[var5];
+				var1.anIntArray1603 = new int[var5];
+				var1.aStringArray1598 = new String[var5];
+	
+				int var4;
+				for (int var6 = 0; var2.pos < (var2.backing.length
+						- 12); var1.anIntArray1596[var6++] = var4) {
+					var4 = var2.readShortU();
+					if (var4 == 3)
+						var1.aStringArray1598[var6] = var2.readStr2();
+					else if ((var4 < 100) && (var4 != 21) && (var4 != 38) && (var4 != 39))
+						var1.anIntArray1603[var6] = var2.readInt2(-1869568387);
+					else
+						var1.anIntArray1603[var6] = var2.readByteU();
+				}
+	
+				Somet2.aClass113_1600.method435(var1, var0);
+				return var1;
+			}
+		}
 	}
 
 	public static final void sleep(final long var0) {

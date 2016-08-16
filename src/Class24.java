@@ -16,14 +16,14 @@ public class Class24 {
 		final RSBuf var6 = new RSBuf(var1);
 		final RSBuf var10 = new RSBuf(var1);
 		var6.pos = 2;
-		final int var7 = var6.method558();
+		final int var7 = var6.readByteU();
 		int var8 = -1;
 		int var4 = 0;
 		var10.pos = var6.pos + var7;
 
 		int var5;
 		for (var5 = 0; var5 < var7; ++var5) {
-			final int var9 = var6.method558();
+			final int var9 = var6.readByteU();
 			if (var9 > 0) {
 				if (aClass124_Sub12_271.anIntArray1054[var5] != 0)
 					for (int var3 = var5 - 1; var3 > var8; --var3)

@@ -123,7 +123,7 @@ public class Class81 implements MouseListener, MouseMotionListener, FocusListene
 			try {
 				final RSBuf var1 = new RSBuf(4);
 				var1.writeByte(var0 ? 2 : 3);
-				var1.method547(0);
+				var1.writeTrib(0);
 				Class92.aClass78_732.method323(var1.backing, 0, 4);
 			} catch (final IOException var4) {
 				try {

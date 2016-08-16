@@ -15,7 +15,7 @@ public class Class12 {
 
 	Class12(final RSBuf var1) {
 		for (int var2 = 0; var2 < 10; ++var2) {
-			final int var3 = var1.method558();
+			final int var3 = var1.readByteU();
 			if (var3 != 0) {
 				--var1.pos;
 				aClass19Array123[var2] = new Class19();
@@ -23,8 +23,8 @@ public class Class12 {
 			}
 		}
 
-		anInt122 = var1.method560();
-		anInt124 = var1.method560();
+		anInt122 = var1.readShortU();
+		anInt124 = var1.readShortU();
 	}
 
 	final byte[] method70() {

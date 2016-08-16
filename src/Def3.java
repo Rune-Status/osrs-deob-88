@@ -1,6 +1,6 @@
 import java.awt.Component;
 
-public class Def3 extends Class124_Sub22 {
+public class Def3 extends Node2 {
 	protected static int anInt1356;
 	public static Class94 aClass94_1363;
 	static Class124_Sub22_Sub16_Sub1[] aClass124_Sub22_Sub16_Sub1Array1364;
@@ -30,7 +30,7 @@ public class Def3 extends Class124_Sub22 {
 
 	void method648(final RSBuf var1) {
 		while (true) {
-			final int var2 = var1.method558();
+			final int var2 = var1.readByteU();
 			if (var2 == 0)
 				return;
 
@@ -40,38 +40,38 @@ public class Def3 extends Class124_Sub22 {
 
 	void method649(final RSBuf var1, final int var2) {
 		if (var2 == 1)
-			anInt1362 = var1.method558();
+			anInt1362 = var1.readByteU();
 		else {
 			int var3;
 			int var4;
 			if (var2 == 2) {
-				var4 = var1.method558();
+				var4 = var1.readByteU();
 				anIntArray1355 = new int[var4];
 
 				for (var3 = 0; var3 < var4; ++var3)
-					anIntArray1355[var3] = var1.method560();
+					anIntArray1355[var3] = var1.readShortU();
 			} else if (var2 == 3)
 				aBool1361 = true;
 			else if (var2 == 40) {
-				var4 = var1.method558();
+				var4 = var1.readByteU();
 				aShortArray1353 = new short[var4];
 				aShortArray1357 = new short[var4];
 
 				for (var3 = 0; var3 < var4; ++var3) {
-					aShortArray1353[var3] = (short) var1.method560();
-					aShortArray1357[var3] = (short) var1.method560();
+					aShortArray1353[var3] = (short) var1.readShortU();
+					aShortArray1357[var3] = (short) var1.readShortU();
 				}
 			} else if (var2 == 41) {
-				var4 = var1.method558();
+				var4 = var1.readByteU();
 				aShortArray1358 = new short[var4];
 				aShortArray1359 = new short[var4];
 
 				for (var3 = 0; var3 < var4; ++var3) {
-					aShortArray1358[var3] = (short) var1.method560();
-					aShortArray1359[var3] = (short) var1.method560();
+					aShortArray1358[var3] = (short) var1.readShortU();
+					aShortArray1359[var3] = (short) var1.readShortU();
 				}
 			} else if ((var2 >= 60) && (var2 < 70))
-				anIntArray1360[var2 - 60] = var1.method560();
+				anIntArray1360[var2 - 60] = var1.readShortU();
 		}
 
 	}

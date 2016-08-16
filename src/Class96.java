@@ -17,18 +17,18 @@ public class Class96 {
 				final byte[] var0 = Def5.aClass45_1455.method224((byte) 39);
 				if (var0 != null) {
 					final RSBuf var1 = new RSBuf(var0);
-					Class23.anInt257 = var1.method560();
+					Class23.anInt257 = var1.readShortU();
 					Class23.aClass23Array256 = new Class23[Class23.anInt257];
 
 					Class23 var3;
 					for (int var2 = 0; var2 < Class23.anInt257; var3.anInt265 = var2++) {
 						var3 = Class23.aClass23Array256[var2] = new Class23();
-						var3.anInt262 = var1.method560();
-						var3.anInt255 = var1.method562(-1044953950);
-						var3.aString254 = var1.method597();
-						var3.aString263 = var1.method597();
-						var3.anInt264 = var1.method558();
-						var3.anInt261 = var1.method546();
+						var3.anInt262 = var1.readShortU();
+						var3.anInt255 = var1.readInt2(-1044953950);
+						var3.aString254 = var1.readStr2();
+						var3.aString263 = var1.readStr2();
+						var3.anInt264 = var1.readByteU();
+						var3.anInt261 = var1.readShort();
 					}
 
 					Class40.method200(Class23.aClass23Array256, 0, Class23.aClass23Array256.length - 1,

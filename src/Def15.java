@@ -1,13 +1,13 @@
 import java.awt.Component;
 
-public class Def15 extends Class124_Sub22 {
+public class Def15 extends Node2 {
 	static Class94 aClass94_1551;
 	public boolean aBool1550 = false;
 	static Class113 aClass113_1549 = new Class113(64);
 
 	void method748(final RSBuf var1) {
 		while (true) {
-			final int var2 = var1.method558();
+			final int var2 = var1.readByteU();
 			if (var2 == 0)
 				return;
 

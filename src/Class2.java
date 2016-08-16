@@ -43,24 +43,24 @@ public class Class2 {
 
 				int var8;
 				for (var8 = 0; var8 < 4; ++var8)
-					var5.method548(var4.nextInt());
+					var5.writeInt(var4.nextInt());
 
-				var5.method548(var7[0]);
-				var5.method548(var7[1]);
-				var5.method561(var0);
-				var5.method561(0L);
+				var5.writeInt(var7[0]);
+				var5.writeInt(var7[1]);
+				var5.writeULong(var0);
+				var5.writeULong(0L);
 
 				for (var8 = 0; var8 < 4; ++var8)
-					var5.method548(var4.nextInt());
+					var5.writeInt(var4.nextInt());
 
 				var5.dorsa(Class43.aBigInteger428, Class43.aBigInteger429);
 				var6.writeByte(10);
 
 				for (var8 = 0; var8 < 3; ++var8)
-					var6.method548(var4.nextInt());
+					var6.writeInt(var4.nextInt());
 
-				var6.method561(var4.nextLong());
-				var6.method549(var4.nextLong());
+				var6.writeULong(var4.nextLong());
+				var6.writeMidint(var4.nextLong());
 				final byte[] var9 = new byte[24];
 
 				try {
@@ -78,25 +78,25 @@ public class Class2 {
 						var9[var12] = -1;
 				}
 
-				var6.method568(var9, 0, 24);
-				var6.method561(var4.nextLong());
+				var6.writeReverse(var9, 0, 24);
+				var6.writeULong(var4.nextLong());
 				var6.dorsa(Class43.aBigInteger428, Class43.aBigInteger429);
 				var8 = Class54.method258(var3);
 				if ((var8 % 8) != 0)
 					var8 += 8 - (var8 % 8);
 
 				final RSBuf var11 = new RSBuf(var8);
-				var11.method550(var3);
+				var11.writestr(var3);
 				var11.pos = var8;
-				var11.method571(var7);
+				var11.xtea(var7);
 				RSBuf var13 = new RSBuf(var6.pos + 5 + var5.pos + var11.pos);
 				var13.writeByte(2);
 				var13.writeByte(var5.pos);
-				var13.method568(var5.backing, 0, var5.pos);
+				var13.writeReverse(var5.backing, 0, var5.pos);
 				var13.writeByte(var6.pos);
-				var13.method568(var6.backing, 0, var6.pos);
+				var13.writeReverse(var6.backing, 0, var6.pos);
 				var13.writeShort(var11.pos);
-				var13.method568(var11.backing, 0, var11.pos);
+				var13.writeReverse(var11.backing, 0, var11.pos);
 				final String var14 = Class68.method301(var13.backing);
 
 				byte var20;
@@ -128,7 +128,7 @@ public class Class2 {
 							else if (var21.startsWith("Not permitted for social network accounts."))
 								var20 = 6;
 							else {
-								var13.method572(var7);
+								var13.xtea2(var7);
 
 								while ((var13.pos > 0) && (var13.backing[var13.pos - 1] == 0))
 									--var13.pos;

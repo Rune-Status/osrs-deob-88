@@ -24,7 +24,7 @@ public class Class32 {
 		}
 	}
 
-	public static int method184(final CharSequence var0, final int var1, final int var2, final byte[] var3,
+	public static int strConvert(final CharSequence var0, final int var1, final int var2, final byte[] var3,
 			final int var4) {
 		final int var5 = var2 - var1;
 

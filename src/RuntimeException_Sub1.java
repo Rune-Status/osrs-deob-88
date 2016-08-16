@@ -35,22 +35,22 @@ public class RuntimeException_Sub1 extends RuntimeException {
 				}
 
 				var8.pos = 0;
-				var9 = var8.method558();
+				var9 = var8.readByteU();
 				if ((var9 < 1) || (var9 > 3))
 					throw new IOException("" + var9);
 
 				int var10 = 0;
 				if (var9 > 1)
-					var10 = var8.method558();
+					var10 = var8.readByteU();
 
 				if (var9 <= 2) {
-					var4 = var8.method565();
+					var4 = var8.readStr3();
 					if (var10 == 1)
-						var5 = var8.method565();
+						var5 = var8.readStr3();
 				} else {
-					var4 = var8.method566();
+					var4 = var8.decodeStr();
 					if (var10 == 1)
-						var5 = var8.method566();
+						var5 = var8.decodeStr();
 				}
 
 				var7.method461();
@@ -157,7 +157,7 @@ public class RuntimeException_Sub1 extends RuntimeException {
 
 			final byte[] var2 = new byte[var1];
 			var0.pos += Class129.aClass63_889.method282(var0.backing, var0.pos, var2, 0, var1);
-			final String var3 = Class1.method16(var2, 0, var1);
+			final String var3 = Class1.toString(var2, 0, var1);
 			var4 = var3;
 		} catch (final Exception var6) {
 			var4 = "Cabbage";

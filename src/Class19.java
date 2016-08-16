@@ -253,7 +253,7 @@ public class Class19 {
 		aClass17_182.method81(var1);
 		aClass17_163 = new Class17();
 		aClass17_163.method81(var1);
-		int var2 = var1.method558();
+		int var2 = var1.readByteU();
 		if (var2 != 0) {
 			--var1.pos;
 			aClass17_164 = new Class17();
@@ -262,7 +262,7 @@ public class Class19 {
 			aClass17_165.method81(var1);
 		}
 
-		var2 = var1.method558();
+		var2 = var1.readByteU();
 		if (var2 != 0) {
 			--var1.pos;
 			aClass17_176 = new Class17();
@@ -271,7 +271,7 @@ public class Class19 {
 			aClass17_170.method81(var1);
 		}
 
-		var2 = var1.method558();
+		var2 = var1.readByteU();
 		if (var2 != 0) {
 			--var1.pos;
 			aClass17_168 = new Class17();
@@ -292,8 +292,8 @@ public class Class19 {
 
 		anInt180 = var1.getsmart((byte) -107);
 		anInt174 = var1.getsmart((byte) -26);
-		anInt166 = var1.method560();
-		anInt178 = var1.method560();
+		anInt166 = var1.readShortU();
+		anInt178 = var1.readShortU();
 		aClass15_175 = new Class15();
 		aClass17_162 = new Class17();
 		aClass15_175.method76(var1, aClass17_162);

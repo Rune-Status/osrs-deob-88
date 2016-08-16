@@ -29,16 +29,16 @@ public class Class93 {
 	void method348(final byte[] var1) {
 		aClass124_Sub14_742.backing = var1;
 		aClass124_Sub14_742.pos = 10;
-		final int var2 = aClass124_Sub14_742.method560();
-		anInt738 = aClass124_Sub14_742.method560();
+		final int var2 = aClass124_Sub14_742.readShortU();
+		anInt738 = aClass124_Sub14_742.readShortU();
 		anInt734 = 500000;
 		anIntArray736 = new int[var2];
 
 		int var3;
 		int var4;
 		for (var4 = 0; var4 < var2; aClass124_Sub14_742.pos += var3) {
-			final int var5 = aClass124_Sub14_742.method562(-1184822850);
-			var3 = aClass124_Sub14_742.method562(-1855387018);
+			final int var5 = aClass124_Sub14_742.readInt2(-1184822850);
+			var3 = aClass124_Sub14_742.readInt2(-1855387018);
 			if (var5 == 1297379947) {
 				anIntArray736[var4] = aClass124_Sub14_742.pos;
 				++var4;
@@ -72,7 +72,7 @@ public class Class93 {
 	}
 
 	void method352(final int var1) {
-		final int var2 = aClass124_Sub14_742.method570();
+		final int var2 = aClass124_Sub14_742.packed();
 		anIntArray739[var1] += var2;
 	}
 
@@ -94,7 +94,7 @@ public class Class93 {
 		if ((var5 != 240) && (var5 != 247))
 			return method355(var1, var5);
 		else {
-			final int var3 = aClass124_Sub14_742.method570();
+			final int var3 = aClass124_Sub14_742.packed();
 			if ((var5 == 247) && (var3 > 0)) {
 				final int var4 = aClass124_Sub14_742.backing[aClass124_Sub14_742.pos] & 255;
 				if (((var4 >= 241) && (var4 <= 243)) || (var4 == 246) || (var4 == 248)
@@ -116,13 +116,13 @@ public class Class93 {
 	int method355(final int var1, final int var2) {
 		int var4;
 		if (var2 == 255) {
-			final int var7 = aClass124_Sub14_742.method558();
-			var4 = aClass124_Sub14_742.method570();
+			final int var7 = aClass124_Sub14_742.readByteU();
+			var4 = aClass124_Sub14_742.packed();
 			if (var7 == 47) {
 				aClass124_Sub14_742.pos += var4;
 				return 1;
 			} else if (var7 == 81) {
-				final int var5 = aClass124_Sub14_742.method557();
+				final int var5 = aClass124_Sub14_742.readTri();
 				var4 -= 3;
 				final int var6 = anIntArray739[var1];
 				aLong741 += (long) var6 * (long) (anInt734 - var5);
@@ -137,10 +137,10 @@ public class Class93 {
 			final byte var3 = aByteArray735[var2 - 128];
 			var4 = var2;
 			if (var3 >= 1)
-				var4 = var2 | (aClass124_Sub14_742.method558() << 8);
+				var4 = var2 | (aClass124_Sub14_742.readByteU() << 8);
 
 			if (var3 >= 2)
-				var4 |= aClass124_Sub14_742.method558() << 16;
+				var4 |= aClass124_Sub14_742.readByteU() << 16;
 
 			return var4;
 		}

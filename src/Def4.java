@@ -1,4 +1,4 @@
-public class Def4 extends Class124_Sub22 {
+public class Def4 extends Node2 {
 	public static Class94 aClass94_1561;
 	public int anInt1552;
 	public int anInt1562;
@@ -25,7 +25,7 @@ public class Def4 extends Class124_Sub22 {
 
 	public void method756(final RSBuf var1, final int var2) {
 		while (true) {
-			final int var3 = var1.method558();
+			final int var3 = var1.readByteU();
 			if (var3 == 0)
 				return;
 
@@ -35,12 +35,12 @@ public class Def4 extends Class124_Sub22 {
 
 	void method757(final RSBuf var1, final int var2) {
 		if (var2 == 1)
-			anInt1554 = var1.method557();
+			anInt1554 = var1.readTri();
 		else if (var2 == 2)
-			anInt1555 = var1.method558();
+			anInt1555 = var1.readByteU();
 		else if (var2 != 5) {
 			if (var2 == 7)
-				anInt1557 = var1.method557();
+				anInt1557 = var1.readTri();
 			else if (var2 == 8)
 				;
 		} else

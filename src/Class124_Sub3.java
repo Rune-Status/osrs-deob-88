@@ -506,16 +506,16 @@ public class Class124_Sub3 extends Node {
 
 	void method504(final byte[] var1) {
 		final RSBuf var2 = new RSBuf(var1);
-		anInt936 = var2.method562(-2045128789);
-		anInt952 = var2.method562(1700725101);
-		anInt929 = var2.method562(1340613910);
-		anInt926 = var2.method562(197881789);
+		anInt936 = var2.readInt2(-2045128789);
+		anInt952 = var2.readInt2(1700725101);
+		anInt929 = var2.readInt2(1340613910);
+		anInt926 = var2.readInt2(197881789);
 		if (anInt926 < 0) {
 			anInt926 = ~anInt926;
 			aBool950 = true;
 		}
 
-		final int var5 = var2.method562(-1953733625);
+		final int var5 = var2.readInt2(-1953733625);
 		aByteArrayArray951 = new byte[var5][];
 
 		for (int var3 = 0; var3 < var5; ++var3) {
@@ -523,12 +523,12 @@ public class Class124_Sub3 extends Node {
 
 			int var7;
 			do {
-				var7 = var2.method558();
+				var7 = var2.readByteU();
 				var6 += var7;
 			} while (var7 >= 255);
 
 			final byte[] var4 = new byte[var6];
-			var2.method598(var4, 0, var6);
+			var2.readReverse(var4, 0, var6);
 			aByteArrayArray951[var3] = var4;
 		}
 

@@ -1,4 +1,4 @@
-public class Def14 extends Class124_Sub22 {
+public class Def14 extends Node2 {
 	public static Class94 aClass94_1508;
 	static int[] anIntArray1512;
 	static Class113 aClass113_1509 = new Class113(64);
@@ -8,7 +8,7 @@ public class Def14 extends Class124_Sub22 {
 
 	void method725(final RSBuf var1) {
 		while (true) {
-			final int var2 = var1.method558();
+			final int var2 = var1.readByteU();
 			if (var2 == 0)
 				return;
 
@@ -57,9 +57,9 @@ public class Def14 extends Class124_Sub22 {
 
 	void method727(final RSBuf var1, final int var2) {
 		if (var2 == 1) {
-			anInt1510 = var1.method560();
-			anInt1513 = var1.method558();
-			anInt1511 = var1.method558();
+			anInt1510 = var1.readShortU();
+			anInt1513 = var1.readByteU();
+			anInt1511 = var1.readByteU();
 		}
 
 	}
@@ -72,15 +72,15 @@ public class Def14 extends Class124_Sub22 {
 
 	static final byte[] method729(final byte[] var0) {
 		final RSBuf var1 = new RSBuf(var0);
-		final int var4 = var1.method558();
-		final int var3 = var1.method562(-1862637362);
+		final int var4 = var1.readByteU();
+		final int var3 = var1.readInt2(-1862637362);
 		if ((var3 >= 0) && ((Class94.anInt755 == 0) || (var3 <= Class94.anInt755))) {
 			if (var4 == 0) {
 				final byte[] var2 = new byte[var3];
-				var1.method598(var2, 0, var3);
+				var1.readReverse(var2, 0, var3);
 				return var2;
 			} else {
-				final int var5 = var1.method562(33253765);
+				final int var5 = var1.readInt2(33253765);
 				if (var5 < 0 || var5 > 1000000) {
 					System.err.printf("bad xtea decrypt %n");
 					return new byte[100];

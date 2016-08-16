@@ -20,7 +20,7 @@ public class Class124_Sub18 extends Node {
 
 		int var12;
 		for (var12 = 0; var12 < var9; ++var12)
-			var10[var12] = var7.method559();
+			var10[var12] = var7.readByte();
 
 		++var7.pos;
 		++var9;
@@ -35,7 +35,7 @@ public class Class124_Sub18 extends Node {
 
 		int var17;
 		for (var17 = 0; var17 < var13; ++var17)
-			var16[var17] = var7.method559();
+			var16[var17] = var7.readByte();
 
 		++var7.pos;
 		++var13;
@@ -49,7 +49,7 @@ public class Class124_Sub18 extends Node {
 		final byte[] var21 = new byte[var20];
 
 		for (int var22 = 0; var22 < var20; ++var22)
-			var21[var22] = var7.method559();
+			var21[var22] = var7.readByte();
 
 		++var7.pos;
 		++var20;
@@ -62,7 +62,7 @@ public class Class124_Sub18 extends Node {
 			var26 = 2;
 
 			for (var19 = 2; var19 < var20; ++var19) {
-				int var29 = var7.method558();
+				int var29 = var7.readByteU();
 				if (var29 == 0)
 					var25 = var26++;
 				else {
@@ -82,20 +82,20 @@ public class Class124_Sub18 extends Node {
 		Class103 var31;
 		for (var19 = 0; var19 < var30.length; ++var19) {
 			var31 = var30[var19] = new Class103();
-			int var32 = var7.method558();
+			int var32 = var7.readByteU();
 			if (var32 > 0)
 				var31.aByteArray790 = new byte[2 * var32];
 
-			var32 = var7.method558();
+			var32 = var7.readByteU();
 			if (var32 > 0) {
 				var31.aByteArray791 = new byte[2 + (2 * var32)];
 				var31.aByteArray791[1] = 64;
 			}
 		}
 
-		var19 = var7.method558();
+		var19 = var7.readByteU();
 		final byte[] var48 = var19 > 0 ? new byte[2 * var19] : null;
-		var19 = var7.method558();
+		var19 = var7.readByteU();
 		final byte[] var5 = var19 > 0 ? new byte[var19 * 2] : null;
 
 		int var37;
@@ -106,7 +106,7 @@ public class Class124_Sub18 extends Node {
 
 		int var4;
 		for (var4 = 0; var4 < var37; ++var4)
-			var38[var4] = var7.method559();
+			var38[var4] = var7.readByte();
 
 		++var7.pos;
 		++var37;
@@ -114,14 +114,14 @@ public class Class124_Sub18 extends Node {
 
 		int var8;
 		for (var8 = 0; var8 < 128; ++var8) {
-			var4 += var7.method558();
+			var4 += var7.readByteU();
 			aShortArray1290[var8] = (short) var4;
 		}
 
 		var4 = 0;
 
 		for (var8 = 0; var8 < 128; ++var8) {
-			var4 += var7.method558();
+			var4 += var7.readByteU();
 			aShortArray1290[var8] = (short) (aShortArray1290[var8] + (var4 << 8));
 		}
 
@@ -137,7 +137,7 @@ public class Class124_Sub18 extends Node {
 				else
 					var8 = -1;
 
-				var23 = var7.method570();
+				var23 = var7.packed();
 			}
 
 			aShortArray1290[var11] = (short) (aShortArray1290[var11] + (((var23 - 1) & 2) << 14));
@@ -216,14 +216,14 @@ public class Class124_Sub18 extends Node {
 					var8 = -1;
 
 				if (anIntArray1293[var6] > 0)
-					var18 = var7.method558() + 1;
+					var18 = var7.readByteU() + 1;
 			}
 
 			aByteArray1288[var6] = (byte) var18;
 			--var8;
 		}
 
-		anInt1291 = var7.method558() + 1;
+		anInt1291 = var7.readByteU() + 1;
 
 		Class103 var2;
 		int var3;
@@ -231,20 +231,20 @@ public class Class124_Sub18 extends Node {
 			var2 = var30[var6];
 			if (null != var2.aByteArray790)
 				for (var3 = 1; var3 < var2.aByteArray790.length; var3 += 2)
-					var2.aByteArray790[var3] = var7.method559();
+					var2.aByteArray790[var3] = var7.readByte();
 
 			if (var2.aByteArray791 != null)
 				for (var3 = 3; var3 < (var2.aByteArray791.length - 2); var3 += 2)
-					var2.aByteArray791[var3] = var7.method559();
+					var2.aByteArray791[var3] = var7.readByte();
 		}
 
 		if (var48 != null)
 			for (var6 = 1; var6 < var48.length; var6 += 2)
-				var48[var6] = var7.method559();
+				var48[var6] = var7.readByte();
 
 		if (var5 != null)
 			for (var6 = 1; var6 < var5.length; var6 += 2)
-				var5[var6] = var7.method559();
+				var5[var6] = var7.readByte();
 
 		for (var6 = 0; var6 < var26; ++var6) {
 			var2 = var30[var6];
@@ -252,7 +252,7 @@ public class Class124_Sub18 extends Node {
 				var4 = 0;
 
 				for (var3 = 2; var3 < var2.aByteArray791.length; var3 += 2) {
-					var4 = 1 + var4 + var7.method558();
+					var4 = 1 + var4 + var7.readByteU();
 					var2.aByteArray791[var3] = (byte) var4;
 				}
 			}
@@ -264,7 +264,7 @@ public class Class124_Sub18 extends Node {
 				var4 = 0;
 
 				for (var3 = 2; var3 < var2.aByteArray790.length; var3 += 2) {
-					var4 = var4 + 1 + var7.method558();
+					var4 = var4 + 1 + var7.readByteU();
 					var2.aByteArray790[var3] = (byte) var4;
 				}
 			}
@@ -279,11 +279,11 @@ public class Class124_Sub18 extends Node {
 		byte var45;
 		int var49;
 		if (null != var48) {
-			var4 = var7.method558();
+			var4 = var7.readByteU();
 			var48[0] = (byte) var4;
 
 			for (var6 = 2; var6 < var48.length; var6 += 2) {
-				var4 = 1 + var4 + var7.method558();
+				var4 = 1 + var4 + var7.readByteU();
 				var48[var6] = (byte) var4;
 			}
 
@@ -317,11 +317,11 @@ public class Class124_Sub18 extends Node {
 		}
 
 		if (null != var5) {
-			var4 = var7.method558();
+			var4 = var7.readByteU();
 			var5[0] = (byte) var4;
 
 			for (var6 = 2; var6 < var5.length; var6 += 2) {
-				var4 = 1 + var4 + var7.method558();
+				var4 = 1 + var4 + var7.readByteU();
 				var5[var6] = (byte) var4;
 			}
 
@@ -377,33 +377,33 @@ public class Class124_Sub18 extends Node {
 		}
 
 		for (var6 = 0; var6 < var26; ++var6)
-			var30[var6].anInt792 = var7.method558();
+			var30[var6].anInt792 = var7.readByteU();
 
 		for (var6 = 0; var6 < var26; ++var6) {
 			var2 = var30[var6];
 			if (null != var2.aByteArray790)
-				var2.anInt793 = var7.method558();
+				var2.anInt793 = var7.readByteU();
 
 			if (null != var2.aByteArray791)
-				var2.anInt798 = var7.method558();
+				var2.anInt798 = var7.readByteU();
 
 			if (var2.anInt792 > 0)
-				var2.anInt799 = var7.method558();
+				var2.anInt799 = var7.readByteU();
 		}
 
 		for (var6 = 0; var6 < var26; ++var6)
-			var30[var6].anInt797 = var7.method558();
+			var30[var6].anInt797 = var7.readByteU();
 
 		for (var6 = 0; var6 < var26; ++var6) {
 			var2 = var30[var6];
 			if (var2.anInt797 > 0)
-				var2.anInt796 = var7.method558();
+				var2.anInt796 = var7.readByteU();
 		}
 
 		for (var6 = 0; var6 < var26; ++var6) {
 			var2 = var30[var6];
 			if (var2.anInt796 > 0)
-				var2.anInt795 = var7.method558();
+				var2.anInt795 = var7.readByteU();
 		}
 
 	}

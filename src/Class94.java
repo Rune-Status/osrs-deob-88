@@ -21,16 +21,16 @@ public abstract class Class94 {
 	void method363(final byte[] var1) {
 		anInt756 = Def8.method700(var1, var1.length);
 		final RSBuf var3 = new RSBuf(Def14.method729(var1));
-		final int var4 = var3.method558();
+		final int var4 = var3.readByteU();
 		if ((var4 >= 5) && (var4 <= 7)) {
 			if (var4 >= 6)
-				var3.method562(-1711525829);
+				var3.readInt2(-1711525829);
 
-			final int var8 = var3.method558();
+			final int var8 = var3.readByteU();
 			if (var4 >= 7)
-				anInt758 = var3.method569();
+				anInt758 = var3.readUSmart();
 			else
-				anInt758 = var3.method560();
+				anInt758 = var3.readShortU();
 
 			int var5 = 0;
 			int var2 = -1;
@@ -38,13 +38,13 @@ public abstract class Class94 {
 			int var9;
 			if (var4 >= 7)
 				for (var9 = 0; var9 < anInt758; ++var9) {
-					anIntArray744[var9] = var5 += var3.method569();
+					anIntArray744[var9] = var5 += var3.readUSmart();
 					if (anIntArray744[var9] > var2)
 						var2 = anIntArray744[var9];
 				}
 			else
 				for (var9 = 0; var9 < anInt758; ++var9) {
-					anIntArray744[var9] = var5 += var3.method560();
+					anIntArray744[var9] = var5 += var3.readShortU();
 					if (anIntArray744[var9] > var2)
 						var2 = anIntArray744[var9];
 				}
@@ -59,19 +59,19 @@ public abstract class Class94 {
 				anIntArray745 = new int[1 + var2];
 
 				for (var9 = 0; var9 < anInt758; ++var9)
-					anIntArray745[anIntArray744[var9]] = var3.method562(1345754832);
+					anIntArray745[anIntArray744[var9]] = var3.readInt2(1345754832);
 
 				aClass109_746 = new Class109(anIntArray745);
 			}
 
 			for (var9 = 0; var9 < anInt758; ++var9)
-				anIntArray747[anIntArray744[var9]] = var3.method562(-606760751);
+				anIntArray747[anIntArray744[var9]] = var3.readInt2(-606760751);
 
 			for (var9 = 0; var9 < anInt758; ++var9)
-				anIntArray748[anIntArray744[var9]] = var3.method562(-488311715);
+				anIntArray748[anIntArray744[var9]] = var3.readInt2(-488311715);
 
 			for (var9 = 0; var9 < anInt758; ++var9)
-				anIntArray749[anIntArray744[var9]] = var3.method560();
+				anIntArray749[anIntArray744[var9]] = var3.readShortU();
 
 			int var6;
 			int var7;
@@ -87,7 +87,7 @@ public abstract class Class94 {
 					anIntArrayArray750[var11] = new int[var7];
 
 					for (var6 = 0; var6 < var7; ++var6) {
-						var12 = anIntArrayArray750[var11][var6] = var5 += var3.method569();
+						var12 = anIntArrayArray750[var11][var6] = var5 += var3.readUSmart();
 						if (var12 > var10)
 							var10 = var12;
 					}
@@ -103,7 +103,7 @@ public abstract class Class94 {
 					anIntArrayArray750[var11] = new int[var7];
 
 					for (var6 = 0; var6 < var7; ++var6) {
-						var12 = anIntArrayArray750[var11][var6] = var5 += var3.method560();
+						var12 = anIntArrayArray750[var11][var6] = var5 += var3.readShortU();
 						if (var12 > var10)
 							var10 = var12;
 					}
@@ -121,7 +121,7 @@ public abstract class Class94 {
 					anIntArrayArray751[var11] = new int[anObjectArrayArray754[var11].length];
 
 					for (var10 = 0; var10 < var7; ++var10)
-						anIntArrayArray751[var11][anIntArrayArray750[var11][var10]] = var3.method562(1147111835);
+						anIntArrayArray751[var11][anIntArrayArray750[var11][var10]] = var3.readInt2(1147111835);
 
 					aClass109Array752[var11] = new Class109(anIntArrayArray751[var11]);
 				}
@@ -330,7 +330,7 @@ public abstract class Class94 {
 				if ((null != var2) && ((var2[0] != 0) || (var2[1] != 0) || (var2[2] != 0) || (var2[3] != 0))) {
 					var8 = Class67.method299(anObjectArray753[var1], true);
 					final RSBuf var9 = new RSBuf(var8);
-					var9.method585(var2, 5, var9.backing.length);
+					var9.xtea5(var2, 5, var9.backing.length);
 				} else
 					var8 = Class67.method299(anObjectArray753[var1], false);
 
@@ -353,7 +353,7 @@ public abstract class Class94 {
 						var15 = 0;
 
 						for (var16 = 0; var16 < var3; ++var16) {
-							var15 += var12.method562(-1051485084);
+							var15 += var12.readInt2(-1051485084);
 							var13[var16] += var15;
 						}
 					}
@@ -372,7 +372,7 @@ public abstract class Class94 {
 						int var18 = 0;
 
 						for (int var19 = 0; var19 < var3; ++var19) {
-							var18 += var12.method562(-2033999182);
+							var18 += var12.readInt2(-2033999182);
 							System.arraycopy(var20, var15, var17[var19], var13[var19], var18);
 							var13[var19] += var18;
 							var15 += var18;

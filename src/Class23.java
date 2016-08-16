@@ -55,7 +55,7 @@ public class Class23 {
 						client.anInt2175 = client.anInt2067;
 						client.aClass124_Sub14_Sub1_2024.method837(27);
 						client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
-						client.aClass124_Sub14_Sub1_2024.method550(var0);
+						client.aClass124_Sub14_Sub1_2024.writestr(var0);
 						break;
 					}
 				}

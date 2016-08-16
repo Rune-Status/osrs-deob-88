@@ -1,4 +1,4 @@
-public class Def12 extends Class124_Sub22 {
+public class Def12 extends Node2 {
 	public static Class94 aClass94_1530;
 	public static Class94 aClass94_1533;
 	public static Class94 aClass94_1545;
@@ -50,7 +50,7 @@ public class Def12 extends Class124_Sub22 {
 
 	void method739(final RSBuf var1) {
 		while (true) {
-			final int var2 = var1.method558();
+			final int var2 = var1.readByteU();
 			if (var2 == 0)
 				return;
 
@@ -156,60 +156,60 @@ public class Def12 extends Class124_Sub22 {
 		int var3;
 		int var4;
 		if (var2 == 1) {
-			var3 = var1.method560();
+			var3 = var1.readShortU();
 			anIntArray1529 = new int[var3];
 
 			for (var4 = 0; var4 < var3; ++var4)
-				anIntArray1529[var4] = var1.method560();
+				anIntArray1529[var4] = var1.readShortU();
 
 			anIntArray1536 = new int[var3];
 
 			for (var4 = 0; var4 < var3; ++var4)
-				anIntArray1536[var4] = var1.method560();
+				anIntArray1536[var4] = var1.readShortU();
 
 			for (var4 = 0; var4 < var3; ++var4)
-				anIntArray1536[var4] += var1.method560() << 16;
+				anIntArray1536[var4] += var1.readShortU() << 16;
 		} else if (var2 == 2)
-			anInt1538 = var1.method560();
+			anInt1538 = var1.readShortU();
 		else if (var2 == 3) {
-			var3 = var1.method558();
+			var3 = var1.readByteU();
 			anIntArray1539 = new int[var3 + 1];
 
 			for (var4 = 0; var4 < var3; ++var4)
-				anIntArray1539[var4] = var1.method558();
+				anIntArray1539[var4] = var1.readByteU();
 
 			anIntArray1539[var3] = 9999999;
 		} else if (var2 == 4)
 			aBool1537 = true;
 		else if (var2 == 5)
-			anInt1531 = var1.method558();
+			anInt1531 = var1.readByteU();
 		else if (var2 == 6)
-			anInt1542 = var1.method560();
+			anInt1542 = var1.readShortU();
 		else if (var2 == 7)
-			anInt1543 = var1.method560();
+			anInt1543 = var1.readShortU();
 		else if (var2 == 8)
-			anInt1548 = var1.method558();
+			anInt1548 = var1.readByteU();
 		else if (var2 == 9)
-			anInt1544 = var1.method558();
+			anInt1544 = var1.readByteU();
 		else if (var2 == 10)
-			anInt1540 = var1.method558();
+			anInt1540 = var1.readByteU();
 		else if (var2 == 11)
-			anInt1546 = var1.method558();
+			anInt1546 = var1.readByteU();
 		else if (var2 == 12) {
-			var3 = var1.method558();
+			var3 = var1.readByteU();
 			anIntArray1535 = new int[var3];
 
 			for (var4 = 0; var4 < var3; ++var4)
-				anIntArray1535[var4] = var1.method560();
+				anIntArray1535[var4] = var1.readShortU();
 
 			for (var4 = 0; var4 < var3; ++var4)
-				anIntArray1535[var4] += var1.method560() << 16;
+				anIntArray1535[var4] += var1.readShortU() << 16;
 		} else if (var2 == 13) {
-			var3 = var1.method558();
+			var3 = var1.readByteU();
 			anIntArray1534 = new int[var3];
 
 			for (var4 = 0; var4 < var3; ++var4)
-				anIntArray1534[var4] = var1.method557();
+				anIntArray1534[var4] = var1.readTri();
 		}
 
 	}

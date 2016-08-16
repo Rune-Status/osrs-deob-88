@@ -94,10 +94,10 @@ public final class Class124_Sub5 extends Node {
 			for (var7 = 0; var7 < var5; ++var7)
 				for (var8 = 0; var8 < 4; ++var8)
 					Class124_Sub22_Sub10.anIntArrayArray1466[var7][var8] = client.aClass124_Sub14_Sub1_2026
-							.method562(-562334951);
+							.readInt2(-562334951);
 
-			var7 = client.aClass124_Sub14_Sub1_2026.method558();
-			var8 = client.aClass124_Sub14_Sub1_2026.method560();
+			var7 = client.aClass124_Sub14_Sub1_2026.readByteU();
+			var8 = client.aClass124_Sub14_Sub1_2026.readShortU();
 			var6 = client.aClass124_Sub14_Sub1_2026.method583();
 			Class124_Sub22_Sub19_Sub6.anIntArray1822 = new int[var5];
 			Class10.anIntArray104 = new int[var5];
@@ -150,10 +150,10 @@ public final class Class124_Sub5 extends Node {
 					Class124_Sub22_Sub10.anIntArrayArray1466[var4][var5] = client.aClass124_Sub14_Sub1_2026.method590();
 
 			var4 = client.aClass124_Sub14_Sub1_2026.method583();
-			var5 = client.aClass124_Sub14_Sub1_2026.method560();
-			var7 = client.aClass124_Sub14_Sub1_2026.method558();
+			var5 = client.aClass124_Sub14_Sub1_2026.readShortU();
+			var7 = client.aClass124_Sub14_Sub1_2026.readByteU();
 			var8 = client.aClass124_Sub14_Sub1_2026.method583();
-			var6 = client.aClass124_Sub14_Sub1_2026.method560();
+			var6 = client.aClass124_Sub14_Sub1_2026.readShortU();
 			Class124_Sub22_Sub19_Sub6.anIntArray1822 = new int[var2];
 			Class10.anIntArray104 = new int[var2];
 			Def9.anIntArray1335 = new int[var2];

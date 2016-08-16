@@ -199,7 +199,7 @@ public class Class1 {
 		Def13.aClass94_1526 = var1;
 	}
 
-	public static String method16(final byte[] var0, final int var1, final int var2) {
+	public static String toString(final byte[] var0, final int var1, final int var2) {
 		final char[] var3 = new char[var2];
 		int var4 = 0;
 

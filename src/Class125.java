@@ -8,12 +8,12 @@ public class Class125 {
 	public int anInt879;
 
 	public Class125(final RSBuf var1, final boolean var2) {
-		aByte877 = var1.method559();
-		anInt878 = var1.method560();
-		anInt881 = var1.method562(-2032144560);
-		anInt880 = var1.method562(1119070692);
-		anInt882 = var1.method562(1341040541);
-		anInt879 = var1.method562(608112255);
+		aByte877 = var1.readByte();
+		anInt878 = var1.readShortU();
+		anInt881 = var1.readInt2(-2032144560);
+		anInt880 = var1.readInt2(1119070692);
+		anInt882 = var1.readInt2(1341040541);
+		anInt879 = var1.readInt2(608112255);
 	}
 
 	void method452(final int var1) {

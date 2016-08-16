@@ -179,7 +179,7 @@ public final class Class124_Sub22_Sub19_Sub1 extends Class124_Sub22_Sub19 {
 				final int var6 = var4.read(var5.backing, var5.pos, 1000 - var5.pos);
 				if (var6 == -1) {
 					var5.pos = 0;
-					final long var7 = var5.method563();
+					final long var7 = var5.readLong2();
 					return var7;
 				}
 

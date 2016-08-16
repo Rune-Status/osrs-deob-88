@@ -12,20 +12,20 @@ public class Class17 {
 	int anInt149;
 
 	final void method81(final RSBuf var1) {
-		anInt152 = var1.method558();
-		anInt150 = var1.method562(-22412149);
-		anInt151 = var1.method562(533895948);
+		anInt152 = var1.readByteU();
+		anInt150 = var1.readInt2(-22412149);
+		anInt151 = var1.readInt2(533895948);
 		method82(var1);
 	}
 
 	final void method82(final RSBuf var1) {
-		anInt154 = var1.method558();
+		anInt154 = var1.readByteU();
 		anIntArray157 = new int[anInt154];
 		anIntArray147 = new int[anInt154];
 
 		for (int var2 = 0; var2 < anInt154; ++var2) {
-			anIntArray157[var2] = var1.method560();
-			anIntArray147[var2] = var1.method560();
+			anIntArray157[var2] = var1.readShortU();
+			anIntArray147[var2] = var1.readShortU();
 		}
 
 	}

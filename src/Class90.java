@@ -10,7 +10,7 @@ public class Class90 {
 		if (!var0.equals("")) {
 			client.aClass124_Sub14_Sub1_2024.method837(36);
 			client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
-			client.aClass124_Sub14_Sub1_2024.method550(var0);
+			client.aClass124_Sub14_Sub1_2024.writestr(var0);
 		}
 	}
 }

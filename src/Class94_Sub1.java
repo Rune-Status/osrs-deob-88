@@ -84,13 +84,13 @@ public class Class94_Sub1 extends Class94 {
 			aCRC32_1119.update(var3, 0, var3.length);
 			var8 = (int) aCRC32_1119.getValue();
 			final RSBuf var5 = new RSBuf(Def14.method729(var3));
-			final int var7 = var5.method558();
+			final int var7 = var5.readByteU();
 			if ((var7 != 5) && (var7 != 6))
 				throw new RuntimeException(var7 + "," + anInt1122 + "," + var2);
 
 			int var6 = 0;
 			if (var7 >= 6)
-				var6 = var5.method562(-1258873292);
+				var6 = var5.readInt2(-1258873292);
 
 			if ((var8 != anInt1120) || (var6 != anInt1121)) {
 				Class102.method403(this, 255, anInt1122, anInt1120, (byte) 0, true);

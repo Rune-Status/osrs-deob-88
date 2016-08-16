@@ -1,4 +1,4 @@
-public class Def13 extends Class124_Sub22 {
+public class Def13 extends Node2 {
 	int anInt1517;
 	static Class94 aClass94_1526;
 	int anInt1528;
@@ -17,7 +17,7 @@ public class Def13 extends Class124_Sub22 {
 
 	void method731(final RSBuf var1) {
 		while (true) {
-			final int var2 = var1.method558();
+			final int var2 = var1.readByteU();
 			if (var2 == 0)
 				return;
 
@@ -27,39 +27,39 @@ public class Def13 extends Class124_Sub22 {
 
 	void method732(final RSBuf var1, final int var2) {
 		if (var2 == 1)
-			anInt1528 = var1.method560();
+			anInt1528 = var1.readShortU();
 		else if (var2 == 2)
-			anInt1519 = var1.method560();
+			anInt1519 = var1.readShortU();
 		else if (var2 == 4)
-			anInt1516 = var1.method560();
+			anInt1516 = var1.readShortU();
 		else if (var2 == 5)
-			anInt1524 = var1.method560();
+			anInt1524 = var1.readShortU();
 		else if (var2 == 6)
-			anInt1525 = var1.method560();
+			anInt1525 = var1.readShortU();
 		else if (var2 == 7)
-			anInt1523 = var1.method558();
+			anInt1523 = var1.readByteU();
 		else if (var2 == 8)
-			anInt1527 = var1.method558();
+			anInt1527 = var1.readByteU();
 		else {
 			int var3;
 			int var4;
 			if (var2 == 40) {
-				var4 = var1.method558();
+				var4 = var1.readByteU();
 				aShortArray1520 = new short[var4];
 				aShortArray1521 = new short[var4];
 
 				for (var3 = 0; var3 < var4; ++var3) {
-					aShortArray1520[var3] = (short) var1.method560();
-					aShortArray1521[var3] = (short) var1.method560();
+					aShortArray1520[var3] = (short) var1.readShortU();
+					aShortArray1521[var3] = (short) var1.readShortU();
 				}
 			} else if (var2 == 41) {
-				var4 = var1.method558();
+				var4 = var1.readByteU();
 				aShortArray1514 = new short[var4];
 				aShortArray1522 = new short[var4];
 
 				for (var3 = 0; var3 < var4; ++var3) {
-					aShortArray1514[var3] = (short) var1.method560();
-					aShortArray1522[var3] = (short) var1.method560();
+					aShortArray1514[var3] = (short) var1.readShortU();
+					aShortArray1522[var3] = (short) var1.readShortU();
 				}
 			}
 		}

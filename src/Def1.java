@@ -8,7 +8,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class Def1 extends Class124_Sub22 {
+public class Def1 extends Node2 {
 	static Class94 aClass94_1365;
 	int anInt1367 = 0;
 	public int anInt1369;
@@ -31,7 +31,7 @@ public class Def1 extends Class124_Sub22 {
 
 	void method659(final RSBuf var1, final int var2) {
 		while (true) {
-			final int var3 = var1.method558();
+			final int var3 = var1.readByteU();
 			if (var3 == 0)
 				return;
 
@@ -69,35 +69,35 @@ public class Def1 extends Class124_Sub22 {
 	static void method661(final byte[] var0) {
 		final RSBuf var1 = new RSBuf(var0);
 		var1.pos = var0.length - 2;
-		Class7.anInt73 = var1.method560();
+		Class7.anInt73 = var1.readShortU();
 		Class7.anIntArray68 = new int[Class7.anInt73];
 		Class7.anIntArray74 = new int[Class7.anInt73];
 		Class7.anIntArray69 = new int[Class7.anInt73];
 		Class7.anIntArray70 = new int[Class7.anInt73];
 		Class124_Sub22_Sub5.aByteArrayArray1384 = new byte[Class7.anInt73][];
 		var1.pos = var0.length - 7 - (Class7.anInt73 * 8);
-		Class7.anInt67 = var1.method560();
-		Class49.anInt486 = var1.method560();
-		final int var4 = (var1.method558() & 255) + 1;
+		Class7.anInt67 = var1.readShortU();
+		Class49.anInt486 = var1.readShortU();
+		final int var4 = (var1.readByteU() & 255) + 1;
 
 		int var5;
 		for (var5 = 0; var5 < Class7.anInt73; ++var5)
-			Class7.anIntArray68[var5] = var1.method560();
+			Class7.anIntArray68[var5] = var1.readShortU();
 
 		for (var5 = 0; var5 < Class7.anInt73; ++var5)
-			Class7.anIntArray74[var5] = var1.method560();
+			Class7.anIntArray74[var5] = var1.readShortU();
 
 		for (var5 = 0; var5 < Class7.anInt73; ++var5)
-			Class7.anIntArray69[var5] = var1.method560();
+			Class7.anIntArray69[var5] = var1.readShortU();
 
 		for (var5 = 0; var5 < Class7.anInt73; ++var5)
-			Class7.anIntArray70[var5] = var1.method560();
+			Class7.anIntArray70[var5] = var1.readShortU();
 
 		var1.pos = var0.length - 7 - (Class7.anInt73 * 8) - (3 * (var4 - 1));
 		Class7.anIntArray66 = new int[var4];
 
 		for (var5 = 1; var5 < var4; ++var5) {
-			Class7.anIntArray66[var5] = var1.method557();
+			Class7.anIntArray66[var5] = var1.readTri();
 			if (Class7.anIntArray66[var5] == 0)
 				Class7.anIntArray66[var5] = 1;
 		}
@@ -110,15 +110,15 @@ public class Def1 extends Class124_Sub22 {
 			final int var6 = var9 * var10;
 			final byte[] var7 = new byte[var6];
 			Class124_Sub22_Sub5.aByteArrayArray1384[var5] = var7;
-			final int var8 = var1.method558();
+			final int var8 = var1.readByteU();
 			int var3;
 			if (var8 == 0)
 				for (var3 = 0; var3 < var6; ++var3)
-					var7[var3] = var1.method559();
+					var7[var3] = var1.readByte();
 			else if (var8 == 1)
 				for (var3 = 0; var3 < var9; ++var3)
 					for (int var2 = 0; var2 < var10; ++var2)
-						var7[(var9 * var2) + var3] = var1.method559();
+						var7[(var9 * var2) + var3] = var1.readByte();
 		}
 
 	}
@@ -240,7 +240,7 @@ public class Def1 extends Class124_Sub22 {
 
 	void method666(final RSBuf var1, final int var2) {
 		if (var2 == 1)
-			anInt1367 = var1.method557();
+			anInt1367 = var1.readTri();
 
 	}
 
@@ -248,7 +248,7 @@ public class Def1 extends Class124_Sub22 {
 		final Class124_Sub24 var1 = (Class124_Sub24) Class114.aClass110_824.method421();
 		if (var1 != null) {
 			final int var2 = var0.pos;
-			var0.method548(var1.anInt1309);
+			var0.writeInt(var1.anInt1309);
 
 			for (int var3 = 0; var3 < var1.anInt1307; ++var3)
 				if (var1.anIntArray1314[var3] != 0)
@@ -262,7 +262,7 @@ public class Def1 extends Class124_Sub22 {
 							var5 = var1.aFieldArray1310[var3];
 							var6 = var5.getInt((Object) null);
 							var0.writeByte(0);
-							var0.method548(var6);
+							var0.writeInt(var6);
 						} else if (var4 == 1) {
 							var5 = var1.aFieldArray1310[var3];
 							var5.setInt((Object) null, var1.anIntArray1306[var3]);
@@ -271,7 +271,7 @@ public class Def1 extends Class124_Sub22 {
 							var5 = var1.aFieldArray1310[var3];
 							var6 = var5.getModifiers();
 							var0.writeByte(0);
-							var0.method548(var6);
+							var0.writeInt(var6);
 						}
 
 						Method var25;
@@ -280,7 +280,7 @@ public class Def1 extends Class124_Sub22 {
 								var25 = var1.aMethodArray1312[var3];
 								var6 = var25.getModifiers();
 								var0.writeByte(0);
-								var0.method548(var6);
+								var0.writeInt(var6);
 							}
 						} else {
 							var25 = var1.aMethodArray1312[var3];
@@ -298,10 +298,10 @@ public class Def1 extends Class124_Sub22 {
 								var0.writeByte(0);
 							else if (var11 instanceof Number) {
 								var0.writeByte(1);
-								var0.method561(((Number) var11).longValue());
+								var0.writeULong(((Number) var11).longValue());
 							} else if (var11 instanceof String) {
 								var0.writeByte(2);
-								var0.method550((String) var11);
+								var0.writestr((String) var11);
 							} else
 								var0.writeByte(4);
 						}
@@ -331,7 +331,7 @@ public class Def1 extends Class124_Sub22 {
 						var0.writeByte(-21);
 					}
 
-			var0.method575(var2);
+			var0.writeclever(var2);
 			var1.method450();
 		}
 	}
@@ -358,7 +358,7 @@ public class Def1 extends Class124_Sub22 {
 				final int var7 = var12 & 63;
 				final int var13 = (var12 >> 6) & 63;
 				final int var14 = var12 >> 12;
-				final int var10 = var5.method558();
+				final int var10 = var5.readByteU();
 				final int var15 = var10 >> 2;
 				final int var16 = var10 & 3;
 				final int var18 = var13 + var1;

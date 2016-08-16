@@ -9,9 +9,9 @@ public class Class62 {
 	static int anInt547 = 0;
 	static int anInt552 = 0;
 	static int anInt549 = 0;
-	static byte[][] aByteArrayArray550 = new byte[1000][];
-	static byte[][] aByteArrayArray551 = new byte[250][];
-	static byte[][] aByteArrayArray553 = new byte[50][];
+	static byte[][] backing1k = new byte[1000][];
+	static byte[][] backing250 = new byte[250][];
+	static byte[][] backing50 = new byte[50][];
 
 	public static void method275() {
 		Def6.aClass113_1410.method436();
@@ -132,22 +132,22 @@ public class Class62 {
 		Class37.aClass134_389 = null;
 	}
 
-	static synchronized byte[] method277(final int var0, final byte var1) {
+	static synchronized byte[] forSize(final int size, final byte var1) {
 		byte[] var2;
-		if ((var0 == 100) && (anInt547 > 0)) {
-			var2 = aByteArrayArray550[--anInt547];
-			aByteArrayArray550[anInt547] = null;
+		if ((size == 100) && (anInt547 > 0)) {
+			var2 = backing1k[--anInt547];
+			backing1k[anInt547] = null;
 			return var2;
-		} else if ((var0 == 5000) && (anInt552 > 0)) {
-			var2 = aByteArrayArray551[--anInt552];
-			aByteArrayArray551[anInt552] = null;
+		} else if ((size == 5000) && (anInt552 > 0)) {
+			var2 = backing250[--anInt552];
+			backing250[anInt552] = null;
 			return var2;
-		} else if ((var0 == 30000) && (anInt549 > 0)) {
-			var2 = aByteArrayArray553[--anInt549];
-			aByteArrayArray553[anInt549] = null;
+		} else if ((size == 30000) && (anInt549 > 0)) {
+			var2 = backing50[--anInt549];
+			backing50[anInt549] = null;
 			return var2;
 		} else
-			return new byte[var0];
+			return new byte[size];
 	}
 
 	public static Class53 method278(final int var0, final short var1) {

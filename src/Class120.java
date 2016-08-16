@@ -14,12 +14,12 @@ public class Class120 {
 	}
 
 	Class120(final RSBuf var1, final byte var2, final int var3) {
-		aString848 = var1.method597();
-		aString852 = var1.method597();
-		anInt851 = var1.method560();
-		aLong849 = var1.method563();
-		final int var4 = var1.method562(1599678246);
-		final int var5 = var1.method562(377225105);
+		aString848 = var1.readStr2();
+		aString852 = var1.readStr2();
+		anInt851 = var1.readShortU();
+		aLong849 = var1.readLong2();
+		final int var4 = var1.readInt2(1599678246);
+		final int var5 = var1.readInt2(377225105);
 		aClass125_850 = new Class125();
 		aClass125_850.method452(2);
 		aClass125_850.method453(var2);
