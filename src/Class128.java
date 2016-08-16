@@ -1,7 +1,7 @@
 import java.util.Comparator;
 
 final class Class128 implements Comparator {
-	public static Class94 aClass94_887;
+	public static CacheArch aClass94_887;
 
 	@Override
 	public boolean equals(final Object var1) {

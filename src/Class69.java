@@ -5,7 +5,7 @@ import java.io.IOException;
 public final class Class69 {
 	protected static Frame aFrame578;
 	static int anInt580;
-	public static Class94 aClass94_581;
+	public static CacheArch aClass94_581;
 	static byte[] aByteArray575 = new byte[520];
 	Class132 aClass132_579 = null;
 	Class132 aClass132_576 = null;

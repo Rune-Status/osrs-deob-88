@@ -17,7 +17,7 @@ public final class Class124_Sub11 extends Node {
 	int anInt1044 = 0;
 	int anInt1050 = -1;
 
-	public static Class124_Sub22_Sub16_Sub2[] method537(final Class94 var0, final String var1, final String var2) {
+	public static Class124_Sub22_Sub16_Sub2[] method537(final CacheArch var0, final String var1, final String var2) {
 		final int var3 = var0.method376(var1);
 		final int var6 = var0.method383(var3, var2);
 		Class124_Sub22_Sub16_Sub2[] var7;
@@ -88,7 +88,7 @@ public final class Class124_Sub11 extends Node {
 					((Class31) Class124_Sub22_Sub16_Sub3.anInterface2_1828).method176(0.6D);
 				}
 
-				Class124_Sub22_Sub10.aClass113_1463.method436();
+				Class124_Sub22_Sub10.aClass113_1463.map();
 			}
 
 			if (var1 == 3) {

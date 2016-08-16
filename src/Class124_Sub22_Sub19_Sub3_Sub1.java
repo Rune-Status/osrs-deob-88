@@ -15,7 +15,7 @@ public final class Class124_Sub22_Sub19_Sub3_Sub1 extends Class124_Sub22_Sub19_S
 		return null != aClass124_Sub22_Sub1_1941;
 	}
 
-	static Class124_Sub18 method1042(final Class94 var0, final int var1) {
+	static Class124_Sub18 method1042(final CacheArch var0, final int var1) {
 		final byte[] var2 = var0.decode(var1);
 		return var2 == null ? null : new Class124_Sub18(var2);
 	}

@@ -1,4 +1,4 @@
-public abstract class Class94 {
+public abstract class CacheArch {
 	static Class124_Sub22_Sub16_Sub2 aClass124_Sub22_Sub16_Sub2_759;
 	public int anInt756;
 	int anInt758;
@@ -134,9 +134,9 @@ public abstract class Class94 {
 	void method364(final int var1, final int var2) {
 	}
 
-	public boolean method365(final String var1) {
+	public boolean valid(final String var1) {
 		final int var2 = method376("");
-		return var2 == -1 ? method379(var1, "") : method379("", var1);
+		return var2 == -1 ? valid2(var1, "") : valid2("", var1);
 	}
 
 	public boolean valid(final int var1, final int var2) {
@@ -186,7 +186,7 @@ public abstract class Class94 {
 
 	}
 
-	public byte[] method370(final int var1) {
+	public byte[] decdode(final int var1) {
 		if (anObjectArrayArray754.length != 1) {
 			if (anObjectArrayArray754[var1].length != 1)
 				throw new RuntimeException();
@@ -209,7 +209,7 @@ public abstract class Class94 {
 				}
 			}
 
-			final byte[] var5 = Class67.method299(anObjectArrayArray754[var1][var2], false);
+			final byte[] var5 = ISAAC.method299(anObjectArrayArray754[var1][var2], false);
 			if (aBool760)
 				anObjectArrayArray754[var1][var2] = null;
 
@@ -249,7 +249,7 @@ public abstract class Class94 {
 		return decode(var1, var2, (int[]) null);
 	}
 
-	public byte[] method378(String var1, String var2) {
+	public byte[] decode3(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
 		final int var3 = aClass109_746.method419(Def5.method708(var1));
@@ -257,7 +257,7 @@ public abstract class Class94 {
 		return decode(var3, var4);
 	}
 
-	public boolean method379(String var1, String var2) {
+	public boolean valid2(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
 		final int var3 = aClass109_746.method419(Def5.method708(var1));
@@ -265,7 +265,7 @@ public abstract class Class94 {
 		return valid(var3, var4);
 	}
 
-	Class94(final boolean var1, final boolean var2) {
+	CacheArch(final boolean var1, final boolean var2) {
 		aBool757 = var1;
 		aBool760 = var2;
 	}
@@ -283,7 +283,7 @@ public abstract class Class94 {
 				}
 			}
 
-			final byte[] var4 = Class67.method299(anObjectArrayArray754[var1][var2], false);
+			final byte[] var4 = ISAAC.method299(anObjectArrayArray754[var1][var2], false);
 			return var4;
 		} else
 			return null;
@@ -328,11 +328,11 @@ public abstract class Class94 {
 			else {
 				byte[] var8;
 				if ((null != var2) && ((var2[0] != 0) || (var2[1] != 0) || (var2[2] != 0) || (var2[3] != 0))) {
-					var8 = Class67.method299(anObjectArray753[var1], true);
+					var8 = ISAAC.method299(anObjectArray753[var1], true);
 					final RSBuf var9 = new RSBuf(var8);
 					var9.xtea5(var2, 5, var9.backing.length);
 				} else
-					var8 = Class67.method299(anObjectArray753[var1], false);
+					var8 = ISAAC.method299(anObjectArray753[var1], false);
 
 				final byte[] var20 = Def14.method729(var8);
 				if (aBool757)

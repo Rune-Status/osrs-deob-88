@@ -94,14 +94,14 @@ public class Class32 {
 	}
 
 	public static Def14 method185(final int var0) {
-		Def14 var1 = (Def14) Def14.aClass113_1509.method434(var0);
+		Def14 var1 = (Def14) Def14.aClass113_1509.forId(var0);
 		if (null == var1) {
 			final byte[] var2 = Def14.aClass94_1508.decode(14, var0);
 			var1 = new Def14();
 			if (var2 != null)
 				var1.method725(new RSBuf(var2));
 
-			Def14.aClass113_1509.method435(var1, var0);
+			Def14.aClass113_1509.map(var1, var0);
 			return var1;
 		} else
 			return var1;

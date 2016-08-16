@@ -1,7 +1,7 @@
 public class Class80 {
 	static int anInt644;
 	static client aclient645;
-	static Class94 aClass94_646;
+	static CacheArch aClass94_646;
 
 	static final void method327(int var0, int var1, final int var2) {
 		if ((var0 >= 128) && (var1 >= 128) && (var0 <= 13056) && (var1 <= 13056)) {

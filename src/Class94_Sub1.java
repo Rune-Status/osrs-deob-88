@@ -1,6 +1,6 @@
 import java.util.zip.CRC32;
 
-public class Class94_Sub1 extends Class94 {
+public class Class94_Sub1 extends CacheArch {
 	volatile boolean aBool1116 = false;
 	volatile boolean[] aBoolArray1118;
 	int anInt1114 = -1;
@@ -22,8 +22,8 @@ public class Class94_Sub1 extends Class94 {
 			final long var2 = 16711680 + var1;
 			int var5;
 			if ((null != Class28.aClass124_Sub22_Sub21_311) && (Class28.aClass124_Sub22_Sub21_311.aLong874 == var2))
-				var5 = 1 + ((Class67.aClass124_Sub14_569.pos * 99)
-						/ (Class67.aClass124_Sub14_569.backing.length
+				var5 = 1 + ((ISAAC.buf.pos * 99)
+						/ (ISAAC.buf.backing.length
 								- Class28.aClass124_Sub22_Sub21_311.aByte1650));
 			else
 				var5 = 0;
@@ -164,8 +164,8 @@ public class Class94_Sub1 extends Class94 {
 			final long var4 = var1 + (var3 << 16);
 			int var2;
 			if ((Class28.aClass124_Sub22_Sub21_311 != null) && (var4 == Class28.aClass124_Sub22_Sub21_311.aLong874))
-				var2 = ((Class67.aClass124_Sub14_569.pos * 99)
-						/ (Class67.aClass124_Sub14_569.backing.length
+				var2 = ((ISAAC.buf.pos * 99)
+						/ (ISAAC.buf.backing.length
 								- Class28.aClass124_Sub22_Sub21_311.aByte1650))
 						+ 1;
 			else

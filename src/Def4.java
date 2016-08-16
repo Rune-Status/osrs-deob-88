@@ -1,5 +1,5 @@
-public class Def4 extends Node2 {
-	public static Class94 aClass94_1561;
+public class Def4 extends JagMap {
+	public static CacheArch aClass94_1561;
 	public int anInt1552;
 	public int anInt1562;
 	public int anInt1560;

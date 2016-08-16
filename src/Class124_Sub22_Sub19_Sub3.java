@@ -214,6 +214,6 @@ public abstract class Class124_Sub22_Sub19_Sub3 extends Class124_Sub22_Sub19 {
 	}
 
 	public static void method897() {
-		Class100.aClass113_786.method436();
+		Class100.aClass113_786.map();
 	}
 }

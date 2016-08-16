@@ -142,7 +142,7 @@ public class Class100 {
 		anIntArray785[5] = var4;
 		anIntArray785[9] = var3;
 		if ((0L != var1) && (aLong781 != var1))
-			aClass113_786.method437(var1);
+			aClass113_786.map(var1);
 
 	}
 
@@ -170,7 +170,7 @@ public class Class100 {
 				}
 			}
 
-			Class124_Sub22_Sub19_Sub7 var9 = (Class124_Sub22_Sub19_Sub7) aClass113_786.method434(var6);
+			Class124_Sub22_Sub19_Sub7 var9 = (Class124_Sub22_Sub19_Sub7) aClass113_786.forId(var6);
 			if (var9 == null) {
 				boolean var15 = false;
 
@@ -186,20 +186,20 @@ public class Class100 {
 
 				if (var15) {
 					if (-1L != aLong787)
-						var9 = (Class124_Sub22_Sub19_Sub7) aClass113_786.method434(aLong787);
+						var9 = (Class124_Sub22_Sub19_Sub7) aClass113_786.forId(aLong787);
 
 					if (var9 == null)
 						return null;
 				}
 
 				if (var9 == null) {
-					final Class124_Sub22_Sub19_Sub4[] var11 = new Class124_Sub22_Sub19_Sub4[12];
+					final Model[] var11 = new Model[12];
 					var13 = 0;
 
 					int var5;
 					for (int var16 = 0; var16 < 12; ++var16) {
 						var5 = var8[var16];
-						Class124_Sub22_Sub19_Sub4 var17;
+						Model var17;
 						if ((var5 >= 256) && (var5 < 512)) {
 							var17 = Class84.method338(var5 - 256).method650();
 							if (null != var17)
@@ -213,7 +213,7 @@ public class Class100 {
 						}
 					}
 
-					final Class124_Sub22_Sub19_Sub4 var18 = new Class124_Sub22_Sub19_Sub4(var11, var13);
+					final Model var18 = new Model(var11, var13);
 
 					for (var5 = 0; var5 < 5; ++var5) {
 						if (anIntArray778[var5] < aShortArrayArray783[var5].length)
@@ -225,7 +225,7 @@ public class Class100 {
 					}
 
 					var9 = var18.method945(64, 850, -30, -50, -30);
-					aClass113_786.method435(var9, var6);
+					aClass113_786.map(var9, var6);
 					aLong787 = var6;
 				}
 			}
@@ -246,7 +246,7 @@ public class Class100 {
 		}
 	}
 
-	Class124_Sub22_Sub19_Sub4 method400() {
+	Model method400() {
 		if (anInt780 != -1)
 			return Class34.method188(anInt780, 1846943511).method641();
 		else {
@@ -265,13 +265,13 @@ public class Class100 {
 			if (var8)
 				return null;
 			else {
-				final Class124_Sub22_Sub19_Sub4[] var1 = new Class124_Sub22_Sub19_Sub4[12];
+				final Model[] var1 = new Model[12];
 				var2 = 0;
 
 				int var4;
 				for (int var7 = 0; var7 < 12; ++var7) {
 					var4 = anIntArray785[var7];
-					Class124_Sub22_Sub19_Sub4 var3;
+					Model var3;
 					if ((var4 >= 256) && (var4 < 512)) {
 						var3 = Class84.method338(var4 - 256).method652();
 						if (var3 != null)
@@ -285,7 +285,7 @@ public class Class100 {
 					}
 				}
 
-				final Class124_Sub22_Sub19_Sub4 var6 = new Class124_Sub22_Sub19_Sub4(var1, var2);
+				final Model var6 = new Model(var1, var2);
 
 				for (var4 = 0; var4 < 5; ++var4) {
 					if (anIntArray778[var4] < aShortArrayArray783[var4].length)

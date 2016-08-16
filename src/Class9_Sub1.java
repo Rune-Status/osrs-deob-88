@@ -429,10 +429,10 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 					} else
 						var42.method450();
 
-				Def6.aClass113_1389.method436();
+				Def6.aClass113_1389.map();
 				if (null != Class69.aFrame578) {
-					client.aClass124_Sub14_Sub1_2024.method837(103);
-					client.aClass124_Sub14_Sub1_2024.writeInt(1057001181);
+					client.secbuf.writeOpcode(103);
+					client.secbuf.writeInt(1057001181);
 				}
 
 				if (!client.aBool2043) {
@@ -452,7 +452,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 				Class124_Sub5.method516(30);
 				Def15.method751();
 				Class124_Sub6.method520();
-				client.aClass124_Sub14_Sub1_2024.method837(104);
+				client.secbuf.writeOpcode(104);
 				Class42.method215();
 			}
 		}

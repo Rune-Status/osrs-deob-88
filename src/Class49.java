@@ -46,9 +46,9 @@ public class Class49 {
 			}
 
 			if (client.anInt2016 == 2) {
-				client.aClass124_Sub14_Sub1_2024.pos = 0;
-				client.aClass124_Sub14_Sub1_2024.writeByte(14);
-				Class73.aClass78_609.method323(client.aClass124_Sub14_Sub1_2024.backing, 0, 1);
+				client.secbuf.pos = 0;
+				client.secbuf.writeByte(14);
+				Class73.aClass78_609.method323(client.secbuf.backing, 0, 1);
 				client.aClass124_Sub14_Sub1_2026.pos = 0;
 				client.anInt2016 = 3;
 			}
@@ -83,48 +83,48 @@ public class Class49 {
 				final int[] var1 = new int[] { (int) (Math.random() * 9.9999999E7D),
 						(int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D),
 						(int) (Math.random() * 9.9999999E7D) };
-				client.aClass124_Sub14_Sub1_2024.pos = 0;
-				client.aClass124_Sub14_Sub1_2024.writeByte(1);
-				client.aClass124_Sub14_Sub1_2024.writeByte(Class4.aClass72_48.method11(2069700366));
-				client.aClass124_Sub14_Sub1_2024.writeInt(var1[0]);
-				client.aClass124_Sub14_Sub1_2024.writeInt(var1[1]);
-				client.aClass124_Sub14_Sub1_2024.writeInt(var1[2]);
-				client.aClass124_Sub14_Sub1_2024.writeInt(var1[3]);
+				client.secbuf.pos = 0;
+				client.secbuf.writeByte(1);
+				client.secbuf.writeByte(Class4.aClass72_48.method11(2069700366));
+				client.secbuf.writeInt(var1[0]);
+				client.secbuf.writeInt(var1[1]);
+				client.secbuf.writeInt(var1[2]);
+				client.secbuf.writeInt(var1[3]);
 				switch (Class4.aClass72_48.anInt596) {
 				case 0:
 				case 1:
-					client.aClass124_Sub14_Sub1_2024.writeTrib(Class84.anInt673);
-					client.aClass124_Sub14_Sub1_2024.pos += 5;
+					client.secbuf.writeTrib(Class84.anInt673);
+					client.secbuf.pos += 5;
 					break;
 				case 2:
-					client.aClass124_Sub14_Sub1_2024.writeInt(((Integer) Class57.aClass22_538.aLinkedHashMap252
+					client.secbuf.writeInt(((Integer) Class57.aClass22_538.aLinkedHashMap252
 							.get(Integer.valueOf(Class47.method232(Class4.aString44)))).intValue());
-					client.aClass124_Sub14_Sub1_2024.pos += 4;
+					client.secbuf.pos += 4;
 					break;
 				case 3:
-					client.aClass124_Sub14_Sub1_2024.pos += 8;
+					client.secbuf.pos += 8;
 				}
 
-				client.aClass124_Sub14_Sub1_2024.writestr(Class4.aString45);
-				client.aClass124_Sub14_Sub1_2024.dorsa(aBigInteger487, aBigInteger483);
-				client.aClass124_Sub14_Sub1_2167.pos = 0;
+				client.secbuf.writestr(Class4.aString45);
+				client.secbuf.dorsa(aBigInteger487, aBigInteger483);
+				client.loginbuf.pos = 0;
 				if (client.anInt1992 == 40)
-					client.aClass124_Sub14_Sub1_2167.writeByte(18);
+					client.loginbuf.writeByte(18);
 				else
-					client.aClass124_Sub14_Sub1_2167.writeByte(16);
+					client.loginbuf.writeByte(16);
 
-				client.aClass124_Sub14_Sub1_2167.writeShort(0);
-				var2 = client.aClass124_Sub14_Sub1_2167.pos;
-				client.aClass124_Sub14_Sub1_2167.writeInt(88);
-				client.aClass124_Sub14_Sub1_2167.writeReverse(client.aClass124_Sub14_Sub1_2024.backing, 0,
-						client.aClass124_Sub14_Sub1_2024.pos);
-				var3 = client.aClass124_Sub14_Sub1_2167.pos;
-				client.aClass124_Sub14_Sub1_2167.writestr(Class4.aString44);
-				client.aClass124_Sub14_Sub1_2167
+				client.loginbuf.writeShort(0);
+				var2 = client.loginbuf.pos;
+				client.loginbuf.writeInt(88);
+				client.loginbuf.writeReverse(client.secbuf.backing, 0,
+						client.secbuf.pos);
+				var3 = client.loginbuf.pos;
+				client.loginbuf.writestr(Class4.aString44);
+				client.loginbuf
 						.writeByte(((client.aBool2196 ? 1 : 0) << 1) | (client.aBool1989 ? 1 : 0));
-				client.aClass124_Sub14_Sub1_2167.writeShort(Class56_Sub2.anInt1083);
-				client.aClass124_Sub14_Sub1_2167.writeShort(Class81.anInt662);
-				final Class124_Sub14_Sub1 var4 = client.aClass124_Sub14_Sub1_2167;
+				client.loginbuf.writeShort(Class56_Sub2.anInt1083);
+				client.loginbuf.writeShort(Class81.anInt662);
+				final Outbuf var4 = client.loginbuf;
 				final byte[] var5 = new byte[24];
 
 				int var6;
@@ -143,33 +143,33 @@ public class Class49 {
 				}
 
 				var4.writeReverse(var5, 0, 24);
-				client.aClass124_Sub14_Sub1_2167.writestr(client.aString1991);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class61.anInt546);
+				client.loginbuf.writestr(client.aString1991);
+				client.loginbuf.writeInt(Class61.anInt546);
 				final RSBuf var19 = new RSBuf(aClass124_Sub15_484.method609());
 				aClass124_Sub15_484.method610(var19);
-				client.aClass124_Sub14_Sub1_2167.writeReverse(var19.backing, 0, var19.backing.length);
-				client.aClass124_Sub14_Sub1_2167.writeByte(Class76.anInt620);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class82.aClass94_Sub1_671.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class45.aClass94_Sub1_450.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class43.aClass94_Sub1_431.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class9.aClass94_Sub1_100.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class39.aClass94_Sub1_399.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class125.aClass94_Sub1_883.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class5.aClass94_Sub1_58.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class66.aClass94_Sub1_562.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class124_Sub11.aClass94_Sub1_1047.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class65.aClass94_Sub1_561.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class124_Sub22_Sub20.aClass94_Sub1_1647.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class68.aClass94_Sub1_571.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class88.aClass94_Sub1_695.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class25.aClass94_Sub1_279.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Class70.aClass94_Sub1_585.anInt756);
-				client.aClass124_Sub14_Sub1_2167.writeInt(Somet2.aClass94_Sub1_1604.anInt756);
-				client.aClass124_Sub14_Sub1_2167.xtea3(var1, var3, client.aClass124_Sub14_Sub1_2167.pos);
-				client.aClass124_Sub14_Sub1_2167.endShortSize(client.aClass124_Sub14_Sub1_2167.pos - var2);
-				Class73.aClass78_609.method323(client.aClass124_Sub14_Sub1_2167.backing, 0,
-						client.aClass124_Sub14_Sub1_2167.pos);
-				client.aClass124_Sub14_Sub1_2024.method836(var1);
+				client.loginbuf.writeReverse(var19.backing, 0, var19.backing.length);
+				client.loginbuf.writeByte(Class76.anInt620);
+				client.loginbuf.writeInt(Class82.aClass94_Sub1_671.anInt756);
+				client.loginbuf.writeInt(Class45.aClass94_Sub1_450.anInt756);
+				client.loginbuf.writeInt(Class43.aClass94_Sub1_431.anInt756);
+				client.loginbuf.writeInt(Class9.aClass94_Sub1_100.anInt756);
+				client.loginbuf.writeInt(Class39.aClass94_Sub1_399.anInt756);
+				client.loginbuf.writeInt(Class125.aClass94_Sub1_883.anInt756);
+				client.loginbuf.writeInt(Class5.aClass94_Sub1_58.anInt756);
+				client.loginbuf.writeInt(Class66.aClass94_Sub1_562.anInt756);
+				client.loginbuf.writeInt(Class124_Sub11.aClass94_Sub1_1047.anInt756);
+				client.loginbuf.writeInt(Class65.aClass94_Sub1_561.anInt756);
+				client.loginbuf.writeInt(Class124_Sub22_Sub20.aClass94_Sub1_1647.anInt756);
+				client.loginbuf.writeInt(Class68.aClass94_Sub1_571.anInt756);
+				client.loginbuf.writeInt(Class88.aClass94_Sub1_695.anInt756);
+				client.loginbuf.writeInt(Class25.aClass94_Sub1_279.anInt756);
+				client.loginbuf.writeInt(Class70.aClass94_Sub1_585.anInt756);
+				client.loginbuf.writeInt(Somet2.aClass94_Sub1_1604.anInt756);
+				client.loginbuf.xtea3(var1, var3, client.loginbuf.pos);
+				client.loginbuf.endShortSize(client.loginbuf.pos - var2);
+				Class73.aClass78_609.method323(client.loginbuf.backing, 0,
+						client.loginbuf.pos);
+				client.secbuf.method836(var1);
 
 				for (var6 = 0; var6 < 4; ++var6)
 					var1[var6] += 50;
@@ -186,7 +186,7 @@ public class Class49 {
 					client.anInt2016 = 9;
 				else {
 					if ((var0 == 15) && (client.anInt1992 == 40)) {
-						client.aClass124_Sub14_Sub1_2024.pos = 0;
+						client.secbuf.pos = 0;
 						client.aClass124_Sub14_Sub1_2026.pos = 0;
 						client.anInt2028 = -1;
 						client.anInt2017 = 1;
@@ -250,10 +250,10 @@ public class Class49 {
 					Class73.aClass78_609.method320(client.aClass124_Sub14_Sub1_2026.backing, 0, 4);
 					client.aClass124_Sub14_Sub1_2026.pos = 0;
 					if (var15) {
-						var2 = client.aClass124_Sub14_Sub1_2026.method838() << 24;
-						var2 |= client.aClass124_Sub14_Sub1_2026.method838() << 16;
-						var2 |= client.aClass124_Sub14_Sub1_2026.method838() << 8;
-						var2 |= client.aClass124_Sub14_Sub1_2026.method838();
+						var2 = client.aClass124_Sub14_Sub1_2026.readOpcode() << 24;
+						var2 |= client.aClass124_Sub14_Sub1_2026.readOpcode() << 16;
+						var2 |= client.aClass124_Sub14_Sub1_2026.readOpcode() << 8;
+						var2 |= client.aClass124_Sub14_Sub1_2026.readOpcode();
 						var3 = Class47.method232(Class4.aString44);
 						if ((Class57.aClass22_538.aLinkedHashMap252.size() >= 10)
 								&& !Class57.aClass22_538.aLinkedHashMap252.containsKey(Integer.valueOf(var3))) {
@@ -274,7 +274,7 @@ public class Class49 {
 					client.anInt2107 = Class73.aClass78_609.method319();
 					Class73.aClass78_609.method320(client.aClass124_Sub14_Sub1_2026.backing, 0, 1);
 					client.aClass124_Sub14_Sub1_2026.pos = 0;
-					client.anInt2028 = client.aClass124_Sub14_Sub1_2026.method838();
+					client.anInt2028 = client.aClass124_Sub14_Sub1_2026.readOpcode();
 					Class73.aClass78_609.method320(client.aClass124_Sub14_Sub1_2026.backing, 0, 2);
 					client.aClass124_Sub14_Sub1_2026.pos = 0;
 					client.anInt2027 = client.aClass124_Sub14_Sub1_2026.readShortU();
@@ -446,7 +446,7 @@ public class Class49 {
 
 	}
 
-	public static void method237(final Class94 var0) {
+	public static void method237(final CacheArch var0) {
 		Def19.aClass94_1441 = var0;
 	}
 
@@ -464,10 +464,10 @@ public class Class49 {
 	}
 
 	static final void method239(final String var0) {
-		if (null != Class124_Sub14_Sub1.aClass124_Sub9Array1609) {
-			client.aClass124_Sub14_Sub1_2024.method837(22);
-			client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
-			client.aClass124_Sub14_Sub1_2024.writestr(var0);
+		if (null != client.aClass124_Sub9Array1609) {
+			client.secbuf.writeOpcode(22);
+			client.secbuf.writeByte(Class54.method258(var0));
+			client.secbuf.writestr(var0);
 		}
 	}
 

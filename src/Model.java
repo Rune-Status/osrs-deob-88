@@ -1,4 +1,4 @@
-public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
+public class Model extends Class124_Sub22_Sub19 {
 	int anInt1756 = 0;
 	int anInt1758 = 0;
 	byte aByte1744 = 0;
@@ -47,7 +47,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 	int anInt1764;
 	int anInt1785;
 
-	Class124_Sub22_Sub19_Sub4(final byte[] var1) {
+	Model(final byte[] var1) {
 		if ((var1[var1.length - 1] == -1) && (var1[var1.length - 2] == -1))
 			method929(var1);
 		else
@@ -382,7 +382,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 
 	}
 
-	public Class124_Sub22_Sub19_Sub4(final Class124_Sub22_Sub19_Sub4 var1, final boolean var2, final boolean var3,
+	public Model(final Model var1, final boolean var2, final boolean var3,
 			final boolean var4, final boolean var5) {
 		anInt1756 = var1.anInt1756;
 		anInt1758 = var1.anInt1758;
@@ -451,8 +451,8 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		aShort1779 = var1.aShort1779;
 	}
 
-	public Class124_Sub22_Sub19_Sub4 method930() {
-		final Class124_Sub22_Sub19_Sub4 var1 = new Class124_Sub22_Sub19_Sub4();
+	public Model method930() {
+		final Model var1 = new Model();
 		if (aByteArray1752 != null) {
 			var1.aByteArray1752 = new byte[anInt1758];
 
@@ -497,7 +497,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		return var1;
 	}
 
-	public Class124_Sub22_Sub19_Sub4 method931(final int[][] var1, final int var2, final int var3, final int var4,
+	public Model method931(final int[][] var1, final int var2, final int var3, final int var4,
 			final boolean var5, final int var6) {
 		method948();
 		int var18 = var2 + anInt1782;
@@ -514,7 +514,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 					&& (var1[var17][var19] == var3))
 				return this;
 			else {
-				final Class124_Sub22_Sub19_Sub4 var7 = new Class124_Sub22_Sub19_Sub4();
+				final Model var7 = new Model();
 				var7.anInt1756 = anInt1756;
 				var7.anInt1758 = anInt1758;
 				var7.anInt1759 = anInt1759;
@@ -751,12 +751,12 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		aBool1788 = false;
 	}
 
-	public static Class124_Sub22_Sub19_Sub4 method943(final Class94 var0, final int var1, final int var2) {
+	public static Model method943(final CacheArch var0, final int var1, final int var2) {
 		final byte[] var3 = var0.decode(var1, var2);
-		return var3 == null ? null : new Class124_Sub22_Sub19_Sub4(var3);
+		return var3 == null ? null : new Model(var3);
 	}
 
-	static void method944(final Class124_Sub22_Sub19_Sub4 var0, final Class124_Sub22_Sub19_Sub4 var1, final int var2,
+	static void method944(final Model var0, final Model var1, final int var2,
 			final int var3, final int var4, final boolean var5) {
 		var0.method948();
 		var0.method950();
@@ -1007,7 +1007,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		return var6;
 	}
 
-	Class124_Sub22_Sub19_Sub4() {
+	Model() {
 	}
 
 	static {
@@ -1015,7 +1015,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		anIntArray1748 = Class124_Sub22_Sub16_Sub3.anIntArray1848;
 	}
 
-	final int method946(final Class124_Sub22_Sub19_Sub4 var1, final int var2) {
+	final int method946(final Model var1, final int var2) {
 		int var3 = -1;
 		final int var6 = var1.anIntArray1784[var2];
 		final int var4 = var1.anIntArray1746[var2];
@@ -1340,7 +1340,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		return (var0 & '\uff80') + var1;
 	}
 
-	public Class124_Sub22_Sub19_Sub4(final Class124_Sub22_Sub19_Sub4[] var1, final int var2) {
+	public Model(final Model[] var1, final int var2) {
 		boolean var4 = false;
 		boolean var12 = false;
 		boolean var9 = false;
@@ -1352,7 +1352,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		anInt1759 = 0;
 		aByte1744 = -1;
 
-		Class124_Sub22_Sub19_Sub4 var3;
+		Model var3;
 		int var10;
 		for (var10 = 0; var10 < var2; ++var10) {
 			var3 = var1[var10];

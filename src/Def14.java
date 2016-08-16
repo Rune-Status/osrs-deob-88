@@ -1,5 +1,5 @@
-public class Def14 extends Node2 {
-	public static Class94 aClass94_1508;
+public class Def14 extends JagMap {
+	public static CacheArch aClass94_1508;
 	static int[] anIntArray1512;
 	static Class113 aClass113_1509 = new Class113(64);
 	public int anInt1510;
@@ -64,7 +64,7 @@ public class Def14 extends Node2 {
 
 	}
 
-	public static Class124_Sub22_Sub16_Sub1[] method728(final Class94 var0, final String var1, final String var2) {
+	public static Class124_Sub22_Sub16_Sub1[] method728(final CacheArch var0, final String var1, final String var2) {
 		final int var3 = var0.method376(var1);
 		final int var4 = var0.method383(var3, var2);
 		return Class72.method310(var0, var3, var4);
@@ -74,7 +74,7 @@ public class Def14 extends Node2 {
 		final RSBuf var1 = new RSBuf(var0);
 		final int var4 = var1.readByteU();
 		final int var3 = var1.readInt2(-1862637362);
-		if ((var3 >= 0) && ((Class94.anInt755 == 0) || (var3 <= Class94.anInt755))) {
+		if ((var3 >= 0) && ((CacheArch.anInt755 == 0) || (var3 <= CacheArch.anInt755))) {
 			if (var4 == 0) {
 				final byte[] var2 = new byte[var3];
 				var1.readReverse(var2, 0, var3);
@@ -85,12 +85,12 @@ public class Def14 extends Node2 {
 					System.err.printf("bad xtea decrypt %n");
 					return new byte[100];
 				}
-				if ((var5 >= 0) && ((Class94.anInt755 == 0) || (var5 <= Class94.anInt755))) {
+				if ((var5 >= 0) && ((CacheArch.anInt755 == 0) || (var5 <= CacheArch.anInt755))) {
 					final byte[] var6 = new byte[var5];
 					if (var4 == 1)
 						Class52.method248(var6, var5, var0, var3, 9);
 					else
-						Class94.aClass64_743.method288(var1, var6);
+						CacheArch.aClass64_743.method288(var1, var6);
 
 					return var6;
 				} else {

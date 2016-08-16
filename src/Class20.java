@@ -108,7 +108,7 @@ public class Class20 {
 		Class49.method238(var0, var1, var2, (String) null);
 	}
 
-	public static void method96(final Class94 var0, final String var1, final String var2, final int var3,
+	public static void method96(final CacheArch var0, final String var1, final String var2, final int var3,
 			final boolean var4) {
 		final int var5 = var0.method376(var1);
 		final int var6 = var0.method383(var5, var2);

@@ -60,7 +60,7 @@ public class Class34 implements Interface3 {
 	}
 
 	public static Def9 method188(final int var0, final int var1) {
-		Def9 var2 = (Def9) Def9.aClass113_1316.method434(var0);
+		Def9 var2 = (Def9) Def9.aClass113_1316.forId(var0);
 		if (var2 != null)
 			return var2;
 		else {
@@ -71,7 +71,7 @@ public class Class34 implements Interface3 {
 				var2.method642(new RSBuf(var3));
 
 			var2.method638();
-			Def9.aClass113_1316.method435(var2, var0);
+			Def9.aClass113_1316.map(var2, var0);
 			return var2;
 		}
 	}

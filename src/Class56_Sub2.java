@@ -66,7 +66,7 @@ public class Class56_Sub2 extends Class56 {
 
 	}
 
-	public static boolean method607(final Class94 var0, final Class94 var1, final Class94 var2,
+	public static boolean method607(final CacheArch var0, final CacheArch var1, final CacheArch var2,
 			final Class124_Sub4_Sub3 var3) {
 		Class96.aClass94_764 = var0;
 		Class96.aClass94_765 = var1;

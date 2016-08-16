@@ -3,7 +3,7 @@ public class Class12 {
 	int anInt122;
 	int anInt124;
 
-	public static Class12 method68(final Class94 var0, final int var1, final int var2) {
+	public static Class12 method68(final CacheArch var0, final int var1, final int var2) {
 		final byte[] var3 = var0.decode(var1, var2);
 		return var3 == null ? null : new Class12(new RSBuf(var3));
 	}

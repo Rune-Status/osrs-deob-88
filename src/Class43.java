@@ -13,7 +13,7 @@ public class Class43 {
 	static String[] aStringArray430;
 
 	public static Def13 method217(final int var0) {
-		Def13 var1 = (Def13) Def13.aClass113_1515.method434(var0);
+		Def13 var1 = (Def13) Def13.aClass113_1515.forId(var0);
 		if (null != var1)
 			return var1;
 		else {
@@ -23,7 +23,7 @@ public class Class43 {
 			if (var2 != null)
 				var1.method731(new RSBuf(var2));
 
-			Def13.aClass113_1515.method435(var1, var0);
+			Def13.aClass113_1515.map(var1, var0);
 			return var1;
 		}
 	}
@@ -451,7 +451,7 @@ public class Class43 {
 									if (var21 > 0) {
 										var15 = var21 - 1;
 										var24 = (Def4) Def4.aClass113_1553
-												.method434(var15);
+												.forId(var15);
 										Def4 var41;
 										if (null != var24)
 											var41 = var24;
@@ -462,7 +462,7 @@ public class Class43 {
 												var24.method756(new RSBuf(var43), var15);
 
 											var24.method755();
-											Def4.aClass113_1553.method435(var24, var15);
+											Def4.aClass113_1553.map(var24, var15);
 											var41 = var24;
 										}
 
@@ -488,7 +488,7 @@ public class Class43 {
 									final byte var51 = Class3.aByteArrayArrayArray17[var2][var6][var17];
 									final int var22 = var21 - 1;
 									Def4 var29 = (Def4) Def4.aClass113_1553
-											.method434(var22);
+											.forId(var22);
 									if (null != var29)
 										var24 = var29;
 									else {
@@ -498,7 +498,7 @@ public class Class43 {
 											var29.method756(new RSBuf(var38), var22);
 
 										var29.method755();
-										Def4.aClass113_1553.method435(var29, var22);
+										Def4.aClass113_1553.map(var29, var22);
 										var24 = var29;
 									}
 

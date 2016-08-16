@@ -120,24 +120,24 @@ public final class Class42 {
 												+ Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690) >> 7;
 										final int var26 = (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697
 												- var28) >> 7;
-										client.aClass124_Sub14_Sub1_2024.method837(165);
-										client.aClass124_Sub14_Sub1_2024.writeByte(18);
-										client.aClass124_Sub14_Sub1_2024.method581(var26 + Class95.anInt762);
-										client.aClass124_Sub14_Sub1_2024.method587(var30 + Class9.anInt102);
-										client.aClass124_Sub14_Sub1_2024.method578(
+										client.secbuf.writeOpcode(165);
+										client.secbuf.writeByte(18);
+										client.secbuf.method581(var26 + Class95.anInt762);
+										client.secbuf.method587(var30 + Class9.anInt102);
+										client.secbuf.method578(
 												Class84.aBoolArray676[82] ? (Class84.aBoolArray676[81] ? 2 : 1) : 0);
-										client.aClass124_Sub14_Sub1_2024.writeByte(var22);
-										client.aClass124_Sub14_Sub1_2024.writeByte(var37);
-										client.aClass124_Sub14_Sub1_2024.writeShort(client.anInt2255);
-										client.aClass124_Sub14_Sub1_2024.writeByte(57);
-										client.aClass124_Sub14_Sub1_2024.writeByte(client.anInt2053);
-										client.aClass124_Sub14_Sub1_2024.writeByte(client.anInt2055);
-										client.aClass124_Sub14_Sub1_2024.writeByte(89);
-										client.aClass124_Sub14_Sub1_2024
+										client.secbuf.writeByte(var22);
+										client.secbuf.writeByte(var37);
+										client.secbuf.writeShort(client.anInt2255);
+										client.secbuf.writeByte(57);
+										client.secbuf.writeByte(client.anInt2053);
+										client.secbuf.writeByte(client.anInt2055);
+										client.secbuf.writeByte(89);
+										client.secbuf
 												.writeShort(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690);
-										client.aClass124_Sub14_Sub1_2024
+										client.secbuf
 												.writeShort(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697);
-										client.aClass124_Sub14_Sub1_2024.writeByte(63);
+										client.secbuf.writeByte(63);
 										client.anInt2194 = var30;
 										client.anInt2217 = var26;
 									}

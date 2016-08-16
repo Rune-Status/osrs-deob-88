@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.util.Date;
 
-public class Class124_Sub22_Sub5 extends Node2 {
+public class Class124_Sub22_Sub5 extends JagMap {
 	static Class124_Sub22_Sub16_Sub2[] aClass124_Sub22_Sub16_Sub2Array1376;
 	static int anInt1381;
 	static byte[][] aByteArrayArray1384;
@@ -30,7 +30,7 @@ public class Class124_Sub22_Sub5 extends Node2 {
 		Class81.method328(var1);
 		Class92.aClass124_Sub14_726.pos = 0;
 		Class28.aClass124_Sub22_Sub21_311 = null;
-		Class67.aClass124_Sub14_569 = null;
+		ISAAC.buf = null;
 		Class92.anInt727 = 0;
 
 		while (true) {
@@ -721,9 +721,9 @@ public class Class124_Sub22_Sub5 extends Node2 {
 								if (var48 == 1121) {
 									var70 = var16.anInt1284;
 									var19 = var16.anInt1154;
-									client.aClass124_Sub14_Sub1_2024.method837(198);
-									client.aClass124_Sub14_Sub1_2024.writeInt(var70);
-									client.aClass124_Sub14_Sub1_2024.writeShort(var19);
+									client.secbuf.writeOpcode(198);
+									client.secbuf.writeInt(var70);
+									client.secbuf.writeShort(var19);
 									client.aClass124_Sub17_2042 = var16;
 									Class124_Sub22_Sub10.method723(var16);
 									continue;
@@ -1195,7 +1195,7 @@ public class Class124_Sub22_Sub5 extends Node2 {
 										}
 
 										if (var48 == 3103) {
-											client.aClass124_Sub14_Sub1_2024.method837(180);
+											client.secbuf.writeOpcode(180);
 
 											for (Class124_Sub7 var76 = (Class124_Sub7) client.aClass107_2143
 													.method411(); var76 != null; var76 = (Class124_Sub7) client.aClass107_2143
@@ -1220,26 +1220,26 @@ public class Class124_Sub22_Sub5 extends Node2 {
 												var22 = var19;
 											}
 
-											client.aClass124_Sub14_Sub1_2024.method837(37);
-											client.aClass124_Sub14_Sub1_2024.writeInt(var22);
+											client.secbuf.writeOpcode(37);
+											client.secbuf.writeInt(var22);
 											continue;
 										}
 
 										if (var48 == 3105) {
 											--var6;
 											var71 = Class2.aStringArray5[var6];
-											client.aClass124_Sub14_Sub1_2024.method837(84);
-											client.aClass124_Sub14_Sub1_2024.writeByte(var71.length() + 1);
-											client.aClass124_Sub14_Sub1_2024.writestr(var71);
+											client.secbuf.writeOpcode(84);
+											client.secbuf.writeByte(var71.length() + 1);
+											client.secbuf.writestr(var71);
 											continue;
 										}
 
 										if (var48 == 3106) {
 											--var6;
 											var71 = Class2.aStringArray5[var6];
-											client.aClass124_Sub14_Sub1_2024.method837(181);
-											client.aClass124_Sub14_Sub1_2024.writeByte(var71.length() + 1);
-											client.aClass124_Sub14_Sub1_2024.writestr(var71);
+											client.secbuf.writeOpcode(181);
+											client.secbuf.writeByte(var71.length() + 1);
+											client.secbuf.writestr(var71);
 											continue;
 										}
 
@@ -1255,25 +1255,25 @@ public class Class124_Sub22_Sub5 extends Node2 {
 												if ((null != var24) && (null != var24.aString1956)
 														&& var24.aString1956.equalsIgnoreCase(var58)) {
 													if (var21 == 1) {
-														client.aClass124_Sub14_Sub1_2024.method837(177);
-														client.aClass124_Sub14_Sub1_2024
+														client.secbuf.writeOpcode(177);
+														client.secbuf
 																.method580(client.anIntArray2128[var19]);
-														client.aClass124_Sub14_Sub1_2024.method577(0);
+														client.secbuf.method577(0);
 													} else if (var21 == 4) {
-														client.aClass124_Sub14_Sub1_2024.method837(139);
-														client.aClass124_Sub14_Sub1_2024
+														client.secbuf.writeOpcode(139);
+														client.secbuf
 																.writeShort(client.anIntArray2128[var19]);
-														client.aClass124_Sub14_Sub1_2024.method577(0);
+														client.secbuf.method577(0);
 													} else if (var21 == 6) {
-														client.aClass124_Sub14_Sub1_2024.method837(192);
-														client.aClass124_Sub14_Sub1_2024
+														client.secbuf.writeOpcode(192);
+														client.secbuf
 																.method587(client.anIntArray2128[var19]);
-														client.aClass124_Sub14_Sub1_2024.method576(0);
+														client.secbuf.method576(0);
 													} else if (var21 == 7) {
-														client.aClass124_Sub14_Sub1_2024.method837(153);
-														client.aClass124_Sub14_Sub1_2024
+														client.secbuf.writeOpcode(153);
+														client.secbuf
 																.method587(client.anIntArray2128[var19]);
-														client.aClass124_Sub14_Sub1_2024.method577(0);
+														client.secbuf.method577(0);
 													}
 
 													var23 = true;
@@ -1354,8 +1354,8 @@ public class Class124_Sub22_Sub5 extends Node2 {
 										if (var48 == 3115) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
-											client.aClass124_Sub14_Sub1_2024.method837(148);
-											client.aClass124_Sub14_Sub1_2024.writeShort(var21);
+											client.secbuf.writeOpcode(148);
+											client.secbuf.writeShort(var21);
 											continue;
 										}
 
@@ -1366,12 +1366,12 @@ public class Class124_Sub22_Sub5 extends Node2 {
 											var58 = Class2.aStringArray5[var6];
 											var18 = Class2.aStringArray5[var6 + 1];
 											if ((var58.length() <= 500) && (var18.length() <= 500)) {
-												client.aClass124_Sub14_Sub1_2024.method837(13);
-												client.aClass124_Sub14_Sub1_2024.writeShort(
+												client.secbuf.writeOpcode(13);
+												client.secbuf.writeShort(
 														1 + Class54.method258(var58) + Class54.method258(var18));
-												client.aClass124_Sub14_Sub1_2024.writestr(var18);
-												client.aClass124_Sub14_Sub1_2024.method578(var21);
-												client.aClass124_Sub14_Sub1_2024.writestr(var58);
+												client.secbuf.writestr(var18);
+												client.secbuf.method578(var21);
+												client.secbuf.writestr(var58);
 											}
 											continue;
 										}
@@ -1754,10 +1754,10 @@ public class Class124_Sub22_Sub5 extends Node2 {
 																	+ 1];
 
 														client.anInt2175 = client.anInt2067;
-														client.aClass124_Sub14_Sub1_2024.method837(39);
-														client.aClass124_Sub14_Sub1_2024
+														client.secbuf.writeOpcode(39);
+														client.secbuf
 																.writeByte(Class54.method258(var71));
-														client.aClass124_Sub14_Sub1_2024.writestr(var71);
+														client.secbuf.writestr(var71);
 														continue label3101;
 													}
 
@@ -1831,7 +1831,7 @@ public class Class124_Sub22_Sub5 extends Node2 {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((null != client.aString2120) && (var21 < Class103.anInt794)) {
-													Class2.aStringArray5[var6++] = Class124_Sub14_Sub1.aClass124_Sub9Array1609[var21].aString1029;
+													Class2.aStringArray5[var6++] = client.aClass124_Sub9Array1609[var21].aString1029;
 													continue;
 												}
 
@@ -1843,7 +1843,7 @@ public class Class124_Sub22_Sub5 extends Node2 {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((client.aString2120 != null) && (var21 < Class103.anInt794)) {
-													Class2.anIntArray8[var5++] = Class124_Sub14_Sub1.aClass124_Sub9Array1609[var21].anInt1027;
+													Class2.anIntArray8[var5++] = client.aClass124_Sub9Array1609[var21].anInt1027;
 													continue;
 												}
 
@@ -1855,7 +1855,7 @@ public class Class124_Sub22_Sub5 extends Node2 {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((null != client.aString2120) && (var21 < Class103.anInt794)) {
-													Class2.anIntArray8[var5++] = Class124_Sub14_Sub1.aClass124_Sub9Array1609[var21].aByte1028;
+													Class2.anIntArray8[var5++] = client.aClass124_Sub9Array1609[var21].aByte1028;
 													continue;
 												}
 
@@ -1888,8 +1888,8 @@ public class Class124_Sub22_Sub5 extends Node2 {
 											}
 
 											if (var48 == 3620) {
-												client.aClass124_Sub14_Sub1_2024.method837(36);
-												client.aClass124_Sub14_Sub1_2024.writeByte(0);
+												client.secbuf.writeOpcode(36);
+												client.secbuf.writeByte(0);
 												continue;
 											}
 
@@ -1929,9 +1929,9 @@ public class Class124_Sub22_Sub5 extends Node2 {
 											if (var48 == 3624) {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
-												if ((Class124_Sub14_Sub1.aClass124_Sub9Array1609 != null)
+												if ((client.aClass124_Sub9Array1609 != null)
 														&& (var21 < Class103.anInt794)
-														&& Class124_Sub14_Sub1.aClass124_Sub9Array1609[var21].aString1029
+														&& client.aClass124_Sub9Array1609[var21].aString1029
 																.equalsIgnoreCase(
 																		Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aString1956)) {
 													Class2.anIntArray8[var5++] = 1;
@@ -2752,11 +2752,11 @@ public class Class124_Sub22_Sub5 extends Node2 {
 															Class32.aClass53_337 = Class53.aClass53_492;
 
 														client.anInt2201 = Class2.anIntArray8[var5 + 2];
-														client.aClass124_Sub14_Sub1_2024.method837(68);
-														client.aClass124_Sub14_Sub1_2024.writeByte(client.anInt2066);
-														client.aClass124_Sub14_Sub1_2024
+														client.secbuf.writeOpcode(68);
+														client.secbuf.writeByte(client.anInt2066);
+														client.secbuf
 																.writeByte(Class32.aClass53_337.anInt491);
-														client.aClass124_Sub14_Sub1_2024.writeByte(client.anInt2201);
+														client.secbuf.writeByte(client.anInt2201);
 														continue;
 													}
 
@@ -2766,12 +2766,12 @@ public class Class124_Sub22_Sub5 extends Node2 {
 														var5 -= 2;
 														var22 = Class2.anIntArray8[var5];
 														var70 = Class2.anIntArray8[1 + var5];
-														client.aClass124_Sub14_Sub1_2024.method837(219);
-														client.aClass124_Sub14_Sub1_2024
+														client.secbuf.writeOpcode(219);
+														client.secbuf
 																.writeByte(Class54.method258(var71) + 2);
-														client.aClass124_Sub14_Sub1_2024.writestr(var71);
-														client.aClass124_Sub14_Sub1_2024.writeByte(var22 - 1);
-														client.aClass124_Sub14_Sub1_2024.writeByte(var70);
+														client.secbuf.writestr(var71);
+														client.secbuf.writeByte(var22 - 1);
+														client.secbuf.writeByte(var70);
 														continue;
 													}
 
@@ -2950,13 +2950,13 @@ public class Class124_Sub22_Sub5 extends Node2 {
 																var71 = var71.substring("slide:".length());
 															}
 
-														client.aClass124_Sub14_Sub1_2024.method837(223);
-														client.aClass124_Sub14_Sub1_2024.writeByte(0);
-														var25 = client.aClass124_Sub14_Sub1_2024.pos;
-														client.aClass124_Sub14_Sub1_2024.writeByte(var22);
-														client.aClass124_Sub14_Sub1_2024.writeByte(var84);
-														client.aClass124_Sub14_Sub1_2024.writeByte(var94);
-														final Class124_Sub14_Sub1 var101 = client.aClass124_Sub14_Sub1_2024;
+														client.secbuf.writeOpcode(223);
+														client.secbuf.writeByte(0);
+														var25 = client.secbuf.pos;
+														client.secbuf.writeByte(var22);
+														client.secbuf.writeByte(var84);
+														client.secbuf.writeByte(var94);
+														final Outbuf var101 = client.secbuf;
 														var29 = var101.pos;
 														var35 = var71.length();
 														final byte[] var104 = new byte[var35];
@@ -3028,8 +3028,8 @@ public class Class124_Sub22_Sub5 extends Node2 {
 														var101.writeSmart(var104.length);
 														var101.pos += Class129.aClass63_889.method284(var104, 0,
 																var104.length, var101.backing, var101.pos);
-														client.aClass124_Sub14_Sub1_2024.endByteSize(
-																client.aClass124_Sub14_Sub1_2024.pos - var25);
+														client.secbuf.endByteSize(
+																client.secbuf.pos - var25);
 														continue;
 													}
 
@@ -3037,11 +3037,11 @@ public class Class124_Sub22_Sub5 extends Node2 {
 														var6 -= 2;
 														var71 = Class2.aStringArray5[var6];
 														var58 = Class2.aStringArray5[1 + var6];
-														client.aClass124_Sub14_Sub1_2024.method837(123);
-														client.aClass124_Sub14_Sub1_2024.writeShort(0);
-														var70 = client.aClass124_Sub14_Sub1_2024.pos;
-														client.aClass124_Sub14_Sub1_2024.writestr(var71);
-														final Class124_Sub14_Sub1 var66 = client.aClass124_Sub14_Sub1_2024;
+														client.secbuf.writeOpcode(123);
+														client.secbuf.writeShort(0);
+														var70 = client.secbuf.pos;
+														client.secbuf.writestr(var71);
+														final Outbuf var66 = client.secbuf;
 														var26 = var66.pos;
 														var88 = var58.length();
 														final byte[] var98 = new byte[var88];
@@ -3112,8 +3112,8 @@ public class Class124_Sub22_Sub5 extends Node2 {
 														var66.writeSmart(var98.length);
 														var66.pos += Class129.aClass63_889.method284(var98, 0,
 																var98.length, var66.backing, var66.pos);
-														client.aClass124_Sub14_Sub1_2024.endShortSize(
-																client.aClass124_Sub14_Sub1_2024.pos - var70);
+														client.secbuf.endShortSize(
+																client.secbuf.pos - var70);
 														continue;
 													}
 
@@ -3198,9 +3198,9 @@ public class Class124_Sub22_Sub5 extends Node2 {
 																throw new RuntimeException();
 														}
 
-														client.aClass124_Sub14_Sub1_2024.method837(188);
-														client.aClass124_Sub14_Sub1_2024.writeByte(var71.length() + 1);
-														client.aClass124_Sub14_Sub1_2024.writestr(var71);
+														client.secbuf.writeOpcode(188);
+														client.secbuf.writeByte(var71.length() + 1);
+														client.secbuf.writestr(var71);
 														continue;
 													}
 

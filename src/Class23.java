@@ -53,16 +53,16 @@ public class Class23 {
 							client.aClass35Array1986[var3] = client.aClass35Array1986[1 + var3];
 
 						client.anInt2175 = client.anInt2067;
-						client.aClass124_Sub14_Sub1_2024.method837(27);
-						client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
-						client.aClass124_Sub14_Sub1_2024.writestr(var0);
+						client.secbuf.writeOpcode(27);
+						client.secbuf.writeByte(Class54.method258(var0));
+						client.secbuf.writestr(var0);
 						break;
 					}
 				}
 		}
 	}
 
-	static Class124_Sub22_Sub16_Sub2 method157(final Class94 var0, final int var1, final int var2) {
+	static Class124_Sub22_Sub16_Sub2 method157(final CacheArch var0, final int var1, final int var2) {
 		if (!Def3.loaded(var0, var1, var2))
 			return null;
 		else {

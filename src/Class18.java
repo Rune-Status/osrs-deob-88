@@ -184,9 +184,9 @@ public class Class18 implements Runnable {
 	}
 
 	static final void method89(final String var0, final int var1) {
-		client.aClass124_Sub14_Sub1_2024.method837(21);
-		client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0) + 1);
-		client.aClass124_Sub14_Sub1_2024.writeByte(var1);
-		client.aClass124_Sub14_Sub1_2024.writestr(var0);
+		client.secbuf.writeOpcode(21);
+		client.secbuf.writeByte(Class54.method258(var0) + 1);
+		client.secbuf.writeByte(var1);
+		client.secbuf.writestr(var0);
 	}
 }

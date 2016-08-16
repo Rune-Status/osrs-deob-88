@@ -1,4 +1,4 @@
-public class Class124_Sub3 extends Node {
+public class Somet4 extends Node {
 	static byte[] aByteArray932;
 	static int anInt933;
 	static int anInt934;
@@ -34,31 +34,17 @@ public class Class124_Sub3 extends Node {
 	boolean aBool950;
 	byte[][] aByteArrayArray951;
 
-	static void method495(final byte[] var0, final int var1) {
-		aByteArray932 = var0;
-		anInt933 = var1;
-		anInt934 = 0;
-	}
-
-	static int method496() {
-		final int var0 = (aByteArray932[anInt933] >> anInt934) & 1;
-		++anInt934;
-		anInt933 += anInt934 >> 3;
-		anInt934 &= 7;
-		return var0;
-	}
-
 	float[] method497(final int var1) {
-		method495(aByteArrayArray951[var1], 0);
-		method496();
-		final int var3 = method502(Class124_Sub22_Sub10.method714(anIntArray942.length - 1));
+		client.method495(aByteArrayArray951[var1], 0);
+		client.method496();
+		final int var3 = client.method502(Class124_Sub22_Sub10.method714(anIntArray942.length - 1));
 		final boolean var21 = aBoolArray928[var3];
 		final int var5 = var21 ? anInt954 : anInt953;
 		boolean var8 = false;
 		boolean var7 = false;
 		if (var21) {
-			var8 = method496() != 0;
-			var7 = method496() != 0;
+			var8 = client.method496() != 0;
+			var7 = client.method496() != 0;
 		}
 
 		final int var31 = var5 >> 1;
@@ -291,30 +277,17 @@ public class Class124_Sub3 extends Node {
 		return var35;
 	}
 
-	static boolean valid(final Class94 var0) {
-		if (!aBool941) {
-			final byte[] var1 = var0.decode(0, 0);
-			if (var1 == null)
-				return false;
-
-			method503(var1);
-			aBool941 = true;
-		}
-
-		return true;
-	}
-
-	static Class124_Sub3 method499(final Class94 var0, final int var1, final int var2) {
-		if (!valid(var0)) {
+	static Somet4 method499(final CacheArch var0, final int var1, final int var2) {
+		if (!client.valid(var0)) {
 			var0.valid(var1, var2);
 			return null;
 		} else {
 			final byte[] var3 = var0.decode(var1, var2);
-			return var3 == null ? null : new Class124_Sub3(var3);
+			return var3 == null ? null : new Somet4(var3);
 		}
 	}
 
-	Class124_Sub3(final byte[] var1) {
+	Somet4(final byte[] var1) {
 		method504(var1);
 	}
 
@@ -361,147 +334,6 @@ public class Class124_Sub3 extends Node {
 			aByteArray957 = null;
 			return new Class124_Sub2_Sub1(anInt936, var7, anInt929, anInt926, aBool950);
 		}
-	}
-
-	static float method501(final int var0) {
-		int var1 = var0 & 2097151;
-		final int var2 = var0 & Integer.MIN_VALUE;
-		final int var3 = (var0 & 2145386496) >> 21;
-		if (var2 != 0)
-			var1 = -var1;
-
-		return (float) (var1 * Math.pow(2.0D, var3 - 788));
-	}
-
-	static int method502(int var0) {
-		int var1 = 0;
-
-		int var2;
-		int var4;
-		for (var4 = 0; var0 >= (8 - anInt934); var0 -= var2) {
-			var2 = 8 - anInt934;
-			final int var3 = (1 << var2) - 1;
-			var1 += ((aByteArray932[anInt933] >> anInt934) & var3) << var4;
-			anInt934 = 0;
-			++anInt933;
-			var4 += var2;
-		}
-
-		if (var0 > 0) {
-			var2 = (1 << var0) - 1;
-			var1 += ((aByteArray932[anInt933] >> anInt934) & var2) << var4;
-			anInt934 += var0;
-		}
-
-		return var1;
-	}
-
-	static void method503(final byte[] var0) {
-		method495(var0, 0);
-		anInt953 = 1 << method502(4);
-		anInt954 = 1 << method502(4);
-		aFloatArray946 = new float[anInt954];
-
-		int var1;
-		int var2;
-		int var3;
-		int var5;
-		int var7;
-		for (var7 = 0; var7 < 2; ++var7) {
-			var5 = var7 != 0 ? anInt954 : anInt953;
-			var1 = var5 >> 1;
-			var3 = var5 >> 2;
-			var2 = var5 >> 3;
-			final float[] var10 = new float[var1];
-
-			for (int var9 = 0; var9 < var3; ++var9) {
-				var10[2 * var9] = (float) Math.cos((4 * var9 * 3.141592653589793D) / var5);
-				var10[(2 * var9) + 1] = -((float) Math.sin((4 * var9 * 3.141592653589793D) / var5));
-			}
-
-			final float[] var11 = new float[var1];
-
-			for (int var12 = 0; var12 < var3; ++var12) {
-				var11[2 * var12] = (float) Math.cos((((2 * var12) + 1) * 3.141592653589793D) / (2 * var5));
-				var11[(2 * var12) + 1] = (float) Math.sin((((2 * var12) + 1) * 3.141592653589793D) / (2 * var5));
-			}
-
-			final float[] var13 = new float[var3];
-
-			for (int var15 = 0; var15 < var2; ++var15) {
-				var13[2 * var15] = (float) Math.cos((((4 * var15) + 2) * 3.141592653589793D) / var5);
-				var13[(2 * var15) + 1] = -((float) Math.sin((((4 * var15) + 2) * 3.141592653589793D) / var5));
-			}
-
-			final int[] var4 = new int[var2];
-			final int var16 = Class124_Sub22_Sub10.method714(var2 - 1);
-
-			for (int var8 = 0; var8 < var2; ++var8) {
-				int var18 = var8;
-				int var14 = var16;
-
-				int var6;
-				for (var6 = 0; var14 > 0; --var14) {
-					var6 = (var6 << 1) | (var18 & 1);
-					var18 >>>= 1;
-				}
-
-				var4[var8] = var6;
-			}
-
-			if (var7 != 0) {
-				aFloatArray945 = var10;
-				aFloatArray931 = var11;
-				aFloatArray927 = var13;
-				anIntArray956 = var4;
-			} else {
-				aFloatArray949 = var10;
-				aFloatArray935 = var11;
-				aFloatArray943 = var13;
-				anIntArray955 = var4;
-			}
-		}
-
-		var7 = method502(8) + 1;
-		aClass6Array937 = new Class6[var7];
-
-		for (var5 = 0; var5 < var7; ++var5)
-			aClass6Array937[var5] = new Class6();
-
-		var5 = method502(6) + 1;
-
-		for (var1 = 0; var1 < var5; ++var1)
-			method502(16);
-
-		var5 = method502(6) + 1;
-		aClass11Array938 = new Class11[var5];
-
-		for (var1 = 0; var1 < var5; ++var1)
-			aClass11Array938[var1] = new Class11();
-
-		var1 = method502(6) + 1;
-		aClass14Array939 = new Class14[var1];
-
-		for (var3 = 0; var3 < var1; ++var3)
-			aClass14Array939[var3] = new Class14();
-
-		var3 = method502(6) + 1;
-		aClass13Array940 = new Class13[var3];
-
-		for (var2 = 0; var2 < var3; ++var2)
-			aClass13Array940[var2] = new Class13();
-
-		var2 = method502(6) + 1;
-		aBoolArray928 = new boolean[var2];
-		anIntArray942 = new int[var2];
-
-		for (int var20 = 0; var20 < var2; ++var20) {
-			aBoolArray928[var20] = method496() != 0;
-			method502(16);
-			method502(16);
-			anIntArray942[var20] = method502(8);
-		}
-
 	}
 
 	void method504(final byte[] var1) {

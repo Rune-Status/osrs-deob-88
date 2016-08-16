@@ -1,8 +1,8 @@
 import java.awt.Component;
 
-public class Def3 extends Node2 {
+public class Def3 extends JagMap {
 	protected static int anInt1356;
-	public static Class94 aClass94_1363;
+	public static CacheArch aClass94_1363;
 	static Class124_Sub22_Sub16_Sub1[] aClass124_Sub22_Sub16_Sub1Array1364;
 	public int anInt1362 = -1;
 	int[] anIntArray1355;
@@ -76,20 +76,20 @@ public class Def3 extends Node2 {
 
 	}
 
-	public Class124_Sub22_Sub19_Sub4 method650() {
+	public Model method650() {
 		if (anIntArray1355 == null)
 			return null;
 		else {
-			final Class124_Sub22_Sub19_Sub4[] var1 = new Class124_Sub22_Sub19_Sub4[anIntArray1355.length];
+			final Model[] var1 = new Model[anIntArray1355.length];
 
 			for (int var2 = 0; var2 < anIntArray1355.length; ++var2)
-				var1[var2] = Class124_Sub22_Sub19_Sub4.method943(Class128.aClass94_887, anIntArray1355[var2], 0);
+				var1[var2] = Model.method943(Class128.aClass94_887, anIntArray1355[var2], 0);
 
-			Class124_Sub22_Sub19_Sub4 var4;
+			Model var4;
 			if (var1.length == 1)
 				var4 = var1[0];
 			else
-				var4 = new Class124_Sub22_Sub19_Sub4(var1, var1.length);
+				var4 = new Model(var1, var1.length);
 
 			int var3;
 			if (aShortArray1353 != null)
@@ -114,15 +114,15 @@ public class Def3 extends Node2 {
 		return var1;
 	}
 
-	public Class124_Sub22_Sub19_Sub4 method652() {
-		final Class124_Sub22_Sub19_Sub4[] var1 = new Class124_Sub22_Sub19_Sub4[5];
+	public Model method652() {
+		final Model[] var1 = new Model[5];
 		int var2 = 0;
 
 		for (int var3 = 0; var3 < 5; ++var3)
 			if (anIntArray1360[var3] != -1)
-				var1[var2++] = Class124_Sub22_Sub19_Sub4.method943(Class128.aClass94_887, anIntArray1360[var3], 0);
+				var1[var2++] = Model.method943(Class128.aClass94_887, anIntArray1360[var3], 0);
 
-		final Class124_Sub22_Sub19_Sub4 var5 = new Class124_Sub22_Sub19_Sub4(var1, var2);
+		final Model var5 = new Model(var1, var2);
 		int var4;
 		if (null != aShortArray1353)
 			for (var4 = 0; var4 < aShortArray1353.length; ++var4)
@@ -135,7 +135,7 @@ public class Def3 extends Node2 {
 		return var5;
 	}
 
-	public static boolean loaded(final Class94 var0, final int arcId, final int var2) {
+	public static boolean loaded(final CacheArch var0, final int arcId, final int var2) {
 		final byte[] var3 = var0.decode(arcId, var2);
 		if (null != var3) {
 			Def1.method661(var3);
@@ -144,7 +144,7 @@ public class Def3 extends Node2 {
 			return false;
 	}
 
-	static void method654(final Component var0, final Class94 var1, final Class94 var2, final boolean var3,
+	static void method654(final Component var0, final CacheArch var1, final CacheArch var2, final boolean var3,
 			final int var4) {
 		if (Class4.aBool55) {
 			if (var4 == 4)
@@ -153,7 +153,7 @@ public class Def3 extends Node2 {
 		} else {
 			Class4.anInt43 = var4;
 			Class124_Sub22_Sub16.method777();
-			final byte[] var5 = var1.method378("title.jpg", "");
+			final byte[] var5 = var1.decode3("title.jpg", "");
 			Class4.aClass124_Sub22_Sub16_Sub1_40 = new Class124_Sub22_Sub16_Sub1(var5, var0);
 			Class4.aClass124_Sub22_Sub16_Sub1_27 = Class4.aClass124_Sub22_Sub16_Sub1_40.method899();
 			Class4.aClass124_Sub22_Sub16_Sub2_28 = Class1.method17(var2, "logo", "");
@@ -241,14 +241,14 @@ public class Def3 extends Node2 {
 	}
 
 	static Class124_Sub22_Sub17 method655(final int var0) {
-		Class124_Sub22_Sub17 var1 = (Class124_Sub22_Sub17) Def12.aClass113_1541.method434(var0);
+		Class124_Sub22_Sub17 var1 = (Class124_Sub22_Sub17) Def12.aClass113_1541.forId(var0);
 		if (null != var1)
 			return var1;
 		else {
 			var1 = Class89.method345(Def12.aClass94_1530, Def12.aClass94_1533, var0,
 					false);
 			if (null != var1)
-				Def12.aClass113_1541.method435(var1, var0);
+				Def12.aClass113_1541.map(var1, var0);
 
 			return var1;
 		}

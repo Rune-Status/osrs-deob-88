@@ -64,9 +64,9 @@ public final class client extends Applet_Sub1 {
 	static Class124_Sub22_Sub19_Sub3_Sub1[] aClass124_Sub22_Sub19_Sub3_Sub1Array2254;
 	static int anInt2022;
 	static int[] anIntArray2023;
-	static Class124_Sub14_Sub1 aClass124_Sub14_Sub1_2024;
-	static Class124_Sub14_Sub1 aClass124_Sub14_Sub1_2167;
-	static Class124_Sub14_Sub1 aClass124_Sub14_Sub1_2026;
+	static Outbuf secbuf;
+	static Outbuf loginbuf;
+	static Outbuf aClass124_Sub14_Sub1_2026;
 	static int anInt2027;
 	static int anInt2028;
 	static int anInt2193;
@@ -295,6 +295,7 @@ public final class client extends Applet_Sub1 {
 	static long aLong2261;
 	static int anInt2020;
 	static Clipboard aClipboard2002;
+	static Class124_Sub9[] aClass124_Sub9Array1609;
 
 	@Override
 	protected final void method1055(final int var1) {
@@ -328,7 +329,7 @@ public final class client extends Applet_Sub1 {
 								Class96.anInt770 = 0;
 
 							Class96.aClass124_Sub20_769 = null;
-							Class67.aClass10_570 = null;
+							ISAAC.aClass10_570 = null;
 						}
 					}
 				} catch (final Exception var7) {
@@ -336,7 +337,7 @@ public final class client extends Applet_Sub1 {
 					Class77.aClass124_Sub4_Sub3_624.method868();
 					Class96.anInt770 = 0;
 					Class96.aClass124_Sub20_769 = null;
-					Class67.aClass10_570 = null;
+					ISAAC.aClass10_570 = null;
 					Class96.aClass94_767 = null;
 				}
 
@@ -744,10 +745,10 @@ public final class client extends Applet_Sub1 {
 
 									final int var18 = var13 == 0 ? 5 : 9;
 									Class28.aClass124_Sub22_Sub21_311 = var17;
-									Class67.aClass124_Sub14_569 = new RSBuf(
+									ISAAC.buf = new RSBuf(
 											Class28.aClass124_Sub22_Sub21_311.aByte1650 + var14 + var18);
-									Class67.aClass124_Sub14_569.writeByte(var13);
-									Class67.aClass124_Sub14_569.writeInt(var14);
+									ISAAC.buf.writeByte(var13);
+									ISAAC.buf.writeInt(var14);
 									Class92.anInt727 = 8;
 									Class92.aClass124_Sub14_726.pos = 0;
 								} else if (Class92.anInt727 == 0)
@@ -757,27 +758,27 @@ public final class client extends Applet_Sub1 {
 									} else
 										Class28.aClass124_Sub22_Sub21_311 = null;
 							} else {
-								var10 = Class67.aClass124_Sub14_569.backing.length
+								var10 = ISAAC.buf.backing.length
 										- Class28.aClass124_Sub22_Sub21_311.aByte1650;
 								var11 = 512 - Class92.anInt727;
-								if (var11 > (var10 - Class67.aClass124_Sub14_569.pos))
-									var11 = var10 - Class67.aClass124_Sub14_569.pos;
+								if (var11 > (var10 - ISAAC.buf.pos))
+									var11 = var10 - ISAAC.buf.pos;
 
 								if (var11 > var8)
 									var11 = var8;
 
-								Class92.aClass78_732.method320(Class67.aClass124_Sub14_569.backing,
-										Class67.aClass124_Sub14_569.pos, var11);
+								Class92.aClass78_732.method320(ISAAC.buf.backing,
+										ISAAC.buf.pos, var11);
 								if (Class92.aByte733 != 0)
 									for (var12 = 0; var12 < var11; ++var12)
-										Class67.aClass124_Sub14_569.backing[Class67.aClass124_Sub14_569.pos
+										ISAAC.buf.backing[ISAAC.buf.pos
 												+ var12] ^= Class92.aByte733;
 
-								Class67.aClass124_Sub14_569.pos += var11;
+								ISAAC.buf.pos += var11;
 								Class92.anInt727 += var11;
-								if (var10 == Class67.aClass124_Sub14_569.pos) {
+								if (var10 == ISAAC.buf.pos) {
 									if (16711935L == Class28.aClass124_Sub22_Sub21_311.aLong874) {
-										Class124_Sub6.aClass124_Sub14_1007 = Class67.aClass124_Sub14_569;
+										Class124_Sub6.aClass124_Sub14_1007 = ISAAC.buf;
 
 										for (var12 = 0; var12 < 256; ++var12) {
 											final Class94_Sub1 var19 = Class92.aClass94_Sub1Array729[var12];
@@ -791,7 +792,7 @@ public final class client extends Applet_Sub1 {
 										}
 									} else {
 										Class92.aCRC32_720.reset();
-										Class92.aCRC32_720.update(Class67.aClass124_Sub14_569.backing, 0, var10);
+										Class92.aCRC32_720.update(ISAAC.buf.backing, 0, var10);
 										var12 = (int) Class92.aCRC32_720.getValue();
 										if (var12 != Class28.aClass124_Sub22_Sub21_311.anInt1648) {
 											try {
@@ -811,7 +812,7 @@ public final class client extends Applet_Sub1 {
 										Class92.anInt721 = 0;
 										Class28.aClass124_Sub22_Sub21_311.aClass94_Sub1_1651.method618(
 												(int) (Class28.aClass124_Sub22_Sub21_311.aLong874 & 65535L),
-												Class67.aClass124_Sub14_569.backing,
+												ISAAC.buf.backing,
 												16711680L == (Class28.aClass124_Sub22_Sub21_311.aLong874 & 16711680L),
 												Class45.aBool447);
 									}
@@ -824,7 +825,7 @@ public final class client extends Applet_Sub1 {
 
 									Class92.anInt727 = 0;
 									Class28.aClass124_Sub22_Sub21_311 = null;
-									Class67.aClass124_Sub14_569 = null;
+									ISAAC.buf = null;
 								} else {
 									if (Class92.anInt727 != 512)
 										break;
@@ -1065,9 +1066,9 @@ public final class client extends Applet_Sub1 {
 		aClass124_Sub22_Sub19_Sub3_Sub1Array2254 = new Class124_Sub22_Sub19_Sub3_Sub1['\u8000'];
 		anInt2022 = 0;
 		anIntArray2023 = new int['\u8000'];
-		aClass124_Sub14_Sub1_2024 = new Class124_Sub14_Sub1(5000);
-		aClass124_Sub14_Sub1_2167 = new Class124_Sub14_Sub1(5000);
-		aClass124_Sub14_Sub1_2026 = new Class124_Sub14_Sub1(5000);
+		secbuf = new Outbuf(5000);
+		loginbuf = new Outbuf(5000);
+		aClass124_Sub14_Sub1_2026 = new Outbuf(5000);
 		anInt2027 = 0;
 		anInt2028 = 0;
 		anInt2193 = 0;
@@ -1367,6 +1368,174 @@ public final class client extends Applet_Sub1 {
 	protected final void method1061(final int var1) {
 	}
 
+	static boolean valid(final CacheArch var0) {
+		if (!Somet4.aBool941) {
+			final byte[] var1 = var0.decode(0, 0);
+			if (var1 == null)
+				return false;
+	
+			method503(var1);
+			Somet4.aBool941 = true;
+		}
+	
+		return true;
+	}
+
+	static int method496() {
+		final int var0 = (Somet4.aByteArray932[Somet4.anInt933] >> Somet4.anInt934) & 1;
+		++Somet4.anInt934;
+		Somet4.anInt933 += Somet4.anInt934 >> 3;
+		Somet4.anInt934 &= 7;
+		return var0;
+	}
+
+	static void method495(final byte[] var0, final int var1) {
+		Somet4.aByteArray932 = var0;
+		Somet4.anInt933 = var1;
+		Somet4.anInt934 = 0;
+	}
+
+	static float method501(final int var0) {
+		int var1 = var0 & 2097151;
+		final int var2 = var0 & Integer.MIN_VALUE;
+		final int var3 = (var0 & 2145386496) >> 21;
+		if (var2 != 0)
+			var1 = -var1;
+	
+		return (float) (var1 * Math.pow(2.0D, var3 - 788));
+	}
+
+	static void method503(final byte[] var0) {
+		client.method495(var0, 0);
+		Somet4.anInt953 = 1 << method502(4);
+		Somet4.anInt954 = 1 << method502(4);
+		Somet4.aFloatArray946 = new float[Somet4.anInt954];
+	
+		int var1;
+		int var2;
+		int var3;
+		int var5;
+		int var7;
+		for (var7 = 0; var7 < 2; ++var7) {
+			var5 = var7 != 0 ? Somet4.anInt954 : Somet4.anInt953;
+			var1 = var5 >> 1;
+			var3 = var5 >> 2;
+			var2 = var5 >> 3;
+			final float[] var10 = new float[var1];
+	
+			for (int var9 = 0; var9 < var3; ++var9) {
+				var10[2 * var9] = (float) Math.cos((4 * var9 * 3.141592653589793D) / var5);
+				var10[(2 * var9) + 1] = -((float) Math.sin((4 * var9 * 3.141592653589793D) / var5));
+			}
+	
+			final float[] var11 = new float[var1];
+	
+			for (int var12 = 0; var12 < var3; ++var12) {
+				var11[2 * var12] = (float) Math.cos((((2 * var12) + 1) * 3.141592653589793D) / (2 * var5));
+				var11[(2 * var12) + 1] = (float) Math.sin((((2 * var12) + 1) * 3.141592653589793D) / (2 * var5));
+			}
+	
+			final float[] var13 = new float[var3];
+	
+			for (int var15 = 0; var15 < var2; ++var15) {
+				var13[2 * var15] = (float) Math.cos((((4 * var15) + 2) * 3.141592653589793D) / var5);
+				var13[(2 * var15) + 1] = -((float) Math.sin((((4 * var15) + 2) * 3.141592653589793D) / var5));
+			}
+	
+			final int[] var4 = new int[var2];
+			final int var16 = Class124_Sub22_Sub10.method714(var2 - 1);
+	
+			for (int var8 = 0; var8 < var2; ++var8) {
+				int var18 = var8;
+				int var14 = var16;
+	
+				int var6;
+				for (var6 = 0; var14 > 0; --var14) {
+					var6 = (var6 << 1) | (var18 & 1);
+					var18 >>>= 1;
+				}
+	
+				var4[var8] = var6;
+			}
+	
+			if (var7 != 0) {
+				Somet4.aFloatArray945 = var10;
+				Somet4.aFloatArray931 = var11;
+				Somet4.aFloatArray927 = var13;
+				Somet4.anIntArray956 = var4;
+			} else {
+				Somet4.aFloatArray949 = var10;
+				Somet4.aFloatArray935 = var11;
+				Somet4.aFloatArray943 = var13;
+				Somet4.anIntArray955 = var4;
+			}
+		}
+	
+		var7 = method502(8) + 1;
+		Somet4.aClass6Array937 = new Class6[var7];
+	
+		for (var5 = 0; var5 < var7; ++var5)
+			Somet4.aClass6Array937[var5] = new Class6();
+	
+		var5 = method502(6) + 1;
+	
+		for (var1 = 0; var1 < var5; ++var1)
+			method502(16);
+	
+		var5 = method502(6) + 1;
+		Somet4.aClass11Array938 = new Class11[var5];
+	
+		for (var1 = 0; var1 < var5; ++var1)
+			Somet4.aClass11Array938[var1] = new Class11();
+	
+		var1 = method502(6) + 1;
+		Somet4.aClass14Array939 = new Class14[var1];
+	
+		for (var3 = 0; var3 < var1; ++var3)
+			Somet4.aClass14Array939[var3] = new Class14();
+	
+		var3 = method502(6) + 1;
+		Somet4.aClass13Array940 = new Class13[var3];
+	
+		for (var2 = 0; var2 < var3; ++var2)
+			Somet4.aClass13Array940[var2] = new Class13();
+	
+		var2 = method502(6) + 1;
+		Somet4.aBoolArray928 = new boolean[var2];
+		Somet4.anIntArray942 = new int[var2];
+	
+		for (int var20 = 0; var20 < var2; ++var20) {
+			Somet4.aBoolArray928[var20] = client.method496() != 0;
+			method502(16);
+			method502(16);
+			Somet4.anIntArray942[var20] = method502(8);
+		}
+	
+	}
+
+	static int method502(int var0) {
+		int var1 = 0;
+	
+		int var2;
+		int var4;
+		for (var4 = 0; var0 >= (8 - Somet4.anInt934); var0 -= var2) {
+			var2 = 8 - Somet4.anInt934;
+			final int var3 = (1 << var2) - 1;
+			var1 += ((Somet4.aByteArray932[Somet4.anInt933] >> Somet4.anInt934) & var3) << var4;
+			Somet4.anInt934 = 0;
+			++Somet4.anInt933;
+			var4 += var2;
+		}
+	
+		if (var0 > 0) {
+			var2 = (1 << var0) - 1;
+			var1 += ((Somet4.aByteArray932[Somet4.anInt933] >> Somet4.anInt934) & var2) << var4;
+			Somet4.anInt934 += var0;
+		}
+	
+		return var1;
+	}
+
 	static void method605(final int var0) {
 		Class31.method182(Class124_Sub5.aCanvas990);
 		final Canvas var2 = Class124_Sub5.aCanvas990;
@@ -1405,7 +1574,7 @@ public final class client extends Applet_Sub1 {
 	}
 
 	static Somet2 method574(final int var0) {
-		Somet2 var1 = (Somet2) Somet2.aClass113_1600.method434(var0);
+		Somet2 var1 = (Somet2) Somet2.aClass113_1600.forId(var0);
 		if (var1 != null)
 			return var1;
 		else {
@@ -1439,7 +1608,7 @@ public final class client extends Applet_Sub1 {
 						var1.anIntArray1603[var6] = var2.readByteU();
 				}
 	
-				Somet2.aClass113_1600.method435(var1, var0);
+				Somet2.aClass113_1600.map(var1, var0);
 				return var1;
 			}
 		}

@@ -1,5 +1,5 @@
-public final class Class67 {
-	public static RSBuf aClass124_Sub14_569;
+public final class ISAAC {
+	public static RSBuf buf;
 	public static Class10 aClass10_570;
 	int anInt567;
 	int anInt564;
@@ -8,7 +8,7 @@ public final class Class67 {
 	int[] anIntArray566 = new int[256];
 	int[] anIntArray565 = new int[256];
 
-	final int method295() {
+	final int key() {
 		return 0;
 		/*if ((--anInt567 + 1) == 0) {
 			method296();
@@ -169,14 +169,14 @@ public final class Class67 {
 		anInt567 = 256;
 	}
 
-	Class67(final int[] var1) {
+	ISAAC(final int[] var1) {
 		for (int var2 = 0; var2 < var1.length; ++var2)
 			anIntArray565[var2] = var1[var2];
 
 		method297();
 	}
 
-	public static void method298(final Class94 var0, final Class94 var1, final boolean var2) {
+	public static void method298(final CacheArch var0, final CacheArch var1, final boolean var2) {
 		Def6.aClass94_1426 = var0;
 		Def6.aClass94_1387 = var1;
 		Def6.aBool1400 = var2;

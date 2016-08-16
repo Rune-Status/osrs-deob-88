@@ -86,8 +86,8 @@ public final class Class124_Sub5 extends Node {
 		int var9;
 		int var12;
 		if (!client.aBool2043) {
-			var2 = client.aClass124_Sub14_Sub1_2026.method544();
-			var4 = client.aClass124_Sub14_Sub1_2026.method544();
+			var2 = client.aClass124_Sub14_Sub1_2026.readUShort();
+			var4 = client.aClass124_Sub14_Sub1_2026.readUShort();
 			var5 = (client.anInt2027 - client.aClass124_Sub14_Sub1_2026.pos) / 16;
 			Class124_Sub22_Sub10.anIntArrayArray1466 = new int[var5][4];
 
@@ -243,7 +243,7 @@ public final class Class124_Sub5 extends Node {
 					Class4.aClass124_Sub22_Sub16_Sub2Array51 = null;
 					Class78.aClass124_Sub22_Sub16_Sub2Array635 = null;
 					Class10.aClass124_Sub22_Sub16_Sub2Array109 = null;
-					Class94.aClass124_Sub22_Sub16_Sub2_759 = null;
+					CacheArch.aClass124_Sub22_Sub16_Sub2_759 = null;
 					Class4.anIntArray46 = null;
 					Class124_Sub7.anIntArray1013 = null;
 					Def5.anIntArray1453 = null;

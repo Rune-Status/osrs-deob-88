@@ -1,4 +1,4 @@
-public class Class124_Sub22_Sub16 extends Node2 {
+public class Class124_Sub22_Sub16 extends JagMap {
 	public static int anInt1564 = 0;
 	public static int anInt1568 = 0;
 	protected static int anInt1569 = 0;

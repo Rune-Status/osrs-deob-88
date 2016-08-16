@@ -140,8 +140,8 @@ public class RuntimeException_Sub1 extends RuntimeException {
 	}
 
 	public static void method1011() {
-		Def9.aClass113_1316.method436();
-		Def9.aClass113_1317.method436();
+		Def9.aClass113_1316.map();
+		Def9.aClass113_1317.map();
 	}
 
 	public static int method1012(final int var0, final int var1) {

@@ -40,8 +40,8 @@ public class Class71 {
 	}
 
 	public static void method308() {
-		Class124_Sub22_Sub10.aClass113_1494.method436();
-		Class124_Sub22_Sub10.aClass113_1462.method436();
-		Class124_Sub22_Sub10.aClass113_1463.method436();
+		Class124_Sub22_Sub10.aClass113_1494.map();
+		Class124_Sub22_Sub10.aClass113_1462.map();
+		Class124_Sub22_Sub10.aClass113_1463.map();
 	}
 }

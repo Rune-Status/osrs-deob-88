@@ -1,7 +1,7 @@
-public class Def12 extends Node2 {
-	public static Class94 aClass94_1530;
-	public static Class94 aClass94_1533;
-	public static Class94 aClass94_1545;
+public class Def12 extends JagMap {
+	public static CacheArch aClass94_1530;
+	public static CacheArch aClass94_1533;
+	public static CacheArch aClass94_1545;
 	static Class124_Sub22_Sub16_Sub1[] aClass124_Sub22_Sub16_Sub1Array1547;
 	public int anInt1544 = -1;
 	public int anInt1540 = -1;
@@ -214,7 +214,7 @@ public class Def12 extends Node2 {
 
 	}
 
-	public static void method746(final Class94 var0) {
+	public static void method746(final CacheArch var0) {
 		Def1.aClass94_1365 = var0;
 	}
 

@@ -1,13 +1,13 @@
 public class Class136 {
 	public static Def5 method484(final int var0) {
-		Def5 var1 = (Def5) Def5.aClass113_1454.method434(var0);
+		Def5 var1 = (Def5) Def5.aClass113_1454.forId(var0);
 		if (null == var1) {
 			final byte[] var2 = Def5.aClass94_1456.decode(5, var0);
 			var1 = new Def5();
 			if (var2 != null)
 				var1.method704(new RSBuf(var2));
 
-			Def5.aClass113_1454.method435(var1, var0);
+			Def5.aClass113_1454.map(var1, var0);
 			return var1;
 		} else
 			return var1;

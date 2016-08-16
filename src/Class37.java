@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.RandomAccessFile;
 
 public class Class37 {
-	static Class94 aClass94_388;
+	static CacheArch aClass94_388;
 	static Class134 aClass134_389;
 
 	static boolean method197(final File var0, final boolean var1) {

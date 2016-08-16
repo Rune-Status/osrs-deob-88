@@ -204,7 +204,7 @@ public class Class2 {
 		}
 	}
 
-	public static void method19(final Class94 var0, final int var1, final int var2, final int var3,
+	public static void method19(final CacheArch var0, final int var1, final int var2, final int var3,
 			final boolean var4) {
 		Class96.anInt770 = 1;
 		Class96.aClass94_767 = var0;

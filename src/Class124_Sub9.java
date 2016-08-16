@@ -4,7 +4,7 @@ public class Class124_Sub9 extends Node {
 	byte aByte1028;
 	String aString1029;
 
-	public static void method532(final Class94 var0) {
+	public static void method532(final CacheArch var0) {
 		Def15.aClass94_1551 = var0;
 	}
 

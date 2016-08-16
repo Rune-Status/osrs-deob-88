@@ -49,7 +49,7 @@ public class Class72 implements Interface3 {
 		anInt595 = var2;
 	}
 
-	static Class124_Sub22_Sub16_Sub1[] method310(final Class94 var0, final int var1, final int var2) {
+	static Class124_Sub22_Sub16_Sub1[] method310(final CacheArch var0, final int var1, final int var2) {
 		if (!Def3.loaded(var0, var1, var2))
 			return null;
 		else {
@@ -208,35 +208,35 @@ public class Class72 implements Interface3 {
 					var27 = Class124_Sub22_Sub20.aClass94_Sub1_1647;
 					var1 = Class124_Sub11.aClass94_Sub1_1047;
 					var7 = 0;
-					if (var27.method379("title.jpg", ""))
+					if (var27.valid2("title.jpg", ""))
 						++var7;
 
-					if (var1.method379("logo", ""))
+					if (var1.valid2("logo", ""))
 						++var7;
 
-					if (var1.method379("titlebox", ""))
+					if (var1.valid2("titlebox", ""))
 						++var7;
 
-					if (var1.method379("titlebutton", ""))
+					if (var1.valid2("titlebutton", ""))
 						++var7;
 
-					if (var1.method379("runes", ""))
+					if (var1.valid2("runes", ""))
 						++var7;
 
-					if (var1.method379("title_mute", ""))
+					if (var1.valid2("title_mute", ""))
 						++var7;
 
-					if (var1.method365("options_radio_buttons,0"))
+					if (var1.valid("options_radio_buttons,0"))
 						++var7;
 
-					if (var1.method365("options_radio_buttons,2"))
+					if (var1.valid("options_radio_buttons,2"))
 						++var7;
 
-					var1.method379("sl_back", "");
-					var1.method379("sl_flags", "");
-					var1.method379("sl_arrows", "");
-					var1.method379("sl_stars", "");
-					var1.method379("sl_button", "");
+					var1.valid2("sl_back", "");
+					var1.valid2("sl_flags", "");
+					var1.valid2("sl_arrows", "");
+					var1.valid2("sl_stars", "");
+					var1.valid2("sl_button", "");
 					var8 = Def15.method753();
 					if (var7 < var8) {
 						Class4.aString39 = "Loading title screen - " + ((100 * var7) / var8) + "%";
@@ -260,7 +260,7 @@ public class Class72 implements Interface3 {
 						Def3.aClass94_1363 = var27;
 						Class128.aClass94_887 = var1;
 						Applet_Sub1.anInt1980 = Def3.aClass94_1363.widgetLen(3);
-						Class67.method298(Class43.aClass94_Sub1_431, Class66.aClass94_Sub1_562, client.aBool1989);
+						ISAAC.method298(Class43.aClass94_Sub1_431, Class66.aClass94_Sub1_562, client.aBool1989);
 						Class47.method231(Class43.aClass94_Sub1_431, Class66.aClass94_Sub1_562);
 						final Class94_Sub1 var14 = Class43.aClass94_Sub1_431;
 						final Class94_Sub1 var3 = Class66.aClass94_Sub1_562;
@@ -325,12 +325,12 @@ public class Class72 implements Interface3 {
 						Class4.anInt38 = 94;
 						client.anInt2012 = 120;
 					} else if (client.anInt2012 == 120) {
-						if (!Class124_Sub22_Sub20.aClass94_Sub1_1647.method379("huffman", "")) {
+						if (!Class124_Sub22_Sub20.aClass94_Sub1_1647.valid2("huffman", "")) {
 							Class4.aString39 = "Loading wordpack - " + 0 + "%";
 							Class4.anInt38 = 96;
 						} else {
 							final Class63 var4 = new Class63(
-									Class124_Sub22_Sub20.aClass94_Sub1_1647.method378("huffman", ""));
+									Class124_Sub22_Sub20.aClass94_Sub1_1647.decode3("huffman", ""));
 							Class129.aClass63_889 = var4;
 							Class4.aString39 = "Loaded wordpack";
 							Class4.anInt38 = 96;

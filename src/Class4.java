@@ -61,7 +61,7 @@ public class Class4 {
 	}
 
 	public static Def15 method24(final int var0) {
-		Def15 var1 = (Def15) Def15.aClass113_1549.method434(var0);
+		Def15 var1 = (Def15) Def15.aClass113_1549.forId(var0);
 		if (null != var1)
 			return var1;
 		else {
@@ -70,7 +70,7 @@ public class Class4 {
 			if (null != var2)
 				var1.method748(new RSBuf(var2));
 
-			Def15.aClass113_1549.method435(var1, var0);
+			Def15.aClass113_1549.map(var1, var0);
 			return var1;
 		}
 	}

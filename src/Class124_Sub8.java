@@ -11,10 +11,10 @@ public class Class124_Sub8 extends Node {
 	int anInt1022;
 	int anInt1023;
 
-	boolean method529(final double var1, final int var3, final Class94 var4) {
+	boolean method529(final double var1, final int var3, final CacheArch var4) {
 		int var5;
 		for (var5 = 0; var5 < anIntArray1016.length; ++var5)
-			if (var4.method370(anIntArray1016[var5]) == null)
+			if (var4.decdode(anIntArray1016[var5]) == null)
 				return false;
 
 		var5 = var3 * var3;

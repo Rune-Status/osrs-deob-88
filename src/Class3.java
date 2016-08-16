@@ -23,7 +23,7 @@ public class Class3 {
 			}
 	}
 
-	public static void method21(final Class94 var0) {
+	public static void method21(final CacheArch var0) {
 		Def8.aClass94_1444 = var0;
 	}
 

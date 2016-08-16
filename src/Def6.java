@@ -1,7 +1,7 @@
-public class Def6 extends Node2 {
-	static Class94 aClass94_1387;
+public class Def6 extends JagMap {
+	static CacheArch aClass94_1387;
 	public static char aChar1394;
-	static Class94 aClass94_1426;
+	static CacheArch aClass94_1426;
 	public int anInt1434;
 	static Class124_Sub22_Sub16_Sub2[] aClass124_Sub22_Sub16_Sub2Array1435;
 	public String aString1396 = "null";
@@ -50,7 +50,7 @@ public class Def6 extends Node2 {
 	public static Class113 aClass113_1389 = new Class113(500);
 	static Class113 aClass113_1428 = new Class113(30);
 	static Class113 aClass113_1391 = new Class113(30);
-	static Class124_Sub22_Sub19_Sub4[] aClass124_Sub22_Sub19_Sub4Array1392 = new Class124_Sub22_Sub19_Sub4[4];
+	static Model[] aClass124_Sub22_Sub19_Sub4Array1392 = new Model[4];
 
 	void method678(final RSBuf var1, final int var2) {
 		int var3;
@@ -240,9 +240,9 @@ public class Def6 extends Node2 {
 		else
 			var9 = var2 + (anInt1434 << 10) + (var1 << 3);
 
-		Object var8 = aClass113_1428.method434(var9);
+		Object var8 = aClass113_1428.forId(var9);
 		if (null == var8) {
-			final Class124_Sub22_Sub19_Sub4 var7 = method687(var1, var2);
+			final Model var7 = method687(var1, var2);
 			if (null == var7)
 				return null;
 
@@ -255,17 +255,17 @@ public class Def6 extends Node2 {
 				var8 = var7;
 			}
 
-			aClass113_1428.method435((Node2) var8, var9);
+			aClass113_1428.map((JagMap) var8, var9);
 		}
 
 		if (aBool1388)
-			var8 = ((Class124_Sub22_Sub19_Sub4) var8).method930();
+			var8 = ((Model) var8).method930();
 
 		if (anInt1406 >= 0)
 			if (var8 instanceof Class124_Sub22_Sub19_Sub7)
 				var8 = ((Class124_Sub22_Sub19_Sub7) var8).method1008(var3, var4, var5, var6, true, anInt1406);
-			else if (var8 instanceof Class124_Sub22_Sub19_Sub4)
-				var8 = ((Class124_Sub22_Sub19_Sub4) var8).method931(var3, var4, var5, var6, true, anInt1406);
+			else if (var8 instanceof Model)
+				var8 = ((Model) var8).method931(var3, var4, var5, var6, true, anInt1406);
 
 		return (Class124_Sub22_Sub19) var8;
 	}
@@ -278,14 +278,14 @@ public class Def6 extends Node2 {
 		else
 			var9 = (anInt1434 << 10) + (var1 << 3) + var2;
 
-		Class124_Sub22_Sub19_Sub7 var7 = (Class124_Sub22_Sub19_Sub7) aClass113_1391.method434(var9);
+		Class124_Sub22_Sub19_Sub7 var7 = (Class124_Sub22_Sub19_Sub7) aClass113_1391.forId(var9);
 		if (null == var7) {
-			final Class124_Sub22_Sub19_Sub4 var8 = method687(var1, var2);
+			final Model var8 = method687(var1, var2);
 			if (var8 == null)
 				return null;
 
 			var7 = var8.method945(64 + anInt1411, anInt1412 + 768, -50, -10, -50);
-			aClass113_1391.method435(var7, var9);
+			aClass113_1391.map(var7, var9);
 		}
 
 		if (anInt1406 >= 0)
@@ -314,14 +314,14 @@ public class Def6 extends Node2 {
 		else
 			var9 = (var1 << 3) + (anInt1434 << 10) + var2;
 
-		Class124_Sub22_Sub19_Sub7 var11 = (Class124_Sub22_Sub19_Sub7) aClass113_1391.method434(var9);
+		Class124_Sub22_Sub19_Sub7 var11 = (Class124_Sub22_Sub19_Sub7) aClass113_1391.forId(var9);
 		if (var11 == null) {
-			final Class124_Sub22_Sub19_Sub4 var12 = method687(var1, var2);
+			final Model var12 = method687(var1, var2);
 			if (var12 == null)
 				return null;
 
 			var11 = var12.method945(anInt1411 + 64, anInt1412 + 768, -50, -10, -50);
-			aClass113_1391.method435(var11, var9);
+			aClass113_1391.map(var11, var9);
 		}
 
 		if ((null == var7) && (anInt1406 == -1))
@@ -365,8 +365,8 @@ public class Def6 extends Node2 {
 
 	}
 
-	final Class124_Sub22_Sub19_Sub4 method687(final int var1, int var2) {
-		Class124_Sub22_Sub19_Sub4 var3 = null;
+	final Model method687(final int var1, int var2) {
+		Model var3 = null;
 		int var4;
 		boolean var5;
 		int var8;
@@ -388,16 +388,16 @@ public class Def6 extends Node2 {
 				if (var5)
 					var8 += 65536;
 
-				var3 = (Class124_Sub22_Sub19_Sub4) aClass113_1389.method434(var8);
+				var3 = (Model) aClass113_1389.forId(var8);
 				if (null == var3) {
-					var3 = Class124_Sub22_Sub19_Sub4.method943(aClass94_1387, var8 & '\uffff', 0);
+					var3 = Model.method943(aClass94_1387, var8 & '\uffff', 0);
 					if (null == var3)
 						return null;
 
 					if (var5)
 						var3.method940();
 
-					aClass113_1389.method435(var3, var8);
+					aClass113_1389.map(var3, var8);
 				}
 
 				if (var4 > 1)
@@ -405,7 +405,7 @@ public class Def6 extends Node2 {
 			}
 
 			if (var4 > 1)
-				var3 = new Class124_Sub22_Sub19_Sub4(aClass124_Sub22_Sub19_Sub4Array1392, var4);
+				var3 = new Model(aClass124_Sub22_Sub19_Sub4Array1392, var4);
 		} else {
 			int var9 = -1;
 
@@ -423,16 +423,16 @@ public class Def6 extends Node2 {
 			if (var11)
 				var4 += 65536;
 
-			var3 = (Class124_Sub22_Sub19_Sub4) aClass113_1389.method434(var4);
+			var3 = (Model) aClass113_1389.forId(var4);
 			if (var3 == null) {
-				var3 = Class124_Sub22_Sub19_Sub4.method943(aClass94_1387, var4 & '\uffff', 0);
+				var3 = Model.method943(aClass94_1387, var4 & '\uffff', 0);
 				if (var3 == null)
 					return null;
 
 				if (var11)
 					var3.method940();
 
-				aClass113_1389.method435(var3, var4);
+				aClass113_1389.map(var3, var4);
 			}
 		}
 
@@ -447,7 +447,7 @@ public class Def6 extends Node2 {
 		else
 			var10 = true;
 
-		final Class124_Sub22_Sub19_Sub4 var6 = new Class124_Sub22_Sub19_Sub4(var3, (var2 == 0) && !var5 && !var10,
+		final Model var6 = new Model(var3, (var2 == 0) && !var5 && !var10,
 				null == aShortArray1397, null == aShortArray1393, true);
 		if ((var1 == 4) && (var2 > 3)) {
 			var6.method936(256);
@@ -512,7 +512,7 @@ public class Def6 extends Node2 {
 	}
 
 	public static Def16 method690(final int var0) {
-		Def16 var1 = (Def16) Def16.aClass113_1373.method434(var0);
+		Def16 var1 = (Def16) Def16.aClass113_1373.forId(var0);
 		if (null != var1)
 			return var1;
 		else {
@@ -521,7 +521,7 @@ public class Def6 extends Node2 {
 			if (var2 != null)
 				var1.method669(new RSBuf(var2));
 
-			Def16.aClass113_1373.method435(var1, var0);
+			Def16.aClass113_1373.map(var1, var0);
 			return var1;
 		}
 	}

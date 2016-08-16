@@ -1,7 +1,7 @@
 import java.awt.Component;
 
-public class Def15 extends Node2 {
-	static Class94 aClass94_1551;
+public class Def15 extends JagMap {
+	static CacheArch aClass94_1551;
 	public boolean aBool1550 = false;
 	static Class113 aClass113_1549 = new Class113(64);
 
@@ -22,7 +22,7 @@ public class Def15 extends Node2 {
 	}
 
 	public static Def12 method750(final int var0) {
-		Def12 var1 = (Def12) Def12.aClass113_1532.method434(var0);
+		Def12 var1 = (Def12) Def12.aClass113_1532.forId(var0);
 		if (null != var1)
 			return var1;
 		else {
@@ -32,7 +32,7 @@ public class Def15 extends Node2 {
 				var1.method739(new RSBuf(var2));
 
 			var1.method740();
-			Def12.aClass113_1532.method435(var1, var0);
+			Def12.aClass113_1532.map(var1, var0);
 			return var1;
 		}
 	}

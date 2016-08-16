@@ -475,7 +475,7 @@ public class Class21 {
 		}
 	}
 
-	void method111(final Class124_Sub22_Sub19_Sub4 var1, final int var2, final int var3, final int var4, final int var5,
+	void method111(final Model var1, final int var2, final int var3, final int var4, final int var5,
 			final int var6) {
 		boolean var7 = true;
 		int var15 = var3;
@@ -502,17 +502,17 @@ public class Class21 {
 													+ anIntArrayArrayArray237[var2][var3 + 1][var4 + 1]) / 4);
 									final Class30 var16 = var14.aClass30_981;
 									if (var16 != null) {
-										Class124_Sub22_Sub19_Sub4 var17;
-										if (var16.aClass124_Sub22_Sub19_328 instanceof Class124_Sub22_Sub19_Sub4) {
-											var17 = (Class124_Sub22_Sub19_Sub4) var16.aClass124_Sub22_Sub19_328;
-											Class124_Sub22_Sub19_Sub4.method944(var1, var17,
+										Model var17;
+										if (var16.aClass124_Sub22_Sub19_328 instanceof Model) {
+											var17 = (Model) var16.aClass124_Sub22_Sub19_328;
+											Model.method944(var1, var17,
 													((var8 - var3) * 128) + ((1 - var5) * 64), var21,
 													((var11 - var4) * 128) + ((1 - var6) * 64), var7);
 										}
 
-										if (var16.aClass124_Sub22_Sub19_325 instanceof Class124_Sub22_Sub19_Sub4) {
-											var17 = (Class124_Sub22_Sub19_Sub4) var16.aClass124_Sub22_Sub19_325;
-											Class124_Sub22_Sub19_Sub4.method944(var1, var17,
+										if (var16.aClass124_Sub22_Sub19_325 instanceof Model) {
+											var17 = (Model) var16.aClass124_Sub22_Sub19_325;
+											Model.method944(var1, var17,
 													((var8 - var3) * 128) + ((1 - var5) * 64), var21,
 													((var11 - var4) * 128) + ((1 - var6) * 64), var7);
 										}
@@ -521,11 +521,11 @@ public class Class21 {
 									for (int var19 = 0; var19 < var14.anInt976; ++var19) {
 										final Class46 var9 = var14.aClass46Array977[var19];
 										if ((var9 != null)
-												&& (var9.aClass124_Sub22_Sub19_455 instanceof Class124_Sub22_Sub19_Sub4)) {
-											final Class124_Sub22_Sub19_Sub4 var22 = (Class124_Sub22_Sub19_Sub4) var9.aClass124_Sub22_Sub19_455;
+												&& (var9.aClass124_Sub22_Sub19_455 instanceof Model)) {
+											final Model var22 = (Model) var9.aClass124_Sub22_Sub19_455;
 											final int var10 = (var9.anInt462 - var9.anInt457) + 1;
 											final int var23 = (var9.anInt460 - var9.anInt465) + 1;
-											Class124_Sub22_Sub19_Sub4.method944(var1, var22,
+											Model.method944(var1, var22,
 													((var9.anInt457 - var3) * 128) + ((var10 - var5) * 64), var21,
 													((var9.anInt465 - var4) * 128) + ((var23 - var6) * 64), var7);
 										}
@@ -750,14 +750,14 @@ public class Class21 {
 					final Class124_Sub5 var9 = aClass124_Sub5ArrayArrayArray225[var4][var5][var6];
 					if (var9 != null) {
 						final Class30 var7 = var9.aClass30_981;
-						Class124_Sub22_Sub19_Sub4 var8;
-						if ((var7 != null) && (var7.aClass124_Sub22_Sub19_328 instanceof Class124_Sub22_Sub19_Sub4)) {
-							final Class124_Sub22_Sub19_Sub4 var12 = (Class124_Sub22_Sub19_Sub4) var7.aClass124_Sub22_Sub19_328;
+						Model var8;
+						if ((var7 != null) && (var7.aClass124_Sub22_Sub19_328 instanceof Model)) {
+							final Model var12 = (Model) var7.aClass124_Sub22_Sub19_328;
 							method111(var12, var4, var5, var6, 1, 1);
-							if (var7.aClass124_Sub22_Sub19_325 instanceof Class124_Sub22_Sub19_Sub4) {
-								var8 = (Class124_Sub22_Sub19_Sub4) var7.aClass124_Sub22_Sub19_325;
+							if (var7.aClass124_Sub22_Sub19_325 instanceof Model) {
+								var8 = (Model) var7.aClass124_Sub22_Sub19_325;
 								method111(var8, var4, var5, var6, 1, 1);
-								Class124_Sub22_Sub19_Sub4.method944(var12, var8, 0, 0, 0, false);
+								Model.method944(var12, var8, 0, 0, 0, false);
 								var7.aClass124_Sub22_Sub19_325 = var8.method945(var8.aShort1778, var8.aShort1779, var1,
 										var2, var3);
 							}
@@ -769,8 +769,8 @@ public class Class21 {
 						for (int var11 = 0; var11 < var9.anInt976; ++var11) {
 							final Class46 var13 = var9.aClass46Array977[var11];
 							if ((var13 != null)
-									&& (var13.aClass124_Sub22_Sub19_455 instanceof Class124_Sub22_Sub19_Sub4)) {
-								final Class124_Sub22_Sub19_Sub4 var10 = (Class124_Sub22_Sub19_Sub4) var13.aClass124_Sub22_Sub19_455;
+									&& (var13.aClass124_Sub22_Sub19_455 instanceof Model)) {
+								final Model var10 = (Model) var13.aClass124_Sub22_Sub19_455;
 								method111(var10, var4, var5, var6, (var13.anInt462 - var13.anInt457) + 1,
 										(var13.anInt460 - var13.anInt465) + 1);
 								var13.aClass124_Sub22_Sub19_455 = var10.method945(var10.aShort1778, var10.aShort1779,
@@ -779,8 +779,8 @@ public class Class21 {
 						}
 
 						final Class44 var14 = var9.aClass44_972;
-						if ((var14 != null) && (var14.aClass124_Sub22_Sub19_438 instanceof Class124_Sub22_Sub19_Sub4)) {
-							var8 = (Class124_Sub22_Sub19_Sub4) var14.aClass124_Sub22_Sub19_438;
+						if ((var14 != null) && (var14.aClass124_Sub22_Sub19_438 instanceof Model)) {
+							var8 = (Model) var14.aClass124_Sub22_Sub19_438;
 							method124(var8, var4, var5, var6);
 							var14.aClass124_Sub22_Sub19_438 = var8.method945(var8.aShort1778, var8.aShort1779, var1,
 									var2, var3);
@@ -790,42 +790,42 @@ public class Class21 {
 
 	}
 
-	void method124(final Class124_Sub22_Sub19_Sub4 var1, final int var2, final int var3, final int var4) {
+	void method124(final Model var1, final int var2, final int var3, final int var4) {
 		Class124_Sub5 var5;
-		Class124_Sub22_Sub19_Sub4 var6;
+		Model var6;
 		if (var3 < anInt211) {
 			var5 = aClass124_Sub5ArrayArrayArray225[var2][var3 + 1][var4];
 			if ((var5 != null) && (var5.aClass44_972 != null)
-					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Class124_Sub22_Sub19_Sub4)) {
-				var6 = (Class124_Sub22_Sub19_Sub4) var5.aClass44_972.aClass124_Sub22_Sub19_438;
-				Class124_Sub22_Sub19_Sub4.method944(var1, var6, 128, 0, 0, true);
+					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Model)) {
+				var6 = (Model) var5.aClass44_972.aClass124_Sub22_Sub19_438;
+				Model.method944(var1, var6, 128, 0, 0, true);
 			}
 		}
 
 		if (var4 < anInt211) {
 			var5 = aClass124_Sub5ArrayArrayArray225[var2][var3][var4 + 1];
 			if ((var5 != null) && (var5.aClass44_972 != null)
-					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Class124_Sub22_Sub19_Sub4)) {
-				var6 = (Class124_Sub22_Sub19_Sub4) var5.aClass44_972.aClass124_Sub22_Sub19_438;
-				Class124_Sub22_Sub19_Sub4.method944(var1, var6, 0, 0, 128, true);
+					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Model)) {
+				var6 = (Model) var5.aClass44_972.aClass124_Sub22_Sub19_438;
+				Model.method944(var1, var6, 0, 0, 128, true);
 			}
 		}
 
 		if ((var3 < anInt211) && (var4 < anInt236)) {
 			var5 = aClass124_Sub5ArrayArrayArray225[var2][var3 + 1][var4 + 1];
 			if ((var5 != null) && (var5.aClass44_972 != null)
-					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Class124_Sub22_Sub19_Sub4)) {
-				var6 = (Class124_Sub22_Sub19_Sub4) var5.aClass44_972.aClass124_Sub22_Sub19_438;
-				Class124_Sub22_Sub19_Sub4.method944(var1, var6, 128, 0, 128, true);
+					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Model)) {
+				var6 = (Model) var5.aClass44_972.aClass124_Sub22_Sub19_438;
+				Model.method944(var1, var6, 128, 0, 128, true);
 			}
 		}
 
 		if ((var3 < anInt211) && (var4 > 0)) {
 			var5 = aClass124_Sub5ArrayArrayArray225[var2][var3 + 1][var4 - 1];
 			if ((var5 != null) && (var5.aClass44_972 != null)
-					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Class124_Sub22_Sub19_Sub4)) {
-				var6 = (Class124_Sub22_Sub19_Sub4) var5.aClass44_972.aClass124_Sub22_Sub19_438;
-				Class124_Sub22_Sub19_Sub4.method944(var1, var6, 128, 0, -128, true);
+					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Model)) {
+				var6 = (Model) var5.aClass44_972.aClass124_Sub22_Sub19_438;
+				Model.method944(var1, var6, 128, 0, -128, true);
 			}
 		}
 

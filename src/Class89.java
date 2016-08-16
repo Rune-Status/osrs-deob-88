@@ -5,7 +5,7 @@ public class Class89 {
 			true, true, true, true, true, true, true, true, true, true, true, true, true, false, false };
 	public static int[] anIntArray705 = new int[99];
 
-	public static Class124_Sub22_Sub17 method345(final Class94 var0, final Class94 var1, final int var2,
+	public static Class124_Sub22_Sub17 method345(final CacheArch var0, final CacheArch var1, final int var2,
 			final boolean var3) {
 		boolean var4 = true;
 		final int[] var5 = var0.method372(var2);

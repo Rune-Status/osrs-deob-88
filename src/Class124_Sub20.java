@@ -2,7 +2,7 @@ public class Class124_Sub20 extends Node {
 	byte[] aByteArray1300;
 	Class107 aClass107_1301;
 
-	static Class124_Sub20 method634(final Class94 var0, final int var1, final int var2) {
+	static Class124_Sub20 method634(final CacheArch var0, final int var1, final int var2) {
 		final byte[] var3 = var0.decode(var1, var2);
 		return var3 == null ? null : new Class124_Sub20(new RSBuf(var3));
 	}

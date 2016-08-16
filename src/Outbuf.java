@@ -1,25 +1,24 @@
-public final class Class124_Sub14_Sub1 extends RSBuf {
-	static Class124_Sub9[] aClass124_Sub9Array1609;
-	Class67 aClass67_1606;
+public final class Outbuf extends RSBuf {
+	ISAAC isac;
 	int anInt1608;
-	static int[] anIntArray1607 = new int[] { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383,
+	static int[] sizes = new int[] { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383,
 			32767, '\uffff', 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 16777215, 33554431, 67108863,
 			134217727, 268435455, 536870911, 1073741823, Integer.MAX_VALUE, -1 };
 
 	public void method836(final int[] var1) {
-		aClass67_1606 = new Class67(var1);
+		isac = new ISAAC(var1);
 	}
 
-	public void method837(final int var1) {
-		backing[++pos - 1] = (byte) (var1 + aClass67_1606.method295());
+	public void writeOpcode(final int var1) {
+		backing[++pos - 1] = (byte) (var1 + isac.key());
 	}
 
-	public Class124_Sub14_Sub1(final int var1) {
+	public Outbuf(final int var1) {
 		super(var1);
 	}
 
-	public int method838() {
-		return (backing[++pos - 1] - aClass67_1606.method295()) & 255;
+	public int readOpcode() {
+		return (backing[++pos - 1] - isac.key()) & 255;
 	}
 
 	public int method839(int var1) {
@@ -28,14 +27,14 @@ public final class Class124_Sub14_Sub1 extends RSBuf {
 		int var3 = 0;
 
 		for (anInt1608 += var1; var1 > var4; var4 = 8) {
-			var3 += (backing[var2++] & anIntArray1607[var4]) << (var1 - var4);
+			var3 += (backing[var2++] & sizes[var4]) << (var1 - var4);
 			var1 -= var4;
 		}
 
 		if (var4 == var1)
-			var3 += backing[var2] & anIntArray1607[var4];
+			var3 += backing[var2] & sizes[var4];
 		else
-			var3 += (backing[var2] >> (var4 - var1)) & anIntArray1607[var1];
+			var3 += (backing[var2] >> (var4 - var1)) & sizes[var1];
 
 		return var3;
 	}

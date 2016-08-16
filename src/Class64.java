@@ -443,12 +443,12 @@ public class Class64 {
 			Class5.aClass124_Sub22_Sub16_Sub2Array59[Class57.aClass22_538.aBool249 ? 1 : 0]
 					.method926((765 + Class4.anInt22) - 40, 463);
 			if ((client.anInt1992 > 5) && (client.anInt2058 == 0))
-				if (null != Class94.aClass124_Sub22_Sub16_Sub2_759) {
+				if (null != CacheArch.aClass124_Sub22_Sub16_Sub2_759) {
 					var32 = Class4.anInt22 + 5;
 					var33 = 463;
 					final byte var35 = 100;
 					var36 = 35;
-					Class94.aClass124_Sub22_Sub16_Sub2_759.method926(var32, var33);
+					CacheArch.aClass124_Sub22_Sub16_Sub2_759.method926(var32, var33);
 					var0.method1021("World" + " " + client.anInt2079, var32 + (var35 / 2), (var33 + (var36 / 2)) - 2,
 							16777215, 0);
 					if (Def5.aClass45_1455 != null)
@@ -456,7 +456,7 @@ public class Class64 {
 					else
 						var1.method1021("Click to switch", var32 + (var35 / 2), 12 + var33 + (var36 / 2), 16777215, 0);
 				} else
-					Class94.aClass124_Sub22_Sub16_Sub2_759 = Class1.method17(Class124_Sub11.aClass94_Sub1_1047,
+					CacheArch.aClass124_Sub22_Sub16_Sub2_759 = Class1.method17(Class124_Sub11.aClass94_Sub1_1047,
 							"sl_button", "");
 
 			try {

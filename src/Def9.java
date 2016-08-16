@@ -1,6 +1,6 @@
-public class Def9 extends Node2 {
+public class Def9 extends JagMap {
 	public int anInt1318;
-	static Class94 aClass94_1328;
+	static CacheArch aClass94_1328;
 	static int[] anIntArray1335;
 	static Widget aClass124_Sub17_1352;
 	public String aString1319 = "null";
@@ -42,25 +42,25 @@ public class Def9 extends Node2 {
 	}
 
 	static final void method639() {
-		Def4.aClass113_1553.method436();
+		Def4.aClass113_1553.map();
 		Class22.method147();
-		Def3.aClass113_1354.method436();
+		Def3.aClass113_1354.map();
 		Class62.method275();
 		RuntimeException_Sub1.method1011();
 		Class71.method308();
-		Def12.aClass113_1532.method436();
-		Def12.aClass113_1541.method436();
-		Def13.aClass113_1515.method436();
-		Def13.aClass113_1518.method436();
+		Def12.aClass113_1532.map();
+		Def12.aClass113_1541.map();
+		Def13.aClass113_1515.map();
+		Def13.aClass113_1518.map();
 		Class28.method168();
-		Def16.aClass113_1373.method436();
+		Def16.aClass113_1373.map();
 		Class124_Sub22_Sub19_Sub3.method897();
-		Widget.aClass113_1147.method436();
-		Widget.aClass113_1164.method436();
-		Widget.aClass113_1149.method436();
-		Widget.aClass113_1150.method436();
+		Widget.aClass113_1147.map();
+		Widget.aClass113_1164.map();
+		Widget.aClass113_1149.map();
+		Widget.aClass113_1150.map();
 		((Class31) Class124_Sub22_Sub16_Sub3.anInterface2_1828).method177();
-		Somet2.aClass113_1600.method436();
+		Somet2.aClass113_1600.map();
 		Class82.aClass94_Sub1_671.empty();
 		Class45.aClass94_Sub1_450.empty();
 		Class9.aClass94_Sub1_100.empty();
@@ -176,7 +176,7 @@ public class Def9 extends Node2 {
 
 	}
 
-	public final Class124_Sub22_Sub19_Sub4 method641() {
+	public final Model method641() {
 		if (anIntArray1342 != null) {
 			final Def9 var3 = method644();
 			return var3 == null ? null : var3.method641();
@@ -192,16 +192,16 @@ public class Def9 extends Node2 {
 			if (var6)
 				return null;
 			else {
-				final Class124_Sub22_Sub19_Sub4[] var1 = new Class124_Sub22_Sub19_Sub4[anIntArray1341.length];
+				final Model[] var1 = new Model[anIntArray1341.length];
 
 				for (int var7 = 0; var7 < anIntArray1341.length; ++var7)
-					var1[var7] = Class124_Sub22_Sub19_Sub4.method943(Class80.aClass94_646, anIntArray1341[var7], 0);
+					var1[var7] = Model.method943(Class80.aClass94_646, anIntArray1341[var7], 0);
 
-				Class124_Sub22_Sub19_Sub4 var2;
+				Model var2;
 				if (var1.length == 1)
 					var2 = var1[0];
 				else
-					var2 = new Class124_Sub22_Sub19_Sub4(var1, var1.length);
+					var2 = new Model(var1, var1.length);
 
 				int var4;
 				if (null != aShortArray1330)
@@ -257,7 +257,7 @@ public class Def9 extends Node2 {
 			final Def9 var12 = method644();
 			return var12 == null ? null : var12.method645(var1, var2, var3, var4);
 		} else {
-			Class124_Sub22_Sub19_Sub7 var6 = (Class124_Sub22_Sub19_Sub7) aClass113_1317.method434(anInt1318);
+			Class124_Sub22_Sub19_Sub7 var6 = (Class124_Sub22_Sub19_Sub7) aClass113_1317.forId(anInt1318);
 			if (var6 == null) {
 				boolean var9 = false;
 
@@ -268,17 +268,17 @@ public class Def9 extends Node2 {
 				if (var9)
 					return null;
 
-				final Class124_Sub22_Sub19_Sub4[] var5 = new Class124_Sub22_Sub19_Sub4[anIntArray1321.length];
+				final Model[] var5 = new Model[anIntArray1321.length];
 
 				int var11;
 				for (var11 = 0; var11 < anIntArray1321.length; ++var11)
-					var5[var11] = Class124_Sub22_Sub19_Sub4.method943(Class80.aClass94_646, anIntArray1321[var11], 0);
+					var5[var11] = Model.method943(Class80.aClass94_646, anIntArray1321[var11], 0);
 
-				Class124_Sub22_Sub19_Sub4 var8;
+				Model var8;
 				if (var5.length == 1)
 					var8 = var5[0];
 				else
-					var8 = new Class124_Sub22_Sub19_Sub4(var5, var5.length);
+					var8 = new Model(var5, var5.length);
 
 				if (null != aShortArray1330)
 					for (var11 = 0; var11 < aShortArray1330.length; ++var11)
@@ -289,7 +289,7 @@ public class Def9 extends Node2 {
 						var8.method939(aShortArray1345[var11], aShortArray1333[var11]);
 
 				var6 = var8.method945(anInt1315 + 64, anInt1340 + 850, -30, -50, -30);
-				aClass113_1317.method435(var6, anInt1318);
+				aClass113_1317.map(var6, anInt1318);
 			}
 
 			Class124_Sub22_Sub19_Sub7 var10;

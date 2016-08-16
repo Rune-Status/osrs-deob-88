@@ -7,7 +7,7 @@ public final class Canvas_Sub1 extends Canvas {
 	 *
 	 */
 	private static final long serialVersionUID = -7929114952321666214L;
-	static Class94 aClass94_1610;
+	static CacheArch aClass94_1610;
 	Component aComponent1611;
 
 	@Override

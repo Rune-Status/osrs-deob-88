@@ -3,8 +3,8 @@ public class Class10 {
 	static Class124_Sub22_Sub16_Sub2[] aClass124_Sub22_Sub16_Sub2Array109;
 	Class107 aClass107_106 = new Class107(256);
 	Class107 aClass107_108 = new Class107(256);
-	Class94 aClass94_107;
-	Class94 aClass94_105;
+	CacheArch aClass94_107;
+	CacheArch aClass94_105;
 
 	public static Widget method55(final int var0) {
 		try {
@@ -35,9 +35,9 @@ public class Class10 {
 		else if ((null != var3) && (var3[0] <= 0))
 			return null;
 		else {
-			Class124_Sub3 var8 = (Class124_Sub3) aClass107_106.method409(var6);
+			Somet4 var8 = (Somet4) aClass107_106.method409(var6);
 			if (null == var8) {
-				var8 = Class124_Sub3.method499(aClass94_105, var1, var2);
+				var8 = Somet4.method499(aClass94_105, var1, var2);
 				if (var8 == null)
 					return null;
 
@@ -74,7 +74,7 @@ public class Class10 {
 			return method56(0, var1, var2);
 	}
 
-	public Class10(final Class94 var1, final Class94 var2) {
+	public Class10(final CacheArch var1, final CacheArch var2) {
 		aClass94_107 = var1;
 		aClass94_105 = var2;
 	}

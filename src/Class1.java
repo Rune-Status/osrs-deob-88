@@ -115,7 +115,7 @@ public class Class1 {
 
 						for (int var14 = 0; var14 < Class103.anInt794; ++var14)
 							if (var21.aString1956
-									.equals(Class124_Sub14_Sub1.aClass124_Sub9Array1609[var14].aString1029)) {
+									.equals(client.aClass124_Sub9Array1609[var14].aString1029)) {
 								var17 = true;
 								break;
 							}
@@ -194,7 +194,7 @@ public class Class1 {
 		}
 	}
 
-	public static void method15(final Class94 var0, final Class94 var1) {
+	public static void method15(final CacheArch var0, final CacheArch var1) {
 		Class37.aClass94_388 = var0;
 		Def13.aClass94_1526 = var1;
 	}
@@ -221,7 +221,7 @@ public class Class1 {
 		return new String(var3, 0, var4);
 	}
 
-	public static Class124_Sub22_Sub16_Sub2 method17(final Class94 var0, final String var1, final String var2) {
+	public static Class124_Sub22_Sub16_Sub2 method17(final CacheArch var0, final String var1, final String var2) {
 		final int var3 = var0.method376(var1);
 		final int var4 = var0.method383(var3, var2);
 		return Class23.method157(var0, var3, var4);

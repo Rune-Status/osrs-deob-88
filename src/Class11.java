@@ -99,18 +99,18 @@ public class Class11 {
 	}
 
 	Class11() {
-		final int var2 = Class124_Sub3.method502(16);
+		final int var2 = client.method502(16);
 		if (var2 != 1)
 			throw new RuntimeException();
 		else {
-			final int var3 = Class124_Sub3.method502(5);
+			final int var3 = client.method502(5);
 			int var4 = 0;
 			anIntArray114 = new int[var3];
 
 			int var1;
 			int var5;
 			for (var1 = 0; var1 < var3; ++var1) {
-				var5 = Class124_Sub3.method502(4);
+				var5 = client.method502(4);
 				anIntArray114[var1] = var5;
 				if (var5 >= var4)
 					var4 = var5 + 1;
@@ -123,21 +123,21 @@ public class Class11 {
 
 			int var8;
 			for (var1 = 0; var1 < var4; ++var1) {
-				anIntArray115[var1] = Class124_Sub3.method502(3) + 1;
-				var5 = anIntArray116[var1] = Class124_Sub3.method502(2);
+				anIntArray115[var1] = client.method502(3) + 1;
+				var5 = anIntArray116[var1] = client.method502(2);
 				if (var5 != 0)
-					anIntArray118[var1] = Class124_Sub3.method502(8);
+					anIntArray118[var1] = client.method502(8);
 
 				var5 = 1 << var5;
 				final int[] var9 = new int[var5];
 				anIntArrayArray120[var1] = var9;
 
 				for (var8 = 0; var8 < var5; ++var8)
-					var9[var8] = Class124_Sub3.method502(8) - 1;
+					var9[var8] = client.method502(8) - 1;
 			}
 
-			anInt110 = Class124_Sub3.method502(2) + 1;
-			var1 = Class124_Sub3.method502(4);
+			anInt110 = client.method502(2) + 1;
+			var1 = client.method502(4);
 			var5 = 2;
 
 			int var7;
@@ -153,7 +153,7 @@ public class Class11 {
 				var8 = anIntArray114[var7];
 
 				for (int var6 = 0; var6 < anIntArray115[var8]; ++var6)
-					anIntArray113[var5++] = Class124_Sub3.method502(var1);
+					anIntArray113[var5++] = client.method502(var1);
 			}
 
 			if ((anIntArray117 == null) || (anIntArray117.length < var5)) {
@@ -252,7 +252,7 @@ public class Class11 {
 	}
 
 	boolean method66() {
-		final boolean var3 = Class124_Sub3.method496() != 0;
+		final boolean var3 = client.method496() != 0;
 		if (!var3)
 			return false;
 		else {
@@ -264,8 +264,8 @@ public class Class11 {
 
 			var1 = anIntArray112[anInt110 - 1];
 			final int var7 = Class124_Sub22_Sub10.method714(var1 - 1);
-			anIntArray119[0] = Class124_Sub3.method502(var7);
-			anIntArray119[1] = Class124_Sub3.method502(var7);
+			anIntArray119[0] = client.method502(var7);
+			anIntArray119[1] = client.method502(var7);
 			int var8 = 2;
 
 			for (final int var4 : anIntArray114) {
@@ -274,12 +274,12 @@ public class Class11 {
 				final int var11 = (1 << var5) - 1;
 				int var6 = 0;
 				if (var5 > 0)
-					var6 = Class124_Sub3.aClass6Array937[anIntArray118[var4]].method30();
+					var6 = Somet4.aClass6Array937[anIntArray118[var4]].method30();
 
 				for (int var13 = 0; var13 < var10; ++var13) {
 					final int var12 = anIntArrayArray120[var4][var6 & var11];
 					var6 >>>= var5;
-					anIntArray119[var8++] = var12 >= 0 ? Class124_Sub3.aClass6Array937[var12].method30() : 0;
+					anIntArray119[var8++] = var12 >= 0 ? Somet4.aClass6Array937[var12].method30() : 0;
 				}
 			}
 

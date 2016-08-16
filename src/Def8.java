@@ -1,7 +1,7 @@
 import java.awt.Component;
 
-public class Def8 extends Node2 {
-	static Class94 aClass94_1444;
+public class Def8 extends JagMap {
+	static CacheArch aClass94_1444;
 	static String aString1452;
 	static Class113 aClass113_1443 = new Class113(64);
 	public String aString1446 = "null";
@@ -14,10 +14,10 @@ public class Def8 extends Node2 {
 	public int[] anIntArray1451;
 
 	static void method698() {
-		client.aClass124_Sub14_Sub1_2024.method837(140);
-		client.aClass124_Sub14_Sub1_2024.writeByte(Class34.method187());
-		client.aClass124_Sub14_Sub1_2024.writeShort(Class56_Sub2.anInt1083);
-		client.aClass124_Sub14_Sub1_2024.writeShort(Class81.anInt662);
+		client.secbuf.writeOpcode(140);
+		client.secbuf.writeByte(Class34.method187());
+		client.secbuf.writeShort(Class56_Sub2.anInt1083);
+		client.secbuf.writeShort(Class81.anInt662);
 	}
 
 	void method699(final RSBuf var1) {

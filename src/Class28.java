@@ -63,6 +63,6 @@ public final class Class28 {
 	}
 
 	public static void method168() {
-		Def14.aClass113_1509.method436();
+		Def14.aClass113_1509.map();
 	}
 }

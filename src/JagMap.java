@@ -1,6 +1,6 @@
-public class Node2 extends Node {
-	public Node2 aClass124_Sub22_1303;
-	public Node2 aClass124_Sub22_1304;
+public class JagMap extends Node {
+	public JagMap aClass124_Sub22_1303;
+	public JagMap aClass124_Sub22_1304;
 
 	public void method637() {
 		if (aClass124_Sub22_1304 != null) {

@@ -14,10 +14,10 @@ public class Class62 {
 	static byte[][] backing50 = new byte[50][];
 
 	public static void method275() {
-		Def6.aClass113_1410.method436();
-		Def6.aClass113_1389.method436();
-		Def6.aClass113_1428.method436();
-		Def6.aClass113_1391.method436();
+		Def6.aClass113_1410.map();
+		Def6.aClass113_1389.map();
+		Def6.aClass113_1428.map();
+		Def6.aClass113_1391.map();
 	}
 
 	static void method276() {
@@ -28,7 +28,7 @@ public class Class62 {
 		client.aBool2212 = true;
 		client.aLong2208 = -1L;
 		Class114.aClass110_824 = new Class110();
-		client.aClass124_Sub14_Sub1_2024.pos = 0;
+		client.secbuf.pos = 0;
 		client.aClass124_Sub14_Sub1_2026.pos = 0;
 		client.anInt2028 = -1;
 		client.anInt2017 = 1;
@@ -124,7 +124,7 @@ public class Class62 {
 		Def8.method698();
 		client.aString2120 = null;
 		Class103.anInt794 = 0;
-		Class124_Sub14_Sub1.aClass124_Sub9Array1609 = null;
+		client.aClass124_Sub9Array1609 = null;
 
 		for (var0 = 0; var0 < 8; ++var0)
 			client.aClass125Array2259[var0] = new Class125();

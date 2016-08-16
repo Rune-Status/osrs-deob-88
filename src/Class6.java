@@ -7,40 +7,40 @@ public class Class6 {
 	int[] anIntArray65;
 
 	Class6() {
-		Class124_Sub3.method502(24);
-		anInt62 = Class124_Sub3.method502(16);
-		anInt61 = Class124_Sub3.method502(24);
+		client.method502(24);
+		anInt62 = client.method502(16);
+		anInt61 = client.method502(24);
 		anIntArray64 = new int[anInt61];
-		final boolean var2 = Class124_Sub3.method496() != 0;
+		final boolean var2 = client.method496() != 0;
 		int var3;
 		int var4;
 		int var7;
 		if (var2) {
 			var3 = 0;
 
-			for (var4 = Class124_Sub3.method502(5) + 1; var3 < anInt61; ++var4) {
-				final int var5 = Class124_Sub3.method502(Class124_Sub22_Sub10.method714(anInt61 - var3));
+			for (var4 = client.method502(5) + 1; var3 < anInt61; ++var4) {
+				final int var5 = client.method502(Class124_Sub22_Sub10.method714(anInt61 - var3));
 
 				for (var7 = 0; var7 < var5; ++var7)
 					anIntArray64[var3++] = var4;
 			}
 		} else {
-			final boolean var14 = Class124_Sub3.method496() != 0;
+			final boolean var14 = client.method496() != 0;
 
 			for (var4 = 0; var4 < anInt61; ++var4)
-				if (var14 && (Class124_Sub3.method496() == 0))
+				if (var14 && (client.method496() == 0))
 					anIntArray64[var4] = 0;
 				else
-					anIntArray64[var4] = Class124_Sub3.method502(5) + 1;
+					anIntArray64[var4] = client.method502(5) + 1;
 		}
 
 		method29();
-		var3 = Class124_Sub3.method502(4);
+		var3 = client.method502(4);
 		if (var3 > 0) {
-			final float var15 = Class124_Sub3.method501(Class124_Sub3.method502(32));
-			final float var16 = Class124_Sub3.method501(Class124_Sub3.method502(32));
-			var7 = Class124_Sub3.method502(4) + 1;
-			final boolean var11 = Class124_Sub3.method496() != 0;
+			final float var15 = client.method501(client.method502(32));
+			final float var16 = client.method501(client.method502(32));
+			var7 = client.method502(4) + 1;
+			final boolean var11 = client.method496() != 0;
 			int var10;
 			if (var3 == 1)
 				var10 = method32(anInt61, anInt62);
@@ -51,7 +51,7 @@ public class Class6 {
 
 			int var8;
 			for (var8 = 0; var8 < var10; ++var8)
-				anIntArray63[var8] = Class124_Sub3.method502(var7);
+				anIntArray63[var8] = client.method502(var7);
 
 			aFloatArrayArray60 = new float[anInt61][anInt62];
 			int var1;
@@ -179,7 +179,7 @@ public class Class6 {
 
 	int method30() {
 		int var1;
-		for (var1 = 0; anIntArray65[var1] >= 0; var1 = Class124_Sub3.method496() != 0 ? anIntArray65[var1] : var1 + 1)
+		for (var1 = 0; anIntArray65[var1] >= 0; var1 = client.method496() != 0 ? anIntArray65[var1] : var1 + 1)
 			;
 
 		return ~anIntArray65[var1];

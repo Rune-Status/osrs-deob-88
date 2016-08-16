@@ -90,9 +90,9 @@ public class Class35 {
 							.equals(var3))
 						Class20.method95(31, "", "You can\'t add yourself to your own ignore list");
 					else {
-						client.aClass124_Sub14_Sub1_2024.method837(67);
-						client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
-						client.aClass124_Sub14_Sub1_2024.writestr(var0);
+						client.secbuf.writeOpcode(67);
+						client.secbuf.writeByte(Class54.method258(var0));
+						client.secbuf.writestr(var0);
 					}
 				}
 			} else

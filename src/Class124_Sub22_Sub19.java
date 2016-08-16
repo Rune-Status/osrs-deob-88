@@ -1,4 +1,4 @@
-public abstract class Class124_Sub22_Sub19 extends Node2 {
+public abstract class Class124_Sub22_Sub19 extends JagMap {
 	public int anInt1605 = 1000;
 
 	void method833(final int var1, final int var2, final int var3, final int var4, final int var5, final int var6,

@@ -41,7 +41,7 @@ public class Class124_Sub4_Sub3 extends Class124_Sub4 {
 
 	}
 
-	synchronized boolean method848(final Class124_Sub20 var1, final Class94 var2, final Class10 var3, final int var4) {
+	synchronized boolean method848(final Class124_Sub20 var1, final CacheArch var2, final Class10 var3, final int var4) {
 		var1.method636();
 		boolean var5 = true;
 		final int[] var10 = new int[] { var4 };

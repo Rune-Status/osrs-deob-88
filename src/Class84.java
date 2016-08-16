@@ -148,7 +148,7 @@ public final class Class84 implements KeyListener, FocusListener {
 	}
 
 	public static Def3 method338(final int var0) {
-		Def3 var1 = (Def3) Def3.aClass113_1354.method434(var0);
+		Def3 var1 = (Def3) Def3.aClass113_1354.forId(var0);
 		if (null != var1)
 			return var1;
 		else {
@@ -157,7 +157,7 @@ public final class Class84 implements KeyListener, FocusListener {
 			if (null != var2)
 				var1.method648(new RSBuf(var2));
 
-			Def3.aClass113_1354.method435(var1, var0);
+			Def3.aClass113_1354.map(var1, var0);
 			return var1;
 		}
 	}

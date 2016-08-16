@@ -37,8 +37,8 @@ public class Class7 {
 				client.aClass100_2250.method393(true);
 
 			if (var1 == 326) {
-				client.aClass124_Sub14_Sub1_2024.method837(149);
-				client.aClass100_2250.method397(client.aClass124_Sub14_Sub1_2024);
+				client.secbuf.writeOpcode(149);
+				client.aClass100_2250.method397(client.secbuf);
 				return true;
 			} else
 				return false;

@@ -13,7 +13,7 @@ public class Class22 {
 	static int anInt247 = 4;
 
 	public static void method147() {
-		Def1.aClass113_1371.method436();
+		Def1.aClass113_1371.map();
 	}
 
 	Class22(final RSBuf var1) {
@@ -63,7 +63,7 @@ public class Class22 {
 		return var1;
 	}
 
-	public static Somet1 method149(final Class94 var0, final Class94 var1, final String var2,
+	public static Somet1 method149(final CacheArch var0, final CacheArch var1, final String var2,
 			final String var3) {
 		final int var4 = var0.method376(var2);
 		final int var5 = var0.method383(var4, var3);

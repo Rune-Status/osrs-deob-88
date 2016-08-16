@@ -9,7 +9,7 @@ public class Class60 {
 	static Hashtable aHashtable543 = new Hashtable(16);
 
 	public static Def8 method272(final int var0) {
-		Def8 var1 = (Def8) Def8.aClass113_1443.method434(var0);
+		Def8 var1 = (Def8) Def8.aClass113_1443.forId(var0);
 		if (var1 != null)
 			return var1;
 		else {
@@ -18,7 +18,7 @@ public class Class60 {
 			if (null != var2)
 				var1.method699(new RSBuf(var2));
 
-			Def8.aClass113_1443.method435(var1, var0);
+			Def8.aClass113_1443.map(var1, var0);
 			return var1;
 		}
 	}

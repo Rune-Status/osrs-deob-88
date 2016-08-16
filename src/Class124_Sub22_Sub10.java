@@ -1,6 +1,6 @@
-public class Class124_Sub22_Sub10 extends Node2 {
-	public static Class94 aClass94_1459;
-	public static Class94 aClass94_1460;
+public class Class124_Sub22_Sub10 extends JagMap {
+	public static CacheArch aClass94_1459;
+	public static CacheArch aClass94_1460;
 	static int[][] anIntArrayArray1466;
 	public static Widget[][] widgets;
 	int anInt1465;
@@ -50,7 +50,7 @@ public class Class124_Sub22_Sub10 extends Node2 {
 	public String[] aStringArray1488 = new String[] { null, null, null, null, "Drop" };
 	public int anInt1464;
 
-	public final Class124_Sub22_Sub19_Sub4 method710(final boolean var1) {
+	public final Model method710(final boolean var1) {
 		int var2 = anInt1481;
 		int var5 = anInt1482;
 		int var3 = anInt1486;
@@ -63,16 +63,16 @@ public class Class124_Sub22_Sub10 extends Node2 {
 		if (var2 == -1)
 			return null;
 		else {
-			Class124_Sub22_Sub19_Sub4 var4 = Class124_Sub22_Sub19_Sub4.method943(aClass94_1460, var2, 0);
+			Model var4 = Model.method943(aClass94_1460, var2, 0);
 			if (var5 != -1) {
-				final Class124_Sub22_Sub19_Sub4 var7 = Class124_Sub22_Sub19_Sub4.method943(aClass94_1460, var5, 0);
+				final Model var7 = Model.method943(aClass94_1460, var5, 0);
 				if (var3 != -1) {
-					final Class124_Sub22_Sub19_Sub4 var8 = Class124_Sub22_Sub19_Sub4.method943(aClass94_1460, var3, 0);
-					final Class124_Sub22_Sub19_Sub4[] var9 = new Class124_Sub22_Sub19_Sub4[] { var4, var7, var8 };
-					var4 = new Class124_Sub22_Sub19_Sub4(var9, 3);
+					final Model var8 = Model.method943(aClass94_1460, var3, 0);
+					final Model[] var9 = new Model[] { var4, var7, var8 };
+					var4 = new Model(var9, 3);
 				} else {
-					final Class124_Sub22_Sub19_Sub4[] var10 = new Class124_Sub22_Sub19_Sub4[] { var4, var7 };
-					var4 = new Class124_Sub22_Sub19_Sub4(var10, 2);
+					final Model[] var10 = new Model[] { var4, var7 };
+					var4 = new Model(var10, 2);
 				}
 			}
 
@@ -248,7 +248,7 @@ public class Class124_Sub22_Sub10 extends Node2 {
 		return var1 + var0;
 	}
 
-	public final Class124_Sub22_Sub19_Sub4 method715(final int var1) {
+	public final Model method715(final int var1) {
 		int var3;
 		if ((null != anIntArray1492) && (var1 > 1)) {
 			int var4 = -1;
@@ -261,7 +261,7 @@ public class Class124_Sub22_Sub10 extends Node2 {
 				return method724(var4).method715(1);
 		}
 
-		final Class124_Sub22_Sub19_Sub4 var2 = Class124_Sub22_Sub19_Sub4.method943(aClass94_1460, anInt1465, 0);
+		final Model var2 = Model.method943(aClass94_1460, anInt1465, 0);
 		if (var2 == null)
 			return null;
 		else {
@@ -322,7 +322,7 @@ public class Class124_Sub22_Sub10 extends Node2 {
 		return this;
 	}
 
-	public final Class124_Sub22_Sub19_Sub4 method718(final boolean var1) {
+	public final Model method718(final boolean var1) {
 		int var2 = anInt1484;
 		int var5 = anInt1489;
 		if (var1) {
@@ -333,11 +333,11 @@ public class Class124_Sub22_Sub10 extends Node2 {
 		if (var2 == -1)
 			return null;
 		else {
-			Class124_Sub22_Sub19_Sub4 var4 = Class124_Sub22_Sub19_Sub4.method943(aClass94_1460, var2, 0);
+			Model var4 = Model.method943(aClass94_1460, var2, 0);
 			if (var5 != -1) {
-				final Class124_Sub22_Sub19_Sub4 var6 = Class124_Sub22_Sub19_Sub4.method943(aClass94_1460, var5, 0);
-				final Class124_Sub22_Sub19_Sub4[] var7 = new Class124_Sub22_Sub19_Sub4[] { var4, var6 };
-				var4 = new Class124_Sub22_Sub19_Sub4(var7, 2);
+				final Model var6 = Model.method943(aClass94_1460, var5, 0);
+				final Model[] var7 = new Model[] { var4, var6 };
+				var4 = new Model(var7, 2);
 			}
 
 			int var3;
@@ -387,11 +387,11 @@ public class Class124_Sub22_Sub10 extends Node2 {
 				return method724(var5).method720(1);
 		}
 
-		Class124_Sub22_Sub19_Sub7 var3 = (Class124_Sub22_Sub19_Sub7) aClass113_1462.method434(anInt1464);
+		Class124_Sub22_Sub19_Sub7 var3 = (Class124_Sub22_Sub19_Sub7) aClass113_1462.forId(anInt1464);
 		if (var3 != null)
 			return var3;
 		else {
-			final Class124_Sub22_Sub19_Sub4 var6 = Class124_Sub22_Sub19_Sub4.method943(aClass94_1460, anInt1465, 0);
+			final Model var6 = Model.method943(aClass94_1460, anInt1465, 0);
 			if (null == var6)
 				return null;
 			else {
@@ -409,7 +409,7 @@ public class Class124_Sub22_Sub10 extends Node2 {
 
 				var3 = var6.method945(anInt1499 + 64, 768 + anInt1496, -50, -10, -50);
 				var3.aBool1861 = true;
-				aClass113_1462.method435(var3, anInt1464);
+				aClass113_1462.map(var3, anInt1464);
 				return var3;
 			}
 		}
@@ -476,7 +476,7 @@ public class Class124_Sub22_Sub10 extends Node2 {
 	}
 
 	public static Class124_Sub22_Sub10 method724(final int var0) {
-		Class124_Sub22_Sub10 var1 = (Class124_Sub22_Sub10) aClass113_1494.method434(var0);
+		Class124_Sub22_Sub10 var1 = (Class124_Sub22_Sub10) aClass113_1494.forId(var0);
 		if (null != var1)
 			return var1;
 		else {
@@ -501,7 +501,7 @@ public class Class124_Sub22_Sub10 extends Node2 {
 				var1.anInt1501 = 0;
 			}
 
-			aClass113_1494.method435(var1, var0);
+			aClass113_1494.map(var1, var0);
 			return var1;
 		}
 	}

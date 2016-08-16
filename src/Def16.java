@@ -1,6 +1,6 @@
-public class Def16 extends Node2 {
+public class Def16 extends JagMap {
 	public static int anInt1372;
-	public static Class94 aClass94_1375;
+	public static CacheArch aClass94_1375;
 	public int anInt1374 = 0;
 	public static Class113 aClass113_1373 = new Class113(64);
 
@@ -34,18 +34,18 @@ public class Def16 extends Node2 {
 						return false;
 				}
 
-				if (null == Class67.aClass10_570)
-					Class67.aClass10_570 = new Class10(Canvas_Sub1.aClass94_1610, Class96.aClass94_765);
+				if (null == ISAAC.aClass10_570)
+					ISAAC.aClass10_570 = new Class10(Canvas_Sub1.aClass94_1610, Class96.aClass94_765);
 
 				if (Class77.aClass124_Sub4_Sub3_624.method848(Class96.aClass124_Sub20_769, Class96.aClass94_764,
-						Class67.aClass10_570, 22050)) {
+						ISAAC.aClass10_570, 22050)) {
 					Class77.aClass124_Sub4_Sub3_624.method849();
 					Class77.aClass124_Sub4_Sub3_624.method846(Class80.anInt644);
 					Class77.aClass124_Sub4_Sub3_624.method850(Class96.aClass124_Sub20_769,
 							Class124_Sub22_Sub19_Sub3_Sub1.aBool1938);
 					Class96.anInt770 = 0;
 					Class96.aClass124_Sub20_769 = null;
-					Class67.aClass10_570 = null;
+					ISAAC.aClass10_570 = null;
 					Class96.aClass94_767 = null;
 					return true;
 				}
@@ -55,7 +55,7 @@ public class Def16 extends Node2 {
 			Class77.aClass124_Sub4_Sub3_624.method868();
 			Class96.anInt770 = 0;
 			Class96.aClass124_Sub20_769 = null;
-			Class67.aClass10_570 = null;
+			ISAAC.aClass10_570 = null;
 			Class96.aClass94_767 = null;
 		}
 

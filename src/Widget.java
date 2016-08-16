@@ -1,7 +1,7 @@
 public class Widget extends Node {
 	public Object[] anObjectArray1144;
-	public static Class94 aClass94_1145;
-	public static Class94 aClass94_1146;
+	public static CacheArch aClass94_1145;
+	public static CacheArch aClass94_1146;
 	public Object[] anObjectArray1184;
 	public Object[] anObjectArray1231;
 	public Object[] anObjectArray1247;
@@ -553,7 +553,7 @@ public class Widget extends Node {
 		else {
 			final long var3 = ((aBool1193 ? 1L : 0L) << 39) + var5 + ((long) anInt1167 << 36)
 					+ ((aBool1192 ? 1L : 0L) << 38) + ((long) anInt1280 << 40);
-			Class124_Sub22_Sub16_Sub1 var2 = (Class124_Sub22_Sub16_Sub1) aClass113_1147.method434(var3);
+			Class124_Sub22_Sub16_Sub1 var2 = (Class124_Sub22_Sub16_Sub1) aClass113_1147.forId(var3);
 			if (null != var2)
 				return var2;
 			else {
@@ -580,7 +580,7 @@ public class Widget extends Node {
 					if (anInt1280 != 0)
 						var2.method906(anInt1280);
 
-					aClass113_1147.method435(var2, var3);
+					aClass113_1147.map(var2, var3);
 					return var2;
 				}
 			}
@@ -594,13 +594,13 @@ public class Widget extends Node {
 			if (var3 == -1)
 				return null;
 			else {
-				Class124_Sub22_Sub16_Sub1 var2 = (Class124_Sub22_Sub16_Sub1) aClass113_1147.method434(var3);
+				Class124_Sub22_Sub16_Sub1 var2 = (Class124_Sub22_Sub16_Sub1) aClass113_1147.forId(var3);
 				if (null != var2)
 					return var2;
 				else {
 					var2 = Class124_Sub22_Sub19_Sub6.method962(aClass94_1146, var3, 0);
 					if (null != var2)
-						aClass113_1147.method435(var2, var3);
+						aClass113_1147.map(var2, var3);
 					else
 						aBool1151 = true;
 
@@ -629,11 +629,11 @@ public class Widget extends Node {
 		else if ((var6 == 1) && (var7 == -1))
 			return null;
 		else {
-			Class124_Sub22_Sub19_Sub7 var8 = (Class124_Sub22_Sub19_Sub7) aClass113_1164.method434(var7 + (var6 << 16));
+			Class124_Sub22_Sub19_Sub7 var8 = (Class124_Sub22_Sub19_Sub7) aClass113_1164.forId(var7 + (var6 << 16));
 			if (null == var8) {
-				Class124_Sub22_Sub19_Sub4 var5;
+				Model var5;
 				if (var6 == 1) {
-					var5 = Class124_Sub22_Sub19_Sub4.method943(Class124_Sub7.aClass94_1014, var7, 0);
+					var5 = Model.method943(Class124_Sub7.aClass94_1014, var7, 0);
 					if (null == var5) {
 						aBool1151 = true;
 						return null;
@@ -676,7 +676,7 @@ public class Widget extends Node {
 					var8 = var5.method945(var9.anInt1499 + 64, 768 + var9.anInt1496, -50, -10, -50);
 				}
 
-				aClass113_1164.method435(var8, var7 + (var6 << 16));
+				aClass113_1164.map(var8, var7 + (var6 << 16));
 			}
 
 			if (null != var1)
@@ -709,7 +709,7 @@ public class Widget extends Node {
 		else {
 			final long var8 = ((long) anInt1280 << 40) + ((aBool1193 ? 1L : 0L) << 39) + ((aBool1192 ? 1L : 0L) << 38)
 					+ ((long) anInt1167 << 36) + var2;
-			Class124_Sub22_Sub20 var7 = (Class124_Sub22_Sub20) aClass113_1150.method434(var8);
+			Class124_Sub22_Sub20 var7 = (Class124_Sub22_Sub20) aClass113_1150.forId(var8);
 			if (var7 != null)
 				return var7;
 			else {
@@ -743,7 +743,7 @@ public class Widget extends Node {
 					}
 
 					var7 = new Class124_Sub22_Sub20(var4.anInt1729, var4.anInt1730, var5, var6, var2);
-					aClass113_1150.method435(var7, var8);
+					aClass113_1150.map(var7, var8);
 					return var7;
 				}
 			}
@@ -782,12 +782,12 @@ public class Widget extends Node {
 			return null;
 		else {
 			final Somet1 var3 = (Somet1) aClass113_1149
-					.method434(anInt1155);
+					.forId(anInt1155);
 			if (null != var3)
 				return var3;
 			else {
-				final Class94 var1 = aClass94_1146;
-				final Class94 var4 = Class69.aClass94_581;
+				final CacheArch var1 = aClass94_1146;
+				final CacheArch var4 = Class69.aClass94_581;
 				final int var2 = anInt1155;
 				Somet1 var5;
 				if (!Def3.loaded(var1, var2, 0))

@@ -1,7 +1,7 @@
 import java.util.Iterator;
 
 public class Class119 implements Iterable {
-	public Node2 aClass124_Sub22_847 = new Node2();
+	public JagMap aClass124_Sub22_847 = new JagMap();
 
 	public void method443() {
 		while (aClass124_Sub22_847.aClass124_Sub22_1303 != aClass124_Sub22_847)
@@ -9,7 +9,7 @@ public class Class119 implements Iterable {
 
 	}
 
-	public void method444(final Node2 var1) {
+	public void method444(final JagMap var1) {
 		if (var1.aClass124_Sub22_1304 != null)
 			var1.method637();
 

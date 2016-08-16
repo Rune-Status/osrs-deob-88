@@ -36,12 +36,12 @@ public final class Class46 {
 		if ((client.anInt2025 >= 50) || var0) {
 			client.anInt2025 = 0;
 			if (!client.aBool2115 && (null != Class73.aClass78_609)) {
-				client.aClass124_Sub14_Sub1_2024.method837(250);
+				client.secbuf.writeOpcode(250);
 
 				try {
-					Class73.aClass78_609.method323(client.aClass124_Sub14_Sub1_2024.backing, 0,
-							client.aClass124_Sub14_Sub1_2024.pos);
-					client.aClass124_Sub14_Sub1_2024.pos = 0;
+					Class73.aClass78_609.method323(client.secbuf.backing, 0,
+							client.secbuf.pos);
+					client.secbuf.pos = 0;
 				} catch (final IOException var2) {
 					client.aBool2115 = true;
 				}

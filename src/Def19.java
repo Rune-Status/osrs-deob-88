@@ -1,7 +1,7 @@
-public class Def19 extends Node2 {
+public class Def19 extends JagMap {
 	static int anInt1439;
 	static int anInt1440;
-	static Class94 aClass94_1441;
+	static CacheArch aClass94_1441;
 	static Class113 aClass113_1437 = new Class113(64);
 	public boolean aBool1438 = false;
 
@@ -16,7 +16,7 @@ public class Def19 extends Node2 {
 	}
 
 	public static Def1 method695(final int var0) {
-		Def1 var1 = (Def1) Def1.aClass113_1371.method434(var0);
+		Def1 var1 = (Def1) Def1.aClass113_1371.forId(var0);
 		if (null != var1)
 			return var1;
 		else {
@@ -26,7 +26,7 @@ public class Def19 extends Node2 {
 				var1.method659(new RSBuf(var2), var0);
 
 			var1.method658();
-			Def1.aClass113_1371.method435(var1, var0);
+			Def1.aClass113_1371.map(var1, var0);
 			return var1;
 		}
 	}
@@ -113,7 +113,7 @@ public class Def19 extends Node2 {
 				var8 = 128 + client.anIntArray2054[4];
 
 			var24 = (client.anInt2255 + client.anInt2050) & 2047;
-			Class124_Sub14_Sub1.method844(Class124_Sub11.anInt1046,
+			Outbuf.method844(Class124_Sub11.anInt1046,
 					Class63.method285(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690,
 							Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697, Class134.anInt906) - 50,
 					Class87.anInt689, var8, var24, (var8 * 3) + 600);
@@ -212,7 +212,7 @@ public class Def19 extends Node2 {
 
 			var8 = var24;
 		} else
-			var8 = Class124_Sub14_Sub1.method841();
+			var8 = Outbuf.method841();
 
 		var24 = Class45.anInt445;
 		var20 = Class2.anInt14;

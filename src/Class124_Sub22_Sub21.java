@@ -1,4 +1,4 @@
-public class Class124_Sub22_Sub21 extends Node2 {
+public class Class124_Sub22_Sub21 extends JagMap {
 	public int anInt1648;
 	public static boolean aBool1649;
 	public byte aByte1650;

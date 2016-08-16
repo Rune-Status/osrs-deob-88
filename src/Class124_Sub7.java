@@ -6,7 +6,7 @@ public class Class124_Sub7 extends Node {
 	static long aLong1011;
 	int anInt1012;
 	static int[] anIntArray1013;
-	public static Class94 aClass94_1014;
+	public static CacheArch aClass94_1014;
 	boolean aBool1009 = false;
 
 	static void method522() {
@@ -116,7 +116,7 @@ public class Class124_Sub7 extends Node {
 	}
 
 	public static Def19 method526(final int var0) {
-		Def19 var1 = (Def19) Def19.aClass113_1437.method434(var0);
+		Def19 var1 = (Def19) Def19.aClass113_1437.forId(var0);
 		if (var1 != null)
 			return var1;
 		else {
@@ -125,7 +125,7 @@ public class Class124_Sub7 extends Node {
 			if (var2 != null)
 				var1.method694(new RSBuf(var2));
 
-			Def19.aClass113_1437.method435(var1, var0);
+			Def19.aClass113_1437.map(var1, var0);
 			return var1;
 		}
 	}

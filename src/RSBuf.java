@@ -5,7 +5,7 @@ public class RSBuf extends Node {
 	public byte[] backing;
 	static int[] anIntArray1074 = new int[256];
 
-	public int method544() {
+	public int readUShort() {
 		pos += 2;
 		return (backing[pos - 2] & 255) + ((backing[pos - 1] & 255) << 8);
 	}

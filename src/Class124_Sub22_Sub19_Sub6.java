@@ -58,7 +58,7 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 
 	}
 
-	public static Class124_Sub22_Sub16_Sub1 method962(final Class94 var0, final int var1, final int var2) {
+	public static Class124_Sub22_Sub16_Sub1 method962(final CacheArch var0, final int var1, final int var2) {
 		if (!Def3.loaded(var0, var1, var2))
 			return null;
 		else {
@@ -97,7 +97,7 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 		final long var8 = ((long) var3 << 42) + ((long) var1 << 16) + var0 + ((long) var2 << 38) + ((long) var4 << 40);
 		Class124_Sub22_Sub16_Sub1 var10;
 		if (!var5) {
-			var10 = (Class124_Sub22_Sub16_Sub1) Class124_Sub22_Sub10.aClass113_1463.method434(var8);
+			var10 = (Class124_Sub22_Sub16_Sub1) Class124_Sub22_Sub10.aClass113_1463.forId(var8);
 			if (var10 != null)
 				return var10;
 		}
@@ -181,7 +181,7 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 			}
 
 			if (!var5)
-				Class124_Sub22_Sub10.aClass113_1463.method435(var10, var8);
+				Class124_Sub22_Sub10.aClass113_1463.map(var10, var8);
 
 			Class124_Sub22_Sub16.method780(var18, var6, var19);
 			Class124_Sub22_Sub16.method766(var12);
@@ -331,7 +331,7 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 			int var21;
 			if (client.anInt2028 == 205) {
 				var1 = client.aClass124_Sub14_Sub1_2026.readShortU();
-				var0 = client.aClass124_Sub14_Sub1_2026.method544();
+				var0 = client.aClass124_Sub14_Sub1_2026.readUShort();
 				byte var9 = client.aClass124_Sub14_Sub1_2026.readByte();
 				var2 = client.aClass124_Sub14_Sub1_2026.method583();
 				var3 = client.aClass124_Sub14_Sub1_2026.method604();

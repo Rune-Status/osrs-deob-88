@@ -1,6 +1,6 @@
-public class Def13 extends Node2 {
+public class Def13 extends JagMap {
 	int anInt1517;
-	static Class94 aClass94_1526;
+	static CacheArch aClass94_1526;
 	int anInt1528;
 	public int anInt1519 = -1;
 	int anInt1516 = 128;
@@ -67,9 +67,9 @@ public class Def13 extends Node2 {
 	}
 
 	public final Class124_Sub22_Sub19_Sub7 method733(final int var1) {
-		Class124_Sub22_Sub19_Sub7 var2 = (Class124_Sub22_Sub19_Sub7) aClass113_1518.method434(anInt1517);
+		Class124_Sub22_Sub19_Sub7 var2 = (Class124_Sub22_Sub19_Sub7) aClass113_1518.forId(anInt1517);
 		if (var2 == null) {
-			final Class124_Sub22_Sub19_Sub4 var3 = Class124_Sub22_Sub19_Sub4.method943(aClass94_1526, anInt1528, 0);
+			final Model var3 = Model.method943(aClass94_1526, anInt1528, 0);
 			if (var3 == null)
 				return null;
 
@@ -83,7 +83,7 @@ public class Def13 extends Node2 {
 					var3.method939(aShortArray1514[var4], aShortArray1522[var4]);
 
 			var2 = var3.method945(anInt1523 + 64, anInt1527 + 850, -30, -50, -30);
-			aClass113_1518.method435(var2, anInt1517);
+			aClass113_1518.map(var2, anInt1517);
 		}
 
 		Class124_Sub22_Sub19_Sub7 var5;
@@ -135,7 +135,7 @@ public class Def13 extends Node2 {
 	}
 
 	public static Def6 method736(final int var0) {
-		Def6 var1 = (Def6) Def6.aClass113_1410.method434(var0);
+		Def6 var1 = (Def6) Def6.aClass113_1410.forId(var0);
 		if (var1 != null)
 			return var1;
 		else {
@@ -151,7 +151,7 @@ public class Def13 extends Node2 {
 				var1.aBool1436 = false;
 			}
 
-			Def6.aClass113_1410.method435(var1, var0);
+			Def6.aClass113_1410.map(var1, var0);
 			return var1;
 		}
 	}

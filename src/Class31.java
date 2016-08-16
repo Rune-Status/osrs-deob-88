@@ -7,7 +7,7 @@ public class Class31 implements Interface2 {
 	Class111 aClass111_330 = new Class111();
 	double aDouble333 = 1.0D;
 	int anInt334 = 128;
-	Class94 aClass94_329;
+	CacheArch aClass94_329;
 	int anInt331;
 	Class124_Sub8[] aClass124_Sub8Array336;
 
@@ -39,7 +39,7 @@ public class Class31 implements Interface2 {
 		return null;
 	}
 
-	public Class31(final Class94 var1, final Class94 var2, final int var3, final double var4, final int var6) {
+	public Class31(final CacheArch var1, final CacheArch var2, final int var3, final double var4, final int var6) {
 		aClass94_329 = var2;
 		anInt331 = var3;
 		anInt332 = anInt331;

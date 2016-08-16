@@ -8,8 +8,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class Def1 extends Node2 {
-	static Class94 aClass94_1365;
+public class Def1 extends JagMap {
+	static CacheArch aClass94_1365;
 	int anInt1367 = 0;
 	public int anInt1369;
 	public int anInt1370;
@@ -39,7 +39,7 @@ public class Def1 extends Node2 {
 		}
 	}
 
-	public static Class124_Sub22_Sub16_Sub2 method660(final Class94 var0, final int var1) {
+	public static Class124_Sub22_Sub16_Sub2 method660(final CacheArch var0, final int var1) {
 		final byte[] var2 = var0.decode(var1);
 		boolean var4;
 		if (var2 == null)
@@ -244,7 +244,7 @@ public class Def1 extends Node2 {
 
 	}
 
-	public static void method667(final Class124_Sub14_Sub1 var0) {
+	public static void method667(final Outbuf var0) {
 		final Class124_Sub24 var1 = (Class124_Sub24) Class114.aClass110_824.method421();
 		if (var1 != null) {
 			final int var2 = var0.pos;

@@ -173,9 +173,9 @@ public class Class45 {
 							.equals(var4))
 						Class20.method95(30, "", "You can\'t add yourself to your own friend list");
 					else {
-						client.aClass124_Sub14_Sub1_2024.method837(70);
-						client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
-						client.aClass124_Sub14_Sub1_2024.writestr(var0);
+						client.secbuf.writeOpcode(70);
+						client.secbuf.writeByte(Class54.method258(var0));
+						client.secbuf.writestr(var0);
 					}
 				}
 			} else

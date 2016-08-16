@@ -7,7 +7,7 @@ final class Class25 implements Comparator {
 	// $FF: synthetic field
 	boolean val$preferOwnWorld;
 
-	public static void method159(final int var0, final Class94 var1, final int var2, final int var3, final int var4,
+	public static void method159(final int var0, final CacheArch var1, final int var2, final int var3, final int var4,
 			final boolean var5) {
 		Class96.anInt770 = 1;
 		Class96.aClass94_767 = var1;

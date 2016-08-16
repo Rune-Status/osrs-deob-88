@@ -1,10 +1,10 @@
 import java.net.URL;
 
 public class Class96 {
-	static Class94 aClass94_764;
-	static Class94 aClass94_765;
+	static CacheArch aClass94_764;
+	static CacheArch aClass94_765;
 	public static int anInt766;
-	public static Class94 aClass94_767;
+	public static CacheArch aClass94_767;
 	static int anInt768;
 	public static Class124_Sub20 aClass124_Sub20_769;
 	public static int anInt770 = 0;

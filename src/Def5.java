@@ -1,10 +1,10 @@
 import java.io.File;
 import java.io.RandomAccessFile;
 
-public class Def5 extends Node2 {
+public class Def5 extends JagMap {
 	static int[] anIntArray1453;
 	static Class45 aClass45_1455;
-	public static Class94 aClass94_1456;
+	public static CacheArch aClass94_1456;
 	static Class113 aClass113_1454 = new Class113(64);
 	public int anInt1457 = 0;
 
