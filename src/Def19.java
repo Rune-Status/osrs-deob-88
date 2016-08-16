@@ -1,11 +1,11 @@
-public class Class124_Sub22_Sub7 extends Class124_Sub22 {
+public class Def19 extends Class124_Sub22 {
 	static int anInt1439;
 	static int anInt1440;
 	static Class94 aClass94_1441;
 	static Class113 aClass113_1437 = new Class113(64);
 	public boolean aBool1438 = false;
 
-	void method694(final Class124_Sub14 var1) {
+	void method694(final RSBuf var1) {
 		while (true) {
 			final int var2 = var1.method558();
 			if (var2 == 0)
@@ -15,23 +15,23 @@ public class Class124_Sub22_Sub7 extends Class124_Sub22 {
 		}
 	}
 
-	public static Class124_Sub22_Sub3 method695(final int var0) {
-		Class124_Sub22_Sub3 var1 = (Class124_Sub22_Sub3) Class124_Sub22_Sub3.aClass113_1371.method434(var0);
+	public static Def1 method695(final int var0) {
+		Def1 var1 = (Def1) Def1.aClass113_1371.method434(var0);
 		if (null != var1)
 			return var1;
 		else {
-			final byte[] var2 = Class124_Sub22_Sub3.aClass94_1365.method377(1, var0);
-			var1 = new Class124_Sub22_Sub3();
+			final byte[] var2 = Def1.aClass94_1365.decode(1, var0);
+			var1 = new Def1();
 			if (var2 != null)
-				var1.method659(new Class124_Sub14(var2), var0);
+				var1.method659(new RSBuf(var2), var0);
 
 			var1.method658();
-			Class124_Sub22_Sub3.aClass113_1371.method435(var1, var0);
+			Def1.aClass113_1371.method435(var1, var0);
 			return var1;
 		}
 	}
 
-	void method696(final Class124_Sub14 var1, final int var2) {
+	void method696(final RSBuf var1, final int var2) {
 		if (var2 == 2)
 			aBool1438 = true;
 
@@ -264,15 +264,15 @@ public class Class124_Sub22_Sub7 extends Class124_Sub22 {
 			Class124_Sub22_Sub19_Sub7.anInt1905 = 0;
 		}
 
-		Class124_Sub22_Sub14.method751();
+		Def15.method751();
 		Class124_Sub22_Sub16.method768(var0, var1, var2, var3, 0);
-		Class124_Sub22_Sub14.method751();
+		Def15.method751();
 		var10 = Class124_Sub22_Sub16_Sub3.anInt1834;
 		Class124_Sub22_Sub16_Sub3.anInt1834 = client.anInt2249;
 		Class36.aClass21_380.method135(Class45.anInt445, Class2.anInt14, Class48.anInt479, Class124_Sub6.anInt1003,
 				Class27.anInt301, var8);
 		Class124_Sub22_Sub16_Sub3.anInt1834 = var10;
-		Class124_Sub22_Sub14.method751();
+		Def15.method751();
 		Class36.aClass21_380.method146();
 		client.anInt2074 = 0;
 		boolean var30 = false;

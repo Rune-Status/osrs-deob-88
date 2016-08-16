@@ -3,7 +3,7 @@ import java.awt.Insets;
 
 import netscape.javascript.JSObject;
 
-public final class Class124_Sub13 extends Class124 {
+public final class Class124_Sub13 extends Node {
 	Class124_Sub4_Sub1 aClass124_Sub4_Sub1_1056;
 	int anInt1057;
 	int anInt1058;
@@ -11,7 +11,7 @@ public final class Class124_Sub13 extends Class124 {
 	int anInt1065;
 	int anInt1066;
 	int anInt1068;
-	Class124_Sub22_Sub6 aClass124_Sub22_Sub6_1070;
+	Def6 aClass124_Sub22_Sub6_1070;
 	static int anInt1071;
 	public static int anInt1072;
 	int anInt1060;
@@ -24,7 +24,7 @@ public final class Class124_Sub13 extends Class124 {
 
 	void method540() {
 		final int var1 = anInt1060;
-		final Class124_Sub22_Sub6 var2 = aClass124_Sub22_Sub6_1070.method683();
+		final Def6 var2 = aClass124_Sub22_Sub6_1070.method683();
 		if (var2 != null) {
 			anInt1060 = var2.anInt1430;
 			anInt1062 = var2.anInt1431 * 128;
@@ -59,7 +59,7 @@ public final class Class124_Sub13 extends Class124 {
 			final Container var1 = Class80.aclient645.method1059();
 			if (var1 != null) {
 				Class124_Sub5.anInt989 = Math.max(var1.getSize().width, Class51.anInt489);
-				Class124_Sub22_Sub19_Sub1.anInt1664 = Math.max(var1.getSize().height, Class124_Sub22_Sub2.anInt1356);
+				Class124_Sub22_Sub19_Sub1.anInt1664 = Math.max(var1.getSize().height, Def3.anInt1356);
 				Insets var2;
 				if (var1 == Class69.aFrame578) {
 					var2 = Class69.aFrame578.getInsets();
@@ -84,7 +84,7 @@ public final class Class124_Sub13 extends Class124 {
 				Applet_Sub1.anInt1973 = (Class124_Sub5.anInt989 - Class56_Sub2.anInt1083) / 2;
 				Applet_Sub1.anInt1974 = 0;
 				Class124_Sub5.aCanvas990.setSize(Class56_Sub2.anInt1083, Class81.anInt662);
-				Class64.aClass9_558 = Class124_Sub22_Sub8.method701(Class56_Sub2.anInt1083, Class81.anInt662,
+				Class64.aClass9_558 = Def8.method701(Class56_Sub2.anInt1083, Class81.anInt662,
 						Class124_Sub5.aCanvas990);
 				if (Class69.aFrame578 == var1) {
 					var2 = Class69.aFrame578.getInsets();

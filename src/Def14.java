@@ -1,4 +1,4 @@
-public class Class124_Sub22_Sub11 extends Class124_Sub22 {
+public class Def14 extends Class124_Sub22 {
 	public static Class94 aClass94_1508;
 	static int[] anIntArray1512;
 	static Class113 aClass113_1509 = new Class113(64);
@@ -6,7 +6,7 @@ public class Class124_Sub22_Sub11 extends Class124_Sub22 {
 	public int anInt1513;
 	public int anInt1511;
 
-	void method725(final Class124_Sub14 var1) {
+	void method725(final RSBuf var1) {
 		while (true) {
 			final int var2 = var1.method558();
 			if (var2 == 0)
@@ -16,7 +16,7 @@ public class Class124_Sub22_Sub11 extends Class124_Sub22 {
 		}
 	}
 
-	static String method726(String var0, final Class124_Sub17 var1) {
+	static String method726(String var0, final Widget var1) {
 		if (var0.indexOf("%") != -1) {
 			int var2;
 			for (var2 = 1; var2 <= 5; ++var2)
@@ -55,7 +55,7 @@ public class Class124_Sub22_Sub11 extends Class124_Sub22 {
 		return var0;
 	}
 
-	void method727(final Class124_Sub14 var1, final int var2) {
+	void method727(final RSBuf var1, final int var2) {
 		if (var2 == 1) {
 			anInt1510 = var1.method560();
 			anInt1513 = var1.method558();
@@ -71,7 +71,7 @@ public class Class124_Sub22_Sub11 extends Class124_Sub22 {
 	}
 
 	static final byte[] method729(final byte[] var0) {
-		final Class124_Sub14 var1 = new Class124_Sub14(var0);
+		final RSBuf var1 = new RSBuf(var0);
 		final int var4 = var1.method558();
 		final int var3 = var1.method562(-1862637362);
 		if ((var3 >= 0) && ((Class94.anInt755 == 0) || (var3 <= Class94.anInt755))) {
@@ -120,7 +120,7 @@ public class Class124_Sub22_Sub11 extends Class124_Sub22 {
 			Class71.aClass124_Sub22_Sub16_Sub1_591.method914((4 + var0 + 94 + var11) - 10, (var1 + 83) - var12 - 20, 20,
 					20, 15, 15, var13, 256);
 		} else
-			Class124_Sub22_Sub1.method646(var0, var1, var2, var3, var4, var5);
+			Def9.method646(var0, var1, var2, var3, var4, var5);
 
 	}
 }

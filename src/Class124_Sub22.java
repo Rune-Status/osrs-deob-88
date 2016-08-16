@@ -1,4 +1,4 @@
-public class Class124_Sub22 extends Class124 {
+public class Class124_Sub22 extends Node {
 	public Class124_Sub22 aClass124_Sub22_1303;
 	public Class124_Sub22 aClass124_Sub22_1304;
 

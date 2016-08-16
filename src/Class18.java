@@ -35,12 +35,12 @@ public class Class18 implements Runnable {
 							var2.method46();
 					}
 
-					client.method1067(10L);
+					client.sleep(10L);
 					final Class82 var3 = aClass82_158;
 					var2 = null;
 					if (null != var3.anEventQueue666) {
 						for (int var4 = 0; (var4 < 50) && (var3.anEventQueue666.peekEvent() != null); ++var4)
-							client.method1067(1L);
+							client.sleep(1L);
 
 						if (null != var2)
 							var3.anEventQueue666.postEvent(new ActionEvent(var2, 1001, "dummy"));
@@ -185,8 +185,8 @@ public class Class18 implements Runnable {
 
 	static final void method89(final String var0, final int var1) {
 		client.aClass124_Sub14_Sub1_2024.method837(21);
-		client.aClass124_Sub14_Sub1_2024.method545(Class54.method258(var0) + 1);
-		client.aClass124_Sub14_Sub1_2024.method545(var1);
+		client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0) + 1);
+		client.aClass124_Sub14_Sub1_2024.writeByte(var1);
 		client.aClass124_Sub14_Sub1_2024.method550(var0);
 	}
 }

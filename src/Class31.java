@@ -2,7 +2,7 @@ import java.awt.Component;
 import java.util.Date;
 
 public class Class31 implements Interface2 {
-	static Class124_Sub17 aClass124_Sub17_335;
+	static Widget aClass124_Sub17_335;
 	int anInt332 = 0;
 	Class111 aClass111_330 = new Class111();
 	double aDouble333 = 1.0D;
@@ -47,10 +47,10 @@ public class Class31 implements Interface2 {
 		anInt334 = var6;
 		final int[] var9 = var1.method372(0);
 		final int var8 = var9.length;
-		aClass124_Sub8Array336 = new Class124_Sub8[var1.method382(0)];
+		aClass124_Sub8Array336 = new Class124_Sub8[var1.widgetLen(0)];
 
 		for (int var7 = 0; var7 < var8; ++var7) {
-			final Class124_Sub14 var10 = new Class124_Sub14(var1.method377(0, var9[var7]));
+			final RSBuf var10 = new RSBuf(var1.decode(0, var9[var7]));
 			aClass124_Sub8Array336[var9[var7]] = new Class124_Sub8(var10);
 		}
 
@@ -105,7 +105,7 @@ public class Class31 implements Interface2 {
 
 	static void method180() {
 		if (client.aBool2137) {
-			final Class124_Sub17 var1 = RuntimeException_Sub1.method1010(Class124_Sub10.anInt1033, client.anInt2138,
+			final Widget var1 = RuntimeException_Sub1.method1010(Class124_Sub10.anInt1033, client.anInt2138,
 					172659367);
 			if ((var1 != null) && (var1.anObjectArray1243 != null)) {
 				final Class124_Sub6 var0 = new Class124_Sub6();

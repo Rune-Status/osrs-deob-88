@@ -13,11 +13,11 @@ public class Class22 {
 	static int anInt247 = 4;
 
 	public static void method147() {
-		Class124_Sub22_Sub3.aClass113_1371.method436();
+		Def1.aClass113_1371.method436();
 	}
 
-	Class22(final Class124_Sub14 var1) {
-		if ((var1 != null) && (null != var1.aByteArray1073)) {
+	Class22(final RSBuf var1) {
+		if ((var1 != null) && (null != var1.backing)) {
 			final int var3 = var1.method558();
 			if ((var3 >= 0) && (var3 <= anInt247)) {
 				if (var1.method558() == 1)
@@ -45,13 +45,13 @@ public class Class22 {
 
 	}
 
-	Class124_Sub14 method148() {
-		final Class124_Sub14 var1 = new Class124_Sub14(100);
-		var1.method545(anInt247);
-		var1.method545(aBool248 ? 1 : 0);
-		var1.method545(aBool249 ? 1 : 0);
-		var1.method545(anInt250);
-		var1.method545(aLinkedHashMap252.size());
+	RSBuf method148() {
+		final RSBuf var1 = new RSBuf(100);
+		var1.writeByte(anInt247);
+		var1.writeByte(aBool248 ? 1 : 0);
+		var1.writeByte(aBool249 ? 1 : 0);
+		var1.writeByte(anInt250);
+		var1.writeByte(aLinkedHashMap252.size());
 		final Iterator var2 = aLinkedHashMap252.entrySet().iterator();
 
 		while (var2.hasNext()) {
@@ -63,13 +63,13 @@ public class Class22 {
 		return var1;
 	}
 
-	public static Class124_Sub22_Sub16_Sub4_Sub1 method149(final Class94 var0, final Class94 var1, final String var2,
+	public static Somet1 method149(final Class94 var0, final Class94 var1, final String var2,
 			final String var3) {
 		final int var4 = var0.method376(var2);
 		final int var5 = var0.method383(var4, var3);
-		Class124_Sub22_Sub16_Sub4_Sub1 var6;
-		if (Class124_Sub22_Sub2.method653(var0, var4, var5))
-			var6 = Class124_Sub22_Sub9.method707(var1.method377(var4, var5));
+		Somet1 var6;
+		if (Def3.loaded(var0, var4, var5))
+			var6 = Def5.method707(var1.decode(var4, var5));
 		else
 			var6 = null;
 

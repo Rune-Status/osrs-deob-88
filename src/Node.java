@@ -1,7 +1,7 @@
-public class Class124 {
+public class Node {
 	public long aLong874;
-	public Class124 aClass124_875;
-	Class124 aClass124_876;
+	public Node aClass124_875;
+	Node aClass124_876;
 
 	public void method450() {
 		if (aClass124_876 != null) {

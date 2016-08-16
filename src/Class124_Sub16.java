@@ -1,4 +1,4 @@
-public class Class124_Sub16 extends Class124 {
+public class Class124_Sub16 extends Node {
 	int anInt1125;
 	int anInt1126;
 	int anInt1127;

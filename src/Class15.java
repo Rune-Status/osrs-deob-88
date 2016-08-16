@@ -64,7 +64,7 @@ public class Class15 {
 		}
 	}
 
-	final void method76(final Class124_Sub14 var1, final Class17 var2) {
+	final void method76(final RSBuf var1, final Class17 var2) {
 		final int var3 = var1.method558();
 		anIntArray139[0] = var3 >> 4;
 		anIntArray139[1] = var3 & 15;

@@ -60,17 +60,17 @@ public class Class4 {
 		anInt52 = -1;
 	}
 
-	public static Class124_Sub22_Sub14 method24(final int var0) {
-		Class124_Sub22_Sub14 var1 = (Class124_Sub22_Sub14) Class124_Sub22_Sub14.aClass113_1549.method434(var0);
+	public static Def15 method24(final int var0) {
+		Def15 var1 = (Def15) Def15.aClass113_1549.method434(var0);
 		if (null != var1)
 			return var1;
 		else {
-			final byte[] var2 = Class124_Sub22_Sub14.aClass94_1551.method377(15, var0);
-			var1 = new Class124_Sub22_Sub14();
+			final byte[] var2 = Def15.aClass94_1551.decode(15, var0);
+			var1 = new Def15();
 			if (null != var2)
-				var1.method748(new Class124_Sub14(var2));
+				var1.method748(new RSBuf(var2));
 
-			Class124_Sub22_Sub14.aClass113_1549.method435(var1, var0);
+			Def15.aClass113_1549.method435(var1, var0);
 			return var1;
 		}
 	}

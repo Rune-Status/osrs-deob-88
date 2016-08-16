@@ -1,5 +1,5 @@
 public class Class29 implements Runnable {
-	static Class124_Sub17 aClass124_Sub17_314;
+	static Widget aClass124_Sub17_314;
 	int anInt315 = 0;
 	boolean aBool317 = true;
 	Object anObject319 = new Object();
@@ -12,7 +12,7 @@ public class Class29 implements Runnable {
 
 	@Override
 	public void run() {
-		for (; aBool317; client.method1067(50L)) {
+		for (; aBool317; client.sleep(50L)) {
 			final Object var1 = anObject319;
 			synchronized (var1) {
 				if (anInt315 < 500) {
@@ -44,9 +44,9 @@ public class Class29 implements Runnable {
 			final int[] var10 = Class124_Sub22_Sub19_Sub3_Sub2.aClass124_Sub22_Sub16_Sub1_1954.anIntArray1735;
 			var9 = (4 * var1) + 24624 + ((103 - var2) * 2048);
 			var15 = (var5 >> 14) & 32767;
-			final Class124_Sub22_Sub6 var16 = Class124_Sub22_Sub12.method736(var15);
+			final Def6 var16 = Def13.method736(var15);
 			if (var16.anInt1402 != -1) {
-				final Class124_Sub22_Sub16_Sub2 var17 = Class124_Sub22_Sub6.aClass124_Sub22_Sub16_Sub2Array1435[var16.anInt1402];
+				final Class124_Sub22_Sub16_Sub2 var17 = Def6.aClass124_Sub22_Sub16_Sub2Array1435[var16.anInt1402];
 				if (var17 != null) {
 					final int var18 = ((var16.anInt1401 * 4) - var17.anInt1738) / 2;
 					final int var19 = ((var16.anInt1432 * 4) - var17.anInt1736) / 2;
@@ -117,10 +117,10 @@ public class Class29 implements Runnable {
 			var20 = (var12 >> 6) & 3;
 			var13 = var12 & 31;
 			var11 = (var5 >> 14) & 32767;
-			final Class124_Sub22_Sub6 var23 = Class124_Sub22_Sub12.method736(var11);
+			final Def6 var23 = Def13.method736(var11);
 			int var8;
 			if (var23.anInt1402 != -1) {
-				final Class124_Sub22_Sub16_Sub2 var14 = Class124_Sub22_Sub6.aClass124_Sub22_Sub16_Sub2Array1435[var23.anInt1402];
+				final Class124_Sub22_Sub16_Sub2 var14 = Def6.aClass124_Sub22_Sub16_Sub2Array1435[var23.anInt1402];
 				if (null != var14) {
 					var15 = ((var23.anInt1401 * 4) - var14.anInt1738) / 2;
 					var8 = ((var23.anInt1432 * 4) - var14.anInt1736) / 2;
@@ -150,9 +150,9 @@ public class Class29 implements Runnable {
 		var5 = Class36.aClass21_380.method126(var0, var1, var2);
 		if (var5 != 0) {
 			var12 = (var5 >> 14) & 32767;
-			final Class124_Sub22_Sub6 var22 = Class124_Sub22_Sub12.method736(var12);
+			final Def6 var22 = Def13.method736(var12);
 			if (var22.anInt1402 != -1) {
-				final Class124_Sub22_Sub16_Sub2 var6 = Class124_Sub22_Sub6.aClass124_Sub22_Sub16_Sub2Array1435[var22.anInt1402];
+				final Class124_Sub22_Sub16_Sub2 var6 = Def6.aClass124_Sub22_Sub16_Sub2Array1435[var22.anInt1402];
 				if (var6 != null) {
 					var11 = ((var22.anInt1401 * 4) - var6.anInt1738) / 2;
 					final int var21 = ((var22.anInt1432 * 4) - var6.anInt1736) / 2;

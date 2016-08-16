@@ -1,4 +1,4 @@
-public class Class124_Sub18 extends Class124 {
+public class Class124_Sub18 extends Node {
 	static byte[][] aByteArrayArray1294;
 	Class124_Sub2_Sub1[] aClass124_Sub2_Sub1Array1286 = new Class124_Sub2_Sub1[128];
 	short[] aShortArray1290 = new short[128];
@@ -10,10 +10,10 @@ public class Class124_Sub18 extends Class124 {
 	int anInt1291;
 
 	Class124_Sub18(final byte[] var1) {
-		final Class124_Sub14 var7 = new Class124_Sub14(var1);
+		final RSBuf var7 = new RSBuf(var1);
 
 		int var9;
-		for (var9 = 0; var7.aByteArray1073[var7.anInt1075 + var9] != 0; ++var9)
+		for (var9 = 0; var7.backing[var7.pos + var9] != 0; ++var9)
 			;
 
 		final byte[] var10 = new byte[var9];
@@ -22,13 +22,13 @@ public class Class124_Sub18 extends Class124 {
 		for (var12 = 0; var12 < var9; ++var12)
 			var10[var12] = var7.method559();
 
-		++var7.anInt1075;
+		++var7.pos;
 		++var9;
-		var12 = var7.anInt1075;
-		var7.anInt1075 += var9;
+		var12 = var7.pos;
+		var7.pos += var9;
 
 		int var13;
-		for (var13 = 0; var7.aByteArray1073[var13 + var7.anInt1075] != 0; ++var13)
+		for (var13 = 0; var7.backing[var13 + var7.pos] != 0; ++var13)
 			;
 
 		final byte[] var16 = new byte[var13];
@@ -37,13 +37,13 @@ public class Class124_Sub18 extends Class124 {
 		for (var17 = 0; var17 < var13; ++var17)
 			var16[var17] = var7.method559();
 
-		++var7.anInt1075;
+		++var7.pos;
 		++var13;
-		var17 = var7.anInt1075;
-		var7.anInt1075 += var13;
+		var17 = var7.pos;
+		var7.pos += var13;
 
 		int var20;
-		for (var20 = 0; var7.aByteArray1073[var20 + var7.anInt1075] != 0; ++var20)
+		for (var20 = 0; var7.backing[var20 + var7.pos] != 0; ++var20)
 			;
 
 		final byte[] var21 = new byte[var20];
@@ -51,7 +51,7 @@ public class Class124_Sub18 extends Class124 {
 		for (int var22 = 0; var22 < var20; ++var22)
 			var21[var22] = var7.method559();
 
-		++var7.anInt1075;
+		++var7.pos;
 		++var20;
 		final byte[] var24 = new byte[var20];
 		int var19;
@@ -99,7 +99,7 @@ public class Class124_Sub18 extends Class124 {
 		final byte[] var5 = var19 > 0 ? new byte[var19 * 2] : null;
 
 		int var37;
-		for (var37 = 0; var7.aByteArray1073[var7.anInt1075 + var37] != 0; ++var37)
+		for (var37 = 0; var7.backing[var7.pos + var37] != 0; ++var37)
 			;
 
 		final byte[] var38 = new byte[var37];
@@ -108,7 +108,7 @@ public class Class124_Sub18 extends Class124 {
 		for (var4 = 0; var4 < var37; ++var4)
 			var38[var4] = var7.method559();
 
-		++var7.anInt1075;
+		++var7.pos;
 		++var37;
 		var4 = 0;
 
@@ -158,7 +158,7 @@ public class Class124_Sub18 extends Class124 {
 					else
 						var8 = -1;
 
-					var11 = var7.aByteArray1073[var12++] - 1;
+					var11 = var7.backing[var12++] - 1;
 				}
 
 				aByteArray1292[var28] = (byte) var11;
@@ -177,7 +177,7 @@ public class Class124_Sub18 extends Class124 {
 					else
 						var8 = -1;
 
-					var28 = (var7.aByteArray1073[var17++] + 16) << 2;
+					var28 = (var7.backing[var17++] + 16) << 2;
 				}
 
 				aByteArray1289[var27] = (byte) var28;

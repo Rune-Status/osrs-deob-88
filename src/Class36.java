@@ -63,7 +63,7 @@ public final class Class36 {
 			if ((var11 > var0) && (var11 < (var3 + var0)) && (var6 > (var8 - 13)) && (var6 < (3 + var8)))
 				var9 = 16776960;
 
-			final Class124_Sub22_Sub16_Sub4_Sub1 var7 = Class41.aClass124_Sub22_Sub16_Sub4_Sub1_407;
+			final Somet1 var7 = Class41.aClass124_Sub22_Sub16_Sub4_Sub1_407;
 			String var2;
 			if (client.aStringArray2130[var1].length() > 0)
 				var2 = client.aStringArray2129[var1] + " " + client.aStringArray2130[var1];

@@ -6,17 +6,23 @@ public class Class10 {
 	Class94 aClass94_107;
 	Class94 aClass94_105;
 
-	public static Class124_Sub17 method55(final int var0) {
+	public static Widget method55(final int var0) {
+		try {
 		final int var1 = var0 >> 16;
 		final int var3 = var0 & '\uffff';
-		if ((Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var1] == null)
-				|| (null == Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var1][var3])) {
-			final boolean var2 = Class89.method346(var1);
+		if ((Class124_Sub22_Sub10.widgets[var1] == null)
+				|| (null == Class124_Sub22_Sub10.widgets[var1][var3])) {
+			final boolean var2 = Class89.loadwidget(var1);
 			if (!var2)
 				return null;
 		}
 
-		return Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var1][var3];
+		return Class124_Sub22_Sub10.widgets[var1][var3];
+		} catch (Exception e) {
+			System.err.println("bad interface");
+			e.printStackTrace();
+			return null;
+		}
 	}
 
 	Class124_Sub2_Sub1 method56(final int var1, final int var2, final int[] var3) {
@@ -52,7 +58,7 @@ public class Class10 {
 	public Class124_Sub2_Sub1 method57(final int var1, final int[] var2) {
 		if (aClass94_107.method373() == 1)
 			return method59(0, var1, var2);
-		else if (aClass94_107.method382(var1) == 1)
+		else if (aClass94_107.widgetLen(var1) == 1)
 			return method59(var1, 0, var2);
 		else
 			throw new RuntimeException();
@@ -60,7 +66,7 @@ public class Class10 {
 
 	public Class124_Sub2_Sub1 method58(final int var1, final int[] var2) {
 		if (aClass94_105.method373() != 1) {
-			if (aClass94_105.method382(var1) == 1)
+			if (aClass94_105.widgetLen(var1) == 1)
 				return method56(var1, 0, var2);
 			else
 				throw new RuntimeException();

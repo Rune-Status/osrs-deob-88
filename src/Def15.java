@@ -1,11 +1,11 @@
 import java.awt.Component;
 
-public class Class124_Sub22_Sub14 extends Class124_Sub22 {
+public class Def15 extends Class124_Sub22 {
 	static Class94 aClass94_1551;
 	public boolean aBool1550 = false;
 	static Class113 aClass113_1549 = new Class113(64);
 
-	void method748(final Class124_Sub14 var1) {
+	void method748(final RSBuf var1) {
 		while (true) {
 			final int var2 = var1.method558();
 			if (var2 == 0)
@@ -15,24 +15,24 @@ public class Class124_Sub22_Sub14 extends Class124_Sub22 {
 		}
 	}
 
-	void method749(final Class124_Sub14 var1, final int var2) {
+	void method749(final RSBuf var1, final int var2) {
 		if (var2 == 2)
 			aBool1550 = true;
 
 	}
 
-	public static Class124_Sub22_Sub13 method750(final int var0) {
-		Class124_Sub22_Sub13 var1 = (Class124_Sub22_Sub13) Class124_Sub22_Sub13.aClass113_1532.method434(var0);
+	public static Def12 method750(final int var0) {
+		Def12 var1 = (Def12) Def12.aClass113_1532.method434(var0);
 		if (null != var1)
 			return var1;
 		else {
-			final byte[] var2 = Class124_Sub22_Sub13.aClass94_1545.method377(12, var0);
-			var1 = new Class124_Sub22_Sub13();
+			final byte[] var2 = Def12.aClass94_1545.decode(12, var0);
+			var1 = new Def12();
 			if (var2 != null)
-				var1.method739(new Class124_Sub14(var2));
+				var1.method739(new RSBuf(var2));
 
 			var1.method740();
-			Class124_Sub22_Sub13.aClass113_1532.method435(var1, var0);
+			Def12.aClass113_1532.method435(var1, var0);
 			return var1;
 		}
 	}

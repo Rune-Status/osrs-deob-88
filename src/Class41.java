@@ -3,7 +3,7 @@ import java.io.EOFException;
 
 public class Class41 {
 	protected static Font aFont406;
-	static Class124_Sub22_Sub16_Sub4_Sub1 aClass124_Sub22_Sub16_Sub4_Sub1_407;
+	static Somet1 aClass124_Sub22_Sub16_Sub4_Sub1_407;
 	boolean aBool404 = false;
 	int[] anIntArray400;
 	String[] aStringArray403;
@@ -29,7 +29,7 @@ public class Class41 {
 			if (var11 != var9) {
 				var9 = var11;
 				if ((var12 == 2) && (Class36.aClass21_380.method141(Class134.anInt906, var6, var7, var11) >= 0)) {
-					Class124_Sub22_Sub6 var4 = Class124_Sub22_Sub12.method736(var5);
+					Def6 var4 = Def13.method736(var5);
 					if (null != var4.anIntArray1427)
 						var4 = var4.method683();
 
@@ -214,20 +214,20 @@ public class Class41 {
 	}
 
 	Class41() {
-		anIntArray400 = new int[Class43.aClass94_Sub1_431.method382(19)];
-		aStringArray403 = new String[Class43.aClass94_Sub1_431.method382(15)];
+		anIntArray400 = new int[Class43.aClass94_Sub1_431.widgetLen(19)];
+		aStringArray403 = new String[Class43.aClass94_Sub1_431.widgetLen(15)];
 		aBoolArray402 = new boolean[anIntArray400.length];
 
 		int var1;
 		for (var1 = 0; var1 < anIntArray400.length; ++var1) {
-			final Class124_Sub22_Sub7 var2 = Class124_Sub7.method526(var1);
+			final Def19 var2 = Class124_Sub7.method526(var1);
 			aBoolArray402[var1] = var2.aBool1438;
 		}
 
 		aBoolArray405 = new boolean[aStringArray403.length];
 
 		for (var1 = 0; var1 < aStringArray403.length; ++var1) {
-			final Class124_Sub22_Sub14 var3 = Class4.method24(var1);
+			final Def15 var3 = Class4.method24(var1);
 			aBoolArray405[var1] = var3.aBool1550;
 		}
 
@@ -261,8 +261,8 @@ public class Class41 {
 							throw new EOFException();
 					}
 
-					final Class124_Sub14 var5 = new Class124_Sub14(var2);
-					if ((var5.aByteArray1073.length - var5.anInt1075) < 1) {
+					final RSBuf var5 = new RSBuf(var2);
+					if ((var5.backing.length - var5.pos) < 1) {
 						try {
 							var1.method461();
 						} catch (final Exception var26) {
@@ -369,28 +369,28 @@ public class Class41 {
 							++var4;
 						}
 
-					final Class124_Sub14 var6 = new Class124_Sub14(var2);
-					var6.method545(1);
-					var6.method592(var3);
+					final RSBuf var6 = new RSBuf(var2);
+					var6.writeByte(1);
+					var6.writeShort(var3);
 
 					int var7;
 					for (var7 = 0; var7 < anIntArray400.length; ++var7)
 						if (aBoolArray402[var7] && (anIntArray400[var7] != -1)) {
-							var6.method592(var7);
+							var6.writeShort(var7);
 							var6.method548(anIntArray400[var7]);
 						}
 
-					var6.method592(var4);
+					var6.writeShort(var4);
 					var7 = 0;
 
 					while (true) {
 						if (var7 >= aStringArray403.length) {
-							var1.method458(var6.aByteArray1073, 0, var6.anInt1075);
+							var1.method458(var6.backing, 0, var6.pos);
 							break;
 						}
 
 						if (aBoolArray405[var7] && (aStringArray403[var7] != null)) {
-							var6.method592(var7);
+							var6.writeShort(var7);
 							var6.method550(aStringArray403[var7]);
 						}
 
@@ -445,10 +445,10 @@ public class Class41 {
 		return Class124_Sub22_Sub19_Sub5.method960("2", client.aClass88_1987.aString700, var1);
 	}
 
-	static Class124_Sub17 method212(final Class124_Sub17 var0) {
-		Class124_Sub17 var1 = var0;
+	static Widget method212(final Widget var0) {
+		Widget var1 = var0;
 		final int var2 = RuntimeException_Sub1.method1012(Class124_Sub22_Sub19_Sub6.method963(var0), -340049242);
-		Class124_Sub17 var5;
+		Widget var5;
 		if (var2 == 0)
 			var5 = null;
 		else {
@@ -470,7 +470,7 @@ public class Class41 {
 			}
 		}
 
-		Class124_Sub17 var4 = var5;
+		Widget var4 = var5;
 		if (null == var5)
 			var4 = var0.aClass124_Sub17_1251;
 
@@ -481,7 +481,7 @@ public class Class41 {
 		int var3 = -1;
 
 		for (int var4 = var1; var4 < var2; ++var4)
-			var3 = (var3 >>> 8) ^ Class124_Sub14.anIntArray1074[(var3 ^ var0[var4]) & 255];
+			var3 = (var3 >>> 8) ^ RSBuf.anIntArray1074[(var3 ^ var0[var4]) & 255];
 
 		var3 = ~var3;
 		return var3;

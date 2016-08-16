@@ -276,7 +276,7 @@ public class Class8 {
 				aClass18_79.aBool160 = true;
 
 				while (aClass18_79.aBool161)
-					client.method1067(50L);
+					client.sleep(50L);
 
 				aClass18_79 = null;
 			}

@@ -10,8 +10,8 @@ public class Class64 {
 	Class64(final int var1, final int var2, final int var3) {
 	}
 
-	static void method286(final Class124_Sub17 var0) {
-		final Class124_Sub17 var1 = var0.anInt1259 == -1 ? null : Class10.method55(var0.anInt1259);
+	static void method286(final Widget var0) {
+		final Widget var1 = var0.anInt1259 == -1 ? null : Class10.method55(var0.anInt1259);
 		int var2;
 		int var3;
 		if (null == var1) {
@@ -26,8 +26,8 @@ public class Class64 {
 		Class43.method221(var0, var3, var2);
 	}
 
-	static void method287(final Class124_Sub22_Sub16_Sub4_Sub1 var0, final Class124_Sub22_Sub16_Sub4_Sub1 var1,
-			final Class124_Sub22_Sub16_Sub4_Sub1 var2, final boolean var3) {
+	static void method287(final Somet1 var0, final Somet1 var1,
+			final Somet1 var2, final boolean var3) {
 		if (var3) {
 			Class4.anInt22 = (Class56_Sub2.anInt1083 - client.anInt2071) / 2;
 			Class4.anInt30 = 202 + Class4.anInt22;
@@ -40,7 +40,7 @@ public class Class64 {
 		byte var36;
 		if (Class4.aBool50) {
 			if (null == Class45.aClass124_Sub22_Sub16_Sub1Array448)
-				Class45.aClass124_Sub22_Sub16_Sub1Array448 = Class124_Sub22_Sub11
+				Class45.aClass124_Sub22_Sub16_Sub1Array448 = Def14
 						.method728(Class124_Sub11.aClass94_Sub1_1047, "sl_back", "");
 
 			if (Class4.aClass124_Sub22_Sub16_Sub2Array51 == null)
@@ -435,11 +435,11 @@ public class Class64 {
 			}
 
 			if (Class4.anInt36 > 0) {
-				Class124_Sub22_Sub13.method747(Class4.anInt36);
+				Def12.method747(Class4.anInt36);
 				Class4.anInt36 = 0;
 			}
 
-			Class124_Sub22_Sub15.method759();
+			Def4.method759();
 			Class5.aClass124_Sub22_Sub16_Sub2Array59[Class57.aClass22_538.aBool249 ? 1 : 0]
 					.method926((765 + Class4.anInt22) - 40, 463);
 			if ((client.anInt1992 > 5) && (client.anInt2058 == 0))
@@ -451,7 +451,7 @@ public class Class64 {
 					Class94.aClass124_Sub22_Sub16_Sub2_759.method926(var32, var33);
 					var0.method1021("World" + " " + client.anInt2079, var32 + (var35 / 2), (var33 + (var36 / 2)) - 2,
 							16777215, 0);
-					if (Class124_Sub22_Sub9.aClass45_1455 != null)
+					if (Def5.aClass45_1455 != null)
 						var1.method1021("Loading...", var32 + (var35 / 2), (var36 / 2) + var33 + 12, 16777215, 0);
 					else
 						var1.method1021("Click to switch", var32 + (var35 / 2), 12 + var33 + (var36 / 2), 16777215, 0);
@@ -469,14 +469,14 @@ public class Class64 {
 		}
 	}
 
-	public void method288(final Class124_Sub14 var1, final byte[] var2) {
-		if ((var1.aByteArray1073[var1.anInt1075] == 31) && (var1.aByteArray1073[var1.anInt1075 + 1] == -117)) {
+	public void method288(final RSBuf var1, final byte[] var2) {
+		if ((var1.backing[var1.pos] == 31) && (var1.backing[var1.pos + 1] == -117)) {
 			if (null == anInflater557)
 				anInflater557 = new Inflater(true);
 
 			try {
-				anInflater557.setInput(var1.aByteArray1073, var1.anInt1075 + 10,
-						var1.aByteArray1073.length - (var1.anInt1075 + 10 + 8));
+				anInflater557.setInput(var1.backing, var1.pos + 10,
+						var1.backing.length - (var1.pos + 10 + 8));
 				anInflater557.inflate(var2);
 			} catch (final Exception var4) {
 				anInflater557.reset();

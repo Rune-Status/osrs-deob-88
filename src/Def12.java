@@ -1,4 +1,4 @@
-public class Class124_Sub22_Sub13 extends Class124_Sub22 {
+public class Def12 extends Class124_Sub22 {
 	public static Class94 aClass94_1530;
 	public static Class94 aClass94_1533;
 	public static Class94 aClass94_1545;
@@ -22,7 +22,7 @@ public class Class124_Sub22_Sub13 extends Class124_Sub22 {
 
 	Class124_Sub22_Sub19_Sub7 method738(final Class124_Sub22_Sub19_Sub7 var1, int var2, int var3) {
 		var2 = anIntArray1536[var2];
-		final Class124_Sub22_Sub17 var5 = Class124_Sub22_Sub2.method655(var2 >> 16);
+		final Class124_Sub22_Sub17 var5 = Def3.method655(var2 >> 16);
 		var2 &= '\uffff';
 		if (var5 == null)
 			return var1.method987(true);
@@ -48,7 +48,7 @@ public class Class124_Sub22_Sub13 extends Class124_Sub22 {
 		}
 	}
 
-	void method739(final Class124_Sub14 var1) {
+	void method739(final RSBuf var1) {
 		while (true) {
 			final int var2 = var1.method558();
 			if (var2 == 0)
@@ -75,7 +75,7 @@ public class Class124_Sub22_Sub13 extends Class124_Sub22 {
 
 	public Class124_Sub22_Sub19_Sub7 method741(final Class124_Sub22_Sub19_Sub7 var1, int var2) {
 		var2 = anIntArray1536[var2];
-		final Class124_Sub22_Sub17 var3 = Class124_Sub22_Sub2.method655(var2 >> 16);
+		final Class124_Sub22_Sub17 var3 = Def3.method655(var2 >> 16);
 		var2 &= '\uffff';
 		if (var3 == null)
 			return var1.method987(true);
@@ -87,15 +87,15 @@ public class Class124_Sub22_Sub13 extends Class124_Sub22 {
 	}
 
 	public Class124_Sub22_Sub19_Sub7 method742(final Class124_Sub22_Sub19_Sub7 var1, int var2,
-			final Class124_Sub22_Sub13 var3, int var4) {
+			final Def12 var3, int var4) {
 		var2 = anIntArray1536[var2];
-		final Class124_Sub22_Sub17 var7 = Class124_Sub22_Sub2.method655(var2 >> 16);
+		final Class124_Sub22_Sub17 var7 = Def3.method655(var2 >> 16);
 		var2 &= '\uffff';
 		if (var7 == null)
 			return var3.method741(var1, var4);
 		else {
 			var4 = var3.anIntArray1536[var4];
-			final Class124_Sub22_Sub17 var5 = Class124_Sub22_Sub2.method655(var4 >> 16);
+			final Class124_Sub22_Sub17 var5 = Def3.method655(var4 >> 16);
 			var4 &= '\uffff';
 			Class124_Sub22_Sub19_Sub7 var6;
 			if (null == var5) {
@@ -112,7 +112,7 @@ public class Class124_Sub22_Sub13 extends Class124_Sub22 {
 
 	Class124_Sub22_Sub19_Sub7 method743(final Class124_Sub22_Sub19_Sub7 var1, int var2) {
 		var2 = anIntArray1536[var2];
-		final Class124_Sub22_Sub17 var4 = Class124_Sub22_Sub2.method655(var2 >> 16);
+		final Class124_Sub22_Sub17 var4 = Def3.method655(var2 >> 16);
 		var2 &= '\uffff';
 		if (null == var4)
 			return var1.method1004(true);
@@ -125,7 +125,7 @@ public class Class124_Sub22_Sub13 extends Class124_Sub22 {
 
 	public Class124_Sub22_Sub19_Sub7 method744(final Class124_Sub22_Sub19_Sub7 var1, final int var2) {
 		int var3 = anIntArray1536[var2];
-		final Class124_Sub22_Sub17 var4 = Class124_Sub22_Sub2.method655(var3 >> 16);
+		final Class124_Sub22_Sub17 var4 = Def3.method655(var3 >> 16);
 		var3 &= '\uffff';
 		if (null == var4)
 			return var1.method987(true);
@@ -134,7 +134,7 @@ public class Class124_Sub22_Sub13 extends Class124_Sub22 {
 			int var6 = 0;
 			if ((anIntArray1535 != null) && (var2 < anIntArray1535.length)) {
 				var6 = anIntArray1535[var2];
-				var5 = Class124_Sub22_Sub2.method655(var6 >> 16);
+				var5 = Def3.method655(var6 >> 16);
 				var6 &= '\uffff';
 			}
 
@@ -152,7 +152,7 @@ public class Class124_Sub22_Sub13 extends Class124_Sub22 {
 		}
 	}
 
-	void method745(final Class124_Sub14 var1, final int var2) {
+	void method745(final RSBuf var1, final int var2) {
 		int var3;
 		int var4;
 		if (var2 == 1) {
@@ -215,7 +215,7 @@ public class Class124_Sub22_Sub13 extends Class124_Sub22 {
 	}
 
 	public static void method746(final Class94 var0) {
-		Class124_Sub22_Sub3.aClass94_1365 = var0;
+		Def1.aClass94_1365 = var0;
 	}
 
 	static final void method747(final int var0) {
@@ -225,7 +225,7 @@ public class Class124_Sub22_Sub13 extends Class124_Sub22 {
 		if (Class4.anInt54 > Class124_Sub22_Sub19_Sub1.anIntArray1661.length) {
 			Class4.anInt54 -= Class124_Sub22_Sub19_Sub1.anIntArray1661.length;
 			var4 = (int) (Math.random() * 12.0D);
-			Class124_Sub22_Sub15.method761(Class4.aClass124_Sub22_Sub16_Sub2Array25[var4]);
+			Def4.method761(Class4.aClass124_Sub22_Sub16_Sub2Array25[var4]);
 		}
 
 		var4 = 0;

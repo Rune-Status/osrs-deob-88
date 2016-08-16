@@ -1,9 +1,9 @@
 import java.util.Iterator;
 
 public class Class118 implements Iterator {
-	Class124 aClass124_843;
+	Node aClass124_843;
 	int anInt844;
-	Class124 aClass124_845 = null;
+	Node aClass124_845 = null;
 	Class116 aClass116_846;
 
 	void method442() {
@@ -14,7 +14,7 @@ public class Class118 implements Iterator {
 
 	@Override
 	public Object next() {
-		Class124 var1;
+		Node var1;
 		if (aClass124_843 != aClass116_846.aClass124Array828[anInt844 - 1]) {
 			var1 = aClass124_843;
 			aClass124_843 = var1.aClass124_875;

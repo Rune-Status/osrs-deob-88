@@ -31,7 +31,7 @@ public final class Class46 {
 	}
 
 	static final void method229(final boolean var0) {
-		Class124_Sub22_Sub14.method751();
+		Def15.method751();
 		++client.anInt2025;
 		if ((client.anInt2025 >= 50) || var0) {
 			client.anInt2025 = 0;
@@ -39,9 +39,9 @@ public final class Class46 {
 				client.aClass124_Sub14_Sub1_2024.method837(250);
 
 				try {
-					Class73.aClass78_609.method323(client.aClass124_Sub14_Sub1_2024.aByteArray1073, 0,
-							client.aClass124_Sub14_Sub1_2024.anInt1075);
-					client.aClass124_Sub14_Sub1_2024.anInt1075 = 0;
+					Class73.aClass78_609.method323(client.aClass124_Sub14_Sub1_2024.backing, 0,
+							client.aClass124_Sub14_Sub1_2024.pos);
+					client.aClass124_Sub14_Sub1_2024.pos = 0;
 				} catch (final IOException var2) {
 					client.aBool2115 = true;
 				}

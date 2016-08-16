@@ -24,10 +24,10 @@ public abstract class Class56 {
 				final int var36 = (var16 >> 14) & 32767;
 				final int var37 = var18 & 31;
 				final int var35 = (var18 >> 6) & 3;
-				Class124_Sub22_Sub6 var8;
+				Def6 var8;
 				if (var1 == 0) {
 					Class36.aClass21_380.method125(var0, var2, var3);
-					var8 = Class124_Sub22_Sub12.method736(var36);
+					var8 = Def13.method736(var36);
 					if (var8.anInt1403 != 0)
 						client.aClass130Array2192[var0].method472(var2, var3, var37, var35, var8.aBool1436);
 				}
@@ -37,7 +37,7 @@ public abstract class Class56 {
 
 				if (var1 == 2) {
 					Class36.aClass21_380.method107(var0, var2, var3);
-					var8 = Class124_Sub22_Sub12.method736(var36);
+					var8 = Def13.method736(var36);
 					if (((var2 + var8.anInt1401) > 103) || ((var3 + var8.anInt1401) > 103)
 							|| ((var2 + var8.anInt1432) > 103) || ((var8.anInt1432 + var3) > 103))
 						return;
@@ -49,7 +49,7 @@ public abstract class Class56 {
 
 				if (var1 == 3) {
 					Class36.aClass21_380.method139(var0, var2, var3);
-					var8 = Class124_Sub22_Sub12.method736(var36);
+					var8 = Def13.method736(var36);
 					if (var8.anInt1403 == 1)
 						client.aClass130Array2192[var0].method469(var2, var3);
 				}
@@ -62,7 +62,7 @@ public abstract class Class56 {
 
 				final Class21 var34 = Class36.aClass21_380;
 				final Class130 var27 = client.aClass130Array2192[var0];
-				final Class124_Sub22_Sub6 var7 = Class124_Sub22_Sub12.method736(var4);
+				final Def6 var7 = Def13.method736(var4);
 				int var10;
 				int var11;
 				if ((var5 != 1) && (var5 != 3)) {
@@ -208,7 +208,7 @@ public abstract class Class56 {
 								var15 = 16;
 								var23 = var34.method136(var0, var2, var3);
 								if (var23 != 0)
-									var15 = Class124_Sub22_Sub12.method736((var23 >> 14) & 32767).anInt1423;
+									var15 = Def13.method736((var23 >> 14) & 32767).anInt1423;
 
 								if ((var7.anInt1409 == -1) && (null == var7.anIntArray1427))
 									var22 = var7.method682(4, var5, var24, var25, var9, var26);
@@ -224,7 +224,7 @@ public abstract class Class56 {
 								var15 = 8;
 								var23 = var34.method136(var0, var2, var3);
 								if (var23 != 0)
-									var15 = Class124_Sub22_Sub12.method736((var23 >> 14) & 32767).anInt1423 / 2;
+									var15 = Def13.method736((var23 >> 14) & 32767).anInt1423 / 2;
 
 								if ((var7.anInt1409 == -1) && (var7.anIntArray1427 == null))
 									var22 = var7.method682(4, var5 + 4, var24, var25, var9, var26);
@@ -249,7 +249,7 @@ public abstract class Class56 {
 								var15 = 8;
 								var23 = var34.method136(var0, var2, var3);
 								if (var23 != 0)
-									var15 = Class124_Sub22_Sub12.method736((var23 >> 14) & 32767).anInt1423 / 2;
+									var15 = Def13.method736((var23 >> 14) & 32767).anInt1423 / 2;
 
 								final int var32 = (var5 + 2) & 3;
 								Object var33;

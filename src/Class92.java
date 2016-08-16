@@ -13,7 +13,7 @@ public class Class92 {
 	public static int anInt723 = 0;
 	public static Class107 aClass107_724 = new Class107(4096);
 	public static int anInt725 = 0;
-	public static Class124_Sub14 aClass124_Sub14_726 = new Class124_Sub14(8);
+	public static RSBuf aClass124_Sub14_726 = new RSBuf(8);
 	public static int anInt727 = 0;
 	public static CRC32 aCRC32_720 = new CRC32();
 	public static Class94_Sub1[] aClass94_Sub1Array729 = new Class94_Sub1[256];

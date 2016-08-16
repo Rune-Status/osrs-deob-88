@@ -1,13 +1,13 @@
 public class Class51 {
 	protected static int anInt489;
 
-	static final void method245(final Class124_Sub17[] var0, final int var1) {
-		for (final Class124_Sub17 element : var0) {
-			final Class124_Sub17 var3 = element;
+	static final void method245(final Widget[] var0, final int var1) {
+		for (final Widget element : var0) {
+			final Widget var3 = element;
 			if ((null != var3) && (var3.anInt1259 == var1)
-					&& (!var3.aBool1152 || !Class124_Sub22_Sub15.method762(var3))) {
+					&& (!var3.aBool1152 || !Def4.method762(var3))) {
 				if (var3.anInt1191 == 0) {
-					if (!var3.aBool1152 && Class124_Sub22_Sub15.method762(var3)
+					if (!var3.aBool1152 && Def4.method762(var3)
 							&& (Class31.aClass124_Sub17_335 != var3))
 						continue;
 
@@ -30,7 +30,7 @@ public class Class51 {
 							var4 = var3.anInt1222;
 
 						if (var4 != -1) {
-							final Class124_Sub22_Sub13 var7 = Class124_Sub22_Sub14.method750(var4);
+							final Def12 var7 = Def15.method750(var4);
 
 							for (var3.anInt1274 += client.anInt2111; var3.anInt1274 > var7.anIntArray1529[var3.anInt1273]; Class124_Sub22_Sub10
 									.method723(var3)) {

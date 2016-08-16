@@ -1,5 +1,5 @@
 public final class Class67 {
-	public static Class124_Sub14 aClass124_Sub14_569;
+	public static RSBuf aClass124_Sub14_569;
 	public static Class10 aClass10_570;
 	int anInt567;
 	int anInt564;
@@ -177,9 +177,9 @@ public final class Class67 {
 	}
 
 	public static void method298(final Class94 var0, final Class94 var1, final boolean var2) {
-		Class124_Sub22_Sub6.aClass94_1426 = var0;
-		Class124_Sub22_Sub6.aClass94_1387 = var1;
-		Class124_Sub22_Sub6.aBool1400 = var2;
+		Def6.aClass94_1426 = var0;
+		Def6.aClass94_1387 = var1;
+		Def6.aBool1400 = var2;
 	}
 
 	public static byte[] method299(final Object var0, final boolean var1) {

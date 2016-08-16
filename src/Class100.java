@@ -22,7 +22,7 @@ public class Class100 {
 
 			for (int var5 = 0; var5 < 7; ++var5)
 				for (int var6 = 0; var6 < Applet_Sub1.anInt1980; ++var6) {
-					final Class124_Sub22_Sub2 var7 = Class84.method338(var6);
+					final Def3 var7 = Class84.method338(var6);
 					if ((var7 != null) && !var7.aBool1361 && (((var3 ? 7 : 0) + var5) == var7.anInt1362)) {
 						var1[anIntArray777[var5]] = var6 + 256;
 						break;
@@ -43,7 +43,7 @@ public class Class100 {
 			if (var3 != 0) {
 				var3 -= 256;
 
-				Class124_Sub22_Sub2 var4;
+				Def3 var4;
 				do {
 					if (!var2) {
 						--var3;
@@ -94,20 +94,20 @@ public class Class100 {
 		method398();
 	}
 
-	public void method397(final Class124_Sub14 var1) {
-		var1.method545(aBool779 ? 1 : 0);
+	public void method397(final RSBuf var1) {
+		var1.writeByte(aBool779 ? 1 : 0);
 
 		int var2;
 		for (var2 = 0; var2 < 7; ++var2) {
 			final int var3 = anIntArray785[anIntArray777[var2]];
 			if (var3 == 0)
-				var1.method545(-1);
+				var1.writeByte(-1);
 			else
-				var1.method545(var3 - 256);
+				var1.writeByte(var3 - 256);
 		}
 
 		for (var2 = 0; var2 < 5; ++var2)
-			var1.method545(anIntArray778[var2]);
+			var1.writeByte(anIntArray778[var2]);
 
 	}
 
@@ -146,8 +146,8 @@ public class Class100 {
 
 	}
 
-	public Class124_Sub22_Sub19_Sub7 method399(final Class124_Sub22_Sub13 var1, final int var2,
-			final Class124_Sub22_Sub13 var3, final int var4) {
+	public Class124_Sub22_Sub19_Sub7 method399(final Def12 var1, final int var2,
+			final Def12 var3, final int var4) {
 		if (anInt780 != -1)
 			return Class34.method188(anInt780, 1547564157).method645(var1, var2, var3, var4);
 		else {

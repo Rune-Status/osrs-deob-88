@@ -86,14 +86,14 @@ public class RS07Applet implements AppletStub {
 		map.put("13", "1");
 		map.put("14", "0");
 		map.put("15", "50759");
-		map.put("initial_jar", "gamepack_2537725.jar");
+		//map.put("initial_jar", "gamepack_2537725.jar");
 		map.put("1", ".runescape.com");
 		map.put("2", "http://www.runescape.com/g=oldscape/slr.ws?order=LPWM");
 		map.put("3", "5");
 		map.put("4", "false");
 		map.put("5", "0");
 		map.put("6", "0");
-		map.put("codebase", "http://oldschool5.runescape.com/");
+		//map.put("codebase", "http://oldschool5.runescape.com/");
 		map.put("7", "305");
 		map.put("8", "true");
 		map.put("9", "ElZAIrq5NpKN6D3mDdihco3oPeYN2KFy2DCquj7JMmECPmLrDP3Bnw");

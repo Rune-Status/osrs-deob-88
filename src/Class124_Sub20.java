@@ -1,18 +1,18 @@
-public class Class124_Sub20 extends Class124 {
+public class Class124_Sub20 extends Node {
 	byte[] aByteArray1300;
 	Class107 aClass107_1301;
 
 	static Class124_Sub20 method634(final Class94 var0, final int var1, final int var2) {
-		final byte[] var3 = var0.method377(var1, var2);
-		return var3 == null ? null : new Class124_Sub20(new Class124_Sub14(var3));
+		final byte[] var3 = var0.decode(var1, var2);
+		return var3 == null ? null : new Class124_Sub20(new RSBuf(var3));
 	}
 
-	Class124_Sub20(final Class124_Sub14 var1) {
-		var1.anInt1075 = var1.aByteArray1073.length - 3;
+	Class124_Sub20(final RSBuf var1) {
+		var1.pos = var1.backing.length - 3;
 		final int var3 = var1.method558();
 		final int var4 = var1.method560();
 		int var5 = 14 + (var3 * 10);
-		var1.anInt1075 = 0;
+		var1.pos = 0;
 		int var6 = 0;
 		int var7 = 0;
 		int var8 = 0;
@@ -63,14 +63,14 @@ public class Class124_Sub20 extends Class124 {
 		var5 += 5 * var6;
 		var5 += 2 * (var8 + var24 + var7 + var9 + var11);
 		var5 += var19 + var26;
-		var13 = var1.anInt1075;
+		var13 = var1.pos;
 		var14 = var3 + var6 + var7 + var8 + var24 + var9 + var19 + var11 + var26;
 
 		for (var2 = 0; var2 < var14; ++var2)
 			var1.method570();
 
-		var5 += var1.anInt1075 - var13;
-		var2 = var1.anInt1075;
+		var5 += var1.pos - var13;
+		var2 = var1.pos;
 		int var28 = 0;
 		int var29 = 0;
 		int var30 = 0;
@@ -118,56 +118,56 @@ public class Class124_Sub20 extends Class124 {
 		}
 
 		var36 = 0;
-		int var22 = var1.anInt1075;
-		var1.anInt1075 += var35;
-		int var45 = var1.anInt1075;
-		var1.anInt1075 += var11;
-		int var46 = var1.anInt1075;
-		var1.anInt1075 += var19;
-		int var47 = var1.anInt1075;
-		var1.anInt1075 += var9;
-		int var48 = var1.anInt1075;
-		var1.anInt1075 += var28;
-		int var50 = var1.anInt1075;
-		var1.anInt1075 += var30;
-		int var42 = var1.anInt1075;
-		var1.anInt1075 += var31;
-		int var39 = var1.anInt1075;
-		var1.anInt1075 += var8 + var24 + var11;
-		int var51 = var1.anInt1075;
-		var1.anInt1075 += var8;
-		int var52 = var1.anInt1075;
-		var1.anInt1075 += var43;
-		int var53 = var1.anInt1075;
-		var1.anInt1075 += var24;
-		int var54 = var1.anInt1075;
-		var1.anInt1075 += var29;
-		int var34 = var1.anInt1075;
-		var1.anInt1075 += var37;
-		int var44 = var1.anInt1075;
-		var1.anInt1075 += var32;
-		int var55 = var1.anInt1075;
-		var1.anInt1075 += var26;
-		int var49 = var1.anInt1075;
-		var1.anInt1075 += var9;
-		int var66 = var1.anInt1075;
-		var1.anInt1075 += var33;
-		int var23 = var1.anInt1075;
-		var1.anInt1075 += var12;
-		int var56 = var1.anInt1075;
-		var1.anInt1075 += var41;
-		int var57 = var1.anInt1075;
-		var1.anInt1075 += var18;
-		int var58 = var1.anInt1075;
-		var1.anInt1075 += var6 * 3;
+		int var22 = var1.pos;
+		var1.pos += var35;
+		int var45 = var1.pos;
+		var1.pos += var11;
+		int var46 = var1.pos;
+		var1.pos += var19;
+		int var47 = var1.pos;
+		var1.pos += var9;
+		int var48 = var1.pos;
+		var1.pos += var28;
+		int var50 = var1.pos;
+		var1.pos += var30;
+		int var42 = var1.pos;
+		var1.pos += var31;
+		int var39 = var1.pos;
+		var1.pos += var8 + var24 + var11;
+		int var51 = var1.pos;
+		var1.pos += var8;
+		int var52 = var1.pos;
+		var1.pos += var43;
+		int var53 = var1.pos;
+		var1.pos += var24;
+		int var54 = var1.pos;
+		var1.pos += var29;
+		int var34 = var1.pos;
+		var1.pos += var37;
+		int var44 = var1.pos;
+		var1.pos += var32;
+		int var55 = var1.pos;
+		var1.pos += var26;
+		int var49 = var1.pos;
+		var1.pos += var9;
+		int var66 = var1.pos;
+		var1.pos += var33;
+		int var23 = var1.pos;
+		var1.pos += var12;
+		int var56 = var1.pos;
+		var1.pos += var41;
+		int var57 = var1.pos;
+		var1.pos += var18;
+		int var58 = var1.pos;
+		var1.pos += var6 * 3;
 		aByteArray1300 = new byte[var5];
-		final Class124_Sub14 var20 = new Class124_Sub14(aByteArray1300);
+		final RSBuf var20 = new RSBuf(aByteArray1300);
 		var20.method548(1297377380);
 		var20.method548(6);
-		var20.method592(var3 > 1 ? 1 : 0);
-		var20.method592(var3);
-		var20.method592(var4);
-		var1.anInt1075 = var13;
+		var20.writeShort(var3 > 1 ? 1 : 0);
+		var20.writeShort(var3);
+		var20.writeShort(var4);
+		var1.pos = var13;
 		int var25 = 0;
 		int var21 = 0;
 		int var63 = 0;
@@ -180,123 +180,123 @@ public class Class124_Sub20 extends Class124 {
 
 		label352: for (int var38 = 0; var38 < var3; ++var38) {
 			var20.method548(1297379947);
-			var20.anInt1075 += 4;
-			final int var64 = var20.anInt1075;
+			var20.pos += 4;
+			final int var64 = var20.pos;
 			int var15 = -1;
 
 			while (true)
 				while (true) {
 					final int var40 = var1.method570();
 					var20.method599(var40);
-					final int var65 = var1.aByteArray1073[var36++] & 255;
+					final int var65 = var1.backing[var36++] & 255;
 					final boolean var27 = var65 != var15;
 					var15 = var65 & 15;
 					if (var65 == 7) {
 						if (var27)
-							var20.method545(255);
+							var20.writeByte(255);
 
-						var20.method545(47);
-						var20.method545(0);
-						var20.method553(var20.anInt1075 - var64);
+						var20.writeByte(47);
+						var20.writeByte(0);
+						var20.method553(var20.pos - var64);
 						continue label352;
 					}
 
 					if (var65 == 23) {
 						if (var27)
-							var20.method545(255);
+							var20.writeByte(255);
 
-						var20.method545(81);
-						var20.method545(3);
-						var20.method545(var1.aByteArray1073[var58++]);
-						var20.method545(var1.aByteArray1073[var58++]);
-						var20.method545(var1.aByteArray1073[var58++]);
+						var20.writeByte(81);
+						var20.writeByte(3);
+						var20.writeByte(var1.backing[var58++]);
+						var20.writeByte(var1.backing[var58++]);
+						var20.writeByte(var1.backing[var58++]);
 					} else {
 						var25 ^= var65 >> 4;
 						if (var15 == 0) {
 							if (var27)
-								var20.method545(144 + var25);
+								var20.writeByte(144 + var25);
 
-							var21 += var1.aByteArray1073[var39++];
-							var63 += var1.aByteArray1073[var51++];
-							var20.method545(var21 & 127);
-							var20.method545(var63 & 127);
+							var21 += var1.backing[var39++];
+							var63 += var1.backing[var51++];
+							var20.writeByte(var21 & 127);
+							var20.writeByte(var63 & 127);
 						} else if (var15 == 1) {
 							if (var27)
-								var20.method545(128 + var25);
+								var20.writeByte(128 + var25);
 
-							var21 += var1.aByteArray1073[var39++];
-							var59 += var1.aByteArray1073[var53++];
-							var20.method545(var21 & 127);
-							var20.method545(var59 & 127);
+							var21 += var1.backing[var39++];
+							var59 += var1.backing[var53++];
+							var20.writeByte(var21 & 127);
+							var20.writeByte(var59 & 127);
 						} else if (var15 == 2) {
 							if (var27)
-								var20.method545(176 + var25);
+								var20.writeByte(176 + var25);
 
-							var10 = (var10 + var1.aByteArray1073[var2++]) & 127;
-							var20.method545(var10);
+							var10 = (var10 + var1.backing[var2++]) & 127;
+							var20.writeByte(var10);
 							byte var17;
 							if ((var10 != 0) && (var10 != 32)) {
 								if (var10 == 1)
-									var17 = var1.aByteArray1073[var48++];
+									var17 = var1.backing[var48++];
 								else if (var10 == 33)
-									var17 = var1.aByteArray1073[var54++];
+									var17 = var1.backing[var54++];
 								else if (var10 == 7)
-									var17 = var1.aByteArray1073[var50++];
+									var17 = var1.backing[var50++];
 								else if (var10 == 39)
-									var17 = var1.aByteArray1073[var34++];
+									var17 = var1.backing[var34++];
 								else if (var10 == 10)
-									var17 = var1.aByteArray1073[var42++];
+									var17 = var1.backing[var42++];
 								else if (var10 == 42)
-									var17 = var1.aByteArray1073[var44++];
+									var17 = var1.backing[var44++];
 								else if (var10 == 99)
-									var17 = var1.aByteArray1073[var66++];
+									var17 = var1.backing[var66++];
 								else if (var10 == 98)
-									var17 = var1.aByteArray1073[var23++];
+									var17 = var1.backing[var23++];
 								else if (var10 == 101)
-									var17 = var1.aByteArray1073[var56++];
+									var17 = var1.backing[var56++];
 								else if (var10 == 100)
-									var17 = var1.aByteArray1073[var57++];
+									var17 = var1.backing[var57++];
 								else if ((var10 != 64) && (var10 != 65) && (var10 != 120) && (var10 != 121)
 										&& (var10 != 123))
-									var17 = var1.aByteArray1073[var52++];
+									var17 = var1.backing[var52++];
 								else
-									var17 = var1.aByteArray1073[var22++];
+									var17 = var1.backing[var22++];
 							} else
-								var17 = var1.aByteArray1073[var55++];
+								var17 = var1.backing[var55++];
 
 							final int var67 = var17 + var16[var10];
 							var16[var10] = var67;
-							var20.method545(var67 & 127);
+							var20.writeByte(var67 & 127);
 						} else if (var15 == 3) {
 							if (var27)
-								var20.method545(224 + var25);
+								var20.writeByte(224 + var25);
 
-							var60 += var1.aByteArray1073[var49++];
-							var60 += var1.aByteArray1073[var47++] << 7;
-							var20.method545(var60 & 127);
-							var20.method545((var60 >> 7) & 127);
+							var60 += var1.backing[var49++];
+							var60 += var1.backing[var47++] << 7;
+							var20.writeByte(var60 & 127);
+							var20.writeByte((var60 >> 7) & 127);
 						} else if (var15 == 4) {
 							if (var27)
-								var20.method545(208 + var25);
+								var20.writeByte(208 + var25);
 
-							var61 += var1.aByteArray1073[var46++];
-							var20.method545(var61 & 127);
+							var61 += var1.backing[var46++];
+							var20.writeByte(var61 & 127);
 						} else if (var15 == 5) {
 							if (var27)
-								var20.method545(160 + var25);
+								var20.writeByte(160 + var25);
 
-							var21 += var1.aByteArray1073[var39++];
-							var62 += var1.aByteArray1073[var45++];
-							var20.method545(var21 & 127);
-							var20.method545(var62 & 127);
+							var21 += var1.backing[var39++];
+							var62 += var1.backing[var45++];
+							var20.writeByte(var21 & 127);
+							var20.writeByte(var62 & 127);
 						} else {
 							if (var15 != 6)
 								throw new RuntimeException();
 
 							if (var27)
-								var20.method545(192 + var25);
+								var20.writeByte(192 + var25);
 
-							var20.method545(var1.aByteArray1073[var55++]);
+							var20.writeByte(var1.backing[var55++]);
 						}
 					}
 				}

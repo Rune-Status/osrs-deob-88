@@ -1,6 +1,6 @@
 import java.awt.Graphics;
 
-public class Class124_Sub7 extends Class124 {
+public class Class124_Sub7 extends Node {
 	int anInt1008;
 	static Class79 aClass79_1010;
 	static long aLong1011;
@@ -115,17 +115,17 @@ public class Class124_Sub7 extends Class124 {
 
 	}
 
-	public static Class124_Sub22_Sub7 method526(final int var0) {
-		Class124_Sub22_Sub7 var1 = (Class124_Sub22_Sub7) Class124_Sub22_Sub7.aClass113_1437.method434(var0);
+	public static Def19 method526(final int var0) {
+		Def19 var1 = (Def19) Def19.aClass113_1437.method434(var0);
 		if (var1 != null)
 			return var1;
 		else {
-			final byte[] var2 = Class124_Sub22_Sub7.aClass94_1441.method377(19, var0);
-			var1 = new Class124_Sub22_Sub7();
+			final byte[] var2 = Def19.aClass94_1441.decode(19, var0);
+			var1 = new Def19();
 			if (var2 != null)
-				var1.method694(new Class124_Sub14(var2));
+				var1.method694(new RSBuf(var2));
 
-			Class124_Sub22_Sub7.aClass113_1437.method435(var1, var0);
+			Def19.aClass113_1437.method435(var1, var0);
 			return var1;
 		}
 	}

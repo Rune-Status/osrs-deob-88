@@ -11,12 +11,12 @@ public class Class96 {
 
 	static boolean method387() {
 		try {
-			if (Class124_Sub22_Sub9.aClass45_1455 == null)
-				Class124_Sub22_Sub9.aClass45_1455 = new Class45(Class27.aClass82_303, new URL(Class48.aString480));
+			if (Def5.aClass45_1455 == null)
+				Def5.aClass45_1455 = new Class45(Class27.aClass82_303, new URL(Class48.aString480));
 			else {
-				final byte[] var0 = Class124_Sub22_Sub9.aClass45_1455.method224((byte) 39);
+				final byte[] var0 = Def5.aClass45_1455.method224((byte) 39);
 				if (var0 != null) {
-					final Class124_Sub14 var1 = new Class124_Sub14(var0);
+					final RSBuf var1 = new RSBuf(var0);
 					Class23.anInt257 = var1.method560();
 					Class23.aClass23Array256 = new Class23[Class23.anInt257];
 
@@ -33,13 +33,13 @@ public class Class96 {
 
 					Class40.method200(Class23.aClass23Array256, 0, Class23.aClass23Array256.length - 1,
 							Class23.anIntArray259, Class23.anIntArray266);
-					Class124_Sub22_Sub9.aClass45_1455 = null;
+					Def5.aClass45_1455 = null;
 					return true;
 				}
 			}
 		} catch (final Exception var4) {
 			var4.printStackTrace();
-			Class124_Sub22_Sub9.aClass45_1455 = null;
+			Def5.aClass45_1455 = null;
 		}
 
 		return false;

@@ -13,7 +13,7 @@ public class Class56_Sub1 extends Class56 {
 		if (var6 < var4)
 			var6 = var4;
 
-		client.method1067(var6 / 1000000L);
+		client.sleep(var6 / 1000000L);
 		final long var8 = System.nanoTime();
 
 		int var10;

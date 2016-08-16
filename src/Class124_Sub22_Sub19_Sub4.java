@@ -56,14 +56,14 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 	}
 
 	void method929(final byte[] var1) {
-		final Class124_Sub14 var2 = new Class124_Sub14(var1);
-		final Class124_Sub14 var12 = new Class124_Sub14(var1);
-		final Class124_Sub14 var5 = new Class124_Sub14(var1);
-		final Class124_Sub14 var6 = new Class124_Sub14(var1);
-		final Class124_Sub14 var7 = new Class124_Sub14(var1);
-		final Class124_Sub14 var3 = new Class124_Sub14(var1);
-		final Class124_Sub14 var54 = new Class124_Sub14(var1);
-		var2.anInt1075 = var1.length - 23;
+		final RSBuf var2 = new RSBuf(var1);
+		final RSBuf var12 = new RSBuf(var1);
+		final RSBuf var5 = new RSBuf(var1);
+		final RSBuf var6 = new RSBuf(var1);
+		final RSBuf var7 = new RSBuf(var1);
+		final RSBuf var3 = new RSBuf(var1);
+		final RSBuf var54 = new RSBuf(var1);
+		var2.pos = var1.length - 23;
 		final int var10 = var2.method560();
 		final int var28 = var2.method560();
 		final int var18 = var2.method558();
@@ -84,7 +84,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 		int var21;
 		if (var18 > 0) {
 			aByteArray1768 = new byte[var18];
-			var2.anInt1075 = 0;
+			var2.pos = 0;
 
 			for (var21 = 0; var21 < var18; ++var21) {
 				final byte var29 = aByteArray1768[var21] = var2.method559();
@@ -200,11 +200,11 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 				aShortArray1769 = new short[var26];
 		}
 
-		var2.anInt1075 = var18;
-		var12.anInt1075 = var51;
-		var5.anInt1075 = var40;
-		var6.anInt1075 = var41;
-		var7.anInt1075 = var50;
+		var2.pos = var18;
+		var12.pos = var51;
+		var5.pos = var40;
+		var6.pos = var41;
+		var7.pos = var50;
 		int var43 = 0;
 		int var52 = 0;
 		int var53 = 0;
@@ -238,13 +238,13 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 				anIntArray1771[var8] = var7.method558();
 		}
 
-		var2.anInt1075 = var39;
-		var12.anInt1075 = var32;
-		var5.anInt1075 = var27;
-		var6.anInt1075 = var57;
-		var7.anInt1075 = var34;
-		var3.anInt1075 = var4;
-		var54.anInt1075 = var38;
+		var2.pos = var39;
+		var12.pos = var32;
+		var5.pos = var27;
+		var6.pos = var57;
+		var7.pos = var34;
+		var3.pos = var4;
+		var54.pos = var38;
 
 		for (var8 = 0; var8 < var28; ++var8) {
 			aShortArray1750[var8] = (short) var2.method560();
@@ -267,8 +267,8 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 				aByteArray1790[var8] = (byte) (var54.method558() - 1);
 		}
 
-		var2.anInt1075 = var36;
-		var12.anInt1075 = var33;
+		var2.pos = var36;
+		var12.pos = var33;
 		var8 = 0;
 		var30 = 0;
 		var15 = 0;
@@ -317,12 +317,12 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 			}
 		}
 
-		var2.anInt1075 = var56;
-		var12.anInt1075 = var22;
-		var5.anInt1075 = var55;
-		var6.anInt1075 = var31;
-		var7.anInt1075 = var45;
-		var3.anInt1075 = var48;
+		var2.pos = var56;
+		var12.pos = var22;
+		var5.pos = var55;
+		var6.pos = var31;
+		var7.pos = var45;
+		var3.pos = var48;
 
 		for (var9 = 0; var9 < var18; ++var9) {
 			var44 = aByteArray1768[var9] & 255;
@@ -370,7 +370,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 			}
 		}
 
-		var2.anInt1075 = var21;
+		var2.pos = var21;
 		var9 = var2.method558();
 		if (var9 != 0) {
 			new Class40();
@@ -752,7 +752,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 	}
 
 	public static Class124_Sub22_Sub19_Sub4 method943(final Class94 var0, final int var1, final int var2) {
-		final byte[] var3 = var0.method377(var1, var2);
+		final byte[] var3 = var0.decode(var1, var2);
 		return var3 == null ? null : new Class124_Sub22_Sub19_Sub4(var3);
 	}
 
@@ -1043,12 +1043,12 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 	void method947(final byte[] var1) {
 		boolean var2 = false;
 		boolean var37 = false;
-		final Class124_Sub14 var3 = new Class124_Sub14(var1);
-		final Class124_Sub14 var31 = new Class124_Sub14(var1);
-		final Class124_Sub14 var6 = new Class124_Sub14(var1);
-		final Class124_Sub14 var7 = new Class124_Sub14(var1);
-		final Class124_Sub14 var8 = new Class124_Sub14(var1);
-		var3.anInt1075 = var1.length - 18;
+		final RSBuf var3 = new RSBuf(var1);
+		final RSBuf var31 = new RSBuf(var1);
+		final RSBuf var6 = new RSBuf(var1);
+		final RSBuf var7 = new RSBuf(var1);
+		final RSBuf var8 = new RSBuf(var1);
+		var3.pos = var1.length - 18;
 		final int var5 = var3.method560();
 		final int var13 = var3.method560();
 		final int var25 = var3.method558();
@@ -1132,11 +1132,11 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 			anIntArray1772 = new int[var13];
 
 		aShortArray1750 = new short[var13];
-		var3.anInt1075 = var9;
-		var31.anInt1075 = var34;
-		var6.anInt1075 = var44;
-		var7.anInt1075 = var45;
-		var8.anInt1075 = var32;
+		var3.pos = var9;
+		var31.pos = var34;
+		var6.pos = var44;
+		var7.pos = var45;
+		var8.pos = var32;
 		int var38 = 0;
 		int var42 = 0;
 		int var43 = 0;
@@ -1170,11 +1170,11 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 				anIntArray1771[var4] = var8.method558();
 		}
 
-		var3.anInt1075 = var28;
-		var31.anInt1075 = var10;
-		var6.anInt1075 = var40;
-		var7.anInt1075 = var30;
-		var8.anInt1075 = var26;
+		var3.pos = var28;
+		var31.pos = var10;
+		var6.pos = var40;
+		var7.pos = var30;
+		var8.pos = var26;
 
 		for (var4 = 0; var4 < var13; ++var4) {
 			aShortArray1750[var4] = (short) var3.method560();
@@ -1208,8 +1208,8 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 				anIntArray1772[var4] = var8.method558();
 		}
 
-		var3.anInt1075 = var22;
-		var31.anInt1075 = var23;
+		var3.pos = var22;
+		var31.pos = var23;
 		var4 = 0;
 		var11 = 0;
 		var33 = 0;
@@ -1259,7 +1259,7 @@ public class Class124_Sub22_Sub19_Sub4 extends Class124_Sub22_Sub19 {
 			}
 		}
 
-		var3.anInt1075 = var27;
+		var3.pos = var27;
 
 		for (var29 = 0; var29 < var25; ++var29) {
 			aByteArray1768[var29] = 0;

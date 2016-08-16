@@ -8,7 +8,7 @@ public class Class121_Sub1 extends Class121 {
 		return ((var0 >> 24) & 255) + "." + ((var0 >> 16) & 255) + "." + ((var0 >> 8) & 255) + "." + (var0 & 255);
 	}
 
-	static final void method487(Class124_Sub22_Sub1 var0, final int var1, final int var2, final int var3) {
+	static final void method487(Def9 var0, final int var1, final int var2, final int var3) {
 		if (client.anInt2124 < 400) {
 			if (null != var0.anIntArray1342)
 				var0 = var0.method644();

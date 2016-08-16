@@ -11,7 +11,7 @@ public class Class134 {
 	public static Comparator aComparator910;
 	public static Comparator aComparator911;
 
-	public Class134(final Class124_Sub14 var1, final boolean var2) {
+	public Class134(final RSBuf var1, final boolean var2) {
 		final int var4 = var1.method560();
 		final boolean var5 = var1.method558() == 1;
 		byte var6;

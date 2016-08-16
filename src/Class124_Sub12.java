@@ -1,4 +1,4 @@
-public class Class124_Sub12 extends Class124 {
+public class Class124_Sub12 extends Node {
 	int anInt1052;
 	int anInt1053;
 	int[] anIntArray1054;
@@ -6,7 +6,7 @@ public class Class124_Sub12 extends Class124 {
 
 	Class124_Sub12(final int var1, final byte[] var2) {
 		anInt1052 = var1;
-		final Class124_Sub14 var4 = new Class124_Sub14(var2);
+		final RSBuf var4 = new RSBuf(var2);
 		anInt1053 = var4.method558();
 		anIntArray1054 = new int[anInt1053];
 		anIntArrayArray1055 = new int[anInt1053][];

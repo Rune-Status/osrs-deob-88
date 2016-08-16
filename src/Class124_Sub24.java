@@ -1,7 +1,7 @@
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-public class Class124_Sub24 extends Class124 {
+public class Class124_Sub24 extends Node {
 	int[] anIntArray1306;
 	int anInt1307;
 	int[] anIntArray1308;

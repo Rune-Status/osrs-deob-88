@@ -2,7 +2,7 @@ public final class Class124_Sub22_Sub19_Sub3_Sub1 extends Class124_Sub22_Sub19_S
 	static boolean aBool1938;
 	static byte[][] aByteArrayArray1939;
 	static int anInt1940;
-	Class124_Sub22_Sub1 aClass124_Sub22_Sub1_1941;
+	Def9 aClass124_Sub22_Sub1_1941;
 
 	public static void method1041() {
 		if (Class92.aClass78_732 != null)
@@ -16,7 +16,7 @@ public final class Class124_Sub22_Sub19_Sub3_Sub1 extends Class124_Sub22_Sub19_S
 	}
 
 	static Class124_Sub18 method1042(final Class94 var0, final int var1) {
-		final byte[] var2 = var0.method368(var1);
+		final byte[] var2 = var0.decode(var1);
 		return var2 == null ? null : new Class124_Sub18(var2);
 	}
 
@@ -25,10 +25,10 @@ public final class Class124_Sub22_Sub19_Sub3_Sub1 extends Class124_Sub22_Sub19_S
 		if (null == aClass124_Sub22_Sub1_1941)
 			return null;
 		else {
-			final Class124_Sub22_Sub13 var3 = (anInt1699 != -1) && (anInt1673 == 0)
-					? Class124_Sub22_Sub14.method750(anInt1699) : null;
-			final Class124_Sub22_Sub13 var5 = (anInt1675 == -1) || ((anInt1719 == anInt1675) && (null != var3)) ? null
-					: Class124_Sub22_Sub14.method750(anInt1675);
+			final Def12 var3 = (anInt1699 != -1) && (anInt1673 == 0)
+					? Def15.method750(anInt1699) : null;
+			final Def12 var5 = (anInt1675 == -1) || ((anInt1719 == anInt1675) && (null != var3)) ? null
+					: Def15.method750(anInt1675);
 			Class124_Sub22_Sub19_Sub7 var4 = aClass124_Sub22_Sub1_1941.method645(var3, anInt1700, var5, anInt1695);
 			if (var4 == null)
 				return null;

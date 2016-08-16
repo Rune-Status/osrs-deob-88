@@ -1,4 +1,4 @@
-public final class Class124_Sub14_Sub1 extends Class124_Sub14 {
+public final class Class124_Sub14_Sub1 extends RSBuf {
 	static Class124_Sub9[] aClass124_Sub9Array1609;
 	Class67 aClass67_1606;
 	int anInt1608;
@@ -11,7 +11,7 @@ public final class Class124_Sub14_Sub1 extends Class124_Sub14 {
 	}
 
 	public void method837(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 + aClass67_1606.method295());
+		backing[++pos - 1] = (byte) (var1 + aClass67_1606.method295());
 	}
 
 	public Class124_Sub14_Sub1(final int var1) {
@@ -19,7 +19,7 @@ public final class Class124_Sub14_Sub1 extends Class124_Sub14 {
 	}
 
 	public int method838() {
-		return (aByteArray1073[++anInt1075 - 1] - aClass67_1606.method295()) & 255;
+		return (backing[++pos - 1] - aClass67_1606.method295()) & 255;
 	}
 
 	public int method839(int var1) {
@@ -28,20 +28,20 @@ public final class Class124_Sub14_Sub1 extends Class124_Sub14 {
 		int var3 = 0;
 
 		for (anInt1608 += var1; var1 > var4; var4 = 8) {
-			var3 += (aByteArray1073[var2++] & anIntArray1607[var4]) << (var1 - var4);
+			var3 += (backing[var2++] & anIntArray1607[var4]) << (var1 - var4);
 			var1 -= var4;
 		}
 
 		if (var4 == var1)
-			var3 += aByteArray1073[var2] & anIntArray1607[var4];
+			var3 += backing[var2] & anIntArray1607[var4];
 		else
-			var3 += (aByteArray1073[var2] >> (var4 - var1)) & anIntArray1607[var1];
+			var3 += (backing[var2] >> (var4 - var1)) & anIntArray1607[var1];
 
 		return var3;
 	}
 
 	public void method840() {
-		anInt1075 = (anInt1608 + 7) / 8;
+		pos = (anInt1608 + 7) / 8;
 	}
 
 	static final int method841() {
@@ -56,7 +56,7 @@ public final class Class124_Sub14_Sub1 extends Class124_Sub14 {
 	}
 
 	public void method842() {
-		anInt1608 = anInt1075 * 8;
+		anInt1608 = pos * 8;
 	}
 
 	public int method843(final int var1) {

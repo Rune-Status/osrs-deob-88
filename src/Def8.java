@@ -1,6 +1,6 @@
 import java.awt.Component;
 
-public class Class124_Sub22_Sub8 extends Class124_Sub22 {
+public class Def8 extends Class124_Sub22 {
 	static Class94 aClass94_1444;
 	static String aString1452;
 	static Class113 aClass113_1443 = new Class113(64);
@@ -15,12 +15,12 @@ public class Class124_Sub22_Sub8 extends Class124_Sub22 {
 
 	static void method698() {
 		client.aClass124_Sub14_Sub1_2024.method837(140);
-		client.aClass124_Sub14_Sub1_2024.method545(Class34.method187());
-		client.aClass124_Sub14_Sub1_2024.method592(Class56_Sub2.anInt1083);
-		client.aClass124_Sub14_Sub1_2024.method592(Class81.anInt662);
+		client.aClass124_Sub14_Sub1_2024.writeByte(Class34.method187());
+		client.aClass124_Sub14_Sub1_2024.writeShort(Class56_Sub2.anInt1083);
+		client.aClass124_Sub14_Sub1_2024.writeShort(Class81.anInt662);
 	}
 
-	void method699(final Class124_Sub14 var1) {
+	void method699(final RSBuf var1) {
 		while (true) {
 			final int var2 = var1.method558();
 			if (var2 == 0)
@@ -46,7 +46,7 @@ public class Class124_Sub22_Sub8 extends Class124_Sub22 {
 		}
 	}
 
-	void method702(final Class124_Sub14 var1, final int var2) {
+	void method702(final RSBuf var1, final int var2) {
 		if (var2 == 1)
 			aChar1449 = (char) var1.method558();
 		else if (var2 == 2)

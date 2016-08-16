@@ -48,7 +48,7 @@ final class Class25 implements Comparator {
 		val$preferOwnWorld = var1;
 	}
 
-	static void method161(final Class124_Sub17 var0, final int var1, final int var2, final boolean var3) {
+	static void method161(final Widget var0, final int var1, final int var2, final boolean var3) {
 		final int var4 = var0.anInt1168;
 		final int var5 = var0.anInt1169;
 		if (var0.anInt1210 == 0)

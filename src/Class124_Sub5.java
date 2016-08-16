@@ -1,6 +1,6 @@
 import java.awt.Canvas;
 
-public final class Class124_Sub5 extends Class124 {
+public final class Class124_Sub5 extends Node {
 	Class28 aClass28_970;
 	boolean aBool971;
 	Class44 aClass44_972;
@@ -29,22 +29,22 @@ public final class Class124_Sub5 extends Class124 {
 
 	public static void method512(final int var0, final int var1) {
 		if (var0 != -1)
-			if (Class124_Sub17.aBoolArray1267[var0]) {
-				Class124_Sub17.aClass94_1145.method374(var0);
-				if (Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0] != null) {
+			if (Widget.widgetLoaded[var0]) {
+				Widget.aClass94_1145.method374(var0);
+				if (Class124_Sub22_Sub10.widgets[var0] != null) {
 					boolean var3 = true;
 
-					for (int var2 = 0; var2 < Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0].length; ++var2)
-						if (null != Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0][var2])
-							if (Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0][var2].anInt1191 != 2)
-								Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0][var2] = null;
+					for (int var2 = 0; var2 < Class124_Sub22_Sub10.widgets[var0].length; ++var2)
+						if (null != Class124_Sub22_Sub10.widgets[var0][var2])
+							if (Class124_Sub22_Sub10.widgets[var0][var2].anInt1191 != 2)
+								Class124_Sub22_Sub10.widgets[var0][var2] = null;
 							else
 								var3 = false;
 
 					if (var3)
-						Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0] = null;
+						Class124_Sub22_Sub10.widgets[var0] = null;
 
-					Class124_Sub17.aBoolArray1267[var0] = false;
+					Widget.widgetLoaded[var0] = false;
 				}
 			}
 	}
@@ -88,7 +88,7 @@ public final class Class124_Sub5 extends Class124 {
 		if (!client.aBool2043) {
 			var2 = client.aClass124_Sub14_Sub1_2026.method544();
 			var4 = client.aClass124_Sub14_Sub1_2026.method544();
-			var5 = (client.anInt2027 - client.aClass124_Sub14_Sub1_2026.anInt1075) / 16;
+			var5 = (client.anInt2027 - client.aClass124_Sub14_Sub1_2026.pos) / 16;
 			Class124_Sub22_Sub10.anIntArrayArray1466 = new int[var5][4];
 
 			for (var7 = 0; var7 < var5; ++var7)
@@ -101,7 +101,7 @@ public final class Class124_Sub5 extends Class124 {
 			var6 = client.aClass124_Sub14_Sub1_2026.method583();
 			Class124_Sub22_Sub19_Sub6.anIntArray1822 = new int[var5];
 			Class10.anIntArray104 = new int[var5];
-			Class124_Sub22_Sub1.anIntArray1335 = new int[var5];
+			Def9.anIntArray1335 = new int[var5];
 			Class124_Sub18.aByteArrayArray1294 = new byte[var5][];
 			Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939 = new byte[var5][];
 			boolean var3 = false;
@@ -120,7 +120,7 @@ public final class Class124_Sub5 extends Class124 {
 							&& ((var12 != 49) || (var1 != 47)))) {
 						Class124_Sub22_Sub19_Sub6.anIntArray1822[var5] = var9;
 						Class10.anIntArray104[var5] = Class125.aClass94_Sub1_883.method376("m" + var12 + "_" + var1);
-						Class124_Sub22_Sub1.anIntArray1335[var5] = Class125.aClass94_Sub1_883
+						Def9.anIntArray1335[var5] = Class125.aClass94_Sub1_883
 								.method376("l" + var12 + "_" + var1);
 						++var5;
 					}
@@ -142,7 +142,7 @@ public final class Class124_Sub5 extends Class124 {
 					}
 
 			client.aClass124_Sub14_Sub1_2026.method840();
-			var2 = (client.anInt2027 - client.aClass124_Sub14_Sub1_2026.anInt1075) / 16;
+			var2 = (client.anInt2027 - client.aClass124_Sub14_Sub1_2026.pos) / 16;
 			Class124_Sub22_Sub10.anIntArrayArray1466 = new int[var2][4];
 
 			for (var4 = 0; var4 < var2; ++var4)
@@ -156,7 +156,7 @@ public final class Class124_Sub5 extends Class124 {
 			var6 = client.aClass124_Sub14_Sub1_2026.method560();
 			Class124_Sub22_Sub19_Sub6.anIntArray1822 = new int[var2];
 			Class10.anIntArray104 = new int[var2];
-			Class124_Sub22_Sub1.anIntArray1335 = new int[var2];
+			Def9.anIntArray1335 = new int[var2];
 			Class124_Sub18.aByteArrayArray1294 = new byte[var2][];
 			Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939 = new byte[var2][];
 			var2 = 0;
@@ -183,7 +183,7 @@ public final class Class124_Sub5 extends Class124 {
 								final int var11 = var13 & 255;
 								Class10.anIntArray104[var2] = Class125.aClass94_Sub1_883
 										.method376("m" + var10 + "_" + var11);
-								Class124_Sub22_Sub1.anIntArray1335[var2] = Class125.aClass94_Sub1_883
+								Def9.anIntArray1335[var2] = Class125.aClass94_Sub1_883
 										.method376("l" + var10 + "_" + var11);
 								++var2;
 							}
@@ -224,10 +224,10 @@ public final class Class124_Sub5 extends Class124 {
 
 			if ((var0 != 5) && (var0 != 10)) {
 				if (var0 == 20)
-					Class124_Sub22_Sub2.method654(aCanvas990, Class124_Sub22_Sub20.aClass94_Sub1_1647,
+					Def3.method654(aCanvas990, Class124_Sub22_Sub20.aClass94_Sub1_1647,
 							Class124_Sub11.aClass94_Sub1_1047, true, client.anInt1992 == 11 ? 4 : 0);
 				else if (var0 == 11)
-					Class124_Sub22_Sub2.method654(aCanvas990, Class124_Sub22_Sub20.aClass94_Sub1_1647,
+					Def3.method654(aCanvas990, Class124_Sub22_Sub20.aClass94_Sub1_1647,
 							Class124_Sub11.aClass94_Sub1_1047, false, 4);
 				else if (Class4.aBool55) {
 					Class4.aClass124_Sub22_Sub16_Sub2_42 = null;
@@ -246,7 +246,7 @@ public final class Class124_Sub5 extends Class124 {
 					Class94.aClass124_Sub22_Sub16_Sub2_759 = null;
 					Class4.anIntArray46 = null;
 					Class124_Sub7.anIntArray1013 = null;
-					Class124_Sub22_Sub9.anIntArray1453 = null;
+					Def5.anIntArray1453 = null;
 					Class42.anIntArray427 = null;
 					Class124_Sub22_Sub19_Sub1.anIntArray1661 = null;
 					Class43.anIntArray432 = null;
@@ -257,7 +257,7 @@ public final class Class124_Sub5 extends Class124 {
 					Class4.aBool55 = false;
 				}
 			} else
-				Class124_Sub22_Sub2.method654(aCanvas990, Class124_Sub22_Sub20.aClass94_Sub1_1647,
+				Def3.method654(aCanvas990, Class124_Sub22_Sub20.aClass94_Sub1_1647,
 						Class124_Sub11.aClass94_Sub1_1047, true, 0);
 
 			client.anInt1992 = var0;

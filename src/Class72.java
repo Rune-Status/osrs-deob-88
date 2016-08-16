@@ -1,5 +1,5 @@
 public class Class72 implements Interface3 {
-	static Class124_Sub17 aClass124_Sub17_598;
+	static Widget aClass124_Sub17_598;
 	public static Class72 aClass72_597 = new Class72(2, 0);
 	public static Class72 aClass72_594 = new Class72(1, 1);
 	public static Class72 aClass72_593 = new Class72(3, 2);
@@ -50,7 +50,7 @@ public class Class72 implements Interface3 {
 	}
 
 	static Class124_Sub22_Sub16_Sub1[] method310(final Class94 var0, final int var1, final int var2) {
-		if (!Class124_Sub22_Sub2.method653(var0, var1, var2))
+		if (!Def3.loaded(var0, var1, var2))
 			return null;
 		else {
 			final Class124_Sub22_Sub16_Sub1[] var5 = new Class124_Sub22_Sub16_Sub1[Class7.anInt73];
@@ -123,7 +123,7 @@ public class Class72 implements Interface3 {
 				Class88.aClass94_Sub1_695 = Class35.method193(12, false, true, true);
 				Class25.aClass94_Sub1_279 = Class35.method193(13, true, false, true);
 				Class70.aClass94_Sub1_585 = Class35.method193(14, false, true, false);
-				Class124_Sub22_Sub18.aClass94_Sub1_1604 = Class35.method193(15, false, true, true);
+				Somet2.aClass94_Sub1_1604 = Class35.method193(15, false, true, true);
 				Class4.aString39 = "Connecting to update server";
 				Class4.anInt38 = 20;
 				client.anInt2012 = 40;
@@ -144,7 +144,7 @@ public class Class72 implements Interface3 {
 				var2 += (Class88.aClass94_Sub1_695.method612() * 2) / 100;
 				var2 += (Class25.aClass94_Sub1_279.method612() * 2) / 100;
 				var2 += (Class70.aClass94_Sub1_585.method612() * 2) / 100;
-				var2 += (Class124_Sub22_Sub18.aClass94_Sub1_1604.method612() * 2) / 100;
+				var2 += (Somet2.aClass94_Sub1_1604.method612() * 2) / 100;
 				if (var2 != 100) {
 					if (var2 != 0)
 						Class4.aString39 = "Checking for updates - " + var2 + "%";
@@ -159,12 +159,12 @@ public class Class72 implements Interface3 {
 				Class88.method343(22050, !client.aBool1989, 2);
 				final Class124_Sub4_Sub3 var25 = new Class124_Sub4_Sub3();
 				var25.method853(9, 128);
-				client.aClass8_2224 = Class124_Sub22_Sub14.method752(Class27.aClass82_303, Class124_Sub5.aCanvas990, 0,
+				client.aClass8_2224 = Def15.method752(Class27.aClass82_303, Class124_Sub5.aCanvas990, 0,
 						22050);
 				client.aClass8_2224.method37(var25);
-				Class56_Sub2.method607(Class124_Sub22_Sub18.aClass94_Sub1_1604, Class70.aClass94_Sub1_585,
+				Class56_Sub2.method607(Somet2.aClass94_Sub1_1604, Class70.aClass94_Sub1_585,
 						Class39.aClass94_Sub1_399, var25);
-				Class124_Sub22_Sub19_Sub2.aClass8_1668 = Class124_Sub22_Sub14.method752(Class27.aClass82_303,
+				Class124_Sub22_Sub19_Sub2.aClass8_1668 = Def15.method752(Class27.aClass82_303,
 						Class124_Sub5.aCanvas990, 1, 2048);
 				Class56_Sub2.aClass124_Sub4_Sub2_1078 = new Class124_Sub4_Sub2();
 				Class124_Sub22_Sub19_Sub2.aClass8_1668.method37(Class56_Sub2.aClass124_Sub4_Sub2_1078);
@@ -237,7 +237,7 @@ public class Class72 implements Interface3 {
 					var1.method379("sl_arrows", "");
 					var1.method379("sl_stars", "");
 					var1.method379("sl_button", "");
-					var8 = Class124_Sub22_Sub14.method753();
+					var8 = Def15.method753();
 					if (var7 < var8) {
 						Class4.aString39 = "Loading title screen - " + ((100 * var7) / var8) + "%";
 						Class4.anInt38 = 50;
@@ -248,54 +248,54 @@ public class Class72 implements Interface3 {
 						client.anInt2012 = 70;
 					}
 				} else if (client.anInt2012 == 70) {
-					if (!Class43.aClass94_Sub1_431.method367()) {
+					if (!Class43.aClass94_Sub1_431.valid()) {
 						Class4.aString39 = "Loading config - " + Class43.aClass94_Sub1_431.method613() + "%";
 						Class4.anInt38 = 60;
 					} else {
 						final Class94_Sub1 var24 = Class43.aClass94_Sub1_431;
-						Class124_Sub22_Sub15.aClass94_1561 = var24;
-						Class124_Sub22_Sub13.method746(Class43.aClass94_Sub1_431);
+						Def4.aClass94_1561 = var24;
+						Def12.method746(Class43.aClass94_Sub1_431);
 						var27 = Class43.aClass94_Sub1_431;
 						var1 = Class66.aClass94_Sub1_562;
-						Class124_Sub22_Sub2.aClass94_1363 = var27;
+						Def3.aClass94_1363 = var27;
 						Class128.aClass94_887 = var1;
-						Applet_Sub1.anInt1980 = Class124_Sub22_Sub2.aClass94_1363.method382(3);
+						Applet_Sub1.anInt1980 = Def3.aClass94_1363.widgetLen(3);
 						Class67.method298(Class43.aClass94_Sub1_431, Class66.aClass94_Sub1_562, client.aBool1989);
 						Class47.method231(Class43.aClass94_Sub1_431, Class66.aClass94_Sub1_562);
 						final Class94_Sub1 var14 = Class43.aClass94_Sub1_431;
 						final Class94_Sub1 var3 = Class66.aClass94_Sub1_562;
 						final boolean var22 = client.aBool1988;
-						final Class124_Sub22_Sub16_Sub4_Sub1 var15 = Class23.aClass124_Sub22_Sub16_Sub4_Sub1_260;
+						final Somet1 var15 = Class23.aClass124_Sub22_Sub16_Sub4_Sub1_260;
 						Class124_Sub22_Sub10.aClass94_1459 = var14;
 						Class124_Sub22_Sub10.aClass94_1460 = var3;
 						Class124_Sub22_Sub21.aBool1649 = var22;
-						RuntimeException_Sub1.anInt1914 = Class124_Sub22_Sub10.aClass94_1459.method382(10);
+						RuntimeException_Sub1.anInt1914 = Class124_Sub22_Sub10.aClass94_1459.widgetLen(10);
 						Class90.aClass124_Sub22_Sub16_Sub4_Sub1_709 = var15;
 						final Class94_Sub1 var17 = Class43.aClass94_Sub1_431;
 						final Class94_Sub1 var11 = Class82.aClass94_Sub1_671;
 						final Class94_Sub1 var16 = Class45.aClass94_Sub1_450;
-						Class124_Sub22_Sub13.aClass94_1545 = var17;
-						Class124_Sub22_Sub13.aClass94_1530 = var11;
-						Class124_Sub22_Sub13.aClass94_1533 = var16;
+						Def12.aClass94_1545 = var17;
+						Def12.aClass94_1530 = var11;
+						Def12.aClass94_1533 = var16;
 						Class1.method15(Class43.aClass94_Sub1_431, Class66.aClass94_Sub1_562);
 						final Class94_Sub1 var18 = Class43.aClass94_Sub1_431;
-						Class124_Sub22_Sub11.aClass94_1508 = var18;
+						Def14.aClass94_1508 = var18;
 						final Class94_Sub1 var19 = Class43.aClass94_Sub1_431;
-						Class124_Sub22_Sub4.aClass94_1375 = var19;
-						Class124_Sub22_Sub4.anInt1372 = Class124_Sub22_Sub4.aClass94_1375.method382(16);
+						Def16.aClass94_1375 = var19;
+						Def16.anInt1372 = Def16.aClass94_1375.widgetLen(16);
 						final Class94_Sub1 var13 = Class9.aClass94_Sub1_100;
 						final Class94_Sub1 var20 = Class66.aClass94_Sub1_562;
 						final Class94_Sub1 var21 = Class124_Sub11.aClass94_Sub1_1047;
 						final Class94_Sub1 var10 = Class25.aClass94_Sub1_279;
-						Class124_Sub17.aClass94_1145 = var13;
+						Widget.aClass94_1145 = var13;
 						Class124_Sub7.aClass94_1014 = var20;
-						Class124_Sub17.aClass94_1146 = var21;
+						Widget.aClass94_1146 = var21;
 						Class69.aClass94_581 = var10;
-						Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507 = new Class124_Sub17[Class124_Sub17.aClass94_1145
+						Class124_Sub22_Sub10.widgets = new Widget[Widget.aClass94_1145
 								.method373()][];
-						Class124_Sub17.aBoolArray1267 = new boolean[Class124_Sub17.aClass94_1145.method373()];
+						Widget.widgetLoaded = new boolean[Widget.aClass94_1145.method373()];
 						final Class94_Sub1 var12 = Class43.aClass94_Sub1_431;
-						Class124_Sub22_Sub9.aClass94_1456 = var12;
+						Def5.aClass94_1456 = var12;
 						Class3.method21(Class43.aClass94_Sub1_431);
 						Class49.method237(Class43.aClass94_Sub1_431);
 						Class124_Sub9.method532(Class43.aClass94_Sub1_431);
@@ -306,7 +306,7 @@ public class Class72 implements Interface3 {
 					}
 				} else if (client.anInt2012 != 80) {
 					if (client.anInt2012 == 90) {
-						if (!Class65.aClass94_Sub1_561.method367()) {
+						if (!Class65.aClass94_Sub1_561.valid()) {
 							Class4.aString39 = "Loading textures - " + Class65.aClass94_Sub1_561.method613() + "%";
 							Class4.anInt38 = 90;
 						} else {
@@ -337,15 +337,15 @@ public class Class72 implements Interface3 {
 							client.anInt2012 = 130;
 						}
 					} else if (client.anInt2012 == 130) {
-						if (!Class9.aClass94_Sub1_100.method367()) {
+						if (!Class9.aClass94_Sub1_100.valid()) {
 							Class4.aString39 = "Loading interfaces - "
 									+ ((Class9.aClass94_Sub1_100.method613() * 4) / 5) + "%";
 							Class4.anInt38 = 100;
-						} else if (!Class88.aClass94_Sub1_695.method367()) {
+						} else if (!Class88.aClass94_Sub1_695.valid()) {
 							Class4.aString39 = "Loading interfaces - "
 									+ (80 + (Class88.aClass94_Sub1_695.method613() / 6)) + "%";
 							Class4.anInt38 = 100;
-						} else if (!Class25.aClass94_Sub1_279.method367()) {
+						} else if (!Class25.aClass94_Sub1_279.valid()) {
 							Class4.aString39 = "Loading interfaces - "
 									+ (96 + (Class25.aClass94_Sub1_279.method613() / 20)) + "%";
 							Class4.anInt38 = 100;
@@ -377,56 +377,56 @@ public class Class72 implements Interface3 {
 					} else
 						++var2;
 
-					if (Class124_Sub22_Sub6.aClass124_Sub22_Sub16_Sub2Array1435 == null)
-						Class124_Sub22_Sub6.aClass124_Sub22_Sub16_Sub2Array1435 = Class124_Sub11
+					if (Def6.aClass124_Sub22_Sub16_Sub2Array1435 == null)
+						Def6.aClass124_Sub22_Sub16_Sub2Array1435 = Class124_Sub11
 								.method537(Class124_Sub11.aClass94_Sub1_1047, "mapscene", "");
 					else
 						++var2;
 
 					if (null == Class98.aClass124_Sub22_Sub16_Sub1Array771)
-						Class98.aClass124_Sub22_Sub16_Sub1Array771 = Class124_Sub22_Sub11
+						Class98.aClass124_Sub22_Sub16_Sub1Array771 = Def14
 								.method728(Class124_Sub11.aClass94_Sub1_1047, "mapfunction", "");
 					else
 						++var2;
 
 					if (null == Class75.aClass124_Sub22_Sub16_Sub1Array619)
-						Class75.aClass124_Sub22_Sub16_Sub1Array619 = Class124_Sub22_Sub11
+						Class75.aClass124_Sub22_Sub16_Sub1Array619 = Def14
 								.method728(Class124_Sub11.aClass94_Sub1_1047, "hitmarks", "");
 					else
 						++var2;
 
 					if (Class9.aClass124_Sub22_Sub16_Sub1Array101 == null)
-						Class9.aClass124_Sub22_Sub16_Sub1Array101 = Class124_Sub22_Sub11
+						Class9.aClass124_Sub22_Sub16_Sub1Array101 = Def14
 								.method728(Class124_Sub11.aClass94_Sub1_1047, "headicons_pk", "");
 					else
 						++var2;
 
-					if (Class124_Sub22_Sub13.aClass124_Sub22_Sub16_Sub1Array1547 == null)
-						Class124_Sub22_Sub13.aClass124_Sub22_Sub16_Sub1Array1547 = Class124_Sub22_Sub11
+					if (Def12.aClass124_Sub22_Sub16_Sub1Array1547 == null)
+						Def12.aClass124_Sub22_Sub16_Sub1Array1547 = Def14
 								.method728(Class124_Sub11.aClass94_Sub1_1047, "headicons_prayer", "");
 					else
 						++var2;
 
-					if (null == Class124_Sub22_Sub2.aClass124_Sub22_Sub16_Sub1Array1364)
-						Class124_Sub22_Sub2.aClass124_Sub22_Sub16_Sub1Array1364 = Class124_Sub22_Sub11
+					if (null == Def3.aClass124_Sub22_Sub16_Sub1Array1364)
+						Def3.aClass124_Sub22_Sub16_Sub1Array1364 = Def14
 								.method728(Class124_Sub11.aClass94_Sub1_1047, "headicons_hint", "");
 					else
 						++var2;
 
 					if (Class7.aClass124_Sub22_Sub16_Sub1Array72 == null)
-						Class7.aClass124_Sub22_Sub16_Sub1Array72 = Class124_Sub22_Sub11
+						Class7.aClass124_Sub22_Sub16_Sub1Array72 = Def14
 								.method728(Class124_Sub11.aClass94_Sub1_1047, "mapmarker", "");
 					else
 						++var2;
 
 					if (Class135.aClass124_Sub22_Sub16_Sub1Array912 == null)
-						Class135.aClass124_Sub22_Sub16_Sub1Array912 = Class124_Sub22_Sub11
+						Class135.aClass124_Sub22_Sub16_Sub1Array912 = Def14
 								.method728(Class124_Sub11.aClass94_Sub1_1047, "cross", "");
 					else
 						++var2;
 
 					if (Class45.aClass124_Sub22_Sub16_Sub1Array439 == null)
-						Class45.aClass124_Sub22_Sub16_Sub1Array439 = Class124_Sub22_Sub11
+						Class45.aClass124_Sub22_Sub16_Sub1Array439 = Def14
 								.method728(Class124_Sub11.aClass94_Sub1_1047, "mapdots", "");
 					else
 						++var2;
@@ -457,7 +457,7 @@ public class Class72 implements Interface3 {
 						for (final Class124_Sub22_Sub16_Sub1 element : Class98.aClass124_Sub22_Sub16_Sub1Array771)
 							element.method901(var8 + var5, var6 + var8, var8 + var7);
 
-						Class124_Sub22_Sub6.aClass124_Sub22_Sub16_Sub2Array1435[0].method928(var8 + var5, var6 + var8,
+						Def6.aClass124_Sub22_Sub16_Sub2Array1435[0].method928(var8 + var5, var6 + var8,
 								var7 + var8);
 						Class4.aString39 = "Loaded sprites";
 						Class4.anInt38 = 70;
@@ -474,7 +474,7 @@ public class Class72 implements Interface3 {
 			var0.anInt1725 = 0;
 		else {
 			if ((var0.anInt1699 != -1) && (var0.anInt1673 == 0)) {
-				final Class124_Sub22_Sub13 var3 = Class124_Sub22_Sub14.method750(var0.anInt1699);
+				final Def12 var3 = Def15.method750(var0.anInt1699);
 				if ((var0.anInt1726 > 0) && (var3.anInt1544 == 0)) {
 					++var0.anInt1725;
 					return;

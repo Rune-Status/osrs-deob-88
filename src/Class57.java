@@ -21,7 +21,7 @@ public class Class57 {
 				client.anInt2194 = var0;
 				client.anInt2217 = var1;
 				client.aClass124_Sub14_Sub1_2024.method837(139);
-				client.aClass124_Sub14_Sub1_2024.method592(var3);
+				client.aClass124_Sub14_Sub1_2024.writeShort(var3);
 				client.aClass124_Sub14_Sub1_2024.method577(Class84.aBoolArray676[82] ? 1 : 0);
 			}
 		}
@@ -37,14 +37,14 @@ public class Class57 {
 				client.anInt2194 = var0;
 				client.anInt2217 = var1;
 				client.aClass124_Sub14_Sub1_2024.method837(83);
-				client.aClass124_Sub14_Sub1_2024.method592(client.anInt2138);
+				client.aClass124_Sub14_Sub1_2024.writeShort(client.anInt2138);
 				client.aClass124_Sub14_Sub1_2024.method577(Class84.aBoolArray676[82] ? 1 : 0);
 				client.aClass124_Sub14_Sub1_2024.method588(Class124_Sub10.anInt1033);
-				client.aClass124_Sub14_Sub1_2024.method592(var3);
+				client.aClass124_Sub14_Sub1_2024.writeShort(var3);
 			}
 		}
 
-		Class124_Sub17 var22;
+		Widget var22;
 		if (var2 == 1005) {
 			var22 = Class10.method55(var1);
 			if ((var22 != null) && (var22.anIntArray1270[var0] >= 100000))
@@ -76,7 +76,7 @@ public class Class57 {
 			client.anInt2141 = 2;
 			client.anInt2089 = 0;
 			client.aClass124_Sub14_Sub1_2024.method837(161);
-			client.aClass124_Sub14_Sub1_2024.method592((var3 >> 14) & 32767);
+			client.aClass124_Sub14_Sub1_2024.writeShort((var3 >> 14) & 32767);
 		}
 
 		if (var2 == 1) {
@@ -87,10 +87,10 @@ public class Class57 {
 			client.anInt2194 = var0;
 			client.anInt2217 = var1;
 			client.aClass124_Sub14_Sub1_2024.method837(8);
-			client.aClass124_Sub14_Sub1_2024.method592((var3 >> 14) & 32767);
+			client.aClass124_Sub14_Sub1_2024.writeShort((var3 >> 14) & 32767);
 			client.aClass124_Sub14_Sub1_2024.method603(Class38.anInt398);
-			client.aClass124_Sub14_Sub1_2024.method592(Class124_Sub19.anInt1299);
-			client.aClass124_Sub14_Sub1_2024.method545(Class84.aBoolArray676[82] ? 1 : 0);
+			client.aClass124_Sub14_Sub1_2024.writeShort(Class124_Sub19.anInt1299);
+			client.aClass124_Sub14_Sub1_2024.writeByte(Class84.aBoolArray676[82] ? 1 : 0);
 			client.aClass124_Sub14_Sub1_2024.method587(Class9.anInt102 + var0);
 			client.aClass124_Sub14_Sub1_2024.method587(var1 + Class95.anInt762);
 			client.aClass124_Sub14_Sub1_2024.method581(Class87.anInt692);
@@ -106,8 +106,8 @@ public class Class57 {
 			client.aClass124_Sub14_Sub1_2024.method837(200);
 			client.aClass124_Sub14_Sub1_2024.method587(var3);
 			client.aClass124_Sub14_Sub1_2024.method577(Class84.aBoolArray676[82] ? 1 : 0);
-			client.aClass124_Sub14_Sub1_2024.method592(Class9.anInt102 + var0);
-			client.aClass124_Sub14_Sub1_2024.method592(Class95.anInt762 + var1);
+			client.aClass124_Sub14_Sub1_2024.writeShort(Class9.anInt102 + var0);
+			client.aClass124_Sub14_Sub1_2024.writeShort(Class95.anInt762 + var1);
 		}
 
 		int var9;
@@ -146,7 +146,7 @@ public class Class57 {
 			client.anInt2217 = var1;
 			client.aClass124_Sub14_Sub1_2024.method837(124);
 			client.aClass124_Sub14_Sub1_2024.method576(Class84.aBoolArray676[82] ? 1 : 0);
-			client.aClass124_Sub14_Sub1_2024.method592(var1 + Class95.anInt762);
+			client.aClass124_Sub14_Sub1_2024.writeShort(var1 + Class95.anInt762);
 			client.aClass124_Sub14_Sub1_2024.method581((var3 >> 14) & 32767);
 			client.aClass124_Sub14_Sub1_2024.method581(var0 + Class9.anInt102);
 		}
@@ -183,7 +183,7 @@ public class Class57 {
 			client.aClass124_Sub14_Sub1_2024.method837(169);
 			client.aClass124_Sub14_Sub1_2024.method587(var3);
 			client.aClass124_Sub14_Sub1_2024.method586(var1);
-			client.aClass124_Sub14_Sub1_2024.method592(var0);
+			client.aClass124_Sub14_Sub1_2024.writeShort(var0);
 			client.anInt2010 = 0;
 			Class72.aClass124_Sub17_598 = Class10.method55(var1);
 			client.anInt2092 = var0;
@@ -246,7 +246,7 @@ public class Class57 {
 			client.anInt2194 = var0;
 			client.anInt2217 = var1;
 			client.aClass124_Sub14_Sub1_2024.method837(87);
-			client.aClass124_Sub14_Sub1_2024.method592(var3);
+			client.aClass124_Sub14_Sub1_2024.writeShort(var3);
 			client.aClass124_Sub14_Sub1_2024.method587(Class87.anInt692);
 			client.aClass124_Sub14_Sub1_2024.method580(Class95.anInt762 + var1);
 			client.aClass124_Sub14_Sub1_2024.method587(Class124_Sub19.anInt1299);
@@ -263,16 +263,16 @@ public class Class57 {
 			client.anInt2194 = var0;
 			client.anInt2217 = var1;
 			client.aClass124_Sub14_Sub1_2024.method837(69);
-			client.aClass124_Sub14_Sub1_2024.method592((var3 >> 14) & 32767);
+			client.aClass124_Sub14_Sub1_2024.writeShort((var3 >> 14) & 32767);
 			client.aClass124_Sub14_Sub1_2024.method580(var1 + Class95.anInt762);
-			client.aClass124_Sub14_Sub1_2024.method545(Class84.aBoolArray676[82] ? 1 : 0);
-			client.aClass124_Sub14_Sub1_2024.method592(Class9.anInt102 + var0);
+			client.aClass124_Sub14_Sub1_2024.writeByte(Class84.aBoolArray676[82] ? 1 : 0);
+			client.aClass124_Sub14_Sub1_2024.writeShort(Class9.anInt102 + var0);
 		}
 
 		if ((var2 == 30) && (client.aClass124_Sub17_2042 == null)) {
 			client.aClass124_Sub14_Sub1_2024.method837(198);
 			client.aClass124_Sub14_Sub1_2024.method548(var1);
-			client.aClass124_Sub14_Sub1_2024.method592(var0);
+			client.aClass124_Sub14_Sub1_2024.writeShort(var0);
 			client.aClass124_Sub17_2042 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
 			Class124_Sub22_Sub10.method723(client.aClass124_Sub17_2042);
 		}
@@ -287,8 +287,8 @@ public class Class57 {
 			client.aClass124_Sub14_Sub1_2024.method837(240);
 			client.aClass124_Sub14_Sub1_2024.method581(var0 + Class9.anInt102);
 			client.aClass124_Sub14_Sub1_2024.method587(Class95.anInt762 + var1);
-			client.aClass124_Sub14_Sub1_2024.method545(Class84.aBoolArray676[82] ? 1 : 0);
-			client.aClass124_Sub14_Sub1_2024.method592((var3 >> 14) & 32767);
+			client.aClass124_Sub14_Sub1_2024.writeByte(Class84.aBoolArray676[82] ? 1 : 0);
+			client.aClass124_Sub14_Sub1_2024.writeShort((var3 >> 14) & 32767);
 		}
 
 		if (var2 == 20) {
@@ -301,8 +301,8 @@ public class Class57 {
 			client.aClass124_Sub14_Sub1_2024.method837(195);
 			client.aClass124_Sub14_Sub1_2024.method587(Class95.anInt762 + var1);
 			client.aClass124_Sub14_Sub1_2024.method580(var3);
-			client.aClass124_Sub14_Sub1_2024.method592(var0 + Class9.anInt102);
-			client.aClass124_Sub14_Sub1_2024.method545(Class84.aBoolArray676[82] ? 1 : 0);
+			client.aClass124_Sub14_Sub1_2024.writeShort(var0 + Class9.anInt102);
+			client.aClass124_Sub14_Sub1_2024.writeByte(Class84.aBoolArray676[82] ? 1 : 0);
 		}
 
 		if (var2 == 46) {
@@ -316,7 +316,7 @@ public class Class57 {
 				client.anInt2217 = var1;
 				client.aClass124_Sub14_Sub1_2024.method837(64);
 				client.aClass124_Sub14_Sub1_2024.method578(Class84.aBoolArray676[82] ? 1 : 0);
-				client.aClass124_Sub14_Sub1_2024.method592(var3);
+				client.aClass124_Sub14_Sub1_2024.writeShort(var3);
 			}
 		}
 
@@ -330,8 +330,8 @@ public class Class57 {
 				client.anInt2194 = var0;
 				client.anInt2217 = var1;
 				client.aClass124_Sub14_Sub1_2024.method837(190);
-				client.aClass124_Sub14_Sub1_2024.method545(Class84.aBoolArray676[82] ? 1 : 0);
-				client.aClass124_Sub14_Sub1_2024.method592(var3);
+				client.aClass124_Sub14_Sub1_2024.writeByte(Class84.aBoolArray676[82] ? 1 : 0);
+				client.aClass124_Sub14_Sub1_2024.writeShort(var3);
 			}
 		}
 
@@ -345,7 +345,7 @@ public class Class57 {
 				client.anInt2194 = var0;
 				client.anInt2217 = var1;
 				client.aClass124_Sub14_Sub1_2024.method837(31);
-				client.aClass124_Sub14_Sub1_2024.method545(Class84.aBoolArray676[82] ? 1 : 0);
+				client.aClass124_Sub14_Sub1_2024.writeByte(Class84.aBoolArray676[82] ? 1 : 0);
 				client.aClass124_Sub14_Sub1_2024.method581(var3);
 			}
 		}
@@ -370,7 +370,7 @@ public class Class57 {
 			client.aClass124_Sub14_Sub1_2024.method837(189);
 			client.aClass124_Sub14_Sub1_2024.method580(Class95.anInt762 + var1);
 			client.aClass124_Sub14_Sub1_2024.method581(var0 + Class9.anInt102);
-			client.aClass124_Sub14_Sub1_2024.method592((var3 >> 14) & 32767);
+			client.aClass124_Sub14_Sub1_2024.writeShort((var3 >> 14) & 32767);
 			client.aClass124_Sub14_Sub1_2024.method577(Class84.aBoolArray676[82] ? 1 : 0);
 		}
 
@@ -379,7 +379,7 @@ public class Class57 {
 			var22 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
 			if (var22 != null) {
 				var9 = var22.anInt1271;
-				final Class124_Sub17 var11 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
+				final Widget var11 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
 				if (var11 != null) {
 					if (null != var11.anObjectArray1198) {
 						final Class124_Sub6 var16 = new Class124_Sub6();
@@ -402,71 +402,71 @@ public class Class57 {
 							if (var3 == 1) {
 								client.aClass124_Sub14_Sub1_2024.method837(182);
 								client.aClass124_Sub14_Sub1_2024.method548(var1);
-								client.aClass124_Sub14_Sub1_2024.method592(var0);
-								client.aClass124_Sub14_Sub1_2024.method592(var9);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var0);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var9);
 							}
 
 							if (var3 == 2) {
 								client.aClass124_Sub14_Sub1_2024.method837(253);
 								client.aClass124_Sub14_Sub1_2024.method548(var1);
-								client.aClass124_Sub14_Sub1_2024.method592(var0);
-								client.aClass124_Sub14_Sub1_2024.method592(var9);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var0);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var9);
 							}
 
 							if (var3 == 3) {
 								client.aClass124_Sub14_Sub1_2024.method837(209);
 								client.aClass124_Sub14_Sub1_2024.method548(var1);
-								client.aClass124_Sub14_Sub1_2024.method592(var0);
-								client.aClass124_Sub14_Sub1_2024.method592(var9);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var0);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var9);
 							}
 
 							if (var3 == 4) {
 								client.aClass124_Sub14_Sub1_2024.method837(197);
 								client.aClass124_Sub14_Sub1_2024.method548(var1);
-								client.aClass124_Sub14_Sub1_2024.method592(var0);
-								client.aClass124_Sub14_Sub1_2024.method592(var9);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var0);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var9);
 							}
 
 							if (var3 == 5) {
 								client.aClass124_Sub14_Sub1_2024.method837(118);
 								client.aClass124_Sub14_Sub1_2024.method548(var1);
-								client.aClass124_Sub14_Sub1_2024.method592(var0);
-								client.aClass124_Sub14_Sub1_2024.method592(var9);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var0);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var9);
 							}
 
 							if (var3 == 6) {
 								client.aClass124_Sub14_Sub1_2024.method837(230);
 								client.aClass124_Sub14_Sub1_2024.method548(var1);
-								client.aClass124_Sub14_Sub1_2024.method592(var0);
-								client.aClass124_Sub14_Sub1_2024.method592(var9);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var0);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var9);
 							}
 
 							if (var3 == 7) {
 								client.aClass124_Sub14_Sub1_2024.method837(183);
 								client.aClass124_Sub14_Sub1_2024.method548(var1);
-								client.aClass124_Sub14_Sub1_2024.method592(var0);
-								client.aClass124_Sub14_Sub1_2024.method592(var9);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var0);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var9);
 							}
 
 							if (var3 == 8) {
 								client.aClass124_Sub14_Sub1_2024.method837(152);
 								client.aClass124_Sub14_Sub1_2024.method548(var1);
-								client.aClass124_Sub14_Sub1_2024.method592(var0);
-								client.aClass124_Sub14_Sub1_2024.method592(var9);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var0);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var9);
 							}
 
 							if (var3 == 9) {
 								client.aClass124_Sub14_Sub1_2024.method837(23);
 								client.aClass124_Sub14_Sub1_2024.method548(var1);
-								client.aClass124_Sub14_Sub1_2024.method592(var0);
-								client.aClass124_Sub14_Sub1_2024.method592(var9);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var0);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var9);
 							}
 
 							if (var3 == 10) {
 								client.aClass124_Sub14_Sub1_2024.method837(59);
 								client.aClass124_Sub14_Sub1_2024.method548(var1);
-								client.aClass124_Sub14_Sub1_2024.method592(var0);
-								client.aClass124_Sub14_Sub1_2024.method592(var9);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var0);
+								client.aClass124_Sub14_Sub1_2024.writeShort(var9);
 							}
 						}
 					}
@@ -502,7 +502,7 @@ public class Class57 {
 			client.aClass124_Sub14_Sub1_2024.method837(1);
 			client.aClass124_Sub14_Sub1_2024.method586(var1);
 			client.aClass124_Sub14_Sub1_2024.method581(var3);
-			client.aClass124_Sub14_Sub1_2024.method592(var0);
+			client.aClass124_Sub14_Sub1_2024.writeShort(var0);
 			client.anInt2010 = 0;
 			Class72.aClass124_Sub17_598 = Class10.method55(var1);
 			client.anInt2092 = var0;
@@ -524,8 +524,8 @@ public class Class57 {
 		if (var2 == 32) {
 			client.aClass124_Sub14_Sub1_2024.method837(11);
 			client.aClass124_Sub14_Sub1_2024.method588(var1);
-			client.aClass124_Sub14_Sub1_2024.method592(var3);
-			client.aClass124_Sub14_Sub1_2024.method592(client.anInt2138);
+			client.aClass124_Sub14_Sub1_2024.writeShort(var3);
+			client.aClass124_Sub14_Sub1_2024.writeShort(client.anInt2138);
 			client.aClass124_Sub14_Sub1_2024.method587(var0);
 			client.aClass124_Sub14_Sub1_2024.method548(Class124_Sub10.anInt1033);
 			client.anInt2010 = 0;
@@ -535,7 +535,7 @@ public class Class57 {
 
 		if (var2 == 33) {
 			client.aClass124_Sub14_Sub1_2024.method837(208);
-			client.aClass124_Sub14_Sub1_2024.method592(var3);
+			client.aClass124_Sub14_Sub1_2024.writeShort(var3);
 			client.aClass124_Sub14_Sub1_2024.method581(var0);
 			client.aClass124_Sub14_Sub1_2024.method548(var1);
 			client.anInt2010 = 0;
@@ -584,7 +584,7 @@ public class Class57 {
 				client.anInt2217 = var1;
 				client.aClass124_Sub14_Sub1_2024.method837(231);
 				client.aClass124_Sub14_Sub1_2024.method577(Class84.aBoolArray676[82] ? 1 : 0);
-				client.aClass124_Sub14_Sub1_2024.method592(client.anInt2138);
+				client.aClass124_Sub14_Sub1_2024.writeShort(client.anInt2138);
 				client.aClass124_Sub14_Sub1_2024.method581(var3);
 				client.aClass124_Sub14_Sub1_2024.method586(Class124_Sub10.anInt1033);
 			}
@@ -597,7 +597,7 @@ public class Class57 {
 			client.anInt2089 = 0;
 			var21 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var3];
 			if (var21 != null) {
-				Class124_Sub22_Sub1 var13 = var21.aClass124_Sub22_Sub1_1941;
+				Def9 var13 = var21.aClass124_Sub22_Sub1_1941;
 				if (null != var13.anIntArray1342)
 					var13 = var13.method644();
 
@@ -615,7 +615,7 @@ public class Class57 {
 				final int var19 = Class124_Sub22_Sub19_Sub6.method963(var22);
 				var9 = (var19 >> 11) & 63;
 				final int var24 = var22.anInt1271;
-				final Class124_Sub17 var18 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
+				final Widget var18 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
 				if ((var18 != null) && (null != var18.anObjectArray1236)) {
 					final Class124_Sub6 var20 = new Class124_Sub6();
 					var20.aClass124_Sub17_994 = var18;
@@ -677,7 +677,7 @@ public class Class57 {
 				client.aClass124_Sub14_Sub1_2024.method837(119);
 				client.aClass124_Sub14_Sub1_2024.method581(var1 + Class95.anInt762);
 				client.aClass124_Sub14_Sub1_2024.method577(Class84.aBoolArray676[82] ? 1 : 0);
-				client.aClass124_Sub14_Sub1_2024.method592(Class9.anInt102 + var0);
+				client.aClass124_Sub14_Sub1_2024.writeShort(Class9.anInt102 + var0);
 				client.aClass124_Sub14_Sub1_2024.method587((var3 >> 14) & 32767);
 			}
 
@@ -779,7 +779,7 @@ public class Class57 {
 					client.anInt2217 = var1;
 					client.aClass124_Sub14_Sub1_2024.method837(186);
 					client.aClass124_Sub14_Sub1_2024.method576(Class84.aBoolArray676[82] ? 1 : 0);
-					client.aClass124_Sub14_Sub1_2024.method592(var3);
+					client.aClass124_Sub14_Sub1_2024.writeShort(var3);
 				}
 			}
 
@@ -799,7 +799,7 @@ public class Class57 {
 				for (Class124_Sub7 var25 = (Class124_Sub7) client.aClass107_2143
 						.method411(); null != var25; var25 = (Class124_Sub7) client.aClass107_2143.method413())
 					if ((var25.anInt1008 == 0) || (var25.anInt1008 == 3))
-						Class124_Sub22_Sub15.method760(var25, true);
+						Def4.method760(var25, true);
 
 				if (null != client.aClass124_Sub17_2042) {
 					Class124_Sub22_Sub10.method723(client.aClass124_Sub17_2042);

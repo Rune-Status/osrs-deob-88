@@ -4,8 +4,8 @@ public class Class12 {
 	int anInt124;
 
 	public static Class12 method68(final Class94 var0, final int var1, final int var2) {
-		final byte[] var3 = var0.method377(var1, var2);
-		return var3 == null ? null : new Class12(new Class124_Sub14(var3));
+		final byte[] var3 = var0.decode(var1, var2);
+		return var3 == null ? null : new Class12(new RSBuf(var3));
 	}
 
 	public Class124_Sub2_Sub1 method69() {
@@ -13,11 +13,11 @@ public class Class12 {
 		return new Class124_Sub2_Sub1(22050, var1, (22050 * anInt122) / 1000, (22050 * anInt124) / 1000);
 	}
 
-	Class12(final Class124_Sub14 var1) {
+	Class12(final RSBuf var1) {
 		for (int var2 = 0; var2 < 10; ++var2) {
 			final int var3 = var1.method558();
 			if (var3 != 0) {
-				--var1.anInt1075;
+				--var1.pos;
 				aClass19Array123[var2] = new Class19();
 				aClass19Array123[var2].method92(var1);
 			}

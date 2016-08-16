@@ -47,7 +47,7 @@ public final class Class78 implements Runnable {
 	static final boolean method321(final char var0) {
 		if (Character.isISOControl(var0))
 			return false;
-		else if (Class124_Sub22_Sub4.method671(var0))
+		else if (Def16.method671(var0))
 			return true;
 		else {
 			char[] var2 = Class95.aCharArray763;
@@ -178,7 +178,7 @@ public final class Class78 implements Runnable {
 
 			if (null != aClass79_630) {
 				while (aClass79_630.anInt642 == 0)
-					client.method1067(1L);
+					client.sleep(1L);
 
 				if (aClass79_630.anInt642 == 1)
 					try {
@@ -192,10 +192,10 @@ public final class Class78 implements Runnable {
 		}
 	}
 
-	static void method325(final Class124_Sub17[] var0, final int var1, final int var2, final int var3,
+	static void method325(final Widget[] var0, final int var1, final int var2, final int var3,
 			final boolean var4) {
-		for (final Class124_Sub17 element : var0) {
-			final Class124_Sub17 var6 = element;
+		for (final Widget element : var0) {
+			final Widget var6 = element;
 			if ((var6 != null) && (var1 == var6.anInt1259)) {
 				Class25.method161(var6, var2, var3, var4);
 				Class43.method221(var6, var2, var3);
@@ -212,7 +212,7 @@ public final class Class78 implements Runnable {
 					var6.anInt1175 = 0;
 
 				if (var6.anInt1191 == 0)
-					Class124_Sub22_Sub18.method831(var0, var6, var4);
+					Somet2.method831(var0, var6, var4);
 			}
 		}
 

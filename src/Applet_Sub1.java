@@ -74,7 +74,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		}
 
 		Class56_Sub2.anInt1083 = Math.max(var1.getWidth(), Class51.anInt489);
-		Class81.anInt662 = Math.max(var1.getHeight(), Class124_Sub22_Sub2.anInt1356);
+		Class81.anInt662 = Math.max(var1.getHeight(), Def3.anInt1356);
 		Insets var2;
 		if (Class69.aFrame578 != null) {
 			var2 = Class69.aFrame578.getInsets();
@@ -95,7 +95,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		Class124_Sub5.aCanvas990.addFocusListener(this);
 		Class124_Sub5.aCanvas990.requestFocus();
 		aBool1968 = true;
-		final Class9 var3 = Class124_Sub22_Sub8.method701(Class56_Sub2.anInt1083, Class81.anInt662,
+		final Class9 var3 = Def8.method701(Class56_Sub2.anInt1083, Class81.anInt662,
 				Class124_Sub5.aCanvas990);
 		if (null != Class64.aClass9_558)
 			Class64.aClass9_558.method52(var3.anImage98.getGraphics(), 0, 0, (byte) 7);
@@ -250,7 +250,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	public void destroy() {
 		if ((this == anApplet_Sub1_1977) && !aBool1966) {
 			aLong1965 = Class74.method316(1271628832);
-			client.method1067(5000L);
+			client.sleep(5000L);
 			method1053();
 		}
 	}
@@ -301,7 +301,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	protected Dimension method1060() {
 		final Container var1 = method1059();
 		int var3 = Math.max(var1.getWidth(), Class51.anInt489);
-		int var4 = Math.max(var1.getHeight(), Class124_Sub22_Sub2.anInt1356);
+		int var4 = Math.max(var1.getHeight(), Def3.anInt1356);
 		if (Class69.aFrame578 != null) {
 			final Insets var2 = Class69.aFrame578.getInsets();
 			var3 -= var2.right + var2.left;
@@ -365,7 +365,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			setFocusCycleRoot(true);
 			method1050();
 			method1062((byte) -45);
-			Class89.aClass56_704 = Class124_Sub22_Sub3.method657(-305588893);
+			Class89.aClass56_704 = Def1.method657(-305588893);
 
 			label72: while (true) {
 				Class82 var8;
@@ -386,7 +386,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				} while (null == var8.anEventQueue666);
 
 				for (var3 = 0; (var3 < 50) && (var8.anEventQueue666.peekEvent() != null); ++var3)
-					client.method1067(1L);
+					client.sleep(1L);
 
 				if (null != var9)
 					var8.anEventQueue666.postEvent(new ActionEvent(var9, 1001, "dummy"));

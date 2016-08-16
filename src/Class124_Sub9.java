@@ -1,11 +1,11 @@
-public class Class124_Sub9 extends Class124 {
+public class Class124_Sub9 extends Node {
 	String aString1026;
 	int anInt1027;
 	byte aByte1028;
 	String aString1029;
 
 	public static void method532(final Class94 var0) {
-		Class124_Sub22_Sub14.aClass94_1551 = var0;
+		Def15.aClass94_1551 = var0;
 	}
 
 	static final int method533(final int var0, final int var1) {
@@ -23,14 +23,14 @@ public class Class124_Sub9 extends Class124 {
 			if ((Class27.aByteArrayArrayArray285[var0][var1][var2] & 16) != 0)
 				return;
 
-			if (Class124_Sub22_Sub14.method754(var0, var1, var2) != client.anInt2006)
+			if (Def15.method754(var0, var1, var2) != client.anInt2006)
 				return;
 		}
 
 		if (var0 < Class27.anInt290)
 			Class27.anInt290 = var0;
 
-		final Class124_Sub22_Sub6 var9 = Class124_Sub22_Sub12.method736(var3);
+		final Def6 var9 = Def13.method736(var3);
 		int var10;
 		int var11;
 		if ((var4 != 1) && (var4 != 3)) {
@@ -267,7 +267,7 @@ public class Class124_Sub9 extends Class124 {
 						var15 = 16;
 						var8 = var6.method136(var0, var1, var2);
 						if (var8 != 0)
-							var15 = Class124_Sub22_Sub12.method736((var8 >> 14) & 32767).anInt1423;
+							var15 = Def13.method736((var8 >> 14) & 32767).anInt1423;
 
 						if ((var9.anInt1409 == -1) && (var9.anIntArray1427 == null))
 							var26 = var9.method681(4, var4, var17, var25, var19, var20);
@@ -282,7 +282,7 @@ public class Class124_Sub9 extends Class124 {
 						var15 = 8;
 						var8 = var6.method136(var0, var1, var2);
 						if (var8 != 0)
-							var15 = Class124_Sub22_Sub12.method736((var8 >> 14) & 32767).anInt1423 / 2;
+							var15 = Def13.method736((var8 >> 14) & 32767).anInt1423 / 2;
 
 						if ((var9.anInt1409 == -1) && (null == var9.anIntArray1427))
 							var26 = var9.method681(4, 4 + var4, var17, var25, var19, var20);
@@ -307,7 +307,7 @@ public class Class124_Sub9 extends Class124 {
 						var15 = 8;
 						var8 = var6.method136(var0, var1, var2);
 						if (var8 != 0)
-							var15 = Class124_Sub22_Sub12.method736((var8 >> 14) & 32767).anInt1423 / 2;
+							var15 = Def13.method736((var8 >> 14) & 32767).anInt1423 / 2;
 
 						final int var28 = (2 + var4) & 3;
 						Object var29;

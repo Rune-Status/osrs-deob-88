@@ -51,7 +51,7 @@ public class Class56_Sub2 extends Class56 {
 		if (anInt1080 < var2)
 			anInt1080 = var2;
 
-		client.method1067(anInt1080);
+		client.sleep(anInt1080);
 
 		for (var6 = 0; anInt1082 < 256; anInt1082 += anInt1079)
 			++var6;

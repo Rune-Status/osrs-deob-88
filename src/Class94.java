@@ -19,8 +19,8 @@ public abstract class Class94 {
 	boolean aBool760;
 
 	void method363(final byte[] var1) {
-		anInt756 = Class124_Sub22_Sub8.method700(var1, var1.length);
-		final Class124_Sub14 var3 = new Class124_Sub14(Class124_Sub22_Sub11.method729(var1));
+		anInt756 = Def8.method700(var1, var1.length);
+		final RSBuf var3 = new RSBuf(Def14.method729(var1));
 		final int var4 = var3.method558();
 		if ((var4 >= 5) && (var4 <= 7)) {
 			if (var4 >= 6)
@@ -139,7 +139,7 @@ public abstract class Class94 {
 		return var2 == -1 ? method379(var1, "") : method379("", var1);
 	}
 
-	public boolean method366(final int var1, final int var2) {
+	public boolean valid(final int var1, final int var2) {
 		if ((var1 >= 0) && (var1 < anObjectArrayArray754.length) && (null != anObjectArrayArray754[var1]) && (var2 >= 0)
 				&& (var2 < anObjectArrayArray754[var1].length)) {
 			if (null != anObjectArrayArray754[var1][var2])
@@ -154,7 +154,7 @@ public abstract class Class94 {
 			return false;
 	}
 
-	public boolean method367() {
+	public boolean valid() {
 		boolean var1 = true;
 
 		for (final int var2 : anIntArray744) {
@@ -168,17 +168,17 @@ public abstract class Class94 {
 		return var1;
 	}
 
-	public byte[] method368(final int var1) {
+	public byte[] decode(final int var1) {
 		if (anObjectArrayArray754.length != 1) {
 			if (anObjectArrayArray754[var1].length == 1)
-				return method377(var1, 0);
+				return decode(var1, 0);
 			else
 				throw new RuntimeException();
 		} else
-			return method377(0, var1);
+			return decode(0, var1);
 	}
 
-	public void method369() {
+	public void empty() {
 		for (int var1 = 0; var1 < anObjectArrayArray754.length; ++var1)
 			if (anObjectArrayArray754[var1] != null)
 				for (int var2 = 0; var2 < anObjectArrayArray754[var1].length; ++var2)
@@ -191,12 +191,12 @@ public abstract class Class94 {
 			if (anObjectArrayArray754[var1].length != 1)
 				throw new RuntimeException();
 			else
-				return method380(var1, 0);
+				return decode2(var1, 0);
 		} else
-			return method380(0, var1);
+			return decode2(0, var1);
 	}
 
-	public byte[] method371(final int var1, final int var2, final int[] var3) {
+	public byte[] decode(final int var1, final int var2, final int[] var3) {
 		if ((var1 >= 0) && (var1 < anObjectArrayArray754.length) && (anObjectArrayArray754[var1] != null) && (var2 >= 0)
 				&& (var2 < anObjectArrayArray754[var1].length)) {
 			if (null == anObjectArrayArray754[var1][var2]) {
@@ -232,7 +232,7 @@ public abstract class Class94 {
 
 	}
 
-	public boolean method375(final int var1) {
+	public boolean validWidget(final int var1) {
 		if (anObjectArray753[var1] == null) {
 			method381(var1, (short) 6563);
 			return anObjectArray753[var1] != null;
@@ -242,27 +242,27 @@ public abstract class Class94 {
 
 	public int method376(String var1) {
 		var1 = var1.toLowerCase();
-		return aClass109_746.method419(Class124_Sub22_Sub9.method708(var1));
+		return aClass109_746.method419(Def5.method708(var1));
 	}
 
-	public byte[] method377(final int var1, final int var2) {
-		return method371(var1, var2, (int[]) null);
+	public byte[] decode(final int var1, final int var2) {
+		return decode(var1, var2, (int[]) null);
 	}
 
 	public byte[] method378(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
-		final int var3 = aClass109_746.method419(Class124_Sub22_Sub9.method708(var1));
-		final int var4 = aClass109Array752[var3].method419(Class124_Sub22_Sub9.method708(var2));
-		return method377(var3, var4);
+		final int var3 = aClass109_746.method419(Def5.method708(var1));
+		final int var4 = aClass109Array752[var3].method419(Def5.method708(var2));
+		return decode(var3, var4);
 	}
 
 	public boolean method379(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
-		final int var3 = aClass109_746.method419(Class124_Sub22_Sub9.method708(var1));
-		final int var4 = aClass109Array752[var3].method419(Class124_Sub22_Sub9.method708(var2));
-		return method366(var3, var4);
+		final int var3 = aClass109_746.method419(Def5.method708(var1));
+		final int var4 = aClass109Array752[var3].method419(Def5.method708(var2));
+		return valid(var3, var4);
 	}
 
 	Class94(final boolean var1, final boolean var2) {
@@ -270,7 +270,7 @@ public abstract class Class94 {
 		aBool760 = var2;
 	}
 
-	public byte[] method380(final int var1, final int var2) {
+	public byte[] decode2(final int var1, final int var2) {
 		if ((var1 >= 0) && (var1 < anObjectArrayArray754.length) && (anObjectArrayArray754[var1] != null) && (var2 >= 0)
 				&& (var2 < anObjectArrayArray754[var1].length)) {
 			if (null == anObjectArrayArray754[var1][var2]) {
@@ -292,18 +292,18 @@ public abstract class Class94 {
 	void method381(final int var1, final short var2) {
 	}
 
-	public int method382(final int var1) {
+	public int widgetLen(final int var1) {
 		return anObjectArrayArray754[var1].length;
 	}
 
 	public int method383(final int var1, String var2) {
 		var2 = var2.toLowerCase();
-		return aClass109Array752[var1].method419(Class124_Sub22_Sub9.method708(var2));
+		return aClass109Array752[var1].method419(Def5.method708(var2));
 	}
 
 	public void method384(String var1) {
 		var1 = var1.toLowerCase();
-		final int var2 = aClass109_746.method419(Class124_Sub22_Sub9.method708(var1));
+		final int var2 = aClass109_746.method419(Def5.method708(var1));
 		if (var2 >= 0)
 			method364(var2, -1484277722);
 	}
@@ -329,12 +329,12 @@ public abstract class Class94 {
 				byte[] var8;
 				if ((null != var2) && ((var2[0] != 0) || (var2[1] != 0) || (var2[2] != 0) || (var2[3] != 0))) {
 					var8 = Class67.method299(anObjectArray753[var1], true);
-					final Class124_Sub14 var9 = new Class124_Sub14(var8);
-					var9.method585(var2, 5, var9.aByteArray1073.length);
+					final RSBuf var9 = new RSBuf(var8);
+					var9.method585(var2, 5, var9.backing.length);
 				} else
 					var8 = Class67.method299(anObjectArray753[var1], false);
 
-				final byte[] var20 = Class124_Sub22_Sub11.method729(var8);
+				final byte[] var20 = Def14.method729(var8);
 				if (aBool757)
 					anObjectArray753[var1] = null;
 
@@ -343,9 +343,9 @@ public abstract class Class94 {
 					--var10;
 					final int var11 = var20[var10] & 255;
 					var10 -= var3 * var11 * 4;
-					final Class124_Sub14 var12 = new Class124_Sub14(var20);
+					final RSBuf var12 = new RSBuf(var20);
 					final int[] var13 = new int[var3];
-					var12.anInt1075 = var10;
+					var12.pos = var10;
 
 					int var15;
 					int var16;
@@ -365,7 +365,7 @@ public abstract class Class94 {
 						var13[var15] = 0;
 					}
 
-					var12.anInt1075 = var10;
+					var12.pos = var10;
 					var15 = 0;
 
 					for (var16 = 0; var16 < var11; ++var16) {

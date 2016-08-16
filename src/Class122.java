@@ -16,7 +16,7 @@ public class Class122 {
 	static Class122 aClass122_869 = new Class122("15", "15");
 	public String aString857;
 
-	static final int method448(final Class124_Sub17 var0, final int var1) {
+	static final int method448(final Widget var0, final int var1) {
 		if ((var0.anIntArrayArray1278 != null) && (var1 < var0.anIntArrayArray1278.length))
 			try {
 				final int[] var2 = var0.anIntArrayArray1278[var1];
@@ -41,7 +41,7 @@ public class Class122 {
 						var7 = client.anIntArray2121[var2[var4++]];
 
 					int var9;
-					Class124_Sub17 var10;
+					Widget var10;
 					int var11;
 					int var12;
 					if (var6 == 4) {
@@ -145,8 +145,8 @@ public class Class122 {
 	}
 
 	static final void method449(final int var0, final int var1, final int var2, final boolean var3) {
-		if (Class89.method346(var0))
-			Class78.method325(Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0], -1, var1, var2, var3);
+		if (Class89.loadwidget(var0))
+			Class78.method325(Class124_Sub22_Sub10.widgets[var0], -1, var1, var2, var3);
 	}
 
 	Class122(final String var1, final String var2) {

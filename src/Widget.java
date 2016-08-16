@@ -1,4 +1,4 @@
-public class Class124_Sub17 extends Class124 {
+public class Widget extends Node {
 	public Object[] anObjectArray1144;
 	public static Class94 aClass94_1145;
 	public static Class94 aClass94_1146;
@@ -11,8 +11,8 @@ public class Class124_Sub17 extends Class124 {
 	public Object[] anObjectArray1258;
 	public Object[] anObjectArray1261;
 	public Object[] anObjectArray1262;
-	public Class124_Sub17[] aClass124_Sub17Array1263;
-	public static boolean[] aBoolArray1267;
+	public Widget[] aClass124_Sub17Array1263;
+	public static boolean[] widgetLoaded;
 	public boolean aBool1152 = false;
 	public int anInt1191;
 	public int anInt1156 = 0;
@@ -127,7 +127,7 @@ public class Class124_Sub17 extends Class124 {
 	public int anInt1175 = 0;
 	public int anInt1207 = 0;
 	public int anInt1209 = 2;
-	public Class124_Sub17 aClass124_Sub17_1251 = null;
+	public Widget aClass124_Sub17_1251 = null;
 	public int anInt1271 = -1;
 	public int anInt1272 = 0;
 	public int anInt1273 = 0;
@@ -142,7 +142,7 @@ public class Class124_Sub17 extends Class124 {
 	public int anInt1283 = -1;
 	public boolean aBool1285 = false;
 
-	void method620(final Class124_Sub14 var1) {
+	void method620(final RSBuf var1) {
 		aBool1152 = false;
 		anInt1191 = var1.method558();
 		anInt1156 = var1.method558();
@@ -369,7 +369,7 @@ public class Class124_Sub17 extends Class124 {
 
 	}
 
-	void method621(final Class124_Sub14 var1) {
+	void method621(final RSBuf var1) {
 		var1.method558();
 		aBool1152 = true;
 		anInt1191 = var1.method558();
@@ -497,7 +497,7 @@ public class Class124_Sub17 extends Class124 {
 		anIntArray1249 = method623(var1);
 	}
 
-	Object[] method622(final Class124_Sub14 var1) {
+	Object[] method622(final RSBuf var1) {
 		final int var2 = var1.method558();
 		if (var2 == 0)
 			return null;
@@ -517,7 +517,7 @@ public class Class124_Sub17 extends Class124 {
 		}
 	}
 
-	int[] method623(final Class124_Sub14 var1) {
+	int[] method623(final RSBuf var1) {
 		final int var2 = var1.method558();
 		if (var2 == 0)
 			return null;
@@ -611,7 +611,7 @@ public class Class124_Sub17 extends Class124 {
 			return null;
 	}
 
-	public Class124_Sub22_Sub19_Sub7 method627(final Class124_Sub22_Sub13 var1, final int var2, final boolean var3,
+	public Class124_Sub22_Sub19_Sub7 method627(final Def12 var1, final int var2, final boolean var3,
 			final Class100 var4) {
 		aBool1151 = false;
 		int var6;
@@ -754,9 +754,9 @@ public class Class124_Sub17 extends Class124 {
 		for (Class124_Sub7 var0 = (Class124_Sub7) client.aClass107_2143
 				.method411(); var0 != null; var0 = (Class124_Sub7) client.aClass107_2143.method413()) {
 			final int var3 = var0.anInt1012;
-			if (Class89.method346(var3)) {
+			if (Class89.loadwidget(var3)) {
 				boolean var4 = true;
-				final Class124_Sub17[] var1 = Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var3];
+				final Widget[] var1 = Class124_Sub22_Sub10.widgets[var3];
 
 				int var2;
 				for (var2 = 0; var2 < var1.length; ++var2)
@@ -767,7 +767,7 @@ public class Class124_Sub17 extends Class124 {
 
 				if (!var4) {
 					var2 = (int) var0.aLong874;
-					final Class124_Sub17 var5 = Class10.method55(var2);
+					final Widget var5 = Class10.method55(var2);
 					if (null != var5)
 						Class124_Sub22_Sub10.method723(var5);
 				}
@@ -776,12 +776,12 @@ public class Class124_Sub17 extends Class124 {
 
 	}
 
-	public Class124_Sub22_Sub16_Sub4_Sub1 method631() {
+	public Somet1 method631() {
 		aBool1151 = false;
 		if (anInt1155 == -1)
 			return null;
 		else {
-			final Class124_Sub22_Sub16_Sub4_Sub1 var3 = (Class124_Sub22_Sub16_Sub4_Sub1) aClass113_1149
+			final Somet1 var3 = (Somet1) aClass113_1149
 					.method434(anInt1155);
 			if (null != var3)
 				return var3;
@@ -789,11 +789,11 @@ public class Class124_Sub17 extends Class124 {
 				final Class94 var1 = aClass94_1146;
 				final Class94 var4 = Class69.aClass94_581;
 				final int var2 = anInt1155;
-				Class124_Sub22_Sub16_Sub4_Sub1 var5;
-				if (!Class124_Sub22_Sub2.method653(var1, var2, 0))
+				Somet1 var5;
+				if (!Def3.loaded(var1, var2, 0))
 					var5 = null;
 				else
-					var5 = Class124_Sub22_Sub9.method707(var4.method377(var2, 0));
+					var5 = Def5.method707(var4.decode(var2, 0));
 
 				aBool1151 = true;
 				return var5;

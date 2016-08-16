@@ -13,7 +13,7 @@ public class Class120 {
 		return aString852;
 	}
 
-	Class120(final Class124_Sub14 var1, final byte var2, final int var3) {
+	Class120(final RSBuf var1, final byte var2, final int var3) {
 		aString848 = var1.method597();
 		aString852 = var1.method597();
 		anInt851 = var1.method560();

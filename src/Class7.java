@@ -10,7 +10,7 @@ public class Class7 {
 	static int[] anIntArray74;
 	public static String aString75;
 
-	static final boolean method33(final Class124_Sub17 var0) {
+	static final boolean method33(final Widget var0) {
 		final int var1 = var0.anInt1157;
 		if (var1 == 205) {
 			client.anInt2034 = 250;
@@ -127,14 +127,14 @@ public class Class7 {
 				if (((var2 + var9) > 0) && ((var9 + var2) < 103) && ((var11 + var3) > 0) && ((var11 + var3) < 103))
 					var8[var1].anIntArrayArray894[var2 + var9][var3 + var11] &= -16777217;
 
-		final Class124_Sub14 var13 = new Class124_Sub14(var0);
+		final RSBuf var13 = new RSBuf(var0);
 
 		for (var11 = 0; var11 < 4; ++var11)
 			for (int var10 = 0; var10 < 64; ++var10)
 				for (int var12 = 0; var12 < 64; ++var12)
 					if ((var11 == var4) && (var10 >= var5) && (var10 < (var5 + 8)) && (var12 >= var6)
 							&& (var12 < (var6 + 8)))
-						Class45.method223(var13, var1, var2 + Class124_Sub22_Sub6.method693(var10 & 7, var12 & 7, var7),
+						Class45.method223(var13, var1, var2 + Def6.method693(var10 & 7, var12 & 7, var7),
 								var3 + Class99.method392(var10 & 7, var12 & 7, var7), 0, 0, var7);
 					else
 						Class45.method223(var13, 0, -1, -1, 0, 0, 0);

@@ -1,6 +1,6 @@
 import java.awt.Component;
 
-public class Class124_Sub22_Sub2 extends Class124_Sub22 {
+public class Def3 extends Class124_Sub22 {
 	protected static int anInt1356;
 	public static Class94 aClass94_1363;
 	static Class124_Sub22_Sub16_Sub1[] aClass124_Sub22_Sub16_Sub1Array1364;
@@ -21,14 +21,14 @@ public class Class124_Sub22_Sub2 extends Class124_Sub22 {
 			boolean var2 = true;
 
 			for (int var1 = 0; var1 < anIntArray1355.length; ++var1)
-				if (!Class128.aClass94_887.method366(anIntArray1355[var1], 0))
+				if (!Class128.aClass94_887.valid(anIntArray1355[var1], 0))
 					var2 = false;
 
 			return var2;
 		}
 	}
 
-	void method648(final Class124_Sub14 var1) {
+	void method648(final RSBuf var1) {
 		while (true) {
 			final int var2 = var1.method558();
 			if (var2 == 0)
@@ -38,7 +38,7 @@ public class Class124_Sub22_Sub2 extends Class124_Sub22 {
 		}
 	}
 
-	void method649(final Class124_Sub14 var1, final int var2) {
+	void method649(final RSBuf var1, final int var2) {
 		if (var2 == 1)
 			anInt1362 = var1.method558();
 		else {
@@ -108,7 +108,7 @@ public class Class124_Sub22_Sub2 extends Class124_Sub22 {
 		boolean var1 = true;
 
 		for (int var2 = 0; var2 < 5; ++var2)
-			if ((anIntArray1360[var2] != -1) && !Class128.aClass94_887.method366(anIntArray1360[var2], 0))
+			if ((anIntArray1360[var2] != -1) && !Class128.aClass94_887.valid(anIntArray1360[var2], 0))
 				var1 = false;
 
 		return var1;
@@ -135,10 +135,10 @@ public class Class124_Sub22_Sub2 extends Class124_Sub22 {
 		return var5;
 	}
 
-	public static boolean method653(final Class94 var0, final int var1, final int var2) {
-		final byte[] var3 = var0.method377(var1, var2);
+	public static boolean loaded(final Class94 var0, final int arcId, final int var2) {
+		final byte[] var3 = var0.decode(arcId, var2);
 		if (null != var3) {
-			Class124_Sub22_Sub3.method661(var3);
+			Def1.method661(var3);
 			return true;
 		} else
 			return false;
@@ -192,24 +192,24 @@ public class Class124_Sub22_Sub2 extends Class124_Sub22 {
 			for (var6 = 0; var6 < 64; ++var6)
 				Class124_Sub7.anIntArray1013[var6 + 192] = 16777215;
 
-			Class124_Sub22_Sub9.anIntArray1453 = new int[256];
+			Def5.anIntArray1453 = new int[256];
 
 			for (var6 = 0; var6 < 64; ++var6)
-				Class124_Sub22_Sub9.anIntArray1453[var6] = 4 * var6;
+				Def5.anIntArray1453[var6] = 4 * var6;
 
 			for (var6 = 0; var6 < 64; ++var6)
-				Class124_Sub22_Sub9.anIntArray1453[64 + var6] = 255 + (var6 * 262144);
+				Def5.anIntArray1453[64 + var6] = 255 + (var6 * 262144);
 
 			for (var6 = 0; var6 < 64; ++var6)
-				Class124_Sub22_Sub9.anIntArray1453[128 + var6] = (1024 * var6) + 16711935;
+				Def5.anIntArray1453[128 + var6] = (1024 * var6) + 16711935;
 
 			for (var6 = 0; var6 < 64; ++var6)
-				Class124_Sub22_Sub9.anIntArray1453[var6 + 192] = 16777215;
+				Def5.anIntArray1453[var6 + 192] = 16777215;
 
 			Class42.anIntArray427 = new int[256];
 			Class124_Sub22_Sub19_Sub1.anIntArray1661 = new int['\u8000'];
 			Class43.anIntArray432 = new int['\u8000'];
-			Class124_Sub22_Sub15.method761((Class124_Sub22_Sub16_Sub2) null);
+			Def4.method761((Class124_Sub22_Sub16_Sub2) null);
 			Class124_Sub10.anIntArray1032 = new int['\u8000'];
 			Class4.anIntArray34 = new int['\u8000'];
 			if (var3) {
@@ -241,14 +241,14 @@ public class Class124_Sub22_Sub2 extends Class124_Sub22 {
 	}
 
 	static Class124_Sub22_Sub17 method655(final int var0) {
-		Class124_Sub22_Sub17 var1 = (Class124_Sub22_Sub17) Class124_Sub22_Sub13.aClass113_1541.method434(var0);
+		Class124_Sub22_Sub17 var1 = (Class124_Sub22_Sub17) Def12.aClass113_1541.method434(var0);
 		if (null != var1)
 			return var1;
 		else {
-			var1 = Class89.method345(Class124_Sub22_Sub13.aClass94_1530, Class124_Sub22_Sub13.aClass94_1533, var0,
+			var1 = Class89.method345(Def12.aClass94_1530, Def12.aClass94_1533, var0,
 					false);
 			if (null != var1)
-				Class124_Sub22_Sub13.aClass113_1541.method435(var1, var0);
+				Def12.aClass113_1541.method435(var1, var0);
 
 			return var1;
 		}

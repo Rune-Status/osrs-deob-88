@@ -1,10 +1,10 @@
-public final class Class124_Sub22_Sub16_Sub4_Sub1 extends Class124_Sub22_Sub16_Sub4 {
-	public Class124_Sub22_Sub16_Sub4_Sub1(final byte[] var1, final int[] var2, final int[] var3, final int[] var4,
+public final class Somet1 extends Class124_Sub22_Sub16_Sub4 {
+	public Somet1(final byte[] var1, final int[] var2, final int[] var3, final int[] var4,
 			final int[] var5, final int[] var6, final byte[][] var7) {
 		super(var1, var2, var3, var4, var5, var6, var7);
 	}
 
-	public Class124_Sub22_Sub16_Sub4_Sub1(final byte[] var1) {
+	public Somet1(final byte[] var1) {
 		super(var1);
 	}
 

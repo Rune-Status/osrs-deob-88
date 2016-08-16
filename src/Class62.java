@@ -14,10 +14,10 @@ public class Class62 {
 	static byte[][] aByteArrayArray553 = new byte[50][];
 
 	public static void method275() {
-		Class124_Sub22_Sub6.aClass113_1410.method436();
-		Class124_Sub22_Sub6.aClass113_1389.method436();
-		Class124_Sub22_Sub6.aClass113_1428.method436();
-		Class124_Sub22_Sub6.aClass113_1391.method436();
+		Def6.aClass113_1410.method436();
+		Def6.aClass113_1389.method436();
+		Def6.aClass113_1428.method436();
+		Def6.aClass113_1391.method436();
 	}
 
 	static void method276() {
@@ -28,8 +28,8 @@ public class Class62 {
 		client.aBool2212 = true;
 		client.aLong2208 = -1L;
 		Class114.aClass110_824 = new Class110();
-		client.aClass124_Sub14_Sub1_2024.anInt1075 = 0;
-		client.aClass124_Sub14_Sub1_2026.anInt1075 = 0;
+		client.aClass124_Sub14_Sub1_2024.pos = 0;
+		client.aClass124_Sub14_Sub1_2026.pos = 0;
 		client.anInt2028 = -1;
 		client.anInt2017 = 1;
 		client.anInt2032 = -1;
@@ -86,8 +86,8 @@ public class Class62 {
 		client.anInt2056 = 0;
 		client.anInt2252 = 0;
 
-		for (var0 = 0; var0 < Class124_Sub22_Sub4.anInt1372; ++var0) {
-			final Class124_Sub22_Sub4 var4 = Class124_Sub22_Sub6.method690(var0);
+		for (var0 = 0; var0 < Def16.anInt1372; ++var0) {
+			final Def16 var4 = Def6.method690(var0);
 			if (var4 != null) {
 				Class91.anIntArray712[var0] = 0;
 				Class91.anIntArray711[var0] = 0;
@@ -101,7 +101,7 @@ public class Class62 {
 
 		for (Class124_Sub7 var2 = (Class124_Sub7) client.aClass107_2143
 				.method411(); null != var2; var2 = (Class124_Sub7) client.aClass107_2143.method413())
-			Class124_Sub22_Sub15.method760(var2, true);
+			Def4.method760(var2, true);
 
 		client.anInt2142 = -1;
 		client.aClass107_2143 = new Class107(8);
@@ -121,7 +121,7 @@ public class Class62 {
 		for (var0 = 0; var0 < 100; ++var0)
 			client.aBoolArray2061[var0] = true;
 
-		Class124_Sub22_Sub8.method698();
+		Def8.method698();
 		client.aString2120 = null;
 		Class103.anInt794 = 0;
 		Class124_Sub14_Sub1.aClass124_Sub9Array1609 = null;
@@ -195,7 +195,7 @@ public class Class62 {
 							}
 						}
 
-						if ((null != Class124_Sub22_Sub9.aClass45_1455) && Class96.method387())
+						if ((null != Def5.aClass45_1455) && Class96.method387())
 							Class4.aBool50 = true;
 					}
 
@@ -276,7 +276,7 @@ public class Class62 {
 							var15 += 15;
 							var16 = 361;
 							if ((var1 == 1) && (var14 >= (var16 - 15)) && (var14 < var16)) {
-								Class124_Sub22_Sub12.method734("Please enter your username.",
+								Def13.method734("Please enter your username.",
 										"If you created your account after November",
 										"2010, this will be the creation email address.");
 								Class4.anInt43 = 5;
@@ -289,16 +289,16 @@ public class Class62 {
 									&& (var14 >= (var8 - 20)) && (var14 <= (var8 + 20))) {
 								Class4.aString44 = Class4.aString44.trim();
 								if (Class4.aString44.length() == 0) {
-									Class124_Sub22_Sub12.method734("", "Please enter your username/email address.", "");
+									Def13.method734("", "Please enter your username/email address.", "");
 									return;
 								}
 
 								if (Class4.aString45.length() == 0) {
-									Class124_Sub22_Sub12.method734("", "Please enter your password.", "");
+									Def13.method734("", "Please enter your password.", "");
 									return;
 								}
 
-								Class124_Sub22_Sub12.method734("", "Connecting to server...", "");
+								Def13.method734("", "Connecting to server...", "");
 								Class4.aClass72_48 = Class57.aClass22_538.aLinkedHashMap252
 										.containsKey(Integer.valueOf(Class47.method232(Class4.aString44)))
 												? Class72.aClass72_597 : Class72.aClass72_593;
@@ -323,7 +323,7 @@ public class Class62 {
 
 									for (int var10 = 0; var10 < "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:\'@#~,<.>/?\\| "
 											.length(); ++var10)
-										if (Class124_Sub22_Sub6.aChar1394 == "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:\'@#~,<.>/?\\| "
+										if (Def6.aChar1394 == "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:\'@#~,<.>/?\\| "
 												.charAt(var10)) {
 											var9 = true;
 											break;
@@ -345,7 +345,7 @@ public class Class62 {
 											Class4.anInt33 = 1;
 
 										if (var9 && (Class4.aString44.length() < 320))
-											Class4.aString44 = Class4.aString44 + Class124_Sub22_Sub6.aChar1394;
+											Class4.aString44 = Class4.aString44 + Def6.aChar1394;
 									} else if (Class4.anInt33 == 1) {
 										if ((Class124_Sub13.anInt1072 == 85) && (Class4.aString45.length() > 0))
 											Class4.aString45 = Class4.aString45.substring(0,
@@ -357,17 +357,17 @@ public class Class62 {
 										if (Class124_Sub13.anInt1072 == 84) {
 											Class4.aString44 = Class4.aString44.trim();
 											if (Class4.aString44.length() == 0) {
-												Class124_Sub22_Sub12.method734("",
+												Def13.method734("",
 														"Please enter your username/email address.", "");
 												return;
 											}
 
 											if (Class4.aString45.length() == 0) {
-												Class124_Sub22_Sub12.method734("", "Please enter your password.", "");
+												Def13.method734("", "Please enter your password.", "");
 												return;
 											}
 
-											Class124_Sub22_Sub12.method734("", "Connecting to server...", "");
+											Def13.method734("", "Connecting to server...", "");
 											Class4.aClass72_48 = Class57.aClass22_538.aLinkedHashMap252
 													.containsKey(Integer.valueOf(Class47.method232(Class4.aString44)))
 															? Class72.aClass72_597 : Class72.aClass72_593;
@@ -376,7 +376,7 @@ public class Class62 {
 										}
 
 										if (var9 && (Class4.aString45.length() < 20))
-											Class4.aString45 = Class4.aString45 + Class124_Sub22_Sub6.aChar1394;
+											Class4.aString45 = Class4.aString45 + Def6.aChar1394;
 									}
 								}
 
@@ -392,14 +392,14 @@ public class Class62 {
 										&& (var14 >= (var5 - 20)) && (var14 <= (var5 + 20))) {
 									Class49.aString485.trim();
 									if (Class49.aString485.length() != 6) {
-										Class124_Sub22_Sub12.method734("", "Please enter a 6-digin PIN.", "");
+										Def13.method734("", "Please enter a 6-digin PIN.", "");
 										return;
 									}
 
 									Class84.anInt673 = Integer.parseInt(Class49.aString485);
 									Class49.aString485 = "";
 									Class4.aClass72_48 = Class4.aBool37 ? Class72.aClass72_594 : Class72.aClass72_599;
-									Class124_Sub22_Sub12.method734("", "Connecting to server...", "");
+									Def13.method734("", "Connecting to server...", "");
 									Class124_Sub5.method516(20);
 									return;
 								}
@@ -444,7 +444,7 @@ public class Class62 {
 									var18 = false;
 
 									for (var19 = 0; var19 < "1234567890".length(); ++var19)
-										if (Class124_Sub22_Sub6.aChar1394 == "1234567890".charAt(var19)) {
+										if (Def6.aChar1394 == "1234567890".charAt(var19)) {
 											var18 = true;
 											break;
 										}
@@ -463,7 +463,7 @@ public class Class62 {
 										if (Class124_Sub13.anInt1072 == 84) {
 											Class49.aString485.trim();
 											if (Class49.aString485.length() != 6) {
-												Class124_Sub22_Sub12.method734("", "Please enter a 6-digin PIN.", "");
+												Def13.method734("", "Please enter a 6-digin PIN.", "");
 												return;
 											}
 
@@ -471,13 +471,13 @@ public class Class62 {
 											Class49.aString485 = "";
 											Class4.aClass72_48 = Class4.aBool37 ? Class72.aClass72_594
 													: Class72.aClass72_599;
-											Class124_Sub22_Sub12.method734("", "Connecting to server...", "");
+											Def13.method734("", "Connecting to server...", "");
 											Class124_Sub5.method516(20);
 											return;
 										}
 
 										if (var18 && (Class49.aString485.length() < 6))
-											Class49.aString485 = Class49.aString485 + Class124_Sub22_Sub6.aChar1394;
+											Class49.aString485 = Class49.aString485 + Def6.aChar1394;
 									}
 								}
 							} else if (Class4.anInt43 == 5) {
@@ -505,7 +505,7 @@ public class Class62 {
 
 									for (var19 = 0; var19 < "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:\'@#~,<.>/?\\| "
 											.length(); ++var19)
-										if (Class124_Sub22_Sub6.aChar1394 == "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:\'@#~,<.>/?\\| "
+										if (Def6.aChar1394 == "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:\'@#~,<.>/?\\| "
 												.charAt(var19)) {
 											var18 = true;
 											break;
@@ -529,7 +529,7 @@ public class Class62 {
 										}
 
 										if (var18 && (Class4.aString44.length() < 320))
-											Class4.aString44 = Class4.aString44 + Class124_Sub22_Sub6.aChar1394;
+											Class4.aString44 = Class4.aString44 + Def6.aChar1394;
 									}
 								}
 							} else if (Class4.anInt43 == 6)
@@ -606,7 +606,7 @@ public class Class62 {
 					throw new IOException();
 			}
 
-			var1 = new Class22(new Class124_Sub14(var2));
+			var1 = new Class22(new RSBuf(var2));
 		} catch (final Exception var6) {
 			;
 		}
@@ -626,8 +626,8 @@ public class Class62 {
 
 		try {
 			var0 = Class124_Sub22_Sub19_Sub5.method960("", client.aClass88_1987.aString700, true);
-			final Class124_Sub14 var1 = Class57.aClass22_538.method148();
-			var0.method458(var1.aByteArray1073, 0, var1.anInt1075);
+			final RSBuf var1 = Class57.aClass22_538.method148();
+			var0.method458(var1.backing, 0, var1.pos);
 		} catch (final Exception var3) {
 			;
 		}

@@ -1,4 +1,4 @@
-public class Class124_Sub3 extends Class124 {
+public class Class124_Sub3 extends Node {
 	static byte[] aByteArray932;
 	static int anInt933;
 	static int anInt934;
@@ -291,9 +291,9 @@ public class Class124_Sub3 extends Class124 {
 		return var35;
 	}
 
-	static boolean method498(final Class94 var0) {
+	static boolean valid(final Class94 var0) {
 		if (!aBool941) {
-			final byte[] var1 = var0.method377(0, 0);
+			final byte[] var1 = var0.decode(0, 0);
 			if (var1 == null)
 				return false;
 
@@ -305,11 +305,11 @@ public class Class124_Sub3 extends Class124 {
 	}
 
 	static Class124_Sub3 method499(final Class94 var0, final int var1, final int var2) {
-		if (!method498(var0)) {
-			var0.method366(var1, var2);
+		if (!valid(var0)) {
+			var0.valid(var1, var2);
 			return null;
 		} else {
-			final byte[] var3 = var0.method377(var1, var2);
+			final byte[] var3 = var0.decode(var1, var2);
 			return var3 == null ? null : new Class124_Sub3(var3);
 		}
 	}
@@ -505,7 +505,7 @@ public class Class124_Sub3 extends Class124 {
 	}
 
 	void method504(final byte[] var1) {
-		final Class124_Sub14 var2 = new Class124_Sub14(var1);
+		final RSBuf var2 = new RSBuf(var1);
 		anInt936 = var2.method562(-2045128789);
 		anInt952 = var2.method562(1700725101);
 		anInt929 = var2.method562(1340613910);

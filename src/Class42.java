@@ -20,15 +20,15 @@ public final class Class42 {
 	static int anInt426;
 	static int[] anIntArray427;
 
-	static final void method214(final Class124_Sub17[] var0, final int var1, final int var2, final int var3,
+	static final void method214(final Widget[] var0, final int var1, final int var2, final int var3,
 			final int var4, final int var5, final int var6, final int var7) {
 		for (int var8 = 0; var8 < var0.length; ++var8) {
-			final Class124_Sub17 var11 = var0[var8];
+			final Widget var11 = var0[var8];
 			if ((var11 != null)
 					&& (!var11.aBool1152 || (var11.anInt1191 == 0) || var11.aBool1195
 							|| (Class124_Sub22_Sub19_Sub6.method963(var11) != 0)
 							|| (var11 == client.aClass124_Sub17_2199) || (var11.anInt1157 == 1338))
-					&& (var11.anInt1259 == var1) && (!var11.aBool1152 || !Class124_Sub22_Sub15.method762(var11))) {
+					&& (var11.anInt1259 == var1) && (!var11.aBool1152 || !Def4.method762(var11))) {
 				final int var21 = var6 + var11.anInt1166;
 				final int var9 = var11.anInt1223 + var7;
 				int var10;
@@ -121,23 +121,23 @@ public final class Class42 {
 										final int var26 = (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697
 												- var28) >> 7;
 										client.aClass124_Sub14_Sub1_2024.method837(165);
-										client.aClass124_Sub14_Sub1_2024.method545(18);
+										client.aClass124_Sub14_Sub1_2024.writeByte(18);
 										client.aClass124_Sub14_Sub1_2024.method581(var26 + Class95.anInt762);
 										client.aClass124_Sub14_Sub1_2024.method587(var30 + Class9.anInt102);
 										client.aClass124_Sub14_Sub1_2024.method578(
 												Class84.aBoolArray676[82] ? (Class84.aBoolArray676[81] ? 2 : 1) : 0);
-										client.aClass124_Sub14_Sub1_2024.method545(var22);
-										client.aClass124_Sub14_Sub1_2024.method545(var37);
-										client.aClass124_Sub14_Sub1_2024.method592(client.anInt2255);
-										client.aClass124_Sub14_Sub1_2024.method545(57);
-										client.aClass124_Sub14_Sub1_2024.method545(client.anInt2053);
-										client.aClass124_Sub14_Sub1_2024.method545(client.anInt2055);
-										client.aClass124_Sub14_Sub1_2024.method545(89);
+										client.aClass124_Sub14_Sub1_2024.writeByte(var22);
+										client.aClass124_Sub14_Sub1_2024.writeByte(var37);
+										client.aClass124_Sub14_Sub1_2024.writeShort(client.anInt2255);
+										client.aClass124_Sub14_Sub1_2024.writeByte(57);
+										client.aClass124_Sub14_Sub1_2024.writeByte(client.anInt2053);
+										client.aClass124_Sub14_Sub1_2024.writeByte(client.anInt2055);
+										client.aClass124_Sub14_Sub1_2024.writeByte(89);
 										client.aClass124_Sub14_Sub1_2024
-												.method592(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690);
+												.writeShort(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690);
 										client.aClass124_Sub14_Sub1_2024
-												.method592(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697);
-										client.aClass124_Sub14_Sub1_2024.method545(63);
+												.writeShort(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697);
+										client.aClass124_Sub14_Sub1_2024.writeByte(63);
 										client.anInt2194 = var30;
 										client.anInt2217 = var26;
 									}
@@ -149,7 +149,7 @@ public final class Class42 {
 								Class101.method402(var11, var23 - var21, var10 - var9);
 
 							if (var11.anInt1191 == 0) {
-								if (!var11.aBool1152 && Class124_Sub22_Sub15.method762(var11)
+								if (!var11.aBool1152 && Def4.method762(var11)
 										&& (var11 != Class31.aClass124_Sub17_335))
 									continue;
 
@@ -187,8 +187,8 @@ public final class Class42 {
 									}
 
 									var22 = var25.anInt1012;
-									if (Class89.method346(var22))
-										method214(Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var22], -1, var16,
+									if (Class89.loadwidget(var22))
+										method214(Class124_Sub22_Sub10.widgets[var22], -1, var16,
 												var17, var18, var19, var21, var9);
 								}
 							}

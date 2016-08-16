@@ -12,18 +12,18 @@ public class Class43 {
 			"7237300117305667488707183861728052766358166655052137727439795191253340127955075499635575104901523446809299097934591732635674173519120047404024393881551683");
 	static String[] aStringArray430;
 
-	public static Class124_Sub22_Sub12 method217(final int var0) {
-		Class124_Sub22_Sub12 var1 = (Class124_Sub22_Sub12) Class124_Sub22_Sub12.aClass113_1515.method434(var0);
+	public static Def13 method217(final int var0) {
+		Def13 var1 = (Def13) Def13.aClass113_1515.method434(var0);
 		if (null != var1)
 			return var1;
 		else {
-			final byte[] var2 = Class37.aClass94_388.method377(13, var0);
-			var1 = new Class124_Sub22_Sub12();
+			final byte[] var2 = Class37.aClass94_388.decode(13, var0);
+			var1 = new Def13();
 			var1.anInt1517 = var0;
 			if (var2 != null)
-				var1.method731(new Class124_Sub14(var2));
+				var1.method731(new RSBuf(var2));
 
-			Class124_Sub22_Sub12.aClass113_1515.method435(var1, var0);
+			Def13.aClass113_1515.method435(var1, var0);
 			return var1;
 		}
 	}
@@ -165,14 +165,14 @@ public class Class43 {
 			}
 
 			Class73.aClass132_605 = new Class132(
-					new Class127(Class124_Sub22_Sub9.method706("main_file_cache.dat2"), "rw", 1048576000L), 5200, 0);
+					new Class127(Def5.method706("main_file_cache.dat2"), "rw", 1048576000L), 5200, 0);
 			Class73.aClass132_601 = new Class132(
-					new Class127(Class124_Sub22_Sub9.method706("main_file_cache.idx255"), "rw", 1048576L), 6000, 0);
+					new Class127(Def5.method706("main_file_cache.idx255"), "rw", 1048576L), 6000, 0);
 			Class73.aClass132Array604 = new Class132[Class73.anInt602];
 
 			for (int var11 = 0; var11 < Class73.anInt602; ++var11)
 				Class73.aClass132Array604[var11] = new Class132(
-						new Class127(Class124_Sub22_Sub9.method706("main_file_cache.idx" + var11), "rw", 1048576L),
+						new Class127(Def5.method706("main_file_cache.idx" + var11), "rw", 1048576L),
 						6000, 0);
 
 		}
@@ -236,7 +236,7 @@ public class Class43 {
 
 	}
 
-	static void method221(final Class124_Sub17 var0, final int var1, final int var2) {
+	static void method221(final Widget var0, final int var1, final int var2) {
 		if (var0.anInt1158 == 0)
 			var0.anInt1166 = var0.anInt1216;
 		else if (var0.anInt1158 == 1)
@@ -344,7 +344,7 @@ public class Class43 {
 			for (var6 = 0; var6 < 104; ++var6) {
 				Class27.anIntArray287[var6] = 0;
 				Class64.anIntArray559[var6] = 0;
-				Class124_Sub22_Sub11.anIntArray1512[var6] = 0;
+				Def14.anIntArray1512[var6] = 0;
 				Class27.anIntArray291[var6] = 0;
 				Class27.anIntArray292[var6] = 0;
 			}
@@ -355,10 +355,10 @@ public class Class43 {
 					if ((var7 >= 0) && (var7 < 104)) {
 						var14 = Class27.aByteArrayArrayArray293[var2][var7][var5] & 255;
 						if (var14 > 0) {
-							final Class124_Sub22_Sub3 var28 = Class124_Sub22_Sub7.method695(var14 - 1);
+							final Def1 var28 = Def19.method695(var14 - 1);
 							Class27.anIntArray287[var5] += var28.anInt1368;
 							Class64.anIntArray559[var5] += var28.anInt1369;
-							Class124_Sub22_Sub11.anIntArray1512[var5] += var28.anInt1370;
+							Def14.anIntArray1512[var5] += var28.anInt1370;
 							Class27.anIntArray291[var5] += var28.anInt1366;
 							++Class27.anIntArray292[var5];
 						}
@@ -368,10 +368,10 @@ public class Class43 {
 					if ((var14 >= 0) && (var14 < 104)) {
 						var18 = Class27.aByteArrayArrayArray293[var2][var14][var5] & 255;
 						if (var18 > 0) {
-							final Class124_Sub22_Sub3 var27 = Class124_Sub22_Sub7.method695(var18 - 1);
+							final Def1 var27 = Def19.method695(var18 - 1);
 							Class27.anIntArray287[var5] -= var27.anInt1368;
 							Class64.anIntArray559[var5] -= var27.anInt1369;
-							Class124_Sub22_Sub11.anIntArray1512[var5] -= var27.anInt1370;
+							Def14.anIntArray1512[var5] -= var27.anInt1370;
 							Class27.anIntArray291[var5] -= var27.anInt1366;
 							--Class27.anIntArray292[var5];
 						}
@@ -390,7 +390,7 @@ public class Class43 {
 						if ((var23 >= 0) && (var23 < 104)) {
 							var5 += Class27.anIntArray287[var23];
 							var7 += Class64.anIntArray559[var23];
-							var14 += Class124_Sub22_Sub11.anIntArray1512[var23];
+							var14 += Def14.anIntArray1512[var23];
 							var18 += Class27.anIntArray291[var23];
 							var13 += Class27.anIntArray292[var23];
 						}
@@ -399,7 +399,7 @@ public class Class43 {
 						if ((var19 >= 0) && (var19 < 104)) {
 							var5 -= Class27.anIntArray287[var19];
 							var7 -= Class64.anIntArray559[var19];
-							var14 -= Class124_Sub22_Sub11.anIntArray1512[var19];
+							var14 -= Def14.anIntArray1512[var19];
 							var18 -= Class27.anIntArray291[var19];
 							var13 -= Class27.anIntArray292[var19];
 						}
@@ -407,7 +407,7 @@ public class Class43 {
 						if ((var17 >= 1) && (var17 < 103) && (!client.aBool1989
 								|| ((Class27.aByteArrayArrayArray285[0][var6][var17] & 2) != 0)
 								|| (((Class27.aByteArrayArrayArray285[var2][var6][var17] & 16) == 0)
-										&& (Class124_Sub22_Sub14.method754(var2, var6, var17) == client.anInt2006)))) {
+										&& (Def15.method754(var2, var6, var17) == client.anInt2006)))) {
 							if (var2 < Class27.anInt290)
 								Class27.anInt290 = var2;
 
@@ -442,7 +442,7 @@ public class Class43 {
 									var40 = Class31.method179(var20, var31, var15);
 								}
 
-								Class124_Sub22_Sub15 var24;
+								Def4 var24;
 								if (var2 > 0) {
 									boolean var52 = true;
 									if ((var10 == 0) && (Class27.aByteArrayArrayArray288[var2][var6][var17] != 0))
@@ -450,19 +450,19 @@ public class Class43 {
 
 									if (var21 > 0) {
 										var15 = var21 - 1;
-										var24 = (Class124_Sub22_Sub15) Class124_Sub22_Sub15.aClass113_1553
+										var24 = (Def4) Def4.aClass113_1553
 												.method434(var15);
-										Class124_Sub22_Sub15 var41;
+										Def4 var41;
 										if (null != var24)
 											var41 = var24;
 										else {
-											final byte[] var43 = Class124_Sub22_Sub15.aClass94_1561.method377(4, var15);
-											var24 = new Class124_Sub22_Sub15();
+											final byte[] var43 = Def4.aClass94_1561.decode(4, var15);
+											var24 = new Def4();
 											if (null != var43)
-												var24.method756(new Class124_Sub14(var43), var15);
+												var24.method756(new RSBuf(var43), var15);
 
 											var24.method755();
-											Class124_Sub22_Sub15.aClass113_1553.method435(var24, var15);
+											Def4.aClass113_1553.method435(var24, var15);
 											var41 = var24;
 										}
 
@@ -487,18 +487,18 @@ public class Class43 {
 									var31 = Class27.aByteArrayArrayArray288[var2][var6][var17] + 1;
 									final byte var51 = Class3.aByteArrayArrayArray17[var2][var6][var17];
 									final int var22 = var21 - 1;
-									Class124_Sub22_Sub15 var29 = (Class124_Sub22_Sub15) Class124_Sub22_Sub15.aClass113_1553
+									Def4 var29 = (Def4) Def4.aClass113_1553
 											.method434(var22);
 									if (null != var29)
 										var24 = var29;
 									else {
-										final byte[] var38 = Class124_Sub22_Sub15.aClass94_1561.method377(4, var22);
-										var29 = new Class124_Sub22_Sub15();
+										final byte[] var38 = Def4.aClass94_1561.decode(4, var22);
+										var29 = new Def4();
 										if (var38 != null)
-											var29.method756(new Class124_Sub14(var38), var22);
+											var29.method756(new RSBuf(var38), var22);
 
 										var29.method755();
-										Class124_Sub22_Sub15.aClass113_1553.method435(var29, var22);
+										Def4.aClass113_1553.method435(var29, var22);
 										var24 = var29;
 									}
 
@@ -558,7 +558,7 @@ public class Class43 {
 
 			for (var6 = 1; var6 < 103; ++var6)
 				for (var5 = 1; var5 < 103; ++var5)
-					var0.method102(var2, var5, var6, Class124_Sub22_Sub14.method754(var2, var5, var6));
+					var0.method102(var2, var5, var6, Def15.method754(var2, var5, var6));
 
 			Class27.aByteArrayArrayArray293[var2] = null;
 			Class57.aByteArrayArrayArray537[var2] = null;

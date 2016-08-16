@@ -128,7 +128,7 @@ public abstract class Class124_Sub22_Sub19_Sub3 extends Class124_Sub22_Sub19 {
 			--var5;
 		}
 
-		if ((anInt1699 != -1) && (Class124_Sub22_Sub14.method750(anInt1699).anInt1540 == 1))
+		if ((anInt1699 != -1) && (Def15.method750(anInt1699).anInt1540 == 1))
 			anInt1699 = -1;
 
 		if (anInt1721 < 9)
@@ -146,7 +146,7 @@ public abstract class Class124_Sub22_Sub19_Sub3 extends Class124_Sub22_Sub19 {
 	}
 
 	final void method893(final int var1, final int var2, final boolean var3) {
-		if ((anInt1699 != -1) && (Class124_Sub22_Sub14.method750(anInt1699).anInt1540 == 1))
+		if ((anInt1699 != -1) && (Def15.method750(anInt1699).anInt1540 == 1))
 			anInt1699 = -1;
 
 		if (!var3) {

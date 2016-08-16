@@ -5,16 +5,16 @@ public class Class32 {
 	int anInt340;
 	boolean aBool341;
 	boolean aBool342;
-	static Class124_Sub17 aClass124_Sub17_343;
+	static Widget aClass124_Sub17_343;
 	String aString344;
 	static Class79 aClass79_345;
 
 	static final void method183(final int var0) {
-		if (Class89.method346(var0)) {
-			final Class124_Sub17[] var2 = Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0];
+		if (Class89.loadwidget(var0)) {
+			final Widget[] var2 = Class124_Sub22_Sub10.widgets[var0];
 
-			for (final Class124_Sub17 element : var2) {
-				final Class124_Sub17 var1 = element;
+			for (final Widget element : var2) {
+				final Widget var1 = element;
 				if (var1 != null) {
 					var1.anInt1273 = 0;
 					var1.anInt1274 = 0;
@@ -93,15 +93,15 @@ public class Class32 {
 		return var5;
 	}
 
-	public static Class124_Sub22_Sub11 method185(final int var0) {
-		Class124_Sub22_Sub11 var1 = (Class124_Sub22_Sub11) Class124_Sub22_Sub11.aClass113_1509.method434(var0);
+	public static Def14 method185(final int var0) {
+		Def14 var1 = (Def14) Def14.aClass113_1509.method434(var0);
 		if (null == var1) {
-			final byte[] var2 = Class124_Sub22_Sub11.aClass94_1508.method377(14, var0);
-			var1 = new Class124_Sub22_Sub11();
+			final byte[] var2 = Def14.aClass94_1508.decode(14, var0);
+			var1 = new Def14();
 			if (var2 != null)
-				var1.method725(new Class124_Sub14(var2));
+				var1.method725(new RSBuf(var2));
 
-			Class124_Sub22_Sub11.aClass113_1509.method435(var1, var0);
+			Def14.aClass113_1509.method435(var1, var0);
 			return var1;
 		} else
 			return var1;

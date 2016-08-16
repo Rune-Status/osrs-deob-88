@@ -1,7 +1,7 @@
 public class Class101 {
 	public static String aString788;
 
-	static final void method402(final Class124_Sub17 var0, final int var1, final int var2) {
+	static final void method402(final Widget var0, final int var1, final int var2) {
 		if (var0.anInt1156 == 1)
 			Class3.method22(var0.aString1268, "", 24, 0, 0, var0.anInt1284);
 
@@ -51,7 +51,7 @@ public class Class101 {
 
 					if ((var1 >= var7) && (var2 >= var12) && (var1 < (var7 + 32)) && (var2 < (32 + var12))) {
 						client.anInt2075 = var4;
-						Class124_Sub22_Sub1.aClass124_Sub17_1352 = var0;
+						Def9.aClass124_Sub17_1352 = var0;
 						if (var0.anIntArray1269[var4] > 0) {
 							final Class124_Sub22_Sub10 var14 = Class124_Sub22_Sub10
 									.method724(var0.anIntArray1269[var4] - 1);

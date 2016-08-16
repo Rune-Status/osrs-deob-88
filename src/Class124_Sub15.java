@@ -1,4 +1,4 @@
-public class Class124_Sub15 extends Class124 {
+public class Class124_Sub15 extends Node {
 	int anInt1090;
 	int anInt1091;
 	int anInt1094;
@@ -219,30 +219,30 @@ public class Class124_Sub15 extends Class124 {
 		method608();
 	}
 
-	public void method610(final Class124_Sub14 var1) {
-		var1.method545(6);
-		var1.method545(anInt1089);
-		var1.method545(aBool1104 ? 1 : 0);
-		var1.method545(anInt1092);
-		var1.method545(anInt1093);
-		var1.method545(anInt1098);
-		var1.method545(anInt1111);
-		var1.method545(anInt1096);
-		var1.method545(aBool1097 ? 1 : 0);
-		var1.method592(anInt1095);
-		var1.method545(anInt1099);
+	public void method610(final RSBuf var1) {
+		var1.writeByte(6);
+		var1.writeByte(anInt1089);
+		var1.writeByte(aBool1104 ? 1 : 0);
+		var1.writeByte(anInt1092);
+		var1.writeByte(anInt1093);
+		var1.writeByte(anInt1098);
+		var1.writeByte(anInt1111);
+		var1.writeByte(anInt1096);
+		var1.writeByte(aBool1097 ? 1 : 0);
+		var1.writeShort(anInt1095);
+		var1.writeByte(anInt1099);
 		var1.method547(anInt1100);
-		var1.method592(anInt1112);
+		var1.writeShort(anInt1112);
 		var1.method600(aString1102);
 		var1.method600(aString1103);
 		var1.method600(aString1108);
 		var1.method600(aString1105);
-		var1.method545(anInt1094);
-		var1.method592(anInt1101);
+		var1.writeByte(anInt1094);
+		var1.writeShort(anInt1101);
 		var1.method600(aString1088);
 		var1.method600(aString1109);
-		var1.method545(anInt1091);
-		var1.method545(anInt1107);
+		var1.writeByte(anInt1091);
+		var1.writeByte(anInt1107);
 
 		for (final int element : anIntArray1110)
 			var1.method548(element);
@@ -251,7 +251,7 @@ public class Class124_Sub15 extends Class124 {
 	}
 
 	public static void method611(final int var0, int var1) {
-		final Class124_Sub22_Sub11 var2 = Class32.method185(var0);
+		final Def14 var2 = Class32.method185(var0);
 		final int var6 = var2.anInt1510;
 		final int var4 = var2.anInt1513;
 		final int var3 = var2.anInt1511;

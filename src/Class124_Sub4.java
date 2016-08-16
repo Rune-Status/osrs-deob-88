@@ -1,4 +1,4 @@
-public abstract class Class124_Sub4 extends Class124 {
+public abstract class Class124_Sub4 extends Node {
 	int anInt961;
 	Class124_Sub2 aClass124_Sub2_962;
 	Class124_Sub4 aClass124_Sub4_963;

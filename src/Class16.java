@@ -43,7 +43,7 @@ public class Class16 {
 
 	public Class16(int var1, int var2) {
 		if (var1 != var2) {
-			final int var8 = Class124_Sub22_Sub6.method688(var1, var2);
+			final int var8 = Def6.method688(var1, var2);
 			var1 /= var8;
 			var2 /= var8;
 			anInt144 = var1;

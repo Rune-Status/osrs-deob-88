@@ -1,4 +1,4 @@
-public class Class124_Sub22_Sub15 extends Class124_Sub22 {
+public class Def4 extends Class124_Sub22 {
 	public static Class94 aClass94_1561;
 	public int anInt1552;
 	public int anInt1562;
@@ -23,7 +23,7 @@ public class Class124_Sub22_Sub15 extends Class124_Sub22 {
 		method758(anInt1554);
 	}
 
-	public void method756(final Class124_Sub14 var1, final int var2) {
+	public void method756(final RSBuf var1, final int var2) {
 		while (true) {
 			final int var3 = var1.method558();
 			if (var3 == 0)
@@ -33,7 +33,7 @@ public class Class124_Sub22_Sub15 extends Class124_Sub22 {
 		}
 	}
 
-	void method757(final Class124_Sub14 var1, final int var2) {
+	void method757(final RSBuf var1, final int var2) {
 		if (var2 == 1)
 			anInt1554 = var1.method557();
 		else if (var2 == 2)
@@ -117,13 +117,13 @@ public class Class124_Sub22_Sub15 extends Class124_Sub22 {
 			for (var4 = 0; var4 < 256; ++var4)
 				if (Class4.anInt26 <= 768) {
 					if (Class4.anInt26 > 256)
-						Class42.anIntArray427[var4] = Class124_Sub22_Sub9.anIntArray1453[var4];
+						Class42.anIntArray427[var4] = Def5.anIntArray1453[var4];
 					else
-						Class42.anIntArray427[var4] = Class8.method50(Class124_Sub22_Sub9.anIntArray1453[var4],
+						Class42.anIntArray427[var4] = Class8.method50(Def5.anIntArray1453[var4],
 								Class4.anIntArray46[var4], 256 - Class4.anInt26);
 				} else
 					Class42.anIntArray427[var4] = Class8.method50(Class4.anIntArray46[var4],
-							Class124_Sub22_Sub9.anIntArray1453[var4], 1024 - Class4.anInt26);
+							Def5.anIntArray1453[var4], 1024 - Class4.anInt26);
 		} else
 			for (var4 = 0; var4 < 256; ++var4)
 				Class42.anIntArray427[var4] = Class4.anIntArray46[var4];
@@ -210,7 +210,7 @@ public class Class124_Sub22_Sub15 extends Class124_Sub22 {
 			if (var2 == ((var4.aLong874 >> 48) & 65535L))
 				var4.method450();
 
-		final Class124_Sub17 var5 = Class10.method55(var3);
+		final Widget var5 = Class10.method55(var3);
 		if (var5 != null)
 			Class124_Sub22_Sub10.method723(var5);
 
@@ -265,7 +265,7 @@ public class Class124_Sub22_Sub15 extends Class124_Sub22 {
 
 	}
 
-	static boolean method762(final Class124_Sub17 var0) {
+	static boolean method762(final Widget var0) {
 		if (client.aBool2021) {
 			if (Class124_Sub22_Sub19_Sub6.method963(var0) != 0)
 				return false;

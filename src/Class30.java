@@ -32,7 +32,7 @@ public final class Class30 {
 			Class73.aClass78_609 = null;
 		}
 
-		Class124_Sub22_Sub1.method639();
+		Def9.method639();
 		Class36.aClass21_380.method98();
 
 		for (int var0 = 0; var0 < 4; ++var0)

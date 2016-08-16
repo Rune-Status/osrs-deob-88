@@ -13,13 +13,13 @@ public class Class24 {
 
 	Class24(final byte[] var1, final Class124_Sub12 var2) {
 		aClass124_Sub12_271 = var2;
-		final Class124_Sub14 var6 = new Class124_Sub14(var1);
-		final Class124_Sub14 var10 = new Class124_Sub14(var1);
-		var6.anInt1075 = 2;
+		final RSBuf var6 = new RSBuf(var1);
+		final RSBuf var10 = new RSBuf(var1);
+		var6.pos = 2;
 		final int var7 = var6.method558();
 		int var8 = -1;
 		int var4 = 0;
-		var10.anInt1075 = var6.anInt1075 + var7;
+		var10.pos = var6.pos + var7;
 
 		int var5;
 		for (var5 = 0; var5 < var7; ++var5) {
@@ -63,7 +63,7 @@ public class Class24 {
 			}
 		}
 
-		if (var10.anInt1075 != var1.length)
+		if (var10.pos != var1.length)
 			throw new RuntimeException();
 		else {
 			anInt275 = var4;

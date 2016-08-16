@@ -20,7 +20,7 @@ public class Class124_Sub4_Sub2 extends Class124_Sub4 {
 
 	}
 
-	void method824(Class124 var1, final Class124_Sub1 var2) {
+	void method824(Node var1, final Class124_Sub1 var2) {
 		while ((var1 != aClass111_1592.aClass124_817) && (((Class124_Sub1) var1).anInt921 <= var2.anInt921))
 			var1 = var1.aClass124_875;
 
@@ -31,7 +31,7 @@ public class Class124_Sub4_Sub2 extends Class124_Sub4 {
 	void method825(final Class124_Sub1 var1) {
 		var1.method450();
 		var1.method490();
-		final Class124 var2 = aClass111_1592.aClass124_817.aClass124_875;
+		final Node var2 = aClass111_1592.aClass124_817.aClass124_875;
 		if (var2 == aClass111_1592.aClass124_817)
 			anInt1594 = -1;
 		else

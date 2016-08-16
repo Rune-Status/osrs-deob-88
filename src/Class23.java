@@ -2,7 +2,7 @@ public class Class23 {
 	String aString254;
 	int anInt255;
 	static Class23[] aClass23Array256;
-	static Class124_Sub22_Sub16_Sub4_Sub1 aClass124_Sub22_Sub16_Sub4_Sub1_260;
+	static Somet1 aClass124_Sub22_Sub16_Sub4_Sub1_260;
 	int anInt261;
 	int anInt262;
 	String aString263;
@@ -54,7 +54,7 @@ public class Class23 {
 
 						client.anInt2175 = client.anInt2067;
 						client.aClass124_Sub14_Sub1_2024.method837(27);
-						client.aClass124_Sub14_Sub1_2024.method545(Class54.method258(var0));
+						client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
 						client.aClass124_Sub14_Sub1_2024.method550(var0);
 						break;
 					}
@@ -63,7 +63,7 @@ public class Class23 {
 	}
 
 	static Class124_Sub22_Sub16_Sub2 method157(final Class94 var0, final int var1, final int var2) {
-		if (!Class124_Sub22_Sub2.method653(var0, var1, var2))
+		if (!Def3.loaded(var0, var1, var2))
 			return null;
 		else {
 			final Class124_Sub22_Sub16_Sub2 var4 = new Class124_Sub22_Sub16_Sub2();

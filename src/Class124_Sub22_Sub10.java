@@ -2,7 +2,7 @@ public class Class124_Sub22_Sub10 extends Class124_Sub22 {
 	public static Class94 aClass94_1459;
 	public static Class94 aClass94_1460;
 	static int[][] anIntArrayArray1466;
-	public static Class124_Sub17[][] aClass124_Sub17ArrayArray1507;
+	public static Widget[][] widgets;
 	int anInt1465;
 	public String aString1472 = "null";
 	public int anInt1470 = 2000;
@@ -98,7 +98,7 @@ public class Class124_Sub22_Sub10 extends Class124_Sub22 {
 	void method711() {
 	}
 
-	void method712(final Class124_Sub14 var1) {
+	void method712(final RSBuf var1) {
 		while (true) {
 			final int var2 = var1.method558();
 			if (var2 == 0)
@@ -108,7 +108,7 @@ public class Class124_Sub22_Sub10 extends Class124_Sub22 {
 		}
 	}
 
-	void method713(final Class124_Sub14 var1, final int var2) {
+	void method713(final RSBuf var1, final int var2) {
 		if (var2 == 1)
 			anInt1465 = var1.method560();
 		else if (var2 == 2)
@@ -294,13 +294,13 @@ public class Class124_Sub22_Sub10 extends Class124_Sub22 {
 			return true;
 		else {
 			boolean var5 = true;
-			if (!aClass94_1460.method366(var2, 0))
+			if (!aClass94_1460.valid(var2, 0))
 				var5 = false;
 
-			if ((var4 != -1) && !aClass94_1460.method366(var4, 0))
+			if ((var4 != -1) && !aClass94_1460.valid(var4, 0))
 				var5 = false;
 
-			if ((var3 != -1) && !aClass94_1460.method366(var3, 0))
+			if ((var3 != -1) && !aClass94_1460.valid(var3, 0))
 				var5 = false;
 
 			return var5;
@@ -365,10 +365,10 @@ public class Class124_Sub22_Sub10 extends Class124_Sub22 {
 			return true;
 		else {
 			boolean var3 = true;
-			if (!aClass94_1460.method366(var2, 0))
+			if (!aClass94_1460.valid(var2, 0))
 				var3 = false;
 
-			if ((var4 != -1) && !aClass94_1460.method366(var4, 0))
+			if ((var4 != -1) && !aClass94_1460.valid(var4, 0))
 				var3 = false;
 
 			return var3;
@@ -469,7 +469,7 @@ public class Class124_Sub22_Sub10 extends Class124_Sub22 {
 		anInt1458 = 0;
 	}
 
-	static void method723(final Class124_Sub17 var0) {
+	static void method723(final Widget var0) {
 		if (var0.anInt1283 == client.anInt2216)
 			client.aBoolArray2061[var0.anInt1239] = true;
 
@@ -480,11 +480,11 @@ public class Class124_Sub22_Sub10 extends Class124_Sub22 {
 		if (null != var1)
 			return var1;
 		else {
-			final byte[] var2 = aClass94_1459.method377(10, var0);
+			final byte[] var2 = aClass94_1459.decode(10, var0);
 			var1 = new Class124_Sub22_Sub10();
 			var1.anInt1464 = var0;
 			if (var2 != null)
-				var1.method712(new Class124_Sub14(var2));
+				var1.method712(new RSBuf(var2));
 
 			var1.method711();
 			if (var1.anInt1495 != -1)

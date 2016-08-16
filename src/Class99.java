@@ -42,7 +42,7 @@ public class Class99 implements Runnable {
 						anInt773 = 600;
 					}
 				} else {
-					client.method1067(100L);
+					client.sleep(100L);
 					var14 = anObject774;
 					synchronized (var14) {
 						if (anInt773 <= 1) {

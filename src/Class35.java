@@ -4,8 +4,8 @@ public class Class35 {
 	static int anInt374;
 	static int anInt375;
 
-	static final void method189(final Class124_Sub17[] var0, final int var1) {
-		for (final Class124_Sub17 var4 : var0) {
+	static final void method189(final Widget[] var0, final int var1) {
+		for (final Widget var4 : var0) {
 			if (var4 != null) {
 				if (var4.anInt1191 == 0) {
 					if (null != var4.aClass124_Sub17Array1263)
@@ -26,7 +26,7 @@ public class Class35 {
 
 				if ((var1 == 1) && (var4.anObjectArray1247 != null)) {
 					if (var4.anInt1154 >= 0) {
-						final Class124_Sub17 var6 = Class10.method55(var4.anInt1284);
+						final Widget var6 = Class10.method55(var4.anInt1284);
 						if ((null == var6) || (null == var6.aClass124_Sub17Array1263)
 								|| (var4.anInt1154 >= var6.aClass124_Sub17Array1263.length)
 								|| (var6.aClass124_Sub17Array1263[var4.anInt1154] != var4))
@@ -91,7 +91,7 @@ public class Class35 {
 						Class20.method95(31, "", "You can\'t add yourself to your own ignore list");
 					else {
 						client.aClass124_Sub14_Sub1_2024.method837(67);
-						client.aClass124_Sub14_Sub1_2024.method545(Class54.method258(var0));
+						client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
 						client.aClass124_Sub14_Sub1_2024.method550(var0);
 					}
 				}
@@ -149,7 +149,7 @@ public class Class35 {
 
 		if ((var2 & 1024) != 0) {
 			var1.anInt1710 = client.aClass124_Sub14_Sub1_2026.method560();
-			var3 = client.aClass124_Sub14_Sub1_2026.method595();
+			var3 = client.aClass124_Sub14_Sub1_2026.getIntv1();
 			var1.anInt1678 = var3 >> 16;
 			var1.anInt1707 = (var3 & '\uffff') + client.anInt2158;
 			var1.anInt1705 = 0;
@@ -168,16 +168,16 @@ public class Class35 {
 			final Class74 var7 = (Class74) Class23.method158(var10, client.aClass124_Sub14_Sub1_2026.method604());
 			final boolean var11 = client.aClass124_Sub14_Sub1_2026.method604() == 1;
 			final int var5 = client.aClass124_Sub14_Sub1_2026.method602();
-			final int var6 = client.aClass124_Sub14_Sub1_2026.anInt1075;
+			final int var6 = client.aClass124_Sub14_Sub1_2026.pos;
 			if ((null != var1.aString1956) && (var1.aClass100_1943 != null)) {
 				boolean var12 = false;
 				if (var7.aBool615 && Class1.method12(var1.aString1956))
 					var12 = true;
 
 				if (!var12 && (client.anInt2099 == 0) && !var1.aBool1960) {
-					client.aClass124_Sub14_2146.anInt1075 = 0;
-					client.aClass124_Sub14_Sub1_2026.method598(client.aClass124_Sub14_2146.aByteArray1073, 0, var5);
-					client.aClass124_Sub14_2146.anInt1075 = 0;
+					client.aClass124_Sub14_2146.pos = 0;
+					client.aClass124_Sub14_Sub1_2026.method598(client.aClass124_Sub14_2146.backing, 0, var5);
+					client.aClass124_Sub14_2146.pos = 0;
 					final String var9 = Class124_Sub22_Sub16_Sub4.method1031(Class124_Sub22_Sub19_Sub1
 							.method886(RuntimeException_Sub1.method1013(client.aClass124_Sub14_2146)));
 					var1.aString1683 = var9.trim();
@@ -200,7 +200,7 @@ public class Class35 {
 				}
 			}
 
-			client.aClass124_Sub14_Sub1_2026.anInt1075 = var5 + var6;
+			client.aClass124_Sub14_Sub1_2026.pos = var5 + var6;
 		}
 
 		if ((var2 & 64) != 0) {
@@ -220,7 +220,7 @@ public class Class35 {
 		if ((var2 & 8) != 0) {
 			var3 = client.aClass124_Sub14_Sub1_2026.method604();
 			final byte[] var14 = new byte[var3];
-			final Class124_Sub14 var13 = new Class124_Sub14(var14);
+			final RSBuf var13 = new RSBuf(var14);
 			client.aClass124_Sub14_Sub1_2026.method591(var14, 0, var3);
 			client.aClass124_Sub14Array2256[var0] = var13;
 			var1.method1044(var13);
@@ -251,7 +251,7 @@ public class Class35 {
 		return new Class94_Sub1(var4, Class124_Sub22_Sub20.aClass69_1642, var0, var1, var2, var3);
 	}
 
-	static final void method194(final Class124_Sub17 var0, final int var1, final int var2) {
+	static final void method194(final Widget var0, final int var1, final int var2) {
 		if ((client.aClass124_Sub17_2155 == null) && !client.aBool2240)
 			if ((var0 != null) && (Class41.method212(var0) != null)) {
 				client.aClass124_Sub17_2155 = var0;

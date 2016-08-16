@@ -1,20 +1,20 @@
-public class Class124_Sub6 extends Class124 {
+public class Class124_Sub6 extends Node {
 	static int anInt992;
 	int anInt993;
-	Class124_Sub17 aClass124_Sub17_994;
+	Widget aClass124_Sub17_994;
 	Object[] anObjectArray995;
 	boolean aBool996;
 	int anInt997;
 	int anInt998;
 	int anInt999;
-	Class124_Sub17 aClass124_Sub17_1000;
+	Widget aClass124_Sub17_1000;
 	int anInt1001;
 	String aString1002;
 	static int anInt1003;
 	int anInt1004;
-	static Class124_Sub17 aClass124_Sub17_1005;
+	static Widget aClass124_Sub17_1005;
 	static Class41 aClass41_1006;
-	public static Class124_Sub14 aClass124_Sub14_1007;
+	public static RSBuf aClass124_Sub14_1007;
 
 	static void method518(final int var0, final byte[] var1, final Class69 var2) {
 		final Class124_Sub19 var3 = new Class124_Sub19();
@@ -61,7 +61,7 @@ public class Class124_Sub6 extends Class124 {
 		Class98.anIntArrayArray772 = null;
 		Class27.anIntArray287 = null;
 		Class64.anIntArray559 = null;
-		Class124_Sub22_Sub11.anIntArray1512 = null;
+		Def14.anIntArray1512 = null;
 		Class27.anIntArray291 = null;
 		Class27.anIntArray292 = null;
 	}

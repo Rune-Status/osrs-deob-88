@@ -3,12 +3,12 @@ public class Class124_Sub22_Sub17 extends Class124_Sub22 {
 
 	Class124_Sub22_Sub17(final Class94 var1, final Class94 var2, final int var3, final boolean var4) {
 		final Class111 var10 = new Class111();
-		final int var5 = var1.method382(var3);
+		final int var5 = var1.widgetLen(var3);
 		aClass24Array1595 = new Class24[var5];
 		final int[] var6 = var1.method372(var3);
 
 		for (int var7 = 0; var7 < var6.length; ++var7) {
-			final byte[] var8 = var1.method377(var3, var6[var7]);
+			final byte[] var8 = var1.decode(var3, var6[var7]);
 			Class124_Sub12 var9 = null;
 			final int var11 = ((var8[0] & 255) << 8) | (var8[1] & 255);
 
@@ -22,9 +22,9 @@ public class Class124_Sub22_Sub17 extends Class124_Sub22 {
 			if (null == var9) {
 				byte[] var13;
 				if (var4)
-					var13 = var2.method380(0, var11);
+					var13 = var2.decode2(0, var11);
 				else
-					var13 = var2.method380(var11, 0);
+					var13 = var2.decode2(var11, 0);
 
 				var9 = new Class124_Sub12(var11, var13);
 				var10.method424(var9);

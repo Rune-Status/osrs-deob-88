@@ -54,7 +54,7 @@ public final class client extends Applet_Sub1 {
 	static int anInt2191 = 0;
 	static int anInt2008 = 0;
 	static int anInt2009 = 0;
-	static Class124_Sub14 aClass124_Sub14_2146 = new Class124_Sub14(new byte[5000]);
+	static RSBuf aClass124_Sub14_2146 = new RSBuf(new byte[5000]);
 	static Class34 aClass34_2011;
 	static int anInt2012;
 	static int anInt2016;
@@ -143,7 +143,7 @@ public final class client extends Applet_Sub1 {
 	static int[] anIntArray2128;
 	static int anInt2029;
 	static int[] anIntArray2104;
-	static Class124_Sub14[] aClass124_Sub14Array2256;
+	static RSBuf[] aClass124_Sub14Array2256;
 	static int anInt2106;
 	static int anInt2107;
 	static int anInt2108;
@@ -182,7 +182,7 @@ public final class client extends Applet_Sub1 {
 	static Class107 aClass107_2143;
 	static int anInt2131;
 	static int anInt2036;
-	static Class124_Sub17 aClass124_Sub17_2042;
+	static Widget aClass124_Sub17_2042;
 	static int anInt2147;
 	static int anInt2148;
 	static int anInt2149;
@@ -190,12 +190,12 @@ public final class client extends Applet_Sub1 {
 	static boolean aBool2151;
 	static boolean aBool2021;
 	static boolean aBool2153;
-	static Class124_Sub17 aClass124_Sub17_2154;
-	static Class124_Sub17 aClass124_Sub17_2155;
-	static Class124_Sub17 aClass124_Sub17_2199;
+	static Widget aClass124_Sub17_2154;
+	static Widget aClass124_Sub17_2155;
+	static Widget aClass124_Sub17_2199;
 	static int anInt2157;
 	static int anInt2145;
-	static Class124_Sub17 aClass124_Sub17_2159;
+	static Widget aClass124_Sub17_2159;
 	static boolean aBool2160;
 	static int anInt2161;
 	static int anInt2162;
@@ -340,7 +340,7 @@ public final class client extends Applet_Sub1 {
 					Class96.aClass94_767 = null;
 				}
 
-				Class124_Sub22_Sub14.method751();
+				Def15.method751();
 				Class57.method268();
 				Class124_Sub22_Sub19_Sub6.method968();
 				if (Class47.aClass66_473 != null) {
@@ -365,7 +365,7 @@ public final class client extends Applet_Sub1 {
 					Class62.method279(this);
 
 				if (anInt1992 == 30)
-					Class124_Sub22_Sub18.method832();
+					Somet2.method832();
 				else if ((anInt1992 == 40) || (anInt1992 == 45))
 					Class49.method235();
 
@@ -378,15 +378,15 @@ public final class client extends Applet_Sub1 {
 
 	@Override
 	protected final void method1056(final byte var1) {
-		final boolean var2 = Class124_Sub22_Sub4.method672();
+		final boolean var2 = Def16.method672();
 		if (var2 && aBool2221 && (null != aClass8_2224))
 			aClass8_2224.method38();
 
 		if ((anInt1992 == 10) || (anInt1992 == 20) || (anInt1992 == 30))
 			if ((aLong2195 != 0L) && (Class74.method316(-563847615) > aLong2195))
-				Class124_Sub22_Sub12.method735(Class34.method187());
+				Def13.method735(Class34.method187());
 			else if (aBool1963)
-				Class124_Sub14.method605(-611232372);
+				RSBuf.method605(-611232372);
 
 		final Dimension var3 = method1060();
 		if ((var3.width != Class124_Sub5.anInt989) || (var3.height != Class124_Sub22_Sub19_Sub1.anInt1664)
@@ -499,10 +499,10 @@ public final class client extends Applet_Sub1 {
 				anInt2216 = anInt2158;
 				anInt2172 = -1;
 				anInt2132 = -1;
-				Class124_Sub22_Sub1.aClass124_Sub17_1352 = null;
+				Def9.aClass124_Sub17_1352 = null;
 				if (anInt2142 != -1) {
 					anInt2185 = 0;
-					Class124_Sub22_Sub6.method692(anInt2142, 0, 0, Class56_Sub2.anInt1083, Class81.anInt662, 0, 0, -1);
+					Def6.method692(anInt2142, 0, 0, Class56_Sub2.anInt1083, Class81.anInt662, 0, 0, -1);
 				}
 
 				Class124_Sub22_Sub16.method763();
@@ -665,13 +665,13 @@ public final class client extends Applet_Sub1 {
 							throw new IOException();
 
 						Class124_Sub22_Sub21 var5;
-						Class124_Sub14 var6;
+						RSBuf var6;
 						while ((Class92.anInt716 < 20) && (Class92.anInt719 > 0)) {
 							var5 = (Class124_Sub22_Sub21) Class92.aClass107_718.method411();
-							var6 = new Class124_Sub14(4);
-							var6.method545(1);
+							var6 = new RSBuf(4);
+							var6.writeByte(1);
 							var6.method547((int) var5.aLong874);
-							Class92.aClass78_732.method323(var6.aByteArray1073, 0, 4);
+							Class92.aClass78_732.method323(var6.backing, 0, 4);
 							Class92.aClass107_730.method412(var5, var5.aLong874);
 							--Class92.anInt719;
 							++Class92.anInt716;
@@ -679,10 +679,10 @@ public final class client extends Applet_Sub1 {
 
 						while ((Class92.anInt725 < 20) && (Class92.anInt723 > 0)) {
 							var5 = (Class124_Sub22_Sub21) Class92.aClass108_722.method417();
-							var6 = new Class124_Sub14(4);
-							var6.method545(0);
+							var6 = new RSBuf(4);
+							var6.writeByte(0);
 							var6.method547((int) var5.aLong874);
-							Class92.aClass78_732.method323(var6.aByteArray1073, 0, 4);
+							Class92.aClass78_732.method323(var6.backing, 0, 4);
 							var5.method637();
 							Class92.aClass107_724.method412(var5, var5.aLong874);
 							--Class92.anInt723;
@@ -709,23 +709,23 @@ public final class client extends Applet_Sub1 {
 							int var12;
 							int var14;
 							if (var9 > 0) {
-								var10 = var9 - Class92.aClass124_Sub14_726.anInt1075;
+								var10 = var9 - Class92.aClass124_Sub14_726.pos;
 								if (var10 > var8)
 									var10 = var8;
 
-								Class92.aClass78_732.method320(Class92.aClass124_Sub14_726.aByteArray1073,
-										Class92.aClass124_Sub14_726.anInt1075, var10);
+								Class92.aClass78_732.method320(Class92.aClass124_Sub14_726.backing,
+										Class92.aClass124_Sub14_726.pos, var10);
 								if (Class92.aByte733 != 0)
 									for (var11 = 0; var11 < var10; ++var11)
-										Class92.aClass124_Sub14_726.aByteArray1073[var11
-												+ Class92.aClass124_Sub14_726.anInt1075] ^= Class92.aByte733;
+										Class92.aClass124_Sub14_726.backing[var11
+												+ Class92.aClass124_Sub14_726.pos] ^= Class92.aByte733;
 
-								Class92.aClass124_Sub14_726.anInt1075 += var10;
-								if (Class92.aClass124_Sub14_726.anInt1075 < var9)
+								Class92.aClass124_Sub14_726.pos += var10;
+								if (Class92.aClass124_Sub14_726.pos < var9)
 									break;
 
 								if (Class28.aClass124_Sub22_Sub21_311 == null) {
-									Class92.aClass124_Sub14_726.anInt1075 = 0;
+									Class92.aClass124_Sub14_726.pos = 0;
 									var11 = Class92.aClass124_Sub14_726.method558();
 									var12 = Class92.aClass124_Sub14_726.method560();
 									final int var13 = Class92.aClass124_Sub14_726.method558();
@@ -744,45 +744,45 @@ public final class client extends Applet_Sub1 {
 
 									final int var18 = var13 == 0 ? 5 : 9;
 									Class28.aClass124_Sub22_Sub21_311 = var17;
-									Class67.aClass124_Sub14_569 = new Class124_Sub14(
+									Class67.aClass124_Sub14_569 = new RSBuf(
 											Class28.aClass124_Sub22_Sub21_311.aByte1650 + var14 + var18);
-									Class67.aClass124_Sub14_569.method545(var13);
+									Class67.aClass124_Sub14_569.writeByte(var13);
 									Class67.aClass124_Sub14_569.method548(var14);
 									Class92.anInt727 = 8;
-									Class92.aClass124_Sub14_726.anInt1075 = 0;
+									Class92.aClass124_Sub14_726.pos = 0;
 								} else if (Class92.anInt727 == 0)
-									if (Class92.aClass124_Sub14_726.aByteArray1073[0] == -1) {
+									if (Class92.aClass124_Sub14_726.backing[0] == -1) {
 										Class92.anInt727 = 1;
-										Class92.aClass124_Sub14_726.anInt1075 = 0;
+										Class92.aClass124_Sub14_726.pos = 0;
 									} else
 										Class28.aClass124_Sub22_Sub21_311 = null;
 							} else {
-								var10 = Class67.aClass124_Sub14_569.aByteArray1073.length
+								var10 = Class67.aClass124_Sub14_569.backing.length
 										- Class28.aClass124_Sub22_Sub21_311.aByte1650;
 								var11 = 512 - Class92.anInt727;
-								if (var11 > (var10 - Class67.aClass124_Sub14_569.anInt1075))
-									var11 = var10 - Class67.aClass124_Sub14_569.anInt1075;
+								if (var11 > (var10 - Class67.aClass124_Sub14_569.pos))
+									var11 = var10 - Class67.aClass124_Sub14_569.pos;
 
 								if (var11 > var8)
 									var11 = var8;
 
-								Class92.aClass78_732.method320(Class67.aClass124_Sub14_569.aByteArray1073,
-										Class67.aClass124_Sub14_569.anInt1075, var11);
+								Class92.aClass78_732.method320(Class67.aClass124_Sub14_569.backing,
+										Class67.aClass124_Sub14_569.pos, var11);
 								if (Class92.aByte733 != 0)
 									for (var12 = 0; var12 < var11; ++var12)
-										Class67.aClass124_Sub14_569.aByteArray1073[Class67.aClass124_Sub14_569.anInt1075
+										Class67.aClass124_Sub14_569.backing[Class67.aClass124_Sub14_569.pos
 												+ var12] ^= Class92.aByte733;
 
-								Class67.aClass124_Sub14_569.anInt1075 += var11;
+								Class67.aClass124_Sub14_569.pos += var11;
 								Class92.anInt727 += var11;
-								if (var10 == Class67.aClass124_Sub14_569.anInt1075) {
+								if (var10 == Class67.aClass124_Sub14_569.pos) {
 									if (16711935L == Class28.aClass124_Sub22_Sub21_311.aLong874) {
 										Class124_Sub6.aClass124_Sub14_1007 = Class67.aClass124_Sub14_569;
 
 										for (var12 = 0; var12 < 256; ++var12) {
 											final Class94_Sub1 var19 = Class92.aClass94_Sub1Array729[var12];
 											if (var19 != null) {
-												Class124_Sub6.aClass124_Sub14_1007.anInt1075 = 5 + (var12 * 8);
+												Class124_Sub6.aClass124_Sub14_1007.pos = 5 + (var12 * 8);
 												var14 = Class124_Sub6.aClass124_Sub14_1007.method562(2103441446);
 												final int var20 = Class124_Sub6.aClass124_Sub14_1007
 														.method562(1026071084);
@@ -791,7 +791,7 @@ public final class client extends Applet_Sub1 {
 										}
 									} else {
 										Class92.aCRC32_720.reset();
-										Class92.aCRC32_720.update(Class67.aClass124_Sub14_569.aByteArray1073, 0, var10);
+										Class92.aCRC32_720.update(Class67.aClass124_Sub14_569.backing, 0, var10);
 										var12 = (int) Class92.aCRC32_720.getValue();
 										if (var12 != Class28.aClass124_Sub22_Sub21_311.anInt1648) {
 											try {
@@ -811,7 +811,7 @@ public final class client extends Applet_Sub1 {
 										Class92.anInt721 = 0;
 										Class28.aClass124_Sub22_Sub21_311.aClass94_Sub1_1651.method618(
 												(int) (Class28.aClass124_Sub22_Sub21_311.aLong874 & 65535L),
-												Class67.aClass124_Sub14_569.aByteArray1073,
+												Class67.aClass124_Sub14_569.backing,
 												16711680L == (Class28.aClass124_Sub22_Sub21_311.aLong874 & 16711680L),
 												Class45.aBool447);
 									}
@@ -873,7 +873,7 @@ public final class client extends Applet_Sub1 {
 			if ((--anInt2014 + 1) <= 0)
 				try {
 					if (anInt2013 == 0) {
-						Class124_Sub7.aClass79_1010 = Class27.aClass82_303.method332(Class124_Sub22_Sub8.aString1452,
+						Class124_Sub7.aClass79_1010 = Class27.aClass82_303.method332(Def8.aString1452,
 								Class124_Sub22_Sub5.anInt1381);
 						++anInt2013;
 					}
@@ -891,10 +891,10 @@ public final class client extends Applet_Sub1 {
 					if (anInt2013 == 2) {
 						Class90.aClass78_708 = new Class78((Socket) Class124_Sub7.aClass79_1010.anObject638,
 								Class27.aClass82_303);
-						final Class124_Sub14 var1 = new Class124_Sub14(5);
-						var1.method545(15);
+						final RSBuf var1 = new RSBuf(5);
+						var1.writeByte(15);
 						var1.method548(88);
-						Class90.aClass78_708.method323(var1.aByteArray1073, 0, 5);
+						Class90.aClass78_708.method323(var1.backing, 0, 5);
 						++anInt2013;
 						Class124_Sub22_Sub19_Sub1.aLong1658 = Class74.method316(277218670);
 					}
@@ -1037,7 +1037,7 @@ public final class client extends Applet_Sub1 {
 			}
 
 			Class27.method163();
-			Class124_Sub22_Sub8.aString1452 = getCodeBase().getHost();
+			Def8.aString1452 = getCodeBase().getHost();
 			final String var12 = aClass71_2005.aString588;
 			final byte var13 = 0;
 
@@ -1147,7 +1147,7 @@ public final class client extends Applet_Sub1 {
 		anIntArray2128 = new int[2048];
 		anInt2029 = 0;
 		anIntArray2104 = new int[2048];
-		aClass124_Sub14Array2256 = new Class124_Sub14[2048];
+		aClass124_Sub14Array2256 = new RSBuf[2048];
 		anInt2106 = -1;
 		anInt2107 = 0;
 		anInt2108 = 0;
@@ -1347,7 +1347,7 @@ public final class client extends Applet_Sub1 {
 		var2.addKeyListener(Class84.aClass84_683);
 		var2.addFocusListener(Class84.aClass84_683);
 		Class82.method329(Class124_Sub5.aCanvas990);
-		Class47.aClass66_473 = Class124_Sub22_Sub3.method665(1306502666);
+		Class47.aClass66_473 = Def1.method665(1306502666);
 		if (Class47.aClass66_473 != null)
 			Class47.aClass66_473.method293(Class124_Sub5.aCanvas990, (byte) 107);
 
@@ -1360,14 +1360,14 @@ public final class client extends Applet_Sub1 {
 		if (anInt2080 != 0)
 			aBool2000 = true;
 
-		Class124_Sub22_Sub12.method735(Class57.aClass22_538.anInt250);
+		Def13.method735(Class57.aClass22_538.anInt250);
 	}
 
 	@Override
 	protected final void method1061(final int var1) {
 	}
 
-	public static final void method1067(final long var0) {
+	public static final void sleep(final long var0) {
 		if (var0 > 0L)
 			if ((var0 % 10L) == 0L) {
 				final long var2 = var0 - 1L;

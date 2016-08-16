@@ -22,7 +22,7 @@ public final class Class97 {
 				Class23.anIntArray266);
 	}
 
-	public static void method390(final Class124_Sub14 var0) {
+	public static void method390(final RSBuf var0) {
 		final Class124_Sub24 var1 = new Class124_Sub24();
 		var1.anInt1307 = var0.method558();
 		var1.anInt1309 = var0.method562(-1089092006);

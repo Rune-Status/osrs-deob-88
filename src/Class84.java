@@ -147,17 +147,17 @@ public final class Class84 implements KeyListener, FocusListener {
 	public final void focusGained(final FocusEvent var1) {
 	}
 
-	public static Class124_Sub22_Sub2 method338(final int var0) {
-		Class124_Sub22_Sub2 var1 = (Class124_Sub22_Sub2) Class124_Sub22_Sub2.aClass113_1354.method434(var0);
+	public static Def3 method338(final int var0) {
+		Def3 var1 = (Def3) Def3.aClass113_1354.method434(var0);
 		if (null != var1)
 			return var1;
 		else {
-			final byte[] var2 = Class124_Sub22_Sub2.aClass94_1363.method377(3, var0);
-			var1 = new Class124_Sub22_Sub2();
+			final byte[] var2 = Def3.aClass94_1363.decode(3, var0);
+			var1 = new Def3();
 			if (null != var2)
-				var1.method648(new Class124_Sub14(var2));
+				var1.method648(new RSBuf(var2));
 
-			Class124_Sub22_Sub2.aClass113_1354.method435(var1, var0);
+			Def3.aClass113_1354.method435(var1, var0);
 			return var1;
 		}
 	}

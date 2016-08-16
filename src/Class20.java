@@ -68,7 +68,7 @@ public class Class20 {
 					}
 
 					if (null != client.aClass124_Sub17_2159) {
-						Class124_Sub17 var10 = client.aClass124_Sub17_2155;
+						Widget var10 = client.aClass124_Sub17_2155;
 						final int var8 = RuntimeException_Sub1.method1012(Class124_Sub22_Sub19_Sub6.method963(var10),
 								485748520);
 						if (var8 == 0)
@@ -92,7 +92,7 @@ public class Class20 {
 					}
 				} else if (((client.anInt2122 == 1) || Class53.method256(client.anInt2124 - 1))
 						&& (client.anInt2124 > 2))
-					Class124_Sub22_Sub12.method737(client.anInt2157 + client.anInt2200,
+					Def13.method737(client.anInt2157 + client.anInt2200,
 							client.anInt2145 + client.anInt2165);
 				else if (client.anInt2124 > 0)
 					Class124_Sub13.method541(client.anInt2200 + client.anInt2157, client.anInt2145 + client.anInt2165);

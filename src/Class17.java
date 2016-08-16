@@ -11,14 +11,14 @@ public class Class17 {
 	int anInt156;
 	int anInt149;
 
-	final void method81(final Class124_Sub14 var1) {
+	final void method81(final RSBuf var1) {
 		anInt152 = var1.method558();
 		anInt150 = var1.method562(-22412149);
 		anInt151 = var1.method562(533895948);
 		method82(var1);
 	}
 
-	final void method82(final Class124_Sub14 var1) {
+	final void method82(final RSBuf var1) {
 		anInt154 = var1.method558();
 		anIntArray157 = new int[anInt154];
 		anIntArray147 = new int[anInt154];

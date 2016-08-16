@@ -27,7 +27,7 @@ public class Class74 implements Interface3 {
 	}
 
 	public static int method315(final int var0, final byte var1) {
-		final Class124_Sub22_Sub11 var2 = Class32.method185(var0);
+		final Def14 var2 = Class32.method185(var0);
 		final int var5 = var2.anInt1510;
 		final int var4 = var2.anInt1513;
 		final int var3 = var2.anInt1511;

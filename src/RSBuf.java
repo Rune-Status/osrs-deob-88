@@ -2,28 +2,28 @@ import java.awt.Canvas;
 import java.awt.Color;
 import java.math.BigInteger;
 
-public class Class124_Sub14 extends Class124 {
-	public int anInt1075;
-	public byte[] aByteArray1073;
+public class RSBuf extends Node {
+	public int pos;
+	public byte[] backing;
 	static int[] anIntArray1074 = new int[256];
 
 	public int method544() {
-		anInt1075 += 2;
-		return (aByteArray1073[anInt1075 - 2] & 255) + ((aByteArray1073[anInt1075 - 1] & 255) << 8);
+		pos += 2;
+		return (backing[pos - 2] & 255) + ((backing[pos - 1] & 255) << 8);
 	}
 
-	public Class124_Sub14(final byte[] var1) {
-		aByteArray1073 = var1;
-		anInt1075 = 0;
+	public RSBuf(final byte[] var1) {
+		backing = var1;
+		pos = 0;
 	}
 
-	public void method545(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) var1;
+	public void writeByte(final int var1) {
+		backing[++pos - 1] = (byte) var1;
 	}
 
 	public int method546() {
-		anInt1075 += 2;
-		int var1 = ((aByteArray1073[anInt1075 - 2] & 255) << 8) + (aByteArray1073[anInt1075 - 1] & 255);
+		pos += 2;
+		int var1 = ((backing[pos - 2] & 255) << 8) + (backing[pos - 1] & 255);
 		if (var1 > 32767)
 			var1 -= 65536;
 
@@ -31,25 +31,25 @@ public class Class124_Sub14 extends Class124 {
 	}
 
 	public void method547(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 16);
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 8);
-		aByteArray1073[++anInt1075 - 1] = (byte) var1;
+		backing[++pos - 1] = (byte) (var1 >> 16);
+		backing[++pos - 1] = (byte) (var1 >> 8);
+		backing[++pos - 1] = (byte) var1;
 	}
 
 	public void method548(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 24);
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 16);
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 8);
-		aByteArray1073[++anInt1075 - 1] = (byte) var1;
+		backing[++pos - 1] = (byte) (var1 >> 24);
+		backing[++pos - 1] = (byte) (var1 >> 16);
+		backing[++pos - 1] = (byte) (var1 >> 8);
+		backing[++pos - 1] = (byte) var1;
 	}
 
 	public void method549(final long var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 40));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 32));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 24));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 16));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 8));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) var1);
+		backing[++pos - 1] = (byte) ((int) (var1 >> 40));
+		backing[++pos - 1] = (byte) ((int) (var1 >> 32));
+		backing[++pos - 1] = (byte) ((int) (var1 >> 24));
+		backing[++pos - 1] = (byte) ((int) (var1 >> 16));
+		backing[++pos - 1] = (byte) ((int) (var1 >> 8));
+		backing[++pos - 1] = (byte) ((int) var1);
 	}
 
 	public void method550(final String var1) {
@@ -57,90 +57,90 @@ public class Class124_Sub14 extends Class124 {
 		if (var2 >= 0)
 			throw new IllegalArgumentException("");
 		else {
-			anInt1075 += Class32.method184(var1, 0, var1.length(), aByteArray1073, anInt1075);
-			aByteArray1073[++anInt1075 - 1] = 0;
+			pos += Class32.method184(var1, 0, var1.length(), backing, pos);
+			backing[++pos - 1] = 0;
 		}
 	}
 
 	public void method551(final CharSequence var1) {
-		final int var2 = Class124_Sub22_Sub8.method703(var1);
-		aByteArray1073[++anInt1075 - 1] = 0;
+		final int var2 = Def8.method703(var1);
+		backing[++pos - 1] = 0;
 		method599(var2);
-		anInt1075 += Class95.method386(aByteArray1073, anInt1075, var1);
+		pos += Class95.method386(backing, pos, var1);
 	}
 
-	public void method552(final BigInteger var1, final BigInteger var2) {
-		final int var3 = anInt1075;
-		anInt1075 = 0;
+	public void dorsa(final BigInteger var1, final BigInteger var2) {
+		final int var3 = pos;
+		pos = 0;
 		final byte[] var6 = new byte[var3];
 		method598(var6, 0, var3);
 		final BigInteger var4 = new BigInteger(var6);
 		final BigInteger var5 = var4; //.modPow(var1, var2);
 		final byte[] var7 = var5.toByteArray();
-		anInt1075 = 0;
-		method592(var7.length);
+		pos = 0;
+		writeShort(var7.length);
 		method568(var7, 0, var7.length);
 	}
 
 	public void method553(final int var1) {
-		aByteArray1073[anInt1075 - var1 - 4] = (byte) (var1 >> 24);
-		aByteArray1073[anInt1075 - var1 - 3] = (byte) (var1 >> 16);
-		aByteArray1073[anInt1075 - var1 - 2] = (byte) (var1 >> 8);
-		aByteArray1073[anInt1075 - var1 - 1] = (byte) var1;
+		backing[pos - var1 - 4] = (byte) (var1 >> 24);
+		backing[pos - var1 - 3] = (byte) (var1 >> 16);
+		backing[pos - var1 - 2] = (byte) (var1 >> 8);
+		backing[pos - var1 - 1] = (byte) var1;
 	}
 
 	public void method554(final int var1) {
-		aByteArray1073[anInt1075 - var1 - 2] = (byte) (var1 >> 8);
-		aByteArray1073[anInt1075 - var1 - 1] = (byte) var1;
+		backing[pos - var1 - 2] = (byte) (var1 >> 8);
+		backing[pos - var1 - 1] = (byte) var1;
 	}
 
 	public void method555(final int var1) {
-		aByteArray1073[anInt1075 - var1 - 1] = (byte) var1;
+		backing[pos - var1 - 1] = (byte) var1;
 	}
 
 	public void method556(final int var1) {
 		if ((var1 >= 0) && (var1 < 128))
-			method545(var1);
+			writeByte(var1);
 		else if ((var1 >= 0) && (var1 < '\u8000'))
-			method592(var1 + '\u8000');
+			writeShort(var1 + '\u8000');
 		else
 			throw new IllegalArgumentException();
 	}
 
 	public int method557() {
-		anInt1075 += 3;
-		return ((aByteArray1073[anInt1075 - 3] & 255) << 16) + ((aByteArray1073[anInt1075 - 2] & 255) << 8)
-				+ (aByteArray1073[anInt1075 - 1] & 255);
+		pos += 3;
+		return ((backing[pos - 3] & 255) << 16) + ((backing[pos - 2] & 255) << 8)
+				+ (backing[pos - 1] & 255);
 	}
 
 	public int method558() {
-		return aByteArray1073[++anInt1075 - 1] & 255;
+		return backing[++pos - 1] & 255;
 	}
 
 	public byte method559() {
-		return aByteArray1073[++anInt1075 - 1];
+		return backing[++pos - 1];
 	}
 
 	public int method560() {
-		anInt1075 += 2;
-		return (aByteArray1073[anInt1075 - 1] & 255) + ((aByteArray1073[anInt1075 - 2] & 255) << 8);
+		pos += 2;
+		return (backing[pos - 1] & 255) + ((backing[pos - 2] & 255) << 8);
 	}
 
 	public void method561(final long var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 56));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 48));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 40));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 32));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 24));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 16));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) (var1 >> 8));
-		aByteArray1073[++anInt1075 - 1] = (byte) ((int) var1);
+		backing[++pos - 1] = (byte) ((int) (var1 >> 56));
+		backing[++pos - 1] = (byte) ((int) (var1 >> 48));
+		backing[++pos - 1] = (byte) ((int) (var1 >> 40));
+		backing[++pos - 1] = (byte) ((int) (var1 >> 32));
+		backing[++pos - 1] = (byte) ((int) (var1 >> 24));
+		backing[++pos - 1] = (byte) ((int) (var1 >> 16));
+		backing[++pos - 1] = (byte) ((int) (var1 >> 8));
+		backing[++pos - 1] = (byte) ((int) var1);
 	}
 
 	public int method562(final int var1) {
-		anInt1075 += 4;
-		return (aByteArray1073[anInt1075 - 1] & 255) + ((aByteArray1073[anInt1075 - 3] & 255) << 16)
-				+ ((aByteArray1073[anInt1075 - 4] & 255) << 24) + ((aByteArray1073[anInt1075 - 2] & 255) << 8);
+		pos += 4;
+		return (backing[pos - 1] & 255) + ((backing[pos - 3] & 255) << 16)
+				+ ((backing[pos - 4] & 255) << 24) + ((backing[pos - 2] & 255) << 8);
 	}
 
 	public long method563() {
@@ -150,39 +150,39 @@ public class Class124_Sub14 extends Class124 {
 	}
 
 	public String method564() {
-		if (aByteArray1073[anInt1075] == 0) {
-			++anInt1075;
+		if (backing[pos] == 0) {
+			++pos;
 			return null;
 		} else
 			return method597();
 	}
 
 	public String method565() {
-		final byte var1 = aByteArray1073[++anInt1075 - 1];
+		final byte var1 = backing[++pos - 1];
 		if (var1 != 0)
 			throw new IllegalStateException("");
 		else {
-			final int var2 = anInt1075;
+			final int var2 = pos;
 
-			while (aByteArray1073[++anInt1075 - 1] != 0)
+			while (backing[++pos - 1] != 0)
 				;
 
-			final int var3 = anInt1075 - var2 - 1;
-			return var3 == 0 ? "" : Class1.method16(aByteArray1073, var2, var3);
+			final int var3 = pos - var2 - 1;
+			return var3 == 0 ? "" : Class1.method16(backing, var2, var3);
 		}
 	}
 
 	public String method566() {
-		final byte var1 = aByteArray1073[++anInt1075 - 1];
+		final byte var1 = backing[++pos - 1];
 		if (var1 != 0)
 			throw new IllegalStateException("");
 		else {
 			final int var3 = method570();
-			if ((anInt1075 + var3) > aByteArray1073.length)
+			if ((pos + var3) > backing.length)
 				throw new IllegalStateException("");
 			else {
-				final byte[] var6 = aByteArray1073;
-				final int var7 = anInt1075;
+				final byte[] var6 = backing;
+				final int var7 = pos;
 				final char[] var5 = new char[var3];
 				int var11 = 0;
 				int var8 = var7;
@@ -227,47 +227,47 @@ public class Class124_Sub14 extends Class124 {
 				}
 
 				final String var4 = new String(var5, 0, var11);
-				anInt1075 += var3;
+				pos += var3;
 				return var4;
 			}
 		}
 	}
 
 	public boolean method567() {
-		anInt1075 -= 4;
-		final int var1 = Class41.method213(aByteArray1073, 0, anInt1075);
+		pos -= 4;
+		final int var1 = Class41.method213(backing, 0, pos);
 		final int var2 = method562(-923603984);
 		return var1 == var2;
 	}
 
-	public Class124_Sub14(final int var1) {
-		aByteArray1073 = Class62.method277(var1, (byte) -64);
-		anInt1075 = 0;
+	public RSBuf(final int var1) {
+		backing = Class62.method277(var1, (byte) -64);
+		pos = 0;
 	}
 
 	public void method568(final byte[] var1, final int var2, final int var3) {
 		for (int var4 = var2; var4 < (var2 + var3); ++var4)
-			aByteArray1073[++anInt1075 - 1] = var1[var4];
+			backing[++pos - 1] = var1[var4];
 
 	}
 
 	public int method569() {
-		return aByteArray1073[anInt1075] < 0 ? method562(-266900692) & Integer.MAX_VALUE : method560();
+		return backing[pos] < 0 ? method562(-266900692) & Integer.MAX_VALUE : method560();
 	}
 
 	public int method570() {
-		byte var1 = aByteArray1073[++anInt1075 - 1];
+		byte var1 = backing[++pos - 1];
 
 		int var2;
-		for (var2 = 0; var1 < 0; var1 = aByteArray1073[++anInt1075 - 1])
+		for (var2 = 0; var1 < 0; var1 = backing[++pos - 1])
 			var2 = (var2 | (var1 & 127)) << 7;
 
 		return var2 | var1;
 	}
 
 	public void method571(final int[] var1) {
-		final int var2 = anInt1075 / 8;
-		anInt1075 = 0;
+		final int var2 = pos / 8;
+		pos = 0;
 
 		for (int var3 = 0; var3 < var2; ++var3) {
 			int var8 = method562(136116459);
@@ -281,7 +281,7 @@ public class Class124_Sub14 extends Class124 {
 				var5 += var6;
 			}
 
-			anInt1075 -= 8;
+			pos -= 8;
 			method548(var8);
 			method548(var4);
 		}
@@ -289,8 +289,8 @@ public class Class124_Sub14 extends Class124 {
 	}
 
 	public void method572(final int[] var1) {
-		final int var2 = anInt1075 / 8;
-		anInt1075 = 0;
+		final int var2 = pos / 8;
+		pos = 0;
 
 		for (int var3 = 0; var3 < var2; ++var3) {
 			int var4 = method562(-736189881);
@@ -303,7 +303,7 @@ public class Class124_Sub14 extends Class124 {
 				var5 -= var6;
 			}
 
-			anInt1075 -= 8;
+			pos -= 8;
 			method548(var4);
 			method548(var7);
 		}
@@ -311,8 +311,8 @@ public class Class124_Sub14 extends Class124 {
 	}
 
 	public void method573(final int[] var1, final int var2, final int var3) {
-		final int var4 = anInt1075;
-		anInt1075 = var2;
+		final int var4 = pos;
+		pos = var2;
 		final int var9 = (var3 - var2) / 8;
 
 		for (int var6 = 0; var6 < var9; ++var6) {
@@ -327,39 +327,39 @@ public class Class124_Sub14 extends Class124 {
 				var7 += var5;
 			}
 
-			anInt1075 -= 8;
+			pos -= 8;
 			method548(var8);
 			method548(var11);
 		}
 
-		anInt1075 = var4;
+		pos = var4;
 	}
 
-	static Class124_Sub22_Sub18 method574(final int var0) {
-		Class124_Sub22_Sub18 var1 = (Class124_Sub22_Sub18) Class124_Sub22_Sub18.aClass113_1600.method434(var0);
+	static Somet2 method574(final int var0) {
+		Somet2 var1 = (Somet2) Somet2.aClass113_1600.method434(var0);
 		if (var1 != null)
 			return var1;
 		else {
-			final byte[] var3 = Class88.aClass94_Sub1_695.method377(var0, 0);
+			final byte[] var3 = Class88.aClass94_Sub1_695.decode(var0, 0);
 			if (var3 == null)
 				return null;
 			else {
-				var1 = new Class124_Sub22_Sub18();
-				final Class124_Sub14 var2 = new Class124_Sub14(var3);
-				var2.anInt1075 = var2.aByteArray1073.length - 12;
+				var1 = new Somet2();
+				final RSBuf var2 = new RSBuf(var3);
+				var2.pos = var2.backing.length - 12;
 				final int var5 = var2.method562(1291183748);
 				var1.anInt1599 = var2.method560();
 				var1.anInt1602 = var2.method560();
 				var1.anInt1597 = var2.method560();
 				var1.anInt1601 = var2.method560();
-				var2.anInt1075 = 0;
+				var2.pos = 0;
 				var2.method564();
 				var1.anIntArray1596 = new int[var5];
 				var1.anIntArray1603 = new int[var5];
 				var1.aStringArray1598 = new String[var5];
 
 				int var4;
-				for (int var6 = 0; var2.anInt1075 < (var2.aByteArray1073.length
+				for (int var6 = 0; var2.pos < (var2.backing.length
 						- 12); var1.anIntArray1596[var6++] = var4) {
 					var4 = var2.method560();
 					if (var4 == 3)
@@ -370,57 +370,57 @@ public class Class124_Sub14 extends Class124 {
 						var1.anIntArray1603[var6] = var2.method558();
 				}
 
-				Class124_Sub22_Sub18.aClass113_1600.method435(var1, var0);
+				Somet2.aClass113_1600.method435(var1, var0);
 				return var1;
 			}
 		}
 	}
 
 	public int method575(final int var1) {
-		final int var2 = Class41.method213(aByteArray1073, var1, anInt1075);
+		final int var2 = Class41.method213(backing, var1, pos);
 		method548(var2);
 		return var2;
 	}
 
 	public void method576(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 + 128);
+		backing[++pos - 1] = (byte) (var1 + 128);
 	}
 
 	public void method577(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (0 - var1);
+		backing[++pos - 1] = (byte) (0 - var1);
 	}
 
 	public void method578(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (128 - var1);
+		backing[++pos - 1] = (byte) (128 - var1);
 	}
 
 	public byte method579() {
-		return (byte) (aByteArray1073[++anInt1075 - 1] - 128);
+		return (byte) (backing[++pos - 1] - 128);
 	}
 
 	public void method580(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) var1;
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 8);
+		backing[++pos - 1] = (byte) var1;
+		backing[++pos - 1] = (byte) (var1 >> 8);
 	}
 
 	public void method581(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 + 128);
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 8);
+		backing[++pos - 1] = (byte) (var1 + 128);
+		backing[++pos - 1] = (byte) (var1 >> 8);
 	}
 
 	public int method582() {
-		anInt1075 += 2;
-		return ((aByteArray1073[anInt1075 - 1] - 128) & 255) + ((aByteArray1073[anInt1075 - 2] & 255) << 8);
+		pos += 2;
+		return ((backing[pos - 1] - 128) & 255) + ((backing[pos - 2] & 255) << 8);
 	}
 
 	public int method583() {
-		anInt1075 += 2;
-		return ((aByteArray1073[anInt1075 - 2] - 128) & 255) + ((aByteArray1073[anInt1075 - 1] & 255) << 8);
+		pos += 2;
+		return ((backing[pos - 2] - 128) & 255) + ((backing[pos - 1] & 255) << 8);
 	}
 
 	public int method584() {
-		anInt1075 += 2;
-		int var1 = (aByteArray1073[anInt1075 - 2] & 255) + ((aByteArray1073[anInt1075 - 1] & 255) << 8);
+		pos += 2;
+		int var1 = (backing[pos - 2] & 255) + ((backing[pos - 1] & 255) << 8);
 		if (var1 > 32767)
 			var1 -= 65536;
 
@@ -428,8 +428,8 @@ public class Class124_Sub14 extends Class124 {
 	}
 
 	public void method585(final int[] var1, final int var2, final int var3) {
-		final int var4 = anInt1075;
-		anInt1075 = var2;
+		final int var4 = pos;
+		pos = var2;
 		final int var6 = (var3 - var2) / 8;
 
 		for (int var7 = 0; var7 < var6; ++var7) {
@@ -443,59 +443,59 @@ public class Class124_Sub14 extends Class124 {
 				var9 -= var10;
 			}
 
-			anInt1075 -= 8;
+			pos -= 8;
 			method548(var8);
 			method548(var5);
 		}
 
-		anInt1075 = var4;
+		pos = var4;
 	}
 
 	public void method586(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) var1;
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 8);
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 16);
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 24);
+		backing[++pos - 1] = (byte) var1;
+		backing[++pos - 1] = (byte) (var1 >> 8);
+		backing[++pos - 1] = (byte) (var1 >> 16);
+		backing[++pos - 1] = (byte) (var1 >> 24);
 	}
 
 	public void method587(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 8);
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 + 128);
+		backing[++pos - 1] = (byte) (var1 >> 8);
+		backing[++pos - 1] = (byte) (var1 + 128);
 	}
 
 	public void method588(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 16);
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 24);
-		aByteArray1073[++anInt1075 - 1] = (byte) var1;
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 8);
+		backing[++pos - 1] = (byte) (var1 >> 16);
+		backing[++pos - 1] = (byte) (var1 >> 24);
+		backing[++pos - 1] = (byte) var1;
+		backing[++pos - 1] = (byte) (var1 >> 8);
 	}
 
 	public int method589() {
-		anInt1075 += 4;
-		return (aByteArray1073[anInt1075 - 3] & 255) + ((aByteArray1073[anInt1075 - 4] & 255) << 8)
-				+ ((aByteArray1073[anInt1075 - 2] & 255) << 24) + ((aByteArray1073[anInt1075 - 1] & 255) << 16);
+		pos += 4;
+		return (backing[pos - 3] & 255) + ((backing[pos - 4] & 255) << 8)
+				+ ((backing[pos - 2] & 255) << 24) + ((backing[pos - 1] & 255) << 16);
 	}
 
 	public int method590() {
-		anInt1075 += 4;
-		return ((aByteArray1073[anInt1075 - 4] & 255) << 16) + ((aByteArray1073[anInt1075 - 3] & 255) << 24)
-				+ ((aByteArray1073[anInt1075 - 1] & 255) << 8) + (aByteArray1073[anInt1075 - 2] & 255);
+		pos += 4;
+		return ((backing[pos - 4] & 255) << 16) + ((backing[pos - 3] & 255) << 24)
+				+ ((backing[pos - 1] & 255) << 8) + (backing[pos - 2] & 255);
 	}
 
 	public void method591(final byte[] var1, final int var2, final int var3) {
 		for (int var4 = var2; var4 < (var3 + var2); ++var4)
-			var1[var4] = (byte) (aByteArray1073[++anInt1075 - 1] - 128);
+			var1[var4] = (byte) (backing[++pos - 1] - 128);
 
 	}
 
-	public void method592(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 8);
-		aByteArray1073[++anInt1075 - 1] = (byte) var1;
+	public void writeShort(final int var1) {
+		backing[++pos - 1] = (byte) (var1 >> 8);
+		backing[++pos - 1] = (byte) var1;
 	}
 
-	public int method593() {
-		anInt1075 += 2;
-		int var1 = ((aByteArray1073[anInt1075 - 1] & 255) << 8) + ((aByteArray1073[anInt1075 - 2] - 128) & 255);
+	public int getcompact() {
+		pos += 2;
+		int var1 = ((backing[pos - 1] & 255) << 8) + ((backing[pos - 2] - 128) & 255);
 		if (var1 > 32767)
 			var1 -= 65536;
 
@@ -503,17 +503,17 @@ public class Class124_Sub14 extends Class124 {
 	}
 
 	public int method594() {
-		return (aByteArray1073[++anInt1075 - 1] - 128) & 255;
+		return (backing[++pos - 1] - 128) & 255;
 	}
 
-	public int method595() {
-		anInt1075 += 4;
-		return ((aByteArray1073[anInt1075 - 2] & 255) << 16) + ((aByteArray1073[anInt1075 - 1] & 255) << 24)
-				+ ((aByteArray1073[anInt1075 - 3] & 255) << 8) + (aByteArray1073[anInt1075 - 4] & 255);
+	public int getIntv1() {
+		pos += 4;
+		return ((backing[pos - 2] & 255) << 16) + ((backing[pos - 1] & 255) << 24)
+				+ ((backing[pos - 3] & 255) << 8) + (backing[pos - 4] & 255);
 	}
 
-	public int method596(final byte var1) {
-		final int var2 = aByteArray1073[anInt1075] & 255;
+	public int getsmart(final byte var1) {
+		final int var2 = backing[pos] & 255;
 		return var2 < 128 ? method558() : method560() - '\u8000';
 	}
 
@@ -533,18 +533,18 @@ public class Class124_Sub14 extends Class124 {
 	}
 
 	public String method597() {
-		final int var1 = anInt1075;
+		final int var1 = pos;
 
-		while (aByteArray1073[++anInt1075 - 1] != 0)
+		while (backing[++pos - 1] != 0)
 			;
 
-		final int var2 = anInt1075 - var1 - 1;
-		return var2 == 0 ? "" : Class1.method16(aByteArray1073, var1, var2);
+		final int var2 = pos - var1 - 1;
+		return var2 == 0 ? "" : Class1.method16(backing, var1, var2);
 	}
 
 	public void method598(final byte[] var1, final int var2, final int var3) {
 		for (int var4 = var2; var4 < (var2 + var3); ++var4)
-			var1[var4] = aByteArray1073[++anInt1075 - 1];
+			var1[var4] = backing[++pos - 1];
 
 	}
 
@@ -553,18 +553,18 @@ public class Class124_Sub14 extends Class124 {
 			if ((var1 & -16384) != 0) {
 				if ((var1 & -2097152) != 0) {
 					if ((var1 & -268435456) != 0)
-						method545((var1 >>> 28) | 128);
+						writeByte((var1 >>> 28) | 128);
 
-					method545((var1 >>> 21) | 128);
+					writeByte((var1 >>> 21) | 128);
 				}
 
-				method545((var1 >>> 14) | 128);
+				writeByte((var1 >>> 14) | 128);
 			}
 
-			method545((var1 >>> 7) | 128);
+			writeByte((var1 >>> 7) | 128);
 		}
 
-		method545(var1 & 127);
+		writeByte(var1 & 127);
 	}
 
 	public void method600(final String var1) {
@@ -572,30 +572,30 @@ public class Class124_Sub14 extends Class124 {
 		if (var2 >= 0)
 			throw new IllegalArgumentException("");
 		else {
-			aByteArray1073[++anInt1075 - 1] = 0;
-			anInt1075 += Class32.method184(var1, 0, var1.length(), aByteArray1073, anInt1075);
-			aByteArray1073[++anInt1075 - 1] = 0;
+			backing[++pos - 1] = 0;
+			pos += Class32.method184(var1, 0, var1.length(), backing, pos);
+			backing[++pos - 1] = 0;
 		}
 	}
 
 	public int method601() {
-		final int var1 = aByteArray1073[anInt1075] & 255;
+		final int var1 = backing[pos] & 255;
 		return var1 >= 128 ? method560() - '\uc000' : method558() - 64;
 	}
 
 	public int method602() {
-		return (0 - aByteArray1073[++anInt1075 - 1]) & 255;
+		return (0 - backing[++pos - 1]) & 255;
 	}
 
 	public void method603(final int var1) {
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 8);
-		aByteArray1073[++anInt1075 - 1] = (byte) var1;
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 24);
-		aByteArray1073[++anInt1075 - 1] = (byte) (var1 >> 16);
+		backing[++pos - 1] = (byte) (var1 >> 8);
+		backing[++pos - 1] = (byte) var1;
+		backing[++pos - 1] = (byte) (var1 >> 24);
+		backing[++pos - 1] = (byte) (var1 >> 16);
 	}
 
 	public int method604() {
-		return (128 - aByteArray1073[++anInt1075 - 1]) & 255;
+		return (128 - backing[++pos - 1]) & 255;
 	}
 
 	static void method605(final int var0) {

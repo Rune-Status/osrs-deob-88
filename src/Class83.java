@@ -53,7 +53,7 @@ public final class Class83 {
 							label247: {
 								var4 = client.anIntArray2125[client.anInt2124 - 1];
 								var9 = client.anIntArray2063[client.anInt2124 - 1];
-								final Class124_Sub17 var5 = Class10.method55(var9);
+								final Widget var5 = Class10.method55(var9);
 								if (!Class28.method167(Class124_Sub22_Sub19_Sub6.method963(var5))) {
 									var6 = Class124_Sub22_Sub19_Sub6.method963(var5);
 									final boolean var2 = ((var6 >> 29) & 1) != 0;
@@ -92,7 +92,7 @@ public final class Class83 {
 						Class46.method228(client.anInt2124 - 1);
 
 					if ((var0 == 2) && (client.anInt2124 > 0))
-						Class124_Sub22_Sub12.method737(Class81.anInt658, Class81.anInt655);
+						Def13.method737(Class81.anInt658, Class81.anInt655);
 				}
 
 			}

@@ -25,7 +25,7 @@ public abstract class Class124_Sub22_Sub19 extends Class124_Sub22 {
 			}
 		}
 
-		Class124_Sub22_Sub8.aString1452 = var0.aString254;
+		Def8.aString1452 = var0.aString254;
 		client.anInt2079 = var0.anInt262;
 		client.anInt1984 = var0.anInt255;
 		client.anInt2020 = client.anInt2080 == 0 ? '\uaa4a' : var0.anInt262 + '\u9c40';

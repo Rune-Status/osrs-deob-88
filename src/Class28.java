@@ -25,8 +25,10 @@ public final class Class28 {
 	public static void method166(final String var0, final Throwable var1) {
 		try {
 			String var2 = "";
-			if (var1 != null)
+			if (var1 != null) {
+				var1.printStackTrace();
 				var2 = Class18.method86(var1);
+			}
 
 			if (null != var0) {
 				if (null != var1)
@@ -43,13 +45,14 @@ public final class Class28 {
 			if (null == RuntimeException_Sub1.anApplet1915)
 				return;
 
-			final URL var3 = new URL(RuntimeException_Sub1.anApplet1915.getCodeBase(),
+			/*final URL var3 = new URL(RuntimeException_Sub1.anApplet1915.getCodeBase(),
 					"clienterror.ws?c=" + Class105.anInt804 + "&u=" + RuntimeException_Sub1.aString1911 + "&v1="
 							+ Class101.aString788 + "&v2=" + Class82.aString670 + "&e=" + var2);
 			final DataInputStream var4 = new DataInputStream(var3.openStream());
 			var4.read();
-			var4.close();
+			var4.close();*/
 		} catch (final Exception var5) {
+			var5.printStackTrace();
 			;
 		}
 
@@ -60,6 +63,6 @@ public final class Class28 {
 	}
 
 	public static void method168() {
-		Class124_Sub22_Sub11.aClass113_1509.method436();
+		Def14.aClass113_1509.method436();
 	}
 }

@@ -1,8 +1,8 @@
-public class Class124_Sub22_Sub1 extends Class124_Sub22 {
+public class Def9 extends Class124_Sub22 {
 	public int anInt1318;
 	static Class94 aClass94_1328;
 	static int[] anIntArray1335;
-	static Class124_Sub17 aClass124_Sub17_1352;
+	static Widget aClass124_Sub17_1352;
 	public String aString1319 = "null";
 	public int anInt1320 = 1;
 	public int anInt1323 = -1;
@@ -42,40 +42,40 @@ public class Class124_Sub22_Sub1 extends Class124_Sub22 {
 	}
 
 	static final void method639() {
-		Class124_Sub22_Sub15.aClass113_1553.method436();
+		Def4.aClass113_1553.method436();
 		Class22.method147();
-		Class124_Sub22_Sub2.aClass113_1354.method436();
+		Def3.aClass113_1354.method436();
 		Class62.method275();
 		RuntimeException_Sub1.method1011();
 		Class71.method308();
-		Class124_Sub22_Sub13.aClass113_1532.method436();
-		Class124_Sub22_Sub13.aClass113_1541.method436();
-		Class124_Sub22_Sub12.aClass113_1515.method436();
-		Class124_Sub22_Sub12.aClass113_1518.method436();
+		Def12.aClass113_1532.method436();
+		Def12.aClass113_1541.method436();
+		Def13.aClass113_1515.method436();
+		Def13.aClass113_1518.method436();
 		Class28.method168();
-		Class124_Sub22_Sub4.aClass113_1373.method436();
+		Def16.aClass113_1373.method436();
 		Class124_Sub22_Sub19_Sub3.method897();
-		Class124_Sub17.aClass113_1147.method436();
-		Class124_Sub17.aClass113_1164.method436();
-		Class124_Sub17.aClass113_1149.method436();
-		Class124_Sub17.aClass113_1150.method436();
+		Widget.aClass113_1147.method436();
+		Widget.aClass113_1164.method436();
+		Widget.aClass113_1149.method436();
+		Widget.aClass113_1150.method436();
 		((Class31) Class124_Sub22_Sub16_Sub3.anInterface2_1828).method177();
-		Class124_Sub22_Sub18.aClass113_1600.method436();
-		Class82.aClass94_Sub1_671.method369();
-		Class45.aClass94_Sub1_450.method369();
-		Class9.aClass94_Sub1_100.method369();
-		Class39.aClass94_Sub1_399.method369();
-		Class125.aClass94_Sub1_883.method369();
-		Class5.aClass94_Sub1_58.method369();
-		Class66.aClass94_Sub1_562.method369();
-		Class124_Sub11.aClass94_Sub1_1047.method369();
-		Class65.aClass94_Sub1_561.method369();
-		Class124_Sub22_Sub20.aClass94_Sub1_1647.method369();
-		Class68.aClass94_Sub1_571.method369();
-		Class88.aClass94_Sub1_695.method369();
+		Somet2.aClass113_1600.method436();
+		Class82.aClass94_Sub1_671.empty();
+		Class45.aClass94_Sub1_450.empty();
+		Class9.aClass94_Sub1_100.empty();
+		Class39.aClass94_Sub1_399.empty();
+		Class125.aClass94_Sub1_883.empty();
+		Class5.aClass94_Sub1_58.empty();
+		Class66.aClass94_Sub1_562.empty();
+		Class124_Sub11.aClass94_Sub1_1047.empty();
+		Class65.aClass94_Sub1_561.empty();
+		Class124_Sub22_Sub20.aClass94_Sub1_1647.empty();
+		Class68.aClass94_Sub1_571.empty();
+		Class88.aClass94_Sub1_695.empty();
 	}
 
-	void method640(final Class124_Sub14 var1, final int var2) {
+	void method640(final RSBuf var1, final int var2) {
 		int var3;
 		int var4;
 		if (var2 == 1) {
@@ -178,7 +178,7 @@ public class Class124_Sub22_Sub1 extends Class124_Sub22 {
 
 	public final Class124_Sub22_Sub19_Sub4 method641() {
 		if (anIntArray1342 != null) {
-			final Class124_Sub22_Sub1 var3 = method644();
+			final Def9 var3 = method644();
 			return var3 == null ? null : var3.method641();
 		} else if (null == anIntArray1341)
 			return null;
@@ -186,7 +186,7 @@ public class Class124_Sub22_Sub1 extends Class124_Sub22 {
 			boolean var6 = false;
 
 			for (int var5 = 0; var5 < anIntArray1341.length; ++var5)
-				if (!Class80.aClass94_646.method366(anIntArray1341[var5], 0))
+				if (!Class80.aClass94_646.valid(anIntArray1341[var5], 0))
 					var6 = true;
 
 			if (var6)
@@ -217,7 +217,7 @@ public class Class124_Sub22_Sub1 extends Class124_Sub22 {
 		}
 	}
 
-	void method642(final Class124_Sub14 var1) {
+	void method642(final RSBuf var1) {
 		while (true) {
 			final int var2 = var1.method558();
 			if (var2 == 0)
@@ -240,7 +240,7 @@ public class Class124_Sub22_Sub1 extends Class124_Sub22 {
 			return true;
 	}
 
-	public final Class124_Sub22_Sub1 method644() {
+	public final Def9 method644() {
 		int var1 = -1;
 		if (anInt1339 != -1)
 			var1 = Class74.method315(anInt1339, (byte) 0);
@@ -251,10 +251,10 @@ public class Class124_Sub22_Sub1 extends Class124_Sub22 {
 				? Class34.method188(anIntArray1342[var1], 1576074197) : null;
 	}
 
-	public final Class124_Sub22_Sub19_Sub7 method645(final Class124_Sub22_Sub13 var1, final int var2,
-			final Class124_Sub22_Sub13 var3, final int var4) {
+	public final Class124_Sub22_Sub19_Sub7 method645(final Def12 var1, final int var2,
+			final Def12 var3, final int var4) {
 		if (anIntArray1342 != null) {
-			final Class124_Sub22_Sub1 var12 = method644();
+			final Def9 var12 = method644();
 			return var12 == null ? null : var12.method645(var1, var2, var3, var4);
 		} else {
 			Class124_Sub22_Sub19_Sub7 var6 = (Class124_Sub22_Sub19_Sub7) aClass113_1317.method434(anInt1318);
@@ -262,7 +262,7 @@ public class Class124_Sub22_Sub1 extends Class124_Sub22 {
 				boolean var9 = false;
 
 				for (int var7 = 0; var7 < anIntArray1321.length; ++var7)
-					if (!Class80.aClass94_646.method366(anIntArray1321[var7], 0))
+					if (!Class80.aClass94_646.valid(anIntArray1321[var7], 0))
 						var9 = true;
 
 				if (var9)

@@ -19,22 +19,22 @@ public class RuntimeException_Sub1 extends RuntimeException {
 		String var4 = null;
 		String var5 = null;
 		boolean var6 = false;
-		Class124_Sub14 var8;
+		RSBuf var8;
 		File var23;
 		if (Class73.aFile603.exists()) {
 			try {
 				final Class127 var7 = new Class127(Class73.aFile603, "rw", 10000L);
 
 				int var9;
-				for (var8 = new Class124_Sub14(
-						(int) var7.method460()); var8.anInt1075 < var8.aByteArray1073.length; var8.anInt1075 += var9) {
-					var9 = var7.method459(var8.aByteArray1073, var8.anInt1075,
-							var8.aByteArray1073.length - var8.anInt1075);
+				for (var8 = new RSBuf(
+						(int) var7.method460()); var8.pos < var8.backing.length; var8.pos += var9) {
+					var9 = var7.method459(var8.backing, var8.pos,
+							var8.backing.length - var8.pos);
 					if (var9 == -1)
 						throw new IOException();
 				}
 
-				var8.anInt1075 = 0;
+				var8.pos = 0;
 				var9 = var8.method558();
 				if ((var9 < 1) || (var9 > 3))
 					throw new IOException("" + var9);
@@ -117,11 +117,11 @@ public class RuntimeException_Sub1 extends RuntimeException {
 
 			try {
 				final Class127 var25 = new Class127(Class73.aFile603, "rw", 10000L);
-				final Class124_Sub14 var26 = new Class124_Sub14(500);
-				var26.method545(3);
-				var26.method545(null != var8 ? 1 : 0);
+				final RSBuf var26 = new RSBuf(500);
+				var26.writeByte(3);
+				var26.writeByte(null != var8 ? 1 : 0);
 				var26.method551(var22.getPath());
-				var25.method458(var26.aByteArray1073, 0, var26.anInt1075);
+				var25.method458(var26.backing, 0, var26.pos);
 				var25.method461();
 			} catch (final IOException var19) {
 				var19.printStackTrace();
@@ -131,8 +131,8 @@ public class RuntimeException_Sub1 extends RuntimeException {
 		return new File(var4);
 	}
 
-	public static Class124_Sub17 method1010(final int var0, final int var1, final int var2) {
-		final Class124_Sub17 var3 = Class10.method55(var0);
+	public static Widget method1010(final int var0, final int var1, final int var2) {
+		final Widget var3 = Class10.method55(var0);
 		return var1 != -1
 				? ((null != var3) && (null != var3.aClass124_Sub17Array1263)
 						&& (var1 < var3.aClass124_Sub17Array1263.length) ? var3.aClass124_Sub17Array1263[var1] : null)
@@ -140,23 +140,23 @@ public class RuntimeException_Sub1 extends RuntimeException {
 	}
 
 	public static void method1011() {
-		Class124_Sub22_Sub1.aClass113_1316.method436();
-		Class124_Sub22_Sub1.aClass113_1317.method436();
+		Def9.aClass113_1316.method436();
+		Def9.aClass113_1317.method436();
 	}
 
 	public static int method1012(final int var0, final int var1) {
 		return (var0 >> 17) & 7;
 	}
 
-	public static String method1013(final Class124_Sub14 var0) {
+	public static String method1013(final RSBuf var0) {
 		String var4;
 		try {
-			int var1 = var0.method596((byte) 68);
+			int var1 = var0.getsmart((byte) 68);
 			if (var1 > 32767)
 				var1 = 32767;
 
 			final byte[] var2 = new byte[var1];
-			var0.anInt1075 += Class129.aClass63_889.method282(var0.aByteArray1073, var0.anInt1075, var2, 0, var1);
+			var0.pos += Class129.aClass63_889.method282(var0.backing, var0.pos, var2, 0, var1);
 			final String var3 = Class1.method16(var2, 0, var1);
 			var4 = var3;
 		} catch (final Exception var6) {

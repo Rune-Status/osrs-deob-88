@@ -44,7 +44,7 @@ public class Class53 {
 				var0.anInt1718 = 512;
 		} else if (var0.anInt1714 >= client.anInt2158) {
 			if ((client.anInt2158 == var0.anInt1714) || (var0.anInt1699 == -1) || (var0.anInt1673 != 0)
-					|| ((1 + var0.anInt1687) > Class124_Sub22_Sub14
+					|| ((1 + var0.anInt1687) > Def15
 							.method750(var0.anInt1699).anIntArray1529[var0.anInt1700])) {
 				var2 = var0.anInt1714 - var0.anInt1713;
 				var1 = client.anInt2158 - var0.anInt1713;

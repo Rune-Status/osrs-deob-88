@@ -22,7 +22,7 @@ public class Class47 {
 	}
 
 	public static void method231(final Class94 var0, final Class94 var1) {
-		Class124_Sub22_Sub1.aClass94_1328 = var0;
+		Def9.aClass94_1328 = var0;
 		Class80.aClass94_646 = var1;
 	}
 

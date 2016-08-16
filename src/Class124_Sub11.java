@@ -1,4 +1,4 @@
-public final class Class124_Sub11 extends Class124 {
+public final class Class124_Sub11 extends Node {
 	int anInt1035;
 	int anInt1036;
 	int anInt1037;
@@ -21,7 +21,7 @@ public final class Class124_Sub11 extends Class124 {
 		final int var3 = var0.method376(var1);
 		final int var6 = var0.method383(var3, var2);
 		Class124_Sub22_Sub16_Sub2[] var7;
-		if (!Class124_Sub22_Sub2.method653(var0, var3, var6))
+		if (!Def3.loaded(var0, var3, var6))
 			var7 = null;
 		else {
 			final Class124_Sub22_Sub16_Sub2[] var9 = new Class124_Sub22_Sub16_Sub2[Class7.anInt73];
@@ -50,21 +50,21 @@ public final class Class124_Sub11 extends Class124 {
 			Class80.method327(client.anInt2008 + ((client.anInt2186 - Class9.anInt102) << 7),
 					((client.anInt2144 - Class95.anInt762) << 7) + client.anInt2009, client.anInt2191 * 2);
 			if ((client.anInt2085 > -1) && ((client.anInt2158 % 20) < 10))
-				Class124_Sub22_Sub2.aClass124_Sub22_Sub16_Sub1Array1364[0].method907((var0 + client.anInt2085) - 12,
+				Def3.aClass124_Sub22_Sub16_Sub1Array1364[0].method907((var0 + client.anInt2085) - 12,
 						(client.anInt2152 + var1) - 28);
 
 		}
 	}
 
 	static final void method539(final int var0) {
-		Class124_Sub17.method630();
+		Widget.method630();
 
 		for (Class124_Sub13 var2 = (Class124_Sub13) Class124_Sub13.aClass111_1069
 				.method428(); null != var2; var2 = (Class124_Sub13) Class124_Sub13.aClass111_1069.method430())
 			if (null != var2.aClass124_Sub22_Sub6_1070)
 				var2.method540();
 
-		final int var1 = Class124_Sub22_Sub6.method690(var0).anInt1374;
+		final int var1 = Def6.method690(var0).anInt1374;
 		if (var1 != 0) {
 			final int var3 = Class91.anIntArray711[var0];
 			if (var1 == 1) {

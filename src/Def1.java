@@ -8,7 +8,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class Class124_Sub22_Sub3 extends Class124_Sub22 {
+public class Def1 extends Class124_Sub22 {
 	static Class94 aClass94_1365;
 	int anInt1367 = 0;
 	public int anInt1369;
@@ -29,7 +29,7 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 		method663(anInt1367);
 	}
 
-	void method659(final Class124_Sub14 var1, final int var2) {
+	void method659(final RSBuf var1, final int var2) {
 		while (true) {
 			final int var3 = var1.method558();
 			if (var3 == 0)
@@ -40,7 +40,7 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 	}
 
 	public static Class124_Sub22_Sub16_Sub2 method660(final Class94 var0, final int var1) {
-		final byte[] var2 = var0.method368(var1);
+		final byte[] var2 = var0.decode(var1);
 		boolean var4;
 		if (var2 == null)
 			var4 = false;
@@ -67,15 +67,15 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 	}
 
 	static void method661(final byte[] var0) {
-		final Class124_Sub14 var1 = new Class124_Sub14(var0);
-		var1.anInt1075 = var0.length - 2;
+		final RSBuf var1 = new RSBuf(var0);
+		var1.pos = var0.length - 2;
 		Class7.anInt73 = var1.method560();
 		Class7.anIntArray68 = new int[Class7.anInt73];
 		Class7.anIntArray74 = new int[Class7.anInt73];
 		Class7.anIntArray69 = new int[Class7.anInt73];
 		Class7.anIntArray70 = new int[Class7.anInt73];
 		Class124_Sub22_Sub5.aByteArrayArray1384 = new byte[Class7.anInt73][];
-		var1.anInt1075 = var0.length - 7 - (Class7.anInt73 * 8);
+		var1.pos = var0.length - 7 - (Class7.anInt73 * 8);
 		Class7.anInt67 = var1.method560();
 		Class49.anInt486 = var1.method560();
 		final int var4 = (var1.method558() & 255) + 1;
@@ -93,7 +93,7 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 		for (var5 = 0; var5 < Class7.anInt73; ++var5)
 			Class7.anIntArray70[var5] = var1.method560();
 
-		var1.anInt1075 = var0.length - 7 - (Class7.anInt73 * 8) - (3 * (var4 - 1));
+		var1.pos = var0.length - 7 - (Class7.anInt73 * 8) - (3 * (var4 - 1));
 		Class7.anIntArray66 = new int[var4];
 
 		for (var5 = 1; var5 < var4; ++var5) {
@@ -102,7 +102,7 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 				Class7.anIntArray66[var5] = 1;
 		}
 
-		var1.anInt1075 = 0;
+		var1.pos = 0;
 
 		for (var5 = 0; var5 < Class7.anInt73; ++var5) {
 			final int var9 = Class7.anIntArray69[var5];
@@ -225,7 +225,7 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 		Class98.anIntArrayArray772 = new int[105][105];
 		Class27.anIntArray287 = new int[104];
 		Class64.anIntArray559 = new int[104];
-		Class124_Sub22_Sub11.anIntArray1512 = new int[104];
+		Def14.anIntArray1512 = new int[104];
 		Class27.anIntArray291 = new int[104];
 		Class27.anIntArray292 = new int[104];
 	}
@@ -238,7 +238,7 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 		}
 	}
 
-	void method666(final Class124_Sub14 var1, final int var2) {
+	void method666(final RSBuf var1, final int var2) {
 		if (var2 == 1)
 			anInt1367 = var1.method557();
 
@@ -247,12 +247,12 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 	public static void method667(final Class124_Sub14_Sub1 var0) {
 		final Class124_Sub24 var1 = (Class124_Sub24) Class114.aClass110_824.method421();
 		if (var1 != null) {
-			final int var2 = var0.anInt1075;
+			final int var2 = var0.pos;
 			var0.method548(var1.anInt1309);
 
 			for (int var3 = 0; var3 < var1.anInt1307; ++var3)
 				if (var1.anIntArray1314[var3] != 0)
-					var0.method545(var1.anIntArray1314[var3]);
+					var0.writeByte(var1.anIntArray1314[var3]);
 				else
 					try {
 						final int var4 = var1.anIntArray1308[var3];
@@ -261,16 +261,16 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 						if (var4 == 0) {
 							var5 = var1.aFieldArray1310[var3];
 							var6 = var5.getInt((Object) null);
-							var0.method545(0);
+							var0.writeByte(0);
 							var0.method548(var6);
 						} else if (var4 == 1) {
 							var5 = var1.aFieldArray1310[var3];
 							var5.setInt((Object) null, var1.anIntArray1306[var3]);
-							var0.method545(0);
+							var0.writeByte(0);
 						} else if (var4 == 2) {
 							var5 = var1.aFieldArray1310[var3];
 							var6 = var5.getModifiers();
-							var0.method545(0);
+							var0.writeByte(0);
 							var0.method548(var6);
 						}
 
@@ -279,7 +279,7 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 							if (var4 == 4) {
 								var25 = var1.aMethodArray1312[var3];
 								var6 = var25.getModifiers();
-								var0.method545(0);
+								var0.writeByte(0);
 								var0.method548(var6);
 							}
 						} else {
@@ -295,40 +295,40 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 
 							final Object var11 = var25.invoke((Object) null, var8);
 							if (null == var11)
-								var0.method545(0);
+								var0.writeByte(0);
 							else if (var11 instanceof Number) {
-								var0.method545(1);
+								var0.writeByte(1);
 								var0.method561(((Number) var11).longValue());
 							} else if (var11 instanceof String) {
-								var0.method545(2);
+								var0.writeByte(2);
 								var0.method550((String) var11);
 							} else
-								var0.method545(4);
+								var0.writeByte(4);
 						}
 					} catch (final ClassNotFoundException var13) {
-						var0.method545(-10);
+						var0.writeByte(-10);
 					} catch (final InvalidClassException var14) {
-						var0.method545(-11);
+						var0.writeByte(-11);
 					} catch (final StreamCorruptedException var15) {
-						var0.method545(-12);
+						var0.writeByte(-12);
 					} catch (final OptionalDataException var16) {
-						var0.method545(-13);
+						var0.writeByte(-13);
 					} catch (final IllegalAccessException var17) {
-						var0.method545(-14);
+						var0.writeByte(-14);
 					} catch (final IllegalArgumentException var18) {
-						var0.method545(-15);
+						var0.writeByte(-15);
 					} catch (final InvocationTargetException var19) {
-						var0.method545(-16);
+						var0.writeByte(-16);
 					} catch (final SecurityException var20) {
-						var0.method545(-17);
+						var0.writeByte(-17);
 					} catch (final IOException var21) {
-						var0.method545(-18);
+						var0.writeByte(-18);
 					} catch (final NullPointerException var22) {
-						var0.method545(-19);
+						var0.writeByte(-19);
 					} catch (final Exception var23) {
-						var0.method545(-20);
+						var0.writeByte(-20);
 					} catch (final Throwable var24) {
-						var0.method545(-21);
+						var0.writeByte(-21);
 					}
 
 			var0.method575(var2);
@@ -338,11 +338,11 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 
 	static final void method668(final byte[] var0, final int var1, final int var2, final Class21 var3,
 			final Class130[] var4) {
-		final Class124_Sub14 var5 = new Class124_Sub14(var0);
+		final RSBuf var5 = new RSBuf(var0);
 		int var9 = -1;
 
 		while (true) {
-			final int var6 = var5.method596((byte) 19);
+			final int var6 = var5.getsmart((byte) 19);
 			if (var6 == 0)
 				return;
 
@@ -350,7 +350,7 @@ public class Class124_Sub22_Sub3 extends Class124_Sub22 {
 			int var12 = 0;
 
 			while (true) {
-				final int var11 = var5.method596((byte) 18);
+				final int var11 = var5.getsmart((byte) 18);
 				if (var11 == 0)
 					break;
 

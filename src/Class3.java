@@ -8,10 +8,10 @@ public class Class3 {
 
 	static void method20(final int var0) {
 		if (var0 != -1)
-			if (Class89.method346(var0)) {
-				final Class124_Sub17[] var3 = Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0];
+			if (Class89.loadwidget(var0)) {
+				final Widget[] var3 = Class124_Sub22_Sub10.widgets[var0];
 
-				for (final Class124_Sub17 var2 : var3) {
+				for (final Widget var2 : var3) {
 					if (null != var2.anObjectArray1232) {
 						final Class124_Sub6 var1 = new Class124_Sub6();
 						var1.aClass124_Sub17_994 = var2;
@@ -24,7 +24,7 @@ public class Class3 {
 	}
 
 	public static void method21(final Class94 var0) {
-		Class124_Sub22_Sub8.aClass94_1444 = var0;
+		Def8.aClass94_1444 = var0;
 	}
 
 	static final void method22(final String var0, final String var1, final int var2, final int var3, final int var4,
@@ -42,7 +42,7 @@ public class Class3 {
 	}
 
 	static final void method23(final int var0, final int var1) {
-		if (Class89.method346(var0))
-			Class35.method189(Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0], var1);
+		if (Class89.loadwidget(var0))
+			Class35.method189(Class124_Sub22_Sub10.widgets[var0], var1);
 	}
 }

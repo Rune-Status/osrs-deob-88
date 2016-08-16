@@ -21,8 +21,8 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 	int anInt1949 = 0;
 	boolean aBool1958 = false;
 
-	final void method1044(final Class124_Sub14 var1) {
-		var1.anInt1075 = 0;
+	final void method1044(final RSBuf var1) {
+		var1.pos = 0;
 		final int var9 = var1.method558();
 		anInt1944 = var1.method559();
 		anInt1945 = var1.method559();
@@ -112,10 +112,10 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 		if (aClass100_1943 == null)
 			return null;
 		else {
-			final Class124_Sub22_Sub13 var3 = (anInt1699 != -1) && (anInt1673 == 0)
-					? Class124_Sub22_Sub14.method750(anInt1699) : null;
-			final Class124_Sub22_Sub13 var5 = (anInt1675 != -1) && !aBool1958
-					&& ((anInt1719 != anInt1675) || (var3 == null)) ? Class124_Sub22_Sub14.method750(anInt1675) : null;
+			final Def12 var3 = (anInt1699 != -1) && (anInt1673 == 0)
+					? Def15.method750(anInt1699) : null;
+			final Def12 var5 = (anInt1675 != -1) && !aBool1958
+					&& ((anInt1719 != anInt1675) || (var3 == null)) ? Def15.method750(anInt1675) : null;
 			Class124_Sub22_Sub19_Sub7 var2 = aClass100_1943.method399(var3, anInt1700, var5, anInt1695);
 			if (null == var2)
 				return null;
@@ -190,7 +190,7 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 
 	static final void method1046(final Class124_Sub22_Sub19_Sub3 var0, final int var1, final int var2, final int var3) {
 		if ((var0 != null) && var0.method895(1416020645)) {
-			Class124_Sub22_Sub1 var4;
+			Def9 var4;
 			if (var0 instanceof Class124_Sub22_Sub19_Sub3_Sub1) {
 				var4 = ((Class124_Sub22_Sub19_Sub3_Sub1) var0).aClass124_Sub22_Sub1_1941;
 				if (var4.anIntArray1342 != null)
@@ -217,7 +217,7 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 						}
 
 						if (var6.anInt1945 != -1) {
-							Class124_Sub22_Sub13.aClass124_Sub22_Sub16_Sub1Array1547[var6.anInt1945]
+							Def12.aClass124_Sub22_Sub16_Sub1Array1547[var6.anInt1945]
 									.method907((var2 + client.anInt2085) - 12, (var3 + client.anInt2152) - var7);
 							var7 += 25;
 						}
@@ -227,7 +227,7 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 				if ((var1 >= 0) && (client.anInt2171 == 10) && (client.anInt2004 == client.anIntArray2128[var1])) {
 					Class124_Sub22_Sub19_Sub5.method954(var0, 15 + var0.anInt1717);
 					if (client.anInt2085 > -1)
-						Class124_Sub22_Sub2.aClass124_Sub22_Sub16_Sub1Array1364[1]
+						Def3.aClass124_Sub22_Sub16_Sub1Array1364[1]
 								.method907((var2 + client.anInt2085) - 12, (var3 + client.anInt2152) - var7);
 				}
 			} else {
@@ -236,10 +236,10 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 					var4 = var4.method644();
 
 				if ((var4.anInt1322 >= 0)
-						&& (var4.anInt1322 < Class124_Sub22_Sub13.aClass124_Sub22_Sub16_Sub1Array1547.length)) {
+						&& (var4.anInt1322 < Def12.aClass124_Sub22_Sub16_Sub1Array1547.length)) {
 					Class124_Sub22_Sub19_Sub5.method954(var0, var0.anInt1717 + 15);
 					if (client.anInt2085 > -1)
-						Class124_Sub22_Sub13.aClass124_Sub22_Sub16_Sub1Array1547[var4.anInt1322]
+						Def12.aClass124_Sub22_Sub16_Sub1Array1547[var4.anInt1322]
 								.method907((var2 + client.anInt2085) - 12, (var3 + client.anInt2152) - 30);
 				}
 
@@ -247,14 +247,14 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 						&& ((client.anInt2158 % 20) < 10)) {
 					Class124_Sub22_Sub19_Sub5.method954(var0, var0.anInt1717 + 15);
 					if (client.anInt2085 > -1)
-						Class124_Sub22_Sub2.aClass124_Sub22_Sub16_Sub1Array1364[0]
+						Def3.aClass124_Sub22_Sub16_Sub1Array1364[0]
 								.method907((var2 + client.anInt2085) - 12, (var3 + client.anInt2152) - 28);
 				}
 			}
 
 			if ((null != var0.aString1683) && ((var1 >= client.anInt2090)
 					|| (!var0.aBool1684 && ((client.anInt2066 == 4) || (!var0.aBool1670 && ((client.anInt2066 == 0)
-							|| (client.anInt2066 == 3) || ((client.anInt2066 == 1) && Class124_Sub22_Sub6
+							|| (client.anInt2066 == 3) || ((client.anInt2066 == 1) && Def6
 									.method691(((Class124_Sub22_Sub19_Sub3_Sub2) var0).aString1956, false)))))))) {
 				Class124_Sub22_Sub19_Sub5.method954(var0, var0.anInt1717);
 				if ((client.anInt2085 > -1) && (client.anInt2074 < client.anInt2116)) {
@@ -277,7 +277,7 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 					if (var1 < client.anInt2090)
 						var7 = 30;
 					else {
-						final Class124_Sub22_Sub1 var8 = ((Class124_Sub22_Sub19_Sub3_Sub1) var0).aClass124_Sub22_Sub1_1941;
+						final Def9 var8 = ((Class124_Sub22_Sub19_Sub3_Sub1) var0).aClass124_Sub22_Sub1_1941;
 						var7 = var8.anInt1349;
 					}
 

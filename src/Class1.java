@@ -22,7 +22,7 @@ public class Class1 {
 			return false;
 	}
 
-	static final boolean method13(final Class124_Sub17 var0) {
+	static final boolean method13(final Widget var0) {
 		if (null == var0.anIntArray1264)
 			return false;
 		else {
@@ -46,8 +46,8 @@ public class Class1 {
 		}
 	}
 
-	static final void method14(final Class124_Sub17 var0, final int var1, final int var2, final int var3) {
-		Class124_Sub22_Sub14.method751();
+	static final void method14(final Widget var0, final int var1, final int var2, final int var3) {
+		Def15.method751();
 		final Class124_Sub22_Sub20 var4 = var0.method629(false);
 		if (null != var4) {
 			Class124_Sub22_Sub16.method764(var1, var2, var1 + var4.anInt1646, var4.anInt1643 + var2);
@@ -67,7 +67,7 @@ public class Class1 {
 							- (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 / 32);
 					var13 = (2 + (client.anIntArray2214[var10] * 4))
 							- (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697 / 32);
-					Class124_Sub22_Sub1.method646(var1, var2, var11, var13,
+					Def9.method646(var1, var2, var11, var13,
 							client.aClass124_Sub22_Sub16_Sub1Array2244[var10], var4);
 				}
 
@@ -79,7 +79,7 @@ public class Class1 {
 						if (var12 != null) {
 							var5 = ((var10 * 4) + 2) - (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 / 32);
 							var6 = (2 + (var11 * 4)) - (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697 / 32);
-							Class124_Sub22_Sub1.method646(var1, var2, var5, var6,
+							Def9.method646(var1, var2, var5, var6,
 									Class45.aClass124_Sub22_Sub16_Sub1Array439[0], var4);
 						}
 					}
@@ -87,7 +87,7 @@ public class Class1 {
 				for (var10 = 0; var10 < client.anInt2022; ++var10) {
 					final Class124_Sub22_Sub19_Sub3_Sub1 var15 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[client.anIntArray2023[var10]];
 					if ((var15 != null) && var15.method895(1325365041)) {
-						Class124_Sub22_Sub1 var19 = var15.aClass124_Sub22_Sub1_1941;
+						Def9 var19 = var15.aClass124_Sub22_Sub1_1941;
 						if ((var19 != null) && (var19.anIntArray1342 != null))
 							var19 = var19.method644();
 
@@ -96,7 +96,7 @@ public class Class1 {
 									- (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 / 32);
 							var6 = (var15.anInt1697 / 32)
 									- (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697 / 32);
-							Class124_Sub22_Sub1.method646(var1, var2, var5, var6,
+							Def9.method646(var1, var2, var5, var6,
 									Class45.aClass124_Sub22_Sub16_Sub1Array439[1], var4);
 						}
 					}
@@ -108,7 +108,7 @@ public class Class1 {
 						var13 = (var21.anInt1690 / 32) - (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 / 32);
 						var5 = (var21.anInt1697 / 32) - (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697 / 32);
 						boolean var18 = false;
-						if (Class124_Sub22_Sub6.method691(var21.aString1956, true))
+						if (Def6.method691(var21.aString1956, true))
 							var18 = true;
 
 						boolean var17 = false;
@@ -126,16 +126,16 @@ public class Class1 {
 							var20 = true;
 
 						if (var18)
-							Class124_Sub22_Sub1.method646(var1, var2, var13, var5,
+							Def9.method646(var1, var2, var13, var5,
 									Class45.aClass124_Sub22_Sub16_Sub1Array439[3], var4);
 						else if (var20)
-							Class124_Sub22_Sub1.method646(var1, var2, var13, var5,
+							Def9.method646(var1, var2, var13, var5,
 									Class45.aClass124_Sub22_Sub16_Sub1Array439[4], var4);
 						else if (var17)
-							Class124_Sub22_Sub1.method646(var1, var2, var13, var5,
+							Def9.method646(var1, var2, var13, var5,
 									Class45.aClass124_Sub22_Sub16_Sub1Array439[5], var4);
 						else
-							Class124_Sub22_Sub1.method646(var1, var2, var13, var5,
+							Def9.method646(var1, var2, var13, var5,
 									Class45.aClass124_Sub22_Sub16_Sub1Array439[2], var4);
 					}
 				}
@@ -149,7 +149,7 @@ public class Class1 {
 									- (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 / 32);
 							var13 = (var16.anInt1697 / 32)
 									- (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697 / 32);
-							Class124_Sub22_Sub11.method730(var1, var2, var11, var13,
+							Def14.method730(var1, var2, var11, var13,
 									Class7.aClass124_Sub22_Sub16_Sub1Array72[1], var4);
 						}
 					}
@@ -159,7 +159,7 @@ public class Class1 {
 								- (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 / 32);
 						var11 = (2 + ((client.anInt2144 * 4) - (Class95.anInt762 * 4)))
 								- (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697 / 32);
-						Class124_Sub22_Sub11.method730(var1, var2, var10, var11,
+						Def14.method730(var1, var2, var10, var11,
 								Class7.aClass124_Sub22_Sub16_Sub1Array72[1], var4);
 					}
 
@@ -171,7 +171,7 @@ public class Class1 {
 									- (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 / 32);
 							var13 = (var22.anInt1697 / 32)
 									- (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697 / 32);
-							Class124_Sub22_Sub11.method730(var1, var2, var11, var13,
+							Def14.method730(var1, var2, var11, var13,
 									Class7.aClass124_Sub22_Sub16_Sub1Array72[1], var4);
 						}
 					}
@@ -180,7 +180,7 @@ public class Class1 {
 				if (client.anInt2194 != 0) {
 					var10 = ((client.anInt2194 * 4) + 2) - (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 / 32);
 					var11 = ((client.anInt2217 * 4) + 2) - (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697 / 32);
-					Class124_Sub22_Sub1.method646(var1, var2, var10, var11, Class7.aClass124_Sub22_Sub16_Sub1Array72[0],
+					Def9.method646(var1, var2, var10, var11, Class7.aClass124_Sub22_Sub16_Sub1Array72[0],
 							var4);
 				}
 
@@ -196,7 +196,7 @@ public class Class1 {
 
 	public static void method15(final Class94 var0, final Class94 var1) {
 		Class37.aClass94_388 = var0;
-		Class124_Sub22_Sub12.aClass94_1526 = var1;
+		Def13.aClass94_1526 = var1;
 	}
 
 	public static String method16(final byte[] var0, final int var1, final int var2) {

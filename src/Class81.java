@@ -121,10 +121,10 @@ public class Class81 implements MouseListener, MouseMotionListener, FocusListene
 	public static void method328(final boolean var0) {
 		if (null != Class92.aClass78_732)
 			try {
-				final Class124_Sub14 var1 = new Class124_Sub14(4);
-				var1.method545(var0 ? 2 : 3);
+				final RSBuf var1 = new RSBuf(4);
+				var1.writeByte(var0 ? 2 : 3);
 				var1.method547(0);
-				Class92.aClass78_732.method323(var1.aByteArray1073, 0, 4);
+				Class92.aClass78_732.method323(var1.backing, 0, 4);
 			} catch (final IOException var4) {
 				try {
 					Class92.aClass78_732.method324();

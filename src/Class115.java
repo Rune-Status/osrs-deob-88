@@ -1,8 +1,8 @@
 import java.util.Iterator;
 
 public class Class115 implements Iterator {
-	Class124 aClass124_827 = null;
-	Class124 aClass124_826;
+	Node aClass124_827 = null;
+	Node aClass124_826;
 	Class110 aClass110_825;
 
 	@Override
@@ -16,7 +16,7 @@ public class Class115 implements Iterator {
 
 	@Override
 	public Object next() {
-		Class124 var1 = aClass124_826;
+		Node var1 = aClass124_826;
 		if (var1 == aClass110_825.aClass124_815) {
 			var1 = null;
 			aClass124_826 = null;

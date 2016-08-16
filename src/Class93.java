@@ -1,5 +1,5 @@
 public class Class93 {
-	Class124_Sub14 aClass124_Sub14_742 = new Class124_Sub14((byte[]) null);
+	RSBuf aClass124_Sub14_742 = new RSBuf((byte[]) null);
 	int anInt738;
 	int anInt734;
 	int[] anIntArray736;
@@ -27,8 +27,8 @@ public class Class93 {
 	}
 
 	void method348(final byte[] var1) {
-		aClass124_Sub14_742.aByteArray1073 = var1;
-		aClass124_Sub14_742.anInt1075 = 10;
+		aClass124_Sub14_742.backing = var1;
+		aClass124_Sub14_742.pos = 10;
 		final int var2 = aClass124_Sub14_742.method560();
 		anInt738 = aClass124_Sub14_742.method560();
 		anInt734 = 500000;
@@ -36,11 +36,11 @@ public class Class93 {
 
 		int var3;
 		int var4;
-		for (var4 = 0; var4 < var2; aClass124_Sub14_742.anInt1075 += var3) {
+		for (var4 = 0; var4 < var2; aClass124_Sub14_742.pos += var3) {
 			final int var5 = aClass124_Sub14_742.method562(-1184822850);
 			var3 = aClass124_Sub14_742.method562(-1855387018);
 			if (var5 == 1297379947) {
-				anIntArray736[var4] = aClass124_Sub14_742.anInt1075;
+				anIntArray736[var4] = aClass124_Sub14_742.pos;
 				++var4;
 			}
 		}
@@ -56,7 +56,7 @@ public class Class93 {
 	}
 
 	void method349() {
-		aClass124_Sub14_742.aByteArray1073 = null;
+		aClass124_Sub14_742.backing = null;
 		anIntArray736 = null;
 		anIntArray737 = null;
 		anIntArray739 = null;
@@ -68,7 +68,7 @@ public class Class93 {
 	}
 
 	void method351(final int var1) {
-		aClass124_Sub14_742.anInt1075 = anIntArray737[var1];
+		aClass124_Sub14_742.pos = anIntArray737[var1];
 	}
 
 	void method352(final int var1) {
@@ -82,12 +82,12 @@ public class Class93 {
 	}
 
 	int method354(final int var1) {
-		final byte var2 = aClass124_Sub14_742.aByteArray1073[aClass124_Sub14_742.anInt1075];
+		final byte var2 = aClass124_Sub14_742.backing[aClass124_Sub14_742.pos];
 		int var5;
 		if (var2 < 0) {
 			var5 = var2 & 255;
 			anIntArray740[var1] = var5;
-			++aClass124_Sub14_742.anInt1075;
+			++aClass124_Sub14_742.pos;
 		} else
 			var5 = anIntArray740[var1];
 
@@ -96,16 +96,16 @@ public class Class93 {
 		else {
 			final int var3 = aClass124_Sub14_742.method570();
 			if ((var5 == 247) && (var3 > 0)) {
-				final int var4 = aClass124_Sub14_742.aByteArray1073[aClass124_Sub14_742.anInt1075] & 255;
+				final int var4 = aClass124_Sub14_742.backing[aClass124_Sub14_742.pos] & 255;
 				if (((var4 >= 241) && (var4 <= 243)) || (var4 == 246) || (var4 == 248)
 						|| ((var4 >= 250) && (var4 <= 252)) || (var4 == 254)) {
-					++aClass124_Sub14_742.anInt1075;
+					++aClass124_Sub14_742.pos;
 					anIntArray740[var1] = var4;
 					return method355(var1, var4);
 				}
 			}
 
-			aClass124_Sub14_742.anInt1075 += var3;
+			aClass124_Sub14_742.pos += var3;
 			return 0;
 		}
 	}
@@ -119,7 +119,7 @@ public class Class93 {
 			final int var7 = aClass124_Sub14_742.method558();
 			var4 = aClass124_Sub14_742.method570();
 			if (var7 == 47) {
-				aClass124_Sub14_742.anInt1075 += var4;
+				aClass124_Sub14_742.pos += var4;
 				return 1;
 			} else if (var7 == 81) {
 				final int var5 = aClass124_Sub14_742.method557();
@@ -127,10 +127,10 @@ public class Class93 {
 				final int var6 = anIntArray739[var1];
 				aLong741 += (long) var6 * (long) (anInt734 - var5);
 				anInt734 = var5;
-				aClass124_Sub14_742.anInt1075 += var4;
+				aClass124_Sub14_742.pos += var4;
 				return 2;
 			} else {
-				aClass124_Sub14_742.anInt1075 += var4;
+				aClass124_Sub14_742.pos += var4;
 				return 3;
 			}
 		} else {
@@ -163,19 +163,19 @@ public class Class93 {
 		for (int var3 = 0; var3 < var4; ++var3) {
 			anIntArray739[var3] = 0;
 			anIntArray740[var3] = 0;
-			aClass124_Sub14_742.anInt1075 = anIntArray736[var3];
+			aClass124_Sub14_742.pos = anIntArray736[var3];
 			method352(var3);
-			anIntArray737[var3] = aClass124_Sub14_742.anInt1075;
+			anIntArray737[var3] = aClass124_Sub14_742.pos;
 		}
 
 	}
 
 	boolean method358() {
-		return aClass124_Sub14_742.aByteArray1073 != null;
+		return aClass124_Sub14_742.backing != null;
 	}
 
 	void method359() {
-		aClass124_Sub14_742.anInt1075 = -1;
+		aClass124_Sub14_742.pos = -1;
 	}
 
 	long method360(final int var1) {
@@ -197,6 +197,6 @@ public class Class93 {
 	}
 
 	void method362(final int var1) {
-		anIntArray737[var1] = aClass124_Sub14_742.anInt1075;
+		anIntArray737[var1] = aClass124_Sub14_742.pos;
 	}
 }

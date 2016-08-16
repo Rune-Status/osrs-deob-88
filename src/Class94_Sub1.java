@@ -22,8 +22,8 @@ public class Class94_Sub1 extends Class94 {
 			final long var2 = 16711680 + var1;
 			int var5;
 			if ((null != Class28.aClass124_Sub22_Sub21_311) && (Class28.aClass124_Sub22_Sub21_311.aLong874 == var2))
-				var5 = 1 + ((Class67.aClass124_Sub14_569.anInt1075 * 99)
-						/ (Class67.aClass124_Sub14_569.aByteArray1073.length
+				var5 = 1 + ((Class67.aClass124_Sub14_569.pos * 99)
+						/ (Class67.aClass124_Sub14_569.backing.length
 								- Class28.aClass124_Sub22_Sub21_311.aByte1650));
 			else
 				var5 = 0;
@@ -83,7 +83,7 @@ public class Class94_Sub1 extends Class94 {
 			aCRC32_1119.reset();
 			aCRC32_1119.update(var3, 0, var3.length);
 			var8 = (int) aCRC32_1119.getValue();
-			final Class124_Sub14 var5 = new Class124_Sub14(Class124_Sub22_Sub11.method729(var3));
+			final RSBuf var5 = new RSBuf(Def14.method729(var3));
 			final int var7 = var5.method558();
 			if ((var7 != 5) && (var7 != 6))
 				throw new RuntimeException(var7 + "," + anInt1122 + "," + var2);
@@ -164,8 +164,8 @@ public class Class94_Sub1 extends Class94 {
 			final long var4 = var1 + (var3 << 16);
 			int var2;
 			if ((Class28.aClass124_Sub22_Sub21_311 != null) && (var4 == Class28.aClass124_Sub22_Sub21_311.aLong874))
-				var2 = ((Class67.aClass124_Sub14_569.anInt1075 * 99)
-						/ (Class67.aClass124_Sub14_569.aByteArray1073.length
+				var2 = ((Class67.aClass124_Sub14_569.pos * 99)
+						/ (Class67.aClass124_Sub14_569.backing.length
 								- Class28.aClass124_Sub22_Sub21_311.aByte1650))
 						+ 1;
 			else

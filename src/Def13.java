@@ -1,4 +1,4 @@
-public class Class124_Sub22_Sub12 extends Class124_Sub22 {
+public class Def13 extends Class124_Sub22 {
 	int anInt1517;
 	static Class94 aClass94_1526;
 	int anInt1528;
@@ -15,7 +15,7 @@ public class Class124_Sub22_Sub12 extends Class124_Sub22 {
 	public static Class113 aClass113_1515 = new Class113(64);
 	public static Class113 aClass113_1518 = new Class113(30);
 
-	void method731(final Class124_Sub14 var1) {
+	void method731(final RSBuf var1) {
 		while (true) {
 			final int var2 = var1.method558();
 			if (var2 == 0)
@@ -25,7 +25,7 @@ public class Class124_Sub22_Sub12 extends Class124_Sub22 {
 		}
 	}
 
-	void method732(final Class124_Sub14 var1, final int var2) {
+	void method732(final RSBuf var1, final int var2) {
 		if (var2 == 1)
 			anInt1528 = var1.method560();
 		else if (var2 == 2)
@@ -88,7 +88,7 @@ public class Class124_Sub22_Sub12 extends Class124_Sub22 {
 
 		Class124_Sub22_Sub19_Sub7 var5;
 		if ((anInt1519 != -1) && (var1 != -1))
-			var5 = Class124_Sub22_Sub14.method750(anInt1519).method743(var2, var1);
+			var5 = Def15.method750(anInt1519).method743(var2, var1);
 		else
 			var5 = var2.method1004(true);
 
@@ -129,21 +129,21 @@ public class Class124_Sub22_Sub12 extends Class124_Sub22 {
 
 		Class124_Sub13.method542();
 		if (client.anInt1992 >= 25)
-			Class124_Sub22_Sub8.method698();
+			Def8.method698();
 
 		Applet_Sub1.aBool1968 = true;
 	}
 
-	public static Class124_Sub22_Sub6 method736(final int var0) {
-		Class124_Sub22_Sub6 var1 = (Class124_Sub22_Sub6) Class124_Sub22_Sub6.aClass113_1410.method434(var0);
+	public static Def6 method736(final int var0) {
+		Def6 var1 = (Def6) Def6.aClass113_1410.method434(var0);
 		if (var1 != null)
 			return var1;
 		else {
-			final byte[] var2 = Class124_Sub22_Sub6.aClass94_1426.method377(6, var0);
-			var1 = new Class124_Sub22_Sub6();
+			final byte[] var2 = Def6.aClass94_1426.decode(6, var0);
+			var1 = new Def6();
 			var1.anInt1434 = var0;
 			if (var2 != null)
-				var1.method685(new Class124_Sub14(var2));
+				var1.method685(new RSBuf(var2));
 
 			var1.method686();
 			if (var1.aBool1425) {
@@ -151,7 +151,7 @@ public class Class124_Sub22_Sub12 extends Class124_Sub22 {
 				var1.aBool1436 = false;
 			}
 
-			Class124_Sub22_Sub6.aClass113_1410.method435(var1, var0);
+			Def6.aClass113_1410.method435(var1, var0);
 			return var1;
 		}
 	}
@@ -161,7 +161,7 @@ public class Class124_Sub22_Sub12 extends Class124_Sub22 {
 
 		int var3;
 		for (var3 = 0; var3 < client.anInt2124; ++var3) {
-			final Class124_Sub22_Sub16_Sub4_Sub1 var4 = Class41.aClass124_Sub22_Sub16_Sub4_Sub1_407;
+			final Somet1 var4 = Class41.aClass124_Sub22_Sub16_Sub4_Sub1_407;
 			String var5;
 			if (client.aStringArray2130[var3].length() > 0)
 				var5 = client.aStringArray2129[var3] + " " + client.aStringArray2130[var3];

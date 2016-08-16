@@ -1,4 +1,4 @@
-public class Class124_Sub10 extends Class124 {
+public class Class124_Sub10 extends Node {
 	static int[] anIntArray1032;
 	static int anInt1033;
 	static Class107 aClass107_1034 = new Class107(32);
@@ -23,7 +23,7 @@ public class Class124_Sub10 extends Class124 {
 	}
 
 	static final void method536(final int var0) {
-		if (Class89.method346(var0))
-			Class51.method245(Class124_Sub22_Sub10.aClass124_Sub17ArrayArray1507[var0], -1);
+		if (Class89.loadwidget(var0))
+			Class51.method245(Class124_Sub22_Sub10.widgets[var0], -1);
 	}
 }

@@ -1,6 +1,6 @@
 public class Class48 {
 	int[] anIntArray476;
-	Class124_Sub22_Sub18 aClass124_Sub22_Sub18_477;
+	Somet2 aClass124_Sub22_Sub18_477;
 	static int anInt478;
 	static int anInt479;
 	static String aString480;

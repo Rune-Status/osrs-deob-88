@@ -14,7 +14,7 @@ public class Class68 {
 		aCalendar573 = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 	}
 
-	static void method300(final int var0, final int var1, final int var2, final Class124_Sub22_Sub6 var3,
+	static void method300(final int var0, final int var1, final int var2, final Def6 var3,
 			final int var4) {
 		final Class124_Sub13 var5 = new Class124_Sub13();
 		var5.anInt1057 = var0;

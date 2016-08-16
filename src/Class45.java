@@ -17,7 +17,7 @@ public class Class45 {
 	Class79 aClass79_440;
 	long aLong446;
 
-	static final void method223(final Class124_Sub14 var0, final int var1, final int var2, final int var3,
+	static final void method223(final RSBuf var0, final int var1, final int var2, final int var3,
 			final int var4, final int var5, final int var6) {
 		int var7;
 		if ((var2 >= 0) && (var2 < 104) && (var3 >= 0) && (var3 < 104)) {
@@ -97,7 +97,7 @@ public class Class45 {
 
 					anInt443 += aDataInputStream441.read(aByteArray442, anInt443, var3);
 					if (anInt443 == 4) {
-						final int var2 = (new Class124_Sub14(aByteArray442)).method562(-502146649);
+						final int var2 = (new RSBuf(aByteArray442)).method562(-502146649);
 						aByteArray444 = new byte[var2];
 						anInt449 = 2;
 					}
@@ -174,7 +174,7 @@ public class Class45 {
 						Class20.method95(30, "", "You can\'t add yourself to your own friend list");
 					else {
 						client.aClass124_Sub14_Sub1_2024.method837(70);
-						client.aClass124_Sub14_Sub1_2024.method545(Class54.method258(var0));
+						client.aClass124_Sub14_Sub1_2024.writeByte(Class54.method258(var0));
 						client.aClass124_Sub14_Sub1_2024.method550(var0);
 					}
 				}
@@ -184,7 +184,7 @@ public class Class45 {
 
 	static void method226(final Class124_Sub22_Sub19_Sub3_Sub2 var0, final int var1, final int var2) {
 		if ((var0.anInt1699 == var1) && (var1 != -1)) {
-			final int var3 = Class124_Sub22_Sub14.method750(var1).anInt1546;
+			final int var3 = Def15.method750(var1).anInt1546;
 			if (var3 == 1) {
 				var0.anInt1700 = 0;
 				var0.anInt1687 = 0;
@@ -194,8 +194,8 @@ public class Class45 {
 
 			if (var3 == 2)
 				var0.anInt1703 = 0;
-		} else if ((var1 == -1) || (var0.anInt1699 == -1) || (Class124_Sub22_Sub14
-				.method750(var1).anInt1531 >= Class124_Sub22_Sub14.method750(var0.anInt1699).anInt1531)) {
+		} else if ((var1 == -1) || (var0.anInt1699 == -1) || (Def15
+				.method750(var1).anInt1531 >= Def15.method750(var0.anInt1699).anInt1531)) {
 			var0.anInt1699 = var1;
 			var0.anInt1700 = 0;
 			var0.anInt1687 = 0;

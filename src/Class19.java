@@ -248,14 +248,14 @@ public class Class19 {
 		anIntArray186 = new int[5];
 	}
 
-	final void method92(final Class124_Sub14 var1) {
+	final void method92(final RSBuf var1) {
 		aClass17_182 = new Class17();
 		aClass17_182.method81(var1);
 		aClass17_163 = new Class17();
 		aClass17_163.method81(var1);
 		int var2 = var1.method558();
 		if (var2 != 0) {
-			--var1.anInt1075;
+			--var1.pos;
 			aClass17_164 = new Class17();
 			aClass17_164.method81(var1);
 			aClass17_165 = new Class17();
@@ -264,7 +264,7 @@ public class Class19 {
 
 		var2 = var1.method558();
 		if (var2 != 0) {
-			--var1.anInt1075;
+			--var1.pos;
 			aClass17_176 = new Class17();
 			aClass17_176.method81(var1);
 			aClass17_170 = new Class17();
@@ -273,7 +273,7 @@ public class Class19 {
 
 		var2 = var1.method558();
 		if (var2 != 0) {
-			--var1.anInt1075;
+			--var1.pos;
 			aClass17_168 = new Class17();
 			aClass17_168.method81(var1);
 			aClass17_169 = new Class17();
@@ -281,17 +281,17 @@ public class Class19 {
 		}
 
 		for (int var3 = 0; var3 < 10; ++var3) {
-			final int var4 = var1.method596((byte) -48);
+			final int var4 = var1.getsmart((byte) -48);
 			if (var4 == 0)
 				break;
 
 			anIntArray167[var3] = var4;
 			anIntArray171[var3] = var1.method601();
-			anIntArray172[var3] = var1.method596((byte) -12);
+			anIntArray172[var3] = var1.getsmart((byte) -12);
 		}
 
-		anInt180 = var1.method596((byte) -107);
-		anInt174 = var1.method596((byte) -26);
+		anInt180 = var1.getsmart((byte) -107);
+		anInt174 = var1.getsmart((byte) -26);
 		anInt166 = var1.method560();
 		anInt178 = var1.method560();
 		aClass15_175 = new Class15();

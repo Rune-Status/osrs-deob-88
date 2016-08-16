@@ -22,7 +22,7 @@ public final class Class124_Sub22_Sub19_Sub1 extends Class124_Sub22_Sub19 {
 	int anInt1663;
 	int anInt1656;
 	int anInt1653;
-	Class124_Sub22_Sub13 aClass124_Sub22_Sub13_1652;
+	Def12 aClass124_Sub22_Sub13_1652;
 
 	final void method884(final int var1, final byte var2) {
 		if (!aBool1657) {
@@ -42,7 +42,7 @@ public final class Class124_Sub22_Sub19_Sub1 extends Class124_Sub22_Sub19 {
 
 	@Override
 	protected final Class124_Sub22_Sub19_Sub7 method834(final int var1) {
-		final Class124_Sub22_Sub12 var2 = Class43.method217(anInt1666);
+		final Def13 var2 = Class43.method217(anInt1666);
 		Class124_Sub22_Sub19_Sub7 var3;
 		if (!aBool1657)
 			var3 = var2.method733(anInt1659);
@@ -98,7 +98,7 @@ public final class Class124_Sub22_Sub19_Sub1 extends Class124_Sub22_Sub19 {
 		final int var8 = Class43.method217(anInt1666).anInt1519;
 		if (var8 != -1) {
 			aBool1657 = false;
-			aClass124_Sub22_Sub13_1652 = Class124_Sub22_Sub14.method750(var8);
+			aClass124_Sub22_Sub13_1652 = Def15.method750(var8);
 		} else
 			aBool1657 = true;
 
@@ -141,7 +141,7 @@ public final class Class124_Sub22_Sub19_Sub1 extends Class124_Sub22_Sub19 {
 		return new String(var3);
 	}
 
-	static void method887(final Class124_Sub22_Sub13 var0, final int var1, final int var2, final int var3) {
+	static void method887(final Def12 var0, final int var1, final int var2, final int var3) {
 		if ((client.anInt2225 < 50) && (client.anInt2206 != 0))
 			if ((var0.anIntArray1534 != null) && (var1 < var0.anIntArray1534.length)) {
 				final int var5 = var0.anIntArray1534[var1];
@@ -173,18 +173,18 @@ public final class Class124_Sub22_Sub19_Sub1 extends Class124_Sub22_Sub19 {
 			var3.write("data1=req");
 			var3.flush();
 			final InputStream var4 = var2.getInputStream();
-			final Class124_Sub14 var5 = new Class124_Sub14(new byte[1000]);
+			final RSBuf var5 = new RSBuf(new byte[1000]);
 
 			do {
-				final int var6 = var4.read(var5.aByteArray1073, var5.anInt1075, 1000 - var5.anInt1075);
+				final int var6 = var4.read(var5.backing, var5.pos, 1000 - var5.pos);
 				if (var6 == -1) {
-					var5.anInt1075 = 0;
+					var5.pos = 0;
 					final long var7 = var5.method563();
 					return var7;
 				}
 
-				var5.anInt1075 += var6;
-			} while (var5.anInt1075 < 1000);
+				var5.pos += var6;
+			} while (var5.pos < 1000);
 
 			return 0L;
 		} catch (final Exception var9) {

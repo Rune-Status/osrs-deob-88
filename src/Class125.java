@@ -7,7 +7,7 @@ public class Class125 {
 	public int anInt882;
 	public int anInt879;
 
-	public Class125(final Class124_Sub14 var1, final boolean var2) {
+	public Class125(final RSBuf var1, final boolean var2) {
 		aByte877 = var1.method559();
 		anInt878 = var1.method560();
 		anInt881 = var1.method562(-2032144560);

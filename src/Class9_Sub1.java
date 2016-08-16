@@ -123,17 +123,17 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 		for (var6 = 0; var6 < Class124_Sub18.aByteArrayArray1294.length; ++var6) {
 			if ((Class10.anIntArray104[var6] != -1) && (null == Class124_Sub18.aByteArrayArray1294[var6])) {
 				Class124_Sub18.aByteArrayArray1294[var6] = Class125.aClass94_Sub1_883
-						.method377(Class10.anIntArray104[var6], 0);
+						.decode(Class10.anIntArray104[var6], 0);
 				if (Class124_Sub18.aByteArrayArray1294[var6] == null) {
 					var11 = false;
 					++client.anInt2037;
 				}
 			}
 
-			if ((Class124_Sub22_Sub1.anIntArray1335[var6] != -1)
+			if ((Def9.anIntArray1335[var6] != -1)
 					&& (null == Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6])) {
-				Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6] = Class125.aClass94_Sub1_883.method371(
-						Class124_Sub22_Sub1.anIntArray1335[var6], 0, Class124_Sub22_Sub10.anIntArrayArray1466[var6]);
+				Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6] = Class125.aClass94_Sub1_883.decode(
+						Def9.anIntArray1335[var6], 0, Class124_Sub22_Sub10.anIntArrayArray1466[var6]);
 				if (Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6] == null) {
 					var11 = false;
 					++client.anInt2037;
@@ -159,7 +159,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 						var9 = 10;
 					}
 
-					var11 &= Class124_Sub22_Sub9.method705(var14, var7, var9);
+					var11 &= Def5.method705(var14, var7, var9);
 				}
 			}
 
@@ -169,11 +169,11 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 				if (client.anInt2113 != 0)
 					Class124_Sub7.method523("Loading - please wait." + "<br>" + " (" + 100 + "%" + ")", true);
 
-				Class124_Sub22_Sub14.method751();
-				Class124_Sub22_Sub1.method639();
-				Class124_Sub22_Sub14.method751();
+				Def15.method751();
+				Def9.method639();
+				Def15.method751();
 				Class36.aClass21_380.method98();
-				Class124_Sub22_Sub14.method751();
+				Def15.method751();
 				System.gc();
 
 				for (var6 = 0; var6 < 4; ++var6)
@@ -185,8 +185,8 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 						for (var7 = 0; var7 < 104; ++var7)
 							Class27.aByteArrayArrayArray285[var6][var13][var7] = 0;
 
-				Class124_Sub22_Sub14.method751();
-				Class124_Sub22_Sub3.method664(523078311);
+				Def15.method751();
+				Def1.method664(523078311);
 				var6 = Class124_Sub18.aByteArrayArray1294.length;
 				Class124_Sub7.method527();
 				Class46.method229(true);
@@ -204,7 +204,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 						var9 = ((Class124_Sub22_Sub19_Sub6.anIntArray1822[var13] & 255) * 64) - Class95.anInt762;
 						var19 = Class124_Sub18.aByteArrayArray1294[var13];
 						if (var19 != null) {
-							Class124_Sub22_Sub14.method751();
+							Def15.method751();
 							var21 = (Class124_Sub13.anInt1071 * 8) - 48;
 							var2 = (Class124_Sub22_Sub19_Sub6.anInt1824 * 8) - 48;
 							final Class130[] var22 = client.aClass130Array2192;
@@ -216,7 +216,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 												&& ((var12 + var9) < 103))
 											var22[var5].anIntArrayArray894[var7 + var3][var9 + var12] &= -16777217;
 
-							final Class124_Sub14 var25 = new Class124_Sub14(var19);
+							final RSBuf var25 = new RSBuf(var19);
 
 							for (var3 = 0; var3 < 4; ++var3)
 								for (var12 = 0; var12 < 64; ++var12)
@@ -230,7 +230,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 						var9 = (64 * (Class124_Sub22_Sub19_Sub6.anIntArray1822[var13] & 255)) - Class95.anInt762;
 						var19 = Class124_Sub18.aByteArrayArray1294[var13];
 						if ((var19 == null) && (Class124_Sub22_Sub19_Sub6.anInt1824 < 800)) {
-							Class124_Sub22_Sub14.method751();
+							Def15.method751();
 							Class27.method164(var7, var9, 64, 64);
 						}
 					}
@@ -242,8 +242,8 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 						if (null != var23) {
 							var9 = (64 * (Class124_Sub22_Sub19_Sub6.anIntArray1822[var13] >> 8)) - Class9.anInt102;
 							var8 = ((Class124_Sub22_Sub19_Sub6.anIntArray1822[var13] & 255) * 64) - Class95.anInt762;
-							Class124_Sub22_Sub14.method751();
-							Class124_Sub22_Sub3.method668(var23, var9, var8, Class36.aClass21_380,
+							Def15.method751();
+							Def1.method668(var23, var9, var8, Class36.aClass21_380,
 									client.aClass130Array2192);
 						}
 					}
@@ -252,7 +252,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 				int var4;
 				if (client.aBool2043) {
 					for (var13 = 0; var13 < 4; ++var13) {
-						Class124_Sub22_Sub14.method751();
+						Def15.method751();
 
 						for (var7 = 0; var7 < 13; ++var7)
 							for (var9 = 0; var9 < 13; ++var9) {
@@ -321,7 +321,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 					Class46.method229(true);
 
 					for (var13 = 0; var13 < 4; ++var13) {
-						Class124_Sub22_Sub14.method751();
+						Def15.method751();
 
 						for (var7 = 0; var7 < 13; ++var7)
 							label453: for (var9 = 0; var9 < 13; ++var9) {
@@ -343,11 +343,11 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 											final int var32 = (var5 & 7) * 8;
 											final Class21 var33 = Class36.aClass21_380;
 											final Class130[] var34 = client.aClass130Array2192;
-											final Class124_Sub14 var16 = new Class124_Sub14(var30);
+											final RSBuf var16 = new RSBuf(var30);
 											int var28 = -1;
 
 											while (true) {
-												final int var17 = var16.method596((byte) -21);
+												final int var17 = var16.getsmart((byte) -21);
 												if (var17 == 0)
 													continue label453;
 
@@ -355,7 +355,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 												int var10 = 0;
 
 												while (true) {
-													final int var24 = var16.method596((byte) -26);
+													final int var24 = var16.getsmart((byte) -26);
 													if (var24 == 0)
 														break;
 
@@ -368,7 +368,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 													final int var35 = var26 & 3;
 													if ((var21 == var37) && (var0 >= var1) && (var0 < (var1 + 8))
 															&& (var20 >= var32) && (var20 < (8 + var32))) {
-														final Class124_Sub22_Sub6 var29 = Class124_Sub22_Sub12
+														final Def6 var29 = Def13
 																.method736(var28);
 														final int var38 = var18 + Class124_Sub22_Sub19_Sub6.method961(
 																var0 & 7, var20 & 7, var2, var29.anInt1401,
@@ -399,8 +399,8 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 				}
 
 				Class46.method229(true);
-				Class124_Sub22_Sub1.method639();
-				Class124_Sub22_Sub14.method751();
+				Def9.method639();
+				Def15.method751();
 				Class43.method222(Class36.aClass21_380, client.aClass130Array2192);
 				Class46.method229(true);
 				var13 = Class27.anInt290;
@@ -419,7 +419,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 					for (var9 = 0; var9 < 104; ++var9)
 						Class48.method233(var7, var9);
 
-				Class124_Sub22_Sub14.method751();
+				Def15.method751();
 
 				for (Class124_Sub11 var42 = (Class124_Sub11) client.aClass111_2262
 						.method428(); null != var42; var42 = (Class124_Sub11) client.aClass111_2262.method430())
@@ -429,7 +429,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 					} else
 						var42.method450();
 
-				Class124_Sub22_Sub6.aClass113_1389.method436();
+				Def6.aClass113_1389.method436();
 				if (null != Class69.aFrame578) {
 					client.aClass124_Sub14_Sub1_2024.method837(103);
 					client.aClass124_Sub14_Sub1_2024.method548(1057001181);
@@ -450,7 +450,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 				}
 
 				Class124_Sub5.method516(30);
-				Class124_Sub22_Sub14.method751();
+				Def15.method751();
 				Class124_Sub6.method520();
 				client.aClass124_Sub14_Sub1_2024.method837(104);
 				Class42.method215();

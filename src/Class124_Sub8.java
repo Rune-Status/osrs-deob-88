@@ -1,4 +1,4 @@
-public class Class124_Sub8 extends Class124 {
+public class Class124_Sub8 extends Node {
 	int[] anIntArray1015;
 	static int[] anIntArray1025;
 	boolean aBool1024 = false;
@@ -21,7 +21,7 @@ public class Class124_Sub8 extends Class124 {
 		anIntArray1015 = new int[var5];
 
 		for (int var6 = 0; var6 < anIntArray1016.length; ++var6) {
-			final Class124_Sub22_Sub16_Sub2 var8 = Class124_Sub22_Sub3.method660(var4, anIntArray1016[var6]);
+			final Class124_Sub22_Sub16_Sub2 var8 = Def1.method660(var4, anIntArray1016[var6]);
 			var8.method925();
 			final byte[] var9 = var8.aByteArray1740;
 			final int[] var10 = var8.anIntArray1742;
@@ -162,7 +162,7 @@ public class Class124_Sub8 extends Class124 {
 		}
 	}
 
-	Class124_Sub8(final Class124_Sub14 var1) {
+	Class124_Sub8(final RSBuf var1) {
 		anInt1017 = var1.method560();
 		aBool1019 = var1.method558() == 1;
 		final int var3 = var1.method558();
