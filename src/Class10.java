@@ -10,14 +10,14 @@ public class Class10 {
 		try {
 		final int var1 = var0 >> 16;
 		final int var3 = var0 & '\uffff';
-		if ((Class124_Sub22_Sub10.widgets[var1] == null)
-				|| (null == Class124_Sub22_Sub10.widgets[var1][var3])) {
+		if ((Def10.widgets[var1] == null)
+				|| (null == Def10.widgets[var1][var3])) {
 			final boolean var2 = Class89.loadwidget(var1);
 			if (!var2)
 				return null;
 		}
 
-		return Class124_Sub22_Sub10.widgets[var1][var3];
+		return Def10.widgets[var1][var3];
 		} catch (Exception e) {
 			System.err.println("bad interface");
 			e.printStackTrace();

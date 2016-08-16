@@ -263,7 +263,7 @@ public class Class11 {
 				anIntArray117[var1] = anIntArray113[var1];
 
 			var1 = anIntArray112[anInt110 - 1];
-			final int var7 = Class124_Sub22_Sub10.method714(var1 - 1);
+			final int var7 = Def10.method714(var1 - 1);
 			anIntArray119[0] = client.method502(var7);
 			anIntArray119[1] = client.method502(var7);
 			int var8 = 2;

@@ -266,10 +266,10 @@ public class Class72 implements Interface3 {
 						final Class94_Sub1 var3 = Class66.aClass94_Sub1_562;
 						final boolean var22 = client.aBool1988;
 						final Somet1 var15 = Class23.aClass124_Sub22_Sub16_Sub4_Sub1_260;
-						Class124_Sub22_Sub10.aClass94_1459 = var14;
-						Class124_Sub22_Sub10.aClass94_1460 = var3;
+						Def10.aClass94_1459 = var14;
+						Def10.aClass94_1460 = var3;
 						Class124_Sub22_Sub21.aBool1649 = var22;
-						RuntimeException_Sub1.anInt1914 = Class124_Sub22_Sub10.aClass94_1459.widgetLen(10);
+						RuntimeException_Sub1.anInt1914 = Def10.aClass94_1459.widgetLen(10);
 						Class90.aClass124_Sub22_Sub16_Sub4_Sub1_709 = var15;
 						final Class94_Sub1 var17 = Class43.aClass94_Sub1_431;
 						final Class94_Sub1 var11 = Class82.aClass94_Sub1_671;
@@ -291,7 +291,7 @@ public class Class72 implements Interface3 {
 						Class124_Sub7.aClass94_1014 = var20;
 						Widget.aClass94_1146 = var21;
 						Class69.aClass94_581 = var10;
-						Class124_Sub22_Sub10.widgets = new Widget[Widget.aClass94_1145
+						Def10.widgets = new Widget[Widget.aClass94_1145
 								.method373()][];
 						Widget.widgetLoaded = new boolean[Widget.aClass94_1145.method373()];
 						final Class94_Sub1 var12 = Class43.aClass94_Sub1_431;

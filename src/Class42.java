@@ -188,7 +188,7 @@ public final class Class42 {
 
 									var22 = var25.anInt1012;
 									if (Class89.loadwidget(var22))
-										method214(Class124_Sub22_Sub10.widgets[var22], -1, var16,
+										method214(Def10.widgets[var22], -1, var16,
 												var17, var18, var19, var21, var9);
 								}
 							}
@@ -529,11 +529,11 @@ public final class Class42 {
 										if ((var33 >= var13) && (var33 < (var13 + 16)) && (var27 >= var9)
 												&& (var27 < (var9 + 16))) {
 											var11.anInt1175 -= 4;
-											Class124_Sub22_Sub10.method723(var11);
+											Def10.settrue(var11);
 										} else if ((var33 >= var13) && (var33 < (var13 + 16))
 												&& (var27 >= ((var22 + var9) - 16)) && (var27 < (var22 + var9))) {
 											var11.anInt1175 += 4;
-											Class124_Sub22_Sub10.method723(var11);
+											Def10.settrue(var11);
 										} else if ((var33 >= (var13 - client.anInt2064))
 												&& (var33 < (client.anInt2064 + 16 + var13)) && (var27 >= (var9 + 16))
 												&& (var27 < ((var9 + var22) - 16))) {
@@ -544,7 +544,7 @@ public final class Class42 {
 											var29 = var27 - var9 - 16 - (var14 / 2);
 											var28 = var22 - 32 - var14;
 											var11.anInt1175 = ((var37 - var22) * var29) / var28;
-											Class124_Sub22_Sub10.method723(var11);
+											Def10.settrue(var11);
 											client.aBool2156 = true;
 										}
 
@@ -553,7 +553,7 @@ public final class Class42 {
 										if ((var33 >= (var13 - var14)) && (var27 >= var9) && (var33 < (var13 + 16))
 												&& (var27 <= (var9 + var22))) {
 											var11.anInt1175 += client.anInt2183 * 45;
-											Class124_Sub22_Sub10.method723(var11);
+											Def10.settrue(var11);
 										}
 									}
 								}

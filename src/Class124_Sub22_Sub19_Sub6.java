@@ -97,12 +97,12 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 		final long var8 = ((long) var3 << 42) + ((long) var1 << 16) + var0 + ((long) var2 << 38) + ((long) var4 << 40);
 		Class124_Sub22_Sub16_Sub1 var10;
 		if (!var5) {
-			var10 = (Class124_Sub22_Sub16_Sub1) Class124_Sub22_Sub10.aClass113_1463.forId(var8);
+			var10 = (Class124_Sub22_Sub16_Sub1) Def10.aClass113_1463.forId(var8);
 			if (var10 != null)
 				return var10;
 		}
 
-		Class124_Sub22_Sub10 var11 = Class124_Sub22_Sub10.method724(var0);
+		Def10 var11 = Def10.method724(var0);
 		if ((var1 > 1) && (null != var11.anIntArray1492)) {
 			int var13 = -1;
 
@@ -111,7 +111,7 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 					var13 = var11.anIntArray1492[var14];
 
 			if (var13 != -1)
-				var11 = Class124_Sub22_Sub10.method724(var13);
+				var11 = Def10.method724(var13);
 		}
 
 		final Class124_Sub22_Sub19_Sub7 var16 = var11.method720(1);
@@ -181,7 +181,7 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 			}
 
 			if (!var5)
-				Class124_Sub22_Sub10.aClass113_1463.map(var10, var8);
+				Def10.aClass113_1463.map(var10, var8);
 
 			Class124_Sub22_Sub16.method780(var18, var6, var19);
 			Class124_Sub22_Sub16.method766(var12);

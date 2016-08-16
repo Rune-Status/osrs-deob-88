@@ -133,7 +133,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 			if ((Def9.anIntArray1335[var6] != -1)
 					&& (null == Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6])) {
 				Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6] = Class125.aClass94_Sub1_883.decode(
-						Def9.anIntArray1335[var6], 0, Class124_Sub22_Sub10.anIntArrayArray1466[var6]);
+						Def9.anIntArray1335[var6], 0, Def10.anIntArrayArray1466[var6]);
 				if (Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6] == null) {
 					var11 = false;
 					++client.anInt2037;

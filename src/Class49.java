@@ -169,12 +169,12 @@ public class Class49 {
 				client.loginbuf.endShortSize(client.loginbuf.pos - var2);
 				Class73.aClass78_609.method323(client.loginbuf.backing, 0,
 						client.loginbuf.pos);
-				client.secbuf.method836(var1);
+				client.secbuf.isa(var1);
 
 				for (var6 = 0; var6 < 4; ++var6)
 					var1[var6] += 50;
 
-				client.aClass124_Sub14_Sub1_2026.method836(var1);
+				client.aClass124_Sub14_Sub1_2026.isa(var1);
 				client.anInt2016 = 6;
 			}
 
@@ -478,14 +478,14 @@ public class Class49 {
 		client.aClass107_2143.method412(var3, var0);
 		Class32.method183(var1);
 		final Widget var4 = Class10.method55(var0);
-		Class124_Sub22_Sub10.method723(var4);
+		Def10.settrue(var4);
 		if (null != client.aClass124_Sub17_2042) {
-			Class124_Sub22_Sub10.method723(client.aClass124_Sub17_2042);
+			Def10.settrue(client.aClass124_Sub17_2042);
 			client.aClass124_Sub17_2042 = null;
 		}
 
 		Class51.method247();
-		Somet2.method831(Class124_Sub22_Sub10.widgets[var0 >> 16], var4, false);
+		Somet2.method831(Def10.widgets[var0 >> 16], var4, false);
 		Class3.method20(var1);
 		if (client.anInt2142 != -1)
 			Class3.method23(client.anInt2142, 1);

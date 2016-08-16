@@ -113,7 +113,7 @@ public class Def19 extends JagMap {
 				var8 = 128 + client.anIntArray2054[4];
 
 			var24 = (client.anInt2255 + client.anInt2050) & 2047;
-			Outbuf.method844(Class124_Sub11.anInt1046,
+			client.method844(Class124_Sub11.anInt1046,
 					Class63.method285(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690,
 							Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697, Class134.anInt906) - 50,
 					Class87.anInt689, var8, var24, (var8 * 3) + 600);
@@ -212,7 +212,7 @@ public class Def19 extends JagMap {
 
 			var8 = var24;
 		} else
-			var8 = Outbuf.method841();
+			var8 = client.method841();
 
 		var24 = Class45.anInt445;
 		var20 = Class2.anInt14;

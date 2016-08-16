@@ -37,7 +37,7 @@ public class Somet4 extends Node {
 	float[] method497(final int var1) {
 		client.method495(aByteArrayArray951[var1], 0);
 		client.method496();
-		final int var3 = client.method502(Class124_Sub22_Sub10.method714(anIntArray942.length - 1));
+		final int var3 = client.method502(Def10.method714(anIntArray942.length - 1));
 		final boolean var21 = aBoolArray928[var3];
 		final int var5 = var21 ? anInt954 : anInt953;
 		boolean var8 = false;
@@ -144,7 +144,7 @@ public class Somet4 extends Node {
 				var17[(4 * var34) + 1] = ((var13 - var14) * var11) + ((var4 - var10) * var15);
 			}
 
-			var34 = Class124_Sub22_Sub10.method714(var5 - 1);
+			var34 = Def10.method714(var5 - 1);
 
 			int var45;
 			int var46;

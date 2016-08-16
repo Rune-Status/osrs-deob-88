@@ -53,7 +53,7 @@ public class Class101 {
 						client.anInt2075 = var4;
 						Def9.aClass124_Sub17_1352 = var0;
 						if (var0.anIntArray1269[var4] > 0) {
-							final Class124_Sub22_Sub10 var14 = Class124_Sub22_Sub10
+							final Def10 var14 = Def10
 									.method724(var0.anIntArray1269[var4] - 1);
 							if ((client.anInt2135 == 1)
 									&& Class29.method171(Class124_Sub22_Sub19_Sub6.method963(var0))) {

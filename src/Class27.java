@@ -289,7 +289,7 @@ public final class Class27 {
 													if (var54 != null)
 														var54.method907(var15, var28);
 													else if (Widget.aBool1151)
-														Class124_Sub22_Sub10.method723(var11);
+														Def10.settrue(var11);
 												}
 											} else {
 												var23 = var11.anIntArray1269[var19] - 1;
@@ -339,7 +339,7 @@ public final class Class27 {
 
 																	var26.anInt1175 -= var29;
 																	client.anInt2095 += var29;
-																	Class124_Sub22_Sub10.method723(var26);
+																	Def10.settrue(var26);
 																}
 
 																if (((var28 + var22
@@ -359,7 +359,7 @@ public final class Class27 {
 
 																	var26.anInt1175 += var29;
 																	client.anInt2095 -= var29;
-																	Class124_Sub22_Sub10.method723(var26);
+																	Def10.settrue(var26);
 																}
 															}
 														} else if ((Class72.aClass124_Sub17_598 == var11)
@@ -368,7 +368,7 @@ public final class Class27 {
 														else
 															var27.method907(var15, var28);
 													} else
-														Class124_Sub22_Sub10.method723(var11);
+														Def10.settrue(var11);
 												}
 											}
 
@@ -404,7 +404,7 @@ public final class Class27 {
 										var51 = var11.method631();
 										if (null == var51) {
 											if (Widget.aBool1151)
-												Class124_Sub22_Sub10.method723(var11);
+												Def10.settrue(var11);
 										} else {
 											String var44 = var11.aString1185;
 											if (Class1.method13(var11)) {
@@ -421,7 +421,7 @@ public final class Class27 {
 											}
 
 											if (var11.aBool1152 && (var11.anInt1271 != -1)) {
-												final Class124_Sub22_Sub10 var50 = Class124_Sub22_Sub10
+												final Def10 var50 = Def10
 														.method724(var11.anInt1271);
 												var44 = var50.aString1472;
 												if (var44 == null)
@@ -452,7 +452,7 @@ public final class Class27 {
 											if (null != var52)
 												var52.method907(var10, var12);
 											else if (Widget.aBool1151)
-												Class124_Sub22_Sub10.method723(var11);
+												Def10.settrue(var11);
 										} else {
 											if (var11.anInt1271 != -1)
 												var52 = Class124_Sub22_Sub19_Sub6.method964(var11.anInt1271,
@@ -463,7 +463,7 @@ public final class Class27 {
 
 											if (var52 == null) {
 												if (Widget.aBool1151)
-													Class124_Sub22_Sub10.method723(var11);
+													Def10.settrue(var11);
 											} else {
 												var9 = var52.anInt1733;
 												var13 = var52.anInt1734;
@@ -503,7 +503,7 @@ public final class Class27 {
 											}
 										}
 									} else {
-										Class124_Sub22_Sub10 var20;
+										Def10 var20;
 										if (var11.anInt1191 == 6) {
 											final boolean var46 = Class1.method13(var11);
 											if (var46)
@@ -514,7 +514,7 @@ public final class Class27 {
 											Class124_Sub22_Sub19_Sub7 var43 = null;
 											var15 = 0;
 											if (var11.anInt1271 != -1) {
-												var20 = Class124_Sub22_Sub10.method724(var11.anInt1271);
+												var20 = Def10.method724(var11.anInt1271);
 												if (var20 != null) {
 													var20 = var20.method717(var11.anInt1272);
 													var43 = var20.method720(1);
@@ -522,7 +522,7 @@ public final class Class27 {
 														var43.method989();
 														var15 = var43.anInt1605 / 2;
 													} else
-														Class124_Sub22_Sub10.method723(var11);
+														Def10.settrue(var11);
 												}
 											} else if (var11.anInt1229 == 5) {
 												if (var11.anInt1197 == 0)
@@ -535,13 +535,13 @@ public final class Class27 {
 												var43 = var11.method627((Def12) null, -1, var46,
 														Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aClass100_1943);
 												if ((null == var43) && Widget.aBool1151)
-													Class124_Sub22_Sub10.method723(var11);
+													Def10.settrue(var11);
 											} else {
 												final Def12 var47 = Def15.method750(var9);
 												var43 = var11.method627(var47, var11.anInt1273, var46,
 														Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aClass100_1943);
 												if ((null == var43) && Widget.aBool1151)
-													Class124_Sub22_Sub10.method723(var11);
+													Def10.settrue(var11);
 											}
 
 											Class124_Sub22_Sub16_Sub3.method971(var10 + (var11.anInt1168 / 2),
@@ -574,7 +574,7 @@ public final class Class27 {
 												var51 = var11.method631();
 												if (var51 == null) {
 													if (Widget.aBool1151)
-														Class124_Sub22_Sub10.method723(var11);
+														Def10.settrue(var11);
 													continue;
 												}
 
@@ -583,7 +583,7 @@ public final class Class27 {
 												for (var13 = 0; var13 < var11.anInt1165; ++var13)
 													for (var15 = 0; var15 < var11.anInt1257; ++var15) {
 														if (var11.anIntArray1269[var9] > 0) {
-															var20 = Class124_Sub22_Sub10
+															var20 = Def10
 																	.method724(var11.anIntArray1269[var9] - 1);
 															String var40;
 															if ((var20.anInt1480 != 1)

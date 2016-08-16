@@ -88,7 +88,7 @@ public final class Class124_Sub11 extends Node {
 					((Class31) Class124_Sub22_Sub16_Sub3.anInterface2_1828).method176(0.6D);
 				}
 
-				Class124_Sub22_Sub10.aClass113_1463.map();
+				Def10.aClass113_1463.map();
 			}
 
 			if (var1 == 3) {

@@ -141,7 +141,7 @@ public class Class41 {
 					if (var24 != null)
 						for (Class124_Sub22_Sub19_Sub2 var27 = (Class124_Sub22_Sub19_Sub2) var24
 								.method429(); var27 != null; var27 = (Class124_Sub22_Sub19_Sub2) var24.method426()) {
-							final Class124_Sub22_Sub10 var26 = Class124_Sub22_Sub10.method724(var27.anInt1667);
+							final Def10 var26 = Def10.method724(var27.anInt1667);
 							if (client.anInt2135 == 1)
 								Class3.method22(
 										"Use", client.aString2136 + " " + "->" + " "

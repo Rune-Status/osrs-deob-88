@@ -115,7 +115,7 @@ public class Class31 implements Interface2 {
 			}
 
 			client.aBool2137 = false;
-			Class124_Sub22_Sub10.method723(var1);
+			Def10.settrue(var1);
 		}
 	}
 

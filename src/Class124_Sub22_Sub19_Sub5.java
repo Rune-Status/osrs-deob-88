@@ -223,8 +223,8 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 	static final void method959(final boolean var0) {
 		client.anInt2108 = 0;
 		client.anInt2029 = 0;
-		client.aClass124_Sub14_Sub1_2026.method842();
-		int var1 = client.aClass124_Sub14_Sub1_2026.method839(8);
+		client.aClass124_Sub14_Sub1_2026.tempbit();
+		int var1 = client.aClass124_Sub14_Sub1_2026.clever(8);
 		int var2;
 		if (var1 < client.anInt2022)
 			for (var2 = var1; var2 < client.anInt2022; ++var2)
@@ -242,12 +242,12 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 			for (var2 = 0; var2 < var1; ++var2) {
 				final int var7 = client.anIntArray2023[var2];
 				final Class124_Sub22_Sub19_Sub3_Sub1 var9 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var7];
-				var5 = client.aClass124_Sub14_Sub1_2026.method839(1);
+				var5 = client.aClass124_Sub14_Sub1_2026.clever(1);
 				if (var5 == 0) {
 					client.anIntArray2023[++client.anInt2022 - 1] = var7;
 					var9.anInt1716 = client.anInt2158;
 				} else {
-					var8 = client.aClass124_Sub14_Sub1_2026.method839(2);
+					var8 = client.aClass124_Sub14_Sub1_2026.clever(2);
 					if (var8 == 0) {
 						client.anIntArray2023[++client.anInt2022 - 1] = var7;
 						var9.anInt1716 = client.anInt2158;
@@ -255,19 +255,19 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 					} else if (var8 == 1) {
 						client.anIntArray2023[++client.anInt2022 - 1] = var7;
 						var9.anInt1716 = client.anInt2158;
-						var6 = client.aClass124_Sub14_Sub1_2026.method839(3);
+						var6 = client.aClass124_Sub14_Sub1_2026.clever(3);
 						var9.method892(var6, false);
-						var4 = client.aClass124_Sub14_Sub1_2026.method839(1);
+						var4 = client.aClass124_Sub14_Sub1_2026.clever(1);
 						if (var4 == 1)
 							client.anIntArray2104[++client.anInt2029 - 1] = var7;
 					} else if (var8 == 2) {
 						client.anIntArray2023[++client.anInt2022 - 1] = var7;
 						var9.anInt1716 = client.anInt2158;
-						var6 = client.aClass124_Sub14_Sub1_2026.method839(3);
+						var6 = client.aClass124_Sub14_Sub1_2026.clever(3);
 						var9.method892(var6, true);
-						var4 = client.aClass124_Sub14_Sub1_2026.method839(3);
+						var4 = client.aClass124_Sub14_Sub1_2026.clever(3);
 						var9.method892(var4, true);
-						final int var11 = client.aClass124_Sub14_Sub1_2026.method839(1);
+						final int var11 = client.aClass124_Sub14_Sub1_2026.clever(1);
 						if (var11 == 1)
 							client.anIntArray2104[++client.anInt2029 - 1] = var7;
 					} else if (var8 == 3)
@@ -277,8 +277,8 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 
 			Class124_Sub22_Sub19_Sub3_Sub1 var3;
 			int var10;
-			while (client.aClass124_Sub14_Sub1_2026.method843(client.anInt2027) >= 27) {
-				var1 = client.aClass124_Sub14_Sub1_2026.method839(15);
+			while (client.aClass124_Sub14_Sub1_2026.bitpos(client.anInt2027) >= 27) {
+				var1 = client.aClass124_Sub14_Sub1_2026.clever(15);
 				if (var1 == 32767)
 					break;
 
@@ -292,33 +292,33 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 				client.anIntArray2023[++client.anInt2022 - 1] = var1;
 				var3.anInt1716 = client.anInt2158;
 				if (var0) {
-					var10 = client.aClass124_Sub14_Sub1_2026.method839(8);
+					var10 = client.aClass124_Sub14_Sub1_2026.clever(8);
 					if (var10 > 127)
 						var10 -= 256;
 				} else {
-					var10 = client.aClass124_Sub14_Sub1_2026.method839(5);
+					var10 = client.aClass124_Sub14_Sub1_2026.clever(5);
 					if (var10 > 15)
 						var10 -= 32;
 				}
 
 				if (var0) {
-					var5 = client.aClass124_Sub14_Sub1_2026.method839(8);
+					var5 = client.aClass124_Sub14_Sub1_2026.clever(8);
 					if (var5 > 127)
 						var5 -= 256;
 				} else {
-					var5 = client.aClass124_Sub14_Sub1_2026.method839(5);
+					var5 = client.aClass124_Sub14_Sub1_2026.clever(5);
 					if (var5 > 15)
 						var5 -= 32;
 				}
 
-				var3.aClass124_Sub22_Sub1_1941 = Class34.method188(client.aClass124_Sub14_Sub1_2026.method839(14),
+				var3.aClass124_Sub22_Sub1_1941 = Class34.method188(client.aClass124_Sub14_Sub1_2026.clever(14),
 						1713192620);
-				var8 = client.anIntArray2168[client.aClass124_Sub14_Sub1_2026.method839(3)];
+				var8 = client.anIntArray2168[client.aClass124_Sub14_Sub1_2026.clever(3)];
 				if (var12)
 					var3.anInt1718 = var3.anInt1672 = var8;
 
-				var6 = client.aClass124_Sub14_Sub1_2026.method839(1);
-				var4 = client.aClass124_Sub14_Sub1_2026.method839(1);
+				var6 = client.aClass124_Sub14_Sub1_2026.clever(1);
+				var4 = client.aClass124_Sub14_Sub1_2026.clever(1);
 				if (var4 == 1)
 					client.anIntArray2104[++client.anInt2029 - 1] = var1;
 
@@ -338,7 +338,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 						Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anIntArray1723[0] + var5, var6 == 1);
 			}
 
-			client.aClass124_Sub14_Sub1_2026.method840();
+			client.aClass124_Sub14_Sub1_2026.bitinit();
 
 			for (var1 = 0; var1 < client.anInt2029; ++var1) {
 				var2 = client.anIntArray2104[var1];

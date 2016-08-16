@@ -32,8 +32,8 @@ public class Class51 {
 						if (var4 != -1) {
 							final Def12 var7 = Def15.method750(var4);
 
-							for (var3.anInt1274 += client.anInt2111; var3.anInt1274 > var7.anIntArray1529[var3.anInt1273]; Class124_Sub22_Sub10
-									.method723(var3)) {
+							for (var3.anInt1274 += client.anInt2111; var3.anInt1274 > var7.anIntArray1529[var3.anInt1273]; Def10
+									.settrue(var3)) {
 								var3.anInt1274 -= var7.anIntArray1529[var3.anInt1273];
 								++var3.anInt1273;
 								if (var3.anInt1273 >= var7.anIntArray1536.length) {
@@ -52,7 +52,7 @@ public class Class51 {
 						var4 *= client.anInt2111;
 						var3.anInt1202 = (var3.anInt1202 + var8) & 2047;
 						var3.anInt1203 = (var3.anInt1203 + var4) & 2047;
-						Class124_Sub22_Sub10.method723(var3);
+						Def10.settrue(var3);
 					}
 				}
 			}

@@ -49,7 +49,7 @@ public class Class57 {
 			var22 = Class10.method55(var1);
 			if ((var22 != null) && (var22.anIntArray1270[var0] >= 100000))
 				Class20.method95(27, "",
-						var22.anIntArray1270[var0] + " x " + Class124_Sub22_Sub10.method724(var3).aString1472);
+						var22.anIntArray1270[var0] + " x " + Def10.method724(var3).aString1472);
 			else {
 				client.secbuf.writeOpcode(65);
 				client.secbuf.method580(var3);
@@ -274,7 +274,7 @@ public class Class57 {
 			client.secbuf.writeInt(var1);
 			client.secbuf.writeShort(var0);
 			client.aClass124_Sub17_2042 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
-			Class124_Sub22_Sub10.method723(client.aClass124_Sub17_2042);
+			Def10.settrue(client.aClass124_Sub17_2042);
 		}
 
 		if (var2 == 6) {
@@ -628,7 +628,7 @@ public class Class57 {
 				Class124_Sub10.anInt1033 = var1;
 				client.anInt2138 = var0;
 				Class9_Sub1.anInt922 = var9;
-				Class124_Sub22_Sub10.method723(var18);
+				Def10.settrue(var18);
 				client.anInt2135 = 0;
 				final int var15 = Class124_Sub22_Sub19_Sub6.method963(var22);
 				var12 = (var15 >> 11) & 63;
@@ -802,7 +802,7 @@ public class Class57 {
 						Def4.method760(var25, true);
 
 				if (null != client.aClass124_Sub17_2042) {
-					Class124_Sub22_Sub10.method723(client.aClass124_Sub17_2042);
+					Def10.settrue(client.aClass124_Sub17_2042);
 					client.aClass124_Sub17_2042 = null;
 				}
 			}
@@ -855,9 +855,9 @@ public class Class57 {
 				Class87.anInt692 = var0;
 				Class38.anInt398 = var1;
 				Class124_Sub19.anInt1299 = var3;
-				Class124_Sub22_Sub10.method723(var22);
+				Def10.settrue(var22);
 				client.aString2136 = Class124_Sub4_Sub3.method874(16748608)
-						+ Class124_Sub22_Sub10.method724(var3).aString1472 + Class124_Sub4_Sub3.method874(16777215);
+						+ Def10.method724(var3).aString1472 + Class124_Sub4_Sub3.method874(16777215);
 				if (client.aString2136 == null)
 					client.aString2136 = "null";
 
@@ -895,14 +895,14 @@ public class Class57 {
 
 				if (client.anInt2135 != 0) {
 					client.anInt2135 = 0;
-					Class124_Sub22_Sub10.method723(Class10.method55(Class38.anInt398));
+					Def10.settrue(Class10.method55(Class38.anInt398));
 				}
 
 				if (client.aBool2137)
 					Class31.method180();
 
 				if ((Class72.aClass124_Sub17_598 != null) && (client.anInt2010 == 0))
-					Class124_Sub22_Sub10.method723(Class72.aClass124_Sub17_598);
+					Def10.settrue(Class72.aClass124_Sub17_598);
 
 			}
 		}

@@ -163,7 +163,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 						throw new RuntimeException();
 
 					++var7;
-					int var48 = var8[var7];
+					int opc = var8[var7];
 					int var10001;
 					int var19;
 					int var21;
@@ -172,19 +172,19 @@ public class Class124_Sub22_Sub5 extends JagMap {
 					String[] var59;
 					String var71;
 					byte var93;
-					if (var48 < 100) {
-						if (var48 == 0) {
+					if (opc < 100) {
+						if (opc == 0) {
 							Class2.anIntArray8[var5++] = var9[var7];
 							continue;
 						}
 
-						if (var48 == 1) {
+						if (opc == 1) {
 							var14 = var9[var7];
 							Class2.anIntArray8[var5++] = Class91.anIntArray711[var14];
 							continue;
 						}
 
-						if (var48 == 2) {
+						if (opc == 2) {
 							var14 = var9[var7];
 							--var5;
 							Class91.anIntArray711[var14] = Class2.anIntArray8[var5];
@@ -192,45 +192,45 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							continue;
 						}
 
-						if (var48 == 3) {
+						if (opc == 3) {
 							Class2.aStringArray5[var6++] = var4.aStringArray1598[var7];
 							continue;
 						}
 
-						if (var48 == 6) {
+						if (opc == 6) {
 							var7 += var9[var7];
 							continue;
 						}
 
-						if (var48 == 7) {
+						if (opc == 7) {
 							var5 -= 2;
 							if (Class2.anIntArray8[1 + var5] != Class2.anIntArray8[var5])
 								var7 += var9[var7];
 							continue;
 						}
 
-						if (var48 == 8) {
+						if (opc == 8) {
 							var5 -= 2;
 							if (Class2.anIntArray8[1 + var5] == Class2.anIntArray8[var5])
 								var7 += var9[var7];
 							continue;
 						}
 
-						if (var48 == 9) {
+						if (opc == 9) {
 							var5 -= 2;
 							if (Class2.anIntArray8[var5] < Class2.anIntArray8[1 + var5])
 								var7 += var9[var7];
 							continue;
 						}
 
-						if (var48 == 10) {
+						if (opc == 10) {
 							var5 -= 2;
 							if (Class2.anIntArray8[var5] > Class2.anIntArray8[1 + var5])
 								var7 += var9[var7];
 							continue;
 						}
 
-						if (var48 == 21) {
+						if (opc == 21) {
 							if (Class2.anInt10 == 0)
 								return;
 
@@ -244,58 +244,58 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							continue;
 						}
 
-						if (var48 == 25) {
+						if (opc == 25) {
 							var14 = var9[var7];
 							Class2.anIntArray8[var5++] = Class74.method315(var14, (byte) 0);
 							continue;
 						}
 
-						if (var48 == 27) {
+						if (opc == 27) {
 							var14 = var9[var7];
 							--var5;
 							Class124_Sub15.method611(var14, Class2.anIntArray8[var5]);
 							continue;
 						}
 
-						if (var48 == 31) {
+						if (opc == 31) {
 							var5 -= 2;
 							if (Class2.anIntArray8[var5] <= Class2.anIntArray8[1 + var5])
 								var7 += var9[var7];
 							continue;
 						}
 
-						if (var48 == 32) {
+						if (opc == 32) {
 							var5 -= 2;
 							if (Class2.anIntArray8[var5] >= Class2.anIntArray8[1 + var5])
 								var7 += var9[var7];
 							continue;
 						}
 
-						if (var48 == 33) {
+						if (opc == 33) {
 							Class2.anIntArray8[var5++] = Class112.anIntArray818[var9[var7]];
 							continue;
 						}
 
-						if (var48 == 34) {
+						if (opc == 34) {
 							var10001 = var9[var7];
 							--var5;
 							Class112.anIntArray818[var10001] = Class2.anIntArray8[var5];
 							continue;
 						}
 
-						if (var48 == 35) {
+						if (opc == 35) {
 							Class2.aStringArray5[var6++] = Class60.aStringArray544[var9[var7]];
 							continue;
 						}
 
-						if (var48 == 36) {
+						if (opc == 36) {
 							var10001 = var9[var7];
 							--var6;
 							Class60.aStringArray544[var10001] = Class2.aStringArray5[var6];
 							continue;
 						}
 
-						if (var48 == 37) {
+						if (opc == 37) {
 							var14 = var9[var7];
 							var6 -= var14;
 							var71 = Class72.method309(Class2.aStringArray5, var6, var14);
@@ -303,17 +303,17 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							continue;
 						}
 
-						if (var48 == 38) {
+						if (opc == 38) {
 							--var5;
 							continue;
 						}
 
-						if (var48 == 39) {
+						if (opc == 39) {
 							--var6;
 							continue;
 						}
 
-						if (var48 == 40) {
+						if (opc == 40) {
 							var14 = var9[var7];
 							final Somet2 var107 = client.method574(var14);
 							var52 = new int[var107.anInt1599];
@@ -342,19 +342,19 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							continue;
 						}
 
-						if (var48 == 42) {
+						if (opc == 42) {
 							Class2.anIntArray8[var5++] = Class124_Sub6.aClass41_1006.method208(var9[var7]);
 							continue;
 						}
 
-						if (var48 == 43) {
+						if (opc == 43) {
 							var10001 = var9[var7];
 							--var5;
 							Class124_Sub6.aClass41_1006.method203(var10001, Class2.anIntArray8[var5]);
 							continue;
 						}
 
-						if (var48 == 44) {
+						if (opc == 44) {
 							var14 = var9[var7] >> 16;
 							var21 = var9[var7] & '\uffff';
 							--var5;
@@ -379,7 +379,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							throw new RuntimeException();
 						}
 
-						if (var48 == 45) {
+						if (opc == 45) {
 							var14 = var9[var7];
 							--var5;
 							var21 = Class2.anIntArray8[var5];
@@ -391,7 +391,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							throw new RuntimeException();
 						}
 
-						if (var48 == 46) {
+						if (opc == 46) {
 							var14 = var9[var7];
 							var5 -= 2;
 							var21 = Class2.anIntArray8[var5];
@@ -403,7 +403,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							throw new RuntimeException();
 						}
 
-						if (var48 == 47) {
+						if (opc == 47) {
 							var15 = Class124_Sub6.aClass41_1006.method206(var9[var7]);
 							if (var15 == null)
 								var15 = "null";
@@ -412,7 +412,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							continue;
 						}
 
-						if (var48 == 48) {
+						if (opc == 48) {
 							var10001 = var9[var7];
 							--var6;
 							Class124_Sub6.aClass41_1006.method209(var10001, Class2.aStringArray5[var6]);
@@ -426,7 +426,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 					else
 						var55 = false;
 
-					Widget var16;
+					Widget wid;
 					Widget var17;
 					int var25;
 					Widget var50;
@@ -434,8 +434,8 @@ public class Class124_Sub22_Sub5 extends JagMap {
 					int var70;
 					boolean var72;
 					boolean var74;
-					if (var48 < 1000) {
-						if (var48 == 100) {
+					if (opc < 1000) {
+						if (opc == 100) {
 							var5 -= 3;
 							var21 = Class2.anIntArray8[var5];
 							var22 = Class2.anIntArray8[1 + var5];
@@ -472,27 +472,27 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							else
 								Class29.aClass124_Sub17_314 = var92;
 
-							Class124_Sub22_Sub10.method723(var56);
+							Def10.settrue(var56);
 							continue;
 						}
 
-						if (var48 == 101) {
-							var16 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
-							var17 = Class10.method55(var16.anInt1284);
-							var17.aClass124_Sub17Array1263[var16.anInt1154] = null;
-							Class124_Sub22_Sub10.method723(var17);
+						if (opc == 101) {
+							wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
+							var17 = Class10.method55(wid.anInt1284);
+							var17.aClass124_Sub17Array1263[wid.anInt1154] = null;
+							Def10.settrue(var17);
 							continue;
 						}
 
-						if (var48 == 102) {
+						if (opc == 102) {
 							--var5;
-							var16 = Class10.method55(Class2.anIntArray8[var5]);
-							var16.aClass124_Sub17Array1263 = null;
-							Class124_Sub22_Sub10.method723(var16);
+							wid = Class10.method55(Class2.anIntArray8[var5]);
+							wid.aClass124_Sub17Array1263 = null;
+							Def10.settrue(wid);
 							continue;
 						}
 
-						if (var48 == 200) {
+						if (opc == 200) {
 							var5 -= 2;
 							var21 = Class2.anIntArray8[var5];
 							var22 = Class2.anIntArray8[1 + var5];
@@ -510,243 +510,243 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							continue;
 						}
 
-						if (var48 == 201) {
+						if (opc == 201) {
 							--var5;
-							var16 = Class10.method55(Class2.anIntArray8[var5]);
-							if (null != var16) {
+							wid = Class10.method55(Class2.anIntArray8[var5]);
+							if (null != wid) {
 								Class2.anIntArray8[var5++] = 1;
 								if (var55)
-									Class129.aClass124_Sub17_888 = var16;
+									Class129.aClass124_Sub17_888 = wid;
 								else
-									Class29.aClass124_Sub17_314 = var16;
+									Class29.aClass124_Sub17_314 = wid;
 							} else
 								Class2.anIntArray8[var5++] = 0;
 							continue;
 						}
 					} else {
 						boolean var23;
-						if (((var48 < 1000) || (var48 >= 1100)) && ((var48 < 2000) || (var48 >= 2100))) {
+						if (((opc < 1000) || (opc >= 1100)) && ((opc < 2000) || (opc >= 2100))) {
 							String var18;
-							if (((var48 >= 1100) && (var48 < 1200)) || ((var48 >= 2100) && (var48 < 2200))) {
+							if (((opc >= 1100) && (opc < 1200)) || ((opc >= 2100) && (opc < 2200))) {
 								var22 = -1;
-								if (var48 >= 2000) {
-									var48 -= 1000;
+								if (opc >= 2000) {
+									opc -= 1000;
 									--var5;
 									var22 = Class2.anIntArray8[var5];
-									var16 = Class10.method55(var22);
+									wid = Class10.method55(var22);
 								} else
-									var16 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
+									wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
-								if (var48 == 1100) {
+								if (opc == 1100) {
 									var5 -= 2;
-									var16.anInt1174 = Class2.anIntArray8[var5];
-									if (var16.anInt1174 > (var16.anInt1176 - var16.anInt1168))
-										var16.anInt1174 = var16.anInt1176 - var16.anInt1168;
+									wid.anInt1174 = Class2.anIntArray8[var5];
+									if (wid.anInt1174 > (wid.anInt1176 - wid.anInt1168))
+										wid.anInt1174 = wid.anInt1176 - wid.anInt1168;
 
-									if (var16.anInt1174 < 0)
-										var16.anInt1174 = 0;
+									if (wid.anInt1174 < 0)
+										wid.anInt1174 = 0;
 
-									var16.anInt1175 = Class2.anIntArray8[1 + var5];
-									if (var16.anInt1175 > (var16.anInt1177 - var16.anInt1169))
-										var16.anInt1175 = var16.anInt1177 - var16.anInt1169;
+									wid.anInt1175 = Class2.anIntArray8[1 + var5];
+									if (wid.anInt1175 > (wid.anInt1177 - wid.anInt1169))
+										wid.anInt1175 = wid.anInt1177 - wid.anInt1169;
 
-									if (var16.anInt1175 < 0)
-										var16.anInt1175 = 0;
+									if (wid.anInt1175 < 0)
+										wid.anInt1175 = 0;
 
-									Class124_Sub22_Sub10.method723(var16);
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1101) {
+								if (opc == 1101) {
 									--var5;
-									var16.anInt1178 = Class2.anIntArray8[var5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1178 = Class2.anIntArray8[var5];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1102) {
+								if (opc == 1102) {
 									--var5;
-									var16.aBool1218 = Class2.anIntArray8[var5] == 1;
-									Class124_Sub22_Sub10.method723(var16);
+									wid.aBool1218 = Class2.anIntArray8[var5] == 1;
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1103) {
+								if (opc == 1103) {
 									--var5;
-									var16.anInt1183 = Class2.anIntArray8[var5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1183 = Class2.anIntArray8[var5];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1104) {
+								if (opc == 1104) {
 									--var5;
-									var16.anInt1237 = Class2.anIntArray8[var5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1237 = Class2.anIntArray8[var5];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1105) {
+								if (opc == 1105) {
 									--var5;
-									var16.anInt1186 = Class2.anIntArray8[var5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1186 = Class2.anIntArray8[var5];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1106) {
+								if (opc == 1106) {
 									--var5;
-									var16.anInt1188 = Class2.anIntArray8[var5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1188 = Class2.anIntArray8[var5];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1107) {
+								if (opc == 1107) {
 									--var5;
-									var16.aBool1189 = Class2.anIntArray8[var5] == 1;
-									Class124_Sub22_Sub10.method723(var16);
+									wid.aBool1189 = Class2.anIntArray8[var5] == 1;
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1108) {
-									var16.anInt1229 = 1;
+								if (opc == 1108) {
+									wid.anInt1229 = 1;
 									--var5;
-									var16.anInt1197 = Class2.anIntArray8[var5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1197 = Class2.anIntArray8[var5];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1109) {
+								if (opc == 1109) {
 									var5 -= 6;
-									var16.anInt1200 = Class2.anIntArray8[var5];
-									var16.anInt1201 = Class2.anIntArray8[1 + var5];
-									var16.anInt1202 = Class2.anIntArray8[2 + var5];
-									var16.anInt1203 = Class2.anIntArray8[3 + var5];
-									var16.anInt1204 = Class2.anIntArray8[var5 + 4];
-									var16.anInt1205 = Class2.anIntArray8[var5 + 5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1200 = Class2.anIntArray8[var5];
+									wid.anInt1201 = Class2.anIntArray8[1 + var5];
+									wid.anInt1202 = Class2.anIntArray8[2 + var5];
+									wid.anInt1203 = Class2.anIntArray8[3 + var5];
+									wid.anInt1204 = Class2.anIntArray8[var5 + 4];
+									wid.anInt1205 = Class2.anIntArray8[var5 + 5];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1110) {
+								if (opc == 1110) {
 									--var5;
 									var70 = Class2.anIntArray8[var5];
-									if (var16.anInt1222 != var70) {
-										var16.anInt1222 = var70;
-										var16.anInt1273 = 0;
-										var16.anInt1274 = 0;
-										Class124_Sub22_Sub10.method723(var16);
+									if (wid.anInt1222 != var70) {
+										wid.anInt1222 = var70;
+										wid.anInt1273 = 0;
+										wid.anInt1274 = 0;
+										Def10.settrue(wid);
 									}
 									continue;
 								}
 
-								if (var48 == 1111) {
+								if (opc == 1111) {
 									--var5;
-									var16.aBool1208 = Class2.anIntArray8[var5] == 1;
-									Class124_Sub22_Sub10.method723(var16);
+									wid.aBool1208 = Class2.anIntArray8[var5] == 1;
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1112) {
+								if (opc == 1112) {
 									--var6;
 									var18 = Class2.aStringArray5[var6];
-									if (!var18.equals(var16.aString1185)) {
-										var16.aString1185 = var18;
-										Class124_Sub22_Sub10.method723(var16);
+									if (!var18.equals(wid.aString1185)) {
+										wid.aString1185 = var18;
+										Def10.settrue(wid);
 									}
 									continue;
 								}
 
-								if (var48 == 1113) {
+								if (opc == 1113) {
 									--var5;
-									var16.anInt1155 = Class2.anIntArray8[var5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1155 = Class2.anIntArray8[var5];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1114) {
+								if (opc == 1114) {
 									var5 -= 3;
-									var16.anInt1214 = Class2.anIntArray8[var5];
-									var16.anInt1215 = Class2.anIntArray8[1 + var5];
-									var16.anInt1213 = Class2.anIntArray8[var5 + 2];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1214 = Class2.anIntArray8[var5];
+									wid.anInt1215 = Class2.anIntArray8[1 + var5];
+									wid.anInt1213 = Class2.anIntArray8[var5 + 2];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1115) {
+								if (opc == 1115) {
 									--var5;
-									var16.aBool1211 = Class2.anIntArray8[var5] == 1;
-									Class124_Sub22_Sub10.method723(var16);
+									wid.aBool1211 = Class2.anIntArray8[var5] == 1;
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1116) {
+								if (opc == 1116) {
 									--var5;
-									var16.anInt1167 = Class2.anIntArray8[var5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1167 = Class2.anIntArray8[var5];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1117) {
+								if (opc == 1117) {
 									--var5;
-									var16.anInt1280 = Class2.anIntArray8[var5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1280 = Class2.anIntArray8[var5];
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1118) {
+								if (opc == 1118) {
 									--var5;
-									var16.aBool1192 = Class2.anIntArray8[var5] == 1;
-									Class124_Sub22_Sub10.method723(var16);
+									wid.aBool1192 = Class2.anIntArray8[var5] == 1;
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1119) {
+								if (opc == 1119) {
 									--var5;
-									var16.aBool1193 = Class2.anIntArray8[var5] == 1;
-									Class124_Sub22_Sub10.method723(var16);
+									wid.aBool1193 = Class2.anIntArray8[var5] == 1;
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1120) {
+								if (opc == 1120) {
 									var5 -= 2;
-									var16.anInt1176 = Class2.anIntArray8[var5];
-									var16.anInt1177 = Class2.anIntArray8[var5 + 1];
-									Class124_Sub22_Sub10.method723(var16);
-									if ((var22 != -1) && (var16.anInt1191 == 0))
+									wid.anInt1176 = Class2.anIntArray8[var5];
+									wid.anInt1177 = Class2.anIntArray8[var5 + 1];
+									Def10.settrue(wid);
+									if ((var22 != -1) && (wid.anInt1191 == 0))
 										Somet2.method831(
-												Class124_Sub22_Sub10.widgets[var22 >> 16], var16,
+												Def10.widgets[var22 >> 16], wid,
 												false);
 									continue;
 								}
 
-								if (var48 == 1121) {
-									var70 = var16.anInt1284;
-									var19 = var16.anInt1154;
+								if (opc == 1121) {
+									var70 = wid.anInt1284;
+									var19 = wid.anInt1154;
 									client.secbuf.writeOpcode(198);
 									client.secbuf.writeInt(var70);
 									client.secbuf.writeShort(var19);
-									client.aClass124_Sub17_2042 = var16;
-									Class124_Sub22_Sub10.method723(var16);
+									client.aClass124_Sub17_2042 = wid;
+									Def10.settrue(wid);
 									continue;
 								}
 
-								if (var48 == 1122) {
+								if (opc == 1122) {
 									--var5;
-									var16.anInt1187 = Class2.anIntArray8[var5];
-									Class124_Sub22_Sub10.method723(var16);
+									wid.anInt1187 = Class2.anIntArray8[var5];
+									Def10.settrue(wid);
 									continue;
 								}
-							} else if (((var48 < 1200) || (var48 >= 1300)) && ((var48 < 2200) || (var48 >= 2300))) {
-								if (((var48 < 1300) || (var48 >= 1400)) && ((var48 < 2300) || (var48 >= 2400))) {
+							} else if (((opc < 1200) || (opc >= 1300)) && ((opc < 2200) || (opc >= 2300))) {
+								if (((opc < 1300) || (opc >= 1400)) && ((opc < 2300) || (opc >= 2400))) {
 									int var26;
 									int[] var51;
 									String var58;
-									if (((var48 >= 1400) && (var48 < 1500)) || ((var48 >= 2400) && (var48 < 2500))) {
-										if (var48 >= 2000) {
-											var48 -= 1000;
+									if (((opc >= 1400) && (opc < 1500)) || ((opc >= 2400) && (opc < 2500))) {
+										if (opc >= 2000) {
+											opc -= 1000;
 											--var5;
-											var16 = Class10.method55(Class2.anIntArray8[var5]);
+											wid = Class10.method55(Class2.anIntArray8[var5]);
 										} else
-											var16 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
+											wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
 										--var6;
 										var58 = Class2.aStringArray5[var6];
@@ -779,217 +779,217 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										else
 											var69 = null;
 
-										if (var48 == 1400)
-											var16.anObjectArray1233 = var69;
+										if (opc == 1400)
+											wid.anObjectArray1233 = var69;
 
-										if (var48 == 1401)
-											var16.anObjectArray1194 = var69;
+										if (opc == 1401)
+											wid.anObjectArray1194 = var69;
 
-										if (var48 == 1402)
-											var16.anObjectArray1235 = var69;
+										if (opc == 1402)
+											wid.anObjectArray1235 = var69;
 
-										if (var48 == 1403)
-											var16.anObjectArray1226 = var69;
+										if (opc == 1403)
+											wid.anObjectArray1226 = var69;
 
-										if (var48 == 1404)
-											var16.anObjectArray1160 = var69;
+										if (opc == 1404)
+											wid.anObjectArray1160 = var69;
 
-										if (var48 == 1405)
-											var16.anObjectArray1256 = var69;
+										if (opc == 1405)
+											wid.anObjectArray1256 = var69;
 
-										if (var48 == 1406)
-											var16.anObjectArray1243 = var69;
+										if (opc == 1406)
+											wid.anObjectArray1243 = var69;
 
-										if (var48 == 1407) {
-											var16.anObjectArray1244 = var69;
-											var16.anIntArray1281 = var51;
+										if (opc == 1407) {
+											wid.anObjectArray1244 = var69;
+											wid.anIntArray1281 = var51;
 										}
 
-										if (var48 == 1408)
-											var16.anObjectArray1250 = var69;
+										if (opc == 1408)
+											wid.anObjectArray1250 = var69;
 
-										if (var48 == 1409)
-											var16.anObjectArray1198 = var69;
+										if (opc == 1409)
+											wid.anObjectArray1198 = var69;
 
-										if (var48 == 1410)
-											var16.anObjectArray1159 = var69;
+										if (opc == 1410)
+											wid.anObjectArray1159 = var69;
 
-										if (var48 == 1411)
-											var16.anObjectArray1234 = var69;
+										if (opc == 1411)
+											wid.anObjectArray1234 = var69;
 
-										if (var48 == 1412)
-											var16.anObjectArray1238 = var69;
+										if (opc == 1412)
+											wid.anObjectArray1238 = var69;
 
-										if (var48 == 1414) {
-											var16.anObjectArray1246 = var69;
-											var16.anIntArray1282 = var51;
+										if (opc == 1414) {
+											wid.anObjectArray1246 = var69;
+											wid.anIntArray1282 = var51;
 										}
 
-										if (var48 == 1415) {
-											var16.anObjectArray1248 = var69;
-											var16.anIntArray1249 = var51;
+										if (opc == 1415) {
+											wid.anObjectArray1248 = var69;
+											wid.anIntArray1249 = var51;
 										}
 
-										if (var48 == 1416)
-											var16.anObjectArray1236 = var69;
+										if (opc == 1416)
+											wid.anObjectArray1236 = var69;
 
-										if (var48 == 1417)
-											var16.anObjectArray1252 = var69;
+										if (opc == 1417)
+											wid.anObjectArray1252 = var69;
 
-										if (var48 == 1418)
-											var16.anObjectArray1144 = var69;
+										if (opc == 1418)
+											wid.anObjectArray1144 = var69;
 
-										if (var48 == 1419)
-											var16.anObjectArray1254 = var69;
+										if (opc == 1419)
+											wid.anObjectArray1254 = var69;
 
-										if (var48 == 1420)
-											var16.anObjectArray1255 = var69;
+										if (opc == 1420)
+											wid.anObjectArray1255 = var69;
 
-										if (var48 == 1421)
-											var16.anObjectArray1231 = var69;
+										if (opc == 1421)
+											wid.anObjectArray1231 = var69;
 
-										if (var48 == 1422)
-											var16.anObjectArray1253 = var69;
+										if (opc == 1422)
+											wid.anObjectArray1253 = var69;
 
-										if (var48 == 1423)
-											var16.anObjectArray1258 = var69;
+										if (opc == 1423)
+											wid.anObjectArray1258 = var69;
 
-										if (var48 == 1424)
-											var16.anObjectArray1247 = var69;
+										if (opc == 1424)
+											wid.anObjectArray1247 = var69;
 
-										if (var48 == 1425)
-											var16.anObjectArray1261 = var69;
+										if (opc == 1425)
+											wid.anObjectArray1261 = var69;
 
-										if (var48 == 1426)
-											var16.anObjectArray1262 = var69;
+										if (opc == 1426)
+											wid.anObjectArray1262 = var69;
 
-										if (var48 == 1427)
-											var16.anObjectArray1184 = var69;
+										if (opc == 1427)
+											wid.anObjectArray1184 = var69;
 
-										var16.aBool1195 = true;
+										wid.aBool1195 = true;
 										continue;
 									}
 
-									if (var48 < 1600) {
-										var16 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
-										if (var48 == 1500) {
-											Class2.anIntArray8[var5++] = var16.anInt1166;
+									if (opc < 1600) {
+										wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
+										if (opc == 1500) {
+											Class2.anIntArray8[var5++] = wid.anInt1166;
 											continue;
 										}
 
-										if (var48 == 1501) {
-											Class2.anIntArray8[var5++] = var16.anInt1223;
+										if (opc == 1501) {
+											Class2.anIntArray8[var5++] = wid.anInt1223;
 											continue;
 										}
 
-										if (var48 == 1502) {
-											Class2.anIntArray8[var5++] = var16.anInt1168;
+										if (opc == 1502) {
+											Class2.anIntArray8[var5++] = wid.anInt1168;
 											continue;
 										}
 
-										if (var48 == 1503) {
-											Class2.anIntArray8[var5++] = var16.anInt1169;
+										if (opc == 1503) {
+											Class2.anIntArray8[var5++] = wid.anInt1169;
 											continue;
 										}
 
-										if (var48 == 1504) {
-											Class2.anIntArray8[var5++] = var16.aBool1173 ? 1 : 0;
+										if (opc == 1504) {
+											Class2.anIntArray8[var5++] = wid.aBool1173 ? 1 : 0;
 											continue;
 										}
 
-										if (var48 == 1505) {
-											Class2.anIntArray8[var5++] = var16.anInt1259;
+										if (opc == 1505) {
+											Class2.anIntArray8[var5++] = wid.anInt1259;
 											continue;
 										}
-									} else if (var48 < 1700) {
-										var16 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
-										if (var48 == 1600) {
-											Class2.anIntArray8[var5++] = var16.anInt1174;
-											continue;
-										}
-
-										if (var48 == 1601) {
-											Class2.anIntArray8[var5++] = var16.anInt1175;
+									} else if (opc < 1700) {
+										wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
+										if (opc == 1600) {
+											Class2.anIntArray8[var5++] = wid.anInt1174;
 											continue;
 										}
 
-										if (var48 == 1602) {
-											Class2.aStringArray5[var6++] = var16.aString1185;
+										if (opc == 1601) {
+											Class2.anIntArray8[var5++] = wid.anInt1175;
 											continue;
 										}
 
-										if (var48 == 1603) {
-											Class2.anIntArray8[var5++] = var16.anInt1176;
+										if (opc == 1602) {
+											Class2.aStringArray5[var6++] = wid.aString1185;
 											continue;
 										}
 
-										if (var48 == 1604) {
-											Class2.anIntArray8[var5++] = var16.anInt1177;
+										if (opc == 1603) {
+											Class2.anIntArray8[var5++] = wid.anInt1176;
 											continue;
 										}
 
-										if (var48 == 1605) {
-											Class2.anIntArray8[var5++] = var16.anInt1205;
+										if (opc == 1604) {
+											Class2.anIntArray8[var5++] = wid.anInt1177;
 											continue;
 										}
 
-										if (var48 == 1606) {
-											Class2.anIntArray8[var5++] = var16.anInt1202;
+										if (opc == 1605) {
+											Class2.anIntArray8[var5++] = wid.anInt1205;
 											continue;
 										}
 
-										if (var48 == 1607) {
-											Class2.anIntArray8[var5++] = var16.anInt1204;
+										if (opc == 1606) {
+											Class2.anIntArray8[var5++] = wid.anInt1202;
 											continue;
 										}
 
-										if (var48 == 1608) {
-											Class2.anIntArray8[var5++] = var16.anInt1203;
+										if (opc == 1607) {
+											Class2.anIntArray8[var5++] = wid.anInt1204;
 											continue;
 										}
 
-										if (var48 == 1609) {
-											Class2.anIntArray8[var5++] = var16.anInt1183;
-											continue;
-										}
-									} else if (var48 < 1800) {
-										var16 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
-										if (var48 == 1700) {
-											Class2.anIntArray8[var5++] = var16.anInt1271;
+										if (opc == 1608) {
+											Class2.anIntArray8[var5++] = wid.anInt1203;
 											continue;
 										}
 
-										if (var48 == 1701) {
-											if (var16.anInt1271 != -1)
-												Class2.anIntArray8[var5++] = var16.anInt1272;
+										if (opc == 1609) {
+											Class2.anIntArray8[var5++] = wid.anInt1183;
+											continue;
+										}
+									} else if (opc < 1800) {
+										wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
+										if (opc == 1700) {
+											Class2.anIntArray8[var5++] = wid.anInt1271;
+											continue;
+										}
+
+										if (opc == 1701) {
+											if (wid.anInt1271 != -1)
+												Class2.anIntArray8[var5++] = wid.anInt1272;
 											else
 												Class2.anIntArray8[var5++] = 0;
 											continue;
 										}
 
-										if (var48 == 1702) {
-											Class2.anIntArray8[var5++] = var16.anInt1154;
+										if (opc == 1702) {
+											Class2.anIntArray8[var5++] = wid.anInt1154;
 											continue;
 										}
-									} else if (var48 < 1900) {
-										var16 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
-										if (var48 == 1800) {
+									} else if (opc < 1900) {
+										wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
+										if (opc == 1800) {
 											var52 = Class2.anIntArray8;
 											var70 = var5++;
-											var26 = Class124_Sub22_Sub19_Sub6.method963(var16);
+											var26 = Class124_Sub22_Sub19_Sub6.method963(wid);
 											var19 = (var26 >> 11) & 63;
 											var52[var70] = var19;
 											continue;
 										}
 
-										if (var48 == 1801) {
+										if (opc == 1801) {
 											--var5;
 											var22 = Class2.anIntArray8[var5];
 											--var22;
-											if ((null != var16.aStringArray1225)
-													&& (var22 < var16.aStringArray1225.length)
-													&& (var16.aStringArray1225[var22] != null)) {
-												Class2.aStringArray5[var6++] = var16.aStringArray1225[var22];
+											if ((null != wid.aStringArray1225)
+													&& (var22 < wid.aStringArray1225.length)
+													&& (wid.aStringArray1225[var22] != null)) {
+												Class2.aStringArray5[var6++] = wid.aStringArray1225[var22];
 												continue;
 											}
 
@@ -997,139 +997,139 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 1802) {
-											if (null == var16.aString1224)
+										if (opc == 1802) {
+											if (null == wid.aString1224)
 												Class2.aStringArray5[var6++] = "";
 											else
-												Class2.aStringArray5[var6++] = var16.aString1224;
+												Class2.aStringArray5[var6++] = wid.aString1224;
 											continue;
 										}
-									} else if (((var48 >= 1900) && (var48 < 2000))
-											|| ((var48 >= 2900) && (var48 < 3000))) {
-										if (var48 >= 2000) {
-											var48 -= 1000;
+									} else if (((opc >= 1900) && (opc < 2000))
+											|| ((opc >= 2900) && (opc < 3000))) {
+										if (opc >= 2000) {
+											opc -= 1000;
 											--var5;
-											var16 = Class10.method55(Class2.anIntArray8[var5]);
+											wid = Class10.method55(Class2.anIntArray8[var5]);
 										} else
-											var16 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
+											wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
-										if (var48 == 1927) {
+										if (opc == 1927) {
 											if (Class2.anInt15 >= 10)
 												throw new RuntimeException();
 
-											if (var16.anObjectArray1184 == null)
+											if (wid.anObjectArray1184 == null)
 												return;
 
 											final Class124_Sub6 var82 = new Class124_Sub6();
-											var82.aClass124_Sub17_994 = var16;
-											var82.anObjectArray995 = var16.anObjectArray1184;
+											var82.aClass124_Sub17_994 = wid;
+											var82.anObjectArray995 = wid.anObjectArray1184;
 											var82.anInt1001 = 1 + Class2.anInt15;
 											client.aClass111_2181.method424(var0);
 											continue;
 										}
-									} else if (var48 < 2600) {
+									} else if (opc < 2600) {
 										--var5;
-										var16 = Class10.method55(Class2.anIntArray8[var5]);
-										if (var48 == 2500) {
-											Class2.anIntArray8[var5++] = var16.anInt1166;
+										wid = Class10.method55(Class2.anIntArray8[var5]);
+										if (opc == 2500) {
+											Class2.anIntArray8[var5++] = wid.anInt1166;
 											continue;
 										}
 
-										if (var48 == 2501) {
-											Class2.anIntArray8[var5++] = var16.anInt1223;
+										if (opc == 2501) {
+											Class2.anIntArray8[var5++] = wid.anInt1223;
 											continue;
 										}
 
-										if (var48 == 2502) {
-											Class2.anIntArray8[var5++] = var16.anInt1168;
+										if (opc == 2502) {
+											Class2.anIntArray8[var5++] = wid.anInt1168;
 											continue;
 										}
 
-										if (var48 == 2503) {
-											Class2.anIntArray8[var5++] = var16.anInt1169;
+										if (opc == 2503) {
+											Class2.anIntArray8[var5++] = wid.anInt1169;
 											continue;
 										}
 
-										if (var48 == 2504) {
-											Class2.anIntArray8[var5++] = var16.aBool1173 ? 1 : 0;
+										if (opc == 2504) {
+											Class2.anIntArray8[var5++] = wid.aBool1173 ? 1 : 0;
 											continue;
 										}
 
-										if (var48 == 2505) {
-											Class2.anIntArray8[var5++] = var16.anInt1259;
+										if (opc == 2505) {
+											Class2.anIntArray8[var5++] = wid.anInt1259;
 											continue;
 										}
-									} else if (var48 < 2700) {
+									} else if (opc < 2700) {
 										--var5;
-										var16 = Class10.method55(Class2.anIntArray8[var5]);
-										if (var48 == 2600) {
-											Class2.anIntArray8[var5++] = var16.anInt1174;
+										wid = Class10.method55(Class2.anIntArray8[var5]);
+										if (opc == 2600) {
+											Class2.anIntArray8[var5++] = wid.anInt1174;
 											continue;
 										}
 
-										if (var48 == 2601) {
-											Class2.anIntArray8[var5++] = var16.anInt1175;
+										if (opc == 2601) {
+											Class2.anIntArray8[var5++] = wid.anInt1175;
 											continue;
 										}
 
-										if (var48 == 2602) {
-											Class2.aStringArray5[var6++] = var16.aString1185;
+										if (opc == 2602) {
+											Class2.aStringArray5[var6++] = wid.aString1185;
 											continue;
 										}
 
-										if (var48 == 2603) {
-											Class2.anIntArray8[var5++] = var16.anInt1176;
+										if (opc == 2603) {
+											Class2.anIntArray8[var5++] = wid.anInt1176;
 											continue;
 										}
 
-										if (var48 == 2604) {
-											Class2.anIntArray8[var5++] = var16.anInt1177;
+										if (opc == 2604) {
+											Class2.anIntArray8[var5++] = wid.anInt1177;
 											continue;
 										}
 
-										if (var48 == 2605) {
-											Class2.anIntArray8[var5++] = var16.anInt1205;
+										if (opc == 2605) {
+											Class2.anIntArray8[var5++] = wid.anInt1205;
 											continue;
 										}
 
-										if (var48 == 2606) {
-											Class2.anIntArray8[var5++] = var16.anInt1202;
+										if (opc == 2606) {
+											Class2.anIntArray8[var5++] = wid.anInt1202;
 											continue;
 										}
 
-										if (var48 == 2607) {
-											Class2.anIntArray8[var5++] = var16.anInt1204;
+										if (opc == 2607) {
+											Class2.anIntArray8[var5++] = wid.anInt1204;
 											continue;
 										}
 
-										if (var48 == 2608) {
-											Class2.anIntArray8[var5++] = var16.anInt1203;
+										if (opc == 2608) {
+											Class2.anIntArray8[var5++] = wid.anInt1203;
 											continue;
 										}
 
-										if (var48 == 2609) {
-											Class2.anIntArray8[var5++] = var16.anInt1183;
+										if (opc == 2609) {
+											Class2.anIntArray8[var5++] = wid.anInt1183;
 											continue;
 										}
-									} else if (var48 < 2800) {
-										if (var48 == 2700) {
+									} else if (opc < 2800) {
+										if (opc == 2700) {
 											--var5;
-											var16 = Class10.method55(Class2.anIntArray8[var5]);
-											Class2.anIntArray8[var5++] = var16.anInt1271;
+											wid = Class10.method55(Class2.anIntArray8[var5]);
+											Class2.anIntArray8[var5++] = wid.anInt1271;
 											continue;
 										}
 
-										if (var48 == 2701) {
+										if (opc == 2701) {
 											--var5;
-											var16 = Class10.method55(Class2.anIntArray8[var5]);
-											if (var16.anInt1271 != -1)
-												Class2.anIntArray8[var5++] = var16.anInt1272;
+											wid = Class10.method55(Class2.anIntArray8[var5]);
+											if (wid.anInt1271 != -1)
+												Class2.anIntArray8[var5++] = wid.anInt1272;
 											else
 												Class2.anIntArray8[var5++] = 0;
 											continue;
 										}
 
-										if (var48 == 2702) {
+										if (opc == 2702) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											final Class124_Sub7 var54 = (Class124_Sub7) client.aClass107_2143
@@ -1141,30 +1141,30 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 2706) {
+										if (opc == 2706) {
 											Class2.anIntArray8[var5++] = client.anInt2142;
 											continue;
 										}
-									} else if (var48 < 2900) {
+									} else if (opc < 2900) {
 										--var5;
-										var16 = Class10.method55(Class2.anIntArray8[var5]);
-										if (var48 == 2800) {
+										wid = Class10.method55(Class2.anIntArray8[var5]);
+										if (opc == 2800) {
 											var52 = Class2.anIntArray8;
 											var70 = var5++;
-											var26 = Class124_Sub22_Sub19_Sub6.method963(var16);
+											var26 = Class124_Sub22_Sub19_Sub6.method963(wid);
 											var19 = (var26 >> 11) & 63;
 											var52[var70] = var19;
 											continue;
 										}
 
-										if (var48 == 2801) {
+										if (opc == 2801) {
 											--var5;
 											var22 = Class2.anIntArray8[var5];
 											--var22;
-											if ((null != var16.aStringArray1225)
-													&& (var22 < var16.aStringArray1225.length)
-													&& (var16.aStringArray1225[var22] != null)) {
-												Class2.aStringArray5[var6++] = var16.aStringArray1225[var22];
+											if ((null != wid.aStringArray1225)
+													&& (var22 < wid.aStringArray1225.length)
+													&& (wid.aStringArray1225[var22] != null)) {
+												Class2.aStringArray5[var6++] = wid.aStringArray1225[var22];
 												continue;
 											}
 
@@ -1172,29 +1172,29 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 2802) {
-											if (null == var16.aString1224)
+										if (opc == 2802) {
+											if (null == wid.aString1224)
 												Class2.aStringArray5[var6++] = "";
 											else
-												Class2.aStringArray5[var6++] = var16.aString1224;
+												Class2.aStringArray5[var6++] = wid.aString1224;
 											continue;
 										}
-									} else if (var48 < 3200) {
-										if (var48 == 3100) {
+									} else if (opc < 3200) {
+										if (opc == 3100) {
 											--var6;
 											var71 = Class2.aStringArray5[var6];
 											Class20.method95(0, "", var71);
 											continue;
 										}
 
-										if (var48 == 3101) {
+										if (opc == 3101) {
 											var5 -= 2;
 											Class45.method226(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246,
 													Class2.anIntArray8[var5], Class2.anIntArray8[var5 + 1]);
 											continue;
 										}
 
-										if (var48 == 3103) {
+										if (opc == 3103) {
 											client.secbuf.writeOpcode(180);
 
 											for (Class124_Sub7 var76 = (Class124_Sub7) client.aClass107_2143
@@ -1204,13 +1204,13 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													Def4.method760(var76, true);
 
 											if (null != client.aClass124_Sub17_2042) {
-												Class124_Sub22_Sub10.method723(client.aClass124_Sub17_2042);
+												Def10.settrue(client.aClass124_Sub17_2042);
 												client.aClass124_Sub17_2042 = null;
 											}
 											continue;
 										}
 
-										if (var48 == 3104) {
+										if (opc == 3104) {
 											--var6;
 											var71 = Class2.aStringArray5[var6];
 											var22 = 0;
@@ -1225,7 +1225,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3105) {
+										if (opc == 3105) {
 											--var6;
 											var71 = Class2.aStringArray5[var6];
 											client.secbuf.writeOpcode(84);
@@ -1234,7 +1234,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3106) {
+										if (opc == 3106) {
 											--var6;
 											var71 = Class2.aStringArray5[var6];
 											client.secbuf.writeOpcode(181);
@@ -1243,7 +1243,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3107) {
+										if (opc == 3107) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											--var6;
@@ -1286,7 +1286,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3108) {
+										if (opc == 3108) {
 											var5 -= 3;
 											var21 = Class2.anIntArray8[var5];
 											var22 = Class2.anIntArray8[var5 + 1];
@@ -1296,7 +1296,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3109) {
+										if (opc == 3109) {
 											var5 -= 2;
 											var21 = Class2.anIntArray8[var5];
 											var22 = Class2.anIntArray8[1 + var5];
@@ -1305,25 +1305,25 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3110) {
+										if (opc == 3110) {
 											--var5;
 											Class7.aBool71 = Class2.anIntArray8[var5] == 1;
 											continue;
 										}
 
-										if (var48 == 3111) {
+										if (opc == 3111) {
 											Class2.anIntArray8[var5++] = Class57.aClass22_538.aBool248 ? 1 : 0;
 											continue;
 										}
 
-										if (var48 == 3112) {
+										if (opc == 3112) {
 											--var5;
 											Class57.aClass22_538.aBool248 = Class2.anIntArray8[var5] == 1;
 											Class62.method281();
 											continue;
 										}
 
-										if (var48 == 3113) {
+										if (opc == 3113) {
 											--var6;
 											var71 = Class2.aStringArray5[var6];
 											--var5;
@@ -1351,7 +1351,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3115) {
+										if (opc == 3115) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											client.secbuf.writeOpcode(148);
@@ -1359,7 +1359,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3116) {
+										if (opc == 3116) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											var6 -= 2;
@@ -1375,8 +1375,8 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											}
 											continue;
 										}
-									} else if (var48 < 3300) {
-										if (var48 == 3200) {
+									} else if (opc < 3300) {
+										if (opc == 3200) {
 											var5 -= 3;
 											var21 = Class2.anIntArray8[var5];
 											var22 = Class2.anIntArray8[1 + var5];
@@ -1392,7 +1392,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3201) {
+										if (opc == 3201) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											if ((var21 == -1) && !client.aBool2221)
@@ -1406,7 +1406,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3202) {
+										if (opc == 3202) {
 											var5 -= 2;
 											var21 = Class2.anIntArray8[var5];
 											if ((client.anInt2219 != 0) && (var21 != -1)) {
@@ -1416,14 +1416,14 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											}
 											continue;
 										}
-									} else if (var48 < 3400) {
-										if (var48 == 3300) {
+									} else if (opc < 3400) {
+										if (opc == 3300) {
 											Class2.anIntArray8[var5++] = client.anInt2158;
 											continue;
 										}
 
 										Class124_Sub10 var27;
-										if (var48 == 3301) {
+										if (opc == 3301) {
 											var5 -= 2;
 											var21 = Class2.anIntArray8[var5];
 											var22 = Class2.anIntArray8[1 + var5];
@@ -1441,7 +1441,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3302) {
+										if (opc == 3302) {
 											var5 -= 2;
 											var21 = Class2.anIntArray8[var5];
 											var22 = Class2.anIntArray8[var5 + 1];
@@ -1449,7 +1449,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3303) {
+										if (opc == 3303) {
 											var5 -= 2;
 											var21 = Class2.anIntArray8[var5];
 											var22 = Class2.anIntArray8[var5 + 1];
@@ -1457,35 +1457,35 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3304) {
+										if (opc == 3304) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											Class2.anIntArray8[var5++] = Class136.method484(var21).anInt1457;
 											continue;
 										}
 
-										if (var48 == 3305) {
+										if (opc == 3305) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											Class2.anIntArray8[var5++] = client.anIntArray2126[var21];
 											continue;
 										}
 
-										if (var48 == 3306) {
+										if (opc == 3306) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											Class2.anIntArray8[var5++] = client.anIntArray2030[var21];
 											continue;
 										}
 
-										if (var48 == 3307) {
+										if (opc == 3307) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											Class2.anIntArray8[var5++] = client.anIntArray2121[var21];
 											continue;
 										}
 
-										if (var48 == 3308) {
+										if (opc == 3308) {
 											var21 = Class134.anInt906;
 											var22 = (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 >> 7)
 													+ Class9.anInt102;
@@ -1495,33 +1495,33 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3309) {
+										if (opc == 3309) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											Class2.anIntArray8[var5++] = (var21 >> 14) & 16383;
 											continue;
 										}
 
-										if (var48 == 3310) {
+										if (opc == 3310) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											Class2.anIntArray8[var5++] = var21 >> 28;
 											continue;
 										}
 
-										if (var48 == 3311) {
+										if (opc == 3311) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
 											Class2.anIntArray8[var5++] = var21 & 16383;
 											continue;
 										}
 
-										if (var48 == 3312) {
+										if (opc == 3312) {
 											Class2.anIntArray8[var5++] = client.aBool1988 ? 1 : 0;
 											continue;
 										}
 
-										if (var48 == 3313) {
+										if (opc == 3313) {
 											var5 -= 2;
 											var21 = Class2.anIntArray8[var5] + '\u8000';
 											var22 = Class2.anIntArray8[var5 + 1];
@@ -1539,7 +1539,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3314) {
+										if (opc == 3314) {
 											var5 -= 2;
 											var21 = '\u8000' + Class2.anIntArray8[var5];
 											var22 = Class2.anIntArray8[var5 + 1];
@@ -1547,7 +1547,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3315) {
+										if (opc == 3315) {
 											var5 -= 2;
 											var21 = Class2.anIntArray8[var5] + '\u8000';
 											var22 = Class2.anIntArray8[var5 + 1];
@@ -1555,7 +1555,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3316) {
+										if (opc == 3316) {
 											if (client.anInt2149 >= 2)
 												Class2.anIntArray8[var5++] = client.anInt2149;
 											else
@@ -1563,27 +1563,27 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3317) {
+										if (opc == 3317) {
 											Class2.anIntArray8[var5++] = client.anInt2001;
 											continue;
 										}
 
-										if (var48 == 3318) {
+										if (opc == 3318) {
 											Class2.anIntArray8[var5++] = client.anInt2079;
 											continue;
 										}
 
-										if (var48 == 3321) {
+										if (opc == 3321) {
 											Class2.anIntArray8[var5++] = client.anInt2147;
 											continue;
 										}
 
-										if (var48 == 3322) {
+										if (opc == 3322) {
 											Class2.anIntArray8[var5++] = client.anInt2148;
 											continue;
 										}
 
-										if (var48 == 3323) {
+										if (opc == 3323) {
 											if (client.aBool2151)
 												Class2.anIntArray8[var5++] = 1;
 											else
@@ -1591,12 +1591,12 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3324) {
+										if (opc == 3324) {
 											Class2.anIntArray8[var5++] = client.anInt1984;
 											continue;
 										}
-									} else if (var48 < 3500) {
-										if (var48 == 3400) {
+									} else if (opc < 3500) {
+										if (opc == 3400) {
 											var5 -= 2;
 											var21 = Class2.anIntArray8[var5];
 											var22 = Class2.anIntArray8[1 + var5];
@@ -1616,7 +1616,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											continue;
 										}
 
-										if (var48 == 3408) {
+										if (opc == 3408) {
 											var5 -= 4;
 											var21 = Class2.anIntArray8[var5];
 											var22 = Class2.anIntArray8[var5 + 1];
@@ -1652,8 +1652,8 @@ public class Class124_Sub22_Sub5 extends JagMap {
 									} else {
 										int var29;
 										String var83;
-										if (var48 < 3700) {
-											if (var48 == 3600) {
+										if (opc < 3700) {
+											if (opc == 3600) {
 												if (client.anInt2215 == 0)
 													Class2.anIntArray8[var5++] = -2;
 												else if (client.anInt2215 == 1)
@@ -1663,7 +1663,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3601) {
+											if (opc == 3601) {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((client.anInt2215 == 2) && (var21 < client.anInt2056)) {
@@ -1677,7 +1677,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3602) {
+											if (opc == 3602) {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((client.anInt2215 == 2) && (var21 < client.anInt2056)) {
@@ -1689,7 +1689,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3603) {
+											if (opc == 3603) {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((client.anInt2215 == 2) && (var21 < client.anInt2056)) {
@@ -1701,7 +1701,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3604) {
+											if (opc == 3604) {
 												--var6;
 												var71 = Class2.aStringArray5[var6];
 												--var5;
@@ -1710,7 +1710,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3605) {
+											if (opc == 3605) {
 												--var6;
 												var71 = Class2.aStringArray5[var6];
 												Class45.method225(var71);
@@ -1718,7 +1718,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											}
 
 											String var77;
-											if (var48 == 3606) {
+											if (opc == 3606) {
 												--var6;
 												var71 = Class2.aStringArray5[var6];
 												if (var71 == null)
@@ -1765,21 +1765,21 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												}
 											}
 
-											if (var48 == 3607) {
+											if (opc == 3607) {
 												--var6;
 												var71 = Class2.aStringArray5[var6];
 												Class35.method190(var71, false);
 												continue;
 											}
 
-											if (var48 == 3608) {
+											if (opc == 3608) {
 												--var6;
 												var71 = Class2.aStringArray5[var6];
 												Class23.method156(var71);
 												continue;
 											}
 
-											if (var48 == 3609) {
+											if (opc == 3609) {
 												--var6;
 												var71 = Class2.aStringArray5[var6];
 												final Class74[] var61 = new Class74[] { Class74.aClass74_612,
@@ -1804,7 +1804,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 
 											String var60;
 											String[] var78;
-											if (var48 == 3611) {
+											if (opc == 3611) {
 												if (null != client.aString2120) {
 													var78 = Class2.aStringArray5;
 													var22 = var6++;
@@ -1819,7 +1819,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3612) {
+											if (opc == 3612) {
 												if (client.aString2120 != null)
 													Class2.anIntArray8[var5++] = Class103.anInt794;
 												else
@@ -1827,7 +1827,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3613) {
+											if (opc == 3613) {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((null != client.aString2120) && (var21 < Class103.anInt794)) {
@@ -1839,7 +1839,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3614) {
+											if (opc == 3614) {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((client.aString2120 != null) && (var21 < Class103.anInt794)) {
@@ -1851,7 +1851,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3615) {
+											if (opc == 3615) {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((null != client.aString2120) && (var21 < Class103.anInt794)) {
@@ -1863,37 +1863,37 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3616) {
+											if (opc == 3616) {
 												Class2.anIntArray8[var5++] = Class124_Sub22_Sub19_Sub1.aByte1665;
 												continue;
 											}
 
-											if (var48 == 3617) {
+											if (opc == 3617) {
 												--var6;
 												var71 = Class2.aStringArray5[var6];
 												Class49.method239(var71);
 												continue;
 											}
 
-											if (var48 == 3618) {
+											if (opc == 3618) {
 												Class2.anIntArray8[var5++] = Class9.aByte97;
 												continue;
 											}
 
-											if (var48 == 3619) {
+											if (opc == 3619) {
 												--var6;
 												var71 = Class2.aStringArray5[var6];
 												Class90.method347(var71);
 												continue;
 											}
 
-											if (var48 == 3620) {
+											if (opc == 3620) {
 												client.secbuf.writeOpcode(36);
 												client.secbuf.writeByte(0);
 												continue;
 											}
 
-											if (var48 == 3621) {
+											if (opc == 3621) {
 												if (client.anInt2215 == 0)
 													Class2.anIntArray8[var5++] = -1;
 												else
@@ -1901,7 +1901,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3622) {
+											if (opc == 3622) {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((client.anInt2215 != 0) && (var21 < client.anInt2252)) {
@@ -1915,7 +1915,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3623) {
+											if (opc == 3623) {
 												--var6;
 												var71 = Class2.aStringArray5[var6];
 												if (var71.startsWith(Class99.method391(0))
@@ -1926,7 +1926,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3624) {
+											if (opc == 3624) {
 												--var5;
 												var21 = Class2.anIntArray8[var5];
 												if ((client.aClass124_Sub9Array1609 != null)
@@ -1942,7 +1942,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												continue;
 											}
 
-											if (var48 == 3625) {
+											if (opc == 3625) {
 												if (client.aString2210 != null) {
 													var78 = Class2.aStringArray5;
 													var22 = var6++;
@@ -1958,8 +1958,8 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											}
 										} else {
 											int var88;
-											if (var48 < 4000) {
-												if (var48 == 3903) {
+											if (opc < 4000) {
+												if (opc == 3903) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													Class2.anIntArray8[var5++] = client.aClass125Array2259[var21]
@@ -1967,42 +1967,42 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3904) {
+												if (opc == 3904) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													Class2.anIntArray8[var5++] = client.aClass125Array2259[var21].anInt878;
 													continue;
 												}
 
-												if (var48 == 3905) {
+												if (opc == 3905) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													Class2.anIntArray8[var5++] = client.aClass125Array2259[var21].anInt881;
 													continue;
 												}
 
-												if (var48 == 3906) {
+												if (opc == 3906) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													Class2.anIntArray8[var5++] = client.aClass125Array2259[var21].anInt880;
 													continue;
 												}
 
-												if (var48 == 3907) {
+												if (opc == 3907) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													Class2.anIntArray8[var5++] = client.aClass125Array2259[var21].anInt882;
 													continue;
 												}
 
-												if (var48 == 3908) {
+												if (opc == 3908) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													Class2.anIntArray8[var5++] = client.aClass125Array2259[var21].anInt879;
 													continue;
 												}
 
-												if (var48 == 3910) {
+												if (opc == 3910) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var22 = client.aClass125Array2259[var21].method454();
@@ -2010,7 +2010,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3911) {
+												if (opc == 3911) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var22 = client.aClass125Array2259[var21].method454();
@@ -2018,7 +2018,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3912) {
+												if (opc == 3912) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var22 = client.aClass125Array2259[var21].method454();
@@ -2026,7 +2026,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3913) {
+												if (opc == 3913) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var22 = client.aClass125Array2259[var21].method454();
@@ -2035,7 +2035,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												}
 
 												boolean var102;
-												if (var48 == 3914) {
+												if (opc == 3914) {
 													--var5;
 													var102 = Class2.anIntArray8[var5] == 1;
 													if (null != Class37.aClass134_389)
@@ -2044,7 +2044,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3915) {
+												if (opc == 3915) {
 													--var5;
 													var102 = Class2.anIntArray8[var5] == 1;
 													if (Class37.aClass134_389 != null)
@@ -2053,7 +2053,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3916) {
+												if (opc == 3916) {
 													var5 -= 2;
 													var102 = Class2.anIntArray8[var5] == 1;
 													var74 = Class2.anIntArray8[var5 + 1] == 1;
@@ -2062,7 +2062,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3917) {
+												if (opc == 3917) {
 													--var5;
 													var102 = Class2.anIntArray8[var5] == 1;
 													if (Class37.aClass134_389 != null)
@@ -2071,7 +2071,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3918) {
+												if (opc == 3918) {
 													--var5;
 													var102 = Class2.anIntArray8[var5] == 1;
 													if (Class37.aClass134_389 != null)
@@ -2080,14 +2080,14 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3919) {
+												if (opc == 3919) {
 													Class2.anIntArray8[var5++] = null == Class37.aClass134_389 ? 0
 															: Class37.aClass134_389.aList909.size();
 													continue;
 												}
 
 												Class120 var65;
-												if (var48 == 3920) {
+												if (opc == 3920) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var65 = (Class120) Class37.aClass134_389.aList909.get(var21);
@@ -2095,7 +2095,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3921) {
+												if (opc == 3921) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var65 = (Class120) Class37.aClass134_389.aList909.get(var21);
@@ -2103,7 +2103,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3922) {
+												if (opc == 3922) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var65 = (Class120) Class37.aClass134_389.aList909.get(var21);
@@ -2111,7 +2111,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3923) {
+												if (opc == 3923) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var65 = (Class120) Class37.aClass134_389.aList909.get(var21);
@@ -2127,7 +2127,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3924) {
+												if (opc == 3924) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var65 = (Class120) Class37.aClass134_389.aList909.get(var21);
@@ -2135,7 +2135,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3925) {
+												if (opc == 3925) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var65 = (Class120) Class37.aClass134_389.aList909.get(var21);
@@ -2143,15 +2143,15 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 3926) {
+												if (opc == 3926) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													var65 = (Class120) Class37.aClass134_389.aList909.get(var21);
 													Class2.anIntArray8[var5++] = var65.aClass125_850.anInt878;
 													continue;
 												}
-											} else if (var48 < 4100) {
-												if (var48 == 4000) {
+											} else if (opc < 4100) {
+												if (opc == 4000) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[1 + var5];
@@ -2159,7 +2159,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4001) {
+												if (opc == 4001) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[1 + var5];
@@ -2167,7 +2167,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4002) {
+												if (opc == 4002) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[1 + var5];
@@ -2175,7 +2175,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4003) {
+												if (opc == 4003) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[1 + var5];
@@ -2183,21 +2183,21 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4004) {
+												if (opc == 4004) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													Class2.anIntArray8[var5++] = (int) (Math.random() * var21);
 													continue;
 												}
 
-												if (var48 == 4005) {
+												if (opc == 4005) {
 													--var5;
 													var21 = Class2.anIntArray8[var5];
 													Class2.anIntArray8[var5++] = (int) (Math.random() * (var21 + 1));
 													continue;
 												}
 
-												if (var48 == 4006) {
+												if (opc == 4006) {
 													var5 -= 5;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[var5 + 1];
@@ -2209,7 +2209,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4007) {
+												if (opc == 4007) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[var5 + 1];
@@ -2217,7 +2217,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4008) {
+												if (opc == 4008) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[var5 + 1];
@@ -2225,7 +2225,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4009) {
+												if (opc == 4009) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[var5 + 1];
@@ -2233,7 +2233,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4010) {
+												if (opc == 4010) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[1 + var5];
@@ -2241,7 +2241,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4011) {
+												if (opc == 4011) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[1 + var5];
@@ -2249,7 +2249,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4012) {
+												if (opc == 4012) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[var5 + 1];
@@ -2260,7 +2260,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4013) {
+												if (opc == 4013) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[1 + var5];
@@ -2274,7 +2274,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4014) {
+												if (opc == 4014) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[1 + var5];
@@ -2282,7 +2282,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													continue;
 												}
 
-												if (var48 == 4015) {
+												if (opc == 4015) {
 													var5 -= 2;
 													var21 = Class2.anIntArray8[var5];
 													var22 = Class2.anIntArray8[var5 + 1];
@@ -2293,8 +2293,8 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												int var34;
 												int var35;
 												int var37;
-												if (var48 < 4200) {
-													if (var48 == 4100) {
+												if (opc < 4200) {
+													if (opc == 4100) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														--var5;
@@ -2303,7 +2303,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4101) {
+													if (opc == 4101) {
 														var6 -= 2;
 														var71 = Class2.aStringArray5[var6];
 														var58 = Class2.aStringArray5[var6 + 1];
@@ -2311,7 +2311,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4102) {
+													if (opc == 4102) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														--var5;
@@ -2354,14 +2354,14 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4103) {
+													if (opc == 4103) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														Class2.aStringArray5[var6++] = var71.toLowerCase();
 														continue;
 													}
 
-													if (var48 == 4104) {
+													if (opc == 4104) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
 														final long var40 = 86400000L * (11745L + var21);
@@ -2374,7 +2374,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4105) {
+													if (opc == 4105) {
 														var6 -= 2;
 														var71 = Class2.aStringArray5[var6];
 														var58 = Class2.aStringArray5[1 + var6];
@@ -2388,14 +2388,14 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4106) {
+													if (opc == 4106) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
 														Class2.aStringArray5[var6++] = Integer.toString(var21);
 														continue;
 													}
 
-													if (var48 == 4107) {
+													if (opc == 4107) {
 														var6 -= 2;
 														final int[] var99 = Class2.anIntArray8;
 														var22 = var5++;
@@ -2414,7 +2414,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 
 													byte[] var64;
 													Somet1 var85;
-													if (var48 == 4108) {
+													if (opc == 4108) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														var5 -= 2;
@@ -2426,7 +2426,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4109) {
+													if (opc == 4109) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														var5 -= 2;
@@ -2438,7 +2438,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4110) {
+													if (opc == 4110) {
 														var6 -= 2;
 														var71 = Class2.aStringArray5[var6];
 														var58 = Class2.aStringArray5[var6 + 1];
@@ -2450,7 +2450,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4111) {
+													if (opc == 4111) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														Class2.aStringArray5[var6++] = Class124_Sub22_Sub16_Sub4
@@ -2458,7 +2458,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4112) {
+													if (opc == 4112) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														--var5;
@@ -2468,7 +2468,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													}
 
 													char var91;
-													if (var48 == 4113) {
+													if (opc == 4113) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
 														var52 = Class2.anIntArray8;
@@ -2488,7 +2488,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4114) {
+													if (opc == 4114) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
 														Class2.anIntArray8[var5++] = Def16
@@ -2496,7 +2496,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4115) {
+													if (opc == 4115) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
 														Class2.anIntArray8[var5++] = Class65.method289((char) var21) ? 1
@@ -2504,7 +2504,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4116) {
+													if (opc == 4116) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
 														Class2.anIntArray8[var5++] = Class55.method263((char) var21) ? 1
@@ -2512,7 +2512,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4117) {
+													if (opc == 4117) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														if (var71 != null)
@@ -2522,7 +2522,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4118) {
+													if (opc == 4118) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														var5 -= 2;
@@ -2532,7 +2532,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4119) {
+													if (opc == 4119) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														final StringBuilder var75 = new StringBuilder(var71.length());
@@ -2552,7 +2552,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4120) {
+													if (opc == 4120) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														--var5;
@@ -2561,7 +2561,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4121) {
+													if (opc == 4121) {
 														var6 -= 2;
 														var71 = Class2.aStringArray5[var6];
 														var58 = Class2.aStringArray5[1 + var6];
@@ -2570,21 +2570,21 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														Class2.anIntArray8[var5++] = var71.indexOf(var58, var70);
 														continue;
 													}
-												} else if (var48 < 4300) {
-													if (var48 == 4200) {
+												} else if (opc < 4300) {
+													if (opc == 4200) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
-														Class2.aStringArray5[var6++] = Class124_Sub22_Sub10
+														Class2.aStringArray5[var6++] = Def10
 																.method724(var21).aString1472;
 														continue;
 													}
 
-													Class124_Sub22_Sub10 var62;
-													if (var48 == 4201) {
+													Def10 var62;
+													if (opc == 4201) {
 														var5 -= 2;
 														var21 = Class2.anIntArray8[var5];
 														var22 = Class2.anIntArray8[1 + var5];
-														var62 = Class124_Sub22_Sub10.method724(var21);
+														var62 = Def10.method724(var21);
 														if ((var22 >= 1) && (var22 <= 5)
 																&& (var62.aStringArray1479[var22 - 1] != null)) {
 															Class2.aStringArray5[var6++] = var62.aStringArray1479[var22
@@ -2596,11 +2596,11 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4202) {
+													if (opc == 4202) {
 														var5 -= 2;
 														var21 = Class2.anIntArray8[var5];
 														var22 = Class2.anIntArray8[1 + var5];
-														var62 = Class124_Sub22_Sub10.method724(var21);
+														var62 = Def10.method724(var21);
 														if ((var22 >= 1) && (var22 <= 5)
 																&& (null != var62.aStringArray1488[var22 - 1])) {
 															Class2.aStringArray5[var6++] = var62.aStringArray1488[var22
@@ -2612,27 +2612,27 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4203) {
+													if (opc == 4203) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
-														Class2.anIntArray8[var5++] = Class124_Sub22_Sub10
+														Class2.anIntArray8[var5++] = Def10
 																.method724(var21).anInt1458;
 														continue;
 													}
 
-													if (var48 == 4204) {
+													if (opc == 4204) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
-														Class2.anIntArray8[var5++] = Class124_Sub22_Sub10
+														Class2.anIntArray8[var5++] = Def10
 																.method724(var21).anInt1480 == 1 ? 1 : 0;
 														continue;
 													}
 
-													Class124_Sub22_Sub10 var79;
-													if (var48 == 4205) {
+													Def10 var79;
+													if (opc == 4205) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
-														var79 = Class124_Sub22_Sub10.method724(var21);
+														var79 = Def10.method724(var21);
 														if ((var79.anInt1495 == -1) && (var79.anInt1506 >= 0)) {
 															Class2.anIntArray8[var5++] = var79.anInt1506;
 															continue;
@@ -2642,10 +2642,10 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4206) {
+													if (opc == 4206) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
-														var79 = Class124_Sub22_Sub10.method724(var21);
+														var79 = Def10.method724(var21);
 														if ((var79.anInt1495 >= 0) && (var79.anInt1506 >= 0)) {
 															Class2.anIntArray8[var5++] = var79.anInt1506;
 															continue;
@@ -2655,15 +2655,15 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4207) {
+													if (opc == 4207) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
-														Class2.anIntArray8[var5++] = Class124_Sub22_Sub10
+														Class2.anIntArray8[var5++] = Def10
 																.method724(var21).aBool1478 ? 1 : 0;
 														continue;
 													}
 
-													if (var48 == 4210) {
+													if (opc == 4210) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														--var5;
@@ -2682,7 +2682,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 																final String[] var100 = new String[Class35.anInt374];
 
 																for (var29 = 0; var29 < Class35.anInt374; ++var29)
-																	var100[var29] = Class124_Sub22_Sub10
+																	var100[var29] = Def10
 																			.method724(var86[var29]).aString1472;
 
 																final short[] var96 = Class124_Sub22_Sub19_Sub6.aShortArray1823;
@@ -2691,7 +2691,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 																break;
 															}
 
-															final Class124_Sub22_Sub10 var95 = Class124_Sub22_Sub10
+															final Def10 var95 = Def10
 																	.method724(var88);
 															if ((!var72 || var95.aBool1502) && (var95.anInt1495 == -1)
 																	&& (var95.aString1472.toLowerCase()
@@ -2721,7 +2721,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4211) {
+													if (opc == 4211) {
 														if ((Class124_Sub22_Sub19_Sub6.aShortArray1823 != null)
 																&& (Class69.anInt580 < Class35.anInt374)) {
 															Class2.anIntArray8[var5++] = Class124_Sub22_Sub19_Sub6.aShortArray1823[++Class69.anInt580
@@ -2733,17 +2733,17 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 4212) {
+													if (opc == 4212) {
 														Class69.anInt580 = 0;
 														continue;
 													}
-												} else if (var48 < 5100) {
-													if (var48 == 5000) {
+												} else if (opc < 5100) {
+													if (opc == 5000) {
 														Class2.anIntArray8[var5++] = client.anInt2066;
 														continue;
 													}
 
-													if (var48 == 5001) {
+													if (opc == 5001) {
 														var5 -= 3;
 														client.anInt2066 = Class2.anIntArray8[var5];
 														Class32.aClass53_337 = Class62
@@ -2760,7 +2760,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5002) {
+													if (opc == 5002) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														var5 -= 2;
@@ -2775,7 +2775,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5003) {
+													if (opc == 5003) {
 														var5 -= 2;
 														var21 = Class2.anIntArray8[var5];
 														var22 = Class2.anIntArray8[1 + var5];
@@ -2801,7 +2801,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5004) {
+													if (opc == 5004) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
 														final Class124_Sub22_Sub5 var80 = (Class124_Sub22_Sub5) Class47.aClass116_474
@@ -2825,7 +2825,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5005) {
+													if (opc == 5005) {
 														if (null == Class32.aClass53_337)
 															Class2.anIntArray8[var5++] = -1;
 														else
@@ -2833,7 +2833,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5008) {
+													if (opc == 5008) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														--var5;
@@ -3033,7 +3033,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5009) {
+													if (opc == 5009) {
 														var6 -= 2;
 														var71 = Class2.aStringArray5[var6];
 														var58 = Class2.aStringArray5[1 + var6];
@@ -3117,7 +3117,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5015) {
+													if (opc == 5015) {
 														if ((null != Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246)
 																&& (null != Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aString1956))
 															var71 = Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aString1956;
@@ -3128,12 +3128,12 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5016) {
+													if (opc == 5016) {
 														Class2.anIntArray8[var5++] = client.anInt2201;
 														continue;
 													}
 
-													if (var48 == 5017) {
+													if (opc == 5017) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
 														var52 = Class2.anIntArray8;
@@ -3149,7 +3149,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5018) {
+													if (opc == 5018) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
 														Class2.anIntArray8[var5++] = Class124_Sub5.method513(var21,
@@ -3157,14 +3157,14 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5019) {
+													if (opc == 5019) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
 														Class2.anIntArray8[var5++] = Class22.method150(var21);
 														continue;
 													}
 
-													if (var48 == 5020) {
+													if (opc == 5020) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
 														if (var71.equalsIgnoreCase("toggleroof")) {
@@ -3204,14 +3204,14 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														continue;
 													}
 
-													if (var48 == 5021) {
+													if (opc == 5021) {
 														--var6;
 														client.aString2202 = Class2.aStringArray5[var6].toLowerCase()
 																.trim();
 														continue;
 													}
 
-													if (var48 == 5022) {
+													if (opc == 5022) {
 														Class2.aStringArray5[var6++] = client.aString2202;
 														continue;
 													}
@@ -3220,19 +3220,19 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										}
 									}
 								} else {
-									if (var48 >= 2000) {
-										var48 -= 1000;
+									if (opc >= 2000) {
+										opc -= 1000;
 										--var5;
-										var16 = Class10.method55(Class2.anIntArray8[var5]);
+										wid = Class10.method55(Class2.anIntArray8[var5]);
 									} else
-										var16 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
+										wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
-									if (var48 == 1300) {
+									if (opc == 1300) {
 										--var5;
 										var22 = Class2.anIntArray8[var5] - 1;
 										if ((var22 >= 0) && (var22 <= 9)) {
 											--var6;
-											var16.method628(var22, Class2.aStringArray5[var6]);
+											wid.method628(var22, Class2.aStringArray5[var6]);
 											continue;
 										}
 
@@ -3240,157 +3240,157 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										continue;
 									}
 
-									if (var48 == 1301) {
+									if (opc == 1301) {
 										var5 -= 2;
 										var22 = Class2.anIntArray8[var5];
 										var70 = Class2.anIntArray8[var5 + 1];
-										var16.aClass124_Sub17_1251 = RuntimeException_Sub1.method1010(var22, var70,
+										wid.aClass124_Sub17_1251 = RuntimeException_Sub1.method1010(var22, var70,
 												172659367);
 										continue;
 									}
 
-									if (var48 == 1302) {
+									if (opc == 1302) {
 										--var5;
-										var16.aBool1153 = Class2.anIntArray8[var5] == 1;
+										wid.aBool1153 = Class2.anIntArray8[var5] == 1;
 										continue;
 									}
 
-									if (var48 == 1303) {
+									if (opc == 1303) {
 										--var5;
-										var16.anInt1227 = Class2.anIntArray8[var5];
+										wid.anInt1227 = Class2.anIntArray8[var5];
 										continue;
 									}
 
-									if (var48 == 1304) {
+									if (opc == 1304) {
 										--var5;
-										var16.anInt1228 = Class2.anIntArray8[var5];
+										wid.anInt1228 = Class2.anIntArray8[var5];
 										continue;
 									}
 
-									if (var48 == 1305) {
+									if (opc == 1305) {
 										--var6;
-										var16.aString1224 = Class2.aStringArray5[var6];
+										wid.aString1224 = Class2.aStringArray5[var6];
 										continue;
 									}
 
-									if (var48 == 1306) {
+									if (opc == 1306) {
 										--var6;
-										var16.aString1230 = Class2.aStringArray5[var6];
+										wid.aString1230 = Class2.aStringArray5[var6];
 										continue;
 									}
 
-									if (var48 == 1307) {
-										var16.aStringArray1225 = null;
+									if (opc == 1307) {
+										wid.aStringArray1225 = null;
 										continue;
 									}
 								}
 							} else {
-								if (var48 >= 2000) {
-									var48 -= 1000;
+								if (opc >= 2000) {
+									opc -= 1000;
 									--var5;
-									var16 = Class10.method55(Class2.anIntArray8[var5]);
+									wid = Class10.method55(Class2.anIntArray8[var5]);
 								} else
-									var16 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
+									wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
-								Class124_Sub22_Sub10.method723(var16);
-								if ((var48 == 1200) || (var48 == 1205) || (var48 == 1212)) {
+								Def10.settrue(wid);
+								if ((opc == 1200) || (opc == 1205) || (opc == 1212)) {
 									var5 -= 2;
 									var22 = Class2.anIntArray8[var5];
 									var70 = Class2.anIntArray8[1 + var5];
-									var16.anInt1271 = var22;
-									var16.anInt1272 = var70;
-									final Class124_Sub22_Sub10 var20 = Class124_Sub22_Sub10.method724(var22);
-									var16.anInt1202 = var20.anInt1500;
-									var16.anInt1203 = var20.anInt1474;
-									var16.anInt1204 = var20.anInt1473;
-									var16.anInt1200 = var20.anInt1477;
-									var16.anInt1201 = var20.anInt1475;
-									var16.anInt1205 = var20.anInt1470;
-									if (var48 == 1205)
-										var16.anInt1209 = 0;
-									else if ((var48 == 1212) | (var20.anInt1480 == 1))
-										var16.anInt1209 = 1;
+									wid.anInt1271 = var22;
+									wid.anInt1272 = var70;
+									final Def10 var20 = Def10.method724(var22);
+									wid.anInt1202 = var20.anInt1500;
+									wid.anInt1203 = var20.anInt1474;
+									wid.anInt1204 = var20.anInt1473;
+									wid.anInt1200 = var20.anInt1477;
+									wid.anInt1201 = var20.anInt1475;
+									wid.anInt1205 = var20.anInt1470;
+									if (opc == 1205)
+										wid.anInt1209 = 0;
+									else if ((opc == 1212) | (var20.anInt1480 == 1))
+										wid.anInt1209 = 1;
 									else
-										var16.anInt1209 = 2;
+										wid.anInt1209 = 2;
 
-									if (var16.anInt1206 > 0)
-										var16.anInt1205 = (var16.anInt1205 * 32) / var16.anInt1206;
-									else if (var16.anInt1257 > 0)
-										var16.anInt1205 = (var16.anInt1205 * 32) / var16.anInt1257;
+									if (wid.anInt1206 > 0)
+										wid.anInt1205 = (wid.anInt1205 * 32) / wid.anInt1206;
+									else if (wid.anInt1257 > 0)
+										wid.anInt1205 = (wid.anInt1205 * 32) / wid.anInt1257;
 									continue;
 								}
 
-								if (var48 == 1201) {
-									var16.anInt1229 = 2;
+								if (opc == 1201) {
+									wid.anInt1229 = 2;
 									--var5;
-									var16.anInt1197 = Class2.anIntArray8[var5];
+									wid.anInt1197 = Class2.anIntArray8[var5];
 									continue;
 								}
 
-								if (var48 == 1202) {
-									var16.anInt1229 = 3;
-									var16.anInt1197 = Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aClass100_1943
+								if (opc == 1202) {
+									wid.anInt1229 = 3;
+									wid.anInt1197 = Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aClass100_1943
 											.method401();
 									continue;
 								}
 							}
 						} else {
 							var21 = -1;
-							if (var48 >= 2000) {
-								var48 -= 1000;
+							if (opc >= 2000) {
+								opc -= 1000;
 								--var5;
 								var21 = Class2.anIntArray8[var5];
 								var17 = Class10.method55(var21);
 							} else
 								var17 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
-							if (var48 == 1000) {
+							if (opc == 1000) {
 								var5 -= 4;
 								var17.anInt1216 = Class2.anIntArray8[var5];
 								var17.anInt1163 = Class2.anIntArray8[var5 + 1];
 								var17.anInt1158 = Class2.anIntArray8[2 + var5];
 								var17.anInt1148 = Class2.anIntArray8[3 + var5];
-								Class124_Sub22_Sub10.method723(var17);
+								Def10.settrue(var17);
 								Class64.method286(var17);
 								if ((var21 != -1) && (var17.anInt1191 == 0))
 									Somet2.method831(
-											Class124_Sub22_Sub10.widgets[var21 >> 16], var17,
+											Def10.widgets[var21 >> 16], var17,
 											false);
 								continue;
 							}
 
-							if (var48 == 1001) {
+							if (opc == 1001) {
 								var5 -= 4;
 								var17.anInt1257 = Class2.anIntArray8[var5];
 								var17.anInt1165 = Class2.anIntArray8[1 + var5];
 								var17.anInt1210 = Class2.anIntArray8[2 + var5];
 								var17.anInt1161 = Class2.anIntArray8[var5 + 3];
-								Class124_Sub22_Sub10.method723(var17);
+								Def10.settrue(var17);
 								Class64.method286(var17);
 								if ((var21 != -1) && (var17.anInt1191 == 0))
 									Somet2.method831(
-											Class124_Sub22_Sub10.widgets[var21 >> 16], var17,
+											Def10.widgets[var21 >> 16], var17,
 											false);
 								continue;
 							}
 
-							if (var48 == 1003) {
+							if (opc == 1003) {
 								--var5;
 								var23 = Class2.anIntArray8[var5] == 1;
 								if (var17.aBool1173 != var23) {
 									var17.aBool1173 = var23;
-									Class124_Sub22_Sub10.method723(var17);
+									Def10.settrue(var17);
 								}
 								continue;
 							}
 
-							if (var48 == 1005) {
+							if (opc == 1005) {
 								--var5;
 								var17.aBool1260 = Class2.anIntArray8[var5] == 1;
 								continue;
 							}
 
-							if (var48 == 1006) {
+							if (opc == 1006) {
 								--var5;
 								var17.aBool1285 = Class2.anIntArray8[var5] == 1;
 								continue;
@@ -3398,13 +3398,13 @@ public class Class124_Sub22_Sub5 extends JagMap {
 						}
 					}
 
-					if (var48 < 5400) {
-						if (var48 == 5306) {
+					if (opc < 5400) {
+						if (opc == 5306) {
 							Class2.anIntArray8[var5++] = Class34.method187();
 							continue;
 						}
 
-						if (var48 == 5307) {
+						if (opc == 5307) {
 							--var5;
 							var21 = Class2.anIntArray8[var5];
 							if ((var21 == 1) || (var21 == 2))
@@ -3412,12 +3412,12 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							continue;
 						}
 
-						if (var48 == 5308) {
+						if (opc == 5308) {
 							Class2.anIntArray8[var5++] = Class57.aClass22_538.anInt250;
 							continue;
 						}
 
-						if (var48 == 5309) {
+						if (opc == 5309) {
 							--var5;
 							var21 = Class2.anIntArray8[var5];
 							if ((var21 == 1) || (var21 == 2)) {
@@ -3428,7 +3428,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 						}
 					}
 
-					if ((var48 < 5600) && (var48 == 5504)) {
+					if ((opc < 5600) && (opc == 5504)) {
 						var5 -= 2;
 						var21 = Class2.anIntArray8[var5];
 						var22 = Class2.anIntArray8[var5 + 1];
@@ -3436,11 +3436,11 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							client.anInt2076 = var21;
 							client.anInt2255 = var22;
 						}
-					} else if ((var48 < 5700) && (var48 == 5630))
+					} else if ((opc < 5700) && (opc == 5630))
 						client.anInt2034 = 250;
 					else {
-						if (var48 < 6300) {
-							if (var48 == 6200) {
+						if (opc < 6300) {
+							if (opc == 6200) {
 								var5 -= 2;
 								client.aShort2237 = (short) Class2.anIntArray8[var5];
 								if (client.aShort2237 <= 0)
@@ -3452,7 +3452,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								continue;
 							}
 
-							if (var48 == 6201) {
+							if (opc == 6201) {
 								var5 -= 2;
 								client.aShort2180 = (short) Class2.anIntArray8[var5];
 								if (client.aShort2180 <= 0)
@@ -3464,7 +3464,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								continue;
 							}
 
-							if (var48 == 6202) {
+							if (opc == 6202) {
 								var5 -= 4;
 								client.aShort2251 = (short) Class2.anIntArray8[var5];
 								if (client.aShort2251 <= 0)
@@ -3488,7 +3488,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								continue;
 							}
 
-							if (var48 == 6203) {
+							if (opc == 6203) {
 								if (client.aClass124_Sub17_2154 != null) {
 									method677(0, 0, client.aClass124_Sub17_2154.anInt1168,
 											client.aClass124_Sub17_2154.anInt1169, false);
@@ -3501,27 +3501,27 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								continue;
 							}
 
-							if (var48 == 6204) {
+							if (opc == 6204) {
 								Class2.anIntArray8[var5++] = client.aShort2180;
 								Class2.anIntArray8[var5++] = client.aShort2091;
 								continue;
 							}
 
-							if (var48 == 6205) {
+							if (opc == 6205) {
 								Class2.anIntArray8[var5++] = client.aShort2237;
 								Class2.anIntArray8[var5++] = client.aShort2031;
 								continue;
 							}
 						}
 
-						if (var48 < 6600) {
-							if (var48 == 6500) {
+						if (opc < 6600) {
+							if (opc == 6500) {
 								Class2.anIntArray8[var5++] = Class96.method387() ? 1 : 0;
 								continue;
 							}
 
 							Class23 var106;
-							if (var48 == 6501) {
+							if (opc == 6501) {
 								Class23.anInt258 = 0;
 								var106 = Class63.method283();
 								if (null != var106) {
@@ -3542,7 +3542,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								continue;
 							}
 
-							if (var48 == 6502) {
+							if (opc == 6502) {
 								var106 = Class63.method283();
 								if (var106 != null) {
 									Class2.anIntArray8[var5++] = var106.anInt262;
@@ -3563,7 +3563,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							}
 
 							Class23 var87;
-							if (var48 == 6506) {
+							if (opc == 6506) {
 								--var5;
 								var21 = Class2.anIntArray8[var5];
 								var87 = null;
@@ -3592,7 +3592,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								continue;
 							}
 
-							if (var48 == 6507) {
+							if (opc == 6507) {
 								var5 -= 4;
 								var21 = Class2.anIntArray8[var5];
 								var74 = Class2.anIntArray8[var5 + 1] == 1;
@@ -3602,7 +3602,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								continue;
 							}
 
-							if (var48 == 6511) {
+							if (opc == 6511) {
 								--var5;
 								var21 = Class2.anIntArray8[var5];
 								if ((var21 >= 0) && (var21 < Class23.anInt257)) {

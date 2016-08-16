@@ -9,7 +9,7 @@ public class Class3 {
 	static void method20(final int var0) {
 		if (var0 != -1)
 			if (Class89.loadwidget(var0)) {
-				final Widget[] var3 = Class124_Sub22_Sub10.widgets[var0];
+				final Widget[] var3 = Def10.widgets[var0];
 
 				for (final Widget var2 : var3) {
 					if (null != var2.anObjectArray1232) {
@@ -43,6 +43,6 @@ public class Class3 {
 
 	static final void method23(final int var0, final int var1) {
 		if (Class89.loadwidget(var0))
-			Class35.method189(Class124_Sub22_Sub10.widgets[var0], var1);
+			Class35.method189(Def10.widgets[var0], var1);
 	}
 }

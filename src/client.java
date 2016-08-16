@@ -1368,6 +1368,50 @@ public final class client extends Applet_Sub1 {
 	protected final void method1061(final int var1) {
 	}
 
+	static final void method844(final int var0, final int var1, final int var2, final int var3, final int var4,
+			final int var5) {
+		final int var6 = (2048 - var3) & 2047;
+		final int var13 = (2048 - var4) & 2047;
+		int var12 = 0;
+		int var9 = 0;
+		int var7 = var5;
+		int var8;
+		int var10;
+		int var11;
+		if (var6 != 0) {
+			var10 = Class124_Sub22_Sub16_Sub3.anIntArray1847[var6];
+			var8 = Class124_Sub22_Sub16_Sub3.anIntArray1848[var6];
+			var11 = ((var8 * var9) - (var5 * var10)) >> 16;
+			var7 = ((var9 * var10) + (var5 * var8)) >> 16;
+			var9 = var11;
+		}
+	
+		if (var13 != 0) {
+			var10 = Class124_Sub22_Sub16_Sub3.anIntArray1847[var13];
+			var8 = Class124_Sub22_Sub16_Sub3.anIntArray1848[var13];
+			var11 = ((var8 * var12) + (var10 * var7)) >> 16;
+			var7 = ((var7 * var8) - (var10 * var12)) >> 16;
+			var12 = var11;
+		}
+	
+		Class45.anInt445 = var0 - var12;
+		Class2.anInt14 = var1 - var9;
+		Class48.anInt479 = var2 - var7;
+		Class124_Sub6.anInt1003 = var3;
+		Class27.anInt301 = var4;
+	}
+
+	static final int method841() {
+		if (Class57.aClass22_538.aBool248)
+			return Class134.anInt906;
+		else {
+			final int var0 = Class63.method285(Class45.anInt445, Class48.anInt479, Class134.anInt906);
+			return ((var0 - Class2.anInt14) < 800)
+					&& ((Class27.aByteArrayArrayArray285[Class134.anInt906][Class45.anInt445 >> 7][Class48.anInt479 >> 7]
+							& 4) != 0) ? Class134.anInt906 : 3;
+		}
+	}
+
 	static boolean valid(final CacheArch var0) {
 		if (!Somet4.aBool941) {
 			final byte[] var1 = var0.decode(0, 0);
@@ -1443,7 +1487,7 @@ public final class client extends Applet_Sub1 {
 			}
 	
 			final int[] var4 = new int[var2];
-			final int var16 = Class124_Sub22_Sub10.method714(var2 - 1);
+			final int var16 = Def10.method714(var2 - 1);
 	
 			for (int var8 = 0; var8 < var2; ++var8) {
 				int var18 = var8;

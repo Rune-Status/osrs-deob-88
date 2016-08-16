@@ -24,6 +24,6 @@ public class Class124_Sub10 extends Node {
 
 	static final void method536(final int var0) {
 		if (Class89.loadwidget(var0))
-			Class51.method245(Class124_Sub22_Sub10.widgets[var0], -1);
+			Class51.method245(Def10.widgets[var0], -1);
 	}
 }

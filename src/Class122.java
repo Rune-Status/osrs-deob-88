@@ -49,7 +49,7 @@ public class Class122 {
 						var9 += var2[var4++];
 						var10 = Class10.method55(var9);
 						var11 = var2[var4++];
-						if ((var11 != -1) && (!Class124_Sub22_Sub10.method724(var11).aBool1478 || client.aBool1988))
+						if ((var11 != -1) && (!Def10.method724(var11).aBool1478 || client.aBool1988))
 							for (var12 = 0; var12 < var10.anIntArray1269.length; ++var12)
 								if ((var11 + 1) == var10.anIntArray1269[var12])
 									var7 += var10.anIntArray1270[var12];
@@ -77,7 +77,7 @@ public class Class122 {
 						var9 += var2[var4++];
 						var10 = Class10.method55(var9);
 						var11 = var2[var4++];
-						if ((var11 != -1) && (!Class124_Sub22_Sub10.method724(var11).aBool1478 || client.aBool1988))
+						if ((var11 != -1) && (!Def10.method724(var11).aBool1478 || client.aBool1988))
 							for (var12 = 0; var12 < var10.anIntArray1269.length; ++var12)
 								if (var10.anIntArray1269[var12] == (1 + var11)) {
 									var7 = 999999999;
@@ -146,7 +146,7 @@ public class Class122 {
 
 	static final void method449(final int var0, final int var1, final int var2, final boolean var3) {
 		if (Class89.loadwidget(var0))
-			Class78.method325(Class124_Sub22_Sub10.widgets[var0], -1, var1, var2, var3);
+			Class78.method325(Def10.widgets[var0], -1, var1, var2, var3);
 	}
 
 	Class122(final String var1, final String var2) {

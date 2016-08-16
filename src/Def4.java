@@ -212,7 +212,7 @@ public class Def4 extends JagMap {
 
 		final Widget var5 = Class10.method55(var3);
 		if (var5 != null)
-			Class124_Sub22_Sub10.method723(var5);
+			Def10.settrue(var5);
 
 		Class51.method247();
 		if (client.anInt2142 != -1)

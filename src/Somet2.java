@@ -239,7 +239,7 @@ public class Somet2 extends JagMap {
 									var84.anIntArray1269[var5] = 0;
 								}
 
-								Class124_Sub22_Sub10.method723(var84);
+								Def10.settrue(var84);
 								client.anInt2028 = -1;
 								var1 = true;
 								break label2501;
@@ -359,10 +359,10 @@ public class Somet2 extends JagMap {
 									var13.anInt1163 = var5;
 									var13.anInt1158 = 0;
 									var13.anInt1148 = 0;
-									Class124_Sub22_Sub10.method723(var13);
+									Def10.settrue(var13);
 									Class64.method286(var13);
 									if (var13.anInt1191 == 0)
-										method831(Class124_Sub22_Sub10.widgets[var4 >> 16], var13,
+										method831(Def10.widgets[var4 >> 16], var13,
 												false);
 								}
 
@@ -430,7 +430,7 @@ public class Somet2 extends JagMap {
 								var14 = Class10.method55(var11);
 								if (!var12.equals(var14.aString1185)) {
 									var14.aString1185 = var12;
-									Class124_Sub22_Sub10.method723(var14);
+									Def10.settrue(var14);
 								}
 
 								client.anInt2028 = -1;
@@ -449,7 +449,7 @@ public class Somet2 extends JagMap {
 									var70.anInt1202 = var5;
 									var70.anInt1203 = var6;
 									var70.anInt1205 = var4;
-									Class124_Sub22_Sub10.method723(var70);
+									Def10.settrue(var70);
 								}
 
 								client.anInt2028 = -1;
@@ -520,7 +520,7 @@ public class Somet2 extends JagMap {
 									var14.anInt1222 = var11;
 									var14.anInt1273 = 0;
 									var14.anInt1274 = 0;
-									Class124_Sub22_Sub10.method723(var14);
+									Def10.settrue(var14);
 								}
 
 								client.anInt2028 = -1;
@@ -764,7 +764,7 @@ public class Somet2 extends JagMap {
 								var84.anInt1229 = 3;
 								var84.anInt1197 = Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aClass100_1943
 										.method401();
-								Class124_Sub22_Sub10.method723(var84);
+								Def10.settrue(var84);
 								client.anInt2028 = -1;
 								var1 = true;
 								break label2501;
@@ -914,7 +914,7 @@ public class Somet2 extends JagMap {
 								if ((var14.anInt1229 != 1) || (var14.anInt1197 != var4)) {
 									var14.anInt1229 = 1;
 									var14.anInt1197 = var4;
-									Class124_Sub22_Sub10.method723(var14);
+									Def10.settrue(var14);
 								}
 
 								client.anInt2028 = -1;
@@ -1043,7 +1043,7 @@ public class Somet2 extends JagMap {
 								}
 
 								if (null != var14)
-									Class124_Sub22_Sub10.method723(var14);
+									Def10.settrue(var14);
 
 								Widget.method630();
 								client.anIntArray2170[(++client.anInt2060 - 1) & 31] = var4 & 32767;
@@ -1062,7 +1062,7 @@ public class Somet2 extends JagMap {
 								final Widget var103 = Class10.method55(var4);
 								if (var103.anInt1178 != var9) {
 									var103.anInt1178 = var9;
-									Class124_Sub22_Sub10.method723(var103);
+									Def10.settrue(var103);
 								}
 
 								client.anInt2028 = -1;
@@ -1149,7 +1149,7 @@ public class Somet2 extends JagMap {
 								}
 
 								if (var14 != null)
-									Class124_Sub22_Sub10.method723(var14);
+									Def10.settrue(var14);
 
 								Widget.method630();
 								client.anIntArray2170[(++client.anInt2060 - 1) & 31] = var4 & 32767;
@@ -1164,7 +1164,7 @@ public class Somet2 extends JagMap {
 								var14 = Class10.method55(var11);
 								if (var14.aBool1173 != var65) {
 									var14.aBool1173 = var65;
-									Class124_Sub22_Sub10.method723(var14);
+									Def10.settrue(var14);
 								}
 
 								client.anInt2028 = -1;
@@ -1275,7 +1275,7 @@ public class Somet2 extends JagMap {
 									Def4.method760(var80, true);
 
 								if (null != client.aClass124_Sub17_2042) {
-									Class124_Sub22_Sub10.method723(client.aClass124_Sub17_2042);
+									Def10.settrue(client.aClass124_Sub17_2042);
 									client.aClass124_Sub17_2042 = null;
 								}
 
@@ -1385,13 +1385,13 @@ public class Somet2 extends JagMap {
 
 								var70 = Class10.method55(var11);
 								if (var70 != null)
-									Class124_Sub22_Sub10.method723(var70);
+									Def10.settrue(var70);
 
 								var70 = Class10.method55(var4);
 								if (null != var70) {
-									Class124_Sub22_Sub10.method723(var70);
+									Def10.settrue(var70);
 									method831(
-											Class124_Sub22_Sub10.widgets[var70.anInt1284 >>> 16],
+											Def10.widgets[var70.anInt1284 >>> 16],
 											var70, true);
 								}
 
@@ -1581,7 +1581,7 @@ public class Somet2 extends JagMap {
 								if ((var14.anInt1229 != 2) || (var4 != var14.anInt1197)) {
 									var14.anInt1229 = 2;
 									var14.anInt1197 = var4;
-									Class124_Sub22_Sub10.method723(var14);
+									Def10.settrue(var14);
 								}
 
 								client.anInt2028 = -1;
@@ -1597,7 +1597,7 @@ public class Somet2 extends JagMap {
 								var4 = client.aClass124_Sub14_Sub1_2026.method590();
 								var5 = client.aClass124_Sub14_Sub1_2026.getIntv1();
 								var13 = Class10.method55(var4);
-								Class124_Sub22_Sub10 var8;
+								Def10 var8;
 								if (!var13.aBool1152) {
 									if (var11 == -1) {
 										var13.anInt1229 = 0;
@@ -1606,17 +1606,17 @@ public class Somet2 extends JagMap {
 										break label2501;
 									}
 
-									var8 = Class124_Sub22_Sub10.method724(var11);
+									var8 = Def10.method724(var11);
 									var13.anInt1229 = 4;
 									var13.anInt1197 = var11;
 									var13.anInt1202 = var8.anInt1500;
 									var13.anInt1203 = var8.anInt1474;
 									var13.anInt1205 = (var8.anInt1470 * 100) / var5;
-									Class124_Sub22_Sub10.method723(var13);
+									Def10.settrue(var13);
 								} else {
 									var13.anInt1271 = var11;
 									var13.anInt1272 = var5;
-									var8 = Class124_Sub22_Sub10.method724(var11);
+									var8 = Def10.method724(var11);
 									var13.anInt1202 = var8.anInt1500;
 									var13.anInt1203 = var8.anInt1474;
 									var13.anInt1204 = var8.anInt1473;
@@ -1633,7 +1633,7 @@ public class Somet2 extends JagMap {
 									else if (var13.anInt1257 > 0)
 										var13.anInt1205 = (var13.anInt1205 * 32) / var13.anInt1257;
 
-									Class124_Sub22_Sub10.method723(var13);
+									Def10.settrue(var13);
 								}
 
 								client.anInt2028 = -1;
@@ -1648,12 +1648,12 @@ public class Somet2 extends JagMap {
 								Def3.method656();
 
 								Class124_Sub22_Sub19_Sub3_Sub2 var82;
-								for (; client.aClass124_Sub14_Sub1_2026.method843(client.anInt2027) >= 11; var82
+								for (; client.aClass124_Sub14_Sub1_2026.bitpos(client.anInt2027) >= 11; var82
 										.method893(
 												Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anIntArray1722[0] + var33,
 												var9 + Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anIntArray1723[0],
 												var7 == 1)) {
-									var11 = client.aClass124_Sub14_Sub1_2026.method839(11);
+									var11 = client.aClass124_Sub14_Sub1_2026.clever(11);
 									if (var11 == 2047)
 										break;
 
@@ -1670,27 +1670,27 @@ public class Somet2 extends JagMap {
 									client.anIntArray2128[++client.anInt2090 - 1] = var11;
 									var82 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var11];
 									var82.anInt1716 = client.anInt2158;
-									var6 = client.aClass124_Sub14_Sub1_2026.method839(1);
+									var6 = client.aClass124_Sub14_Sub1_2026.clever(1);
 									if (var6 == 1)
 										client.anIntArray2104[++client.anInt2029 - 1] = var11;
 
-									var7 = client.aClass124_Sub14_Sub1_2026.method839(1);
-									var9 = client.aClass124_Sub14_Sub1_2026.method839(5);
+									var7 = client.aClass124_Sub14_Sub1_2026.clever(1);
+									var9 = client.aClass124_Sub14_Sub1_2026.clever(5);
 									if (var9 > 15)
 										var9 -= 32;
 
-									var10 = client.anIntArray2168[client.aClass124_Sub14_Sub1_2026.method839(3)];
+									var10 = client.anIntArray2168[client.aClass124_Sub14_Sub1_2026.clever(3)];
 									if (var65) {
 										var82.anInt1672 = var10 * 1301162841;
 										var82.anInt1718 = var10;
 									}
 
-									var33 = client.aClass124_Sub14_Sub1_2026.method839(5);
+									var33 = client.aClass124_Sub14_Sub1_2026.clever(5);
 									if (var33 > 15)
 										var33 -= 32;
 								}
 
-								client.aClass124_Sub14_Sub1_2026.method840();
+								client.aClass124_Sub14_Sub1_2026.bitinit();
 
 								for (var11 = 0; var11 < client.anInt2029; ++var11) {
 									var4 = client.anIntArray2104[var11];
@@ -1777,7 +1777,7 @@ public class Somet2 extends JagMap {
 
 									if (var4 != var14.anInt1175) {
 										var14.anInt1175 = var4;
-										Class124_Sub22_Sub10.method723(var14);
+										Def10.settrue(var14);
 									}
 								}
 
@@ -2185,7 +2185,7 @@ public class Somet2 extends JagMap {
 						if (Class72.aClass124_Sub17_598 != null) {
 							++client.anInt2010;
 							if (client.anInt2010 >= 15) {
-								Class124_Sub22_Sub10.method723(Class72.aClass124_Sub17_598);
+								Def10.settrue(Class72.aClass124_Sub17_598);
 								Class72.aClass124_Sub17_598 = null;
 							}
 						}
@@ -2214,7 +2214,7 @@ public class Somet2 extends JagMap {
 						var11 = Class56_Sub2.anInt1083;
 						var4 = Class81.anInt662;
 						if (Class89.loadwidget(var2))
-							Class42.method214(Class124_Sub22_Sub10.widgets[var2], -1, 0, 0, var11,
+							Class42.method214(Def10.widgets[var2], -1, 0, 0, var11,
 									var4, 0, 0);
 
 						++client.anInt2067;
@@ -2236,8 +2236,8 @@ public class Somet2 extends JagMap {
 																Class20.method94();
 
 															if (null != Class32.aClass124_Sub17_343) {
-																Class124_Sub22_Sub10
-																		.method723(Class32.aClass124_Sub17_343);
+																Def10
+																		.settrue(Class32.aClass124_Sub17_343);
 																++client.anInt2133;
 																if (Class81.anInt651 == 0) {
 																	if (client.aBool1985) {
@@ -2338,20 +2338,20 @@ public class Somet2 extends JagMap {
 
 															if (Class31.aClass124_Sub17_335 != var114) {
 																if (null != var114)
-																	Class124_Sub22_Sub10.method723(var114);
+																	Def10.settrue(var114);
 
 																if (Class31.aClass124_Sub17_335 != null)
-																	Class124_Sub22_Sub10
-																			.method723(Class31.aClass124_Sub17_335);
+																	Def10
+																			.settrue(Class31.aClass124_Sub17_335);
 															}
 
 															if ((var116 != Class124_Sub6.aClass124_Sub17_1005)
 																	&& (client.anInt2134 == client.anInt2041)) {
 																if (var116 != null)
-																	Class124_Sub22_Sub10.method723(var116);
+																	Def10.settrue(var116);
 
 																if (null != Class124_Sub6.aClass124_Sub17_1005)
-																	Class124_Sub22_Sub10.method723(
+																	Def10.settrue(
 																			Class124_Sub6.aClass124_Sub17_1005);
 															}
 
@@ -2359,7 +2359,7 @@ public class Somet2 extends JagMap {
 																if (client.anInt2041 < client.anInt2134) {
 																	++client.anInt2041;
 																	if (client.anInt2041 == client.anInt2134)
-																		Class124_Sub22_Sub10.method723(
+																		Def10.settrue(
 																				Class124_Sub6.aClass124_Sub17_1005);
 																}
 															} else if (client.anInt2041 > 0)

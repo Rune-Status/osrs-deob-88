@@ -666,7 +666,7 @@ public class Widget extends Node {
 				}
 
 				if (var6 == 4) {
-					final Class124_Sub22_Sub10 var9 = Class124_Sub22_Sub10.method724(var7);
+					final Def10 var9 = Def10.method724(var7);
 					var5 = var9.method715(10);
 					if (null == var5) {
 						aBool1151 = true;
@@ -756,7 +756,7 @@ public class Widget extends Node {
 			final int var3 = var0.anInt1012;
 			if (Class89.loadwidget(var3)) {
 				boolean var4 = true;
-				final Widget[] var1 = Class124_Sub22_Sub10.widgets[var3];
+				final Widget[] var1 = Def10.widgets[var3];
 
 				int var2;
 				for (var2 = 0; var2 < var1.length; ++var2)
@@ -769,7 +769,7 @@ public class Widget extends Node {
 					var2 = (int) var0.aLong874;
 					final Widget var5 = Class10.method55(var2);
 					if (null != var5)
-						Class124_Sub22_Sub10.method723(var5);
+						Def10.settrue(var5);
 				}
 			}
 		}

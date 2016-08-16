@@ -5,7 +5,7 @@ public final class Class124_Sub22_Sub19_Sub2 extends Class124_Sub22_Sub19 {
 
 	@Override
 	protected final Class124_Sub22_Sub19_Sub7 method834(final int var1) {
-		return Class124_Sub22_Sub10.method724(anInt1667).method720(anInt1669);
+		return Def10.method724(anInt1667).method720(anInt1669);
 	}
 
 	public static int method889(final CharSequence var0, final int var1, final boolean var2) {

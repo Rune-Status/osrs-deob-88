@@ -11,7 +11,7 @@ public class Class32 {
 
 	static final void method183(final int var0) {
 		if (Class89.loadwidget(var0)) {
-			final Widget[] var2 = Class124_Sub22_Sub10.widgets[var0];
+			final Widget[] var2 = Def10.widgets[var0];
 
 			for (final Widget element : var2) {
 				final Widget var1 = element;

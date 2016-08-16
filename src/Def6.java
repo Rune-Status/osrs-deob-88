@@ -551,7 +551,7 @@ public class Def6 extends JagMap {
 		System.out.printf("%d, %d %n", var0 >> 16, var0 & 0xff);
 		if (Class89.loadwidget(var0)) {
 			Class2.aClass124_Sub17Array12 = null;
-			Class27.method165(Class124_Sub22_Sub10.widgets[var0], -1, var1, var2, var3, var4,
+			Class27.method165(Def10.widgets[var0], -1, var1, var2, var3, var4,
 					var5, var6, var7);
 			if (Class2.aClass124_Sub17Array12 != null) {
 				Class27.method165(Class2.aClass124_Sub17Array12, -1412584499, var1, var2, var3, var4, Class48.anInt478,

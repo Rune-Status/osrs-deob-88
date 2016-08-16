@@ -13,7 +13,7 @@ public class Class20 {
 	}
 
 	static final void method94() {
-		Class124_Sub22_Sub10.method723(client.aClass124_Sub17_2155);
+		Def10.settrue(client.aClass124_Sub17_2155);
 		++Class35.anInt375;
 		if (client.aBool2163 && client.aBool2160) {
 			int var0 = Class81.anInt652;

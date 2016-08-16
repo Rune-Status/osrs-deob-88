@@ -57,21 +57,21 @@ public class Class89 {
 				Widget.widgetLoaded[var0] = true;
 				return true;
 			} else {
-				if (null == Class124_Sub22_Sub10.widgets[var0])
-					Class124_Sub22_Sub10.widgets[var0] = new Widget[var1];
+				if (null == Def10.widgets[var0])
+					Def10.widgets[var0] = new Widget[var1];
 
 				for (int var2 = 0; var2 < var1; ++var2)
-					if (null == Class124_Sub22_Sub10.widgets[var0][var2]) {
+					if (null == Def10.widgets[var0][var2]) {
 						final byte[] var3 = Widget.aClass94_1145.decode(var0, var2);
 						if (null != var3) {
-							Class124_Sub22_Sub10.widgets[var0][var2] = new Widget();
-							Class124_Sub22_Sub10.widgets[var0][var2].anInt1284 = (var0 << 16)
+							Def10.widgets[var0][var2] = new Widget();
+							Def10.widgets[var0][var2].anInt1284 = (var0 << 16)
 									+ var2;
 							if (var3[0] == -1)
-								Class124_Sub22_Sub10.widgets[var0][var2]
+								Def10.widgets[var0][var2]
 										.method621(new RSBuf(var3));
 							else
-								Class124_Sub22_Sub10.widgets[var0][var2]
+								Def10.widgets[var0][var2]
 										.method620(new RSBuf(var3));
 						}
 					}

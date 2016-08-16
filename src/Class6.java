@@ -19,7 +19,7 @@ public class Class6 {
 			var3 = 0;
 
 			for (var4 = client.method502(5) + 1; var3 < anInt61; ++var4) {
-				final int var5 = client.method502(Class124_Sub22_Sub10.method714(anInt61 - var3));
+				final int var5 = client.method502(Def10.method714(anInt61 - var3));
 
 				for (var7 = 0; var7 < var5; ++var7)
 					anIntArray64[var3++] = var4;

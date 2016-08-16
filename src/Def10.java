@@ -1,4 +1,4 @@
-public class Class124_Sub22_Sub10 extends JagMap {
+public class Def10 extends JagMap {
 	public static CacheArch aClass94_1459;
 	public static CacheArch aClass94_1460;
 	static int[][] anIntArrayArray1466;
@@ -307,7 +307,7 @@ public class Class124_Sub22_Sub10 extends JagMap {
 		}
 	}
 
-	public Class124_Sub22_Sub10 method717(final int var1) {
+	public Def10 method717(final int var1) {
 		if ((anIntArray1492 != null) && (var1 > 1)) {
 			int var3 = -1;
 
@@ -415,7 +415,7 @@ public class Class124_Sub22_Sub10 extends JagMap {
 		}
 	}
 
-	void method721(final Class124_Sub22_Sub10 var1, final Class124_Sub22_Sub10 var2) {
+	void method721(final Def10 var1, final Def10 var2) {
 		anInt1465 = var1.anInt1465;
 		anInt1470 = var1.anInt1470;
 		anInt1500 = var1.anInt1500;
@@ -433,7 +433,7 @@ public class Class124_Sub22_Sub10 extends JagMap {
 		anInt1480 = 1;
 	}
 
-	void method722(final Class124_Sub22_Sub10 var1, final Class124_Sub22_Sub10 var2) {
+	void method722(final Def10 var1, final Def10 var2) {
 		anInt1465 = var1.anInt1465;
 		anInt1470 = var1.anInt1470;
 		anInt1500 = var1.anInt1500;
@@ -469,19 +469,19 @@ public class Class124_Sub22_Sub10 extends JagMap {
 		anInt1458 = 0;
 	}
 
-	static void method723(final Widget var0) {
+	static void settrue(final Widget var0) {
 		if (var0.anInt1283 == client.anInt2216)
 			client.aBoolArray2061[var0.anInt1239] = true;
 
 	}
 
-	public static Class124_Sub22_Sub10 method724(final int var0) {
-		Class124_Sub22_Sub10 var1 = (Class124_Sub22_Sub10) aClass113_1494.forId(var0);
+	public static Def10 method724(final int var0) {
+		Def10 var1 = (Def10) aClass113_1494.forId(var0);
 		if (null != var1)
 			return var1;
 		else {
 			final byte[] var2 = aClass94_1459.decode(10, var0);
-			var1 = new Class124_Sub22_Sub10();
+			var1 = new Def10();
 			var1.anInt1464 = var0;
 			if (var2 != null)
 				var1.method712(new RSBuf(var2));

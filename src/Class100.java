@@ -180,7 +180,7 @@ public class Class100 {
 					if ((var13 >= 256) && (var13 < 512) && !Class84.method338(var13 - 256).method647())
 						var15 = true;
 
-					if ((var13 >= 512) && !Class124_Sub22_Sub10.method724(var13 - 512).method716(aBool779))
+					if ((var13 >= 512) && !Def10.method724(var13 - 512).method716(aBool779))
 						var15 = true;
 				}
 
@@ -207,7 +207,7 @@ public class Class100 {
 						}
 
 						if (var5 >= 512) {
-							var17 = Class124_Sub22_Sub10.method724(var5 - 512).method710(aBool779);
+							var17 = Def10.method724(var5 - 512).method710(aBool779);
 							if (var17 != null)
 								var11[var13++] = var17;
 						}
@@ -258,7 +258,7 @@ public class Class100 {
 				if ((var2 >= 256) && (var2 < 512) && !Class84.method338(var2 - 256).method651())
 					var8 = true;
 
-				if ((var2 >= 512) && !Class124_Sub22_Sub10.method724(var2 - 512).method719(aBool779))
+				if ((var2 >= 512) && !Def10.method724(var2 - 512).method719(aBool779))
 					var8 = true;
 			}
 
@@ -279,7 +279,7 @@ public class Class100 {
 					}
 
 					if (var4 >= 512) {
-						var3 = Class124_Sub22_Sub10.method724(var4 - 512).method718(aBool779);
+						var3 = Def10.method724(var4 - 512).method718(aBool779);
 						if (var3 != null)
 							var1[var2++] = var3;
 					}

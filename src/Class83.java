@@ -69,7 +69,7 @@ public final class Class83 {
 								client.aBool1985 = false;
 								client.anInt2133 = 0;
 								if (null != Class32.aClass124_Sub17_343)
-									Class124_Sub22_Sub10.method723(Class32.aClass124_Sub17_343);
+									Def10.settrue(Class32.aClass124_Sub17_343);
 
 								Class32.aClass124_Sub17_343 = Class10.method55(var9);
 								client.anInt2093 = var4;
@@ -78,7 +78,7 @@ public final class Class83 {
 								if (client.anInt2124 > 0)
 									Class20.method93(client.anInt2124 - 1);
 
-								Class124_Sub22_Sub10.method723(Class32.aClass124_Sub17_343);
+								Def10.settrue(Class32.aClass124_Sub17_343);
 								return;
 							}
 					}

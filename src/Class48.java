@@ -18,7 +18,7 @@ public class Class48 {
 			Class124_Sub22_Sub19_Sub2 var5;
 			for (var5 = (Class124_Sub22_Sub19_Sub2) var2
 					.method428(); null != var5; var5 = (Class124_Sub22_Sub19_Sub2) var2.method430()) {
-				final Class124_Sub22_Sub10 var3 = Class124_Sub22_Sub10.method724(var5.anInt1667);
+				final Def10 var3 = Def10.method724(var5.anInt1667);
 				long var8 = var3.anInt1458;
 				if (var3.anInt1480 == 1)
 					var8 *= 1 + var5.anInt1669;

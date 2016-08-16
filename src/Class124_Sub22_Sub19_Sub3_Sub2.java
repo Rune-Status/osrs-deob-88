@@ -45,7 +45,7 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 				}
 
 				if (var3[var4] >= 512) {
-					final int var7 = Class124_Sub22_Sub10.method724(var3[var4] - 512).anInt1501;
+					final int var7 = Def10.method724(var3[var4] - 512).anInt1501;
 					if (var7 != 0)
 						anInt1959 = var7;
 				}
