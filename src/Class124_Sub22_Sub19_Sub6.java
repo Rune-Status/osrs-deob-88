@@ -262,7 +262,7 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 			var0 = var1 >> 2;
 			var39 = var1 & 3;
 			var2 = client.anIntArray2045[var0];
-			var3 = client.aClass124_Sub14_Sub1_2026.method582();
+			var3 = client.aClass124_Sub14_Sub1_2026.readUShortS();
 			var4 = client.aClass124_Sub14_Sub1_2026.method604();
 			var5 = Def19.anInt1439 + ((var4 >> 4) & 7);
 			var6 = (var4 & 7) + Def19.anInt1440;
@@ -333,15 +333,15 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 				var1 = client.aClass124_Sub14_Sub1_2026.readShortU();
 				var0 = client.aClass124_Sub14_Sub1_2026.readUShort();
 				byte var9 = client.aClass124_Sub14_Sub1_2026.readByte();
-				var2 = client.aClass124_Sub14_Sub1_2026.method583();
+				var2 = client.aClass124_Sub14_Sub1_2026.readShortS();
 				var3 = client.aClass124_Sub14_Sub1_2026.method604();
 				var4 = var3 >> 2;
 				var5 = var3 & 3;
 				var6 = client.anIntArray2045[var4];
-				byte var11 = client.aClass124_Sub14_Sub1_2026.method579();
-				byte var8 = client.aClass124_Sub14_Sub1_2026.method579();
+				byte var11 = client.aClass124_Sub14_Sub1_2026.readByteS();
+				byte var8 = client.aClass124_Sub14_Sub1_2026.readByteS();
 				byte var20 = client.aClass124_Sub14_Sub1_2026.readByte();
-				var19 = client.aClass124_Sub14_Sub1_2026.method583();
+				var19 = client.aClass124_Sub14_Sub1_2026.readShortS();
 				var21 = client.aClass124_Sub14_Sub1_2026.method604();
 				final int var16 = Def19.anInt1439 + ((var21 >> 4) & 7);
 				final int var22 = Def19.anInt1440 + (var21 & 7);
@@ -435,7 +435,7 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 					var3 = var2 >> 2;
 					var4 = var2 & 3;
 					var5 = client.anIntArray2045[var3];
-					var6 = client.aClass124_Sub14_Sub1_2026.method583();
+					var6 = client.aClass124_Sub14_Sub1_2026.readShortS();
 					if ((var0 >= 0) && (var39 >= 0) && (var0 < 104) && (var39 < 104))
 						Class124_Sub4_Sub4.method880(Class134.anInt906, var0, var39, var5, var6, var3, var4, 0, -1);
 
@@ -526,7 +526,7 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 						}
 
 					} else if (client.anInt2028 == 240) {
-						var1 = client.aClass124_Sub14_Sub1_2026.method583();
+						var1 = client.aClass124_Sub14_Sub1_2026.readShortS();
 						var0 = client.aClass124_Sub14_Sub1_2026.readByteN();
 						var39 = Def19.anInt1439 + ((var0 >> 4) & 7);
 						var2 = (var0 & 7) + Def19.anInt1440;

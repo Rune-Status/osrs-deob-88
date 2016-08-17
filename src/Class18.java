@@ -184,8 +184,8 @@ public class Class18 implements Runnable {
 	}
 
 	static final void method89(final String var0, final int var1) {
-		client.secbuf.writeOpcode(21);
-		client.secbuf.writeByte(Class54.method258(var0) + 1);
+		client.secbuf.writeOpcode(21); // write some sort of string
+		client.secbuf.writeByte(Class54.len(var0) + 1);
 		client.secbuf.writeByte(var1);
 		client.secbuf.writestr(var0);
 	}

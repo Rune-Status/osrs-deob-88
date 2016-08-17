@@ -365,7 +365,7 @@ public class Class41 {
 
 					for (int var5 = 0; var5 < aStringArray403.length; ++var5)
 						if (aBoolArray405[var5] && (null != aStringArray403[var5])) {
-							var2 += 2 + Class54.method258(aStringArray403[var5]);
+							var2 += 2 + Class54.len(aStringArray403[var5]);
 							++var4;
 						}
 

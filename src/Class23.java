@@ -53,8 +53,8 @@ public class Class23 {
 							client.aClass35Array1986[var3] = client.aClass35Array1986[1 + var3];
 
 						client.anInt2175 = client.anInt2067;
-						client.secbuf.writeOpcode(27);
-						client.secbuf.writeByte(Class54.method258(var0));
+						client.secbuf.writeOpcode(27); // remove friend (name)
+						client.secbuf.writeByte(Class54.len(var0));
 						client.secbuf.writestr(var0);
 						break;
 					}

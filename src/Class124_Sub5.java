@@ -27,7 +27,7 @@ public final class Class124_Sub5 extends Node {
 	int anInt967;
 	int anInt983;
 
-	public static void method512(final int var0, final int var1) {
+	public static void setNotLoaded(final int var0, final int var1) {
 		if (var0 != -1)
 			if (Widget.widgetLoaded[var0]) {
 				Widget.aClass94_1145.method374(var0);
@@ -98,7 +98,7 @@ public final class Class124_Sub5 extends Node {
 
 			var7 = client.aClass124_Sub14_Sub1_2026.readByteU();
 			var8 = client.aClass124_Sub14_Sub1_2026.readShortU();
-			var6 = client.aClass124_Sub14_Sub1_2026.method583();
+			var6 = client.aClass124_Sub14_Sub1_2026.readShortS();
 			Class124_Sub22_Sub19_Sub6.anIntArray1822 = new int[var5];
 			Class10.anIntArray104 = new int[var5];
 			Def9.anIntArray1335 = new int[var5];
@@ -149,10 +149,10 @@ public final class Class124_Sub5 extends Node {
 				for (var5 = 0; var5 < 4; ++var5)
 					Def10.anIntArrayArray1466[var4][var5] = client.aClass124_Sub14_Sub1_2026.method590();
 
-			var4 = client.aClass124_Sub14_Sub1_2026.method583();
+			var4 = client.aClass124_Sub14_Sub1_2026.readShortS();
 			var5 = client.aClass124_Sub14_Sub1_2026.readShortU();
 			var7 = client.aClass124_Sub14_Sub1_2026.readByteU();
-			var8 = client.aClass124_Sub14_Sub1_2026.method583();
+			var8 = client.aClass124_Sub14_Sub1_2026.readShortS();
 			var6 = client.aClass124_Sub14_Sub1_2026.readShortU();
 			Class124_Sub22_Sub19_Sub6.anIntArray1822 = new int[var2];
 			Class10.anIntArray104 = new int[var2];

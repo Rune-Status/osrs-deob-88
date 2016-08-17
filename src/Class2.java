@@ -81,7 +81,7 @@ public class Class2 {
 				var6.writeReverse(var9, 0, 24);
 				var6.writeULong(var4.nextLong());
 				var6.dorsa(Class43.aBigInteger428, Class43.aBigInteger429);
-				var8 = Class54.method258(var3);
+				var8 = Class54.len(var3);
 				if ((var8 % 8) != 0)
 					var8 += 8 - (var8 % 8);
 

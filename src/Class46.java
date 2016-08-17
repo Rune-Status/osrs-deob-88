@@ -36,7 +36,7 @@ public final class Class46 {
 		if ((client.anInt2025 >= 50) || var0) {
 			client.anInt2025 = 0;
 			if (!client.aBool2115 && (null != Class73.aClass78_609)) {
-				client.secbuf.writeOpcode(250);
+				client.secbuf.writeOpcode(250); // ?
 
 				try {
 					Class73.aClass78_609.method323(client.secbuf.backing, 0,

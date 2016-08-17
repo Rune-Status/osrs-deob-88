@@ -383,7 +383,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 				}
 
 				if ((var10 & 64) != 0) {
-					var3.anInt1710 = client.aClass124_Sub14_Sub1_2026.method582();
+					var3.anInt1710 = client.aClass124_Sub14_Sub1_2026.readUShortS();
 					var5 = client.aClass124_Sub14_Sub1_2026.readInt2(-895942306);
 					var3.anInt1678 = var5 >> 16;
 					var3.anInt1707 = (var5 & '\uffff') + client.anInt2158;
@@ -402,7 +402,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 					var3.method894(var5, var8, client.anInt2158);
 					var3.anInt1691 = 300 + client.anInt2158;
 					var3.anInt1692 = client.aClass124_Sub14_Sub1_2026.readShortU();
-					var3.anInt1693 = client.aClass124_Sub14_Sub1_2026.method583();
+					var3.anInt1693 = client.aClass124_Sub14_Sub1_2026.readShortS();
 				}
 
 				if ((var10 & 16) != 0) {
@@ -424,8 +424,8 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 					var8 = client.aClass124_Sub14_Sub1_2026.method594();
 					var3.method894(var5, var8, client.anInt2158);
 					var3.anInt1691 = 300 + client.anInt2158;
-					var3.anInt1692 = client.aClass124_Sub14_Sub1_2026.method583();
-					var3.anInt1693 = client.aClass124_Sub14_Sub1_2026.method583();
+					var3.anInt1692 = client.aClass124_Sub14_Sub1_2026.readShortS();
+					var3.anInt1693 = client.aClass124_Sub14_Sub1_2026.readShortS();
 				}
 
 				if ((var10 & 2) != 0) {

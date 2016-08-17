@@ -339,43 +339,43 @@ public class RSBuf extends Node {
 		return var2;
 	}
 
-	public void method576(final int var1) {
+	public void writeByteA(final int var1) {
 		backing[++pos - 1] = (byte) (var1 + 128);
 	}
 
-	public void method577(final int var1) {
+	public void writeByteN(final int var1) {
 		backing[++pos - 1] = (byte) (0 - var1);
 	}
 
-	public void method578(final int var1) {
+	public void writeByteS(final int var1) {
 		backing[++pos - 1] = (byte) (128 - var1);
 	}
 
-	public byte method579() {
+	public byte readByteS() {
 		return (byte) (backing[++pos - 1] - 128);
 	}
 
-	public void method580(final int var1) {
+	public void writeShortU(final int var1) {
 		backing[++pos - 1] = (byte) var1;
 		backing[++pos - 1] = (byte) (var1 >> 8);
 	}
 
-	public void method581(final int var1) {
+	public void writeAShort(final int var1) {
 		backing[++pos - 1] = (byte) (var1 + 128);
 		backing[++pos - 1] = (byte) (var1 >> 8);
 	}
 
-	public int method582() {
+	public int readUShortS() {
 		pos += 2;
 		return ((backing[pos - 1] - 128) & 255) + ((backing[pos - 2] & 255) << 8);
 	}
 
-	public int method583() {
+	public int readShortS() {
 		pos += 2;
 		return ((backing[pos - 2] - 128) & 255) + ((backing[pos - 1] & 255) << 8);
 	}
 
-	public int method584() {
+	public int readShortSmart() {
 		pos += 2;
 		int var1 = (backing[pos - 2] & 255) + ((backing[pos - 1] & 255) << 8);
 		if (var1 > 32767)

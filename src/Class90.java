@@ -9,7 +9,7 @@ public class Class90 {
 	static final void method347(final String var0) {
 		if (!var0.equals("")) {
 			client.secbuf.writeOpcode(36);
-			client.secbuf.writeByte(Class54.method258(var0));
+			client.secbuf.writeByte(Class54.len(var0));
 			client.secbuf.writestr(var0);
 		}
 	}

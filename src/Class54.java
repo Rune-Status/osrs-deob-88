@@ -40,7 +40,7 @@ public final class Class54 {
 	int[][] anIntArrayArray528 = new int[6][258];
 	int[] anIntArray532 = new int[6];
 
-	public static int method258(final String var0) {
+	public static int len(final String var0) {
 		return var0.length() + 1;
 	}
 }

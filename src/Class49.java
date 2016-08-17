@@ -465,8 +465,8 @@ public class Class49 {
 
 	static final void method239(final String var0) {
 		if (null != client.aClass124_Sub9Array1609) {
-			client.secbuf.writeOpcode(22);
-			client.secbuf.writeByte(Class54.method258(var0));
+			client.secbuf.writeOpcode(22); // ? write string
+			client.secbuf.writeByte(Class54.len(var0));
 			client.secbuf.writestr(var0);
 		}
 	}

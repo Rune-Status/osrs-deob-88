@@ -90,8 +90,8 @@ public class Class35 {
 							.equals(var3))
 						Class20.method95(31, "", "You can\'t add yourself to your own ignore list");
 					else {
-						client.secbuf.writeOpcode(67);
-						client.secbuf.writeByte(Class54.method258(var0));
+						client.secbuf.writeOpcode(67); // add ignore
+						client.secbuf.writeByte(Class54.len(var0));
 						client.secbuf.writestr(var0);
 					}
 				}
@@ -122,12 +122,12 @@ public class Class35 {
 		}
 
 		if ((var2 & 1) != 0) {
-			var1.anInt1671 = client.aClass124_Sub14_Sub1_2026.method582();
-			var1.anInt1728 = client.aClass124_Sub14_Sub1_2026.method583();
+			var1.anInt1671 = client.aClass124_Sub14_Sub1_2026.readUShortS();
+			var1.anInt1728 = client.aClass124_Sub14_Sub1_2026.readShortS();
 		}
 
 		if ((var2 & 2) != 0) {
-			var3 = client.aClass124_Sub14_Sub1_2026.method583();
+			var3 = client.aClass124_Sub14_Sub1_2026.readShortS();
 			if (var3 == '\uffff')
 				var3 = -1;
 
@@ -141,7 +141,7 @@ public class Class35 {
 			var1.anInt1720 = client.aClass124_Sub14_Sub1_2026.method594();
 			var1.anInt1702 = client.aClass124_Sub14_Sub1_2026.readByteN();
 			var1.anInt1713 = client.aClass124_Sub14_Sub1_2026.readShortU() + client.anInt2158;
-			var1.anInt1714 = client.aClass124_Sub14_Sub1_2026.method583() + client.anInt2158;
+			var1.anInt1714 = client.aClass124_Sub14_Sub1_2026.readShortS() + client.anInt2158;
 			var1.anInt1715 = client.aClass124_Sub14_Sub1_2026.method594();
 			var1.anInt1721 = 1;
 			var1.anInt1726 = 0;
@@ -162,7 +162,7 @@ public class Class35 {
 		}
 
 		if ((var2 & 32) != 0) {
-			var3 = client.aClass124_Sub14_Sub1_2026.method583();
+			var3 = client.aClass124_Sub14_Sub1_2026.readShortS();
 			final Class74[] var10 = new Class74[] { Class74.aClass74_612, Class74.aClass74_613, Class74.aClass74_617,
 					Class74.aClass74_616, Class74.aClass74_611 };
 			final Class74 var7 = (Class74) Class23.method158(var10, client.aClass124_Sub14_Sub1_2026.method604());
@@ -233,7 +233,7 @@ public class Class35 {
 		}
 
 		if ((var2 & 128) != 0) {
-			var3 = client.aClass124_Sub14_Sub1_2026.method583();
+			var3 = client.aClass124_Sub14_Sub1_2026.readShortS();
 			var4 = client.aClass124_Sub14_Sub1_2026.readByteU();
 			var1.method894(var3, var4, client.anInt2158);
 			var1.anInt1691 = client.anInt2158 + 300;

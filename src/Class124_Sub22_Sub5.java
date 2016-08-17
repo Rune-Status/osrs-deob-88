@@ -721,7 +721,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								if (opc == 1121) {
 									var70 = wid.anInt1284;
 									var19 = wid.anInt1154;
-									client.secbuf.writeOpcode(198);
+									client.secbuf.writeOpcode(198); // ?
 									client.secbuf.writeInt(var70);
 									client.secbuf.writeShort(var19);
 									client.aClass124_Sub17_2042 = wid;
@@ -1195,7 +1195,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										}
 
 										if (opc == 3103) {
-											client.secbuf.writeOpcode(180);
+											client.secbuf.writeOpcode(180); // ?
 
 											for (Class124_Sub7 var76 = (Class124_Sub7) client.aClass107_2143
 													.method411(); var76 != null; var76 = (Class124_Sub7) client.aClass107_2143
@@ -1220,7 +1220,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												var22 = var19;
 											}
 
-											client.secbuf.writeOpcode(37);
+											client.secbuf.writeOpcode(37); // enter x
 											client.secbuf.writeInt(var22);
 											continue;
 										}
@@ -1228,7 +1228,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										if (opc == 3105) {
 											--var6;
 											var71 = Class2.aStringArray5[var6];
-											client.secbuf.writeOpcode(84);
+											client.secbuf.writeOpcode(84); // enter string
 											client.secbuf.writeByte(var71.length() + 1);
 											client.secbuf.writestr(var71);
 											continue;
@@ -1237,7 +1237,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										if (opc == 3106) {
 											--var6;
 											var71 = Class2.aStringArray5[var6];
-											client.secbuf.writeOpcode(181);
+											client.secbuf.writeOpcode(181); // enter string
 											client.secbuf.writeByte(var71.length() + 1);
 											client.secbuf.writestr(var71);
 											continue;
@@ -1255,25 +1255,25 @@ public class Class124_Sub22_Sub5 extends JagMap {
 												if ((null != var24) && (null != var24.aString1956)
 														&& var24.aString1956.equalsIgnoreCase(var58)) {
 													if (var21 == 1) {
-														client.secbuf.writeOpcode(177);
+														client.secbuf.writeOpcode(177); // player op 1 (attack)
 														client.secbuf
-																.method580(client.anIntArray2128[var19]);
-														client.secbuf.method577(0);
+																.writeShortU(client.anIntArray2128[var19]);
+														client.secbuf.writeByteN(0);
 													} else if (var21 == 4) {
-														client.secbuf.writeOpcode(139);
+														client.secbuf.writeOpcode(139); // player op 2
 														client.secbuf
 																.writeShort(client.anIntArray2128[var19]);
-														client.secbuf.method577(0);
+														client.secbuf.writeByteN(0);
 													} else if (var21 == 6) {
-														client.secbuf.writeOpcode(192);
+														client.secbuf.writeOpcode(192); // player op 3
 														client.secbuf
 																.method587(client.anIntArray2128[var19]);
-														client.secbuf.method576(0);
+														client.secbuf.writeByteA(0);
 													} else if (var21 == 7) {
-														client.secbuf.writeOpcode(153);
+														client.secbuf.writeOpcode(153); // player op 4
 														client.secbuf
 																.method587(client.anIntArray2128[var19]);
-														client.secbuf.method577(0);
+														client.secbuf.writeByteN(0);
 													}
 
 													var23 = true;
@@ -1354,7 +1354,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										if (opc == 3115) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
-											client.secbuf.writeOpcode(148);
+											client.secbuf.writeOpcode(148); // ?
 											client.secbuf.writeShort(var21);
 											continue;
 										}
@@ -1366,11 +1366,11 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											var58 = Class2.aStringArray5[var6];
 											var18 = Class2.aStringArray5[var6 + 1];
 											if ((var58.length() <= 500) && (var18.length() <= 500)) {
-												client.secbuf.writeOpcode(13);
+												client.secbuf.writeOpcode(13); // ?
 												client.secbuf.writeShort(
-														1 + Class54.method258(var58) + Class54.method258(var18));
+														1 + Class54.len(var58) + Class54.len(var18));
 												client.secbuf.writestr(var18);
-												client.secbuf.method578(var21);
+												client.secbuf.writeByteS(var21);
 												client.secbuf.writestr(var58);
 											}
 											continue;
@@ -1754,9 +1754,9 @@ public class Class124_Sub22_Sub5 extends JagMap {
 																	+ 1];
 
 														client.anInt2175 = client.anInt2067;
-														client.secbuf.writeOpcode(39);
+														client.secbuf.writeOpcode(39); // ? write string
 														client.secbuf
-																.writeByte(Class54.method258(var71));
+																.writeByte(Class54.len(var71));
 														client.secbuf.writestr(var71);
 														continue label3101;
 													}
@@ -1888,7 +1888,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											}
 
 											if (opc == 3620) {
-												client.secbuf.writeOpcode(36);
+												client.secbuf.writeOpcode(36); // ?
 												client.secbuf.writeByte(0);
 												continue;
 											}
@@ -2752,7 +2752,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 															Class32.aClass53_337 = Class53.aClass53_492;
 
 														client.anInt2201 = Class2.anIntArray8[var5 + 2];
-														client.secbuf.writeOpcode(68);
+														client.secbuf.writeOpcode(68); // public / social setting
 														client.secbuf.writeByte(client.anInt2066);
 														client.secbuf
 																.writeByte(Class32.aClass53_337.anInt491);
@@ -2766,9 +2766,9 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														var5 -= 2;
 														var22 = Class2.anIntArray8[var5];
 														var70 = Class2.anIntArray8[1 + var5];
-														client.secbuf.writeOpcode(219);
+														client.secbuf.writeOpcode(219); // write string ?
 														client.secbuf
-																.writeByte(Class54.method258(var71) + 2);
+																.writeByte(Class54.len(var71) + 2);
 														client.secbuf.writestr(var71);
 														client.secbuf.writeByte(var22 - 1);
 														client.secbuf.writeByte(var70);
@@ -2950,7 +2950,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 																var71 = var71.substring("slide:".length());
 															}
 
-														client.secbuf.writeOpcode(223);
+														client.secbuf.writeOpcode(223); // public chat
 														client.secbuf.writeByte(0);
 														var25 = client.secbuf.pos;
 														client.secbuf.writeByte(var22);
@@ -3037,7 +3037,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														var6 -= 2;
 														var71 = Class2.aStringArray5[var6];
 														var58 = Class2.aStringArray5[1 + var6];
-														client.secbuf.writeOpcode(123);
+														client.secbuf.writeOpcode(123); // send pm
 														client.secbuf.writeShort(0);
 														var70 = client.secbuf.pos;
 														client.secbuf.writestr(var71);
@@ -3198,7 +3198,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 																throw new RuntimeException();
 														}
 
-														client.secbuf.writeOpcode(188);
+														client.secbuf.writeOpcode(188); // command aka ::item 
 														client.secbuf.writeByte(var71.length() + 1);
 														client.secbuf.writestr(var71);
 														continue;

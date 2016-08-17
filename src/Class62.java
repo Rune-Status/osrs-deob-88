@@ -97,7 +97,7 @@ public class Class62 {
 		Class124_Sub6.aClass41_1006.method202();
 		client.anInt2150 = -1;
 		if (client.anInt2142 != -1)
-			Class124_Sub5.method512(client.anInt2142, 236366084);
+			Class124_Sub5.setNotLoaded(client.anInt2142, 236366084);
 
 		for (Class124_Sub7 var2 = (Class124_Sub7) client.aClass107_2143
 				.method411(); null != var2; var2 = (Class124_Sub7) client.aClass107_2143.method413())

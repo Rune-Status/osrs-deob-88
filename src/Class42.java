@@ -120,11 +120,11 @@ public final class Class42 {
 												+ Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690) >> 7;
 										final int var26 = (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697
 												- var28) >> 7;
-										client.secbuf.writeOpcode(165);
+										client.secbuf.writeOpcode(165); // walking
 										client.secbuf.writeByte(18);
-										client.secbuf.method581(var26 + Class95.anInt762);
+										client.secbuf.writeAShort(var26 + Class95.anInt762);
 										client.secbuf.method587(var30 + Class9.anInt102);
-										client.secbuf.method578(
+										client.secbuf.writeByteS(
 												Class84.aBoolArray676[82] ? (Class84.aBoolArray676[81] ? 2 : 1) : 0);
 										client.secbuf.writeByte(var22);
 										client.secbuf.writeByte(var37);
@@ -132,7 +132,7 @@ public final class Class42 {
 										client.secbuf.writeByte(57);
 										client.secbuf.writeByte(client.anInt2053);
 										client.secbuf.writeByte(client.anInt2055);
-										client.secbuf.writeByte(89);
+										client.secbuf.writeByte(89); // looks same in evey rev
 										client.secbuf
 												.writeShort(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690);
 										client.secbuf

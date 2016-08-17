@@ -442,7 +442,7 @@ public class Somet2 extends JagMap {
 								var11 = client.aClass124_Sub14_Sub1_2026.method590();
 								var4 = client.aClass124_Sub14_Sub1_2026.readShortU();
 								var5 = client.aClass124_Sub14_Sub1_2026.readShortU();
-								var6 = client.aClass124_Sub14_Sub1_2026.method583();
+								var6 = client.aClass124_Sub14_Sub1_2026.readShortS();
 								var70 = Class10.method55(var11);
 								if ((var70.anInt1202 != var5) || (var70.anInt1203 != var6)
 										|| (var4 != var70.anInt1205)) {
@@ -472,7 +472,7 @@ public class Somet2 extends JagMap {
 
 								var4 = client.aClass124_Sub14_Sub1_2026.method590();
 								var5 = client.aClass124_Sub14_Sub1_2026.method590();
-								var6 = client.aClass124_Sub14_Sub1_2026.method583();
+								var6 = client.aClass124_Sub14_Sub1_2026.readShortS();
 								if (var6 == '\uffff')
 									var6 = -1;
 
@@ -513,7 +513,7 @@ public class Somet2 extends JagMap {
 							}
 
 							if (client.anInt2028 == 206) {
-								var11 = client.aClass124_Sub14_Sub1_2026.method584();
+								var11 = client.aClass124_Sub14_Sub1_2026.readShortSmart();
 								var4 = client.aClass124_Sub14_Sub1_2026.method590();
 								var14 = Class10.method55(var4);
 								if ((var11 != var14.anInt1222) || (var11 == -1)) {
@@ -569,8 +569,8 @@ public class Somet2 extends JagMap {
 								client.secbuf.writeOpcode(133);
 								client.secbuf.readInt(var11);
 								client.secbuf.readInt(var4);
-								client.secbuf.method578(var7);
-								client.secbuf.method578(Applet_Sub1.anInt1970);
+								client.secbuf.writeByteS(var7);
+								client.secbuf.writeByteS(Applet_Sub1.anInt1970);
 								client.anInt2028 = -1;
 								var1 = true;
 								break label2501;
@@ -958,7 +958,7 @@ public class Somet2 extends JagMap {
 							if (client.anInt2028 == 242) {
 								var11 = client.aClass124_Sub14_Sub1_2026.method589();
 								var4 = client.aClass124_Sub14_Sub1_2026.method604();
-								var5 = client.aClass124_Sub14_Sub1_2026.method582();
+								var5 = client.aClass124_Sub14_Sub1_2026.readUShortS();
 								var78 = (Class124_Sub7) client.aClass107_2143.method409(var11);
 								if (null != var78)
 									Def4.method760(var78, var5 != var78.anInt1012);
@@ -1007,7 +1007,7 @@ public class Somet2 extends JagMap {
 							}
 
 							if (client.anInt2028 == 54) {
-								client.anInt2001 = client.aClass124_Sub14_Sub1_2026.method582() * 30;
+								client.anInt2001 = client.aClass124_Sub14_Sub1_2026.readUShortS() * 30;
 								client.anInt2179 = client.anInt2067;
 								client.anInt2028 = -1;
 								var1 = true;
@@ -1053,7 +1053,7 @@ public class Somet2 extends JagMap {
 							}
 
 							if (client.anInt2028 == 44) {
-								var11 = client.aClass124_Sub14_Sub1_2026.method583();
+								var11 = client.aClass124_Sub14_Sub1_2026.readShortS();
 								var4 = client.aClass124_Sub14_Sub1_2026.method589();
 								var5 = (var11 >> 10) & 31;
 								var6 = (var11 >> 5) & 31;
@@ -1173,7 +1173,7 @@ public class Somet2 extends JagMap {
 							}
 
 							if (client.anInt2028 == 0) {
-								var11 = client.aClass124_Sub14_Sub1_2026.method582();
+								var11 = client.aClass124_Sub14_Sub1_2026.readUShortS();
 								var4 = client.aClass124_Sub14_Sub1_2026.readShortU();
 								var5 = client.aClass124_Sub14_Sub1_2026.readInt2(-415552865);
 								var13 = Class10.method55(var5);
@@ -1550,8 +1550,8 @@ public class Somet2 extends JagMap {
 							}
 
 							if (client.anInt2028 == 187) {
-								var11 = client.aClass124_Sub14_Sub1_2026.method583();
-								final byte var68 = client.aClass124_Sub14_Sub1_2026.method579();
+								var11 = client.aClass124_Sub14_Sub1_2026.readShortS();
+								final byte var68 = client.aClass124_Sub14_Sub1_2026.readByteS();
 								Class91.anIntArray712[var11] = var68;
 								if (Class91.anIntArray711[var11] != var68) {
 									Class91.anIntArray711[var11] = var68;
@@ -1590,7 +1590,7 @@ public class Somet2 extends JagMap {
 							}
 
 							if (client.anInt2028 == 40) {
-								var11 = client.aClass124_Sub14_Sub1_2026.method582();
+								var11 = client.aClass124_Sub14_Sub1_2026.readUShortS();
 								if (var11 == '\uffff')
 									var11 = -1;
 
@@ -1766,7 +1766,7 @@ public class Somet2 extends JagMap {
 
 							if (client.anInt2028 == 24) {
 								var11 = client.aClass124_Sub14_Sub1_2026.method590();
-								var4 = client.aClass124_Sub14_Sub1_2026.method582();
+								var4 = client.aClass124_Sub14_Sub1_2026.readUShortS();
 								var14 = Class10.method55(var11);
 								if ((var14 != null) && (var14.anInt1191 == 0)) {
 									if (var4 > (var14.anInt1177 - var14.anInt1169))
@@ -1937,7 +1937,7 @@ public class Somet2 extends JagMap {
 							var38 = 16777215L;
 
 						client.aLong2208 = var52;
-						client.secbuf.method576(Class84.anIntArray687[var11]);
+						client.secbuf.writeByteA(Class84.anIntArray687[var11]);
 						client.secbuf.writeTrib((int) var38);
 					}
 
@@ -1955,7 +1955,7 @@ public class Somet2 extends JagMap {
 					client.anInt2101 = 20;
 					client.aBool2044 = false;
 					client.secbuf.writeOpcode(238);
-					client.secbuf.method581(client.anInt2255);
+					client.secbuf.writeAShort(client.anInt2255);
 					client.secbuf.method587(client.anInt2076);
 				}
 
@@ -2320,11 +2320,11 @@ public class Somet2 extends JagMap {
 																client.secbuf.writeOpcode(28);
 																client.secbuf.writeByte(5);
 																client.secbuf
-																		.method581(var6 + Class95.anInt762);
+																		.writeAShort(var6 + Class95.anInt762);
 																client.secbuf
 																		.method587(var5 + Class9.anInt102);
 																client.secbuf
-																		.method578(Class84.aBoolArray676[82]
+																		.writeByteS(Class84.aBoolArray676[82]
 																				? (Class84.aBoolArray676[81] ? 2 : 1)
 																				: 0);
 																Class21.anInt214 = -1;
