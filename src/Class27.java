@@ -55,7 +55,7 @@ public final class Class27 {
 		for (final Widget element : var0) {
 			final Widget var11 = element;
 			if ((null != var11) && ((var11.anInt1259 == var1)
-					|| ((var1 == -1412584499) && (client.aClass124_Sub17_2155 == var11)))) {
+					|| ((var1 == -1412584499) && (client.currentWid == var11)))) {
 				int var18;
 				if (var8 == -1) {
 					client.anIntArray2190[client.anInt2185] = var11.anInt1166 + var6;
@@ -110,7 +110,7 @@ public final class Class27 {
 					int var39 = var11.anInt1183;
 					int var24;
 					int var25;
-					if (client.aClass124_Sub17_2155 == var11) {
+					if (client.currentWid == var11) {
 						if ((var1 != -1412584499) && !var11.aBool1153) {
 							Class2.aClass124_Sub17Array12 = var0;
 							Class48.anInt478 = var6;
@@ -615,7 +615,7 @@ public final class Class27 {
 											}
 
 											int var17;
-											if ((var11.anInt1191 == 8) && (Class124_Sub6.aClass124_Sub17_1005 == var11)
+											if ((var11.anInt1191 == 8) && (CSD.aClass124_Sub17_1005 == var11)
 													&& (client.anInt2134 == client.anInt2041)) {
 												var19 = 0;
 												var9 = 0;

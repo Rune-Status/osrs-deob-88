@@ -108,10 +108,10 @@ public class Class31 implements Interface2 {
 			final Widget var1 = RuntimeException_Sub1.method1010(Class124_Sub10.anInt1033, client.anInt2138,
 					172659367);
 			if ((var1 != null) && (var1.anObjectArray1243 != null)) {
-				final Class124_Sub6 var0 = new Class124_Sub6();
+				final CSD var0 = new CSD();
 				var0.aClass124_Sub17_994 = var1;
 				var0.anObjectArray995 = var1.anObjectArray1243;
-				Class124_Sub22_Sub19_Sub3_Sub2.method1048(var0);
+				Class124_Sub22_Sub19_Sub3_Sub2.fullCS(var0);
 			}
 
 			client.aBool2137 = false;

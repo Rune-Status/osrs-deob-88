@@ -1,4 +1,4 @@
-public class Class124_Sub6 extends Node {
+public class CSD extends Node {
 	static int anInt992;
 	int anInt993;
 	Widget aClass124_Sub17_994;
@@ -67,42 +67,42 @@ public class Class124_Sub6 extends Node {
 	}
 
 	static final void method521() {
-		client.aClass124_Sub14_Sub1_2026.tempbit();
-		final int var0 = client.aClass124_Sub14_Sub1_2026.clever(1);
+		client.buf.tempbit();
+		final int var0 = client.buf.clever(1);
 		if (var0 != 0) {
-			final int var3 = client.aClass124_Sub14_Sub1_2026.clever(2);
+			final int var3 = client.buf.clever(2);
 			if (var3 == 0)
 				client.anIntArray2104[++client.anInt2029 - 1] = 2047;
 			else {
 				int var1;
 				int var4;
 				if (var3 == 1) {
-					var4 = client.aClass124_Sub14_Sub1_2026.clever(3);
+					var4 = client.buf.clever(3);
 					Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.method892(var4, false);
-					var1 = client.aClass124_Sub14_Sub1_2026.clever(1);
+					var1 = client.buf.clever(1);
 					if (var1 == 1)
 						client.anIntArray2104[++client.anInt2029 - 1] = 2047;
 
 				} else {
 					int var2;
 					if (var3 == 2) {
-						var4 = client.aClass124_Sub14_Sub1_2026.clever(3);
+						var4 = client.buf.clever(3);
 						Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.method892(var4, true);
-						var1 = client.aClass124_Sub14_Sub1_2026.clever(3);
+						var1 = client.buf.clever(3);
 						Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.method892(var1, true);
-						var2 = client.aClass124_Sub14_Sub1_2026.clever(1);
+						var2 = client.buf.clever(1);
 						if (var2 == 1)
 							client.anIntArray2104[++client.anInt2029 - 1] = 2047;
 
 					} else if (var3 == 3) {
-						Class134.anInt906 = client.aClass124_Sub14_Sub1_2026.clever(2);
-						var4 = client.aClass124_Sub14_Sub1_2026.clever(1);
+						Class134.anInt906 = client.buf.clever(2);
+						var4 = client.buf.clever(1);
 						if (var4 == 1)
 							client.anIntArray2104[++client.anInt2029 - 1] = 2047;
 
-						var1 = client.aClass124_Sub14_Sub1_2026.clever(1);
-						var2 = client.aClass124_Sub14_Sub1_2026.clever(7);
-						final int var5 = client.aClass124_Sub14_Sub1_2026.clever(7);
+						var1 = client.buf.clever(1);
+						var2 = client.buf.clever(7);
+						final int var5 = client.buf.clever(7);
 						Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.method893(var5, var2, var1 == 1);
 					}
 				}

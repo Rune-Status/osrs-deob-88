@@ -132,7 +132,7 @@ public class RuntimeException_Sub1 extends RuntimeException {
 	}
 
 	public static Widget method1010(final int var0, final int var1, final int var2) {
-		final Widget var3 = Class10.method55(var0);
+		final Widget var3 = Class10.getwidget(var0);
 		return var1 != -1
 				? ((null != var3) && (null != var3.aClass124_Sub17Array1263)
 						&& (var1 < var3.aClass124_Sub17Array1263.length) ? var3.aClass124_Sub17Array1263[var1] : null)

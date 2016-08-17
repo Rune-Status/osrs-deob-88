@@ -5,13 +5,13 @@ public class Class57 {
 	static String aString539;
 	static long aLong540;
 
-	static final void method267(final int var0, final int var1, int var2, final int var3, final String var4,
+	static final void packetFor(final int var0, final int var1, int opc, final int var3, final String var4,
 			final String var5, final int var6, final int var7) {
-		if (var2 >= 2000)
-			var2 -= 2000;
+		if (opc >= 2000)
+			opc -= 2000;
 
 		Class124_Sub22_Sub19_Sub3_Sub2 var8;
-		if (var2 == 47) {
+		if (opc == 47) {
 			var8 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var3];
 			if (null != var8) {
 				client.anInt2087 = var6;
@@ -27,7 +27,7 @@ public class Class57 {
 		}
 
 		Class124_Sub22_Sub19_Sub3_Sub1 var21;
-		if (var2 == 8) {
+		if (opc == 8) {
 			var21 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var3];
 			if (var21 != null) {
 				client.anInt2087 = var6;
@@ -39,14 +39,14 @@ public class Class57 {
 				client.secbuf.writeOpcode(83); // magic on npc
 				client.secbuf.writeShort(client.anInt2138);
 				client.secbuf.writeByteN(Class84.aBoolArray676[82] ? 1 : 0);
-				client.secbuf.method588(Class124_Sub10.anInt1033);
+				client.secbuf.writeIntV1(Class124_Sub10.anInt1033);
 				client.secbuf.writeShort(var3);
 			}
 		}
 
 		Widget var22;
-		if (var2 == 1005) {
-			var22 = Class10.method55(var1);
+		if (opc == 1005) {
+			var22 = Class10.getwidget(var1);
 			if ((var22 != null) && (var22.anIntArray1270[var0] >= 100000))
 				Class20.method95(27, "",
 						var22.anIntArray1270[var0] + " x " + Def10.method724(var3).aString1472);
@@ -56,21 +56,21 @@ public class Class57 {
 			}
 
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 36) {
+		if (opc == 36) {
 			client.secbuf.writeOpcode(53); // item option
 			client.secbuf.writeAShort(var3);
-			client.secbuf.method587(var0);
-			client.secbuf.method588(var1);
+			client.secbuf.writeShortA(var0);
+			client.secbuf.writeIntV1(var1);
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 1002) {
+		if (opc == 1002) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -79,7 +79,7 @@ public class Class57 {
 			client.secbuf.writeShort((var3 >> 14) & 32767);
 		}
 
-		if (var2 == 1) {
+		if (opc == 1) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -91,12 +91,12 @@ public class Class57 {
 			client.secbuf.writeInt2(Class38.anInt398);
 			client.secbuf.writeShort(Class124_Sub19.anInt1299);
 			client.secbuf.writeByte(Class84.aBoolArray676[82] ? 1 : 0);
-			client.secbuf.method587(Class9.anInt102 + var0);
-			client.secbuf.method587(var1 + Class95.anInt762);
+			client.secbuf.writeShortA(Class9.anInt102 + var0);
+			client.secbuf.writeShortA(var1 + Class95.anInt762);
 			client.secbuf.writeAShort(Class87.anInt692);
 		}
 
-		if (var2 == 19) {
+		if (opc == 19) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -104,17 +104,17 @@ public class Class57 {
 			client.anInt2194 = var0;
 			client.anInt2217 = var1;
 			client.secbuf.writeOpcode(200); // ground item option
-			client.secbuf.method587(var3);
+			client.secbuf.writeShortA(var3);
 			client.secbuf.writeByteN(Class84.aBoolArray676[82] ? 1 : 0);
 			client.secbuf.writeShort(Class9.anInt102 + var0);
 			client.secbuf.writeShort(Class95.anInt762 + var1);
 		}
 
 		int var9;
-		if (var2 == 28) {
+		if (opc == 28) {
 			client.secbuf.writeOpcode(125); // action button
 			client.secbuf.writeInt(var1);
-			var22 = Class10.method55(var1);
+			var22 = Class10.getwidget(var1);
 			if ((var22.anIntArrayArray1278 != null) && (var22.anIntArrayArray1278[0][0] == 5)) {
 				var9 = var22.anIntArrayArray1278[0][1];
 				Class91.anIntArray711[var9] = 1 - Class91.anIntArray711[var9];
@@ -122,7 +122,7 @@ public class Class57 {
 			}
 		}
 
-		if (var2 == 48) {
+		if (opc == 48) {
 			var8 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var3];
 			if (var8 != null) {
 				client.anInt2087 = var6;
@@ -137,7 +137,7 @@ public class Class57 {
 			}
 		}
 
-		if (var2 == 4) {
+		if (opc == 4) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -151,7 +151,7 @@ public class Class57 {
 			client.secbuf.writeAShort(var0 + Class9.anInt102);
 		}
 
-		if (var2 == 7) {
+		if (opc == 7) {
 			var21 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var3];
 			if (null != var21) {
 				client.anInt2087 = var6;
@@ -169,27 +169,27 @@ public class Class57 {
 			}
 		}
 
-		if (var2 == 43) {
+		if (opc == 43) {
 			client.secbuf.writeOpcode(4);
 			client.secbuf.writeInt2(var1);
-			client.secbuf.method587(var3);
+			client.secbuf.writeShortA(var3);
 			client.secbuf.writeAShort(var0);
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 34) {
+		if (opc == 34) {
 			client.secbuf.writeOpcode(169);
-			client.secbuf.method587(var3);
+			client.secbuf.writeShortA(var3);
 			client.secbuf.readInt(var1);
 			client.secbuf.writeShort(var0);
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 17) {
+		if (opc == 17) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -198,14 +198,14 @@ public class Class57 {
 			client.anInt2217 = var1;
 			client.secbuf.writeOpcode(12);
 			client.secbuf.writeShortU(var3);
-			client.secbuf.method588(Class124_Sub10.anInt1033);
-			client.secbuf.method587(client.anInt2138);
+			client.secbuf.writeIntV1(Class124_Sub10.anInt1033);
+			client.secbuf.writeShortA(client.anInt2138);
 			client.secbuf.writeAShort(var1 + Class95.anInt762);
 			client.secbuf.writeShortU(Class9.anInt102 + var0);
 			client.secbuf.writeByteS(Class84.aBoolArray676[82] ? 1 : 0);
 		}
 
-		if (var2 == 21) {
+		if (opc == 21) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -219,17 +219,17 @@ public class Class57 {
 			client.secbuf.writeShortU(var3);
 		}
 
-		if (var2 == 41) {
+		if (opc == 41) {
 			client.secbuf.writeOpcode(60);
 			client.secbuf.writeAShort(var3);
 			client.secbuf.readInt(var1);
 			client.secbuf.writeAShort(var0);
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 1004) {
+		if (opc == 1004) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -238,7 +238,7 @@ public class Class57 {
 			client.secbuf.writeShortU(var3);
 		}
 
-		if (var2 == 16) {
+		if (opc == 16) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -247,15 +247,15 @@ public class Class57 {
 			client.anInt2217 = var1;
 			client.secbuf.writeOpcode(87);
 			client.secbuf.writeShort(var3);
-			client.secbuf.method587(Class87.anInt692);
+			client.secbuf.writeShortA(Class87.anInt692);
 			client.secbuf.writeShortU(Class95.anInt762 + var1);
-			client.secbuf.method587(Class124_Sub19.anInt1299);
-			client.secbuf.method587(Class9.anInt102 + var0);
+			client.secbuf.writeShortA(Class124_Sub19.anInt1299);
+			client.secbuf.writeShortA(Class9.anInt102 + var0);
 			client.secbuf.readInt(Class38.anInt398);
 			client.secbuf.writeByteS(Class84.aBoolArray676[82] ? 1 : 0);
 		}
 
-		if (var2 == 1001) {
+		if (opc == 1001) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -269,15 +269,15 @@ public class Class57 {
 			client.secbuf.writeShort(Class9.anInt102 + var0);
 		}
 
-		if ((var2 == 30) && (client.aClass124_Sub17_2042 == null)) {
-			client.secbuf.writeOpcode(198);
+		if ((opc == 30) && (client.aClass124_Sub17_2042 == null)) {
+			client.secbuf.writeOpcode(198); // action button
 			client.secbuf.writeInt(var1);
 			client.secbuf.writeShort(var0);
 			client.aClass124_Sub17_2042 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
 			Def10.settrue(client.aClass124_Sub17_2042);
 		}
 
-		if (var2 == 6) {
+		if (opc == 6) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -286,12 +286,12 @@ public class Class57 {
 			client.anInt2217 = var1;
 			client.secbuf.writeOpcode(240);
 			client.secbuf.writeAShort(var0 + Class9.anInt102);
-			client.secbuf.method587(Class95.anInt762 + var1);
+			client.secbuf.writeShortA(Class95.anInt762 + var1);
 			client.secbuf.writeByte(Class84.aBoolArray676[82] ? 1 : 0);
 			client.secbuf.writeShort((var3 >> 14) & 32767);
 		}
 
-		if (var2 == 20) {
+		if (opc == 20) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -299,13 +299,13 @@ public class Class57 {
 			client.anInt2194 = var0;
 			client.anInt2217 = var1;
 			client.secbuf.writeOpcode(195);
-			client.secbuf.method587(Class95.anInt762 + var1);
+			client.secbuf.writeShortA(Class95.anInt762 + var1);
 			client.secbuf.writeShortU(var3);
 			client.secbuf.writeShort(var0 + Class9.anInt102);
 			client.secbuf.writeByte(Class84.aBoolArray676[82] ? 1 : 0);
 		}
 
-		if (var2 == 46) {
+		if (opc == 46) {
 			var8 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var3];
 			if (var8 != null) {
 				client.anInt2087 = var6;
@@ -320,7 +320,7 @@ public class Class57 {
 			}
 		}
 
-		if (var2 == 10) {
+		if (opc == 10) {
 			var21 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var3];
 			if (var21 != null) {
 				client.anInt2087 = var6;
@@ -335,7 +335,7 @@ public class Class57 {
 			}
 		}
 
-		if (var2 == 9) {
+		if (opc == 9) {
 			var21 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var3];
 			if (var21 != null) {
 				client.anInt2087 = var6;
@@ -350,17 +350,17 @@ public class Class57 {
 			}
 		}
 
-		if (var2 == 42) {
+		if (opc == 42) {
 			client.secbuf.writeOpcode(74);
 			client.secbuf.writeInt2(var1);
 			client.secbuf.writeShortU(var3);
-			client.secbuf.method587(var0);
+			client.secbuf.writeShortA(var0);
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 5) {
+		if (opc == 5) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -375,19 +375,19 @@ public class Class57 {
 		}
 
 		int var12;
-		if ((var2 == 57) || (var2 == 1007)) {
+		if ((opc == 57) || (opc == 1007)) {
 			var22 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
 			if (var22 != null) {
 				var9 = var22.anInt1271;
 				final Widget var11 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
 				if (var11 != null) {
 					if (null != var11.anObjectArray1198) {
-						final Class124_Sub6 var16 = new Class124_Sub6();
+						final CSD var16 = new CSD();
 						var16.aClass124_Sub17_994 = var11;
 						var16.anInt997 = var3;
 						var16.aString1002 = var5;
 						var16.anObjectArray995 = var11.anObjectArray1198;
-						Class124_Sub22_Sub19_Sub3_Sub2.method1048(var16);
+						Class124_Sub22_Sub19_Sub3_Sub2.fullCS(var16);
 					}
 
 					boolean var10 = true;
@@ -474,17 +474,17 @@ public class Class57 {
 			}
 		}
 
-		if (var2 == 37) {
+		if (opc == 37) {
 			client.secbuf.writeOpcode(174);
 			client.secbuf.writeAShort(var3);
-			client.secbuf.method587(var0);
+			client.secbuf.writeShortA(var0);
 			client.secbuf.writeInt(var1);
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 18) {
+		if (opc == 18) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -492,58 +492,58 @@ public class Class57 {
 			client.anInt2194 = var0;
 			client.anInt2217 = var1;
 			client.secbuf.writeOpcode(116);
-			client.secbuf.method587(var3);
+			client.secbuf.writeShortA(var3);
 			client.secbuf.writeByteA(Class84.aBoolArray676[82] ? 1 : 0);
-			client.secbuf.method587(Class95.anInt762 + var1);
-			client.secbuf.method587(Class9.anInt102 + var0);
+			client.secbuf.writeShortA(Class95.anInt762 + var1);
+			client.secbuf.writeShortA(Class9.anInt102 + var0);
 		}
 
-		if (var2 == 40) {
+		if (opc == 40) {
 			client.secbuf.writeOpcode(1);
 			client.secbuf.readInt(var1);
 			client.secbuf.writeAShort(var3);
 			client.secbuf.writeShort(var0);
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 31) {
+		if (opc == 31) {
 			client.secbuf.writeOpcode(54);
 			client.secbuf.writeInt(var1);
 			client.secbuf.writeAShort(Class124_Sub19.anInt1299);
-			client.secbuf.method587(var3);
+			client.secbuf.writeShortA(var3);
 			client.secbuf.readInt(Class38.anInt398);
-			client.secbuf.method587(var0);
+			client.secbuf.writeShortA(var0);
 			client.secbuf.writeAShort(Class87.anInt692);
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 32) {
+		if (opc == 32) {
 			client.secbuf.writeOpcode(11);
-			client.secbuf.method588(var1);
+			client.secbuf.writeIntV1(var1);
 			client.secbuf.writeShort(var3);
 			client.secbuf.writeShort(client.anInt2138);
-			client.secbuf.method587(var0);
+			client.secbuf.writeShortA(var0);
 			client.secbuf.writeInt(Class124_Sub10.anInt1033);
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 33) {
+		if (opc == 33) {
 			client.secbuf.writeOpcode(208);
 			client.secbuf.writeShort(var3);
 			client.secbuf.writeAShort(var0);
 			client.secbuf.writeInt(var1);
 			client.anInt2010 = 0;
-			Class72.aClass124_Sub17_598 = Class10.method55(var1);
+			Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 			client.anInt2092 = var0;
 		}
 
-		if (var2 == 49) {
+		if (opc == 49) {
 			var8 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var3];
 			if (null != var8) {
 				client.anInt2087 = var6;
@@ -553,12 +553,12 @@ public class Class57 {
 				client.anInt2194 = var0;
 				client.anInt2217 = var1;
 				client.secbuf.writeOpcode(192);
-				client.secbuf.method587(var3);
+				client.secbuf.writeShortA(var3);
 				client.secbuf.writeByteA(Class84.aBoolArray676[82] ? 1 : 0);
 			}
 		}
 
-		if (var2 == 44) {
+		if (opc == 44) {
 			var8 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var3];
 			if (null != var8) {
 				client.anInt2087 = var6;
@@ -573,7 +573,7 @@ public class Class57 {
 			}
 		}
 
-		if (var2 == 15) {
+		if (opc == 15) {
 			var8 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var3];
 			if (null != var8) {
 				client.anInt2087 = var6;
@@ -590,7 +590,7 @@ public class Class57 {
 			}
 		}
 
-		if (var2 == 1003) {
+		if (opc == 1003) {
 			client.anInt2087 = var6;
 			client.anInt2088 = var7;
 			client.anInt2141 = 2;
@@ -608,7 +608,7 @@ public class Class57 {
 			}
 		}
 
-		if (var2 == 25) {
+		if (opc == 25) {
 			var22 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
 			if (null != var22) {
 				Class31.method180();
@@ -617,10 +617,10 @@ public class Class57 {
 				final int var24 = var22.anInt1271;
 				final Widget var18 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
 				if ((var18 != null) && (null != var18.anObjectArray1236)) {
-					final Class124_Sub6 var20 = new Class124_Sub6();
+					final CSD var20 = new CSD();
 					var20.aClass124_Sub17_994 = var18;
 					var20.anObjectArray995 = var18.anObjectArray1236;
-					Class124_Sub22_Sub19_Sub3_Sub2.method1048(var20);
+					Class124_Sub22_Sub19_Sub3_Sub2.fullCS(var20);
 				}
 
 				client.anInt2082 = var24;
@@ -652,7 +652,7 @@ public class Class57 {
 			}
 
 		} else {
-			if (var2 == 50) {
+			if (opc == 50) {
 				var8 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var3];
 				if (null != var8) {
 					client.anInt2087 = var6;
@@ -662,12 +662,12 @@ public class Class57 {
 					client.anInt2194 = var0;
 					client.anInt2217 = var1;
 					client.secbuf.writeOpcode(153);
-					client.secbuf.method587(var3);
+					client.secbuf.writeShortA(var3);
 					client.secbuf.writeByteN(Class84.aBoolArray676[82] ? 1 : 0);
 				}
 			}
 
-			if (var2 == 3) {
+			if (opc == 3) {
 				client.anInt2087 = var6;
 				client.anInt2088 = var7;
 				client.anInt2141 = 2;
@@ -678,10 +678,10 @@ public class Class57 {
 				client.secbuf.writeAShort(var1 + Class95.anInt762);
 				client.secbuf.writeByteN(Class84.aBoolArray676[82] ? 1 : 0);
 				client.secbuf.writeShort(Class9.anInt102 + var0);
-				client.secbuf.method587((var3 >> 14) & 32767);
+				client.secbuf.writeShortA((var3 >> 14) & 32767);
 			}
 
-			if (var2 == 11) {
+			if (opc == 11) {
 				var21 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var3];
 				if (var21 != null) {
 					client.anInt2087 = var6;
@@ -696,7 +696,7 @@ public class Class57 {
 				}
 			}
 
-			if (var2 == 2) {
+			if (opc == 2) {
 				client.anInt2087 = var6;
 				client.anInt2088 = var7;
 				client.anInt2141 = 2;
@@ -706,14 +706,14 @@ public class Class57 {
 				client.secbuf.writeOpcode(99);
 				client.secbuf.writeByteS(Class84.aBoolArray676[82] ? 1 : 0);
 				client.secbuf.writeShortU(Class9.anInt102 + var0);
-				client.secbuf.method587((var3 >> 14) & 32767);
-				client.secbuf.method587(client.anInt2138);
-				client.secbuf.method588(Class124_Sub10.anInt1033);
+				client.secbuf.writeShortA((var3 >> 14) & 32767);
+				client.secbuf.writeShortA(client.anInt2138);
+				client.secbuf.writeIntV1(Class124_Sub10.anInt1033);
 				client.secbuf.writeShortU(var1 + Class95.anInt762);
 			}
 
-			if (var2 == 24) {
-				var22 = Class10.method55(var1);
+			if (opc == 24) {
+				var22 = Class10.getwidget(var1);
 				boolean var23 = true;
 				if (var22.anInt1157 > 0)
 					var23 = Class7.method33(var22);
@@ -724,7 +724,7 @@ public class Class57 {
 				}
 			}
 
-			if (var2 == 22) {
+			if (opc == 22) {
 				client.anInt2087 = var6;
 				client.anInt2088 = var7;
 				client.anInt2141 = 2;
@@ -733,12 +733,12 @@ public class Class57 {
 				client.anInt2217 = var1;
 				client.secbuf.writeOpcode(97);
 				client.secbuf.writeByteS(Class84.aBoolArray676[82] ? 1 : 0);
-				client.secbuf.method587(Class95.anInt762 + var1);
+				client.secbuf.writeShortA(Class95.anInt762 + var1);
 				client.secbuf.writeAShort(Class9.anInt102 + var0);
 				client.secbuf.writeAShort(var3);
 			}
 
-			if (var2 == 51) {
+			if (opc == 51) {
 				var8 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var3];
 				if (null != var8) {
 					client.anInt2087 = var6;
@@ -753,7 +753,7 @@ public class Class57 {
 				}
 			}
 
-			if (var2 == 45) {
+			if (opc == 45) {
 				var8 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var3];
 				if (var8 != null) {
 					client.anInt2087 = var6;
@@ -768,7 +768,7 @@ public class Class57 {
 				}
 			}
 
-			if (var2 == 13) {
+			if (opc == 13) {
 				var21 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var3];
 				if (var21 != null) {
 					client.anInt2087 = var6;
@@ -783,17 +783,17 @@ public class Class57 {
 				}
 			}
 
-			if (var2 == 35) {
+			if (opc == 35) {
 				client.secbuf.writeOpcode(43);
 				client.secbuf.writeShortU(var3);
 				client.secbuf.writeInt2(var1);
 				client.secbuf.writeAShort(var0);
 				client.anInt2010 = 0;
-				Class72.aClass124_Sub17_598 = Class10.method55(var1);
+				Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 				client.anInt2092 = var0;
 			}
 
-			if (var2 == 26) {
+			if (opc == 26) {
 				client.secbuf.writeOpcode(180);
 
 				for (Class124_Sub7 var25 = (Class124_Sub7) client.aClass107_2143
@@ -807,23 +807,23 @@ public class Class57 {
 				}
 			}
 
-			if (var2 == 58) {
+			if (opc == 58) {
 				var22 = RuntimeException_Sub1.method1010(var1, var0, 172659367);
 				if (var22 != null) {
 					client.secbuf.writeOpcode(66);
-					client.secbuf.method587(client.anInt2138);
+					client.secbuf.writeShortA(client.anInt2138);
 					client.secbuf.writeInt(Class124_Sub10.anInt1033);
-					client.secbuf.method587(var0);
+					client.secbuf.writeShortA(var0);
 					client.secbuf.writeAShort(client.anInt2082);
 					client.secbuf.writeShortU(var22.anInt1271);
-					client.secbuf.method588(var1);
+					client.secbuf.writeIntV1(var1);
 				}
 			}
 
-			if (var2 == 29) {
+			if (opc == 29) {
 				client.secbuf.writeOpcode(125);
 				client.secbuf.writeInt(var1);
-				var22 = Class10.method55(var1);
+				var22 = Class10.getwidget(var1);
 				if ((var22.anIntArrayArray1278 != null) && (var22.anIntArrayArray1278[0][0] == 5)) {
 					var9 = var22.anIntArrayArray1278[0][1];
 					if (var22.anIntArray1241[0] != Class91.anIntArray711[var9]) {
@@ -833,7 +833,7 @@ public class Class57 {
 				}
 			}
 
-			if (var2 == 12) {
+			if (opc == 12) {
 				var21 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var3];
 				if (null != var21) {
 					client.anInt2087 = var6;
@@ -843,14 +843,14 @@ public class Class57 {
 					client.anInt2194 = var0;
 					client.anInt2217 = var1;
 					client.secbuf.writeOpcode(236);
-					client.secbuf.method587(var3);
+					client.secbuf.writeShortA(var3);
 					client.secbuf.writeByteN(Class84.aBoolArray676[82] ? 1 : 0);
 				}
 			}
 
-			if (var2 == 38) {
+			if (opc == 38) {
 				Class31.method180();
-				var22 = Class10.method55(var1);
+				var22 = Class10.getwidget(var1);
 				client.anInt2135 = 1;
 				Class87.anInt692 = var0;
 				Class38.anInt398 = var1;
@@ -862,20 +862,20 @@ public class Class57 {
 					client.aString2136 = "null";
 
 			} else {
-				if (var2 == 23)
+				if (opc == 23)
 					Class36.aClass21_380.method127(Class134.anInt906, var0, var1);
 
-				if (var2 == 39) {
+				if (opc == 39) {
 					client.secbuf.writeOpcode(77);
 					client.secbuf.writeAShort(var0);
 					client.secbuf.writeShortU(var3);
 					client.secbuf.writeInt(var1);
 					client.anInt2010 = 0;
-					Class72.aClass124_Sub17_598 = Class10.method55(var1);
+					Class72.aClass124_Sub17_598 = Class10.getwidget(var1);
 					client.anInt2092 = var0;
 				}
 
-				if (var2 == 14) {
+				if (opc == 14) {
 					var8 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var3];
 					if (var8 != null) {
 						client.anInt2087 = var6;
@@ -887,7 +887,7 @@ public class Class57 {
 						client.secbuf.writeOpcode(244);
 						client.secbuf.writeAShort(Class87.anInt692);
 						client.secbuf.writeByteA(Class84.aBoolArray676[82] ? 1 : 0);
-						client.secbuf.method587(Class124_Sub19.anInt1299);
+						client.secbuf.writeShortA(Class124_Sub19.anInt1299);
 						client.secbuf.writeInt(Class38.anInt398);
 						client.secbuf.writeAShort(var3);
 					}
@@ -895,7 +895,7 @@ public class Class57 {
 
 				if (client.anInt2135 != 0) {
 					client.anInt2135 = 0;
-					Def10.settrue(Class10.method55(Class38.anInt398));
+					Def10.settrue(Class10.getwidget(Class38.anInt398));
 				}
 
 				if (client.aBool2137)

@@ -210,7 +210,7 @@ public class Def4 extends JagMap {
 			if (var2 == ((var4.aLong874 >> 48) & 65535L))
 				var4.method450();
 
-		final Widget var5 = Class10.method55(var3);
+		final Widget var5 = Class10.getwidget(var3);
 		if (var5 != null)
 			Def10.settrue(var5);
 

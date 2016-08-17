@@ -13,10 +13,10 @@ public class Class3 {
 
 				for (final Widget var2 : var3) {
 					if (null != var2.anObjectArray1232) {
-						final Class124_Sub6 var1 = new Class124_Sub6();
+						final CSD var1 = new CSD();
 						var1.aClass124_Sub17_994 = var2;
 						var1.anObjectArray995 = var2.anObjectArray1232;
-						Class124_Sub22_Sub5.method676(var1, 2000000);
+						Class124_Sub22_Sub5.doWidgetCS(var1, 2000000);
 					}
 				}
 

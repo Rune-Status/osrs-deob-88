@@ -86,19 +86,19 @@ public final class Class124_Sub5 extends Node {
 		int var9;
 		int var12;
 		if (!client.aBool2043) {
-			var2 = client.aClass124_Sub14_Sub1_2026.readUShort();
-			var4 = client.aClass124_Sub14_Sub1_2026.readUShort();
-			var5 = (client.anInt2027 - client.aClass124_Sub14_Sub1_2026.pos) / 16;
+			var2 = client.buf.readUShort();
+			var4 = client.buf.readUShort();
+			var5 = (client.anInt2027 - client.buf.pos) / 16;
 			Def10.anIntArrayArray1466 = new int[var5][4];
 
 			for (var7 = 0; var7 < var5; ++var7)
 				for (var8 = 0; var8 < 4; ++var8)
-					Def10.anIntArrayArray1466[var7][var8] = client.aClass124_Sub14_Sub1_2026
+					Def10.anIntArrayArray1466[var7][var8] = client.buf
 							.readInt2(-562334951);
 
-			var7 = client.aClass124_Sub14_Sub1_2026.readByteU();
-			var8 = client.aClass124_Sub14_Sub1_2026.readShortU();
-			var6 = client.aClass124_Sub14_Sub1_2026.readShortS();
+			var7 = client.buf.readByteU();
+			var8 = client.buf.readShortU();
+			var6 = client.buf.readShortS();
 			Class124_Sub22_Sub19_Sub6.anIntArray1822 = new int[var5];
 			Class10.anIntArray104 = new int[var5];
 			Def9.anIntArray1335 = new int[var5];
@@ -128,32 +128,32 @@ public final class Class124_Sub5 extends Node {
 
 			Class124_Sub22_Sub21.method882(var4, var6, var7, var2, var8);
 		} else {
-			client.aClass124_Sub14_Sub1_2026.tempbit();
+			client.buf.tempbit();
 
 			for (var2 = 0; var2 < 4; ++var2)
 				for (var4 = 0; var4 < 13; ++var4)
 					for (var5 = 0; var5 < 13; ++var5) {
-						var7 = client.aClass124_Sub14_Sub1_2026.clever(1);
+						var7 = client.buf.clever(1);
 						if (var7 == 1)
-							client.anIntArrayArrayArray1994[var2][var4][var5] = client.aClass124_Sub14_Sub1_2026
+							client.anIntArrayArrayArray1994[var2][var4][var5] = client.buf
 									.clever(26);
 						else
 							client.anIntArrayArrayArray1994[var2][var4][var5] = -1;
 					}
 
-			client.aClass124_Sub14_Sub1_2026.bitinit();
-			var2 = (client.anInt2027 - client.aClass124_Sub14_Sub1_2026.pos) / 16;
+			client.buf.bitinit();
+			var2 = (client.anInt2027 - client.buf.pos) / 16;
 			Def10.anIntArrayArray1466 = new int[var2][4];
 
 			for (var4 = 0; var4 < var2; ++var4)
 				for (var5 = 0; var5 < 4; ++var5)
-					Def10.anIntArrayArray1466[var4][var5] = client.aClass124_Sub14_Sub1_2026.method590();
+					Def10.anIntArrayArray1466[var4][var5] = client.buf.method590();
 
-			var4 = client.aClass124_Sub14_Sub1_2026.readShortS();
-			var5 = client.aClass124_Sub14_Sub1_2026.readShortU();
-			var7 = client.aClass124_Sub14_Sub1_2026.readByteU();
-			var8 = client.aClass124_Sub14_Sub1_2026.readShortS();
-			var6 = client.aClass124_Sub14_Sub1_2026.readShortU();
+			var4 = client.buf.readShortS();
+			var5 = client.buf.readShortU();
+			var7 = client.buf.readByteU();
+			var8 = client.buf.readShortS();
+			var6 = client.buf.readShortU();
 			Class124_Sub22_Sub19_Sub6.anIntArray1822 = new int[var2];
 			Class10.anIntArray104 = new int[var2];
 			Def9.anIntArray1335 = new int[var2];

@@ -49,7 +49,7 @@ public class Class49 {
 				client.secbuf.pos = 0;
 				client.secbuf.writeByte(14);
 				Class73.aClass78_609.method323(client.secbuf.backing, 0, 1);
-				client.aClass124_Sub14_Sub1_2026.pos = 0;
+				client.buf.pos = 0;
 				client.anInt2016 = 3;
 			}
 
@@ -73,7 +73,7 @@ public class Class49 {
 					return;
 				}
 
-				client.aClass124_Sub14_Sub1_2026.pos = 0;
+				client.buf.pos = 0;
 				client.anInt2016 = 5;
 			}
 
@@ -174,7 +174,7 @@ public class Class49 {
 				for (var6 = 0; var6 < 4; ++var6)
 					var1[var6] += 50;
 
-				client.aClass124_Sub14_Sub1_2026.isa(var1);
+				client.buf.isa(var1);
 				client.anInt2016 = 6;
 			}
 
@@ -187,8 +187,8 @@ public class Class49 {
 				else {
 					if ((var0 == 15) && (client.anInt1992 == 40)) {
 						client.secbuf.pos = 0;
-						client.aClass124_Sub14_Sub1_2026.pos = 0;
-						client.anInt2028 = -1;
+						client.buf.pos = 0;
+						client.pktId = -1;
 						client.anInt2017 = 1;
 						client.anInt2032 = -1;
 						client.anInt2086 = -1;
@@ -247,13 +247,13 @@ public class Class49 {
 			} else {
 				if ((client.anInt2016 == 9) && (Class73.aClass78_609.method322() >= 13)) {
 					final boolean var15 = Class73.aClass78_609.method319() == 1;
-					Class73.aClass78_609.method320(client.aClass124_Sub14_Sub1_2026.backing, 0, 4);
-					client.aClass124_Sub14_Sub1_2026.pos = 0;
+					Class73.aClass78_609.method320(client.buf.backing, 0, 4);
+					client.buf.pos = 0;
 					if (var15) {
-						var2 = client.aClass124_Sub14_Sub1_2026.readOpcode() << 24;
-						var2 |= client.aClass124_Sub14_Sub1_2026.readOpcode() << 16;
-						var2 |= client.aClass124_Sub14_Sub1_2026.readOpcode() << 8;
-						var2 |= client.aClass124_Sub14_Sub1_2026.readOpcode();
+						var2 = client.buf.readOpcode() << 24;
+						var2 |= client.buf.readOpcode() << 16;
+						var2 |= client.buf.readOpcode() << 8;
+						var2 |= client.buf.readOpcode();
 						var3 = Class47.method232(Class4.aString44);
 						if ((Class57.aClass22_538.aLinkedHashMap252.size() >= 10)
 								&& !Class57.aClass22_538.aLinkedHashMap252.containsKey(Integer.valueOf(var3))) {
@@ -272,12 +272,12 @@ public class Class49 {
 					client.anInt2106 <<= 8;
 					client.anInt2106 += Class73.aClass78_609.method319();
 					client.anInt2107 = Class73.aClass78_609.method319();
-					Class73.aClass78_609.method320(client.aClass124_Sub14_Sub1_2026.backing, 0, 1);
-					client.aClass124_Sub14_Sub1_2026.pos = 0;
-					client.anInt2028 = client.aClass124_Sub14_Sub1_2026.readOpcode();
-					Class73.aClass78_609.method320(client.aClass124_Sub14_Sub1_2026.backing, 0, 2);
-					client.aClass124_Sub14_Sub1_2026.pos = 0;
-					client.anInt2027 = client.aClass124_Sub14_Sub1_2026.readShortU();
+					Class73.aClass78_609.method320(client.buf.backing, 0, 1);
+					client.buf.pos = 0;
+					client.pktId = client.buf.readOpcode();
+					Class73.aClass78_609.method320(client.buf.backing, 0, 2);
+					client.buf.pos = 0;
+					client.anInt2027 = client.buf.readShortU();
 					client var9;
 					if (client.anInt2107 == 1)
 						try {
@@ -299,32 +299,32 @@ public class Class49 {
 
 				if (client.anInt2016 == 10) {
 					if (Class73.aClass78_609.method322() >= client.anInt2027) {
-						client.aClass124_Sub14_Sub1_2026.pos = 0;
-						Class73.aClass78_609.method320(client.aClass124_Sub14_Sub1_2026.backing, 0,
+						client.buf.pos = 0;
+						Class73.aClass78_609.method320(client.buf.backing, 0,
 								client.anInt2027);
 						Class62.method276();
 						Class124_Sub13.anInt1071 = -1;
 						Class124_Sub5.method515(false);
-						client.anInt2028 = -1;
+						client.pktId = -1;
 					}
 
 				} else {
 					if ((client.anInt2016 == 11) && (Class73.aClass78_609.method322() >= 2)) {
-						client.aClass124_Sub14_Sub1_2026.pos = 0;
-						Class73.aClass78_609.method320(client.aClass124_Sub14_Sub1_2026.backing, 0, 2);
-						client.aClass124_Sub14_Sub1_2026.pos = 0;
-						Class54.anInt504 = client.aClass124_Sub14_Sub1_2026.readShortU();
+						client.buf.pos = 0;
+						Class73.aClass78_609.method320(client.buf.backing, 0, 2);
+						client.buf.pos = 0;
+						Class54.anInt504 = client.buf.readShortU();
 						client.anInt2016 = 12;
 					}
 
 					if ((client.anInt2016 == 12) && (Class73.aClass78_609.method322() >= Class54.anInt504)) {
-						client.aClass124_Sub14_Sub1_2026.pos = 0;
-						Class73.aClass78_609.method320(client.aClass124_Sub14_Sub1_2026.backing, 0,
+						client.buf.pos = 0;
+						Class73.aClass78_609.method320(client.buf.backing, 0,
 								Class54.anInt504);
-						client.aClass124_Sub14_Sub1_2026.pos = 0;
-						final String var16 = client.aClass124_Sub14_Sub1_2026.readStr2();
-						final String var10 = client.aClass124_Sub14_Sub1_2026.readStr2();
-						final String var20 = client.aClass124_Sub14_Sub1_2026.readStr2();
+						client.buf.pos = 0;
+						final String var16 = client.buf.readStr2();
+						final String var10 = client.buf.readStr2();
+						final String var20 = client.buf.readStr2();
 						Def13.method734(var16, var10, var20);
 						Class124_Sub5.method516(10);
 					}
@@ -477,7 +477,7 @@ public class Class49 {
 		var3.anInt1008 = var2;
 		client.aClass107_2143.method412(var3, var0);
 		Class32.method183(var1);
-		final Widget var4 = Class10.method55(var0);
+		final Widget var4 = Class10.getwidget(var0);
 		Def10.settrue(var4);
 		if (null != client.aClass124_Sub17_2042) {
 			Def10.settrue(client.aClass124_Sub17_2042);

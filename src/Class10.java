@@ -6,7 +6,7 @@ public class Class10 {
 	CacheArch aClass94_107;
 	CacheArch aClass94_105;
 
-	public static Widget method55(final int var0) {
+	public static Widget getwidget(final int var0) {
 		try {
 		final int var1 = var0 >> 16;
 		final int var3 = var0 & '\uffff';

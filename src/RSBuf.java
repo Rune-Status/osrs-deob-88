@@ -415,12 +415,12 @@ public class RSBuf extends Node {
 		backing[++pos - 1] = (byte) (var1 >> 24);
 	}
 
-	public void method587(final int var1) {
+	public void writeShortA(final int var1) {
 		backing[++pos - 1] = (byte) (var1 >> 8);
 		backing[++pos - 1] = (byte) (var1 + 128);
 	}
 
-	public void method588(final int var1) {
+	public void writeIntV1(final int var1) {
 		backing[++pos - 1] = (byte) (var1 >> 16);
 		backing[++pos - 1] = (byte) (var1 >> 24);
 		backing[++pos - 1] = (byte) var1;
@@ -459,7 +459,7 @@ public class RSBuf extends Node {
 		return var1;
 	}
 
-	public int method594() {
+	public int readByteA() {
 		return (backing[++pos - 1] - 128) & 255;
 	}
 
@@ -535,7 +535,7 @@ public class RSBuf extends Node {
 		}
 	}
 
-	public int method601() {
+	public int readcompact4() {
 		final int var1 = backing[pos] & 255;
 		return var1 >= 128 ? readShortU() - '\uc000' : readByteU() - 64;
 	}
@@ -551,7 +551,7 @@ public class RSBuf extends Node {
 		backing[++pos - 1] = (byte) (var1 >> 16);
 	}
 
-	public int method604() {
+	public int readUByteS() {
 		return (128 - backing[++pos - 1]) & 255;
 	}
 }

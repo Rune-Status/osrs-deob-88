@@ -11,7 +11,7 @@ public class Class64 {
 	}
 
 	static void method286(final Widget var0) {
-		final Widget var1 = var0.anInt1259 == -1 ? null : Class10.method55(var0.anInt1259);
+		final Widget var1 = var0.anInt1259 == -1 ? null : Class10.getwidget(var0.anInt1259);
 		int var2;
 		int var3;
 		if (null == var1) {

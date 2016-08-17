@@ -531,7 +531,7 @@ public class Widget extends Node {
 		}
 	}
 
-	public void method624(final int var1, final int var2) {
+	public void idk(final int var1, final int var2) {
 		int var3 = anIntArray1269[var2];
 		anIntArray1269[var2] = anIntArray1269[var1];
 		anIntArray1269[var1] = var3;
@@ -767,7 +767,7 @@ public class Widget extends Node {
 
 				if (!var4) {
 					var2 = (int) var0.aLong874;
-					final Widget var5 = Class10.method55(var2);
+					final Widget var5 = Class10.getwidget(var2);
 					if (null != var5)
 						Def10.settrue(var5);
 				}

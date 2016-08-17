@@ -286,7 +286,7 @@ public class Class19 {
 				break;
 
 			anIntArray167[var3] = var4;
-			anIntArray171[var3] = var1.method601();
+			anIntArray171[var3] = var1.readcompact4();
 			anIntArray172[var3] = var1.getsmart((byte) -12);
 		}
 

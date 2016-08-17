@@ -66,9 +66,9 @@ public final class client extends Applet_Sub1 {
 	static int[] anIntArray2023;
 	static Outbuf secbuf;
 	static Outbuf loginbuf;
-	static Outbuf aClass124_Sub14_Sub1_2026;
+	static Outbuf buf;
 	static int anInt2027;
-	static int anInt2028;
+	static int pktId;
 	static int anInt2193;
 	static int anInt2025;
 	static int anInt2017;
@@ -191,11 +191,11 @@ public final class client extends Applet_Sub1 {
 	static boolean aBool2021;
 	static boolean aBool2153;
 	static Widget aClass124_Sub17_2154;
-	static Widget aClass124_Sub17_2155;
+	static Widget currentWid;
 	static Widget aClass124_Sub17_2199;
 	static int anInt2157;
 	static int anInt2145;
-	static Widget aClass124_Sub17_2159;
+	static Widget wid;
 	static boolean aBool2160;
 	static int anInt2161;
 	static int anInt2162;
@@ -589,8 +589,8 @@ public final class client extends Applet_Sub1 {
 
 	@Override
 	protected final void method1057(final int var1) {
-		if (Class124_Sub6.aClass41_1006.method210())
-			Class124_Sub6.aClass41_1006.method207();
+		if (CSD.aClass41_1006.method210())
+			CSD.aClass41_1006.method207();
 
 		if (null != Class47.aClass29_467)
 			Class47.aClass29_467.aBool317 = false;
@@ -778,14 +778,14 @@ public final class client extends Applet_Sub1 {
 								Class92.anInt727 += var11;
 								if (var10 == ISAAC.buf.pos) {
 									if (16711935L == Class28.aClass124_Sub22_Sub21_311.aLong874) {
-										Class124_Sub6.aClass124_Sub14_1007 = ISAAC.buf;
+										CSD.aClass124_Sub14_1007 = ISAAC.buf;
 
 										for (var12 = 0; var12 < 256; ++var12) {
 											final Class94_Sub1 var19 = Class92.aClass94_Sub1Array729[var12];
 											if (var19 != null) {
-												Class124_Sub6.aClass124_Sub14_1007.pos = 5 + (var12 * 8);
-												var14 = Class124_Sub6.aClass124_Sub14_1007.readInt2(2103441446);
-												final int var20 = Class124_Sub6.aClass124_Sub14_1007
+												CSD.aClass124_Sub14_1007.pos = 5 + (var12 * 8);
+												var14 = CSD.aClass124_Sub14_1007.readInt2(2103441446);
+												final int var20 = CSD.aClass124_Sub14_1007
 														.readInt2(1026071084);
 												var19.method617(var14, var20);
 											}
@@ -1068,9 +1068,9 @@ public final class client extends Applet_Sub1 {
 		anIntArray2023 = new int['\u8000'];
 		secbuf = new Outbuf(5000);
 		loginbuf = new Outbuf(5000);
-		aClass124_Sub14_Sub1_2026 = new Outbuf(5000);
+		buf = new Outbuf(5000);
 		anInt2027 = 0;
-		anInt2028 = 0;
+		pktId = 0;
 		anInt2193 = 0;
 		anInt2025 = 0;
 		anInt2017 = 0;
@@ -1198,11 +1198,11 @@ public final class client extends Applet_Sub1 {
 		aBool2021 = false;
 		aBool2153 = false;
 		aClass124_Sub17_2154 = null;
-		aClass124_Sub17_2155 = null;
+		currentWid = null;
 		aClass124_Sub17_2199 = null;
 		anInt2157 = 0;
 		anInt2145 = 0;
-		aClass124_Sub17_2159 = null;
+		wid = null;
 		aBool2160 = false;
 		anInt2161 = -1;
 		anInt2162 = -1;
@@ -1397,7 +1397,7 @@ public final class client extends Applet_Sub1 {
 		Class45.anInt445 = var0 - var12;
 		Class2.anInt14 = var1 - var9;
 		Class48.anInt479 = var2 - var7;
-		Class124_Sub6.anInt1003 = var3;
+		CSD.anInt1003 = var3;
 		Class27.anInt301 = var4;
 	}
 

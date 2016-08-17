@@ -131,7 +131,7 @@ public class Def19 extends JagMap {
 				var24 = Class134.anInt906;
 			else {
 				var20 = 3;
-				if (Class124_Sub6.anInt1003 < 310) {
+				if (CSD.anInt1003 < 310) {
 					var15 = Class45.anInt445 >> 7;
 					var6 = Class48.anInt479 >> 7;
 					var16 = Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 >> 7;
@@ -217,7 +217,7 @@ public class Def19 extends JagMap {
 		var24 = Class45.anInt445;
 		var20 = Class2.anInt14;
 		var15 = Class48.anInt479;
-		var6 = Class124_Sub6.anInt1003;
+		var6 = CSD.anInt1003;
 		var16 = Class27.anInt301;
 
 		for (var7 = 0; var7 < 5; ++var7)
@@ -238,12 +238,12 @@ public class Def19 extends JagMap {
 					Class27.anInt301 = (Class27.anInt301 + var4) & 2047;
 
 				if (var7 == 4) {
-					Class124_Sub6.anInt1003 += var4;
-					if (Class124_Sub6.anInt1003 < 128)
-						Class124_Sub6.anInt1003 = 128;
+					CSD.anInt1003 += var4;
+					if (CSD.anInt1003 < 128)
+						CSD.anInt1003 = 128;
 
-					if (Class124_Sub6.anInt1003 > 383)
-						Class124_Sub6.anInt1003 = 383;
+					if (CSD.anInt1003 > 383)
+						CSD.anInt1003 = 383;
 				}
 			}
 
@@ -269,7 +269,7 @@ public class Def19 extends JagMap {
 		Def15.method751();
 		var10 = Class124_Sub22_Sub16_Sub3.anInt1834;
 		Class124_Sub22_Sub16_Sub3.anInt1834 = client.anInt2249;
-		Class36.aClass21_380.method135(Class45.anInt445, Class2.anInt14, Class48.anInt479, Class124_Sub6.anInt1003,
+		Class36.aClass21_380.method135(Class45.anInt445, Class2.anInt14, Class48.anInt479, CSD.anInt1003,
 				Class27.anInt301, var8);
 		Class124_Sub22_Sub16_Sub3.anInt1834 = var10;
 		Def15.method751();
@@ -421,7 +421,7 @@ public class Def19 extends JagMap {
 		Class45.anInt445 = var24;
 		Class2.anInt14 = var20;
 		Class48.anInt479 = var15;
-		Class124_Sub6.anInt1003 = var6;
+		CSD.anInt1003 = var6;
 		Class27.anInt301 = var16;
 		if (client.aBool1993) {
 			final byte var32 = 0;

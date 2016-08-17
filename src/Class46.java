@@ -26,7 +26,7 @@ public final class Class46 {
 			final int var2 = client.anIntArray2140[var0];
 			final String var5 = client.aStringArray2129[var0];
 			final String var3 = client.aStringArray2130[var0];
-			Class57.method267(var4, var1, var6, var2, var5, var3, Class81.anInt658, Class81.anInt655);
+			Class57.packetFor(var4, var1, var6, var2, var5, var3, Class81.anInt658, Class81.anInt655);
 		}
 	}
 

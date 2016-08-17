@@ -191,7 +191,7 @@ public class Class6 {
 
 	static int method32(final int var0, final int var1) {
 		int var2;
-		for (var2 = (int) Math.pow(var0, 1.0D / var1) + 1; Class124_Sub6.method519(var2, var1) > var0; --var2)
+		for (var2 = (int) Math.pow(var0, 1.0D / var1) + 1; CSD.method519(var2, var1) > var0; --var2)
 			;
 
 		return var2;

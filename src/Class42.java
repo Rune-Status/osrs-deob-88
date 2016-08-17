@@ -74,7 +74,7 @@ public final class Class42 {
 					var19 = var10 < var5 ? var10 : var5;
 				}
 
-				if (var11 == client.aClass124_Sub17_2155) {
+				if (var11 == client.currentWid) {
 					client.aBool2163 = true;
 					client.anInt2200 = var21;
 					client.anInt2165 = var9;
@@ -123,7 +123,7 @@ public final class Class42 {
 										client.secbuf.writeOpcode(165); // walking
 										client.secbuf.writeByte(18);
 										client.secbuf.writeAShort(var26 + Class95.anInt762);
-										client.secbuf.method587(var30 + Class9.anInt102);
+										client.secbuf.writeShortA(var30 + Class9.anInt102);
 										client.secbuf.writeByteS(
 												Class84.aBoolArray676[82] ? (Class84.aBoolArray676[81] ? 2 : 1) : 0);
 										client.secbuf.writeByte(var22);
@@ -165,8 +165,8 @@ public final class Class42 {
 									if ((var25.anInt1008 == 0) && (Class81.anInt652 >= var16)
 											&& (Class81.anInt653 >= var17) && (Class81.anInt652 < var18)
 											&& (Class81.anInt653 < var19) && !client.aBool2240 && !client.aBool2021) {
-										for (Class124_Sub6 var31 = (Class124_Sub6) client.aClass111_2181
-												.method428(); var31 != null; var31 = (Class124_Sub6) client.aClass111_2181
+										for (CSD var31 = (CSD) client.aClass111_2181
+												.method428(); var31 != null; var31 = (CSD) client.aClass111_2181
 														.method430())
 											if (var31.aBool996) {
 												var31.method450();
@@ -174,7 +174,7 @@ public final class Class42 {
 											}
 
 										if (Class35.anInt375 == 0) {
-											client.aClass124_Sub17_2155 = null;
+											client.currentWid = null;
 											client.aClass124_Sub17_2199 = null;
 										}
 
@@ -194,20 +194,20 @@ public final class Class42 {
 							}
 
 							if (var11.aBool1152) {
-								Class124_Sub6 var36;
+								CSD var36;
 								if (!var11.aBool1260) {
 									if (var11.aBool1285 && (Class81.anInt652 >= var16) && (Class81.anInt653 >= var17)
 											&& (Class81.anInt652 < var18) && (Class81.anInt653 < var19))
-										for (var36 = (Class124_Sub6) client.aClass111_2181
-												.method428(); null != var36; var36 = (Class124_Sub6) client.aClass111_2181
+										for (var36 = (CSD) client.aClass111_2181
+												.method428(); null != var36; var36 = (CSD) client.aClass111_2181
 														.method430())
 											if (var36.aBool996
 													&& (var36.aClass124_Sub17_994.anObjectArray1252 == var36.anObjectArray995))
 												var36.method450();
 								} else if ((Class81.anInt652 >= var16) && (Class81.anInt653 >= var17)
 										&& (Class81.anInt652 < var18) && (Class81.anInt653 < var19)) {
-									for (var36 = (Class124_Sub6) client.aClass111_2181
-											.method428(); var36 != null; var36 = (Class124_Sub6) client.aClass111_2181
+									for (var36 = (CSD) client.aClass111_2181
+											.method428(); var36 != null; var36 = (CSD) client.aClass111_2181
 													.method430())
 										if (var36.aBool996) {
 											var36.method450();
@@ -215,7 +215,7 @@ public final class Class42 {
 										}
 
 									if (Class35.anInt375 == 0) {
-										client.aClass124_Sub17_2155 = null;
+										client.currentWid = null;
 										client.aClass124_Sub17_2199 = null;
 									}
 
@@ -247,12 +247,12 @@ public final class Class42 {
 								if (var24)
 									Class35.method194(var11, Class81.anInt658 - var21, Class81.anInt655 - var9);
 
-								if ((null != client.aClass124_Sub17_2155) && (var11 != client.aClass124_Sub17_2155)
+								if ((null != client.currentWid) && (var11 != client.currentWid)
 										&& var34) {
 									var27 = Class124_Sub22_Sub19_Sub6.method963(var11);
 									final boolean var12 = ((var27 >> 20) & 1) != 0;
 									if (var12)
-										client.aClass124_Sub17_2159 = var11;
+										client.wid = var11;
 								}
 
 								if (var11 == client.aClass124_Sub17_2199) {
@@ -262,9 +262,9 @@ public final class Class42 {
 								}
 
 								if (var11.aBool1195) {
-									Class124_Sub6 var20;
+									CSD var20;
 									if (var34 && (client.anInt2183 != 0) && (var11.anObjectArray1252 != null)) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aBool996 = true;
 										var20.aClass124_Sub17_994 = var11;
 										var20.anInt1004 = client.anInt2183;
@@ -272,7 +272,7 @@ public final class Class42 {
 										client.aClass111_2181.method424(var20);
 									}
 
-									if ((null != client.aClass124_Sub17_2155) || (Class32.aClass124_Sub17_343 != null)
+									if ((null != client.currentWid) || (Class32.aClass124_Sub17_343 != null)
 											|| client.aBool2240) {
 										var24 = false;
 										var35 = false;
@@ -282,7 +282,7 @@ public final class Class42 {
 									if (!var11.aBool1277 && var24) {
 										var11.aBool1277 = true;
 										if (var11.anObjectArray1233 != null) {
-											var20 = new Class124_Sub6();
+											var20 = new CSD();
 											var20.aBool996 = true;
 											var20.aClass124_Sub17_994 = var11;
 											var20.anInt998 = Class81.anInt658 - var21;
@@ -293,7 +293,7 @@ public final class Class42 {
 									}
 
 									if (var11.aBool1277 && var35 && (var11.anObjectArray1234 != null)) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aBool996 = true;
 										var20.aClass124_Sub17_994 = var11;
 										var20.anInt998 = Class81.anInt652 - var21;
@@ -305,7 +305,7 @@ public final class Class42 {
 									if (var11.aBool1277 && !var35) {
 										var11.aBool1277 = false;
 										if (null != var11.anObjectArray1235) {
-											var20 = new Class124_Sub6();
+											var20 = new CSD();
 											var20.aBool996 = true;
 											var20.aClass124_Sub17_994 = var11;
 											var20.anInt998 = Class81.anInt652 - var21;
@@ -316,7 +316,7 @@ public final class Class42 {
 									}
 
 									if (var35 && (null != var11.anObjectArray1194)) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aBool996 = true;
 										var20.aClass124_Sub17_994 = var11;
 										var20.anInt998 = Class81.anInt652 - var21;
@@ -328,7 +328,7 @@ public final class Class42 {
 									if (!var11.aBool1276 && var34) {
 										var11.aBool1276 = true;
 										if (null != var11.anObjectArray1226) {
-											var20 = new Class124_Sub6();
+											var20 = new CSD();
 											var20.aBool996 = true;
 											var20.aClass124_Sub17_994 = var11;
 											var20.anInt998 = Class81.anInt652 - var21;
@@ -339,7 +339,7 @@ public final class Class42 {
 									}
 
 									if (var11.aBool1276 && var34 && (null != var11.anObjectArray1238)) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aBool996 = true;
 										var20.aClass124_Sub17_994 = var11;
 										var20.anInt998 = Class81.anInt652 - var21;
@@ -351,7 +351,7 @@ public final class Class42 {
 									if (var11.aBool1276 && !var34) {
 										var11.aBool1276 = false;
 										if (null != var11.anObjectArray1160) {
-											var20 = new Class124_Sub6();
+											var20 = new CSD();
 											var20.aBool996 = true;
 											var20.aClass124_Sub17_994 = var11;
 											var20.anInt998 = Class81.anInt652 - var21;
@@ -362,13 +362,13 @@ public final class Class42 {
 									}
 
 									if (null != var11.anObjectArray1250) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aClass124_Sub17_994 = var11;
 										var20.anObjectArray995 = var11.anObjectArray1250;
 										client.aClass111_2182.method424(var20);
 									}
 
-									Class124_Sub6 var15;
+									CSD var15;
 									if ((var11.anObjectArray1244 != null) && (client.anInt2169 > var11.anInt1279)) {
 										if ((var11.anIntArray1281 != null)
 												&& ((client.anInt2169 - var11.anInt1279) <= 32))
@@ -377,7 +377,7 @@ public final class Class42 {
 
 												for (var14 = 0; var14 < var11.anIntArray1281.length; ++var14)
 													if (var11.anIntArray1281[var14] == var27) {
-														var15 = new Class124_Sub6();
+														var15 = new CSD();
 														var15.aClass124_Sub17_994 = var11;
 														var15.anObjectArray995 = var11.anObjectArray1244;
 														client.aClass111_2181.method424(var15);
@@ -385,7 +385,7 @@ public final class Class42 {
 													}
 											}
 										else {
-											var20 = new Class124_Sub6();
+											var20 = new CSD();
 											var20.aClass124_Sub17_994 = var11;
 											var20.anObjectArray995 = var11.anObjectArray1244;
 											client.aClass111_2181.method424(var20);
@@ -402,7 +402,7 @@ public final class Class42 {
 
 												for (var14 = 0; var14 < var11.anIntArray1282.length; ++var14)
 													if (var27 == var11.anIntArray1282[var14]) {
-														var15 = new Class124_Sub6();
+														var15 = new CSD();
 														var15.aClass124_Sub17_994 = var11;
 														var15.anObjectArray995 = var11.anObjectArray1246;
 														client.aClass111_2181.method424(var15);
@@ -410,7 +410,7 @@ public final class Class42 {
 													}
 											}
 										else {
-											var20 = new Class124_Sub6();
+											var20 = new CSD();
 											var20.aClass124_Sub17_994 = var11;
 											var20.anObjectArray995 = var11.anObjectArray1246;
 											client.aClass111_2181.method424(var20);
@@ -427,7 +427,7 @@ public final class Class42 {
 
 												for (var14 = 0; var14 < var11.anIntArray1249.length; ++var14)
 													if (var27 == var11.anIntArray1249[var14]) {
-														var15 = new Class124_Sub6();
+														var15 = new CSD();
 														var15.aClass124_Sub17_994 = var11;
 														var15.anObjectArray995 = var11.anObjectArray1248;
 														client.aClass111_2181.method424(var15);
@@ -435,7 +435,7 @@ public final class Class42 {
 													}
 											}
 										else {
-											var20 = new Class124_Sub6();
+											var20 = new CSD();
 											var20.aClass124_Sub17_994 = var11;
 											var20.anObjectArray995 = var11.anObjectArray1248;
 											client.aClass111_2181.method424(var20);
@@ -445,42 +445,42 @@ public final class Class42 {
 									}
 
 									if ((client.anInt2097 > var11.anInt1162) && (var11.anObjectArray1144 != null)) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aClass124_Sub17_994 = var11;
 										var20.anObjectArray995 = var11.anObjectArray1144;
 										client.aClass111_2181.method424(var20);
 									}
 
 									if ((client.anInt2175 > var11.anInt1162) && (null != var11.anObjectArray1255)) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aClass124_Sub17_994 = var11;
 										var20.anObjectArray995 = var11.anObjectArray1255;
 										client.aClass111_2181.method424(var20);
 									}
 
 									if ((client.anInt2176 > var11.anInt1162) && (null != var11.anObjectArray1231)) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aClass124_Sub17_994 = var11;
 										var20.anObjectArray995 = var11.anObjectArray1231;
 										client.aClass111_2181.method424(var20);
 									}
 
 									if ((client.anInt2177 > var11.anInt1162) && (null != var11.anObjectArray1261)) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aClass124_Sub17_994 = var11;
 										var20.anObjectArray995 = var11.anObjectArray1261;
 										client.aClass111_2181.method424(var20);
 									}
 
 									if ((client.anInt2178 > var11.anInt1162) && (var11.anObjectArray1262 != null)) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aClass124_Sub17_994 = var11;
 										var20.anObjectArray995 = var11.anObjectArray1262;
 										client.aClass111_2181.method424(var20);
 									}
 
 									if ((client.anInt2179 > var11.anInt1162) && (var11.anObjectArray1253 != null)) {
-										var20 = new Class124_Sub6();
+										var20 = new CSD();
 										var20.aClass124_Sub17_994 = var11;
 										var20.anObjectArray995 = var11.anObjectArray1253;
 										client.aClass111_2181.method424(var20);
@@ -489,7 +489,7 @@ public final class Class42 {
 									var11.anInt1162 = client.anInt2067;
 									if (var11.anObjectArray1254 != null)
 										for (var33 = 0; var33 < client.anInt2205; ++var33) {
-											final Class124_Sub6 var32 = new Class124_Sub6();
+											final CSD var32 = new CSD();
 											var32.aClass124_Sub17_994 = var11;
 											var32.anInt999 = client.anIntArray2241[var33];
 											var32.anInt993 = client.anIntArray2059[var33];
@@ -499,7 +499,7 @@ public final class Class42 {
 								}
 							}
 
-							if (!var11.aBool1152 && (null == client.aClass124_Sub17_2155)
+							if (!var11.aBool1152 && (null == client.currentWid)
 									&& (null == Class32.aClass124_Sub17_343) && !client.aBool2240) {
 								if (((var11.anInt1266 >= 0) || (var11.anInt1242 != 0)) && (Class81.anInt652 >= var16)
 										&& (Class81.anInt653 >= var17) && (Class81.anInt652 < var18)
@@ -511,7 +511,7 @@ public final class Class42 {
 
 								if ((var11.anInt1191 == 8) && (Class81.anInt652 >= var16) && (Class81.anInt653 >= var17)
 										&& (Class81.anInt652 < var18) && (Class81.anInt653 < var19))
-									Class124_Sub6.aClass124_Sub17_1005 = var11;
+									CSD.aClass124_Sub17_1005 = var11;
 
 								if (var11.anInt1177 > var11.anInt1169) {
 									var13 = var11.anInt1168 + var21;

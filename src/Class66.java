@@ -43,7 +43,7 @@ public abstract class Class66 {
 
 	static final void method294() {
 		int var0 = 64 + (Class22.anInt251 * 128);
-		int var2 = 64 + (Class124_Sub6.anInt992 * 128);
+		int var2 = 64 + (CSD.anInt992 * 128);
 		int var1 = Class63.method285(var0, var2, Class134.anInt906) - Class64.anInt560;
 		if (Class45.anInt445 < var0) {
 			Class45.anInt445 += Class27.anInt305 + (((var0 - Class45.anInt445) * Class47.anInt468) / 1000);
@@ -96,18 +96,18 @@ public abstract class Class66 {
 		if (var3 > 383)
 			var3 = 383;
 
-		if (Class124_Sub6.anInt1003 < var3) {
-			Class124_Sub6.anInt1003 += ((Class49.anInt482 * (var3 - Class124_Sub6.anInt1003)) / 1000)
+		if (CSD.anInt1003 < var3) {
+			CSD.anInt1003 += ((Class49.anInt482 * (var3 - CSD.anInt1003)) / 1000)
 					+ Class70.anInt583;
-			if (Class124_Sub6.anInt1003 > var3)
-				Class124_Sub6.anInt1003 = var3;
+			if (CSD.anInt1003 > var3)
+				CSD.anInt1003 = var3;
 		}
 
-		if (Class124_Sub6.anInt1003 > var3) {
-			Class124_Sub6.anInt1003 -= Class70.anInt583
-					+ ((Class49.anInt482 * (Class124_Sub6.anInt1003 - var3)) / 1000);
-			if (Class124_Sub6.anInt1003 < var3)
-				Class124_Sub6.anInt1003 = var3;
+		if (CSD.anInt1003 > var3) {
+			CSD.anInt1003 -= Class70.anInt583
+					+ ((Class49.anInt482 * (CSD.anInt1003 - var3)) / 1000);
+			if (CSD.anInt1003 < var3)
+				CSD.anInt1003 = var3;
 		}
 
 		int var9 = var10 - Class27.anInt301;

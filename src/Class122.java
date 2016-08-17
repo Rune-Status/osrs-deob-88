@@ -47,7 +47,7 @@ public class Class122 {
 					if (var6 == 4) {
 						var9 = var2[var4++] << 16;
 						var9 += var2[var4++];
-						var10 = Class10.method55(var9);
+						var10 = Class10.getwidget(var9);
 						var11 = var2[var4++];
 						if ((var11 != -1) && (!Def10.method724(var11).aBool1478 || client.aBool1988))
 							for (var12 = 0; var12 < var10.anIntArray1269.length; ++var12)
@@ -75,7 +75,7 @@ public class Class122 {
 					if (var6 == 10) {
 						var9 = var2[var4++] << 16;
 						var9 += var2[var4++];
-						var10 = Class10.method55(var9);
+						var10 = Class10.getwidget(var9);
 						var11 = var2[var4++];
 						if ((var11 != -1) && (!Def10.method724(var11).aBool1478 || client.aBool1988))
 							for (var12 = 0; var12 < var10.anIntArray1269.length; ++var12)

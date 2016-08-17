@@ -391,7 +391,7 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 
 	}
 
-	static void method1048(final Class124_Sub6 var0) {
-		Class124_Sub22_Sub5.method676(var0, 200000);
+	static void fullCS(final CSD var0) {
+		Class124_Sub22_Sub5.doWidgetCS(var0, 200000);
 	}
 }

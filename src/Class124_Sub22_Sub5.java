@@ -93,7 +93,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 		return var0 & 255;
 	}
 
-	static void method676(final Class124_Sub6 var0, final int var1) {
+	static void doWidgetCS(final CSD var0, final int var1) {
 		final Object[] var2 = var0.anObjectArray995;
 		final int var3 = ((Integer) var2[0]).intValue();
 		Somet2 var4 = client.method574(var3);
@@ -343,14 +343,14 @@ public class Class124_Sub22_Sub5 extends JagMap {
 						}
 
 						if (opc == 42) {
-							Class2.anIntArray8[var5++] = Class124_Sub6.aClass41_1006.method208(var9[var7]);
+							Class2.anIntArray8[var5++] = CSD.aClass41_1006.method208(var9[var7]);
 							continue;
 						}
 
 						if (opc == 43) {
 							var10001 = var9[var7];
 							--var5;
-							Class124_Sub6.aClass41_1006.method203(var10001, Class2.anIntArray8[var5]);
+							CSD.aClass41_1006.method203(var10001, Class2.anIntArray8[var5]);
 							continue;
 						}
 
@@ -404,7 +404,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 						}
 
 						if (opc == 47) {
-							var15 = Class124_Sub6.aClass41_1006.method206(var9[var7]);
+							var15 = CSD.aClass41_1006.method206(var9[var7]);
 							if (var15 == null)
 								var15 = "null";
 
@@ -415,7 +415,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 						if (opc == 48) {
 							var10001 = var9[var7];
 							--var6;
-							Class124_Sub6.aClass41_1006.method209(var10001, Class2.aStringArray5[var6]);
+							CSD.aClass41_1006.method209(var10001, Class2.aStringArray5[var6]);
 							continue;
 						}
 					}
@@ -443,7 +443,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 							if (var22 == 0)
 								throw new RuntimeException();
 
-							var56 = Class10.method55(var21);
+							var56 = Class10.getwidget(var21);
 							if (null == var56.aClass124_Sub17Array1263)
 								var56.aClass124_Sub17Array1263 = new Widget[1 + var70];
 
@@ -478,7 +478,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 
 						if (opc == 101) {
 							wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
-							var17 = Class10.method55(wid.anInt1284);
+							var17 = Class10.getwidget(wid.anInt1284);
 							var17.aClass124_Sub17Array1263[wid.anInt1154] = null;
 							Def10.settrue(var17);
 							continue;
@@ -486,7 +486,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 
 						if (opc == 102) {
 							--var5;
-							wid = Class10.method55(Class2.anIntArray8[var5]);
+							wid = Class10.getwidget(Class2.anIntArray8[var5]);
 							wid.aClass124_Sub17Array1263 = null;
 							Def10.settrue(wid);
 							continue;
@@ -512,7 +512,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 
 						if (opc == 201) {
 							--var5;
-							wid = Class10.method55(Class2.anIntArray8[var5]);
+							wid = Class10.getwidget(Class2.anIntArray8[var5]);
 							if (null != wid) {
 								Class2.anIntArray8[var5++] = 1;
 								if (var55)
@@ -533,7 +533,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 									opc -= 1000;
 									--var5;
 									var22 = Class2.anIntArray8[var5];
-									wid = Class10.method55(var22);
+									wid = Class10.getwidget(var22);
 								} else
 									wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
@@ -744,7 +744,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										if (opc >= 2000) {
 											opc -= 1000;
 											--var5;
-											wid = Class10.method55(Class2.anIntArray8[var5]);
+											wid = Class10.getwidget(Class2.anIntArray8[var5]);
 										} else
 											wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
@@ -1009,7 +1009,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										if (opc >= 2000) {
 											opc -= 1000;
 											--var5;
-											wid = Class10.method55(Class2.anIntArray8[var5]);
+											wid = Class10.getwidget(Class2.anIntArray8[var5]);
 										} else
 											wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
@@ -1020,7 +1020,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											if (wid.anObjectArray1184 == null)
 												return;
 
-											final Class124_Sub6 var82 = new Class124_Sub6();
+											final CSD var82 = new CSD();
 											var82.aClass124_Sub17_994 = wid;
 											var82.anObjectArray995 = wid.anObjectArray1184;
 											var82.anInt1001 = 1 + Class2.anInt15;
@@ -1029,7 +1029,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										}
 									} else if (opc < 2600) {
 										--var5;
-										wid = Class10.method55(Class2.anIntArray8[var5]);
+										wid = Class10.getwidget(Class2.anIntArray8[var5]);
 										if (opc == 2500) {
 											Class2.anIntArray8[var5++] = wid.anInt1166;
 											continue;
@@ -1061,7 +1061,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										}
 									} else if (opc < 2700) {
 										--var5;
-										wid = Class10.method55(Class2.anIntArray8[var5]);
+										wid = Class10.getwidget(Class2.anIntArray8[var5]);
 										if (opc == 2600) {
 											Class2.anIntArray8[var5++] = wid.anInt1174;
 											continue;
@@ -1114,14 +1114,14 @@ public class Class124_Sub22_Sub5 extends JagMap {
 									} else if (opc < 2800) {
 										if (opc == 2700) {
 											--var5;
-											wid = Class10.method55(Class2.anIntArray8[var5]);
+											wid = Class10.getwidget(Class2.anIntArray8[var5]);
 											Class2.anIntArray8[var5++] = wid.anInt1271;
 											continue;
 										}
 
 										if (opc == 2701) {
 											--var5;
-											wid = Class10.method55(Class2.anIntArray8[var5]);
+											wid = Class10.getwidget(Class2.anIntArray8[var5]);
 											if (wid.anInt1271 != -1)
 												Class2.anIntArray8[var5++] = wid.anInt1272;
 											else
@@ -1147,7 +1147,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										}
 									} else if (opc < 2900) {
 										--var5;
-										wid = Class10.method55(Class2.anIntArray8[var5]);
+										wid = Class10.getwidget(Class2.anIntArray8[var5]);
 										if (opc == 2800) {
 											var52 = Class2.anIntArray8;
 											var70 = var5++;
@@ -1267,12 +1267,12 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													} else if (var21 == 6) {
 														client.secbuf.writeOpcode(192); // player op 3
 														client.secbuf
-																.method587(client.anIntArray2128[var19]);
+																.writeShortA(client.anIntArray2128[var19]);
 														client.secbuf.writeByteA(0);
 													} else if (var21 == 7) {
 														client.secbuf.writeOpcode(153); // player op 4
 														client.secbuf
-																.method587(client.anIntArray2128[var19]);
+																.writeShortA(client.anIntArray2128[var19]);
 														client.secbuf.writeByteN(0);
 													}
 
@@ -1291,7 +1291,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											var21 = Class2.anIntArray8[var5];
 											var22 = Class2.anIntArray8[var5 + 1];
 											var70 = Class2.anIntArray8[2 + var5];
-											var56 = Class10.method55(var70);
+											var56 = Class10.getwidget(var70);
 											Class35.method194(var56, var21, var22);
 											continue;
 										}
@@ -3223,7 +3223,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 									if (opc >= 2000) {
 										opc -= 1000;
 										--var5;
-										wid = Class10.method55(Class2.anIntArray8[var5]);
+										wid = Class10.getwidget(Class2.anIntArray8[var5]);
 									} else
 										wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
@@ -3288,7 +3288,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								if (opc >= 2000) {
 									opc -= 1000;
 									--var5;
-									wid = Class10.method55(Class2.anIntArray8[var5]);
+									wid = Class10.getwidget(Class2.anIntArray8[var5]);
 								} else
 									wid = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 
@@ -3340,7 +3340,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								opc -= 1000;
 								--var5;
 								var21 = Class2.anIntArray8[var5];
-								var17 = Class10.method55(var21);
+								var17 = Class10.getwidget(var21);
 							} else
 								var17 = var55 ? Class129.aClass124_Sub17_888 : Class29.aClass124_Sub17_314;
 

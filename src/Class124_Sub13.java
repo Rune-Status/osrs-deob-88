@@ -46,11 +46,12 @@ public final class Class124_Sub13 extends Node {
 
 	}
 
-	static void method541(final int var0, final int var1) {
-		final Class3 var2 = Class84.aClass3_674;
-		Class57.method267(var2.anInt21, var2.anInt16, var2.anInt18, var2.anInt20, var2.aString19, var2.aString19, var0,
+	static void packet(final int var0, final int var1) {
+		final Class3 info = Class84.activeC;
+		System.out.println("do "+info.anInt18);
+		Class57.packetFor(info.anInt21, info.anInt16, info.anInt18, info.anInt20, info.aString19, info.aString19, var0,
 				var1);
-		Class84.aClass3_674 = null;
+		Class84.activeC = null;
 	}
 
 	static void method542() {

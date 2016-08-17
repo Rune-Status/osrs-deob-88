@@ -9,8 +9,8 @@ public class Class80 {
 			var0 -= Class45.anInt445;
 			var6 -= Class2.anInt14;
 			var1 -= Class48.anInt479;
-			final int var8 = Class124_Sub22_Sub16_Sub3.anIntArray1847[Class124_Sub6.anInt1003];
-			final int var7 = Class124_Sub22_Sub16_Sub3.anIntArray1848[Class124_Sub6.anInt1003];
+			final int var8 = Class124_Sub22_Sub16_Sub3.anIntArray1847[CSD.anInt1003];
+			final int var7 = Class124_Sub22_Sub16_Sub3.anIntArray1848[CSD.anInt1003];
 			final int var4 = Class124_Sub22_Sub16_Sub3.anIntArray1847[Class27.anInt301];
 			final int var3 = Class124_Sub22_Sub16_Sub3.anIntArray1848[Class27.anInt301];
 			int var5 = ((var3 * var0) + (var4 * var1)) >> 16;

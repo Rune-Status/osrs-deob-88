@@ -29,8 +29,8 @@ public class Class62 {
 		client.aLong2208 = -1L;
 		Class114.aClass110_824 = new Class110();
 		client.secbuf.pos = 0;
-		client.aClass124_Sub14_Sub1_2026.pos = 0;
-		client.anInt2028 = -1;
+		client.buf.pos = 0;
+		client.pktId = -1;
 		client.anInt2017 = 1;
 		client.anInt2032 = -1;
 		client.anInt2086 = -1;
@@ -94,7 +94,7 @@ public class Class62 {
 			}
 		}
 
-		Class124_Sub6.aClass41_1006.method202();
+		CSD.aClass41_1006.method202();
 		client.anInt2150 = -1;
 		if (client.anInt2142 != -1)
 			Class124_Sub5.setNotLoaded(client.anInt2142, 236366084);

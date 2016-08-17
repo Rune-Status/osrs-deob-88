@@ -42,17 +42,17 @@ public class Class24 {
 					var11 = 128;
 
 				if ((var9 & 1) != 0)
-					anIntArray268[var4] = var10.method601();
+					anIntArray268[var4] = var10.readcompact4();
 				else
 					anIntArray268[var4] = var11;
 
 				if ((var9 & 2) != 0)
-					anIntArray274[var4] = var10.method601();
+					anIntArray274[var4] = var10.readcompact4();
 				else
 					anIntArray274[var4] = var11;
 
 				if ((var9 & 4) != 0)
-					anIntArray270[var4] = var10.method601();
+					anIntArray270[var4] = var10.readcompact4();
 				else
 					anIntArray270[var4] = var11;
 

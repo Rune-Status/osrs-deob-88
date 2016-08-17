@@ -460,7 +460,7 @@ public class Class41 {
 					break;
 				}
 
-				var1 = Class10.method55(var1.anInt1259);
+				var1 = Class10.getwidget(var1.anInt1259);
 				if (null == var1) {
 					var5 = null;
 					break;

@@ -255,7 +255,7 @@ public class Def3 extends JagMap {
 	}
 
 	static final void method656() {
-		final int var0 = client.aClass124_Sub14_Sub1_2026.clever(8);
+		final int var0 = client.buf.clever(8);
 		int var2;
 		if (var0 < client.anInt2090)
 			for (var2 = var0; var2 < client.anInt2090; ++var2)
@@ -269,12 +269,12 @@ public class Def3 extends JagMap {
 			for (var2 = 0; var2 < var0; ++var2) {
 				final int var1 = client.anIntArray2128[var2];
 				final Class124_Sub22_Sub19_Sub3_Sub2 var3 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var1];
-				final int var7 = client.aClass124_Sub14_Sub1_2026.clever(1);
+				final int var7 = client.buf.clever(1);
 				if (var7 == 0) {
 					client.anIntArray2128[++client.anInt2090 - 1] = var1;
 					var3.anInt1716 = client.anInt2158;
 				} else {
-					final int var5 = client.aClass124_Sub14_Sub1_2026.clever(2);
+					final int var5 = client.buf.clever(2);
 					if (var5 == 0) {
 						client.anIntArray2128[++client.anInt2090 - 1] = var1;
 						var3.anInt1716 = client.anInt2158;
@@ -285,19 +285,19 @@ public class Def3 extends JagMap {
 						if (var5 == 1) {
 							client.anIntArray2128[++client.anInt2090 - 1] = var1;
 							var3.anInt1716 = client.anInt2158;
-							var4 = client.aClass124_Sub14_Sub1_2026.clever(3);
+							var4 = client.buf.clever(3);
 							var3.method892(var4, false);
-							var6 = client.aClass124_Sub14_Sub1_2026.clever(1);
+							var6 = client.buf.clever(1);
 							if (var6 == 1)
 								client.anIntArray2104[++client.anInt2029 - 1] = var1;
 						} else if (var5 == 2) {
 							client.anIntArray2128[++client.anInt2090 - 1] = var1;
 							var3.anInt1716 = client.anInt2158;
-							var4 = client.aClass124_Sub14_Sub1_2026.clever(3);
+							var4 = client.buf.clever(3);
 							var3.method892(var4, true);
-							var6 = client.aClass124_Sub14_Sub1_2026.clever(3);
+							var6 = client.buf.clever(3);
 							var3.method892(var6, true);
-							final int var8 = client.aClass124_Sub14_Sub1_2026.clever(1);
+							final int var8 = client.buf.clever(1);
 							if (var8 == 1)
 								client.anIntArray2104[++client.anInt2029 - 1] = var1;
 						} else if (var5 == 3)

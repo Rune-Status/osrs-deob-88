@@ -24,10 +24,10 @@ public class Class58 {
 	}
 
 	static void method270(final Class94_Sub1 var0, final int var1) {
-		if (null != Class124_Sub6.aClass124_Sub14_1007) {
-			Class124_Sub6.aClass124_Sub14_1007.pos = 5 + (var1 * 8);
-			final int var3 = Class124_Sub6.aClass124_Sub14_1007.readInt2(-1904775071);
-			final int var2 = Class124_Sub6.aClass124_Sub14_1007.readInt2(-1772859908);
+		if (null != CSD.aClass124_Sub14_1007) {
+			CSD.aClass124_Sub14_1007.pos = 5 + (var1 * 8);
+			final int var3 = CSD.aClass124_Sub14_1007.readInt2(-1904775071);
+			final int var2 = CSD.aClass124_Sub14_1007.readInt2(-1772859908);
 			var0.method617(var3, var2);
 		} else {
 			Class102.method403((Class94_Sub1) null, 255, 255, 0, (byte) 0, true);

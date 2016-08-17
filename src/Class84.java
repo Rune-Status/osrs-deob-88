@@ -5,7 +5,7 @@ import java.awt.event.KeyListener;
 
 public final class Class84 implements KeyListener, FocusListener {
 	static int anInt673;
-	static Class3 aClass3_674;
+	static Class3 activeC;
 	static volatile int anInt685 = 0;
 	static int anInt682 = 0;
 	static int anInt680 = 0;

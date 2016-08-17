@@ -87,7 +87,7 @@ final class Class25 implements Comparator {
 			client.aClass124_Sub17_2154 = var0;
 
 		if (var3 && (var0.anObjectArray1184 != null) && ((var4 != var0.anInt1168) || (var5 != var0.anInt1169))) {
-			final Class124_Sub6 var6 = new Class124_Sub6();
+			final CSD var6 = new CSD();
 			var6.aClass124_Sub17_994 = var0;
 			var6.anObjectArray995 = var0.anObjectArray1184;
 			client.aClass111_2181.method424(var6);

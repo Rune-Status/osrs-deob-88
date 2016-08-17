@@ -299,7 +299,7 @@ public class Class72 implements Interface3 {
 						Class3.method21(Class43.aClass94_Sub1_431);
 						Class49.method237(Class43.aClass94_Sub1_431);
 						Class124_Sub9.method532(Class43.aClass94_Sub1_431);
-						Class124_Sub6.aClass41_1006 = new Class41();
+						CSD.aClass41_1006 = new Class41();
 						Class4.aString39 = "Loaded config";
 						Class4.anInt38 = 60;
 						client.anInt2012 = 80;

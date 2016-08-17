@@ -191,7 +191,7 @@ public class Class94_Sub1 extends CacheArch {
 				throw new RuntimeException();
 
 			if (aClass69_1113 != null)
-				Class124_Sub6.method518(anInt1122, var2, aClass69_1113);
+				CSD.method518(anInt1122, var2, aClass69_1113);
 
 			method363(var2);
 			method615();
@@ -199,7 +199,7 @@ public class Class94_Sub1 extends CacheArch {
 			var2[var2.length - 2] = (byte) (anIntArray748[var1] >> 8);
 			var2[var2.length - 1] = (byte) anIntArray748[var1];
 			if (aClass69_1115 != null) {
-				Class124_Sub6.method518(var1, var2, aClass69_1115);
+				CSD.method518(var1, var2, aClass69_1115);
 				aBoolArray1118[var1] = true;
 			}
 

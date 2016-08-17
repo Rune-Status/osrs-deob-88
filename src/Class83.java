@@ -2,7 +2,7 @@ public final class Class83 {
 	static final void method337() {
 		Class124_Sub7.method524();
 		if (Class32.aClass124_Sub17_343 == null)
-			if (client.aClass124_Sub17_2155 == null) {
+			if (client.currentWid == null) {
 				int var0 = Class81.anInt650;
 				int var1;
 				int var4;
@@ -53,7 +53,7 @@ public final class Class83 {
 							label247: {
 								var4 = client.anIntArray2125[client.anInt2124 - 1];
 								var9 = client.anIntArray2063[client.anInt2124 - 1];
-								final Widget var5 = Class10.method55(var9);
+								final Widget var5 = Class10.getwidget(var9);
 								if (!Class28.method167(Class124_Sub22_Sub19_Sub6.method963(var5))) {
 									var6 = Class124_Sub22_Sub19_Sub6.method963(var5);
 									final boolean var2 = ((var6 >> 29) & 1) != 0;
@@ -64,14 +64,14 @@ public final class Class83 {
 								if ((null != Class32.aClass124_Sub17_343) && !client.aBool1985
 										&& (client.anInt2122 != 1) && !Class53.method256(client.anInt2124 - 1)
 										&& (client.anInt2124 > 0))
-									Class124_Sub13.method541(client.anInt2094, client.anInt2095);
+									Class124_Sub13.packet(client.anInt2094, client.anInt2095);
 
 								client.aBool1985 = false;
 								client.anInt2133 = 0;
 								if (null != Class32.aClass124_Sub17_343)
 									Def10.settrue(Class32.aClass124_Sub17_343);
 
-								Class32.aClass124_Sub17_343 = Class10.method55(var9);
+								Class32.aClass124_Sub17_343 = Class10.getwidget(var9);
 								client.anInt2093 = var4;
 								client.anInt2094 = Class81.anInt658;
 								client.anInt2095 = Class81.anInt655;

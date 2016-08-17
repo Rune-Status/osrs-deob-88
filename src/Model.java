@@ -218,15 +218,15 @@ public class Model extends Class124_Sub22_Sub19 {
 			var30 = var2.readByteU();
 			var15 = 0;
 			if ((var30 & 1) != 0)
-				var15 = var12.method601();
+				var15 = var12.readcompact4();
 
 			var46 = 0;
 			if ((var30 & 2) != 0)
-				var46 = var5.method601();
+				var46 = var5.readcompact4();
 
 			var9 = 0;
 			if ((var30 & 4) != 0)
-				var9 = var6.method601();
+				var9 = var6.readcompact4();
 
 			anIntArray1784[var8] = var43 + var15;
 			anIntArray1746[var8] = var52 + var46;
@@ -278,9 +278,9 @@ public class Model extends Class124_Sub22_Sub19 {
 		for (var9 = 0; var9 < var28; ++var9) {
 			var44 = var12.readByteU();
 			if (var44 == 1) {
-				var8 = var2.method601() + var46;
-				var30 = var2.method601() + var8;
-				var15 = var2.method601() + var30;
+				var8 = var2.readcompact4() + var46;
+				var30 = var2.readcompact4() + var8;
+				var15 = var2.readcompact4() + var30;
 				var46 = var15;
 				anIntArray1749[var9] = var8;
 				anIntArray1780[var9] = var30;
@@ -289,7 +289,7 @@ public class Model extends Class124_Sub22_Sub19 {
 
 			if (var44 == 2) {
 				var30 = var15;
-				var15 = var2.method601() + var46;
+				var15 = var2.readcompact4() + var46;
 				var46 = var15;
 				anIntArray1749[var9] = var8;
 				anIntArray1780[var9] = var30;
@@ -298,7 +298,7 @@ public class Model extends Class124_Sub22_Sub19 {
 
 			if (var44 == 3) {
 				var8 = var15;
-				var15 = var2.method601() + var46;
+				var15 = var2.readcompact4() + var46;
 				var46 = var15;
 				anIntArray1749[var9] = var8;
 				anIntArray1780[var9] = var30;
@@ -309,7 +309,7 @@ public class Model extends Class124_Sub22_Sub19 {
 				final int var49 = var8;
 				var8 = var30;
 				var30 = var49;
-				var15 = var2.method601() + var46;
+				var15 = var2.readcompact4() + var46;
 				var46 = var15;
 				anIntArray1749[var9] = var8;
 				anIntArray1780[var9] = var49;
@@ -1150,15 +1150,15 @@ public class Model extends Class124_Sub22_Sub19 {
 			var11 = var3.readByteU();
 			var33 = 0;
 			if ((var11 & 1) != 0)
-				var33 = var31.method601();
+				var33 = var31.readcompact4();
 
 			var16 = 0;
 			if ((var11 & 2) != 0)
-				var16 = var6.method601();
+				var16 = var6.readcompact4();
 
 			var29 = 0;
 			if ((var11 & 4) != 0)
-				var29 = var7.method601();
+				var29 = var7.readcompact4();
 
 			anIntArray1784[var4] = var38 + var33;
 			anIntArray1746[var4] = var42 + var16;
@@ -1220,9 +1220,9 @@ public class Model extends Class124_Sub22_Sub19 {
 		for (var29 = 0; var29 < var13; ++var29) {
 			var12 = var31.readByteU();
 			if (var12 == 1) {
-				var4 = var3.method601() + var16;
-				var11 = var3.method601() + var4;
-				var33 = var3.method601() + var11;
+				var4 = var3.readcompact4() + var16;
+				var11 = var3.readcompact4() + var4;
+				var33 = var3.readcompact4() + var11;
 				var16 = var33;
 				anIntArray1749[var29] = var4;
 				anIntArray1780[var29] = var11;
@@ -1231,7 +1231,7 @@ public class Model extends Class124_Sub22_Sub19 {
 
 			if (var12 == 2) {
 				var11 = var33;
-				var33 = var3.method601() + var16;
+				var33 = var3.readcompact4() + var16;
 				var16 = var33;
 				anIntArray1749[var29] = var4;
 				anIntArray1780[var29] = var11;
@@ -1240,7 +1240,7 @@ public class Model extends Class124_Sub22_Sub19 {
 
 			if (var12 == 3) {
 				var4 = var33;
-				var33 = var3.method601() + var16;
+				var33 = var3.readcompact4() + var16;
 				var16 = var33;
 				anIntArray1749[var29] = var4;
 				anIntArray1780[var29] = var11;
@@ -1251,7 +1251,7 @@ public class Model extends Class124_Sub22_Sub19 {
 				var41 = var4;
 				var4 = var11;
 				var11 = var41;
-				var33 = var3.method601() + var16;
+				var33 = var3.readcompact4() + var16;
 				var16 = var33;
 				anIntArray1749[var29] = var4;
 				anIntArray1780[var29] = var41;
