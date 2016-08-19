@@ -203,7 +203,7 @@ public class Def4 extends JagMap {
 		final int var3 = (int) var0.aLong874;
 		var0.method450();
 		if (var1)
-			Class124_Sub5.setNotLoaded(var2, -963844083);
+			client.setNotLoaded(var2, -963844083);
 
 		for (Class124_Sub21 var4 = (Class124_Sub21) client.aClass107_2184
 				.method411(); var4 != null; var4 = (Class124_Sub21) client.aClass107_2184.method413())

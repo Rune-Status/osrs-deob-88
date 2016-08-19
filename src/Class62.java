@@ -97,7 +97,7 @@ public class Class62 {
 		CSD.aClass41_1006.method202();
 		client.anInt2150 = -1;
 		if (client.anInt2142 != -1)
-			Class124_Sub5.setNotLoaded(client.anInt2142, 236366084);
+			client.setNotLoaded(client.anInt2142, 236366084);
 
 		for (Class124_Sub7 var2 = (Class124_Sub7) client.aClass107_2143
 				.method411(); null != var2; var2 = (Class124_Sub7) client.aClass107_2143.method413())
@@ -302,7 +302,7 @@ public class Class62 {
 								Class4.aClass72_48 = Class57.aClass22_538.aLinkedHashMap252
 										.containsKey(Integer.valueOf(Class47.method232(Class4.aString44)))
 												? Class72.aClass72_597 : Class72.aClass72_593;
-								Class124_Sub5.method516(20);
+								client.method516(20);
 								return;
 							}
 
@@ -371,7 +371,7 @@ public class Class62 {
 											Class4.aClass72_48 = Class57.aClass22_538.aLinkedHashMap252
 													.containsKey(Integer.valueOf(Class47.method232(Class4.aString44)))
 															? Class72.aClass72_597 : Class72.aClass72_593;
-											Class124_Sub5.method516(20);
+											client.method516(20);
 											return;
 										}
 
@@ -400,7 +400,7 @@ public class Class62 {
 									Class49.aString485 = "";
 									Class4.aClass72_48 = Class4.aBool37 ? Class72.aClass72_594 : Class72.aClass72_599;
 									Def13.method734("", "Connecting to server...", "");
-									Class124_Sub5.method516(20);
+									client.method516(20);
 									return;
 								}
 
@@ -472,7 +472,7 @@ public class Class62 {
 											Class4.aClass72_48 = Class4.aBool37 ? Class72.aClass72_594
 													: Class72.aClass72_599;
 											Def13.method734("", "Connecting to server...", "");
-											Class124_Sub5.method516(20);
+											client.method516(20);
 											return;
 										}
 

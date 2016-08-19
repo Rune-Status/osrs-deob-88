@@ -61,7 +61,7 @@ public class Class21 {
 	int anInt191;
 	int anInt211;
 	int anInt236;
-	Class124_Sub5[][][] aClass124_Sub5ArrayArrayArray225;
+	TileObj[][][] tileobjs;
 	int[][][] anIntArrayArrayArray235;
 	int[][][] anIntArrayArrayArray237;
 
@@ -81,7 +81,7 @@ public class Class21 {
 		for (var1 = 0; var1 < anInt191; ++var1)
 			for (var2 = 0; var2 < anInt211; ++var2)
 				for (int var3 = 0; var3 < anInt236; ++var3)
-					aClass124_Sub5ArrayArrayArray225[var1][var2][var3] = null;
+					tileobjs[var1][var2][var3] = null;
 
 		for (var1 = 0; var1 < anInt223; ++var1) {
 			for (var2 = 0; var2 < anIntArray224[var1]; ++var2)
@@ -105,19 +105,19 @@ public class Class21 {
 
 		for (int var2 = 0; var2 < anInt211; ++var2)
 			for (int var3 = 0; var3 < anInt236; ++var3)
-				if (aClass124_Sub5ArrayArrayArray225[var1][var2][var3] == null)
-					aClass124_Sub5ArrayArrayArray225[var1][var2][var3] = new Class124_Sub5(var1, var2, var3);
+				if (tileobjs[var1][var2][var3] == null)
+					tileobjs[var1][var2][var3] = new TileObj(var1, var2, var3);
 
 	}
 
 	public void method100(final int var1, final int var2) {
-		final Class124_Sub5 var3 = aClass124_Sub5ArrayArrayArray225[0][var1][var2];
+		final TileObj var3 = tileobjs[0][var1][var2];
 
 		for (int var5 = 0; var5 < 3; ++var5) {
-			final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var5][var1][var2] = aClass124_Sub5ArrayArrayArray225[var5
+			final TileObj var4 = tileobjs[var5][var1][var2] = tileobjs[var5
 					+ 1][var1][var2];
 			if (var4 != null) {
-				--var4.anInt966;
+				--var4.level1;
 
 				for (int var6 = 0; var6 < var4.anInt976; ++var6) {
 					final Class46 var7 = var4.aClass46Array977[var6];
@@ -127,11 +127,11 @@ public class Class21 {
 			}
 		}
 
-		if (aClass124_Sub5ArrayArrayArray225[0][var1][var2] == null)
-			aClass124_Sub5ArrayArrayArray225[0][var1][var2] = new Class124_Sub5(0, var1, var2);
+		if (tileobjs[0][var1][var2] == null)
+			tileobjs[0][var1][var2] = new TileObj(0, var1, var2);
 
-		aClass124_Sub5ArrayArrayArray225[0][var1][var2].aClass124_Sub5_980 = var3;
-		aClass124_Sub5ArrayArrayArray225[3][var1][var2] = null;
+		tileobjs[0][var1][var2].aClass124_Sub5_980 = var3;
+		tileobjs[3][var1][var2] = null;
 	}
 
 	void method101(final Class33 var1, final int var2, final int var3, final int var4, final int var5, final int var6,
@@ -225,9 +225,9 @@ public class Class21 {
 	}
 
 	public void method102(final int var1, final int var2, final int var3, final int var4) {
-		final Class124_Sub5 var5 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var5 = tileobjs[var1][var2][var3];
 		if (var5 != null)
-			aClass124_Sub5ArrayArrayArray225[var1][var2][var3].anInt979 = var4;
+			tileobjs[var1][var2][var3].anInt979 = var4;
 	}
 
 	public void method103(final int var1, final int var2, final int var3, final int var4,
@@ -240,10 +240,10 @@ public class Class21 {
 			var8.anInt436 = var4;
 			var8.anInt437 = var6;
 			var8.anInt435 = var7;
-			if (aClass124_Sub5ArrayArrayArray225[var1][var2][var3] == null)
-				aClass124_Sub5ArrayArrayArray225[var1][var2][var3] = new Class124_Sub5(var1, var2, var3);
+			if (tileobjs[var1][var2][var3] == null)
+				tileobjs[var1][var2][var3] = new TileObj(var1, var2, var3);
 
-			aClass124_Sub5ArrayArrayArray225[var1][var2][var3].aClass44_972 = var8;
+			tileobjs[var1][var2][var3].aClass44_972 = var8;
 		}
 	}
 
@@ -397,10 +397,10 @@ public class Class21 {
 			var13.anInt382 = var10;
 
 			for (int var14 = var1; var14 >= 0; --var14)
-				if (aClass124_Sub5ArrayArrayArray225[var14][var2][var3] == null)
-					aClass124_Sub5ArrayArrayArray225[var14][var2][var3] = new Class124_Sub5(var14, var2, var3);
+				if (tileobjs[var14][var2][var3] == null)
+					tileobjs[var14][var2][var3] = new TileObj(var14, var2, var3);
 
-			aClass124_Sub5ArrayArrayArray225[var1][var2][var3].aClass36_973 = var13;
+			tileobjs[var1][var2][var3].aClass36_973 = var13;
 		}
 	}
 
@@ -422,7 +422,7 @@ public class Class21 {
 	}
 
 	public void method107(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		if (var4 != null)
 			for (int var5 = 0; var5 < var4.anInt976; ++var5) {
 				final Class46 var6 = var4.aClass46Array977[var5];
@@ -457,15 +457,15 @@ public class Class21 {
 			var11.anInt320 = var8;
 
 			for (int var12 = var1; var12 >= 0; --var12)
-				if (aClass124_Sub5ArrayArrayArray225[var12][var2][var3] == null)
-					aClass124_Sub5ArrayArrayArray225[var12][var2][var3] = new Class124_Sub5(var12, var2, var3);
+				if (tileobjs[var12][var2][var3] == null)
+					tileobjs[var12][var2][var3] = new TileObj(var12, var2, var3);
 
-			aClass124_Sub5ArrayArrayArray225[var1][var2][var3].aClass30_981 = var11;
+			tileobjs[var1][var2][var3].aClass30_981 = var11;
 		}
 	}
 
 	public void method110(final int var1, final int var2, final int var3, final int var4) {
-		final Class124_Sub5 var5 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var5 = tileobjs[var1][var2][var3];
 		if (var5 != null) {
 			final Class36 var6 = var5.aClass36_973;
 			if (var6 != null) {
@@ -490,7 +490,7 @@ public class Class21 {
 						for (int var11 = var18; var11 <= var12; ++var11)
 							if ((var11 >= 0) && (var11 < anInt236) && (!var7 || (var8 >= var20) || (var11 >= var12)
 									|| ((var11 < var4) && (var8 != var3)))) {
-								final Class124_Sub5 var14 = aClass124_Sub5ArrayArrayArray225[var13][var8][var11];
+								final TileObj var14 = tileobjs[var13][var8][var11];
 								if (var14 != null) {
 									final int var21 = ((anIntArrayArrayArray237[var13][var8][var11]
 											+ anIntArrayArrayArray237[var13][var8 + 1][var11]
@@ -540,7 +540,7 @@ public class Class21 {
 	}
 
 	public void method112(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		if (var4 != null)
 			var4.aClass36_973 = null;
 	}
@@ -555,33 +555,33 @@ public class Class21 {
 			var21 = new Class28(var11, var12, var13, var14, -1, var19, false);
 
 			for (var22 = var1; var22 >= 0; --var22)
-				if (aClass124_Sub5ArrayArrayArray225[var22][var2][var3] == null)
-					aClass124_Sub5ArrayArrayArray225[var22][var2][var3] = new Class124_Sub5(var22, var2, var3);
+				if (tileobjs[var22][var2][var3] == null)
+					tileobjs[var22][var2][var3] = new TileObj(var22, var2, var3);
 
-			aClass124_Sub5ArrayArrayArray225[var1][var2][var3].aClass28_970 = var21;
+			tileobjs[var1][var2][var3].aClass28_970 = var21;
 		} else if (var4 != 1) {
 			final Class33 var23 = new Class33(var4, var5, var6, var2, var3, var7, var8, var9, var10, var11, var12,
 					var13, var14, var15, var16, var17, var18, var19, var20);
 
 			for (var22 = var1; var22 >= 0; --var22)
-				if (aClass124_Sub5ArrayArrayArray225[var22][var2][var3] == null)
-					aClass124_Sub5ArrayArrayArray225[var22][var2][var3] = new Class124_Sub5(var22, var2, var3);
+				if (tileobjs[var22][var2][var3] == null)
+					tileobjs[var22][var2][var3] = new TileObj(var22, var2, var3);
 
-			aClass124_Sub5ArrayArrayArray225[var1][var2][var3].aClass33_974 = var23;
+			tileobjs[var1][var2][var3].aClass33_974 = var23;
 		} else {
 			var21 = new Class28(var15, var16, var17, var18, var6, var20,
 					(var7 == var8) && (var7 == var9) && (var7 == var10));
 
 			for (var22 = var1; var22 >= 0; --var22)
-				if (aClass124_Sub5ArrayArrayArray225[var22][var2][var3] == null)
-					aClass124_Sub5ArrayArrayArray225[var22][var2][var3] = new Class124_Sub5(var22, var2, var3);
+				if (tileobjs[var22][var2][var3] == null)
+					tileobjs[var22][var2][var3] = new TileObj(var22, var2, var3);
 
-			aClass124_Sub5ArrayArrayArray225[var1][var2][var3].aClass28_970 = var21;
+			tileobjs[var1][var2][var3].aClass28_970 = var21;
 		}
 	}
 
 	public void method114(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		if (var4 != null)
 			var4.aClass38_975 = null;
 	}
@@ -611,12 +611,12 @@ public class Class21 {
 	}
 
 	public Class36 method116(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		return var4 != null ? var4.aClass36_973 : null;
 	}
 
 	public Class46 method117(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		if (var4 == null)
 			return null;
 		else {
@@ -631,7 +631,7 @@ public class Class21 {
 	}
 
 	public Class44 method118(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		return (var4 != null) && (var4.aClass44_972 != null) ? var4.aClass44_972 : null;
 	}
 
@@ -644,7 +644,7 @@ public class Class21 {
 				if ((var14 < 0) || (var15 < 0) || (var14 >= anInt211) || (var15 >= anInt236))
 					return false;
 
-				final Class124_Sub5 var17 = aClass124_Sub5ArrayArrayArray225[var1][var14][var15];
+				final TileObj var17 = tileobjs[var1][var14][var15];
 				if ((var17 != null) && (var17.anInt976 >= 5))
 					return false;
 			}
@@ -679,10 +679,10 @@ public class Class21 {
 					var20 += 2;
 
 				for (int var18 = var1; var18 >= 0; --var18)
-					if (aClass124_Sub5ArrayArrayArray225[var18][var15][var19] == null)
-						aClass124_Sub5ArrayArrayArray225[var18][var15][var19] = new Class124_Sub5(var18, var15, var19);
+					if (tileobjs[var18][var15][var19] == null)
+						tileobjs[var18][var15][var19] = new TileObj(var18, var15, var19);
 
-				final Class124_Sub5 var21 = aClass124_Sub5ArrayArrayArray225[var1][var15][var19];
+				final TileObj var21 = tileobjs[var1][var15][var19];
 				var21.aClass46Array977[var21.anInt976] = var16;
 				var21.anIntArray978[var21.anInt976] = var20;
 				var21.anInt968 |= var20;
@@ -696,12 +696,12 @@ public class Class21 {
 	}
 
 	public int method120(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		return (var4 != null) && (var4.aClass36_973 != null) ? var4.aClass36_973.anInt385 : 0;
 	}
 
 	public int method121(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		if (var4 == null)
 			return 0;
 		else {
@@ -718,7 +718,7 @@ public class Class21 {
 	void method122(final Class46 var1) {
 		for (int var2 = var1.anInt457; var2 <= var1.anInt462; ++var2)
 			for (int var4 = var1.anInt465; var4 <= var1.anInt460; ++var4) {
-				final Class124_Sub5 var5 = aClass124_Sub5ArrayArrayArray225[var1.anInt459][var2][var4];
+				final TileObj var5 = tileobjs[var1.anInt459][var2][var4];
 				if (var5 != null) {
 					int var3;
 					for (var3 = 0; var3 < var5.anInt976; ++var3)
@@ -747,7 +747,7 @@ public class Class21 {
 		for (int var4 = 0; var4 < anInt191; ++var4)
 			for (int var5 = 0; var5 < anInt211; ++var5)
 				for (int var6 = 0; var6 < anInt236; ++var6) {
-					final Class124_Sub5 var9 = aClass124_Sub5ArrayArrayArray225[var4][var5][var6];
+					final TileObj var9 = tileobjs[var4][var5][var6];
 					if (var9 != null) {
 						final Class30 var7 = var9.aClass30_981;
 						Model var8;
@@ -791,10 +791,10 @@ public class Class21 {
 	}
 
 	void method124(final Model var1, final int var2, final int var3, final int var4) {
-		Class124_Sub5 var5;
+		TileObj var5;
 		Model var6;
 		if (var3 < anInt211) {
-			var5 = aClass124_Sub5ArrayArrayArray225[var2][var3 + 1][var4];
+			var5 = tileobjs[var2][var3 + 1][var4];
 			if ((var5 != null) && (var5.aClass44_972 != null)
 					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Model)) {
 				var6 = (Model) var5.aClass44_972.aClass124_Sub22_Sub19_438;
@@ -803,7 +803,7 @@ public class Class21 {
 		}
 
 		if (var4 < anInt211) {
-			var5 = aClass124_Sub5ArrayArrayArray225[var2][var3][var4 + 1];
+			var5 = tileobjs[var2][var3][var4 + 1];
 			if ((var5 != null) && (var5.aClass44_972 != null)
 					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Model)) {
 				var6 = (Model) var5.aClass44_972.aClass124_Sub22_Sub19_438;
@@ -812,7 +812,7 @@ public class Class21 {
 		}
 
 		if ((var3 < anInt211) && (var4 < anInt236)) {
-			var5 = aClass124_Sub5ArrayArrayArray225[var2][var3 + 1][var4 + 1];
+			var5 = tileobjs[var2][var3 + 1][var4 + 1];
 			if ((var5 != null) && (var5.aClass44_972 != null)
 					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Model)) {
 				var6 = (Model) var5.aClass44_972.aClass124_Sub22_Sub19_438;
@@ -821,7 +821,7 @@ public class Class21 {
 		}
 
 		if ((var3 < anInt211) && (var4 > 0)) {
-			var5 = aClass124_Sub5ArrayArrayArray225[var2][var3 + 1][var4 - 1];
+			var5 = tileobjs[var2][var3 + 1][var4 - 1];
 			if ((var5 != null) && (var5.aClass44_972 != null)
 					&& (var5.aClass44_972.aClass124_Sub22_Sub19_438 instanceof Model)) {
 				var6 = (Model) var5.aClass44_972.aClass124_Sub22_Sub19_438;
@@ -832,13 +832,13 @@ public class Class21 {
 	}
 
 	public void method125(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		if (var4 != null)
 			var4.aClass30_981 = null;
 	}
 
 	public int method126(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		return (var4 != null) && (var4.aClass44_972 != null) ? var4.aClass44_972.anInt437 : 0;
 	}
 
@@ -863,7 +863,7 @@ public class Class21 {
 		var9.aClass124_Sub22_Sub19_392 = var7;
 		var9.aClass124_Sub22_Sub19_394 = var8;
 		int var12 = 0;
-		final Class124_Sub5 var11 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var11 = tileobjs[var1][var2][var3];
 		if (var11 != null)
 			for (int var13 = 0; var13 < var11.anInt976; ++var13)
 				if (((var11.aClass46Array977[var13].anInt464 & 256) == 256)
@@ -875,10 +875,10 @@ public class Class21 {
 				}
 
 		var9.anInt396 = var12;
-		if (aClass124_Sub5ArrayArrayArray225[var1][var2][var3] == null)
-			aClass124_Sub5ArrayArrayArray225[var1][var2][var3] = new Class124_Sub5(var1, var2, var3);
+		if (tileobjs[var1][var2][var3] == null)
+			tileobjs[var1][var2][var3] = new TileObj(var1, var2, var3);
 
-		aClass124_Sub5ArrayArrayArray225[var1][var2][var3].aClass38_975 = var9;
+		tileobjs[var1][var2][var3].aClass38_975 = var9;
 	}
 
 	public boolean method129(final int var1, final int var2, final int var3, final int var4, final int var5,
@@ -1017,7 +1017,7 @@ public class Class21 {
 	}
 
 	public Class30 method131(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		return var4 != null ? var4.aClass30_981 : null;
 	}
 
@@ -1261,15 +1261,15 @@ public class Class21 {
 		anInt194 = 0;
 
 		int var8;
-		Class124_Sub5[][] var9;
+		TileObj[][] var9;
 		int var12;
 		int var13;
 		for (var12 = anInt196; var12 < anInt191; ++var12) {
-			var9 = aClass124_Sub5ArrayArrayArray225[var12];
+			var9 = tileobjs[var12];
 
 			for (var8 = anInt199; var8 < anInt204; ++var8)
 				for (var13 = anInt193; var13 < anInt206; ++var13) {
-					final Class124_Sub5 var14 = var9[var8][var13];
+					final TileObj var14 = var9[var8][var13];
 					if (var14 != null)
 						if ((var14.anInt979 > var6)
 								|| (!aBoolArrayArray239[(var8 - anInt207) + 25][(var13 - anInt208) + 25]
@@ -1290,13 +1290,13 @@ public class Class21 {
 				}
 		}
 
-		Class124_Sub5 var7;
+		TileObj var7;
 		int var10;
 		int var11;
 		int var15;
 		int var16;
 		for (var12 = anInt196; var12 < anInt191; ++var12) {
-			var9 = aClass124_Sub5ArrayArrayArray225[var12];
+			var9 = tileobjs[var12];
 
 			for (var8 = -25; var8 <= 0; ++var8) {
 				var13 = anInt207 + var8;
@@ -1342,7 +1342,7 @@ public class Class21 {
 		}
 
 		for (var12 = anInt196; var12 < anInt191; ++var12) {
-			var9 = aClass124_Sub5ArrayArrayArray225[var12];
+			var9 = tileobjs[var12];
 
 			for (var8 = -25; var8 <= 0; ++var8) {
 				var13 = anInt207 + var8;
@@ -1391,21 +1391,21 @@ public class Class21 {
 	}
 
 	public int method136(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		return (var4 != null) && (var4.aClass30_981 != null) ? var4.aClass30_981.anInt326 : 0;
 	}
 
-	void method137(final Class124_Sub5 var1, boolean var2) {
+	void method137(final TileObj var1, boolean var2) {
 		aClass111_200.method424(var1);
 
 		while (true) {
-			Class124_Sub5 var3;
-			int var4;
-			int var5;
+			TileObj obj;
+			int x;
+			int z;
 			int var6;
 			int var7;
-			Class124_Sub5[][] var8;
-			Class124_Sub5 var9;
+			TileObj[][] objs;
+			TileObj var9;
 			int var11;
 			int var16;
 			int var17;
@@ -1425,69 +1425,69 @@ public class Class21 {
 										int var14;
 										int var19;
 										int var20;
-										Class124_Sub5 var36;
+										TileObj var36;
 										while (true) {
 											do {
-												var3 = (Class124_Sub5) aClass111_200.method427();
-												if (var3 == null)
+												obj = (TileObj) aClass111_200.method427();
+												if (obj == null)
 													return;
-											} while (!var3.aBool982);
+											} while (!obj.aBool982);
 
-											var4 = var3.anInt967;
-											var5 = var3.anInt983;
-											var6 = var3.anInt966;
-											var7 = var3.anInt969;
-											var8 = aClass124_Sub5ArrayArrayArray225[var6];
-											if (!var3.aBool971)
+											x = obj.x;
+											z = obj.z;
+											var6 = obj.level1;
+											var7 = obj.level1_1;
+											objs = tileobjs[var6];
+											if (!obj.aBool971)
 												break;
 
 											if (var2) {
 												if (var6 > 0) {
-													var9 = aClass124_Sub5ArrayArrayArray225[var6 - 1][var4][var5];
+													var9 = tileobjs[var6 - 1][x][z];
 													if ((var9 != null) && var9.aBool982)
 														continue;
 												}
 
-												if ((var4 <= anInt207) && (var4 > anInt199)) {
-													var9 = var8[var4 - 1][var5];
+												if ((x <= anInt207) && (x > anInt199)) {
+													var9 = objs[x - 1][z];
 													if ((var9 != null) && var9.aBool982
-															&& (var9.aBool971 || ((var3.anInt968 & 1) == 0)))
+															&& (var9.aBool971 || ((obj.anInt968 & 1) == 0)))
 														continue;
 												}
 
-												if ((var4 >= anInt207) && (var4 < (anInt204 - 1))) {
-													var9 = var8[var4 + 1][var5];
+												if ((x >= anInt207) && (x < (anInt204 - 1))) {
+													var9 = objs[x + 1][z];
 													if ((var9 != null) && var9.aBool982
-															&& (var9.aBool971 || ((var3.anInt968 & 4) == 0)))
+															&& (var9.aBool971 || ((obj.anInt968 & 4) == 0)))
 														continue;
 												}
 
-												if ((var5 <= anInt208) && (var5 > anInt193)) {
-													var9 = var8[var4][var5 - 1];
+												if ((z <= anInt208) && (z > anInt193)) {
+													var9 = objs[x][z - 1];
 													if ((var9 != null) && var9.aBool982
-															&& (var9.aBool971 || ((var3.anInt968 & 8) == 0)))
+															&& (var9.aBool971 || ((obj.anInt968 & 8) == 0)))
 														continue;
 												}
 
-												if ((var5 >= anInt208) && (var5 < (anInt206 - 1))) {
-													var9 = var8[var4][var5 + 1];
+												if ((z >= anInt208) && (z < (anInt206 - 1))) {
+													var9 = objs[x][z + 1];
 													if ((var9 != null) && var9.aBool982
-															&& (var9.aBool971 || ((var3.anInt968 & 2) == 0)))
+															&& (var9.aBool971 || ((obj.anInt968 & 2) == 0)))
 														continue;
 												}
 											} else
 												var2 = true;
 
-											var3.aBool971 = false;
-											if (var3.aClass124_Sub5_980 != null) {
-												var9 = var3.aClass124_Sub5_980;
+											obj.aBool971 = false;
+											if (obj.aClass124_Sub5_980 != null) {
+												var9 = obj.aClass124_Sub5_980;
 												if (var9.aClass28_970 != null) {
-													if (!method115(0, var4, var5))
+													if (!method115(0, x, z))
 														method143(var9.aClass28_970, 0, anInt212, anInt213, anInt205,
-																anInt215, var4, var5);
-												} else if ((var9.aClass33_974 != null) && !method115(0, var4, var5))
+																anInt215, x, z);
+												} else if ((var9.aClass33_974 != null) && !method115(0, x, z))
 													method101(var9.aClass33_974, anInt212, anInt213, anInt205, anInt215,
-															var4, var5);
+															x, z);
 
 												var10 = var9.aClass30_981;
 												if (var10 != null)
@@ -1507,77 +1507,77 @@ public class Class21 {
 											}
 
 											var13 = false;
-											if (var3.aClass28_970 != null) {
-												if (!method115(var7, var4, var5)) {
+											if (obj.aClass28_970 != null) {
+												if (!method115(var7, x, z)) {
 													var13 = true;
-													if ((var3.aClass28_970.anInt308 != 12345678)
+													if ((obj.aClass28_970.anInt308 != 12345678)
 															|| (aBool217 && (var6 <= anInt218)))
-														method143(var3.aClass28_970, var7, anInt212, anInt213, anInt205,
-																anInt215, var4, var5);
+														method143(obj.aClass28_970, var7, anInt212, anInt213, anInt205,
+																anInt215, x, z);
 												}
-											} else if ((var3.aClass33_974 != null) && !method115(var7, var4, var5)) {
+											} else if ((obj.aClass33_974 != null) && !method115(var7, x, z)) {
 												var13 = true;
-												method101(var3.aClass33_974, anInt212, anInt213, anInt205, anInt215,
-														var4, var5);
+												method101(obj.aClass33_974, anInt212, anInt213, anInt205, anInt215,
+														x, z);
 											}
 
 											var14 = 0;
 											var11 = 0;
-											final Class30 var31 = var3.aClass30_981;
-											final Class36 var15 = var3.aClass36_973;
+											final Class30 var31 = obj.aClass30_981;
+											final Class36 var15 = obj.aClass36_973;
 											if ((var31 != null) || (var15 != null)) {
-												if (anInt207 == var4)
+												if (anInt207 == x)
 													++var14;
-												else if (anInt207 < var4)
+												else if (anInt207 < x)
 													var14 += 2;
 
-												if (anInt208 == var5)
+												if (anInt208 == z)
 													var14 += 3;
-												else if (anInt208 > var5)
+												else if (anInt208 > z)
 													var14 += 6;
 
 												var11 = anIntArray229[var14];
-												var3.anInt987 = anIntArray231[var14];
+												obj.anInt987 = anIntArray231[var14];
 											}
 
 											if (var31 != null) {
 												if ((var31.anInt323 & anIntArray221[var14]) != 0) {
 													if (var31.anInt323 == 16) {
-														var3.anInt984 = 3;
-														var3.anInt985 = anIntArray232[var14];
-														var3.anInt986 = 3 - var3.anInt985;
+														obj.anInt984 = 3;
+														obj.anInt985 = anIntArray232[var14];
+														obj.anInt986 = 3 - obj.anInt985;
 													} else if (var31.anInt323 == 32) {
-														var3.anInt984 = 6;
-														var3.anInt985 = anIntArray233[var14];
-														var3.anInt986 = 6 - var3.anInt985;
+														obj.anInt984 = 6;
+														obj.anInt985 = anIntArray233[var14];
+														obj.anInt986 = 6 - obj.anInt985;
 													} else if (var31.anInt323 == 64) {
-														var3.anInt984 = 12;
-														var3.anInt985 = anIntArray234[var14];
-														var3.anInt986 = 12 - var3.anInt985;
+														obj.anInt984 = 12;
+														obj.anInt985 = anIntArray234[var14];
+														obj.anInt986 = 12 - obj.anInt985;
 													} else {
-														var3.anInt984 = 9;
-														var3.anInt985 = anIntArray228[var14];
-														var3.anInt986 = 9 - var3.anInt985;
+														obj.anInt984 = 9;
+														obj.anInt985 = anIntArray228[var14];
+														obj.anInt986 = 9 - obj.anInt985;
 													}
 												} else
-													var3.anInt984 = 0;
+													obj.anInt984 = 0;
 
 												if (((var31.anInt323 & var11) != 0)
-														&& !method130(var7, var4, var5, var31.anInt323))
+														&& !method130(var7, x, z, var31.anInt323))
 													var31.aClass124_Sub22_Sub19_328.method833(0, anInt212, anInt213,
 															anInt205, anInt215, var31.anInt324 - anInt209,
 															var31.anInt322 - anInt198, var31.anInt321 - anInt230,
 															var31.anInt326);
 
 												if (((var31.anInt320 & var11) != 0)
-														&& !method130(var7, var4, var5, var31.anInt320))
+														&& !method130(var7, x, z, var31.anInt320))
 													var31.aClass124_Sub22_Sub19_325.method833(0, anInt212, anInt213,
 															anInt205, anInt215, var31.anInt324 - anInt209,
 															var31.anInt322 - anInt198, var31.anInt321 - anInt230,
 															var31.anInt326);
 											}
 
-											if ((var15 != null) && !method140(var7, var4, var5,
+											if ((var15 != null) && !method140(var7, x, z,
 													var15.aClass124_Sub22_Sub19_383.anInt1605))
 												if ((var15.anInt386 & var11) != 0)
 													var15.aClass124_Sub22_Sub19_383.method833(0, anInt212, anInt213,
@@ -1613,14 +1613,14 @@ public class Class21 {
 												}
 
 											if (var13) {
-												final Class44 var22 = var3.aClass44_972;
+												final Class44 var22 = obj.aClass44_972;
 												if (var22 != null)
 													var22.aClass124_Sub22_Sub19_438.method833(0, anInt212, anInt213,
 															anInt205, anInt215, var22.anInt434 - anInt209,
 															var22.anInt436 - anInt198, var22.anInt433 - anInt230,
 															var22.anInt437);
 
-												final Class38 var23 = var3.aClass38_975;
+												final Class38 var23 = obj.aClass38_975;
 												if ((var23 != null) && (var23.anInt396 == 0)) {
 													if (var23.aClass124_Sub22_Sub19_392 != null)
 														var23.aClass124_Sub22_Sub19_392.method833(0, anInt212, anInt213,
@@ -1642,28 +1642,28 @@ public class Class21 {
 												}
 											}
 
-											var16 = var3.anInt968;
+											var16 = obj.anInt968;
 											if (var16 != 0) {
-												if ((var4 < anInt207) && ((var16 & 4) != 0)) {
-													var36 = var8[var4 + 1][var5];
+												if ((x < anInt207) && ((var16 & 4) != 0)) {
+													var36 = objs[x + 1][z];
 													if ((var36 != null) && var36.aBool982)
 														aClass111_200.method424(var36);
 												}
 
-												if ((var5 < anInt208) && ((var16 & 2) != 0)) {
-													var36 = var8[var4][var5 + 1];
+												if ((z < anInt208) && ((var16 & 2) != 0)) {
+													var36 = objs[x][z + 1];
 													if ((var36 != null) && var36.aBool982)
 														aClass111_200.method424(var36);
 												}
 
-												if ((var4 > anInt207) && ((var16 & 1) != 0)) {
-													var36 = var8[var4 - 1][var5];
+												if ((x > anInt207) && ((var16 & 1) != 0)) {
+													var36 = objs[x - 1][z];
 													if ((var36 != null) && var36.aBool982)
 														aClass111_200.method424(var36);
 												}
 
-												if ((var5 > anInt208) && ((var16 & 8) != 0)) {
-													var36 = var8[var4][var5 - 1];
+												if ((z > anInt208) && ((var16 & 8) != 0)) {
+													var36 = objs[x][z - 1];
 													if ((var36 != null) && var36.aBool982)
 														aClass111_200.method424(var36);
 												}
@@ -1671,45 +1671,45 @@ public class Class21 {
 											break;
 										}
 
-										if (var3.anInt984 != 0) {
+										if (obj.anInt984 != 0) {
 											var13 = true;
 
-											for (var14 = 0; var14 < var3.anInt976; ++var14)
-												if ((var3.aClass46Array977[var14].anInt458 != anInt203)
-														&& ((var3.anIntArray978[var14]
-																& var3.anInt984) == var3.anInt985)) {
+											for (var14 = 0; var14 < obj.anInt976; ++var14)
+												if ((obj.aClass46Array977[var14].anInt458 != anInt203)
+														&& ((obj.anIntArray978[var14]
+																& obj.anInt984) == obj.anInt985)) {
 													var13 = false;
 													break;
 												}
 
 											if (var13) {
-												var10 = var3.aClass30_981;
-												if (!method130(var7, var4, var5, var10.anInt323))
+												var10 = obj.aClass30_981;
+												if (!method130(var7, x, z, var10.anInt323))
 													var10.aClass124_Sub22_Sub19_328.method833(0, anInt212, anInt213,
 															anInt205, anInt215, var10.anInt324 - anInt209,
 															var10.anInt322 - anInt198, var10.anInt321 - anInt230,
 															var10.anInt326);
 
-												var3.anInt984 = 0;
+												obj.anInt984 = 0;
 											}
 										}
 
-										if (!var3.aBool988)
+										if (!obj.aBool988)
 											break;
 
 										try {
-											final int var33 = var3.anInt976;
-											var3.aBool988 = false;
+											final int var33 = obj.anInt976;
+											obj.aBool988 = false;
 											var14 = 0;
 
 											label561: for (var11 = 0; var11 < var33; ++var11) {
-												var12 = var3.aClass46Array977[var11];
+												var12 = obj.aClass46Array977[var11];
 												if (var12.anInt458 != anInt203) {
 													for (var24 = var12.anInt457; var24 <= var12.anInt462; ++var24)
 														for (var16 = var12.anInt465; var16 <= var12.anInt460; ++var16) {
-															var36 = var8[var24][var16];
+															var36 = objs[var24][var16];
 															if (var36.aBool971) {
-																var3.aBool988 = true;
+																obj.aBool988 = true;
 																continue label561;
 															}
 
@@ -1727,8 +1727,8 @@ public class Class21 {
 																if (var16 < var12.anInt460)
 																	var18 += 2;
 
-																if ((var18 & var36.anInt984) == var3.anInt986) {
-																	var3.aBool988 = true;
+																if ((var18 & var36.anInt984) == obj.anInt986) {
+																	obj.aBool988 = true;
 																	continue label561;
 																}
 															}
@@ -1784,51 +1784,51 @@ public class Class21 {
 
 												for (var16 = var34.anInt457; var16 <= var34.anInt462; ++var16)
 													for (var17 = var34.anInt465; var17 <= var34.anInt460; ++var17) {
-														final Class124_Sub5 var26 = var8[var16][var17];
+														final TileObj var26 = objs[var16][var17];
 														if (var26.anInt984 != 0)
 															aClass111_200.method424(var26);
-														else if (((var16 != var4) || (var17 != var5)) && var26.aBool982)
+														else if (((var16 != x) || (var17 != z)) && var26.aBool982)
 															aClass111_200.method424(var26);
 													}
 											}
 
-											if (!var3.aBool988)
+											if (!obj.aBool988)
 												break;
 										} catch (final Exception var28) {
-											var3.aBool988 = false;
+											obj.aBool988 = false;
 											break;
 										}
 									}
-								while (!var3.aBool982);
-							while (var3.anInt984 != 0);
+								while (!obj.aBool982);
+							while (obj.anInt984 != 0);
 
-							if ((var4 > anInt207) || (var4 <= anInt199))
+							if ((x > anInt207) || (x <= anInt199))
 								break;
 
-							var9 = var8[var4 - 1][var5];
+							var9 = objs[x - 1][z];
 						} while ((var9 != null) && var9.aBool982);
 
-						if ((var4 < anInt207) || (var4 >= (anInt204 - 1)))
+						if ((x < anInt207) || (x >= (anInt204 - 1)))
 							break;
 
-						var9 = var8[var4 + 1][var5];
+						var9 = objs[x + 1][z];
 					} while ((var9 != null) && var9.aBool982);
 
-					if ((var5 > anInt208) || (var5 <= anInt193))
+					if ((z > anInt208) || (z <= anInt193))
 						break;
 
-					var9 = var8[var4][var5 - 1];
+					var9 = objs[x][z - 1];
 				} while ((var9 != null) && var9.aBool982);
 
-				if ((var5 < anInt208) || (var5 >= (anInt206 - 1)))
+				if ((z < anInt208) || (z >= (anInt206 - 1)))
 					break;
 
-				var9 = var8[var4][var5 + 1];
+				var9 = objs[x][z + 1];
 			} while ((var9 != null) && var9.aBool982);
 
-			var3.aBool982 = false;
+			obj.aBool982 = false;
 			--anInt194;
-			final Class38 var32 = var3.aClass38_975;
+			final Class38 var32 = obj.aClass38_975;
 			if ((var32 != null) && (var32.anInt396 != 0)) {
 				if (var32.aClass124_Sub22_Sub19_392 != null)
 					var32.aClass124_Sub22_Sub19_392.method833(0, anInt212, anInt213, anInt205, anInt215,
@@ -1846,10 +1846,10 @@ public class Class21 {
 							var32.anInt390 - anInt230, var32.anInt395);
 			}
 
-			if (var3.anInt987 != 0) {
-				final Class36 var29 = var3.aClass36_973;
-				if ((var29 != null) && !method140(var7, var4, var5, var29.aClass124_Sub22_Sub19_383.anInt1605))
-					if ((var29.anInt386 & var3.anInt987) != 0)
+			if (obj.anInt987 != 0) {
+				final Class36 var29 = obj.aClass36_973;
+				if ((var29 != null) && !method140(var7, x, z, var29.aClass124_Sub22_Sub19_383.anInt1605))
+					if ((var29.anInt386 & obj.anInt987) != 0)
 						var29.aClass124_Sub22_Sub19_383.method833(0, anInt212, anInt213, anInt205, anInt215,
 								(var29.anInt378 - anInt209) + var29.anInt381, var29.anInt387 - anInt198,
 								(var29.anInt376 - anInt230) + var29.anInt382, var29.anInt385);
@@ -1876,47 +1876,47 @@ public class Class21 {
 									var25, var24, var29.anInt385);
 					}
 
-				final Class30 var27 = var3.aClass30_981;
+				final Class30 var27 = obj.aClass30_981;
 				if (var27 != null) {
-					if (((var27.anInt320 & var3.anInt987) != 0) && !method130(var7, var4, var5, var27.anInt320))
+					if (((var27.anInt320 & obj.anInt987) != 0) && !method130(var7, x, z, var27.anInt320))
 						var27.aClass124_Sub22_Sub19_325.method833(0, anInt212, anInt213, anInt205, anInt215,
 								var27.anInt324 - anInt209, var27.anInt322 - anInt198, var27.anInt321 - anInt230,
 								var27.anInt326);
 
-					if (((var27.anInt323 & var3.anInt987) != 0) && !method130(var7, var4, var5, var27.anInt323))
+					if (((var27.anInt323 & obj.anInt987) != 0) && !method130(var7, x, z, var27.anInt323))
 						var27.aClass124_Sub22_Sub19_328.method833(0, anInt212, anInt213, anInt205, anInt215,
 								var27.anInt324 - anInt209, var27.anInt322 - anInt198, var27.anInt321 - anInt230,
 								var27.anInt326);
 				}
 			}
 
-			Class124_Sub5 var30;
+			TileObj var30;
 			if (var6 < (anInt191 - 1)) {
-				var30 = aClass124_Sub5ArrayArrayArray225[var6 + 1][var4][var5];
+				var30 = tileobjs[var6 + 1][x][z];
 				if ((var30 != null) && var30.aBool982)
 					aClass111_200.method424(var30);
 			}
 
-			if (var4 < anInt207) {
-				var30 = var8[var4 + 1][var5];
+			if (x < anInt207) {
+				var30 = objs[x + 1][z];
 				if ((var30 != null) && var30.aBool982)
 					aClass111_200.method424(var30);
 			}
 
-			if (var5 < anInt208) {
-				var30 = var8[var4][var5 + 1];
+			if (z < anInt208) {
+				var30 = objs[x][z + 1];
 				if ((var30 != null) && var30.aBool982)
 					aClass111_200.method424(var30);
 			}
 
-			if (var4 > anInt207) {
-				var30 = var8[var4 - 1][var5];
+			if (x > anInt207) {
+				var30 = objs[x - 1][z];
 				if ((var30 != null) && var30.aBool982)
 					aClass111_200.method424(var30);
 			}
 
-			if (var5 > anInt208) {
-				var30 = var8[var4][var5 - 1];
+			if (z > anInt208) {
+				var30 = objs[x][z - 1];
 				if ((var30 != null) && var30.aBool982)
 					aClass111_200.method424(var30);
 			}
@@ -1942,7 +1942,7 @@ public class Class21 {
 	}
 
 	public void method139(final int var1, final int var2, final int var3) {
-		final Class124_Sub5 var4 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var4 = tileobjs[var1][var2][var3];
 		if (var4 != null)
 			var4.aClass44_972 = null;
 	}
@@ -1962,7 +1962,7 @@ public class Class21 {
 	}
 
 	public int method141(final int var1, final int var2, final int var3, final int var4) {
-		final Class124_Sub5 var5 = aClass124_Sub5ArrayArrayArray225[var1][var2][var3];
+		final TileObj var5 = tileobjs[var1][var2][var3];
 		if (var5 == null)
 			return -1;
 		else if ((var5.aClass30_981 != null) && (var5.aClass30_981.anInt326 == var4))
@@ -1981,7 +1981,7 @@ public class Class21 {
 	}
 
 	public void method142(final int[] var1, int var2, final int var3, final int var4, final int var5, final int var6) {
-		final Class124_Sub5 var7 = aClass124_Sub5ArrayArrayArray225[var4][var5][var6];
+		final TileObj var7 = tileobjs[var4][var5][var6];
 		if (var7 != null) {
 			final Class28 var8 = var7.aClass28_970;
 			int var10;
@@ -2040,7 +2040,7 @@ public class Class21 {
 		anInt191 = var1;
 		anInt211 = var2;
 		anInt236 = var3;
-		aClass124_Sub5ArrayArrayArray225 = new Class124_Sub5[var1][var2][var3];
+		tileobjs = new TileObj[var1][var2][var3];
 		anIntArrayArrayArray235 = new int[var1][var2 + 1][var3 + 1];
 		anIntArrayArrayArray237 = var4;
 		method98();

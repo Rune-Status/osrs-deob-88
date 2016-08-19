@@ -449,7 +449,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 							}
 				}
 
-				Class124_Sub5.method516(30);
+				client.method516(30);
 				Def15.method751();
 				CSD.method520();
 				client.secbuf.writeOpcode(104);

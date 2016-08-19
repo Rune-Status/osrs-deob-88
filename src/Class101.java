@@ -72,7 +72,7 @@ public class Class101 {
 							} else {
 								String[] var8 = var14.aStringArray1488;
 								if (client.aBool2153)
-									var8 = Class124_Sub5.method517(var8);
+									var8 = client.method517(var8);
 
 								int var3;
 								byte var13;
@@ -116,7 +116,7 @@ public class Class101 {
 
 								var8 = var0.aStringArray1172;
 								if (client.aBool2153)
-									var8 = Class124_Sub5.method517(var8);
+									var8 = client.method517(var8);
 
 								if (null != var8)
 									for (var3 = 4; var3 >= 0; --var3)

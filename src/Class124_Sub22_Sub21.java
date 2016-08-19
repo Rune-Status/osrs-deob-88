@@ -13,7 +13,7 @@ public class Class124_Sub22_Sub21 extends JagMap {
 			if (!client.aBool1989)
 				client.anInt2006 = 0;
 
-			Class124_Sub5.method516(25);
+			client.method516(25);
 			Class124_Sub7.method523("Loading - please wait.", true);
 			int var9 = Class9.anInt102;
 			int var5 = Class95.anInt762;

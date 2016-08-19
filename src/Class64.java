@@ -229,10 +229,10 @@ public class Class64 {
 			}
 
 			try {
-				final Graphics var40 = Class124_Sub5.aCanvas990.getGraphics();
+				final Graphics var40 = client.aCanvas990.getGraphics();
 				aClass9_558.method52(var40, 0, 0, (byte) 7);
 			} catch (final Exception var29) {
-				Class124_Sub5.aCanvas990.repaint();
+				client.aCanvas990.repaint();
 			}
 
 		} else {
@@ -460,10 +460,10 @@ public class Class64 {
 							"sl_button", "");
 
 			try {
-				final Graphics var28 = Class124_Sub5.aCanvas990.getGraphics();
+				final Graphics var28 = client.aCanvas990.getGraphics();
 				aClass9_558.method52(var28, 0, 0, (byte) 7);
 			} catch (final Exception var30) {
-				Class124_Sub5.aCanvas990.repaint();
+				client.aCanvas990.repaint();
 			}
 
 		}

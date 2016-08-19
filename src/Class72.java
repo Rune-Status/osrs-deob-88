@@ -159,13 +159,13 @@ public class Class72 implements Interface3 {
 				Class88.method343(22050, !client.aBool1989, 2);
 				final Class124_Sub4_Sub3 var25 = new Class124_Sub4_Sub3();
 				var25.method853(9, 128);
-				client.aClass8_2224 = Def15.method752(Class27.aClass82_303, Class124_Sub5.aCanvas990, 0,
+				client.aClass8_2224 = Def15.method752(Class27.aClass82_303, client.aCanvas990, 0,
 						22050);
 				client.aClass8_2224.method37(var25);
 				Class56_Sub2.method607(Somet2.aClass94_Sub1_1604, Class70.aClass94_Sub1_585,
 						Class39.aClass94_Sub1_399, var25);
 				Class124_Sub22_Sub19_Sub2.aClass8_1668 = Def15.method752(Class27.aClass82_303,
-						Class124_Sub5.aCanvas990, 1, 2048);
+						client.aCanvas990, 1, 2048);
 				Class56_Sub2.aClass124_Sub4_Sub2_1078 = new Class124_Sub4_Sub2();
 				Class124_Sub22_Sub19_Sub2.aClass8_1668.method37(Class56_Sub2.aClass124_Sub4_Sub2_1078);
 				Class27.aClass16_302 = new Class16(22050, Class8.anInt94);
@@ -244,7 +244,7 @@ public class Class72 implements Interface3 {
 					} else {
 						Class4.aString39 = "Loaded title screen";
 						Class4.anInt38 = 50;
-						Class124_Sub5.method516(5);
+						client.method516(5);
 						client.anInt2012 = 70;
 					}
 				} else if (client.anInt2012 == 70) {
@@ -355,7 +355,7 @@ public class Class72 implements Interface3 {
 							client.anInt2012 = 140;
 						}
 					} else if (client.anInt2012 == 140)
-						Class124_Sub5.method516(10);
+						client.method516(10);
 				} else {
 					var2 = 0;
 					Class124_Sub22_Sub16_Sub1 var9;

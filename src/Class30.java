@@ -27,9 +27,9 @@ public final class Class30 {
 	}
 
 	static final void method174() {
-		if (null != Class73.aClass78_609) {
-			Class73.aClass78_609.method324();
-			Class73.aClass78_609 = null;
+		if (null != Class73.out) {
+			Class73.out.method324();
+			Class73.out = null;
 		}
 
 		Def9.method639();
@@ -43,7 +43,7 @@ public final class Class30 {
 		client.anInt2220 = -1;
 		client.aBool2221 = false;
 		Class124_Sub7.method527();
-		Class124_Sub5.method516(10);
+		client.method516(10);
 	}
 
 	public static boolean method175() {

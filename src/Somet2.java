@@ -74,20 +74,20 @@ public class Somet2 extends JagMap {
 			int var107;
 			for (var0 = 0; var0 < 100; ++var0) {
 				boolean var1;
-				if (null == Class73.aClass78_609)
+				if (null == Class73.out)
 					var1 = false;
 				else
 					label2501: {
 						String var3;
 						try {
-							var2 = Class73.aClass78_609.method322();
+							var2 = Class73.out.avail();
 							if (var2 == 0) {
 								var1 = false;
 								break label2501;
 							}
 
 							if (client.pktId == -1) {
-								Class73.aClass78_609.method320(client.buf.backing, 0, 1);
+								Class73.out.method320(client.buf.backing, 0, 1);
 								client.buf.pos = 0;
 								client.pktId = client.buf.readOpcode();
 								client.anInt2027 = Class102.anIntArray789[client.pktId];
@@ -100,7 +100,7 @@ public class Somet2 extends JagMap {
 									break label2501;
 								}
 
-								Class73.aClass78_609.method320(client.buf.backing, 0, 1);
+								Class73.out.method320(client.buf.backing, 0, 1);
 								client.anInt2027 = client.buf.backing[0] & 255;
 								--var2;
 							}
@@ -111,7 +111,7 @@ public class Somet2 extends JagMap {
 									break label2501;
 								}
 
-								Class73.aClass78_609.method320(client.buf.backing, 0, 2);
+								Class73.out.method320(client.buf.backing, 0, 2);
 								client.buf.pos = 0;
 								client.anInt2027 = client.buf.readShortU();
 								var2 -= 2;
@@ -123,7 +123,7 @@ public class Somet2 extends JagMap {
 							}
 
 							client.buf.pos = 0;
-							Class73.aClass78_609.method320(client.buf.backing, 0,
+							Class73.out.method320(client.buf.backing, 0,
 									client.anInt2027);
 							client.anInt2193 = 0;
 							client.anInt2086 = client.anInt2032;
@@ -278,9 +278,9 @@ public class Somet2 extends JagMap {
 								var64.anInt262 = client.buf.readShortU();
 								var4 = client.buf.readInt2(-902248709);
 								var64.anInt255 = var4;
-								Class124_Sub5.method516(45);
-								Class73.aClass78_609.method324();
-								Class73.aClass78_609 = null;
+								client.method516(45);
+								Class73.out.method324();
+								Class73.out = null;
 								Class124_Sub22_Sub19.method835(var64);
 								client.pktId = -1;
 								var1 = false;
@@ -458,7 +458,7 @@ public class Somet2 extends JagMap {
 							}
 
 							if (client.pktId == 177) {
-								Class124_Sub5.method515(true);
+								client.map(true);
 								client.pktId = -1;
 								var1 = true;
 								break label2501;
@@ -1421,7 +1421,7 @@ public class Somet2 extends JagMap {
 							}
 
 							if (client.pktId == 173) {
-								Class124_Sub5.method515(false);
+								client.map(false);
 								client.pktId = -1;
 								var1 = true;
 								break label2501;
@@ -2548,9 +2548,9 @@ public class Somet2 extends JagMap {
 																client.secbuf.writeOpcode(250);
 
 															try {
-																if ((null != Class73.aClass78_609)
+																if ((null != Class73.out)
 																		&& (client.secbuf.pos > 0)) {
-																	Class73.aClass78_609.method323(
+																	Class73.out.write(
 																			client.secbuf.backing,
 																			0,
 																			client.secbuf.pos);

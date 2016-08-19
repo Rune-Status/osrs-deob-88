@@ -48,7 +48,7 @@ public class Class41 {
 					} else {
 						String[] var17 = var4.aStringArray1413;
 						if (client.aBool2153)
-							var17 = Class124_Sub5.method517(var17);
+							var17 = client.method517(var17);
 
 						if (null != var17)
 							for (int var15 = 4; var15 >= 0; --var15)
@@ -156,7 +156,7 @@ public class Class41 {
 							} else {
 								String[] var18 = var26.aStringArray1479;
 								if (client.aBool2153)
-									var18 = Class124_Sub5.method517(var18);
+									var18 = client.method517(var18);
 
 								for (int var21 = 4; var21 >= 0; --var21)
 									if ((var18 != null) && (var18[var21] != null)) {

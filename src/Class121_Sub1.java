@@ -55,7 +55,7 @@ public class Class121_Sub1 extends Class121 {
 						} else {
 							String[] var6 = var0.aStringArray1344;
 							if (client.aBool2153)
-								var6 = Class124_Sub5.method517(var6);
+								var6 = client.method517(var6);
 
 							int var7;
 							if (var6 != null)

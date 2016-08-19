@@ -45,7 +45,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								var7.writeByte(4);
 								var7.writeByte(Class92.aByte733);
 								var7.writeShort(0);
-								Class92.aClass78_732.method323(var7.backing, 0, 4);
+								Class92.aClass78_732.write(var7.backing, 0, 4);
 							} catch (final IOException var5) {
 								try {
 									Class92.aClass78_732.method324();
@@ -3152,7 +3152,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													if (opc == 5018) {
 														--var5;
 														var21 = Class2.anIntArray8[var5];
-														Class2.anIntArray8[var5++] = Class124_Sub5.method513(var21,
+														Class2.anIntArray8[var5++] = client.method513(var21,
 																(byte) 100);
 														continue;
 													}

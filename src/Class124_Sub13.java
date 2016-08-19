@@ -59,17 +59,17 @@ public final class Class124_Sub13 extends Node {
 		synchronized (var0) {
 			final Container var1 = Class80.aclient645.method1059();
 			if (var1 != null) {
-				Class124_Sub5.anInt989 = Math.max(var1.getSize().width, Class51.anInt489);
+				client.anInt989 = Math.max(var1.getSize().width, Class51.anInt489);
 				Class124_Sub22_Sub19_Sub1.anInt1664 = Math.max(var1.getSize().height, Def3.anInt1356);
 				Insets var2;
 				if (var1 == Class69.aFrame578) {
 					var2 = Class69.aFrame578.getInsets();
-					Class124_Sub5.anInt989 -= var2.right + var2.left;
+					client.anInt989 -= var2.right + var2.left;
 					Class124_Sub22_Sub19_Sub1.anInt1664 -= var2.top + var2.bottom;
 				}
 
-				if (Class124_Sub5.anInt989 <= 0)
-					Class124_Sub5.anInt989 = 1;
+				if (client.anInt989 <= 0)
+					client.anInt989 = 1;
 
 				if (Class124_Sub22_Sub19_Sub1.anInt1664 <= 0)
 					Class124_Sub22_Sub19_Sub1.anInt1664 = 1;
@@ -78,26 +78,26 @@ public final class Class124_Sub13 extends Node {
 					Class56_Sub2.anInt1083 = client.anInt2071;
 					Class81.anInt662 = client.anInt2198 * 503;
 				} else {
-					Class56_Sub2.anInt1083 = Math.min(Class124_Sub5.anInt989, 7680);
+					Class56_Sub2.anInt1083 = Math.min(client.anInt989, 7680);
 					Class81.anInt662 = Math.min(Class124_Sub22_Sub19_Sub1.anInt1664, 2160);
 				}
 
-				Applet_Sub1.anInt1973 = (Class124_Sub5.anInt989 - Class56_Sub2.anInt1083) / 2;
+				Applet_Sub1.anInt1973 = (client.anInt989 - Class56_Sub2.anInt1083) / 2;
 				Applet_Sub1.anInt1974 = 0;
-				Class124_Sub5.aCanvas990.setSize(Class56_Sub2.anInt1083, Class81.anInt662);
+				client.aCanvas990.setSize(Class56_Sub2.anInt1083, Class81.anInt662);
 				Class64.aClass9_558 = Def8.method701(Class56_Sub2.anInt1083, Class81.anInt662,
-						Class124_Sub5.aCanvas990);
+						client.aCanvas990);
 				if (Class69.aFrame578 == var1) {
 					var2 = Class69.aFrame578.getInsets();
-					Class124_Sub5.aCanvas990.setLocation(Applet_Sub1.anInt1973 + var2.left,
+					client.aCanvas990.setLocation(Applet_Sub1.anInt1973 + var2.left,
 							Applet_Sub1.anInt1974 + var2.top);
 				} else
-					Class124_Sub5.aCanvas990.setLocation(Applet_Sub1.anInt1973, Applet_Sub1.anInt1974);
+					client.aCanvas990.setLocation(Applet_Sub1.anInt1973, Applet_Sub1.anInt1974);
 
 				int var3 = Class56_Sub2.anInt1083;
 				int var4 = Class81.anInt662;
-				if (Class124_Sub5.anInt989 < var3)
-					var3 = Class124_Sub5.anInt989;
+				if (client.anInt989 < var3)
+					var3 = client.anInt989;
 
 				if (Class124_Sub22_Sub19_Sub1.anInt1664 < var4)
 					var4 = Class124_Sub22_Sub19_Sub1.anInt1664;

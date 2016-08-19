@@ -19,9 +19,9 @@ public class Class49 {
 	static final void method235() {
 		try {
 			if (client.anInt2016 == 0) {
-				if (Class73.aClass78_609 != null) {
-					Class73.aClass78_609.method324();
-					Class73.aClass78_609 = null;
+				if (Class73.out != null) {
+					Class73.out.method324();
+					Class73.out = null;
 				}
 
 				Class32.aClass79_345 = null;
@@ -39,7 +39,7 @@ public class Class49 {
 					throw new IOException();
 
 				if (Class32.aClass79_345.anInt642 == 1) {
-					Class73.aClass78_609 = new Class78((Socket) Class32.aClass79_345.anObject638, Class27.aClass82_303);
+					Class73.out = new Class78((Socket) Class32.aClass79_345.anObject638, Class27.aClass82_303);
 					Class32.aClass79_345 = null;
 					client.anInt2016 = 2;
 				}
@@ -48,7 +48,7 @@ public class Class49 {
 			if (client.anInt2016 == 2) {
 				client.secbuf.pos = 0;
 				client.secbuf.writeByte(14);
-				Class73.aClass78_609.method323(client.secbuf.backing, 0, 1);
+				Class73.out.write(client.secbuf.backing, 0, 1);
 				client.buf.pos = 0;
 				client.anInt2016 = 3;
 			}
@@ -61,7 +61,7 @@ public class Class49 {
 				if (null != Class124_Sub22_Sub19_Sub2.aClass8_1668)
 					Class124_Sub22_Sub19_Sub2.aClass8_1668.method47();
 
-				var0 = Class73.aClass78_609.method319();
+				var0 = Class73.out.method319();
 				if (null != client.aClass8_2224)
 					client.aClass8_2224.method47();
 
@@ -165,9 +165,9 @@ public class Class49 {
 				client.loginbuf.writeInt(Class25.aClass94_Sub1_279.anInt756);
 				client.loginbuf.writeInt(Class70.aClass94_Sub1_585.anInt756);
 				client.loginbuf.writeInt(Somet2.aClass94_Sub1_1604.anInt756);
-				client.loginbuf.xtea3(var1, var3, client.loginbuf.pos);
+				client.loginbuf.xtea3(var1, var3, client.loginbuf.pos); // xtea
 				client.loginbuf.endShortSize(client.loginbuf.pos - var2);
-				Class73.aClass78_609.method323(client.loginbuf.backing, 0,
+				Class73.out.write(client.loginbuf.backing, 0,
 						client.loginbuf.pos);
 				client.secbuf.isa(var1);
 
@@ -178,8 +178,8 @@ public class Class49 {
 				client.anInt2016 = 6;
 			}
 
-			if ((client.anInt2016 == 6) && (Class73.aClass78_609.method322() > 0)) {
-				var0 = Class73.aClass78_609.method319();
+			if ((client.anInt2016 == 6) && (Class73.out.avail() > 0)) {
+				var0 = Class73.out.method319();
 				if ((var0 == 21) && (client.anInt1992 == 20))
 					client.anInt2016 = 7;
 				else if (var0 == 2)
@@ -209,7 +209,7 @@ public class Class49 {
 								client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var2].anInt1694 = -1;
 
 						method241();
-						Class124_Sub5.method516(30);
+						client.method516(30);
 
 						for (var2 = 0; var2 < 100; ++var2)
 							client.aBoolArray2061[var2] = true;
@@ -232,8 +232,8 @@ public class Class49 {
 				}
 			}
 
-			if ((client.anInt2016 == 7) && (Class73.aClass78_609.method322() > 0)) {
-				client.anInt2019 = (Class73.aClass78_609.method319() + 3) * 60;
+			if ((client.anInt2016 == 7) && (Class73.out.avail() > 0)) {
+				client.anInt2019 = (Class73.out.method319() + 3) * 60;
 				client.anInt2016 = 8;
 			}
 
@@ -245,9 +245,9 @@ public class Class49 {
 					client.anInt2016 = 0;
 
 			} else {
-				if ((client.anInt2016 == 9) && (Class73.aClass78_609.method322() >= 13)) {
-					final boolean var15 = Class73.aClass78_609.method319() == 1;
-					Class73.aClass78_609.method320(client.buf.backing, 0, 4);
+				if ((client.anInt2016 == 9) && (Class73.out.avail() >= 13)) {
+					final boolean var15 = Class73.out.method319() == 1;
+					Class73.out.method320(client.buf.backing, 0, 4);
 					client.buf.pos = 0;
 					if (var15) {
 						var2 = client.buf.readOpcode() << 24;
@@ -266,16 +266,16 @@ public class Class49 {
 						Class62.method281();
 					}
 
-					client.anInt2149 = Class73.aClass78_609.method319();
-					client.aBool2151 = Class73.aClass78_609.method319() == 1;
-					client.anInt2106 = Class73.aClass78_609.method319();
+					client.anInt2149 = Class73.out.method319();
+					client.aBool2151 = Class73.out.method319() == 1;
+					client.anInt2106 = Class73.out.method319();
 					client.anInt2106 <<= 8;
-					client.anInt2106 += Class73.aClass78_609.method319();
-					client.anInt2107 = Class73.aClass78_609.method319();
-					Class73.aClass78_609.method320(client.buf.backing, 0, 1);
+					client.anInt2106 += Class73.out.method319();
+					client.anInt2107 = Class73.out.method319();
+					Class73.out.method320(client.buf.backing, 0, 1);
 					client.buf.pos = 0;
 					client.pktId = client.buf.readOpcode();
-					Class73.aClass78_609.method320(client.buf.backing, 0, 2);
+					Class73.out.method320(client.buf.backing, 0, 2);
 					client.buf.pos = 0;
 					client.anInt2027 = client.buf.readShortU();
 					client var9;
@@ -298,35 +298,36 @@ public class Class49 {
 				}
 
 				if (client.anInt2016 == 10) {
-					if (Class73.aClass78_609.method322() >= client.anInt2027) {
+					if (Class73.out.avail() >= client.anInt2027) {
 						client.buf.pos = 0;
-						Class73.aClass78_609.method320(client.buf.backing, 0,
+						Class73.out.method320(client.buf.backing, 0,
 								client.anInt2027);
 						Class62.method276();
 						Class124_Sub13.anInt1071 = -1;
-						Class124_Sub5.method515(false);
+						client.map(false);
 						client.pktId = -1;
+						System.out.println("post map");
 					}
 
 				} else {
-					if ((client.anInt2016 == 11) && (Class73.aClass78_609.method322() >= 2)) {
+					if ((client.anInt2016 == 11) && (Class73.out.avail() >= 2)) {
 						client.buf.pos = 0;
-						Class73.aClass78_609.method320(client.buf.backing, 0, 2);
+						Class73.out.method320(client.buf.backing, 0, 2);
 						client.buf.pos = 0;
 						Class54.anInt504 = client.buf.readShortU();
 						client.anInt2016 = 12;
 					}
 
-					if ((client.anInt2016 == 12) && (Class73.aClass78_609.method322() >= Class54.anInt504)) {
+					if ((client.anInt2016 == 12) && (Class73.out.avail() >= Class54.anInt504)) {
 						client.buf.pos = 0;
-						Class73.aClass78_609.method320(client.buf.backing, 0,
+						Class73.out.method320(client.buf.backing, 0,
 								Class54.anInt504);
 						client.buf.pos = 0;
 						final String var16 = client.buf.readStr2();
 						final String var10 = client.buf.readStr2();
 						final String var20 = client.buf.readStr2();
 						Def13.method734(var16, var10, var20);
-						Class124_Sub5.method516(10);
+						client.method516(10);
 					}
 
 					++client.anInt1999;

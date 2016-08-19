@@ -95,7 +95,7 @@ public class Def14 extends JagMap {
 					return var6;
 				} else {
 					System.err.printf("bad xtea decrypt %n");
-					return new byte[100];
+					return new byte[] {};
 					//throw new RuntimeException();
 				}
 			}

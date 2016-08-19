@@ -30,7 +30,7 @@ public class Class34 implements Interface3 {
 			}
 
 			final int var10 = var2 - var4;
-			if ((var10 >= 1) && (var10 <= Class124_Sub5.method514(var1))) {
+			if ((var10 >= 1) && (var10 <= client.method514(var1))) {
 				final StringBuilder var7 = new StringBuilder(var10);
 
 				for (int var6 = var4; var6 < var2; ++var6) {

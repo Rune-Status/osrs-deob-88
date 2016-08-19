@@ -140,11 +140,11 @@ public final class Class78 implements Runnable {
 
 	}
 
-	public int method322() throws IOException {
+	public int avail() throws IOException {
 		return aBool628 ? 0 : anInputStream626.available();
 	}
 
-	public void method323(final byte[] var1, final int var2, final int var3) throws IOException {
+	public void write(final byte[] var1, final int var2, final int var3) throws IOException {
 		if (!aBool628)
 			if (aBool627) {
 				aBool627 = false;

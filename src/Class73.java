@@ -7,7 +7,7 @@ public class Class73 {
 	static String aString606;
 	static int anInt607;
 	static int anInt608;
-	static Class78 aClass78_609;
+	static Class78 out;
 	public static Class132 aClass132_600 = null;
 	public static Class132 aClass132_605 = null;
 	public static Class132 aClass132_601 = null;

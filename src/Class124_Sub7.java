@@ -30,10 +30,10 @@ public class Class124_Sub7 extends Node {
 		Class124_Sub22_Sub17.method830(var3 - var2, var4 - var2, var2 + var5 + var2, var6 + var2 + var2);
 		if (var1)
 			try {
-				final Graphics var7 = Class124_Sub5.aCanvas990.getGraphics();
+				final Graphics var7 = client.aCanvas990.getGraphics();
 				Class64.aClass9_558.method52(var7, 0, 0, (byte) 7);
 			} catch (final Exception var8) {
-				Class124_Sub5.aCanvas990.repaint();
+				client.aCanvas990.repaint();
 			}
 		else
 			Class47.method230(var3, var4, var5, var6);

@@ -68,9 +68,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
 	protected final synchronized void method1050() {
 		final Container var1 = method1059();
-		if (Class124_Sub5.aCanvas990 != null) {
-			Class124_Sub5.aCanvas990.removeFocusListener(this);
-			var1.remove(Class124_Sub5.aCanvas990);
+		if (client.aCanvas990 != null) {
+			client.aCanvas990.removeFocusListener(this);
+			var1.remove(client.aCanvas990);
 		}
 
 		Class56_Sub2.anInt1083 = Math.max(var1.getWidth(), Class51.anInt489);
@@ -82,21 +82,21 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			Class81.anInt662 -= var2.top + var2.bottom;
 		}
 
-		Class124_Sub5.aCanvas990 = new Canvas_Sub1(this);
-		var1.add(Class124_Sub5.aCanvas990);
-		Class124_Sub5.aCanvas990.setSize(Class56_Sub2.anInt1083, Class81.anInt662);
-		Class124_Sub5.aCanvas990.setVisible(true);
+		client.aCanvas990 = new Canvas_Sub1(this);
+		var1.add(client.aCanvas990);
+		client.aCanvas990.setSize(Class56_Sub2.anInt1083, Class81.anInt662);
+		client.aCanvas990.setVisible(true);
 		if (var1 == Class69.aFrame578) {
 			var2 = Class69.aFrame578.getInsets();
-			Class124_Sub5.aCanvas990.setLocation(anInt1973 + var2.left, var2.top + anInt1974);
+			client.aCanvas990.setLocation(anInt1973 + var2.left, var2.top + anInt1974);
 		} else
-			Class124_Sub5.aCanvas990.setLocation(anInt1973, anInt1974);
+			client.aCanvas990.setLocation(anInt1973, anInt1974);
 
-		Class124_Sub5.aCanvas990.addFocusListener(this);
-		Class124_Sub5.aCanvas990.requestFocus();
+		client.aCanvas990.addFocusListener(this);
+		client.aCanvas990.requestFocus();
 		aBool1968 = true;
 		final Class9 var3 = Def8.method701(Class56_Sub2.anInt1083, Class81.anInt662,
-				Class124_Sub5.aCanvas990);
+				client.aCanvas990);
 		if (null != Class64.aClass9_558)
 			Class64.aClass9_558.method52(var3.anImage98.getGraphics(), 0, 0, (byte) 7);
 
@@ -157,7 +157,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			aBool1966 = true;
 
 			try {
-				Class124_Sub5.aCanvas990.removeFocusListener(this);
+				client.aCanvas990.removeFocusListener(this);
 			} catch (final Exception var5) {
 				;
 			}
@@ -382,7 +382,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
 					method1063();
 					var8 = Class27.aClass82_303;
-					var9 = Class124_Sub5.aCanvas990;
+					var9 = client.aCanvas990;
 				} while (null == var8.anEventQueue666);
 
 				for (var3 = 0; (var3 < 50) && (var8.anEventQueue666.peekEvent() != null); ++var3)
@@ -415,13 +415,13 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		if ((++anInt1975 - 1) > 50) {
 			anInt1975 -= 50;
 			aBool1968 = true;
-			Class124_Sub5.aCanvas990.setSize(Class56_Sub2.anInt1083, Class81.anInt662);
-			Class124_Sub5.aCanvas990.setVisible(true);
+			client.aCanvas990.setSize(Class56_Sub2.anInt1083, Class81.anInt662);
+			client.aCanvas990.setVisible(true);
 			if (Class69.aFrame578 == var1) {
 				final Insets var7 = Class69.aFrame578.getInsets();
-				Class124_Sub5.aCanvas990.setLocation(var7.left + anInt1973, var7.top + anInt1974);
+				client.aCanvas990.setLocation(var7.left + anInt1973, var7.top + anInt1974);
 			} else
-				Class124_Sub5.aCanvas990.setLocation(anInt1973, anInt1974);
+				client.aCanvas990.setLocation(anInt1973, anInt1974);
 		}
 
 		method1056((byte) 39);

@@ -105,9 +105,9 @@ public class Class10 {
 
 	static final void method60() {
 		if (client.anInt2034 <= 0) {
-			Class124_Sub5.method516(40);
-			Class124_Sub22_Sub19_Sub1.aClass78_1662 = Class73.aClass78_609;
-			Class73.aClass78_609 = null;
+			client.method516(40);
+			Class124_Sub22_Sub19_Sub1.aClass78_1662 = Class73.out;
+			Class73.out = null;
 		} else
 			Class30.method174();
 	}

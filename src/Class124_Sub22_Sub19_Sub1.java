@@ -55,7 +55,7 @@ public final class Class124_Sub22_Sub19_Sub1 extends Class124_Sub22_Sub19 {
 	static void method885() {
 		final int var0 = Applet_Sub1.anInt1973;
 		final int var1 = Applet_Sub1.anInt1974;
-		final int var2 = Class124_Sub5.anInt989 - Class56_Sub2.anInt1083 - var0;
+		final int var2 = client.anInt989 - Class56_Sub2.anInt1083 - var0;
 		final int var3 = anInt1664 - Class81.anInt662 - var1;
 		if ((var0 > 0) || (var2 > 0) || (var1 > 0) || (var3 > 0))
 			try {
@@ -74,13 +74,13 @@ public final class Class124_Sub22_Sub19_Sub1 extends Class124_Sub22_Sub19 {
 					var9.fillRect(var5, var6, var0, anInt1664);
 
 				if (var1 > 0)
-					var9.fillRect(var5, var6, Class124_Sub5.anInt989, var1);
+					var9.fillRect(var5, var6, client.anInt989, var1);
 
 				if (var2 > 0)
-					var9.fillRect((var5 + Class124_Sub5.anInt989) - var2, var6, var2, anInt1664);
+					var9.fillRect((var5 + client.anInt989) - var2, var6, var2, anInt1664);
 
 				if (var3 > 0)
-					var9.fillRect(var5, (anInt1664 + var6) - var3, Class124_Sub5.anInt989, var3);
+					var9.fillRect(var5, (anInt1664 + var6) - var3, client.anInt989, var3);
 			} catch (final Exception var8) {
 				;
 			}
