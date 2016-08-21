@@ -26,10 +26,10 @@ public class Class2 {
 	static void method18() {
 		Class4.aString44 = Class4.aString44.trim();
 		if (Class4.aString44.length() == 0)
-			Def13.method734("Please enter your username.", "If you created your account after November",
+			client.showMsg("Please enter your username.", "If you created your account after November",
 					"2010, this will be the creation email address.");
 		else {
-			final long var0 = Class124_Sub22_Sub19_Sub1.method888(2020603528);
+			final long var0 = Class124_Sub22_Sub19_Sub1.avail(2020603528);
 			byte var2;
 			if (0L == var0)
 				var2 = 5;
@@ -39,7 +39,7 @@ public class Class2 {
 				final RSBuf var5 = new RSBuf(128);
 				final RSBuf var6 = new RSBuf(128);
 				final int[] var7 = new int[] { var4.nextInt(), var4.nextInt(), (int) (var0 >> 32), (int) var0 };
-				var5.writeByte(10);
+				var5.writeByte(10); // login opcode
 
 				int var8;
 				for (var8 = 0; var8 < 4; ++var8)
@@ -78,7 +78,7 @@ public class Class2 {
 						var9[var12] = -1;
 				}
 
-				var6.writeReverse(var9, 0, 24);
+				var6.writeFrom(var9, 0, 24);
 				var6.writeULong(var4.nextLong());
 				var6.dorsa(Class43.aBigInteger428, Class43.aBigInteger429);
 				var8 = Class54.len(var3);
@@ -92,11 +92,11 @@ public class Class2 {
 				RSBuf var13 = new RSBuf(var6.pos + 5 + var5.pos + var11.pos);
 				var13.writeByte(2);
 				var13.writeByte(var5.pos);
-				var13.writeReverse(var5.backing, 0, var5.pos);
+				var13.writeFrom(var5.backing, 0, var5.pos);
 				var13.writeByte(var6.pos);
-				var13.writeReverse(var6.backing, 0, var6.pos);
+				var13.writeFrom(var6.backing, 0, var6.pos);
 				var13.writeShort(var11.pos);
-				var13.writeReverse(var11.backing, 0, var11.pos);
+				var13.writeFrom(var11.backing, 0, var11.pos);
 				final String var14 = Class68.method301(var13.backing);
 
 				byte var20;
@@ -177,26 +177,26 @@ public class Class2 {
 
 			switch (var2) {
 			case 2:
-				Def13.method734("", "Page has opened in a new window.",
+				client.showMsg("", "Page has opened in a new window.",
 						"(Please check your popup blocker.)");
 				Class4.anInt43 = 6;
 				break;
 			case 3:
-				Def13.method734("", "Error connecting to server.", "");
+				client.showMsg("", "Error connecting to server.", "");
 				break;
 			case 4:
-				Def13.method734("The part of the website you are trying",
+				client.showMsg("The part of the website you are trying",
 						"to connect to is offline at the moment.", "Please try again later.");
 				break;
 			case 5:
-				Def13.method734("Sorry, there was an error trying to",
+				client.showMsg("Sorry, there was an error trying to",
 						"log you in to this part of the website.", "Please try again later.");
 				break;
 			case 6:
-				Def13.method734("", "Error connecting to server.", "");
+				client.showMsg("", "Error connecting to server.", "");
 				break;
 			case 7:
-				Def13.method734("You must enter a valid login to proceed. For accounts",
+				client.showMsg("You must enter a valid login to proceed. For accounts",
 						"created after 24th November 2010, please use your",
 						"email address. Otherwise please use your username.");
 			}

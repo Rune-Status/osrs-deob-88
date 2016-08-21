@@ -20,7 +20,7 @@ public class Class62 {
 		Def6.aClass113_1391.map();
 	}
 
-	static void method276() {
+	static void reset() {
 		client.aLong1995 = -1L;
 		client.anInt1998 = -1;
 		Class47.aClass29_467.anInt315 = 0;
@@ -130,24 +130,6 @@ public class Class62 {
 			client.aClass125Array2259[var0] = new Class125();
 
 		Class37.aClass134_389 = null;
-	}
-
-	static synchronized byte[] forSize(final int size, final byte var1) {
-		byte[] var2;
-		if ((size == 100) && (anInt547 > 0)) {
-			var2 = backing1k[--anInt547];
-			backing1k[anInt547] = null;
-			return var2;
-		} else if ((size == 5000) && (anInt552 > 0)) {
-			var2 = backing250[--anInt552];
-			backing250[anInt552] = null;
-			return var2;
-		} else if ((size == 30000) && (anInt549 > 0)) {
-			var2 = backing50[--anInt549];
-			backing50[anInt549] = null;
-			return var2;
-		} else
-			return new byte[size];
 	}
 
 	public static Class53 method278(final int var0, final short var1) {
@@ -276,7 +258,7 @@ public class Class62 {
 							var15 += 15;
 							var16 = 361;
 							if ((var1 == 1) && (var14 >= (var16 - 15)) && (var14 < var16)) {
-								Def13.method734("Please enter your username.",
+								client.showMsg("Please enter your username.",
 										"If you created your account after November",
 										"2010, this will be the creation email address.");
 								Class4.anInt43 = 5;
@@ -289,17 +271,17 @@ public class Class62 {
 									&& (var14 >= (var8 - 20)) && (var14 <= (var8 + 20))) {
 								Class4.aString44 = Class4.aString44.trim();
 								if (Class4.aString44.length() == 0) {
-									Def13.method734("", "Please enter your username/email address.", "");
+									client.showMsg("", "Please enter your username/email address.", "");
 									return;
 								}
 
 								if (Class4.aString45.length() == 0) {
-									Def13.method734("", "Please enter your password.", "");
+									client.showMsg("", "Please enter your password.", "");
 									return;
 								}
 
-								Def13.method734("", "Connecting to server...", "");
-								Class4.aClass72_48 = Class57.aClass22_538.aLinkedHashMap252
+								client.showMsg("", "Connecting to server...", "");
+								Class4.security = Class57.aClass22_538.aLinkedHashMap252
 										.containsKey(Integer.valueOf(Class47.method232(Class4.aString44)))
 												? Class72.aClass72_597 : Class72.aClass72_593;
 								client.method516(20);
@@ -357,18 +339,18 @@ public class Class62 {
 										if (Class124_Sub13.anInt1072 == 84) {
 											Class4.aString44 = Class4.aString44.trim();
 											if (Class4.aString44.length() == 0) {
-												Def13.method734("",
+												client.showMsg("",
 														"Please enter your username/email address.", "");
 												return;
 											}
 
 											if (Class4.aString45.length() == 0) {
-												Def13.method734("", "Please enter your password.", "");
+												client.showMsg("", "Please enter your password.", "");
 												return;
 											}
 
-											Def13.method734("", "Connecting to server...", "");
-											Class4.aClass72_48 = Class57.aClass22_538.aLinkedHashMap252
+											client.showMsg("", "Connecting to server...", "");
+											Class4.security = Class57.aClass22_538.aLinkedHashMap252
 													.containsKey(Integer.valueOf(Class47.method232(Class4.aString44)))
 															? Class72.aClass72_597 : Class72.aClass72_593;
 											client.method516(20);
@@ -392,14 +374,14 @@ public class Class62 {
 										&& (var14 >= (var5 - 20)) && (var14 <= (var5 + 20))) {
 									Class49.aString485.trim();
 									if (Class49.aString485.length() != 6) {
-										Def13.method734("", "Please enter a 6-digin PIN.", "");
+										client.showMsg("", "Please enter a 6-digin PIN.", "");
 										return;
 									}
 
 									Class84.anInt673 = Integer.parseInt(Class49.aString485);
 									Class49.aString485 = "";
-									Class4.aClass72_48 = Class4.aBool37 ? Class72.aClass72_594 : Class72.aClass72_599;
-									Def13.method734("", "Connecting to server...", "");
+									Class4.security = Class4.aBool37 ? Class72.aClass72_594 : Class72.aClass72_599;
+									client.showMsg("", "Connecting to server...", "");
 									client.method516(20);
 									return;
 								}
@@ -463,15 +445,15 @@ public class Class62 {
 										if (Class124_Sub13.anInt1072 == 84) {
 											Class49.aString485.trim();
 											if (Class49.aString485.length() != 6) {
-												Def13.method734("", "Please enter a 6-digin PIN.", "");
+												client.showMsg("", "Please enter a 6-digin PIN.", "");
 												return;
 											}
 
 											Class84.anInt673 = Integer.parseInt(Class49.aString485);
 											Class49.aString485 = "";
-											Class4.aClass72_48 = Class4.aBool37 ? Class72.aClass72_594
+											Class4.security = Class4.aBool37 ? Class72.aClass72_594
 													: Class72.aClass72_599;
-											Def13.method734("", "Connecting to server...", "");
+											client.showMsg("", "Connecting to server...", "");
 											client.method516(20);
 											return;
 										}

@@ -277,7 +277,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 
 			Class124_Sub22_Sub19_Sub3_Sub1 var3;
 			int var10;
-			while (client.buf.bitpos(client.anInt2027) >= 27) {
+			while (client.buf.bitpos(client.expected) >= 27) {
 				var1 = client.buf.clever(15);
 				if (var1 == 32767)
 					break;
@@ -443,8 +443,8 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 				}
 			}
 
-			if (client.buf.pos != client.anInt2027)
-				throw new RuntimeException(client.buf.pos + "," + client.anInt2027);
+			if (client.buf.pos != client.expected)
+				throw new RuntimeException(client.buf.pos + "," + client.expected);
 			else
 				for (var1 = 0; var1 < client.anInt2022; ++var1)
 					if (client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[client.anIntArray2023[var1]] == null)

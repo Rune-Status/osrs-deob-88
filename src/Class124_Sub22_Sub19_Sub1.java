@@ -161,7 +161,7 @@ public final class Class124_Sub22_Sub19_Sub1 extends Class124_Sub22_Sub19 {
 			}
 	}
 
-	static long method888(final int var0) {
+	static long avail(final int var0) {
 		try {
 			final URL var1 = new URL(Class5.method28("services", false) + "m=accountappeal/login.ws");
 			final URLConnection var2 = var1.openConnection();

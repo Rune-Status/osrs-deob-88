@@ -346,7 +346,7 @@ public class Class124_Sub22_Sub19_Sub6 extends Class124_Sub22_Sub19 {
 				final int var16 = Def19.anInt1439 + ((var21 >> 4) & 7);
 				final int var22 = Def19.anInt1440 + (var21 & 7);
 				Class124_Sub22_Sub19_Sub3_Sub2 var18;
-				if (var0 == client.anInt2106)
+				if (var0 == client.pid)
 					var18 = Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246;
 				else
 					var18 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var0];

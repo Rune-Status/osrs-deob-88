@@ -1556,8 +1556,8 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										}
 
 										if (opc == 3316) {
-											if (client.anInt2149 >= 2)
-												Class2.anIntArray8[var5++] = client.anInt2149;
+											if (client.prights >= 2)
+												Class2.anIntArray8[var5++] = client.prights;
 											else
 												Class2.anIntArray8[var5++] = 0;
 											continue;
@@ -1584,7 +1584,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										}
 
 										if (opc == 3323) {
-											if (client.aBool2151)
+											if (client.flagged)
 												Class2.anIntArray8[var5++] = 1;
 											else
 												Class2.anIntArray8[var5++] = 0;
@@ -3180,7 +3180,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														if (var71.equalsIgnoreCase("displayfps"))
 															client.aBool2000 = !client.aBool2000;
 
-														if (client.anInt2149 >= 2) {
+														if (client.prights >= 2) {
 															if (var71.equalsIgnoreCase("fpson"))
 																client.aBool2000 = true;
 

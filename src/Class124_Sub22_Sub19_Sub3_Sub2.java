@@ -98,7 +98,7 @@ public final class Class124_Sub22_Sub19_Sub3_Sub2 extends Class124_Sub22_Sub19_S
 		anInt1946 = var1.readByteU();
 		anInt1951 = var1.readShortU();
 		aBool1960 = var1.readByteU() == 1;
-		if ((client.anInt2080 == 0) && (client.anInt2149 >= 2))
+		if ((client.anInt2080 == 0) && (client.prights >= 2))
 			aBool1960 = false;
 
 		if (aClass100_1943 == null)

@@ -20,7 +20,7 @@ public class Class88 implements Interface3 {
 	}
 
 	@Override
-	public int method11(final int var1) {
+	public int type(final int var1) {
 		return anInt701;
 	}
 
@@ -41,7 +41,7 @@ public class Class88 implements Interface3 {
 			int var2;
 			if (var0.anInt1694 >= '\u8000') {
 				var2 = var0.anInt1694 - '\u8000';
-				if (var2 == client.anInt2106)
+				if (var2 == client.pid)
 					var2 = 2047;
 
 				final Class124_Sub22_Sub19_Sub3_Sub2 var1 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var2];

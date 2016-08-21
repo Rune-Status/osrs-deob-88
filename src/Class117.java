@@ -30,95 +30,95 @@ public class Class117 {
 
 	static void method441(final int var0) {
 		if (var0 == -3)
-			Def13.method734("Connection timed out.", "Please try using a different world.", "");
+			client.showMsg("Connection timed out.", "Please try using a different world.", "");
 		else if (var0 == -2)
-			Def13.method734("", "Error connecting to server.", "");
+			client.showMsg("", "Error connecting to server.", "");
 		else if (var0 == -1)
-			Def13.method734("No response from server.", "Please try using a different world.", "");
+			client.showMsg("No response from server.", "Please try using a different world.", "");
 		else if (var0 == 3)
-			Def13.method734("", "Invalid username/email or password.", "");
+			client.showMsg("", "Invalid username/email or password.", "");
 		else if (var0 == 4)
-			Def13.method734("Your account has been disabled.",
+			client.showMsg("Your account has been disabled.",
 					"Please check your message-centre for details.", "");
 		else if (var0 == 5)
-			Def13.method734("Your account is already logged in.", "Try again in 60 secs...", "");
+			client.showMsg("Your account is already logged in.", "Try again in 60 secs...", "");
 		else if (var0 == 6)
-			Def13.method734("RuneScape has been updated!", "Please reload this page.", "");
+			client.showMsg("RuneScape has been updated!", "Please reload this page.", "");
 		else if (var0 == 7)
-			Def13.method734("This world is full.", "Please use a different world.", "");
+			client.showMsg("This world is full.", "Please use a different world.", "");
 		else if (var0 == 8)
-			Def13.method734("Unable to connect.", "Login server offline.", "");
+			client.showMsg("Unable to connect.", "Login server offline.", "");
 		else if (var0 == 9)
-			Def13.method734("Login limit exceeded.", "Too many connections from your address.", "");
+			client.showMsg("Login limit exceeded.", "Too many connections from your address.", "");
 		else if (var0 == 10)
-			Def13.method734("Unable to connect.", "Bad session id.", "");
+			client.showMsg("Unable to connect.", "Bad session id.", "");
 		else if (var0 == 11)
-			Def13.method734("We suspect someone knows your password.",
+			client.showMsg("We suspect someone knows your password.",
 					"Press \'change your password\' on front page.", "");
 		else if (var0 == 12)
-			Def13.method734("You need a members account to login to this world.",
+			client.showMsg("You need a members account to login to this world.",
 					"Please subscribe, or use a different world.", "");
 		else if (var0 == 13)
-			Def13.method734("Could not complete login.", "Please try using a different world.", "");
+			client.showMsg("Could not complete login.", "Please try using a different world.", "");
 		else if (var0 == 14)
-			Def13.method734("The server is being updated.", "Please wait 1 minute and try again.", "");
+			client.showMsg("The server is being updated.", "Please wait 1 minute and try again.", "");
 		else if (var0 == 16)
-			Def13.method734("Too many login attempts.", "Please wait a few minutes before trying again.",
+			client.showMsg("Too many login attempts.", "Please wait a few minutes before trying again.",
 					"");
 		else if (var0 == 17)
-			Def13.method734("You are standing in a members-only area.",
+			client.showMsg("You are standing in a members-only area.",
 					"To play on this world move to a free area first", "");
 		else if (var0 == 18)
-			Def13.method734("Account locked as we suspect it has been stolen.",
+			client.showMsg("Account locked as we suspect it has been stolen.",
 					"Press \'recover a locked account\' on front page.", "");
 		else if (var0 == 19)
-			Def13.method734("This world is running a closed Beta.", "Sorry invited players only.",
+			client.showMsg("This world is running a closed Beta.", "Sorry invited players only.",
 					"Please use a different world.");
 		else if (var0 == 20)
-			Def13.method734("Invalid loginserver requested.", "Please try using a different world.", "");
+			client.showMsg("Invalid loginserver requested.", "Please try using a different world.", "");
 		else if (var0 == 22)
-			Def13.method734("Malformed login packet.", "Please try again.", "");
+			client.showMsg("Malformed login packet.", "Please try again.", "");
 		else if (var0 == 23)
-			Def13.method734("No reply from loginserver.", "Please wait 1 minute and try again.", "");
+			client.showMsg("No reply from loginserver.", "Please wait 1 minute and try again.", "");
 		else if (var0 == 24)
-			Def13.method734("Error loading your profile.", "Please contact customer support.", "");
+			client.showMsg("Error loading your profile.", "Please contact customer support.", "");
 		else if (var0 == 25)
-			Def13.method734("Unexpected loginserver response.", "Please try using a different world.",
+			client.showMsg("Unexpected loginserver response.", "Please try using a different world.",
 					"");
 		else if (var0 == 26)
-			Def13.method734("This computers address has been blocked",
+			client.showMsg("This computers address has been blocked",
 					"as it was used to break our rules.", "");
 		else if (var0 == 27)
-			Def13.method734("", "Service unavailable.", "");
+			client.showMsg("", "Service unavailable.", "");
 		else if (var0 == 31)
-			Def13.method734("Your account must have a displayname set",
+			client.showMsg("Your account must have a displayname set",
 					"in order to play the game.  Please set it", "via the website, or the main game.");
 		else if (var0 == 32)
-			Def13.method734("Your attempt to log into your account was",
+			client.showMsg("Your attempt to log into your account was",
 					"unsuccessful.  Don\'t worry, you can sort", "this out by visiting the billing system.");
 		else if (var0 == 37)
-			Def13.method734("Your account is currently inaccessible.",
+			client.showMsg("Your account is currently inaccessible.",
 					"Please try again in a few minutes.", "");
 		else if (var0 == 38)
-			Def13.method734("You need to vote to play!", "Visit runescape.com and vote,",
+			client.showMsg("You need to vote to play!", "Visit runescape.com and vote,",
 					"and then come back here!");
 		else if (var0 == 55)
-			Def13.method734("Sorry, but your account is not eligible to",
+			client.showMsg("Sorry, but your account is not eligible to",
 					"play this version of the game.  Please try", "playing the main game instead!");
 		else {
 			if (var0 == 56) {
-				Def13.method734("Enter the 6-digit code generated by your", "authenticator app.", "");
+				client.showMsg("Enter the 6-digit code generated by your", "authenticator app.", "");
 				client.method516(11);
 				return;
 			}
 
 			if (var0 == 57) {
-				Def13.method734("The code you entered was incorrect.", "Please try again.", "");
+				client.showMsg("The code you entered was incorrect.", "Please try again.", "");
 				client.method516(11);
 				return;
 			}
 
-			Def13.method734("Unexpected server response", "Please try using a different world.", "");
+			client.showMsg("Unexpected server response", "Please try using a different world.", "");
 		}
 
 		client.method516(10);

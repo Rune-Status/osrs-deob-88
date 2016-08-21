@@ -128,7 +128,7 @@ public class Class45 {
 
 	static final void method225(final String var0) {
 		if (var0 != null)
-			if (((client.anInt2056 < 200) || (client.anInt2107 == 1)) && (client.anInt2056 < 400)) {
+			if (((client.anInt2056 < 200) || (client.members1 == 1)) && (client.anInt2056 < 400)) {
 				final String var4 = Class34.method186(var0, Class49.aClass117_488);
 				if (null != var4) {
 					int var2;

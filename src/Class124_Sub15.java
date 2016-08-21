@@ -219,7 +219,7 @@ public class Class124_Sub15 extends Node {
 		method608();
 	}
 
-	public void method610(final RSBuf var1) {
+	public void buildinfo(final RSBuf var1) {
 		var1.writeByte(6);
 		var1.writeByte(anInt1089);
 		var1.writeByte(aBool1104 ? 1 : 0);

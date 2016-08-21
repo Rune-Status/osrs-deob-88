@@ -4,7 +4,7 @@ public class Class72 implements Interface3 {
 	public static Class72 aClass72_594 = new Class72(1, 1);
 	public static Class72 aClass72_593 = new Class72(3, 2);
 	public static Class72 aClass72_599 = new Class72(0, 3);
-	public int anInt596;
+	public int tye;
 	int anInt595;
 
 	public static String method309(final CharSequence[] var0, final int var1, final int var2) {
@@ -40,12 +40,12 @@ public class Class72 implements Interface3 {
 	}
 
 	@Override
-	public int method11(final int var1) {
+	public int type(final int var1) {
 		return anInt595;
 	}
 
 	Class72(final int var1, final int var2) {
-		anInt596 = var1;
+		tye = var1;
 		anInt595 = var2;
 	}
 

@@ -77,7 +77,7 @@ public class Class34 implements Interface3 {
 	}
 
 	@Override
-	public int method11(final int var1) {
+	public int type(final int var1) {
 		return anInt371;
 	}
 }

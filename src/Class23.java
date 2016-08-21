@@ -84,7 +84,7 @@ public class Class23 {
 		final Interface3[] var2 = var0;
 
 		for (final Interface3 var4 : var2) {
-			if (var1 == var4.method11(-1304754156))
+			if (var1 == var4.type(-1304754156))
 				return var4;
 		}
 

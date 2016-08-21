@@ -45,7 +45,7 @@ public class Class35 {
 
 	static final void method190(final String var0, final boolean var1) {
 		if (var0 != null)
-			if (((client.anInt2252 < 100) || (client.anInt2107 == 1)) && (client.anInt2252 < 400)) {
+			if (((client.anInt2252 < 100) || (client.members1 == 1)) && (client.anInt2252 < 400)) {
 				final String var3 = Class34.method186(var0, Class49.aClass117_488);
 				if (null != var3) {
 					String var2;

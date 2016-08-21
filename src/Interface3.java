@@ -1,3 +1,3 @@
 public interface Interface3 {
-	int method11(int var1);
+	int type(int var1);
 }

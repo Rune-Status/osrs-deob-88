@@ -28,11 +28,11 @@ public final class Class78 implements Runnable {
 		anOutputStream637 = aSocket634.getOutputStream();
 	}
 
-	public int method319() throws IOException {
+	public int read() throws IOException {
 		return !aBool628 ? anInputStream626.read() : 0;
 	}
 
-	public void method320(final byte[] var1, int var2, int var3) throws IOException {
+	public void readin(final byte[] var1, int var2, int var3) throws IOException {
 		if (!aBool628)
 			while (var3 > 0) {
 				final int var4 = anInputStream626.read(var1, var2, var3);

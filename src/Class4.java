@@ -30,7 +30,7 @@ public class Class4 {
 	static String aString47;
 	static String aString44;
 	static String aString45;
-	static Class72 aClass72_48;
+	static Class72 security;
 	static boolean aBool37;
 	static int anInt33;
 	static boolean aBool50;
@@ -53,7 +53,7 @@ public class Class4 {
 		aString47 = "";
 		aString44 = "";
 		aString45 = "";
-		aClass72_48 = Class72.aClass72_593;
+		security = Class72.aClass72_593;
 		aBool37 = true;
 		anInt33 = 0;
 		aBool50 = false;

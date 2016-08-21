@@ -57,7 +57,7 @@ public final class client extends Applet_Sub1 {
 	static RSBuf aClass124_Sub14_2146 = new RSBuf(new byte[5000]);
 	static Class34 aClass34_2011;
 	static int anInt2012;
-	static int anInt2016;
+	static int loginStep;
 	static int anInt1999;
 	static int anInt2018;
 	static int anInt2019;
@@ -67,7 +67,7 @@ public final class client extends Applet_Sub1 {
 	static Outbuf secbuf;
 	static Outbuf loginbuf;
 	static Outbuf buf;
-	static int anInt2027;
+	static int expected;
 	static int pktId;
 	static int anInt2193;
 	static int anInt2025;
@@ -144,8 +144,8 @@ public final class client extends Applet_Sub1 {
 	static int anInt2029;
 	static int[] anIntArray2104;
 	static RSBuf[] aClass124_Sub14Array2256;
-	static int anInt2106;
-	static int anInt2107;
+	static int pid;
+	static int members1;
 	static int anInt2108;
 	static int[] anIntArray2109;
 	static int[] anIntArray2110;
@@ -185,9 +185,9 @@ public final class client extends Applet_Sub1 {
 	static Widget aClass124_Sub17_2042;
 	static int anInt2147;
 	static int anInt2148;
-	static int anInt2149;
+	static int prights;
 	static int anInt2150;
-	static boolean aBool2151;
+	static boolean flagged;
 	static boolean aBool2021;
 	static boolean aBool2153;
 	static Widget aClass124_Sub17_2154;
@@ -716,7 +716,7 @@ public final class client extends Applet_Sub1 {
 								if (var10 > var8)
 									var10 = var8;
 
-								Class92.aClass78_732.method320(Class92.aClass124_Sub14_726.backing,
+								Class92.aClass78_732.readin(Class92.aClass124_Sub14_726.backing,
 										Class92.aClass124_Sub14_726.pos, var10);
 								if (Class92.aByte733 != 0)
 									for (var11 = 0; var11 < var10; ++var11)
@@ -769,7 +769,7 @@ public final class client extends Applet_Sub1 {
 								if (var11 > var8)
 									var11 = var8;
 
-								Class92.aClass78_732.method320(ISAAC.buf.backing,
+								Class92.aClass78_732.readin(ISAAC.buf.backing,
 										ISAAC.buf.pos, var11);
 								if (Class92.aByte733 != 0)
 									for (var12 = 0; var12 < var11; ++var12)
@@ -909,7 +909,7 @@ public final class client extends Applet_Sub1 {
 								return;
 							}
 						} else {
-							final int var2 = Class90.aClass78_708.method319();
+							final int var2 = Class90.aClass78_708.read();
 							if (var2 != 0) {
 								method1066(var2);
 								return;
@@ -1061,7 +1061,7 @@ public final class client extends Applet_Sub1 {
 		anInt2013 = 0;
 		anInt2014 = 0;
 		anInt2015 = 0;
-		anInt2016 = 0;
+		loginStep = 0;
 		anInt1999 = 0;
 		anInt2018 = 0;
 		anInt2019 = 0;
@@ -1071,7 +1071,7 @@ public final class client extends Applet_Sub1 {
 		secbuf = new Outbuf(5000);
 		loginbuf = new Outbuf(5000);
 		buf = new Outbuf(5000);
-		anInt2027 = 0;
+		expected = 0;
 		pktId = 0;
 		anInt2193 = 0;
 		anInt2025 = 0;
@@ -1151,8 +1151,8 @@ public final class client extends Applet_Sub1 {
 		anInt2029 = 0;
 		anIntArray2104 = new int[2048];
 		aClass124_Sub14Array2256 = new RSBuf[2048];
-		anInt2106 = -1;
-		anInt2107 = 0;
+		pid = -1;
+		members1 = 0;
 		anInt2108 = 0;
 		anIntArray2109 = new int[1000];
 		anIntArray2110 = new int[] { 44, 45, 46, 47, 48, 49, 50, 51 };
@@ -1194,9 +1194,9 @@ public final class client extends Applet_Sub1 {
 		aClass124_Sub17_2042 = null;
 		anInt2147 = 0;
 		anInt2148 = 0;
-		anInt2149 = 0;
+		prights = 0;
 		anInt2150 = -1;
-		aBool2151 = false;
+		flagged = false;
 		aBool2021 = false;
 		aBool2153 = false;
 		aClass124_Sub17_2154 = null;
@@ -1370,7 +1370,13 @@ public final class client extends Applet_Sub1 {
 	protected final void method1061(final int var1) {
 	}
 
-	static final void map(final boolean var0) {
+	static void showMsg(final String var0, final String var1, final String var2) {
+		Class4.aString41 = var0;
+		Class4.aString32 = var1;
+		Class4.aString47 = var2;
+	}
+
+	static final void mapregion(final boolean var0) {
 		aBool2043 = var0;
 		int var1;
 		int var2;
@@ -1384,7 +1390,7 @@ public final class client extends Applet_Sub1 {
 		if (!aBool2043) {
 			var2 = buf.readUShort();
 			var4 = buf.readUShort();
-			var5 = (anInt2027 - buf.pos) / 16;
+			var5 = (expected - buf.pos) / 16;
 			Def10.anIntArrayArray1466 = new int[var5][4];
 	
 			for (var7 = 0; var7 < var5; ++var7)
@@ -1438,7 +1444,7 @@ public final class client extends Applet_Sub1 {
 					}
 	
 			buf.bitinit();
-			var2 = (anInt2027 - buf.pos) / 16;
+			var2 = (expected - buf.pos) / 16;
 			Def10.anIntArrayArray1466 = new int[var2][4];
 	
 			for (var4 = 0; var4 < var2; ++var4)
@@ -1552,7 +1558,7 @@ public final class client extends Applet_Sub1 {
 			}
 	
 			if ((var0 == 20) || (var0 == 40) || (var0 == 45)) {
-				anInt2016 = 0;
+				loginStep = 0;
 				anInt1999 = 0;
 				anInt2018 = 0;
 			}

@@ -75,7 +75,7 @@ public class Def19 extends JagMap {
 					if (var14.anInt1797 < 0) {
 						var20 = -var14.anInt1797 - 1;
 						Class124_Sub22_Sub19_Sub3_Sub2 var31;
-						if (var20 == client.anInt2106)
+						if (var20 == client.pid)
 							var31 = Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246;
 						else
 							var31 = client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[var20];

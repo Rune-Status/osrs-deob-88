@@ -77,7 +77,8 @@ public class RSBuf extends Node {
 		final byte[] var7 = var5.toByteArray();
 		pos = 0;
 		writeShort(var7.length);
-		writeReverse(var7, 0, var7.length);
+		System.err.printf("rsa blocks size=%d%n", var7.length);
+		writeFrom(var7, 0, var7.length);
 	}
 
 	public void endSizeInt(final int var1) {
@@ -239,13 +240,13 @@ public class RSBuf extends Node {
 	}
 
 	public RSBuf(final int var1) {
-		backing = Class62.forSize(var1, (byte) -64);
+		backing = RSBuf.forSize(var1, (byte) -64);
 		pos = 0;
 	}
 
-	public void writeReverse(final byte[] var1, final int var2, final int var3) {
-		for (int var4 = var2; var4 < (var2 + var3); ++var4)
-			backing[++pos - 1] = var1[var4];
+	public void writeFrom(final byte[] src, final int start, final int len) {
+		for (int x = start; x < (start + len); ++x)
+			backing[++pos - 1] = src[x];
 
 	}
 
@@ -553,5 +554,23 @@ public class RSBuf extends Node {
 
 	public int readUByteS() {
 		return (128 - backing[++pos - 1]) & 255;
+	}
+
+	static synchronized byte[] forSize(final int size, final byte var1) {
+		byte[] var2;
+		if ((size == 100) && (Class62.anInt547 > 0)) {
+			var2 = Class62.backing1k[--Class62.anInt547];
+			Class62.backing1k[Class62.anInt547] = null;
+			return var2;
+		} else if ((size == 5000) && (Class62.anInt552 > 0)) {
+			var2 = Class62.backing250[--Class62.anInt552];
+			Class62.backing250[Class62.anInt552] = null;
+			return var2;
+		} else if ((size == 30000) && (Class62.anInt549 > 0)) {
+			var2 = Class62.backing50[--Class62.anInt549];
+			Class62.backing50[Class62.anInt549] = null;
+			return var2;
+		} else
+			return new byte[size];
 	}
 }

@@ -114,12 +114,6 @@ public class Def13 extends JagMap {
 		return var5;
 	}
 
-	static void method734(final String var0, final String var1, final String var2) {
-		Class4.aString41 = var0;
-		Class4.aString32 = var1;
-		Class4.aString47 = var2;
-	}
-
 	static void method735(final int var0) {
 		client.aLong2195 = 0L;
 		if (var0 >= 2)
