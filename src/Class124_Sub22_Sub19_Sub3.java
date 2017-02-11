@@ -199,7 +199,7 @@ public abstract class Class124_Sub22_Sub19_Sub3 extends Class124_Sub22_Sub19 {
 		synchronized (var4) {
 			for (Class124_Sub19 var5 = (Class124_Sub19) Class99.aClass111_776
 					.method428(); null != var5; var5 = (Class124_Sub19) Class99.aClass111_776.method430())
-				if ((var5.aLong874 == var0) && (var5.aClass69_1296 == var1) && (var5.anInt1295 == 0)) {
+				if ((var5.linkedhash == var0) && (var5.aClass69_1296 == var1) && (var5.anInt1295 == 0)) {
 					var3 = var5.aByteArray1298;
 					break;
 				}
@@ -214,6 +214,6 @@ public abstract class Class124_Sub22_Sub19_Sub3 extends Class124_Sub22_Sub19 {
 	}
 
 	public static void method897() {
-		Class100.aClass113_786.map();
+		client.aClass113_786.map();
 	}
 }

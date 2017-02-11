@@ -1,5 +1,5 @@
 public class Node {
-	public long aLong874;
+	public long linkedhash;
 	public Node aClass124_875;
 	Node aClass124_876;
 

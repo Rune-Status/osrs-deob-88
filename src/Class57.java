@@ -48,7 +48,7 @@ public class Class57 {
 		if (opc == 1005) {
 			var22 = Class10.getwidget(var1);
 			if ((var22 != null) && (var22.anIntArray1270[var0] >= 100000))
-				Class20.method95(27, "",
+				client.doCS(27, "",
 						var22.anIntArray1270[var0] + " x " + Def10.method724(var3).aString1472);
 			else {
 				client.secbuf.writeOpcode(65); // ?
@@ -387,7 +387,7 @@ public class Class57 {
 						var16.anInt997 = var3;
 						var16.aString1002 = var5;
 						var16.anObjectArray995 = var11.anObjectArray1198;
-						Class124_Sub22_Sub19_Sub3_Sub2.fullCS(var16);
+						client.fullCS(var16);
 					}
 
 					boolean var10 = true;
@@ -603,7 +603,7 @@ public class Class57 {
 
 				if (var13 != null) {
 					client.secbuf.writeOpcode(178);
-					client.secbuf.writeShortU(var13.anInt1318);
+					client.secbuf.writeShortU(var13.npcidmaybe);
 				}
 			}
 		}
@@ -620,7 +620,7 @@ public class Class57 {
 					final CSD var20 = new CSD();
 					var20.aClass124_Sub17_994 = var18;
 					var20.anObjectArray995 = var18.anObjectArray1236;
-					Class124_Sub22_Sub19_Sub3_Sub2.fullCS(var20);
+					client.fullCS(var20);
 				}
 
 				client.anInt2082 = var24;
@@ -796,10 +796,10 @@ public class Class57 {
 			if (opc == 26) {
 				client.secbuf.writeOpcode(180);
 
-				for (Class124_Sub7 var25 = (Class124_Sub7) client.aClass107_2143
-						.method411(); null != var25; var25 = (Class124_Sub7) client.aClass107_2143.method413())
+				for (InvIdk var25 = (InvIdk) client.aClass107_2143
+						.method411(); null != var25; var25 = (InvIdk) client.aClass107_2143.method413())
 					if ((var25.anInt1008 == 0) || (var25.anInt1008 == 3))
-						Def4.method760(var25, true);
+						client.method760(var25, true);
 
 				if (null != client.aClass124_Sub17_2042) {
 					Def10.settrue(client.aClass124_Sub17_2042);

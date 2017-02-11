@@ -5,7 +5,7 @@ public class RSBuf extends Node {
 	public byte[] backing;
 	static int[] anIntArray1074 = new int[256];
 
-	public int readUShort() {
+	public int readUShortLE() {
 		pos += 2;
 		return (backing[pos - 2] & 255) + ((backing[pos - 1] & 255) << 8);
 	}
@@ -376,7 +376,7 @@ public class RSBuf extends Node {
 		return ((backing[pos - 2] - 128) & 255) + ((backing[pos - 1] & 255) << 8);
 	}
 
-	public int readShortSmart() {
+	public int readUShort() {
 		pos += 2;
 		int var1 = (backing[pos - 2] & 255) + ((backing[pos - 1] & 255) << 8);
 		if (var1 > 32767)
@@ -428,13 +428,13 @@ public class RSBuf extends Node {
 		backing[++pos - 1] = (byte) (var1 >> 8);
 	}
 
-	public int method589() {
+	public int getIntV1() {
 		pos += 4;
 		return (backing[pos - 3] & 255) + ((backing[pos - 4] & 255) << 8)
 				+ ((backing[pos - 2] & 255) << 24) + ((backing[pos - 1] & 255) << 16);
 	}
 
-	public int method590() {
+	public int readIntV2() {
 		pos += 4;
 		return ((backing[pos - 4] & 255) << 16) + ((backing[pos - 3] & 255) << 24)
 				+ ((backing[pos - 1] & 255) << 8) + (backing[pos - 2] & 255);

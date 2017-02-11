@@ -18,7 +18,7 @@ public class Def5 extends JagMap {
 		}
 	}
 
-	static final boolean method705(final byte[] var0, final int var1, final int var2) {
+	static final boolean objdecode(final byte[] var0, final int var1, final int var2) {
 		boolean var3 = true;
 		final RSBuf var6 = new RSBuf(var0);
 		int var9 = -1;
@@ -116,12 +116,12 @@ public class Def5 extends JagMap {
 			final Somet1 var1 = new Somet1(var0, Class7.anIntArray68,
 					Class7.anIntArray74, Class7.anIntArray69, Class7.anIntArray70, Class7.anIntArray66,
 					Class124_Sub22_Sub5.aByteArrayArray1384);
-			Class124_Sub7.method522();
+			InvIdk.method522();
 			return var1;
 		}
 	}
 
-	public static int method708(final CharSequence var0) {
+	public static int format(final CharSequence var0) {
 		final int var1 = var0.length();
 		int var2 = 0;
 

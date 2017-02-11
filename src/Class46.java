@@ -30,7 +30,7 @@ public final class Class46 {
 		}
 	}
 
-	static final void method229(final boolean var0) {
+	static final void push250(final boolean var0) {
 		Def15.method751();
 		++client.anInt2025;
 		if ((client.anInt2025 >= 50) || var0) {

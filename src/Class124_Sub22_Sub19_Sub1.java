@@ -104,43 +104,6 @@ public final class Class124_Sub22_Sub19_Sub1 extends Class124_Sub22_Sub19 {
 
 	}
 
-	public static String method886(final String var0) {
-		final int var1 = var0.length();
-		final char[] var3 = new char[var1];
-		byte var5 = 2;
-
-		for (int var4 = 0; var4 < var1; ++var4) {
-			char var2 = var0.charAt(var4);
-			if (var5 != 0) {
-				if ((var5 == 2) || Character.isUpperCase(var2)) {
-					char var6;
-					if ((var2 != 181) && (var2 != 402))
-						var6 = Character.toTitleCase(var2);
-					else
-						var6 = var2;
-
-					var2 = var6;
-				}
-			} else
-				var2 = Character.toLowerCase(var2);
-
-			if (Character.isLetter(var2))
-				var5 = 0;
-			else if ((var2 != 46) && (var2 != 63) && (var2 != 33)) {
-				if (Character.isSpaceChar(var2)) {
-					if (var5 != 2)
-						var5 = 1;
-				} else
-					var5 = 1;
-			} else
-				var5 = 2;
-
-			var3[var4] = var2;
-		}
-
-		return new String(var3);
-	}
-
 	static void method887(final Def12 var0, final int var1, final int var2, final int var3) {
 		if ((client.anInt2225 < 50) && (client.anInt2206 != 0))
 			if ((var0.anIntArray1534 != null) && (var1 < var0.anIntArray1534.length)) {

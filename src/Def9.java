@@ -1,7 +1,7 @@
 public class Def9 extends JagMap {
-	public int anInt1318;
+	public int npcidmaybe;
 	static CacheArch aClass94_1328;
-	static int[] anIntArray1335;
+	static int[] xteaL;
 	static Widget aClass124_Sub17_1352;
 	public String aString1319 = "null";
 	public int anInt1320 = 1;
@@ -248,7 +248,7 @@ public class Def9 extends JagMap {
 			var1 = Class91.anIntArray711[anInt1351];
 
 		return (var1 >= 0) && (var1 < anIntArray1342.length) && (anIntArray1342[var1] != -1)
-				? Class34.method188(anIntArray1342[var1], 1576074197) : null;
+				? Class34.getNpcDef(anIntArray1342[var1], 1576074197) : null;
 	}
 
 	public final Class124_Sub22_Sub19_Sub7 method645(final Def12 var1, final int var2,
@@ -257,7 +257,7 @@ public class Def9 extends JagMap {
 			final Def9 var12 = method644();
 			return var12 == null ? null : var12.method645(var1, var2, var3, var4);
 		} else {
-			Class124_Sub22_Sub19_Sub7 var6 = (Class124_Sub22_Sub19_Sub7) aClass113_1317.forId(anInt1318);
+			Class124_Sub22_Sub19_Sub7 var6 = (Class124_Sub22_Sub19_Sub7) aClass113_1317.forId(npcidmaybe);
 			if (var6 == null) {
 				boolean var9 = false;
 
@@ -289,7 +289,7 @@ public class Def9 extends JagMap {
 						var8.method939(aShortArray1345[var11], aShortArray1333[var11]);
 
 				var6 = var8.method945(anInt1315 + 64, anInt1340 + 850, -30, -50, -30);
-				aClass113_1317.map(var6, anInt1318);
+				aClass113_1317.map(var6, npcidmaybe);
 			}
 
 			Class124_Sub22_Sub19_Sub7 var10;

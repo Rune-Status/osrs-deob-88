@@ -65,7 +65,7 @@ public class Class22 {
 
 	public static Somet1 method149(final CacheArch var0, final CacheArch var1, final String var2,
 			final String var3) {
-		final int var4 = var0.method376(var2);
+		final int var4 = var0.of(var2);
 		final int var5 = var0.method383(var4, var3);
 		Somet1 var6;
 		if (Def3.loaded(var0, var4, var5))

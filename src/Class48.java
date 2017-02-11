@@ -8,7 +8,7 @@ public class Class48 {
 	int anInt475 = -1;
 
 	static final void method233(final int var0, final int var1) {
-		final Class111 var2 = client.aClass111ArrayArrayArray2073[Class134.anInt906][var0][var1];
+		final Class111 var2 = client.clips[Class134.anInt906][var0][var1];
 		if (var2 == null)
 			Class36.aClass21_380.method114(Class134.anInt906, var0, var1);
 		else {

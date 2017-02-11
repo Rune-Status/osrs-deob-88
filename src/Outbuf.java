@@ -18,7 +18,9 @@ public final class Outbuf extends RSBuf {
 	}
 
 	public int readOpcode() {
-		return (backing[++pos - 1] - isac.key()) & 255;
+		int c = (backing[++pos - 1] - isac.key()) & 255;
+		System.out.printf("in %d%n", c);
+		return c;
 	}
 
 	public int clever(int var1) {

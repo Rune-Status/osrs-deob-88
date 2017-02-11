@@ -134,10 +134,10 @@ public class Class7 {
 				for (int var12 = 0; var12 < 64; ++var12)
 					if ((var11 == var4) && (var10 >= var5) && (var10 < (var5 + 8)) && (var12 >= var6)
 							&& (var12 < (var6 + 8)))
-						Class45.method223(var13, var1, var2 + Def6.method693(var10 & 7, var12 & 7, var7),
+						Class45.tilecli(var13, var1, var2 + Def6.method693(var10 & 7, var12 & 7, var7),
 								var3 + Class99.method392(var10 & 7, var12 & 7, var7), 0, 0, var7);
 					else
-						Class45.method223(var13, 0, -1, -1, 0, 0, 0);
+						Class45.tilecli(var13, 0, -1, -1, 0, 0, 0);
 
 	}
 }

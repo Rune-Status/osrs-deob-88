@@ -9,9 +9,9 @@ public class Class32 {
 	String aString344;
 	static Class79 aClass79_345;
 
-	static final void method183(final int var0) {
-		if (Class89.loadwidget(var0)) {
-			final Widget[] var2 = Def10.widgets[var0];
+	static final void clearchilds(final int hash) {
+		if (Class89.loadwidget(hash)) {
+			final Widget[] var2 = Def10.widgets[hash];
 
 			for (final Widget element : var2) {
 				final Widget var1 = element;

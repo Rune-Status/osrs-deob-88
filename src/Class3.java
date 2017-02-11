@@ -41,8 +41,8 @@ public class Class3 {
 			}
 	}
 
-	static final void method23(final int var0, final int var1) {
-		if (Class89.loadwidget(var0))
-			Class35.method189(Def10.widgets[var0], var1);
+	static final void widgetInvCS(final int hash, final int var1) {
+		if (Class89.loadwidget(hash))
+			Class35.doWidgetCS(Def10.widgets[hash], var1);
 	}
 }

@@ -137,7 +137,7 @@ public class Class41 {
 				}
 
 				if (var12 == 3) {
-					final Class111 var24 = client.aClass111ArrayArrayArray2073[Class134.anInt906][var6][var7];
+					final Class111 var24 = client.clips[Class134.anInt906][var6][var7];
 					if (var24 != null)
 						for (Class124_Sub22_Sub19_Sub2 var27 = (Class124_Sub22_Sub19_Sub2) var24
 								.method429(); var27 != null; var27 = (Class124_Sub22_Sub19_Sub2) var24.method426()) {
@@ -220,7 +220,7 @@ public class Class41 {
 
 		int var1;
 		for (var1 = 0; var1 < anIntArray400.length; ++var1) {
-			final Def19 var2 = Class124_Sub7.method526(var1);
+			final Def19 var2 = InvIdk.method526(var1);
 			aBoolArray402[var1] = var2.aBool1438;
 		}
 

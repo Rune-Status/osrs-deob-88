@@ -1,6 +1,6 @@
 import java.awt.Graphics;
 
-public class Class124_Sub7 extends Node {
+public class InvIdk extends Node {
 	int anInt1008;
 	static Class79 aClass79_1010;
 	static long aLong1011;

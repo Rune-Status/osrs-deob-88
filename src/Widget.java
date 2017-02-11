@@ -612,7 +612,7 @@ public class Widget extends Node {
 	}
 
 	public Class124_Sub22_Sub19_Sub7 method627(final Def12 var1, final int var2, final boolean var3,
-			final Class100 var4) {
+			final Somet3 var4) {
 		aBool1151 = false;
 		int var6;
 		int var7;
@@ -633,7 +633,7 @@ public class Widget extends Node {
 			if (null == var8) {
 				Model var5;
 				if (var6 == 1) {
-					var5 = Model.method943(Class124_Sub7.aClass94_1014, var7, 0);
+					var5 = Model.method943(InvIdk.aClass94_1014, var7, 0);
 					if (null == var5) {
 						aBool1151 = true;
 						return null;
@@ -643,7 +643,7 @@ public class Widget extends Node {
 				}
 
 				if (var6 == 2) {
-					var5 = Class34.method188(var7, 1475058221).method641();
+					var5 = Class34.getNpcDef(var7, 1475058221).method641();
 					if (null == var5) {
 						aBool1151 = true;
 						return null;
@@ -750,26 +750,26 @@ public class Widget extends Node {
 		}
 	}
 
-	static void method630() {
-		for (Class124_Sub7 var0 = (Class124_Sub7) client.aClass107_2143
-				.method411(); var0 != null; var0 = (Class124_Sub7) client.aClass107_2143.method413()) {
+	static void widgetCheck() {
+		for (InvIdk var0 = (InvIdk) client.aClass107_2143
+				.method411(); var0 != null; var0 = (InvIdk) client.aClass107_2143.method413()) {
 			final int var3 = var0.anInt1012;
 			if (Class89.loadwidget(var3)) {
-				boolean var4 = true;
-				final Widget[] var1 = Def10.widgets[var3];
+				boolean flag = true;
+				final Widget[] childs = Def10.widgets[var3];
 
 				int var2;
-				for (var2 = 0; var2 < var1.length; ++var2)
-					if (var1[var2] != null) {
-						var4 = var1[var2].aBool1152;
+				for (var2 = 0; var2 < childs.length; ++var2)
+					if (childs[var2] != null) {
+						flag = childs[var2].aBool1152;
 						break;
 					}
 
-				if (!var4) {
-					var2 = (int) var0.aLong874;
-					final Widget var5 = Class10.getwidget(var2);
-					if (null != var5)
-						Def10.settrue(var5);
+				if (!flag) {
+					var2 = (int) var0.linkedhash;
+					final Widget w = Class10.getwidget(var2);
+					if (null != w)
+						Def10.settrue(w);
 				}
 			}
 		}

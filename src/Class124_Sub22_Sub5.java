@@ -63,12 +63,12 @@ public class Class124_Sub22_Sub5 extends JagMap {
 					}
 
 					Class92.aClass108_722.method415(var2);
-					Class92.aClass107_728.method412(var2, var2.aLong874);
+					Class92.aClass107_728.method412(var2, var2.linkedhash);
 					++Class92.anInt723;
 					--Class92.anInt725;
 				}
 
-			Class92.aClass107_718.method412(var2, var2.aLong874);
+			Class92.aClass107_718.method412(var2, var2.linkedhash);
 			++Class92.anInt719;
 			--Class92.anInt716;
 		}
@@ -712,7 +712,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 									wid.anInt1177 = Class2.anIntArray8[var5 + 1];
 									Def10.settrue(wid);
 									if ((var22 != -1) && (wid.anInt1191 == 0))
-										Somet2.method831(
+										Somet2.updateWidget(
 												Def10.widgets[var22 >> 16], wid,
 												false);
 									continue;
@@ -1132,7 +1132,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										if (opc == 2702) {
 											--var5;
 											var21 = Class2.anIntArray8[var5];
-											final Class124_Sub7 var54 = (Class124_Sub7) client.aClass107_2143
+											final InvIdk var54 = (InvIdk) client.aClass107_2143
 													.method409(var21);
 											if (var54 != null)
 												Class2.anIntArray8[var5++] = 1;
@@ -1183,7 +1183,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										if (opc == 3100) {
 											--var6;
 											var71 = Class2.aStringArray5[var6];
-											Class20.method95(0, "", var71);
+											client.doCS(0, "", var71);
 											continue;
 										}
 
@@ -1197,11 +1197,11 @@ public class Class124_Sub22_Sub5 extends JagMap {
 										if (opc == 3103) {
 											client.secbuf.writeOpcode(180); // ?
 
-											for (Class124_Sub7 var76 = (Class124_Sub7) client.aClass107_2143
-													.method411(); var76 != null; var76 = (Class124_Sub7) client.aClass107_2143
+											for (InvIdk var76 = (InvIdk) client.aClass107_2143
+													.method411(); var76 != null; var76 = (InvIdk) client.aClass107_2143
 															.method413())
 												if ((var76.anInt1008 == 0) || (var76.anInt1008 == 3))
-													Def4.method760(var76, true);
+													client.method760(var76, true);
 
 											if (null != client.aClass124_Sub17_2042) {
 												Def10.settrue(client.aClass124_Sub17_2042);
@@ -1282,7 +1282,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 											}
 
 											if (!var23)
-												Class20.method95(4, "", "Unable to find " + var58);
+												client.doCS(4, "", "Unable to find " + var58);
 											continue;
 										}
 
@@ -2116,7 +2116,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													var21 = Class2.anIntArray8[var5];
 													var65 = (Class120) Class37.aClass134_389.aList909.get(var21);
 													final long var30 = Class74.method316(1944752452)
-															- Class124_Sub7.aLong1011 - var65.aLong849;
+															- InvIdk.aLong1011 - var65.aLong849;
 													var26 = (int) (var30 / 3600000L);
 													var25 = (int) ((var30 - 3600000 * var26) / 60000L);
 													var88 = (int) ((var30 - 3600000 * var26 - var25 * '\uea60')
@@ -2378,8 +2378,8 @@ public class Class124_Sub22_Sub5 extends JagMap {
 														var6 -= 2;
 														var71 = Class2.aStringArray5[var6];
 														var58 = Class2.aStringArray5[1 + var6];
-														if ((Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aClass100_1943 != null)
-																&& Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aClass100_1943.aBool779) {
+														if ((Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.spomet3 != null)
+																&& Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.spomet3.aBool779) {
 															Class2.aStringArray5[var6++] = var58;
 															continue;
 														}
@@ -2453,8 +2453,8 @@ public class Class124_Sub22_Sub5 extends JagMap {
 													if (opc == 4111) {
 														--var6;
 														var71 = Class2.aStringArray5[var6];
-														Class2.aStringArray5[var6++] = Class124_Sub22_Sub16_Sub4
-																.method1031(var71);
+														Class2.aStringArray5[var6++] = client
+																.appendTags(var71);
 														continue;
 													}
 
@@ -3171,9 +3171,9 @@ public class Class124_Sub22_Sub5 extends JagMap {
 															Class57.aClass22_538.aBool248 = !Class57.aClass22_538.aBool248;
 															Class62.method281();
 															if (Class57.aClass22_538.aBool248)
-																Class20.method95(99, "", "Roofs are now all hidden");
+																client.doCS(99, "", "Roofs are now all hidden");
 															else
-																Class20.method95(99, "",
+																client.doCS(99, "",
 																		"Roofs will only be removed selectively");
 														}
 
@@ -3329,8 +3329,8 @@ public class Class124_Sub22_Sub5 extends JagMap {
 
 								if (opc == 1202) {
 									wid.anInt1229 = 3;
-									wid.anInt1197 = Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aClass100_1943
-											.method401();
+									wid.anInt1197 = Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.spomet3
+											.npcThing();
 									continue;
 								}
 							}
@@ -3353,7 +3353,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								Def10.settrue(var17);
 								Class64.method286(var17);
 								if ((var21 != -1) && (var17.anInt1191 == 0))
-									Somet2.method831(
+									Somet2.updateWidget(
 											Def10.widgets[var21 >> 16], var17,
 											false);
 								continue;
@@ -3368,7 +3368,7 @@ public class Class124_Sub22_Sub5 extends JagMap {
 								Def10.settrue(var17);
 								Class64.method286(var17);
 								if ((var21 != -1) && (var17.anInt1191 == 0))
-									Somet2.method831(
+									Somet2.updateWidget(
 											Def10.widgets[var21 >> 16], var17,
 											false);
 								continue;
@@ -3631,10 +3631,10 @@ public class Class124_Sub22_Sub5 extends JagMap {
 				}
 			} catch (final Exception var47) {
 				final StringBuilder var45 = new StringBuilder(30);
-				var45.append("").append(var4.aLong874).append(" ");
+				var45.append("").append(var4.linkedhash).append(" ");
 
 				for (var13 = Class2.anInt10 - 1; var13 >= 0; --var13)
-					var45.append("").append(Class2.aClass48Array11[var13].aClass124_Sub22_Sub18_477.aLong874)
+					var45.append("").append(Class2.aClass48Array11[var13].aClass124_Sub22_Sub18_477.linkedhash)
 							.append(" ");
 
 				var45.append("").append(var10);

@@ -1,6 +1,6 @@
 public final class Class124_Sub22_Sub19_Sub3_Sub1 extends Class124_Sub22_Sub19_Sub3 {
 	static boolean aBool1938;
-	static byte[][] aByteArrayArray1939;
+	static byte[][] xteaLdata;
 	static int anInt1940;
 	Def9 aClass124_Sub22_Sub1_1941;
 

@@ -65,42 +65,9 @@ public class Def14 extends JagMap {
 	}
 
 	public static Class124_Sub22_Sub16_Sub1[] method728(final CacheArch var0, final String var1, final String var2) {
-		final int var3 = var0.method376(var1);
+		final int var3 = var0.of(var1);
 		final int var4 = var0.method383(var3, var2);
 		return Class72.method310(var0, var3, var4);
-	}
-
-	static final byte[] method729(final byte[] var0) {
-		final RSBuf var1 = new RSBuf(var0);
-		final int var4 = var1.readByteU();
-		final int var3 = var1.readInt2(-1862637362);
-		if ((var3 >= 0) && ((CacheArch.anInt755 == 0) || (var3 <= CacheArch.anInt755))) {
-			if (var4 == 0) {
-				final byte[] var2 = new byte[var3];
-				var1.readReverse(var2, 0, var3);
-				return var2;
-			} else {
-				final int var5 = var1.readInt2(33253765);
-				if (var5 < 0 || var5 > 1000000) {
-					System.err.printf("bad xtea decrypt %n");
-					return new byte[100];
-				}
-				if ((var5 >= 0) && ((CacheArch.anInt755 == 0) || (var5 <= CacheArch.anInt755))) {
-					final byte[] var6 = new byte[var5];
-					if (var4 == 1)
-						Class52.method248(var6, var5, var0, var3, 9);
-					else
-						CacheArch.aClass64_743.method288(var1, var6);
-
-					return var6;
-				} else {
-					System.err.printf("bad xtea decrypt %n");
-					return new byte[] {};
-					//throw new RuntimeException();
-				}
-			}
-		} else
-			throw new RuntimeException();
 	}
 
 	static final void method730(final int var0, final int var1, final int var2, final int var3,

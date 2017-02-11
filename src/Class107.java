@@ -9,7 +9,7 @@ public final class Class107 {
 		final Node var3 = aClass124Array808[(int) (var1 & anInt809 - 1)];
 
 		for (aClass124_810 = var3.aClass124_875; aClass124_810 != var3; aClass124_810 = aClass124_810.aClass124_875)
-			if (aClass124_810.aLong874 == var1) {
+			if (aClass124_810.linkedhash == var1) {
 				final Node var4 = aClass124_810;
 				aClass124_810 = aClass124_810.aClass124_875;
 				return var4;
@@ -50,7 +50,7 @@ public final class Class107 {
 		var1.aClass124_875 = var4;
 		var1.aClass124_876.aClass124_875 = var1;
 		var1.aClass124_875.aClass124_876 = var1;
-		var1.aLong874 = var2;
+		var1.linkedhash = var2;
 	}
 
 	public Class107(final int var1) {

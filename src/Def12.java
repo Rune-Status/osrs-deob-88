@@ -225,7 +225,7 @@ public class Def12 extends JagMap {
 		if (Class4.anInt54 > Class124_Sub22_Sub19_Sub1.anIntArray1661.length) {
 			Class4.anInt54 -= Class124_Sub22_Sub19_Sub1.anIntArray1661.length;
 			var4 = (int) (Math.random() * 12.0D);
-			Def4.method761(Class4.aClass124_Sub22_Sub16_Sub2Array25[var4]);
+			client.method761(Class4.aClass124_Sub22_Sub16_Sub2Array25[var4]);
 		}
 
 		var4 = 0;

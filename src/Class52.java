@@ -1,7 +1,7 @@
 public final class Class52 {
 	static Class54 aClass54_490 = new Class54();
 
-	public static int method248(final byte[] var0, int var1, final byte[] var2, final int var3, final int var4) {
+	public static int bziprequest(final byte[] var0, int var1, final byte[] var2, final int var3, final int var4) {
 		final Class54 var5 = aClass54_490;
 		synchronized (var5) {
 			aClass54_490.aByteArray501 = var2;

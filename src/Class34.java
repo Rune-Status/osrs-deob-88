@@ -59,14 +59,14 @@ public class Class34 implements Interface3 {
 		return client.aBool2196 ? 2 : 1;
 	}
 
-	public static Def9 method188(final int var0, final int var1) {
+	public static Def9 getNpcDef(final int var0, final int var1) {
 		Def9 var2 = (Def9) Def9.aClass113_1316.forId(var0);
 		if (var2 != null)
 			return var2;
 		else {
 			final byte[] var3 = Def9.aClass94_1328.decode(9, var0);
 			var2 = new Def9();
-			var2.anInt1318 = var0;
+			var2.npcidmaybe = var0;
 			if (var3 != null)
 				var2.method642(new RSBuf(var3));
 

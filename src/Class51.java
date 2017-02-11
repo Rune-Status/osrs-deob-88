@@ -5,9 +5,9 @@ public class Class51 {
 		for (final Widget element : var0) {
 			final Widget var3 = element;
 			if ((null != var3) && (var3.anInt1259 == var1)
-					&& (!var3.aBool1152 || !Def4.method762(var3))) {
+					&& (!var3.aBool1152 || !client.method762(var3))) {
 				if (var3.anInt1191 == 0) {
-					if (!var3.aBool1152 && Def4.method762(var3)
+					if (!var3.aBool1152 && client.method762(var3)
 							&& (Class31.aClass124_Sub17_335 != var3))
 						continue;
 
@@ -15,7 +15,7 @@ public class Class51 {
 					if (var3.aClass124_Sub17Array1263 != null)
 						method245(var3.aClass124_Sub17Array1263, var3.anInt1284);
 
-					final Class124_Sub7 var6 = (Class124_Sub7) client.aClass107_2143.method409(var3.anInt1284);
+					final InvIdk var6 = (InvIdk) client.aClass107_2143.method409(var3.anInt1284);
 					if (null != var6)
 						Class124_Sub10.method536(var6.anInt1012);
 				}

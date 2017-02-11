@@ -279,7 +279,7 @@ public class Class64 {
 							var27.length() - 1))
 						;
 
-					var0.method1020(Class124_Sub22_Sub16_Sub4.method1031(var27), (Class4.anInt30 + 180) - 70, var32,
+					var0.method1020(client.appendTags(var27), (Class4.anInt30 + 180) - 70, var32,
 							16777215, 0);
 					var32 += 15;
 					var0.method1020("Password: " + Class76.method317(Class4.aString45), (Class4.anInt30 + 180) - 108,
@@ -336,7 +336,7 @@ public class Class64 {
 							;
 
 						var0.method1020(
-								Class124_Sub22_Sub16_Sub4.method1031(var27)
+								client.appendTags(var27)
 										+ ((Class4.anInt33 == 0) & ((client.anInt2158 % 40) < 20)
 												? Class124_Sub4_Sub3.method874(16776960) + "|" : ""),
 								(180 + Class4.anInt30) - 70, var32, 16777215, 0);
@@ -407,7 +407,7 @@ public class Class64 {
 						for (var27 = Class4.aString44; var0.method1018(var27) > var33; var27 = var27.substring(1))
 							;
 
-						var0.method1020(Class124_Sub22_Sub16_Sub4.method1031(var27)
+						var0.method1020(client.appendTags(var27)
 								+ ((client.anInt2158 % 40) < 20 ? Class124_Sub4_Sub3.method874(16776960) + "|" : ""),
 								(180 + Class4.anInt30) - 34, var32, 16777215, 0);
 						var32 += 15;
@@ -439,7 +439,7 @@ public class Class64 {
 				Class4.anInt36 = 0;
 			}
 
-			Def4.method759();
+			client.method759();
 			Class5.aClass124_Sub22_Sub16_Sub2Array59[Class57.aClass22_538.aBool249 ? 1 : 0]
 					.method926((765 + Class4.anInt22) - 40, 463);
 			if ((client.anInt1992 > 5) && (client.anInt2058 == 0))
@@ -469,7 +469,7 @@ public class Class64 {
 		}
 	}
 
-	public void method288(final RSBuf var1, final byte[] var2) {
+	public void decompress(final RSBuf var1, final byte[] var2) {
 		if ((var1.backing[var1.pos] == 31) && (var1.backing[var1.pos + 1] == -117)) {
 			if (null == anInflater557)
 				anInflater557 = new Inflater(true);

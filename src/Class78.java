@@ -212,7 +212,7 @@ public final class Class78 implements Runnable {
 					var6.anInt1175 = 0;
 
 				if (var6.anInt1191 == 0)
-					Somet2.method831(var0, var6, var4);
+					Somet2.updateWidget(var0, var6, var4);
 			}
 		}
 

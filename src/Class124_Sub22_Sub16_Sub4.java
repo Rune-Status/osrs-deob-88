@@ -597,31 +597,6 @@ public abstract class Class124_Sub22_Sub16_Sub4 extends Class124_Sub22_Sub16 {
 			method1040(anIntArray1570, var0, var5, var9, var6, var3, var4, var10, var8);
 	}
 
-	public static String method1031(final String var0) {
-		final int var1 = var0.length();
-		int var6 = 0;
-
-		for (int var4 = 0; var4 < var1; ++var4) {
-			final char var3 = var0.charAt(var4);
-			if ((var3 == 60) || (var3 == 62))
-				var6 += 3;
-		}
-
-		final StringBuilder var5 = new StringBuilder(var1 + var6);
-
-		for (int var7 = 0; var7 < var1; ++var7) {
-			final char var2 = var0.charAt(var7);
-			if (var2 == 60)
-				var5.append("<lt>");
-			else if (var2 == 62)
-				var5.append("<gt>");
-			else
-				var5.append(var2);
-		}
-
-		return var5.toString();
-	}
-
 	static void method1032(final byte[] var0, int var1, int var2, int var3, int var4, final int var5, final int var6) {
 		int var7 = var1 + (var2 * anInt1565);
 		int var11 = anInt1565 - var3;

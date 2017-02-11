@@ -17,14 +17,14 @@ public class Class99 implements Runnable {
 				Object var14;
 				if (var2 != null) {
 					if (var2.anInt1295 == 0) {
-						var2.aClass69_1296.method302((int) var2.aLong874, var2.aByteArray1298,
+						var2.aClass69_1296.method302((int) var2.linkedhash, var2.aByteArray1298,
 								var2.aByteArray1298.length);
 						var1 = aClass111_776;
 						synchronized (var1) {
 							var2.method450();
 						}
 					} else if (var2.anInt1295 == 1) {
-						var2.aByteArray1298 = var2.aClass69_1296.method304((int) var2.aLong874);
+						var2.aByteArray1298 = var2.aClass69_1296.method304((int) var2.linkedhash);
 						var1 = aClass111_776;
 						synchronized (var1) {
 							aClass111_775.method424(var2);

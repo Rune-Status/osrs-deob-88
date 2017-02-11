@@ -21,7 +21,7 @@ public class Class94_Sub1 extends CacheArch {
 			final int var1 = anInt1122;
 			final long var2 = 16711680 + var1;
 			int var5;
-			if ((null != Class28.aClass124_Sub22_Sub21_311) && (Class28.aClass124_Sub22_Sub21_311.aLong874 == var2))
+			if ((null != Class28.aClass124_Sub22_Sub21_311) && (Class28.aClass124_Sub22_Sub21_311.linkedhash == var2))
 				var5 = 1 + ((ISAAC.buf.pos * 99)
 						/ (ISAAC.buf.backing.length
 								- Class28.aClass124_Sub22_Sub21_311.aByte1650));
@@ -69,21 +69,21 @@ public class Class94_Sub1 extends CacheArch {
 		}
 	}
 
-	public void method614(final Class69 var1, final int var2, final byte[] var3, final boolean var4) {
+	public void method614(final Class69 var1, final int var2, final byte[] raw, final boolean var4) {
 		int var8;
 		if (var1 == aClass69_1113) {
 			if (aBool1116)
 				throw new RuntimeException();
 
-			if (var3 == null) {
+			if (raw == null) {
 				Class102.method403(this, 255, anInt1122, anInt1120, (byte) 0, true);
 				return;
 			}
 
 			aCRC32_1119.reset();
-			aCRC32_1119.update(var3, 0, var3.length);
+			aCRC32_1119.update(raw, 0, raw.length);
 			var8 = (int) aCRC32_1119.getValue();
-			final RSBuf var5 = new RSBuf(Def14.method729(var3));
+			final RSBuf var5 = new RSBuf(client.unpackBlock(raw));
 			final int var7 = var5.readByteU();
 			if ((var7 != 5) && (var7 != 6))
 				throw new RuntimeException(var7 + "," + anInt1122 + "," + var2);
@@ -97,13 +97,13 @@ public class Class94_Sub1 extends CacheArch {
 				return;
 			}
 
-			method363(var3);
+			method363(raw);
 			method615();
 		} else {
 			if (!var4 && (anInt1114 == var2))
 				aBool1116 = true;
 
-			if ((var3 == null) || (var3.length <= 2)) {
+			if ((raw == null) || (raw.length <= 2)) {
 				aBoolArray1118[var2] = false;
 				if (aBool1117 || var4)
 					Class102.method403(this, anInt1122, var2, anIntArray747[var2], (byte) 2, var4);
@@ -112,9 +112,9 @@ public class Class94_Sub1 extends CacheArch {
 			}
 
 			aCRC32_1119.reset();
-			aCRC32_1119.update(var3, 0, var3.length - 2);
+			aCRC32_1119.update(raw, 0, raw.length - 2);
 			var8 = (int) aCRC32_1119.getValue();
-			final int var9 = (var3[var3.length - 1] & 255) + ((var3[var3.length - 2] & 255) << 8);
+			final int var9 = (raw[raw.length - 1] & 255) + ((raw[raw.length - 2] & 255) << 8);
 			if ((var8 != anIntArray747[var2]) || (anIntArray748[var2] != var9)) {
 				aBoolArray1118[var2] = false;
 				if (aBool1117 || var4)
@@ -125,7 +125,7 @@ public class Class94_Sub1 extends CacheArch {
 
 			aBoolArray1118[var2] = true;
 			if (var4)
-				anObjectArray753[var2] = Class9_Sub1.method493(var3, false);
+				anObjectArray753[var2] = Class9_Sub1.method493(raw, false);
 		}
 
 	}
@@ -163,7 +163,7 @@ public class Class94_Sub1 extends CacheArch {
 			final int var3 = anInt1122;
 			final long var4 = var1 + (var3 << 16);
 			int var2;
-			if ((Class28.aClass124_Sub22_Sub21_311 != null) && (var4 == Class28.aClass124_Sub22_Sub21_311.aLong874))
+			if ((Class28.aClass124_Sub22_Sub21_311 != null) && (var4 == Class28.aClass124_Sub22_Sub21_311.linkedhash))
 				var2 = ((ISAAC.buf.pos * 99)
 						/ (ISAAC.buf.backing.length
 								- Class28.aClass124_Sub22_Sub21_311.aByte1650))

@@ -9,7 +9,7 @@ public final class Class116 implements Iterable {
 		final Node var3 = aClass124Array828[(int) (var1 & anInt830 - 1)];
 
 		for (aClass124_829 = var3.aClass124_875; aClass124_829 != var3; aClass124_829 = aClass124_829.aClass124_875)
-			if (aClass124_829.aLong874 == var1) {
+			if (aClass124_829.linkedhash == var1) {
 				final Node var4 = aClass124_829;
 				aClass124_829 = aClass124_829.aClass124_875;
 				return var4;
@@ -28,7 +28,7 @@ public final class Class116 implements Iterable {
 		var1.aClass124_875 = var4;
 		var1.aClass124_876.aClass124_875 = var1;
 		var1.aClass124_875.aClass124_876 = var1;
-		var1.aLong874 = var2;
+		var1.linkedhash = var2;
 	}
 
 	public void method440() {

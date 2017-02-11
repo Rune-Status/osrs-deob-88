@@ -79,7 +79,7 @@ public class Class62 {
 		for (var0 = 0; var0 < 4; ++var0)
 			for (int var1 = 0; var1 < 104; ++var1)
 				for (int var3 = 0; var3 < 104; ++var3)
-					client.aClass111ArrayArrayArray2073[var0][var1][var3] = null;
+					client.clips[var0][var1][var3] = null;
 
 		client.aClass111_2262 = new Class111();
 		client.anInt2215 = 0;
@@ -99,9 +99,9 @@ public class Class62 {
 		if (client.anInt2142 != -1)
 			client.setNotLoaded(client.anInt2142, 236366084);
 
-		for (Class124_Sub7 var2 = (Class124_Sub7) client.aClass107_2143
-				.method411(); null != var2; var2 = (Class124_Sub7) client.aClass107_2143.method413())
-			Def4.method760(var2, true);
+		for (InvIdk var2 = (InvIdk) client.aClass107_2143
+				.method411(); null != var2; var2 = (InvIdk) client.aClass107_2143.method413())
+			client.method760(var2, true);
 
 		client.anInt2142 = -1;
 		client.aClass107_2143 = new Class107(8);
@@ -284,7 +284,7 @@ public class Class62 {
 								Class4.security = Class57.aClass22_538.aLinkedHashMap252
 										.containsKey(Integer.valueOf(Class47.method232(Class4.aString44)))
 												? Class72.aClass72_597 : Class72.aClass72_593;
-								client.method516(20);
+								client.forstep(20);
 								return;
 							}
 
@@ -353,7 +353,7 @@ public class Class62 {
 											Class4.security = Class57.aClass22_538.aLinkedHashMap252
 													.containsKey(Integer.valueOf(Class47.method232(Class4.aString44)))
 															? Class72.aClass72_597 : Class72.aClass72_593;
-											client.method516(20);
+											client.forstep(20);
 											return;
 										}
 
@@ -382,7 +382,7 @@ public class Class62 {
 									Class49.aString485 = "";
 									Class4.security = Class4.aBool37 ? Class72.aClass72_594 : Class72.aClass72_599;
 									client.showMsg("", "Connecting to server...", "");
-									client.method516(20);
+									client.forstep(20);
 									return;
 								}
 
@@ -454,7 +454,7 @@ public class Class62 {
 											Class4.security = Class4.aBool37 ? Class72.aClass72_594
 													: Class72.aClass72_599;
 											client.showMsg("", "Connecting to server...", "");
-											client.method516(20);
+											client.forstep(20);
 											return;
 										}
 

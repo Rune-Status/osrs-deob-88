@@ -1,5 +1,5 @@
 public class Class10 {
-	static int[] anIntArray104;
+	static int[] xteaM;
 	static Class124_Sub22_Sub16_Sub2[] aClass124_Sub22_Sub16_Sub2Array109;
 	Class107 aClass107_106 = new Class107(256);
 	Class107 aClass107_108 = new Class107(256);
@@ -105,7 +105,7 @@ public class Class10 {
 
 	static final void method60() {
 		if (client.anInt2034 <= 0) {
-			client.method516(40);
+			client.forstep(40);
 			Class124_Sub22_Sub19_Sub1.aClass78_1662 = Class73.out;
 			Class73.out = null;
 		} else

@@ -13,14 +13,14 @@ public abstract class CacheArch {
 	Class109 aClass109_746;
 	int[][] anIntArrayArray751;
 	Class109[] aClass109Array752;
-	static Class64 aClass64_743 = new Class64();
-	static int anInt755 = 0;
+	static Class64 decompressor = new Class64();
+	static int expectS = 0;
 	boolean aBool757;
 	boolean aBool760;
 
 	void method363(final byte[] var1) {
 		anInt756 = Def8.method700(var1, var1.length);
-		final RSBuf var3 = new RSBuf(Def14.method729(var1));
+		final RSBuf var3 = new RSBuf(client.unpackBlock(var1));
 		final int var4 = var3.readByteU();
 		if ((var4 >= 5) && (var4 <= 7)) {
 			if (var4 >= 6)
@@ -135,7 +135,7 @@ public abstract class CacheArch {
 	}
 
 	public boolean valid(final String var1) {
-		final int var2 = method376("");
+		final int var2 = of("");
 		return var2 == -1 ? valid2(var1, "") : valid2("", var1);
 	}
 
@@ -240,9 +240,9 @@ public abstract class CacheArch {
 			return true;
 	}
 
-	public int method376(String var1) {
+	public int of(String var1) {
 		var1 = var1.toLowerCase();
-		return aClass109_746.method419(Def5.method708(var1));
+		return aClass109_746.off(Def5.format(var1));
 	}
 
 	public byte[] decode(final int var1, final int var2) {
@@ -252,16 +252,16 @@ public abstract class CacheArch {
 	public byte[] decode3(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
-		final int var3 = aClass109_746.method419(Def5.method708(var1));
-		final int var4 = aClass109Array752[var3].method419(Def5.method708(var2));
+		final int var3 = aClass109_746.off(Def5.format(var1));
+		final int var4 = aClass109Array752[var3].off(Def5.format(var2));
 		return decode(var3, var4);
 	}
 
 	public boolean valid2(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
-		final int var3 = aClass109_746.method419(Def5.method708(var1));
-		final int var4 = aClass109Array752[var3].method419(Def5.method708(var2));
+		final int var3 = aClass109_746.off(Def5.format(var1));
+		final int var4 = aClass109Array752[var3].off(Def5.format(var2));
 		return valid(var3, var4);
 	}
 
@@ -298,12 +298,12 @@ public abstract class CacheArch {
 
 	public int method383(final int var1, String var2) {
 		var2 = var2.toLowerCase();
-		return aClass109Array752[var1].method419(Def5.method708(var2));
+		return aClass109Array752[var1].off(Def5.format(var2));
 	}
 
 	public void method384(String var1) {
 		var1 = var1.toLowerCase();
-		final int var2 = aClass109_746.method419(Def5.method708(var1));
+		final int var2 = aClass109_746.off(Def5.format(var1));
 		if (var2 >= 0)
 			method364(var2, -1484277722);
 	}
@@ -334,16 +334,16 @@ public abstract class CacheArch {
 				} else
 					var8 = ISAAC.method299(anObjectArray753[var1], false);
 
-				final byte[] var20 = Def14.method729(var8);
+				final byte[] info = client.unpackBlock(var8);
 				if (aBool757)
 					anObjectArray753[var1] = null;
 
 				if (var3 > 1) {
-					int var10 = var20.length;
+					int var10 = info.length;
 					--var10;
-					final int var11 = var20[var10] & 255;
+					final int var11 = info[var10] & 255;
 					var10 -= var3 * var11 * 4;
-					final RSBuf var12 = new RSBuf(var20);
+					final RSBuf var12 = new RSBuf(info);
 					final int[] var13 = new int[var3];
 					var12.pos = var10;
 
@@ -373,7 +373,7 @@ public abstract class CacheArch {
 
 						for (int var19 = 0; var19 < var3; ++var19) {
 							var18 += var12.readInt2(-2033999182);
-							System.arraycopy(var20, var15, var17[var19], var13[var19], var18);
+							System.arraycopy(info, var15, var17[var19], var13[var19], var18);
 							var13[var19] += var18;
 							var15 += var18;
 						}
@@ -385,9 +385,9 @@ public abstract class CacheArch {
 						else
 							var5[var4[var16]] = var17[var16];
 				} else if (!aBool760)
-					var5[var4[0]] = Class9_Sub1.method493(var20, false);
+					var5[var4[0]] = Class9_Sub1.method493(info, false);
 				else
-					var5[var4[0]] = var20;
+					var5[var4[0]] = info;
 
 				return true;
 			}

@@ -48,7 +48,7 @@ public class Class124_Sub4_Sub3 extends Class124_Sub4 {
 
 		for (Class124_Sub23 var7 = (Class124_Sub23) var1.aClass107_1301
 				.method411(); var7 != null; var7 = (Class124_Sub23) var1.aClass107_1301.method413()) {
-			final int var8 = (int) var7.aLong874;
+			final int var8 = (int) var7.linkedhash;
 			Class124_Sub18 var9 = (Class124_Sub18) aClass107_1630.method409(var8);
 			if (null == var9) {
 				var9 = Class124_Sub22_Sub19_Sub3_Sub1.method1042(var2, var8);

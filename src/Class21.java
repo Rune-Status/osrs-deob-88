@@ -1261,15 +1261,15 @@ public class Class21 {
 		anInt194 = 0;
 
 		int var8;
-		TileObj[][] var9;
+		TileObj[][] tiles;
 		int var12;
 		int var13;
 		for (var12 = anInt196; var12 < anInt191; ++var12) {
-			var9 = tileobjs[var12];
+			tiles = tileobjs[var12];
 
 			for (var8 = anInt199; var8 < anInt204; ++var8)
 				for (var13 = anInt193; var13 < anInt206; ++var13) {
-					final TileObj var14 = var9[var8][var13];
+					final TileObj var14 = tiles[var8][var13];
 					if (var14 != null)
 						if ((var14.anInt979 > var6)
 								|| (!aBoolArrayArray239[(var8 - anInt207) + 25][(var13 - anInt208) + 25]
@@ -1290,46 +1290,46 @@ public class Class21 {
 				}
 		}
 
-		TileObj var7;
-		int var10;
+		TileObj to;
+		int x;
 		int var11;
 		int var15;
-		int var16;
+		int y;
 		for (var12 = anInt196; var12 < anInt191; ++var12) {
-			var9 = tileobjs[var12];
+			tiles = tileobjs[var12];
 
 			for (var8 = -25; var8 <= 0; ++var8) {
 				var13 = anInt207 + var8;
-				var10 = anInt207 - var8;
-				if ((var13 >= anInt199) || (var10 < anInt204))
+				x = anInt207 - var8;
+				if ((var13 >= anInt199) || (x < anInt204))
 					for (var15 = -25; var15 <= 0; ++var15) {
 						var11 = anInt208 + var15;
-						var16 = anInt208 - var15;
+						y = anInt208 - var15;
 						if (var13 >= anInt199) {
 							if (var11 >= anInt193) {
-								var7 = var9[var13][var11];
-								if ((var7 != null) && var7.aBool971)
-									method137(var7, true);
+								to = tiles[var13][var11];
+								if ((to != null) && to.aBool971)
+									method137(to, true);
 							}
 
-							if (var16 < anInt206) {
-								var7 = var9[var13][var16];
-								if ((var7 != null) && var7.aBool971)
-									method137(var7, true);
+							if (y < anInt206) {
+								to = tiles[var13][y];
+								if ((to != null) && to.aBool971)
+									method137(to, true);
 							}
 						}
 
-						if (var10 < anInt204) {
+						if (x < anInt204) {
 							if (var11 >= anInt193) {
-								var7 = var9[var10][var11];
-								if ((var7 != null) && var7.aBool971)
-									method137(var7, true);
+								to = tiles[x][var11];
+								if ((to != null) && to.aBool971)
+									method137(to, true);
 							}
 
-							if (var16 < anInt206) {
-								var7 = var9[var10][var16];
-								if ((var7 != null) && var7.aBool971)
-									method137(var7, true);
+							if (y < anInt206) {
+								to = tiles[x][y];
+								if ((to != null) && to.aBool971)
+									method137(to, true);
 							}
 						}
 
@@ -1342,40 +1342,40 @@ public class Class21 {
 		}
 
 		for (var12 = anInt196; var12 < anInt191; ++var12) {
-			var9 = tileobjs[var12];
+			tiles = tileobjs[var12];
 
 			for (var8 = -25; var8 <= 0; ++var8) {
 				var13 = anInt207 + var8;
-				var10 = anInt207 - var8;
-				if ((var13 >= anInt199) || (var10 < anInt204))
+				x = anInt207 - var8;
+				if ((var13 >= anInt199) || (x < anInt204))
 					for (var15 = -25; var15 <= 0; ++var15) {
 						var11 = anInt208 + var15;
-						var16 = anInt208 - var15;
+						y = anInt208 - var15;
 						if (var13 >= anInt199) {
 							if (var11 >= anInt193) {
-								var7 = var9[var13][var11];
-								if ((var7 != null) && var7.aBool971)
-									method137(var7, false);
+								to = tiles[var13][var11];
+								if ((to != null) && to.aBool971)
+									method137(to, false);
 							}
 
-							if (var16 < anInt206) {
-								var7 = var9[var13][var16];
-								if ((var7 != null) && var7.aBool971)
-									method137(var7, false);
+							if (y < anInt206) {
+								to = tiles[var13][y];
+								if ((to != null) && to.aBool971)
+									method137(to, false);
 							}
 						}
 
-						if (var10 < anInt204) {
+						if (x < anInt204) {
 							if (var11 >= anInt193) {
-								var7 = var9[var10][var11];
-								if ((var7 != null) && var7.aBool971)
-									method137(var7, false);
+								to = tiles[x][var11];
+								if ((to != null) && to.aBool971)
+									method137(to, false);
 							}
 
-							if (var16 < anInt206) {
-								var7 = var9[var10][var16];
-								if ((var7 != null) && var7.aBool971)
-									method137(var7, false);
+							if (y < anInt206) {
+								to = tiles[x][y];
+								if ((to != null) && to.aBool971)
+									method137(to, false);
 							}
 						}
 

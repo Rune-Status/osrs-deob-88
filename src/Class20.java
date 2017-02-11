@@ -52,7 +52,7 @@ public class Class20 {
 				cs.anInt998 = var9;
 				cs.anInt1004 = var5;
 				cs.anObjectArray995 = client.currentWid.anObjectArray1256;
-				Class124_Sub22_Sub19_Sub3_Sub2.fullCS(cs);
+				client.fullCS(cs);
 			}
 
 			if (Class81.anInt651 == 0) {
@@ -64,7 +64,7 @@ public class Class20 {
 						cs.anInt1004 = var5;
 						cs.aClass124_Sub17_1000 = client.wid;
 						cs.anObjectArray995 = client.currentWid.anObjectArray1159;
-						Class124_Sub22_Sub19_Sub3_Sub2.fullCS(cs);
+						client.fullCS(cs);
 					}
 
 					if (null != client.wid) {
@@ -104,13 +104,9 @@ public class Class20 {
 			client.currentWid = null;
 	}
 
-	static void method95(final int var0, final String var1, final String var2) {
-		Class49.method238(var0, var1, var2, (String) null);
-	}
-
 	public static void method96(final CacheArch var0, final String var1, final String var2, final int var3,
 			final boolean var4) {
-		final int var5 = var0.method376(var1);
+		final int var5 = var0.of(var1);
 		final int var6 = var0.method383(var5, var2);
 		Class2.method19(var0, var5, var6, var3, var4);
 	}

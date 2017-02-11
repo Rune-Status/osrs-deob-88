@@ -41,7 +41,7 @@ public class Class29 implements Runnable {
 			if (var5 > 0)
 				var11 = var4;
 
-			final int[] var10 = Class124_Sub22_Sub19_Sub3_Sub2.aClass124_Sub22_Sub16_Sub1_1954.anIntArray1735;
+			final int[] var10 = client.aClass124_Sub22_Sub16_Sub1_1954.anIntArray1735;
 			var9 = (4 * var1) + 24624 + ((103 - var2) * 2048);
 			var15 = (var5 >> 14) & 32767;
 			final Def6 var16 = Def13.method736(var15);
@@ -131,7 +131,7 @@ public class Class29 implements Runnable {
 				if (var5 > 0)
 					var9 = 15597568;
 
-				final int[] var7 = Class124_Sub22_Sub19_Sub3_Sub2.aClass124_Sub22_Sub16_Sub1_1954.anIntArray1735;
+				final int[] var7 = client.aClass124_Sub22_Sub16_Sub1_1954.anIntArray1735;
 				var8 = (2048 * (103 - var2)) + (4 * var1) + 24624;
 				if ((var20 != 0) && (var20 != 2)) {
 					var7[var8] = var9;

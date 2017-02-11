@@ -148,7 +148,7 @@ public class RuntimeException_Sub1 extends RuntimeException {
 		return (var0 >> 17) & 7;
 	}
 
-	public static String method1013(final RSBuf var0) {
+	public static String decodeStr(final RSBuf var0) {
 		String var4;
 		try {
 			int var1 = var0.getsmart((byte) 68);

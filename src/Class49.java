@@ -166,7 +166,7 @@ public class Class49 {
 				client.loginbuf.writeInt(Class25.aClass94_Sub1_279.anInt756);
 				client.loginbuf.writeInt(Class70.aClass94_Sub1_585.anInt756);
 				client.loginbuf.writeInt(Somet2.aClass94_Sub1_1604.anInt756);
-				//client.loginbuf.xtea3(var1, var3, client.loginbuf.pos); // xtea
+				client.loginbuf.xtea3(var1, var3, client.loginbuf.pos); // xtea
 				client.loginbuf.endShortSize(client.loginbuf.pos - var2);
 				Class73.out.write(client.loginbuf.backing, 0,
 						client.loginbuf.pos);
@@ -211,7 +211,7 @@ public class Class49 {
 								client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var2].anInt1694 = -1;
 
 						method241();
-						client.method516(30);
+						client.forstep(30);
 
 						for (var2 = 0; var2 < 100; ++var2)
 							client.aBoolArray2061[var2] = true;
@@ -336,7 +336,7 @@ public class Class49 {
 						final String var10 = client.buf.readStr2();
 						final String var20 = client.buf.readStr2();
 						client.showMsg(var16, var10, var20);
-						client.method516(10);
+						client.forstep(10);
 					}
 
 					++client.anInt1999;
@@ -481,24 +481,24 @@ public class Class49 {
 		}
 	}
 
-	static final Class124_Sub7 method240(final int var0, final int var1, final int var2) {
-		final Class124_Sub7 var3 = new Class124_Sub7();
+	static final InvIdk method240(final int hash, final int var1, final int var2) {
+		final InvIdk var3 = new InvIdk();
 		var3.anInt1012 = var1;
 		var3.anInt1008 = var2;
-		client.aClass107_2143.method412(var3, var0);
-		Class32.method183(var1);
-		final Widget var4 = Class10.getwidget(var0);
-		Def10.settrue(var4);
+		client.aClass107_2143.method412(var3, hash);
+		Class32.clearchilds(var1);
+		final Widget w1 = Class10.getwidget(hash);
+		Def10.settrue(w1);
 		if (null != client.aClass124_Sub17_2042) {
 			Def10.settrue(client.aClass124_Sub17_2042);
 			client.aClass124_Sub17_2042 = null;
 		}
 
 		Class51.method247();
-		Somet2.method831(Def10.widgets[var0 >> 16], var4, false);
+		Somet2.updateWidget(Def10.widgets[hash >> 16], w1, false);
 		Class3.method20(var1);
 		if (client.anInt2142 != -1)
-			Class3.method23(client.anInt2142, 1);
+			Class3.widgetInvCS(client.anInt2142, 1);
 
 		return var3;
 	}

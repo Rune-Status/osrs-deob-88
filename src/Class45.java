@@ -17,7 +17,7 @@ public class Class45 {
 	Class79 aClass79_440;
 	long aLong446;
 
-	static final void method223(final RSBuf var0, final int var1, final int var2, final int var3,
+	static final void tilecli(final RSBuf var0, final int var1, final int var2, final int var3,
 			final int var4, final int var5, final int var6) {
 		int var7;
 		if ((var2 >= 0) && (var2 < 104) && (var3 >= 0) && (var3 < 104)) {
@@ -138,14 +138,14 @@ public class Class45 {
 						final Class32 var1 = client.aClass32Array2098[var2];
 						var5 = Class34.method186(var1.aString344, Class49.aClass117_488);
 						if ((var5 != null) && var5.equals(var4)) {
-							Class20.method95(30, "", var0 + " is already on your friend list");
+							client.doCS(30, "", var0 + " is already on your friend list");
 							return;
 						}
 
 						if (var1.aString338 != null) {
 							var3 = Class34.method186(var1.aString338, Class49.aClass117_488);
 							if ((null != var3) && var3.equals(var4)) {
-								Class20.method95(30, "", var0 + " is already on your friend list");
+								client.doCS(30, "", var0 + " is already on your friend list");
 								return;
 							}
 						}
@@ -155,14 +155,14 @@ public class Class45 {
 						final Class35 var6 = client.aClass35Array1986[var2];
 						var5 = Class34.method186(var6.aString372, Class49.aClass117_488);
 						if ((var5 != null) && var5.equals(var4)) {
-							Class20.method95(30, "", "Please remove " + var0 + " from your ignore list first");
+							client.doCS(30, "", "Please remove " + var0 + " from your ignore list first");
 							return;
 						}
 
 						if (null != var6.aString373) {
 							var3 = Class34.method186(var6.aString373, Class49.aClass117_488);
 							if ((var3 != null) && var3.equals(var4)) {
-								Class20.method95(30, "", "Please remove " + var0 + " from your ignore list first");
+								client.doCS(30, "", "Please remove " + var0 + " from your ignore list first");
 								return;
 							}
 						}
@@ -171,7 +171,7 @@ public class Class45 {
 					if (Class34
 							.method186(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aString1956, Class49.aClass117_488)
 							.equals(var4))
-						Class20.method95(30, "", "You can\'t add yourself to your own friend list");
+						client.doCS(30, "", "You can\'t add yourself to your own friend list");
 					else {
 						client.secbuf.writeOpcode(70); // add friend
 						client.secbuf.writeByte(Class54.len(var0));
@@ -179,7 +179,7 @@ public class Class45 {
 					}
 				}
 			} else
-				Class20.method95(30, "", "Your friend list is full. Max of 200 for free users, and 400 for members");
+				client.doCS(30, "", "Your friend list is full. Max of 200 for free users, and 400 for members");
 	}
 
 	static void method226(final Class124_Sub22_Sub19_Sub3_Sub2 var0, final int var1, final int var2) {

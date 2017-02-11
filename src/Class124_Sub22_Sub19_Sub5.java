@@ -82,7 +82,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 		Class80.method327(var0.anInt1690, var0.anInt1697, var1);
 	}
 
-	static void method955(final int var0) {
+	static void clear(final int var0) {
 		final Class124_Sub10 var1 = (Class124_Sub10) Class124_Sub10.aClass107_1034.method409(var0);
 		if (null != var1)
 			for (int var2 = 0; var2 < var1.anIntArray1030.length; ++var2) {
@@ -115,7 +115,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 
 	static void method956(final int var0, final boolean var1, final int var2, final boolean var3) {
 		if (null != Class23.aClass23Array256)
-			Class124_Sub7.method525(0, Class23.aClass23Array256.length - 1, var0, var1, var2, var3);
+			InvIdk.method525(0, Class23.aClass23Array256.length - 1, var0, var1, var2, var3);
 
 	}
 
@@ -311,7 +311,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 						var5 -= 32;
 				}
 
-				var3.aClass124_Sub22_Sub1_1941 = Class34.method188(client.buf.clever(14),
+				var3.aClass124_Sub22_Sub1_1941 = Class34.getNpcDef(client.buf.clever(14),
 						1713192620);
 				var8 = client.anIntArray2168[client.buf.clever(3)];
 				if (var12)
@@ -345,7 +345,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 				var3 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[var2];
 				var10 = client.buf.readByteU();
 				if ((var10 & 8) != 0) {
-					var5 = client.buf.readUShort();
+					var5 = client.buf.readUShortLE();
 					if (var5 == '\uffff')
 						var5 = -1;
 
@@ -373,7 +373,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 				}
 
 				if ((var10 & 32) != 0) {
-					var3.anInt1671 = client.buf.readUShort();
+					var3.anInt1671 = client.buf.readUShortLE();
 					var3.anInt1728 = client.buf.readShortU();
 				}
 
@@ -406,7 +406,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 				}
 
 				if ((var10 & 16) != 0) {
-					var3.aClass124_Sub22_Sub1_1941 = Class34.method188(client.buf.readUShort(),
+					var3.aClass124_Sub22_Sub1_1941 = Class34.getNpcDef(client.buf.readUShortLE(),
 							2041359585);
 					var3.anInt1674 = var3.aClass124_Sub22_Sub1_1941.anInt1320;
 					var3.anInt1724 = var3.aClass124_Sub22_Sub1_1941.anInt1343;
@@ -429,7 +429,7 @@ public final class Class124_Sub22_Sub19_Sub5 extends Class124_Sub22_Sub19 {
 				}
 
 				if ((var10 & 2) != 0) {
-					var3.anInt1694 = client.buf.readUShort();
+					var3.anInt1694 = client.buf.readUShortLE();
 					if (var3.anInt1694 == '\uffff')
 						var3.anInt1694 = -1;
 				}

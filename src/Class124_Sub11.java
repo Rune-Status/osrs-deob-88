@@ -18,7 +18,7 @@ public final class Class124_Sub11 extends Node {
 	int anInt1050 = -1;
 
 	public static Class124_Sub22_Sub16_Sub2[] method537(final CacheArch var0, final String var1, final String var2) {
-		final int var3 = var0.method376(var1);
+		final int var3 = var0.of(var1);
 		final int var6 = var0.method383(var3, var2);
 		Class124_Sub22_Sub16_Sub2[] var7;
 		if (!Def3.loaded(var0, var3, var6))
@@ -38,7 +38,7 @@ public final class Class124_Sub11 extends Node {
 				var4.aByteArray1740 = Class124_Sub22_Sub5.aByteArrayArray1384[var5];
 			}
 
-			Class124_Sub7.method522();
+			InvIdk.method522();
 			var7 = var9;
 		}
 
@@ -57,7 +57,7 @@ public final class Class124_Sub11 extends Node {
 	}
 
 	static final void method539(final int var0) {
-		Widget.method630();
+		Widget.widgetCheck();
 
 		for (Class124_Sub13 var2 = (Class124_Sub13) Class124_Sub13.aClass111_1069
 				.method428(); null != var2; var2 = (Class124_Sub13) Class124_Sub13.aClass111_1069.method430())

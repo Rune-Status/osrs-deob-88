@@ -178,19 +178,19 @@ public class Def3 extends JagMap {
 			for (var6 = 0; var6 < 64; ++var6)
 				Class4.anIntArray46[192 + var6] = 16777215;
 
-			Class124_Sub7.anIntArray1013 = new int[256];
+			InvIdk.anIntArray1013 = new int[256];
 
 			for (var6 = 0; var6 < 64; ++var6)
-				Class124_Sub7.anIntArray1013[var6] = var6 * 1024;
+				InvIdk.anIntArray1013[var6] = var6 * 1024;
 
 			for (var6 = 0; var6 < 64; ++var6)
-				Class124_Sub7.anIntArray1013[64 + var6] = (var6 * 4) + '\uff00';
+				InvIdk.anIntArray1013[64 + var6] = (var6 * 4) + '\uff00';
 
 			for (var6 = 0; var6 < 64; ++var6)
-				Class124_Sub7.anIntArray1013[var6 + 128] = '\uffff' + (var6 * 262144);
+				InvIdk.anIntArray1013[var6 + 128] = '\uffff' + (var6 * 262144);
 
 			for (var6 = 0; var6 < 64; ++var6)
-				Class124_Sub7.anIntArray1013[var6 + 192] = 16777215;
+				InvIdk.anIntArray1013[var6 + 192] = 16777215;
 
 			Def5.anIntArray1453 = new int[256];
 
@@ -209,7 +209,7 @@ public class Def3 extends JagMap {
 			Class42.anIntArray427 = new int[256];
 			Class124_Sub22_Sub19_Sub1.anIntArray1661 = new int['\u8000'];
 			Class43.anIntArray432 = new int['\u8000'];
-			Def4.method761((Class124_Sub22_Sub16_Sub2) null);
+			client.method761((Class124_Sub22_Sub16_Sub2) null);
 			Class124_Sub10.anIntArray1032 = new int['\u8000'];
 			Class4.anIntArray34 = new int['\u8000'];
 			if (var3) {
@@ -223,7 +223,7 @@ public class Def3 extends JagMap {
 			Class4.aBool50 = false;
 			if (!Class57.aClass22_538.aBool249) {
 				final Class94_Sub1 var7 = Class5.aClass94_Sub1_58;
-				final int var8 = var7.method376("scape main");
+				final int var8 = var7.of("scape main");
 				final int var9 = var7.method383(var8, "");
 				Class25.method159(2, var7, var8, var9, 255, false);
 			} else

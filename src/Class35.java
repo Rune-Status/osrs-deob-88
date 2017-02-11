@@ -4,16 +4,16 @@ public class Class35 {
 	static int anInt374;
 	static int anInt375;
 
-	static final void method189(final Widget[] var0, final int var1) {
-		for (final Widget var4 : var0) {
+	static final void doWidgetCS(final Widget[] w, final int var1) {
+		for (final Widget var4 : w) {
 			if (var4 != null) {
 				if (var4.anInt1191 == 0) {
 					if (null != var4.aClass124_Sub17Array1263)
-						method189(var4.aClass124_Sub17Array1263, var1);
+						doWidgetCS(var4.aClass124_Sub17Array1263, var1);
 
-					final Class124_Sub7 var3 = (Class124_Sub7) client.aClass107_2143.method409(var4.anInt1284);
+					final InvIdk var3 = (InvIdk) client.aClass107_2143.method409(var4.anInt1284);
 					if (null != var3)
-						Class3.method23(var3.anInt1012, var1);
+						Class3.widgetInvCS(var3.anInt1012, var1);
 				}
 
 				CSD var5;
@@ -21,7 +21,7 @@ public class Class35 {
 					var5 = new CSD();
 					var5.aClass124_Sub17_994 = var4;
 					var5.anObjectArray995 = var4.anObjectArray1258;
-					Class124_Sub22_Sub19_Sub3_Sub2.fullCS(var5);
+					client.fullCS(var5);
 				}
 
 				if ((var1 == 1) && (var4.anObjectArray1247 != null)) {
@@ -36,7 +36,7 @@ public class Class35 {
 					var5 = new CSD();
 					var5.aClass124_Sub17_994 = var4;
 					var5.anObjectArray995 = var4.anObjectArray1247;
-					Class124_Sub22_Sub19_Sub3_Sub2.fullCS(var5);
+					client.fullCS(var5);
 				}
 			}
 		}
@@ -55,14 +55,14 @@ public class Class35 {
 						final Class35 var5 = client.aClass35Array1986[var4];
 						var2 = Class34.method186(var5.aString372, Class49.aClass117_488);
 						if ((null != var2) && var2.equals(var3)) {
-							Class20.method95(31, "", var0 + " is already on your ignore list");
+							client.doCS(31, "", var0 + " is already on your ignore list");
 							return;
 						}
 
 						if (var5.aString373 != null) {
 							var6 = Class34.method186(var5.aString373, Class49.aClass117_488);
 							if ((var6 != null) && var6.equals(var3)) {
-								Class20.method95(31, "", var0 + " is already on your ignore list");
+								client.doCS(31, "", var0 + " is already on your ignore list");
 								return;
 							}
 						}
@@ -72,14 +72,14 @@ public class Class35 {
 						final Class32 var7 = client.aClass32Array2098[var4];
 						var2 = Class34.method186(var7.aString344, Class49.aClass117_488);
 						if ((var2 != null) && var2.equals(var3)) {
-							Class20.method95(31, "", "Please remove " + var0 + " from your friend list first");
+							client.doCS(31, "", "Please remove " + var0 + " from your friend list first");
 							return;
 						}
 
 						if (null != var7.aString338) {
 							var6 = Class34.method186(var7.aString338, Class49.aClass117_488);
 							if ((null != var6) && var6.equals(var3)) {
-								Class20.method95(31, "", "Please remove " + var0 + " from your friend list first");
+								client.doCS(31, "", "Please remove " + var0 + " from your friend list first");
 								return;
 							}
 						}
@@ -88,7 +88,7 @@ public class Class35 {
 					if (Class34
 							.method186(Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.aString1956, Class49.aClass117_488)
 							.equals(var3))
-						Class20.method95(31, "", "You can\'t add yourself to your own ignore list");
+						client.doCS(31, "", "You can\'t add yourself to your own ignore list");
 					else {
 						client.secbuf.writeOpcode(67); // add ignore
 						client.secbuf.writeByte(Class54.len(var0));
@@ -96,7 +96,7 @@ public class Class35 {
 					}
 				}
 			} else
-				Class20.method95(31, "", "Your ignore list is full. Max of 100 for free users, and 400 for members");
+				client.doCS(31, "", "Your ignore list is full. Max of 100 for free users, and 400 for members");
 	}
 
 	static final void method191(final Class124_Sub4 var0) {
@@ -169,7 +169,7 @@ public class Class35 {
 			final boolean var11 = client.buf.readUByteS() == 1;
 			final int var5 = client.buf.readByteN();
 			final int var6 = client.buf.pos;
-			if ((null != var1.aString1956) && (var1.aClass100_1943 != null)) {
+			if ((null != var1.aString1956) && (var1.spomet3 != null)) {
 				boolean var12 = false;
 				if (var7.aBool615 && Class1.method12(var1.aString1956))
 					var12 = true;
@@ -178,8 +178,8 @@ public class Class35 {
 					client.aClass124_Sub14_2146.pos = 0;
 					client.buf.readReverse(client.aClass124_Sub14_2146.backing, 0, var5);
 					client.aClass124_Sub14_2146.pos = 0;
-					final String var9 = Class124_Sub22_Sub16_Sub4.method1031(Class124_Sub22_Sub19_Sub1
-							.method886(RuntimeException_Sub1.method1013(client.aClass124_Sub14_2146)));
+					final String var9 = client.appendTags(client
+							.format(RuntimeException_Sub1.decodeStr(client.aClass124_Sub14_2146)));
 					var1.aString1683 = var9.trim();
 					var1.anInt1686 = var3 >> 8;
 					var1.anInt1696 = var3 & 255;
@@ -194,9 +194,9 @@ public class Class35 {
 						var8 = var11 ? 90 : 2;
 
 					if (var7.anInt614 != -1)
-						Class20.method95(var8, Class99.method391(var7.anInt614) + var1.aString1956, var9);
+						client.doCS(var8, Class99.method391(var7.anInt614) + var1.aString1956, var9);
 					else
-						Class20.method95(var8, var1.aString1956, var9);
+						client.doCS(var8, var1.aString1956, var9);
 				}
 			}
 
@@ -207,9 +207,9 @@ public class Class35 {
 			var1.aString1683 = client.buf.readStr2();
 			if (var1.aString1683.charAt(0) == 126) {
 				var1.aString1683 = var1.aString1683.substring(1);
-				Class20.method95(2, var1.aString1956, var1.aString1683);
+				client.doCS(2, var1.aString1956, var1.aString1683);
 			} else if (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246 == var1)
-				Class20.method95(2, var1.aString1956, var1.aString1683);
+				client.doCS(2, var1.aString1956, var1.aString1683);
 
 			var1.aBool1670 = false;
 			var1.anInt1686 = 0;

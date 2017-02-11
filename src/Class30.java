@@ -42,8 +42,8 @@ public final class Class30 {
 		Class76.method318(2);
 		client.anInt2220 = -1;
 		client.aBool2221 = false;
-		Class124_Sub7.method527();
-		client.method516(10);
+		InvIdk.method527();
+		client.forstep(10);
 	}
 
 	public static boolean method175() {

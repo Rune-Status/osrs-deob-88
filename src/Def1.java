@@ -61,7 +61,7 @@ public class Def1 extends JagMap {
 			var3.anInt1736 = Class7.anIntArray70[0];
 			var3.anIntArray1742 = Class7.anIntArray66;
 			var3.aByteArray1740 = Class124_Sub22_Sub5.aByteArrayArray1384[0];
-			Class124_Sub7.method522();
+			InvIdk.method522();
 			return var3;
 		}
 	}

@@ -71,7 +71,7 @@ public class Class72 implements Interface3 {
 					var3.anIntArray1735[var8] = Class7.anIntArray66[var7[var8] & 255];
 			}
 
-			Class124_Sub7.method522();
+			InvIdk.method522();
 			return var5;
 		}
 	}
@@ -84,7 +84,7 @@ public class Class72 implements Interface3 {
 			for (var2 = 0; var2 < 4; ++var2)
 				client.aClass130Array2192[var2] = new Class130(104, 104);
 
-			Class124_Sub22_Sub19_Sub3_Sub2.aClass124_Sub22_Sub16_Sub1_1954 = new Class124_Sub22_Sub16_Sub1(512, 512);
+			client.aClass124_Sub22_Sub16_Sub1_1954 = new Class124_Sub22_Sub16_Sub1(512, 512);
 			Class4.aString39 = "Starting game engine...";
 			Class4.anInt38 = 5;
 			client.anInt2012 = 20;
@@ -244,7 +244,7 @@ public class Class72 implements Interface3 {
 					} else {
 						Class4.aString39 = "Loaded title screen";
 						Class4.anInt38 = 50;
-						client.method516(5);
+						client.forstep(5);
 						client.anInt2012 = 70;
 					}
 				} else if (client.anInt2012 == 70) {
@@ -288,7 +288,7 @@ public class Class72 implements Interface3 {
 						final Class94_Sub1 var21 = Class124_Sub11.aClass94_Sub1_1047;
 						final Class94_Sub1 var10 = Class25.aClass94_Sub1_279;
 						Widget.aClass94_1145 = var13;
-						Class124_Sub7.aClass94_1014 = var20;
+						InvIdk.aClass94_1014 = var20;
 						Widget.aClass94_1146 = var21;
 						Class69.aClass94_581 = var10;
 						Def10.widgets = new Widget[Widget.aClass94_1145
@@ -355,13 +355,13 @@ public class Class72 implements Interface3 {
 							client.anInt2012 = 140;
 						}
 					} else if (client.anInt2012 == 140)
-						client.method516(10);
+						client.forstep(10);
 				} else {
 					var2 = 0;
 					Class124_Sub22_Sub16_Sub1 var9;
 					if (Class47.aClass124_Sub22_Sub16_Sub1_472 == null) {
 						var1 = Class124_Sub11.aClass94_Sub1_1047;
-						var7 = var1.method376("compass");
+						var7 = var1.of("compass");
 						var8 = var1.method383(var7, "");
 						var9 = Class124_Sub22_Sub19_Sub6.method962(var1, var7, var8);
 						Class47.aClass124_Sub22_Sub16_Sub1_472 = var9;
@@ -370,7 +370,7 @@ public class Class72 implements Interface3 {
 
 					if (null == Class71.aClass124_Sub22_Sub16_Sub1_591) {
 						var1 = Class124_Sub11.aClass94_Sub1_1047;
-						var7 = var1.method376("mapedge");
+						var7 = var1.of("mapedge");
 						var8 = var1.method383(var7, "");
 						var9 = Class124_Sub22_Sub19_Sub6.method962(var1, var7, var8);
 						Class71.aClass124_Sub22_Sub16_Sub1_591 = var9;

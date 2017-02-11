@@ -22,7 +22,7 @@ public class Class71 {
 	static void method307(final int var0, final Class69 var1, final Class94_Sub1 var2) {
 		final Class124_Sub19 var3 = new Class124_Sub19();
 		var3.anInt1295 = 1;
-		var3.aLong874 = var0;
+		var3.linkedhash = var0;
 		var3.aClass69_1296 = var1;
 		var3.aClass94_Sub1_1297 = var2;
 		final Class111 var4 = Class99.aClass111_776;

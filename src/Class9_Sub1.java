@@ -114,60 +114,60 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 		}
 	}
 
-	static final void method494() {
-		Class46.method229(false);
+	static final void render() {
+		Class46.push250(false);
 		client.anInt2037 = 0;
-		boolean var11 = true;
+		boolean objdecoded = true;
 
 		int var6;
-		for (var6 = 0; var6 < Class124_Sub18.aByteArrayArray1294.length; ++var6) {
-			if ((Class10.anIntArray104[var6] != -1) && (null == Class124_Sub18.aByteArrayArray1294[var6])) {
-				Class124_Sub18.aByteArrayArray1294[var6] = Class125.aClass94_Sub1_883
-						.decode(Class10.anIntArray104[var6], 0);
-				if (Class124_Sub18.aByteArrayArray1294[var6] == null) {
-					var11 = false;
+		for (var6 = 0; var6 < Class124_Sub18.xteaMdata.length; ++var6) {
+			if ((Class10.xteaM[var6] != -1) && (null == Class124_Sub18.xteaMdata[var6])) {
+				Class124_Sub18.xteaMdata[var6] = Class125.aClass94_Sub1_883
+						.decode(Class10.xteaM[var6], 0);
+				if (Class124_Sub18.xteaMdata[var6] == null) {
+					objdecoded = false;
 					++client.anInt2037;
 				}
 			}
 
-			if ((Def9.anIntArray1335[var6] != -1)
-					&& (null == Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6])) {
-				Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6] = Class125.aClass94_Sub1_883.decode(
-						Def9.anIntArray1335[var6], 0, Def10.anIntArrayArray1466[var6]);
-				if (Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6] == null) {
-					var11 = false;
+			if ((Def9.xteaL[var6] != -1)
+					&& (null == Class124_Sub22_Sub19_Sub3_Sub1.xteaLdata[var6])) {
+				Class124_Sub22_Sub19_Sub3_Sub1.xteaLdata[var6] = Class125.aClass94_Sub1_883.decode(
+						Def9.xteaL[var6], 0, Def10.anIntArrayArray1466[var6]);
+				if (Class124_Sub22_Sub19_Sub3_Sub1.xteaLdata[var6] == null) {
+					objdecoded = false;
 					++client.anInt2037;
 				}
 			}
 		}
 
-		if (!var11)
+		if (!objdecoded)
 			client.anInt2113 = 1;
 		else {
 			client.anInt2039 = 0;
-			var11 = true;
+			objdecoded = true;
 
 			int var7;
 			int var9;
-			for (var6 = 0; var6 < Class124_Sub18.aByteArrayArray1294.length; ++var6) {
-				final byte[] var14 = Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var6];
+			for (var6 = 0; var6 < Class124_Sub18.xteaMdata.length; ++var6) {
+				final byte[] var14 = Class124_Sub22_Sub19_Sub3_Sub1.xteaLdata[var6];
 				if (null != var14) {
 					var7 = ((Class124_Sub22_Sub19_Sub6.anIntArray1822[var6] >> 8) * 64) - Class9.anInt102;
 					var9 = (64 * (Class124_Sub22_Sub19_Sub6.anIntArray1822[var6] & 255)) - Class95.anInt762;
-					if (client.aBool2043) {
+					if (client.create) {
 						var7 = 10;
 						var9 = 10;
 					}
 
-					var11 &= Def5.method705(var14, var7, var9);
+					objdecoded &= Def5.objdecode(var14, var7, var9);
 				}
 			}
 
-			if (!var11)
+			if (!objdecoded)
 				client.anInt2113 = 2;
 			else {
 				if (client.anInt2113 != 0)
-					Class124_Sub7.method523("Loading - please wait." + "<br>" + " (" + 100 + "%" + ")", true);
+					InvIdk.method523("Loading - please wait." + "<br>" + " (" + 100 + "%" + ")", true);
 
 				Def15.method751();
 				Def9.method639();
@@ -187,22 +187,22 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 
 				Def15.method751();
 				Def1.method664(523078311);
-				var6 = Class124_Sub18.aByteArrayArray1294.length;
-				Class124_Sub7.method527();
-				Class46.method229(true);
+				var6 = Class124_Sub18.xteaMdata.length;
+				InvIdk.method527();
+				Class46.push250(true);
 				int var2;
-				int var3;
+				int h;
 				int var5;
 				int var8;
-				int var12;
-				int var15;
+				int x;
+				int z;
 				int var21;
-				if (!client.aBool2043) {
+				if (!client.create) {
 					byte[] var19;
 					for (var13 = 0; var13 < var6; ++var13) {
 						var7 = (64 * (Class124_Sub22_Sub19_Sub6.anIntArray1822[var13] >> 8)) - Class9.anInt102;
 						var9 = ((Class124_Sub22_Sub19_Sub6.anIntArray1822[var13] & 255) * 64) - Class95.anInt762;
-						var19 = Class124_Sub18.aByteArrayArray1294[var13];
+						var19 = Class124_Sub18.xteaMdata[var13];
 						if (var19 != null) {
 							Def15.method751();
 							var21 = (Class124_Sub13.anInt1071 * 8) - 48;
@@ -210,35 +210,35 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 							final Class130[] var22 = client.aClass130Array2192;
 
 							for (var5 = 0; var5 < 4; ++var5)
-								for (var3 = 0; var3 < 64; ++var3)
-									for (var12 = 0; var12 < 64; ++var12)
-										if (((var3 + var7) > 0) && ((var7 + var3) < 103) && ((var9 + var12) > 0)
-												&& ((var12 + var9) < 103))
-											var22[var5].anIntArrayArray894[var7 + var3][var9 + var12] &= -16777217;
+								for (h = 0; h < 64; ++h)
+									for (x = 0; x < 64; ++x)
+										if (((h + var7) > 0) && ((var7 + h) < 103) && ((var9 + x) > 0)
+												&& ((x + var9) < 103))
+											var22[var5].anIntArrayArray894[var7 + h][var9 + x] &= -16777217;
 
 							final RSBuf var25 = new RSBuf(var19);
 
-							for (var3 = 0; var3 < 4; ++var3)
-								for (var12 = 0; var12 < 64; ++var12)
-									for (var15 = 0; var15 < 64; ++var15)
-										Class45.method223(var25, var3, var12 + var7, var15 + var9, var21, var2, 0);
+							for (h = 0; h < 4; ++h)
+								for (x = 0; x < 64; ++x)
+									for (z = 0; z < 64; ++z)
+										Class45.tilecli(var25, h, x + var7, z + var9, var21, var2, 0);
 						}
 					}
 
 					for (var13 = 0; var13 < var6; ++var13) {
 						var7 = (64 * (Class124_Sub22_Sub19_Sub6.anIntArray1822[var13] >> 8)) - Class9.anInt102;
 						var9 = (64 * (Class124_Sub22_Sub19_Sub6.anIntArray1822[var13] & 255)) - Class95.anInt762;
-						var19 = Class124_Sub18.aByteArrayArray1294[var13];
+						var19 = Class124_Sub18.xteaMdata[var13];
 						if ((var19 == null) && (Class124_Sub22_Sub19_Sub6.anInt1824 < 800)) {
 							Def15.method751();
 							Class27.method164(var7, var9, 64, 64);
 						}
 					}
 
-					Class46.method229(true);
+					Class46.push250(true);
 
 					for (var13 = 0; var13 < var6; ++var13) {
-						final byte[] var23 = Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var13];
+						final byte[] var23 = Class124_Sub22_Sub19_Sub3_Sub1.xteaLdata[var13];
 						if (null != var23) {
 							var9 = (64 * (Class124_Sub22_Sub19_Sub6.anIntArray1822[var13] >> 8)) - Class9.anInt102;
 							var8 = ((Class124_Sub22_Sub19_Sub6.anIntArray1822[var13] & 255) * 64) - Class95.anInt762;
@@ -250,7 +250,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 				}
 
 				int var4;
-				if (client.aBool2043) {
+				if (client.create) {
 					for (var13 = 0; var13 < 4; ++var13) {
 						Def15.method751();
 
@@ -262,14 +262,14 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 									var2 = (var21 >> 24) & 3;
 									var4 = (var21 >> 1) & 3;
 									var5 = (var21 >> 14) & 1023;
-									var3 = (var21 >> 3) & 2047;
-									var12 = (var3 / 8) + ((var5 / 8) << 8);
+									h = (var21 >> 3) & 2047;
+									x = (h / 8) + ((var5 / 8) << 8);
 
-									for (var15 = 0; var15 < Class124_Sub22_Sub19_Sub6.anIntArray1822.length; ++var15)
-										if ((var12 == Class124_Sub22_Sub19_Sub6.anIntArray1822[var15])
-												&& (Class124_Sub18.aByteArrayArray1294[var15] != null)) {
-											Class7.method35(Class124_Sub18.aByteArrayArray1294[var15], var13, var7 * 8,
-													8 * var9, var2, 8 * (var5 & 7), 8 * (var3 & 7), var4,
+									for (z = 0; z < Class124_Sub22_Sub19_Sub6.anIntArray1822.length; ++z)
+										if ((x == Class124_Sub22_Sub19_Sub6.anIntArray1822[z])
+												&& (Class124_Sub18.xteaMdata[z] != null)) {
+											Class7.method35(Class124_Sub18.xteaMdata[z], var13, var7 * 8,
+													8 * var9, var2, 8 * (var5 & 7), 8 * (h & 7), var4,
 													client.aClass130Array2192);
 											var41 = true;
 											break;
@@ -281,20 +281,20 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 									var4 = 8 * var7;
 									var5 = var9 * 8;
 
-									for (var3 = 0; var3 < 8; ++var3)
-										for (var12 = 0; var12 < 8; ++var12)
-											Class27.anIntArrayArrayArray284[var2][var3 + var4][var5 + var12] = 0;
+									for (h = 0; h < 8; ++h)
+										for (x = 0; x < 8; ++x)
+											Class27.anIntArrayArrayArray284[var2][h + var4][var5 + x] = 0;
 
 									if (var4 > 0)
-										for (var3 = 1; var3 < 8; ++var3)
-											Class27.anIntArrayArrayArray284[var2][var4][var3
+										for (h = 1; h < 8; ++h)
+											Class27.anIntArrayArrayArray284[var2][var4][h
 													+ var5] = Class27.anIntArrayArrayArray284[var2][var4 - 1][var5
-															+ var3];
+															+ h];
 
 									if (var5 > 0)
-										for (var3 = 1; var3 < 8; ++var3)
-											Class27.anIntArrayArrayArray284[var2][var3
-													+ var4][var5] = Class27.anIntArrayArrayArray284[var2][var3
+										for (h = 1; h < 8; ++h)
+											Class27.anIntArrayArrayArray284[var2][h
+													+ var4][var5] = Class27.anIntArrayArrayArray284[var2][h
 															+ var4][var5 - 1];
 
 									if ((var4 > 0) && (Class27.anIntArrayArrayArray284[var2][var4 - 1][var5] != 0))
@@ -318,7 +318,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 								Class27.method164(var13 * 8, 8 * var7, 8, 8);
 						}
 
-					Class46.method229(true);
+					Class46.push250(true);
 
 					for (var13 = 0; var13 < 4; ++var13) {
 						Def15.method751();
@@ -331,12 +331,12 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 									var2 = (var8 >> 1) & 3;
 									var4 = (var8 >> 14) & 1023;
 									var5 = (var8 >> 3) & 2047;
-									var3 = ((var4 / 8) << 8) + (var5 / 8);
+									h = ((var4 / 8) << 8) + (var5 / 8);
 
-									for (var12 = 0; var12 < Class124_Sub22_Sub19_Sub6.anIntArray1822.length; ++var12)
-										if ((var3 == Class124_Sub22_Sub19_Sub6.anIntArray1822[var12])
-												&& (null != Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var12])) {
-											final byte[] var30 = Class124_Sub22_Sub19_Sub3_Sub1.aByteArrayArray1939[var12];
+									for (x = 0; x < Class124_Sub22_Sub19_Sub6.anIntArray1822.length; ++x)
+										if ((h == Class124_Sub22_Sub19_Sub6.anIntArray1822[x])
+												&& (null != Class124_Sub22_Sub19_Sub3_Sub1.xteaLdata[x])) {
+											final byte[] var30 = Class124_Sub22_Sub19_Sub3_Sub1.xteaLdata[x];
 											final int var18 = var7 * 8;
 											final int var31 = var9 * 8;
 											final int var1 = (var4 & 7) * 8;
@@ -398,11 +398,11 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 					}
 				}
 
-				Class46.method229(true);
+				Class46.push250(true);
 				Def9.method639();
 				Def15.method751();
 				Class43.method222(Class36.aClass21_380, client.aClass130Array2192);
-				Class46.method229(true);
+				Class46.push250(true);
 				var13 = Class27.anInt290;
 				if (var13 > Class134.anInt906)
 					var13 = Class134.anInt906;
@@ -435,7 +435,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 					client.secbuf.writeInt(1057001181);
 				}
 
-				if (!client.aBool2043) {
+				if (!client.create) {
 					var7 = (Class124_Sub13.anInt1071 - 6) / 8;
 					var9 = (6 + Class124_Sub13.anInt1071) / 8;
 					var8 = (Class124_Sub22_Sub19_Sub6.anInt1824 - 6) / 8;
@@ -449,7 +449,7 @@ public final class Class9_Sub1 extends Class9 implements ImageProducer, ImageObs
 							}
 				}
 
-				client.method516(30);
+				client.forstep(30);
 				Def15.method751();
 				CSD.method520();
 				client.secbuf.writeOpcode(104);

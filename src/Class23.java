@@ -75,7 +75,7 @@ public class Class23 {
 			var4.anInt1736 = Class7.anIntArray70[0];
 			var4.anIntArray1742 = Class7.anIntArray66;
 			var4.aByteArray1740 = Class124_Sub22_Sub5.aByteArrayArray1384[0];
-			Class124_Sub7.method522();
+			InvIdk.method522();
 			return var4;
 		}
 	}

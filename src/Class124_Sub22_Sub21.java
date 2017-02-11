@@ -13,8 +13,8 @@ public class Class124_Sub22_Sub21 extends JagMap {
 			if (!client.aBool1989)
 				client.anInt2006 = 0;
 
-			client.method516(25);
-			Class124_Sub7.method523("Loading - please wait.", true);
+			client.forstep(25);
+			InvIdk.method523("Loading - please wait :D.", true);
 			int var9 = Class9.anInt102;
 			int var5 = Class95.anInt762;
 			Class9.anInt102 = (var0 - 6) * 8;
@@ -79,9 +79,9 @@ public class Class124_Sub22_Sub21 extends JagMap {
 
 					for (int var8 = 0; var8 < 4; ++var8)
 						if ((var21 >= 0) && (var7 >= 0) && (var21 < 104) && (var7 < 104))
-							client.aClass111ArrayArrayArray2073[var8][var15][var13] = client.aClass111ArrayArrayArray2073[var8][var21][var7];
+							client.clips[var8][var15][var13] = client.clips[var8][var21][var7];
 						else
-							client.aClass111ArrayArrayArray2073[var8][var15][var13] = null;
+							client.clips[var8][var15][var13] = null;
 				}
 
 			for (Class124_Sub11 var16 = (Class124_Sub11) client.aClass111_2262

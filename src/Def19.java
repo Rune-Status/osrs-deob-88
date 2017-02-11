@@ -1,6 +1,6 @@
 public class Def19 extends JagMap {
-	static int anInt1439;
-	static int anInt1440;
+	static int locX;
+	static int loyY;
 	static CacheArch aClass94_1441;
 	static Class113 aClass113_1437 = new Class113(64);
 	public boolean aBool1438 = false;
@@ -293,11 +293,11 @@ public class Def19 extends JagMap {
 			} else
 				var13 = client.aClass124_Sub22_Sub19_Sub3_Sub1Array2254[client.anIntArray2023[var5 - client.anInt2090]];
 
-			Class124_Sub22_Sub19_Sub3_Sub2.method1046((Class124_Sub22_Sub19_Sub3) var13, var5, var0, var1);
+			client.method1046((Class124_Sub22_Sub19_Sub3) var13, var5, var0, var1);
 		}
 
 		if (var30)
-			Class124_Sub22_Sub19_Sub3_Sub2.method1046(client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[client.anInt2114],
+			client.method1046(client.aClass124_Sub22_Sub19_Sub3_Sub2Array2100[client.anInt2114],
 					var17, var0, var1);
 
 		for (var5 = 0; var5 < client.anInt2074; ++var5) {
@@ -417,7 +417,7 @@ public class Def19 extends JagMap {
 
 		Class124_Sub11.method538(var0, var1);
 		((Class31) Class124_Sub22_Sub16_Sub3.anInterface2_1828).method178(client.anInt2111);
-		Class124_Sub7.method528();
+		InvIdk.method528();
 		Class45.anInt445 = var24;
 		Class2.anInt14 = var20;
 		Class48.anInt479 = var15;
@@ -432,7 +432,7 @@ public class Def19 extends JagMap {
 
 		if (client.aBool1993) {
 			Class124_Sub22_Sub16.method768(var0, var1, var2, var3, 0);
-			Class124_Sub7.method523("Loading - please wait.", false);
+			InvIdk.method523("Loading - please wait.", false);
 		}
 
 	}

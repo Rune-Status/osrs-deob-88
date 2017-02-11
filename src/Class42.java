@@ -28,7 +28,7 @@ public final class Class42 {
 					&& (!var11.aBool1152 || (var11.anInt1191 == 0) || var11.aBool1195
 							|| (Class124_Sub22_Sub19_Sub6.method963(var11) != 0)
 							|| (var11 == client.aClass124_Sub17_2199) || (var11.anInt1157 == 1338))
-					&& (var11.anInt1259 == var1) && (!var11.aBool1152 || !Def4.method762(var11))) {
+					&& (var11.anInt1259 == var1) && (!var11.aBool1152 || !client.method762(var11))) {
 				final int var21 = var6 + var11.anInt1166;
 				final int var9 = var11.anInt1223 + var7;
 				int var10;
@@ -149,7 +149,7 @@ public final class Class42 {
 								Class101.method402(var11, var23 - var21, var10 - var9);
 
 							if (var11.anInt1191 == 0) {
-								if (!var11.aBool1152 && Def4.method762(var11)
+								if (!var11.aBool1152 && client.method762(var11)
 										&& (var11 != Class31.aClass124_Sub17_335))
 									continue;
 
@@ -159,7 +159,7 @@ public final class Class42 {
 									method214(var11.aClass124_Sub17Array1263, var11.anInt1284, var16, var17, var18,
 											var19, var21 - var11.anInt1174, var9 - var11.anInt1175);
 
-								final Class124_Sub7 var25 = (Class124_Sub7) client.aClass107_2143
+								final InvIdk var25 = (InvIdk) client.aClass107_2143
 										.method409(var11.anInt1284);
 								if (null != var25) {
 									if ((var25.anInt1008 == 0) && (Class81.anInt652 >= var16)

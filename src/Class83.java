@@ -1,6 +1,6 @@
 public final class Class83 {
 	static final void method337() {
-		Class124_Sub7.method524();
+		InvIdk.method524();
 		if (Class32.aClass124_Sub17_343 == null)
 			if (client.currentWid == null) {
 				int var0 = Class81.anInt650;

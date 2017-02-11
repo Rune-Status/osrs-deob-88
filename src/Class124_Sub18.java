@@ -1,5 +1,5 @@
 public class Class124_Sub18 extends Node {
-	static byte[][] aByteArrayArray1294;
+	static byte[][] xteaMdata;
 	Class124_Sub2_Sub1[] aClass124_Sub2_Sub1Array1286 = new Class124_Sub2_Sub1[128];
 	short[] aShortArray1290 = new short[128];
 	byte[] aByteArray1288 = new byte[128];

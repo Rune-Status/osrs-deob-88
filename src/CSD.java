@@ -19,7 +19,7 @@ public class CSD extends Node {
 	static void method518(final int var0, final byte[] var1, final Class69 var2) {
 		final Class124_Sub19 var3 = new Class124_Sub19();
 		var3.anInt1295 = 0;
-		var3.aLong874 = var0;
+		var3.linkedhash = var0;
 		var3.aByteArray1298 = var1;
 		var3.aClass69_1296 = var2;
 		final Class111 var4 = Class99.aClass111_776;

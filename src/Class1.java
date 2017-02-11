@@ -55,7 +55,7 @@ public class Class1 {
 				final int var9 = (client.anInt2255 + client.anInt2053) & 2047;
 				final int var7 = (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 / 32) + 48;
 				final int var8 = 464 - (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697 / 32);
-				Class124_Sub22_Sub19_Sub3_Sub2.aClass124_Sub22_Sub16_Sub1_1954.method913(var1, var2, var4.anInt1646,
+				client.aClass124_Sub22_Sub16_Sub1_1954.method913(var1, var2, var4.anInt1646,
 						var4.anInt1643, var7, var8, var9, 256 + client.anInt2055, var4.anIntArray1645,
 						var4.anIntArray1644);
 
@@ -75,7 +75,7 @@ public class Class1 {
 				int var6;
 				for (var10 = 0; var10 < 104; ++var10)
 					for (var11 = 0; var11 < 104; ++var11) {
-						final Class111 var12 = client.aClass111ArrayArrayArray2073[Class134.anInt906][var10][var11];
+						final Class111 var12 = client.clips[Class134.anInt906][var10][var11];
 						if (var12 != null) {
 							var5 = ((var10 * 4) + 2) - (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1690 / 32);
 							var6 = (2 + (var11 * 4)) - (Class22.aClass124_Sub22_Sub19_Sub3_Sub2_246.anInt1697 / 32);
@@ -222,7 +222,7 @@ public class Class1 {
 	}
 
 	public static Class124_Sub22_Sub16_Sub2 method17(final CacheArch var0, final String var1, final String var2) {
-		final int var3 = var0.method376(var1);
+		final int var3 = var0.of(var1);
 		final int var4 = var0.method383(var3, var2);
 		return Class23.method157(var0, var3, var4);
 	}
